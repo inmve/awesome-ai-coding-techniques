@@ -1,4 +1,4 @@
-> **Active Development** - Updated October 8, 2025
+> **Active Development** - Updated October 13, 2025
 > [How to use Claude Code together with Codex or Cursor](https://coding-with-ai.dev/posts/sync-claude-code-codex-cursor-memory/)
 >
 > **Note:** For the best experience, visit the [website](https://coding-with-ai.dev) where you can see the popularity of each technique based on community engagement and discover which approaches developers find most valuable.
@@ -287,6 +287,13 @@ Design systems with comprehensive logging so AI agents can read logs to understa
 > "In general logging is super important. For instance my app currently has a sign in and register flow that sends an email to the user. In debug mode (which the agent runs in), the email is just logged to stdout. This is crucial! It allows the agent to complete a full sign-in with a remote controlled browser without extra assistance. It knows that emails are being logged thanks to a CLAUDE.md instruction and it automatically consults the log for the necessary link to click."
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important)
 
+### Pivot When Assistant Struggles
+
+When the assistant repeatedly fails to solve a specific problem, pivot to an alternative approach rather than persisting with the same solution.
+
+> "It's at this point that I know I need to step back, review what it did, and come up with my own plans. It's time to educate myself and think critically. AI is no longer the solution; it is a liability."
+> — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point)
+
 ## Testing & QA
 
 ### Always Test Code Yourself
@@ -333,6 +340,13 @@ Review changes in diff view and type corrections directly into the diff before c
 
 > "I manually review all AI-written code and test cases. I'll add test cases for anything I think is missing or needs improvement, either manually or by asking the LLM to write those cases (which I then review)."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all)
+
+### Iterate on Assistant Output Yourself
+
+After the assistant completes work, manually iterate and refine the implementation rather than accepting it as-is.
+
+> "I almost always go in after an AI does work and iterate myself for awhile, too."
+> — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in)
 
 ## Cross-Stage Techniques
 
@@ -606,3 +620,10 @@ Collaborate like with a coding partner - explain problems, get feedback, and wor
 
 > "Claude Code feels like pairing with someone with a few years under their belt who just needs the occasional nudge. Then like with pairing, it's review, refactor and test time because it's still your name on the git commit."
 > — [Orta Therox](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing)
+
+### Let Assistant Work While You Do Other Things
+
+Use assistants asynchronously so they can work on tasks while you handle other responsibilities.
+
+> "I think the faster/slower argument for me personally is missing the thing I like the most: the AI can work for me while I step away to do other things."
+> — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster)
