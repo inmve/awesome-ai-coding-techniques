@@ -1,6 +1,8 @@
-> **Active Development** - Updated October 16, 2025
+> **Active Development** - Updated October 17, 2025
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
+
+> **Note:** For the best experience, visit the [website](https://coding-with-ai.dev) where you can see the popularity of each technique based on community engagement and discover which approaches developers find most valuable.
 
 <div align="center">
 
@@ -207,9 +209,9 @@ Da especificaciones completas - incluso una especificación conversacional super
 > "Here's a recent example: `Write a Python function that uses asyncio httpx with this signature:` `async def download_db(url, max_size_bytes=5 * 1025 * 1025): -> pathlib.Path`. Given a URL, this downloads the database to a temp directory and returns a path to it. BUT it checks the content length header at the start of streaming back that data and, if it's more than the limit, raises an error... I find LLMs respond extremely well to function signatures like the one I use here."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example)
 
-### Plan with High-Capacity Model
+### Planificar con Modelo de Alta Capacidad
 
-When gathering requirements or drafting specs, temporarily switch to a higher-capability model or extended reasoning mode so it can read, synthesize, and propose a plan before coding.
+Al recopilar requisitos o redactar especificaciones, cambia temporalmente a un modelo de mayor capacidad o modo de razonamiento extendido para que pueda leer, sintetizar y proponer un plan antes de codificar.
 
 **Tool Implementations:**
 
@@ -274,9 +276,9 @@ Drop in screenshots and iterate - take a screenshot of the result, compare, repe
 > "Give Claude a visual mock by copying / pasting or drag-dropping an image... take screenshots of the result, and iterate until its result matches the mock."
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock)
 
-### Ask for ASCII Wireframes
+### Pedir Wireframes ASCII
 
-When refining layouts, have the assistant sketch ASCII wireframes so you can evaluate hierarchy and spacing before touching CSS.
+Al refinar diseños, haz que el asistente dibuje wireframes ASCII para que puedas evaluar la jerarquía y el espaciado antes de tocar CSS.
 
 ### Make It More Beautiful
 
@@ -314,9 +316,9 @@ Delega tareas aburridas, sistemáticas y que consumen tiempo a la IA - desde peq
 > "I'm using LLMs, but for dumber things: `rename all occurrences of this parameter`"
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things)
 
-### Confirmar Entendimiento Antes de Codificar
+### Confirmar Comprensión Antes de Codificar
 
-Pide explícitamente a la herramienta que confirme su entendimiento de la tarea antes de comenzar la implementación para asegurar alineación y reducir expectativas no coincidentes.
+Pide explícitamente a la herramienta que confirme su comprensión de la tarea antes de comenzar la implementación para garantizar la alineación y reducir las expectativas desalineadas.
 
 ### Tratar la IA como un Interno Digital
 
@@ -374,9 +376,9 @@ Write custom code rather than pulling in more libraries when working with assist
 
 ## Debugging
 
-### Pivot When Assistant Struggles
+### Cambiar de Enfoque Cuando el Asistente Tiene Dificultades
 
-When the assistant repeatedly fails to solve a specific problem, pivot to an alternative approach rather than persisting with the same solution.
+Cuando el asistente falla repetidamente en resolver un problema específico, cambia a un enfoque alternativo en lugar de persistir con la misma solución.
 
 > "It's at this point that I know I need to step back, review what it did, and come up with my own plans. It's time to educate myself and think critically. AI is no longer the solution; it is a liability."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point)
@@ -430,9 +432,9 @@ Write tests first, confirm they fail, then implement until they pass.
 
 ## Review & Refactoring
 
-### Iterate on Assistant Output Yourself
+### Iterar en la Salida del Asistente Tú Mismo
 
-After the assistant completes work, manually iterate and refine the implementation rather than accepting it as-is.
+Después de que el asistente complete el trabajo, itera y refina manualmente la implementación en lugar de aceptarla tal cual.
 
 > "I almost always go in after an AI does work and iterate myself for awhile, too."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in)
@@ -498,16 +500,16 @@ Haz que un agente escriba código, luego usa un agente nuevo para revisar y enco
 
 ## Cross-Stage Techniques
 
-### Let Assistant Work While You Do Other Things
+### Deja que el Asistente Trabaje Mientras Haces Otras Cosas
 
-Use assistants asynchronously so they can work on tasks while you handle other responsibilities.
+Usa asistentes de forma asíncrona para que puedan trabajar en tareas mientras manejas otras responsabilidades.
 
 > "I think the faster/slower argument for me personally is missing the thing I like the most: the AI can work for me while I step away to do other things."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster)
 
-### Switch Assistant Output Styles
+### Cambiar Estilos de Salida del Asistente
 
-Select the assistant output style that matches your current goal.
+Selecciona el estilo de salida del asistente que coincida con tu objetivo actual.
 
 **Tool Implementations:**
 
@@ -550,9 +552,9 @@ Codex is dry. You can insult it and it doesn't even answer. No personality. Clau
 Codex is monotone straight to the point, but most importantly the reason why it is better is because it's not agreeable at all. It will challenge you when you're suggesting something wrong and stay with its opinion."
 > — [Reddit Community](https://www.reddit.com/r/ClaudeAI/comments/1nk4v4k/comment/nev86ot)
 
-### Choose the Right Model for the Job
+### Elegir el Modelo Adecuado para el Trabajo
 
-Before starting a new task, choose two levers: the right model (modality, context length, tool-calling reliability, latency, cost) and the right reasoning level (allocate more/less thinking tokens) — don’t default blindly.
+Antes de comenzar una nueva tarea, elige dos palancas: el modelo correcto (modalidad, longitud de contexto, confiabilidad de llamadas a herramientas, latencia, costo) y el nivel de razonamiento correcto (asigna más/menos tokens de pensamiento) — no uses el predeterminado ciegamente.
 
 **Tool Implementations:**
 
@@ -572,9 +574,9 @@ Start with `gpt-5-minimal`/`gpt-5-low` for quick edits; choose a higher‑reason
 
 </details>
 
-### Centralise Memory Files
+### Centralizar Archivos de Memoria
 
-Keep one canonical instruction doc and route every other agent file to it with a shouty pointer line, a symlink, or an @file include so cross-tool guidance stays consistent.
+Mantén un documento de instrucciones canónico y dirige todos los demás archivos del agente hacia él con una línea de puntero llamativa, un enlace simbólico o una inclusión @file para que la orientación entre herramientas se mantenga consistente.
 
 **Tool Implementations:**
 
@@ -709,13 +711,13 @@ Enable full autonomous mode with `codex --full-auto` or use in-session `/mode` c
 
 </details>
 
-### A Session Should Have One Goal
+### Una Sesión Debe Tener Un Objetivo
 
-Use the prompt `The goal of this session is <specific goal>. Inform me if we drift off track.` either at the start of each session or add it to your memory file (AGENTS.md, CLAUDE.md) to prevent context poisoning and increase agent steerability - applying the Single Responsibility Principle to AI conversations.
+Usa el prompt `El objetivo de esta sesión es <objetivo específico>. Infórmame si nos desviamos del camino.` ya sea al comienzo de cada sesión o agrégalo a tu archivo de memoria (AGENTS.md, CLAUDE.md) para prevenir el envenenamiento del contexto y aumentar la dirigibilidad del agente - aplicando el Principio de Responsabilidad Única a las conversaciones con IA.
 
-### Use Feature Sessions
+### Usar Sesiones de Características
 
-Isolate each feature or task in separate sessions to reduce context bloat and improve accuracy, just like feature branches in git isolate code changes.
+Aísla cada característica o tarea en sesiones separadas para reducir la sobrecarga de contexto y mejorar la precisión, al igual que las ramas de características en git aíslan los cambios de código.
 
 ### Haz Preguntas Abiertas, No Dirigidas
 
@@ -749,9 +751,9 @@ Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-
 
 </details>
 
-### Crear Puntos de Rollback Mientras Codificas
+### Crear Puntos de Reversión Al Codificar
 
-Crea checkpoints a los que puedes volver cuando los experimentos fallan—captura estados de trabajo conocidos como buenos antes de cambios riesgosos.
+Crea puntos de control a los que puedas revertir cuando los experimentos fallen—captura estados de trabajo conocidos-buenos antes de cambios riesgosos.
 
 **Tool Implementations:**
 

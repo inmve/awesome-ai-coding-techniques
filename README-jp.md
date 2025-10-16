@@ -1,6 +1,8 @@
-> **Active Development** - Updated October 16, 2025
+> **Active Development** - Updated October 17, 2025
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
+
+> **Note:** For the best experience, visit the [website](https://coding-with-ai.dev) where you can see the popularity of each technique based on community engagement and discover which approaches developers find most valuable.
 
 <div align="center">
 
@@ -207,9 +209,9 @@ Give comprehensive specs - even a conversational spec beats vague instructions.
 > "Here's a recent example: `Write a Python function that uses asyncio httpx with this signature:` `async def download_db(url, max_size_bytes=5 * 1025 * 1025): -> pathlib.Path`. Given a URL, this downloads the database to a temp directory and returns a path to it. BUT it checks the content length header at the start of streaming back that data and, if it's more than the limit, raises an error... I find LLMs respond extremely well to function signatures like the one I use here."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example)
 
-### Plan with High-Capacity Model
+### 高容量モデルで計画する
 
-When gathering requirements or drafting specs, temporarily switch to a higher-capability model or extended reasoning mode so it can read, synthesize, and propose a plan before coding.
+要件を収集したり仕様を作成したりするときは、一時的により高性能なモデルまたは拡張推論モードに切り替えて、コーディング前に読み取り、合成、計画を提案できるようにします。
 
 **Tool Implementations:**
 
@@ -274,9 +276,9 @@ Drop in screenshots and iterate - take a screenshot of the result, compare, repe
 > "Give Claude a visual mock by copying / pasting or drag-dropping an image... take screenshots of the result, and iterate until its result matches the mock."
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock)
 
-### Ask for ASCII Wireframes
+### ASCIIワイヤーフレームを依頼する
 
-When refining layouts, have the assistant sketch ASCII wireframes so you can evaluate hierarchy and spacing before touching CSS.
+レイアウトを洗練するときは、アシスタントにASCIIワイヤーフレームをスケッチさせて、CSSに触れる前に階層と間隔を評価できるようにします。
 
 ### Make It More Beautiful
 
@@ -314,9 +316,9 @@ Delegate boring, systematic, and time-consuming tasks to the assistant - from sm
 > "I'm using LLMs, but for dumber things: `rename all occurrences of this parameter`"
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things)
 
-### Confirm Understanding Before Coding
+### コーディング前に理解を確認する
 
-Explicitly ask the tool to confirm its understanding of the task before starting implementation to ensure alignment and reduce mismatched expectations.
+実装を開始する前に、ツールにタスクの理解を明示的に確認させて、整合性を確保し、期待のずれを減らします。
 
 ### Treat the Assistant as a Digital Intern
 
@@ -374,9 +376,9 @@ Write custom code rather than pulling in more libraries when working with assist
 
 ## Debugging
 
-### Pivot When Assistant Struggles
+### アシスタントが苦戦したら方向転換する
 
-When the assistant repeatedly fails to solve a specific problem, pivot to an alternative approach rather than persisting with the same solution.
+アシスタントが特定の問題を解決できず繰り返し失敗する場合、同じ解決策に固執するのではなく、別のアプローチに切り替えます。
 
 > "It's at this point that I know I need to step back, review what it did, and come up with my own plans. It's time to educate myself and think critically. AI is no longer the solution; it is a liability."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point)
@@ -430,9 +432,9 @@ Write tests first, confirm they fail, then implement until they pass.
 
 ## Review & Refactoring
 
-### Iterate on Assistant Output Yourself
+### アシスタント出力を自分で反復する
 
-After the assistant completes work, manually iterate and refine the implementation rather than accepting it as-is.
+アシスタントが作業を完了した後、そのまま受け入れるのではなく、手動で反復し実装を洗練させます。
 
 > "I almost always go in after an AI does work and iterate myself for awhile, too."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in)
@@ -498,16 +500,16 @@ Have one agent write code, then use a fresh agent to review and find problems.
 
 ## Cross-Stage Techniques
 
-### Let Assistant Work While You Do Other Things
+### 他のことをしている間、アシスタントに作業させる
 
-Use assistants asynchronously so they can work on tasks while you handle other responsibilities.
+非同期でアシスタントを使用して、他の責任を処理している間にタスクに取り組めるようにします。
 
 > "I think the faster/slower argument for me personally is missing the thing I like the most: the AI can work for me while I step away to do other things."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster)
 
-### Switch Assistant Output Styles
+### アシスタント出力スタイルを切り替える
 
-Select the assistant output style that matches your current goal.
+現在の目標に合わせてアシスタント出力スタイルを選択します。
 
 **Tool Implementations:**
 
@@ -550,9 +552,9 @@ Codex is dry. You can insult it and it doesn't even answer. No personality. Clau
 Codex is monotone straight to the point, but most importantly the reason why it is better is because it's not agreeable at all. It will challenge you when you're suggesting something wrong and stay with its opinion."
 > — [Reddit Community](https://www.reddit.com/r/ClaudeAI/comments/1nk4v4k/comment/nev86ot)
 
-### Choose the Right Model for the Job
+### タスクに適したモデルを選択する
 
-Before starting a new task, choose two levers: the right model (modality, context length, tool-calling reliability, latency, cost) and the right reasoning level (allocate more/less thinking tokens) — don’t default blindly.
+新しいタスクを開始する前に、2つのレバーを選択してください：適切なモデル（モダリティ、コンテキスト長、ツール呼び出しの信頼性、レイテンシ、コスト）と適切な推論レベル（思考トークンを多く/少なく割り当てる）— 盲目的にデフォルトにしないでください。
 
 **Tool Implementations:**
 
@@ -572,9 +574,9 @@ Start with `gpt-5-minimal`/`gpt-5-low` for quick edits; choose a higher‑reason
 
 </details>
 
-### Centralise Memory Files
+### メモリファイルを一元化する
 
-Keep one canonical instruction doc and route every other agent file to it with a shouty pointer line, a symlink, or an @file include so cross-tool guidance stays consistent.
+1つの正規の指示ドキュメントを保持し、他のすべてのエージェントファイルを、目立つポインター行、シンボリックリンク、または@fileインクルードでそれにルーティングして、ツール間のガイダンスが一貫性を保つようにします。
 
 **Tool Implementations:**
 
@@ -709,13 +711,13 @@ Enable full autonomous mode with `codex --full-auto` or use in-session `/mode` c
 
 </details>
 
-### A Session Should Have One Goal
+### セッションには1つの目標があるべき
 
-Use the prompt `The goal of this session is <specific goal>. Inform me if we drift off track.` either at the start of each session or add it to your memory file (AGENTS.md, CLAUDE.md) to prevent context poisoning and increase agent steerability - applying the Single Responsibility Principle to AI conversations.
+`このセッションの目標は<具体的な目標>です。コースから外れたら知らせてください。`というプロンプトを各セッションの開始時に使用するか、メモリファイル（AGENTS.md、CLAUDE.md）に追加して、コンテキストの汚染を防ぎ、エージェントの操縦性を高めます — AI会話に単一責任の原則を適用します。
 
-### Use Feature Sessions
+### 機能セッションを使用する
 
-Isolate each feature or task in separate sessions to reduce context bloat and improve accuracy, just like feature branches in git isolate code changes.
+各機能またはタスクを別々のセッションに分離して、コンテキストの肥大化を減らし、精度を向上させます。gitの機能ブランチがコード変更を分離するのと同じです。
 
 ### Ask Open Questions, Not Leading Ones
 
@@ -749,9 +751,9 @@ Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-
 
 </details>
 
-### Create Rollback Points While Coding
+### コーディング中にロールバックポイントを作成する
 
-Create checkpoints you can revert to when experiments fail—capture known‑good working states before risky changes.
+実験が失敗したときに戻ることができるチェックポイントを作成します—リスクの高い変更の前に既知の良好な動作状態をキャプチャします。
 
 **Tool Implementations:**
 
