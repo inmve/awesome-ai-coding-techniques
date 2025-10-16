@@ -22,7 +22,7 @@ Community-maintained and living. Contributions welcome.
 
 📝 **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md) to share your techniques and experiences
 
-**Available Languages:** [English](README.md) | Español | [Deutsch](README-de.md) | [Français](README-fr.md) | [日本語](README-jp.md) | [Português](README-pt.md)
+**Available Languages:** [English](README.md) | [Español](README-es.md) | [Deutsch](README-de.md) | [Français](README-fr.md) | 日本語 | [Português](README-pt.md)
 
 ## Table of Contents
 - [Requirements & Planning](#requirements--planning)
@@ -152,9 +152,9 @@ Codex automatically reads this file at the start of every session.
 
 </details>
 
-### Pedir Planificar Primero
+### Ask to Plan First
 
-Dile al asistente que delinee pasos, riesgos y pruebas rápidas antes de tocar código para que puedas revisar y ajustar el enfoque.
+Tell the assistant to outline steps, risks, and quick tests before touching code so you can review and adjust the approach.
 
 > "If you want to iterate on the plan, it helps to explicitly include instructions in the prompt to not proceed with implementation until the plan has been accepted by the user."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan)
@@ -182,9 +182,9 @@ Remind Codex to keep planning separate from implementation: list steps, risks, a
 
 </details>
 
-### Desarrollo Basado en Especificaciones: Iterar Hasta que Funcione
+### Spec-Driven Development: Iterate Until Working
 
-Itera sobre especificaciones en Markdown hasta que el asistente genere código funcional - tratando las especificaciones como la fuente de verdad en lugar de escribir código directamente.
+Iterate on specifications in Markdown until the assistant generates working code - treating specs as the source of truth rather than writing code directly.
 
 > "The workflow involves iterating on specifications in Markdown files, asking AI to compile into code, running/testing the app, and updating the spec if something doesn't work as expected. Developers should treat specifications as living documents, constantly updating and refining them to guide AI code generation with increasing precision."
 > — [GitHub Engineering](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/)
@@ -198,9 +198,9 @@ Deliberately pick well-established libraries with good stability that existed be
 > "I gain enough value from LLMs that I now deliberately consider this when picking a library—I try to stick with libraries with good stability and that are popular enough that many examples of them will have made it into the training data. I like applying the principles of boring technology—innovate on your project's unique selling points, stick with tried and tested solutions for everything else."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs)
 
-### Escribir Especificaciones Detalladas
+### Write Detailed Specs
 
-Da especificaciones completas - incluso una especificación conversacional supera las instrucciones vagas.
+Give comprehensive specs - even a conversational spec beats vague instructions.
 
 **Community adoption**: 50% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-specification-driven-development) (n=61)
 
@@ -227,27 +227,27 @@ Run `/model` and pick `gpt-5-codex high` for spec work that benefits from Codex'
 
 </details>
 
-### Obtener Múltiples Opciones
+### Get Multiple Options
 
-Pide al LLM que presente varios enfoques con pros/contras para que puedas elegir la mejor opción.
+Ask LLM to present several approaches with pros/cons so you can choose the best option.
 
 **Community adoption**: 57% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-ai-technology-exploration) (n=51)
 
 > "I'll use prompts like `what are options for HTTP libraries in Rust? Include usage examples`"
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like)
 
-### Leer, Planificar, Codificar, Confirmar
+### Read → Plan → Code → Commit
 
-Haz que explore el código, luego haga un plan, lo implemente y lo confirme.
+Make it explore the code, then make a plan, implement it, and commit.
 
 **Community adoption**: 53% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-explore-plan-code-commit) (n=84)
 
 > "There's a process that I call 'priming' the agent, where instead of having the agent jump straight to performing a task, I have it read additional context upfront to increase the chances that it will produce good outputs."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call)
 
-### Cerebro Primero, IA Segundo
+### Brain First, Assistant Second
 
-Bosqueja la solución tú mismo primero, luego usa asistentes para refinarla.
+Draft the solution yourself first, then use assistants to refine it.
 
 **Community adoption**: 39% didn't adopt • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-brain-first-coding) (n=59)
 
@@ -256,9 +256,9 @@ Bosqueja la solución tú mismo primero, luego usa asistentes para refinarla.
 
 ## UI & Prototyping
 
-### Construir un Prototipo Primero
+### Build a Prototype First
 
-Comienza cada proyecto con un prototipo generado rápido para demostrar que puede funcionar.
+Start every project with a quick generated prototype to prove it can work.
 
 **Community adoption**: 44% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-prototype-first-development) (n=34)
 
@@ -298,29 +298,29 @@ Build projects through conversation rather than traditional coding - talk, accep
 
 ## Coding
 
-### Manejar las Partes Críticas, Delegar el Resto
+### Handle Critical Parts, Delegate the Rest
 
-Escribe tú mismo las partes críticas y complejas del código y delega la implementación directa restante al asistente.
+Write the critical, complex parts of the code yourself and delegate the remaining straightforward implementation to the assistant.
 
 > "Write the critical parts and ask AI to do the rest."
 > — [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest)
 
-### Delegar Tareas Tediosas
+### Offload Tedious Tasks
 
-Delega tareas aburridas, sistemáticas y que consumen tiempo a la IA - desde pequeñas renombraciones de variables hasta grandes migraciones que no requieren pensamiento arquitectónico profundo.
+Delegate boring, systematic, and time-consuming tasks to the assistant - from small variable renames to large migrations that don't require deep architectural thinking.
 
 **Community adoption**: 64% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-offload-tedious-tasks) (n=22)
 
 > "I'm using LLMs, but for dumber things: `rename all occurrences of this parameter`"
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things)
 
-### Confirmar Entendimiento Antes de Codificar
+### Confirm Understanding Before Coding
 
-Pide explícitamente a la herramienta que confirme su entendimiento de la tarea antes de comenzar la implementación para asegurar alineación y reducir expectativas no coincidentes.
+Explicitly ask the tool to confirm its understanding of the task before starting implementation to ensure alignment and reduce mismatched expectations.
 
-### Tratar la IA como un Interno Digital
+### Treat the Assistant as a Digital Intern
 
-Da a la IA instrucciones extremadamente precisas y detalladas como lo harías con un interno - proporciona firmas de función exactas y deja que maneje la implementación.
+Give the assistant extremely precise, detailed instructions like you would to an intern - provide exact function signatures and let it handle implementation.
 
 **Community adoption**: 60% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-treat-ai-as-intern) (n=20)
 
@@ -345,9 +345,9 @@ Start by dumping existing code into the chat to seed the context, then modify fr
 > "I often start a new chat by dumping in existing code to seed that context, then work with the LLM to modify it in some way."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat)
 
-### Definir Estructura, Delegar Implementación
+### Define Structure, Delegate Implementation
 
-Proporciona la estructura - firmas de función, esquemas de código o andamiaje - y deja que el asistente complete los detalles de implementación.
+Provide the structure - function signatures, code outlines, or scaffolding - and let the assistant fill in the implementation details.
 
 **Community adoption**: 35% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-precise-function-specification) (n=23)
 
@@ -390,18 +390,18 @@ Design systems with comprehensive logging so agents can read logs to understand 
 > "In general logging is super important. For instance my app currently has a sign in and register flow that sends an email to the user. In debug mode (which the agent runs in), the email is just logged to stdout. This is crucial! It allows the agent to complete a full sign-in with a remote controlled browser without extra assistance. It knows that emails are being logged thanks to a CLAUDE.md instruction and it automatically consults the log for the necessary link to click."
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important)
 
-### Deja que se Pruebe y se Arregle Solo
+### Let It Test and Fix Itself
 
-Configura herramientas para hacer cambios, ejecutar pruebas, ver qué falla, e intentar de nuevo por su cuenta.
+Set up tools to make changes, run tests, see what fails, and try again on their own.
 
 **Community adoption**: 27% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-ai-feedback-loops) (n=22)
 
 > "Claude is most useful when it's capable of independently driving feedback loops that allow it to make a change, test the change, and gather context on what failed to try another iteration."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=Claude%20is%20most%20useful%20when)
 
-### Usar Subagentes para Verificar Dos Veces
+### Use Subagents to Double-Check
 
-Generar subagentes para verificar detalles o investigar preguntas específicas.
+Spawn subagents to verify details or investigate specific questions.
 
 **Community adoption**: 22% didn't adopt • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-subagent-verification) (n=23)
 
@@ -437,16 +437,16 @@ After the assistant completes work, manually iterate and refine the implementati
 > "I almost always go in after an AI does work and iterate myself for awhile, too."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in)
 
-### Tratar el Código de la IA como Pull Request
+### Treat AI Code as Pull Request
 
-Revisa el código generado por la IA como si fuera un pull request de un colega, proporcionando comentarios iterativos para que el asistente los aborde en lugar de editarlo directamente tú mismo.
+Review AI-generated code as if it were a colleague's pull request, providing iterative feedback comments for the assistant to address rather than editing directly yourself.
 
 > "treating the generated code as a Merge Request on which you submit comment for correction"
 > — [HN Discussion](https://news.ycombinator.com/item?id=45415232)
 
-### Pedir al Agente que Revise su Propio Código
+### Ask the Agent to Review Its Own Code
 
-Haz que la IA realice una revisión de código de su propio trabajo antes de la revisión humana para descubrir problemas y mejoras.
+Have the assistant perform a code review on its own work before human review to surface issues and improvements.
 
 > "Asking the agent to perform a code review on its own work is surprisingly fruitful."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review)
@@ -487,9 +487,9 @@ Review changes in diff view and type corrections directly into the diff before c
 > "I manually review all AI-written code and test cases. I'll add test cases for anything I think is missing or needs improvement, either manually or by asking the LLM to write those cases (which I then review)."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all)
 
-### Uno Escribe, Otro Revisa
+### One Writes, Another Reviews
 
-Haz que un agente escriba código, luego usa un agente nuevo para revisar y encontrar problemas.
+Have one agent write code, then use a fresh agent to review and find problems.
 
 **Community adoption**: 31% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-multi-agent-verification) (n=16)
 
@@ -528,9 +528,9 @@ Styles replace Claude Code's default system prompt, unlike `CLAUDE.md` (user mes
 
 </details>
 
-### Limpiar Contexto Entre Tareas
+### Clear Context Between Tasks
 
-Reinicia la ventana de contexto de la IA entre tareas no relacionadas para prevenir confusión y mejorar el rendimiento en nuevos problemas.
+Reset the assistant's context window between unrelated tasks to prevent confusion and improve performance on new problems.
 
 **Community adoption**: 67% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-clear-context-between-tasks) (n=15)
 
@@ -631,9 +631,9 @@ Use assistants to learn new languages and concepts, then apply that knowledge wh
 > "I'm leveraging them to learn Go, to upskill myself. And then I apply this new knowledge when I code."
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go)
 
-### Usar Énfasis Fuerte en Prompts
+### Use Strong Emphasis in Prompts
 
-Usa IMPORTANTE, NUNCA, SIEMPRE liberalmente en prompts para dirigir a la IA lejos de errores comunes - sigue siendo el enfoque más efectivo.
+Use IMPORTANT, NEVER, ALWAYS liberally in prompts to steer the model away from common mistakes - it's still the most effective approach.
 
 **Community adoption**: 50% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-use-strong-emphasis-words) (n=14)
 
@@ -717,9 +717,9 @@ Use the prompt `The goal of this session is <specific goal>. Inform me if we dri
 
 Isolate each feature or task in separate sessions to reduce context bloat and improve accuracy, just like feature branches in git isolate code changes.
 
-### Haz Preguntas Abiertas, No Dirigidas
+### Ask Open Questions, Not Leading Ones
 
-Evita preguntas como '¿Tengo razón en que...?' - en su lugar, pide pros/contras, alternativas y '¿Qué me estoy perdiendo?' para contrarrestar la tendencia del LLM a estar de acuerdo.
+Avoid 'Am I right that...' questions - instead ask for pros/cons, alternatives, and 'What am I missing?' to counteract LLM's tendency to agree.
 
 > "My best current technique for avoiding this is a bit of role-play that gives the coding agent a reason not to blindly trust the code review... 'A reviewer did some analysis of this PR. They're external, so reading the codebase cold... 1) should we hire this reviewer 2) which of the issues they've flagged should be fixed?'"
 > — [Jesse Vincent](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=My%20best%20current%20technique)
@@ -749,9 +749,9 @@ Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-
 
 </details>
 
-### Crear Puntos de Rollback Mientras Codificas
+### Create Rollback Points While Coding
 
-Crea checkpoints a los que puedes volver cuando los experimentos fallan—captura estados de trabajo conocidos como buenos antes de cambios riesgosos.
+Create checkpoints you can revert to when experiments fail—capture known‑good working states before risky changes.
 
 **Tool Implementations:**
 
