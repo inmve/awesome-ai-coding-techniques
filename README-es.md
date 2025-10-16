@@ -1,3 +1,7 @@
+**Available Languages:** [English](README.md) | Español | [Deutsch](README-de.md) | [Français](README-fr.md) | [日本語](README-jp.md) | [Português](README-pt.md)
+
+---
+
 > **Active Development** - Updated October 17, 2025
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
@@ -23,8 +27,6 @@ Community-maintained and living. Contributions welcome.
 🚀 **Live site**: [coding-with-ai.dev](https://coding-with-ai.dev)
 
 📝 **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md) to share your techniques and experiences
-
-**Available Languages:** [English](README.md) | Español | [Deutsch](README-de.md) | [Français](README-fr.md) | [日本語](README-jp.md) | [Português](README-pt.md)
 
 ## Table of Contents
 - [Requirements & Planning](#requirements--planning)
