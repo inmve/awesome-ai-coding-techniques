@@ -2,6 +2,11 @@
 
 All notable changes to the Awesome AI Coding Techniques collection are documented here.
 
+## October 21, 2025
+
+### Changed
+- Updated active development date to October 21, 2025 across all README files
+
 ## October 10, 2025 - v0.6
 
 ### Changed
