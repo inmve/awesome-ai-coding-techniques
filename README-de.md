@@ -1,4 +1,5 @@
 > **Aktive Entwicklung** — Aktualisiert am 21. Oktober 2025
+> **Neu beim Programmieren mit KI?** — [hier lesen](https://coding-with-ai.dev/posts/talking-to-computers/)
 > Neueste: Neue Planungs- und Modellauswahl-Techniken hinzugefügt
 > [Alle Updates ansehen →](CHANGELOG.md)
 

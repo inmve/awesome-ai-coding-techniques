@@ -1,4 +1,5 @@
 > **アクティブな開発** — 2025年10月21日更新
+> **AIコーディングは初めて？** — [こちらをお読みください](https://coding-with-ai.dev/posts/talking-to-computers/)
 > 最新：新しいプランニングとモデル選択技術を追加
 > [すべての更新を見る →](CHANGELOG.md)
 
