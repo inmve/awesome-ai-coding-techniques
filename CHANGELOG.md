@@ -5,10 +5,11 @@ All notable changes to the Awesome AI Coding Techniques collection are documente
 ## October 21, 2025
 
 ### Added
-- Added "New to coding with AI?" link to blog post about talking to computers at the top of all README files
+- Added new blog post "Coding with LLMs: We can talk to computers now and we're upset about it" at the top of all README files
 
 ### Changed
 - Updated active development date to October 21, 2025 across all README files
+- Removed "How to use Claude Code together with Codex or Cursor" link from README header
 
 ## October 10, 2025 - v0.6
 
