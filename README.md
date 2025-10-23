@@ -1,5 +1,5 @@
-> **Active Development** - Updated October 13, 2025
-> [How to use Claude Code together with Codex or Cursor](https://coding-with-ai.dev/posts/sync-claude-code-codex-cursor-memory/)
+> **Active Development** - Updated October 21, 2025
+> **New post:** [Coding with LLMs: We can talk to computers now and we're upset about it](https://coding-with-ai.dev/posts/talking-to-computers/)
 >
 > **Note:** For the best experience, visit the [website](https://coding-with-ai.dev) where you can see the popularity of each technique based on community engagement and discover which approaches developers find most valuable.
 

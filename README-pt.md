@@ -1,4 +1,5 @@
-> **Desenvolvimento Ativo** — Atualizado em 10 de outubro de 2025
+> **Desenvolvimento Ativo** — Atualizado em 21 de outubro de 2025
+> **Novo post:** [Coding with LLMs: We can talk to computers now and we're upset about it](https://coding-with-ai.dev/posts/talking-to-computers/)
 > [Ver todas as atualizações →](CHANGELOG.md)
 >
 > **Nota:** Para a melhor experiência, visite o [site](https://coding-with-ai.dev) onde você pode ver a popularidade de cada técnica com base no engajamento da comunidade e descobrir quais abordagens os desenvolvedores consideram mais valiosas.

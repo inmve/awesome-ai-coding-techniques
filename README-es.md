@@ -1,5 +1,5 @@
-> **Desarrollo Activo** - Actualizado 10 de octubre de 2025
-> [Cómo usar Claude Code junto con Codex o Cursor](https://coding-with-ai.dev/posts/sync-claude-code-codex-cursor-memory/)
+> **Desarrollo Activo** - Actualizado 21 de octubre de 2025
+> **Nueva publicación:** [Coding with LLMs: We can talk to computers now and we're upset about it](https://coding-with-ai.dev/posts/talking-to-computers/)
 
 **Idiomas disponibles:** [English](README.md) | [Español](README-es.md) | [Deutsch](README-de.md) | [Français](README-fr.md) | [日本語](README-ja.md)
 

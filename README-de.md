@@ -1,4 +1,5 @@
-> **Aktive Entwicklung** — Aktualisiert am 10. Oktober 2025
+> **Aktive Entwicklung** — Aktualisiert am 21. Oktober 2025
+> **Neuer Beitrag:** [Coding with LLMs: We can talk to computers now and we're upset about it](https://coding-with-ai.dev/posts/talking-to-computers/)
 > Neueste: Neue Planungs- und Modellauswahl-Techniken hinzugefügt
 > [Alle Updates ansehen →](CHANGELOG.md)
 

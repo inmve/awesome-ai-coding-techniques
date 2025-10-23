@@ -1,4 +1,5 @@
-> **アクティブな開発** — 2025年10月10日更新
+> **アクティブな開発** — 2025年10月21日更新
+> **新しい記事：** [Coding with LLMs: We can talk to computers now and we're upset about it](https://coding-with-ai.dev/posts/talking-to-computers/)
 > 最新：新しいプランニングとモデル選択技術を追加
 > [すべての更新を見る →](CHANGELOG.md)
 
