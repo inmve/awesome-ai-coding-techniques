@@ -1,4 +1,4 @@
-**Available Languages:** English | [Español](README-es.md) | [Deutsch](README-de.md) | [Français](README-fr.md) | [日本語](README-jp.md) | [Português](README-pt.md)
+**Available Languages:** [English](README.md) | [Español](README-es.md) | [Deutsch](README-de.md) | [Français](README-fr.md) | 日本語 | [Português](README-pt.md)
 
 ---
 
@@ -39,9 +39,9 @@ Community-maintained and living. Contributions welcome.
 
 ## Requirements & Planning
 
-### Set Up Memory Files
+### メモリファイルを設定する
 
-Create context files that persistently guide tools about your project's structure, standards, and preferences.
+プロジェクトの構造、標準、設定を永続的にガイドするコンテキストファイルを作成します。
 
 **Community adoption**: 81% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-contextual-documentation) (n=85)
 
@@ -53,110 +53,110 @@ Create context files that persistently guide tools about your project's structur
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-**For new projects:**
-Run `/init` in your project root to create a starter `CLAUDE.md`.
+**新規プロジェクトの場合:**
+プロジェクトルートで`/init`を実行すると、スターター`CLAUDE.md`が作成されます。
 
-**For existing codebases:**
-Run `/init` and Claude will analyze your project structure, dependencies, and configuration files to automatically generate essential information for working effectively in your codebase.
+**既存のコードベースの場合:**
+`/init`を実行すると、Claudeがプロジェクト構造、依存関係、設定ファイルを分析し、コードベースで効果的に作業するために必要な情報を自動的に生成します。
 
-Claude examines:
-• `package.json` - Build scripts, dependencies, project metadata
-• Configuration files - `.eslintrc`, `vite.config.js`, `tsconfig.json`
-• Project structure - Component patterns, folder organization
-• Documentation - `README.md`, existing rules files
+Claudeが検査する内容:
+• `package.json` - ビルドスクリプト、依存関係、プロジェクトメタデータ
+• 設定ファイル - `.eslintrc`、`vite.config.js`、`tsconfig.json`
+• プロジェクト構造 - コンポーネントパターン、フォルダ構成
+• ドキュメント - `README.md`、既存のルールファイル
 
-The generated CLAUDE.md includes:
-• **Essential commands** - `npm run dev`, `npm test`, `npm run build`
-• **Technology stack** - Frameworks, libraries, tools identified
-• **Architecture overview** - Component patterns, state management, routing
-• **Key conventions** - Code style, file organization, testing approach
-• **Common gotchas** - Build issues, configuration quirks, workflow notes
+生成されるCLAUDE.mdの内容:
+• **必須コマンド** - `npm run dev`、`npm test`、`npm run build`
+• **技術スタック** - 特定されたフレームワーク、ライブラリ、ツール
+• **アーキテクチャ概要** - コンポーネントパターン、状態管理、ルーティング
+• **主要な規約** - コードスタイル、ファイル構成、テストアプローチ
+• **よくある落とし穴** - ビルドの問題、設定の癖、ワークフローのメモ
 
-**Memory file hierarchy:**
-• `~/.claude/CLAUDE.md` - your personal coding preferences (global)
-• `./CLAUDE.md` - project team standards (project-specific)
+**メモリファイルの階層:**
+• `~/.claude/CLAUDE.md` - あなた個人のコーディング設定（グローバル）
+• `./CLAUDE.md` - プロジェクトチームの標準（プロジェクト固有）
 
-**Quick editing:**
-• `/memory` - full editor interface
-• `#` - quick shortcut to add notes
+**クイック編集:**
+• `/memory` - 完全なエディタインターフェース
+• `#` - メモを追加するためのクイックショートカット
 
-**Pro tips:**
-• Review and customize the generated content for your specific project needs
-• Add gotchas you discover: "Never edit files in /generated/", "Always restart after config changes"
-• Link to project docs: `@docs/deployment.md`, `@architecture.md`
-• Iteratively improve - when you find yourself repeating instructions to Claude, add them to CLAUDE.md
-• Share with your team by committing CLAUDE.md to version control
+**プロのヒント:**
+• 生成されたコンテンツをプロジェクトの特定のニーズに合わせてレビューとカスタマイズを行う
+• 発見した落とし穴を追加: 「/generated/のファイルは絶対に編集しない」、「設定変更後は必ず再起動」
+• プロジェクトドキュメントへのリンク: `@docs/deployment.md`、`@architecture.md`
+• 反復的に改善 - Claudeに同じ指示を繰り返していることに気付いたら、CLAUDE.mdに追加する
+• CLAUDE.mdをバージョン管理にコミットしてチームと共有する
 
 </details>
 
 <details>
 <summary><strong>Cursor</strong></summary>
 
-**Create `AGENTS.md` at project root:**
-Cursor reads this file (also supports legacy `.cursorrules`) for consistent project guidance.
+**プロジェクトルートに`AGENTS.md`を作成:**
+Cursorはこのファイル（レガシーの`.cursorrules`もサポート）を読み込み、一貫したプロジェクトガイダンスを提供します。
 
-**The AGENTS.md file should include:**
-• **Essential commands** - `npm run dev`, `npm test`, `npm run build`
-• **Technology stack** - Frameworks, libraries, tools in your project
-• **Code style guidelines** - Naming conventions, preferred patterns
-• **Architecture overview** - Component structure, API routes, file organization
-• **Common gotchas** - Build issues, workflow requirements, restrictions
+**AGENTS.mdファイルに含めるべき内容:**
+• **必須コマンド** - `npm run dev`、`npm test`、`npm run build`
+• **技術スタック** - プロジェクト内のフレームワーク、ライブラリ、ツール
+• **コードスタイルガイドライン** - 命名規則、推奨パターン
+• **アーキテクチャ概要** - コンポーネント構造、APIルート、ファイル構成
+• **よくある落とし穴** - ビルドの問題、ワークフロー要件、制約
 
-**Real-time context (@-mentions):**
-• **@codebase** - pull in relevant files from your entire project automatically
-• **@docs** - reference your project documentation  
-• **@git** - understand what you've changed recently
-• **@web** - get the latest patterns and examples from the internet
+**リアルタイムコンテキスト（@メンション）:**
+• **@codebase** - プロジェクト全体から関連ファイルを自動的に取り込む
+• **@docs** - プロジェクトドキュメントを参照
+• **@git** - 最近の変更内容を理解
+• **@web** - インターネットから最新のパターンと例を取得
 
-**Project rules hierarchy:**
-• Global rules in `.cursor/rules` directory
-• Project-specific rules in `AGENTS.md`
-• Path-specific rules with gitignore-style matching
+**プロジェクトルールの階層:**
+• `.cursor/rules`ディレクトリのグローバルルール
+• `AGENTS.md`のプロジェクト固有ルール
+• gitignoreスタイルのマッチングによるパス固有ルール
 
-**Pro tips:**
-• Combine static rules (AGENTS.md) with dynamic context (@-mentions)
-• Use @codebase when you need Cursor to understand the full project context
-• Keep AGENTS.md focused on project-specific conventions and gotchas
-• Let @-mentions handle the heavy lifting for code understanding
+**プロのヒント:**
+• 静的ルール（AGENTS.md）と動的コンテキスト（@メンション）を組み合わせる
+• Cursorにプロジェクト全体のコンテキストを理解させたい場合は@codebaseを使用
+• AGENTS.mdはプロジェクト固有の規約と落とし穴に焦点を当てる
+• コード理解の重い作業は@メンションに任せる
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-**Create `AGENTS.md` at project root:**
-Codex automatically reads this file at the start of every session.
+**プロジェクトルートに`AGENTS.md`を作成:**
+Codexはセッション開始時にこのファイルを自動的に読み込みます。
 
-**The AGENTS.md file should include:**
-• **Essential commands** - `npm run dev`, `npm test`, `npm run build`
-• **Technology stack** - Frameworks, libraries, tools in your project
-• **Code style guidelines** - Naming conventions, preferred patterns
-• **Architecture notes** - Component structure, file organization
-• **Security rules** - Environment variables, input validation requirements
-• **Project gotchas** - Common mistakes, build quirks, workflow notes
+**AGENTS.mdファイルに含めるべき内容:**
+• **必須コマンド** - `npm run dev`、`npm test`、`npm run build`
+• **技術スタック** - プロジェクト内のフレームワーク、ライブラリ、ツール
+• **コードスタイルガイドライン** - 命名規則、推奨パターン
+• **アーキテクチャメモ** - コンポーネント構造、ファイル構成
+• **セキュリティルール** - 環境変数、入力検証要件
+• **プロジェクトの落とし穴** - よくあるミス、ビルドの癖、ワークフローメモ
 
-**Monorepo support:**
-• Put `AGENTS.md` in each package directory
-• Codex uses the closest one to your working directory
-• Get package-specific guidance automatically
+**モノレポのサポート:**
+• 各パッケージディレクトリに`AGENTS.md`を配置
+• Codexは作業ディレクトリに最も近いものを使用
+• パッケージ固有のガイダンスを自動的に取得
 
-**Visual context (Codex's unique strength):**
-• Drag and drop screenshots directly into your chat
-• Include UI mockups and design files
-• Share architecture diagrams and flowcharts
-• Perfect for implementing designs or explaining complex systems
+**ビジュアルコンテキスト（Codexのユニークな強み）:**
+• スクリーンショットをチャットに直接ドラッグ＆ドロップ
+• UIモックアップやデザインファイルを含める
+• アーキテクチャ図やフローチャートを共有
+• デザインの実装や複雑なシステムの説明に最適
 
-**Pro tips:**
-• Keep your AGENTS.md updated as your project evolves
-• Add common mistakes you want to avoid: "Never edit files in /generated/"
-• Include build dependencies and setup requirements
-• Document any special deployment or testing procedures
+**プロのヒント:**
+• プロジェクトの進化に合わせてAGENTS.mdを更新し続ける
+• 避けたいよくあるミスを追加: 「/generated/のファイルは絶対に編集しない」
+• ビルド依存関係とセットアップ要件を含める
+• 特別なデプロイやテスト手順をドキュメント化する
 
 </details>
 
-### Ask to Plan First
+### まず計画を依頼する
 
-Tell the assistant to outline steps, risks, and quick tests before touching code so you can review and adjust the approach.
+コードに触れる前に、ステップ、リスク、簡単なテストの概要を説明するようアシスタントに指示し、アプローチを確認して調整できるようにします。
 
 > "If you want to iterate on the plan, it helps to explicitly include instructions in the prompt to not proceed with implementation until the plan has been accepted by the user."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan)
@@ -166,90 +166,90 @@ Tell the assistant to outline steps, risks, and quick tests before touching code
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Hit `Shift+Tab` to drop into Plan Mode so it only reads and drafts. Use the shared planning prompt, iterate until it looks right, then exit Plan Mode when you green-light implementation.
+`Shift+Tab`を押してプランモードに入ると、読み取りとドラフト作成のみを行います。共有プランニングプロンプトを使用し、適切に見えるまで反復し、実装を承認したらプランモードを終了します。
 
 </details>
 
 <details>
 <summary><strong>Cursor</strong></summary>
 
-Click the Plan toggle in Cursor so it stays read-only while you iterate. Have it list steps, impacted files, risks, and quick tests, then exit Plan Mode to open the diff once you green-light implementation.
+Cursorのプラントグルをクリックすると、反復中は読み取り専用のままになります。ステップ、影響を受けるファイル、リスク、クイックテストをリストアップさせ、実装を承認したらプランモードを終了して差分を開きます。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Remind Codex to keep planning separate from implementation: list steps, risks, and quick tests, pause for your review, then let it implement and inspect the diff once approved.
+Codexに計画と実装を分けるよう注意します：ステップ、リスク、クイックテストをリストアップし、レビューのために一時停止し、承認後に実装させて差分を検査します。
 
 </details>
 
-### Plan with High-Capacity Model
+### 高容量モデルで計画する
 
-When gathering requirements or drafting specs, temporarily switch to a higher-capability model or extended reasoning mode so it can read, synthesize, and propose a plan before coding.
+要件を収集したり仕様を作成したりするときは、一時的により高性能なモデルまたは拡張推論モードに切り替えて、コーディング前に読み取り、合成、計画を提案できるようにします。
 
 **Tool Implementations:**
 
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Run `/model` and pick `opus` (or another higher tier) when scoping requirements so it can reason deeply, then use Plan Mode if you want it to stay read-only until you approve edits.
+`/model`を実行し、要件をスコープするときに`opus`（または別の高ティア）を選択すると、深く推論できます。編集を承認するまで読み取り専用にしたい場合はプランモードを使用します。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Run `/model` and pick `gpt-5-codex high` for spec work that benefits from Codex's coding bias, or choose `gpt-5 high` when you need broader reasoning. Step back to your usual tier once the plan is approved.
+`/model`を実行し、Codexのコーディングバイアスが役立つ仕様作業には`gpt-5-codex high`を選択するか、より広範な推論が必要な場合は`gpt-5 high`を選択します。計画が承認されたら通常のティアに戻ります。
 
 </details>
 
-### Spec-Driven Development: Iterate Until Working
+### 仕様駆動開発：動作するまで反復する
 
-Iterate on specifications in Markdown until the assistant generates working code - treating specs as the source of truth rather than writing code directly.
+アシスタントが動作するコードを生成するまでMarkdownで仕様を反復します - 直接コードを書くのではなく、仕様を真実の源として扱います。
 
 > "The workflow involves iterating on specifications in Markdown files, asking AI to compile into code, running/testing the app, and updating the spec if something doesn't work as expected. Developers should treat specifications as living documents, constantly updating and refining them to guide AI code generation with increasing precision."
 > — [GitHub Engineering](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/)
 
-### Choose Boring, Stable Libraries
+### 退屈で安定したライブラリを選ぶ
 
-Deliberately pick well-established libraries with good stability that existed before model training cutoff dates for better LLM-assisted code generation.
+モデルのトレーニングカットオフ日より前に存在していた、優れた安定性を持つ確立されたライブラリを意図的に選択して、LLM支援のコード生成を向上させます。
 
 **Community adoption**: 64% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-choose-boring-stable-libraries) (n=43)
 
 > "I gain enough value from LLMs that I now deliberately consider this when picking a library—I try to stick with libraries with good stability and that are popular enough that many examples of them will have made it into the training data. I like applying the principles of boring technology—innovate on your project's unique selling points, stick with tried and tested solutions for everything else."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs)
 
-### Write Detailed Specs
+### 詳細な仕様を書く
 
-Give comprehensive specs - even a conversational spec beats vague instructions.
+包括的な仕様を提供します - 会話形式の仕様でさえ、曖昧な指示を上回ります。
 
 **Community adoption**: 50% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-specification-driven-development) (n=61)
 
 > "Here's a recent example: `Write a Python function that uses asyncio httpx with this signature:` `async def download_db(url, max_size_bytes=5 * 1025 * 1025): -> pathlib.Path`. Given a URL, this downloads the database to a temp directory and returns a path to it. BUT it checks the content length header at the start of streaming back that data and, if it's more than the limit, raises an error... I find LLMs respond extremely well to function signatures like the one I use here."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example)
 
-### Get Multiple Options
+### 複数のオプションを取得する
 
-Ask LLM to present several approaches with pros/cons so you can choose the best option.
+LLMに賛否両論を含むいくつかのアプローチを提示させて、最適なオプションを選択できるようにします。
 
 **Community adoption**: 57% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-ai-technology-exploration) (n=51)
 
 > "I'll use prompts like `what are options for HTTP libraries in Rust? Include usage examples`"
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like)
 
-### Read → Plan → Code → Commit
+### 読む → 計画 → コード → コミット
 
-Make it explore the code, then make a plan, implement it, and commit.
+コードを探索させ、計画を立て、実装し、コミットさせます。
 
 **Community adoption**: 53% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-explore-plan-code-commit) (n=84)
 
 > "There's a process that I call 'priming' the agent, where instead of having the agent jump straight to performing a task, I have it read additional context upfront to increase the chances that it will produce good outputs."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call)
 
-### Brain First, Assistant Second
+### 脳が最初、アシスタントは次
 
-Draft the solution yourself first, then use assistants to refine it.
+まず自分で解決策を下書きし、次にアシスタントを使って洗練します。
 
 **Community adoption**: 39% didn't adopt • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-brain-first-coding) (n=59)
 
@@ -258,40 +258,40 @@ Draft the solution yourself first, then use assistants to refine it.
 
 ## UI & Prototyping
 
-### Build a Prototype First
+### まずプロトタイプを構築する
 
-Start every project with a quick generated prototype to prove it can work.
+すべてのプロジェクトを、機能することを証明するための迅速に生成されたプロトタイプから始めます。
 
 **Community adoption**: 44% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-prototype-first-development) (n=34)
 
 > "The best way to start any project is with a prototype that proves that the key requirements of that project can be met. I often find that an LLM can get me to that working prototype within a few minutes of me sitting down with my laptop—or sometimes even while working on my phone."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20best%20way%20to%20start%20any%20project)
 
-### Show Screenshots
+### スクリーンショットを見せる
 
-Drop in screenshots and iterate - take a screenshot of the result, compare, repeat.
+スクリーンショットを入れて反復します - 結果のスクリーンショットを撮り、比較し、繰り返します。
 
 **Community adoption**: 38% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-visual-iteration-technique) (n=29)
 
 > "Give Claude a visual mock by copying / pasting or drag-dropping an image... take screenshots of the result, and iterate until its result matches the mock."
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock)
 
-### Ask for ASCII Wireframes
+### ASCIIワイヤーフレームを依頼する
 
-When refining layouts, have the assistant sketch ASCII wireframes so you can evaluate hierarchy and spacing before touching CSS.
+レイアウトを洗練するときは、アシスタントにASCIIワイヤーフレームをスケッチさせて、CSSに触れる前に階層と間隔を評価できるようにします。
 
-### Make It More Beautiful
+### もっと美しくする
 
-Just ask to make the UI `more beautiful` or `more elegant` - it works.
+UIを`もっと美しく`または`もっとエレガントに`するように頼むだけで - 機能します。
 
 **Community adoption**: 21% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-iterative-ui-refinement) (n=33)
 
 > "If Claude doesn't produce a well-designed UI the first time, you can just tell it to `make it more beautiful/elegant/usable`."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20Claude%20doesn't%20produce)
 
-### Vibe Coding
+### バイブコーディング
 
-Build projects through conversation rather than traditional coding - talk, accept changes, and iterate until it works.
+従来のコーディングの代わりに会話を通じてプロジェクトを構築します - 話し、変更を受け入れ、動作するまで反復します。
 
 **Community adoption**: 30% didn't adopt • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-experimental-vibe-coding) (n=47)
 
@@ -300,74 +300,74 @@ Build projects through conversation rather than traditional coding - talk, accep
 
 ## Coding
 
-### Handle Critical Parts, Delegate the Rest
+### 重要な部分を扱い、残りを委任する
 
-Write the critical, complex parts of the code yourself and delegate the remaining straightforward implementation to the assistant.
+コードの重要で複雑な部分は自分で書き、残りの単純な実装をアシスタントに委任します。
 
 > "Write the critical parts and ask AI to do the rest."
 > — [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest)
 
-### Offload Tedious Tasks
+### 退屈なタスクをオフロードする
 
-Delegate boring, systematic, and time-consuming tasks to the assistant - from small variable renames to large migrations that don't require deep architectural thinking.
+退屈で、体系的で、時間のかかるタスクをアシスタントに委任します - 小さな変数の名前変更から、深いアーキテクチャ思考を必要としない大きな移行まで。
 
 **Community adoption**: 64% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-offload-tedious-tasks) (n=22)
 
 > "I'm using LLMs, but for dumber things: `rename all occurrences of this parameter`"
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things)
 
-### Confirm Understanding Before Coding
+### コーディング前に理解を確認する
 
-Explicitly ask the tool to confirm its understanding of the task before starting implementation to ensure alignment and reduce mismatched expectations.
+実装を開始する前に、ツールにタスクの理解を明示的に確認させて、整合性を確保し、期待のずれを減らします。
 
-### Treat the Assistant as a Digital Intern
+### アシスタントをデジタルインターンとして扱う
 
-Give the assistant extremely precise, detailed instructions like you would to an intern - provide exact function signatures and let it handle implementation.
+アシスタントに、インターンに対するように、極めて正確で詳細な指示を与えます - 正確な関数シグネチャを提供し、実装を扱わせます。
 
 **Community adoption**: 60% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-treat-ai-as-intern) (n=20)
 
 > "Once I've completed the initial research I change modes dramatically. For production code my LLM usage is much more authoritarian: I treat it like a digital intern, hired to type code for me based on my detailed instructions."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20treat%20it%20like%20a%20digital%20intern)
 
-### Keep Code Dead Simple
+### コードを非常にシンプルに保つ
 
-Write straightforward code with clear function names, avoid inheritance and clever hacks - simple code works better with assistants.
+明確な関数名を持つわかりやすいコードを書き、継承や巧妙なハックを避けます - シンプルなコードはアシスタントでより良く機能します。
 
 **Community adoption**: 40% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-keep-code-dead-simple) (n=20)
 
 > "Simple code significantly outperforms complex code in agentic contexts. I just recently wrote about ugly code and I think in the context of agents this is worth re-reading. Have the agent do `the dumbest possible thing that will work`."
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Simple%20code%20significantly%20outperforms%20complex%20code)
 
-### Prime with Existing Code
+### 既存のコードでプライミングする
 
-Start by dumping existing code into the chat to seed the context, then modify from there.
+既存のコードをチャットに投入してコンテキストをシードし、そこから変更します。
 
 **Community adoption**: 36% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-context-priming) (n=31)
 
 > "I often start a new chat by dumping in existing code to seed that context, then work with the LLM to modify it in some way."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat)
 
-### Define Structure, Delegate Implementation
+### 構造を定義し、実装を委任する
 
-Provide the structure - function signatures, code outlines, or scaffolding - and let the assistant fill in the implementation details.
+構造 - 関数シグネチャ、コードのアウトライン、または足場を提供し、アシスタントに実装の詳細を埋めさせます。
 
 **Community adoption**: 35% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-precise-function-specification) (n=23)
 
 > "I find LLMs respond extremely well to function signatures like the one I use here. I get to act as the function designer, the LLM does the work of building the body to my specification. I'll often follow-up with `Now write me the tests using pytest`. Again, I dictate my technology of choice—I want the LLM to save me the time of having to type out the code that's sitting in my head already."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20find%20LLMs%20respond%20extremely%20well)
 
-### Provide Context for New Libraries
+### 新しいライブラリのコンテキストを提供する
 
-When using libraries outside the model's training data, feed it recent examples and documentation to teach it how the library works.
+モデルのトレーニングデータ外のライブラリを使用する場合は、最近の例とドキュメントを提供して、ライブラリの動作を教えます。
 
 **Community adoption**: 35% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-providing-context-for-unfamiliar-apis) (n=20)
 
 > "LLMs can still help you work with libraries that exist outside their training data, but you need to put in more work—you'll need to feed them recent examples of how those libraries should be used as part of your prompt."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=LLMs%20can%20still%20help%20you%20work%20with%20libraries)
 
-### Generate Code, Not Dependencies
+### コードを生成し、依存関係は生成しない
 
-Write custom code rather than pulling in more libraries when working with assistants.
+アシスタントと作業するときは、より多くのライブラリを導入するのではなく、カスタムコードを記述します。
 
 **Community adoption**: 27% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-conservative-dependency-management) (n=30)
 
@@ -376,34 +376,34 @@ Write custom code rather than pulling in more libraries when working with assist
 
 ## Debugging
 
-### Pivot When Assistant Struggles
+### アシスタントが苦労したら方向転換する
 
-When the assistant repeatedly fails to solve a specific problem, pivot to an alternative approach rather than persisting with the same solution.
+アシスタントが特定の問題を繰り返し解決できない場合は、同じ解決策を続けるのではなく、代替アプローチに方向転換します。
 
 > "It's at this point that I know I need to step back, review what it did, and come up with my own plans. It's time to educate myself and think critically. AI is no longer the solution; it is a liability."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point)
 
-### Log Everything for Assistant Debugging
+### アシスタントデバッグのためにすべてをログに記録する
 
-Design systems with comprehensive logging so agents can read logs to understand what's happening and self-diagnose issues.
+包括的なログ記録を備えたシステムを設計して、エージェントがログを読んで何が起こっているかを理解し、問題を自己診断できるようにします。
 
 **Community adoption**: 35% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-log-everything-for-debugging) (n=17)
 
 > "In general logging is super important. For instance my app currently has a sign in and register flow that sends an email to the user. In debug mode (which the agent runs in), the email is just logged to stdout. This is crucial! It allows the agent to complete a full sign-in with a remote controlled browser without extra assistance. It knows that emails are being logged thanks to a CLAUDE.md instruction and it automatically consults the log for the necessary link to click."
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important)
 
-### Let It Test and Fix Itself
+### テストして自分で修正させる
 
-Set up tools to make changes, run tests, see what fails, and try again on their own.
+変更を加え、テストを実行し、失敗したものを確認し、自分で再試行するツールを設定します。
 
 **Community adoption**: 27% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-ai-feedback-loops) (n=22)
 
 > "Claude is most useful when it's capable of independently driving feedback loops that allow it to make a change, test the change, and gather context on what failed to try another iteration."
 > — [Indragie Karunaratne](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=Claude%20is%20most%20useful%20when)
 
-### Use Subagents to Double-Check
+### サブエージェントを使用してダブルチェックする
 
-Spawn subagents to verify details or investigate specific questions.
+詳細を確認したり、特定の質問を調査したりするためにサブエージェントを生成します。
 
 **Community adoption**: 22% didn't adopt • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-subagent-verification) (n=23)
 
@@ -412,18 +412,18 @@ Spawn subagents to verify details or investigate specific questions.
 
 ## Testing & QA
 
-### Always Test Code Yourself
+### 常に自分でコードをテストする
 
-You absolutely cannot outsource testing - always verify the code actually works.
+テストを絶対にアウトソーシングすることはできません - コードが実際に機能することを常に検証してください。
 
 **Community adoption**: 67% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-comprehensive-testing-mandate) (n=27)
 
 > "The one thing you absolutely cannot outsource to the machine is testing that the code actually works. Your responsibility as a software developer is to deliver working systems. If you haven't seen it run, it's not a working system. You need to invest in strengthening those manual QA habits."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource)
 
-### Write Tests First
+### 最初にテストを書く
 
-Write tests first, confirm they fail, then implement until they pass.
+最初にテストを書き、失敗することを確認してから、合格するまで実装します。
 
 **Community adoption**: 19% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-test-driven-development-ai) (n=21)
 
@@ -432,66 +432,66 @@ Write tests first, confirm they fail, then implement until they pass.
 
 ## Review & Refactoring
 
-### Iterate on Assistant Output Yourself
+### アシスタント出力を自分で反復する
 
-After the assistant completes work, manually iterate and refine the implementation rather than accepting it as-is.
+アシスタントが作業を完了した後、そのまま受け入れるのではなく、手動で反復し実装を洗練させます。
 
 > "I almost always go in after an AI does work and iterate myself for awhile, too."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in)
 
-### Treat AI Code as Pull Request
+### AIコードをプルリクエストとして扱う
 
-Review AI-generated code as if it were a colleague's pull request, providing iterative feedback comments for the assistant to address rather than editing directly yourself.
+AI生成コードを同僚のプルリクエストのようにレビューし、自分で直接編集するのではなく、アシスタントが対処するための反復的なフィードバックコメントを提供します。
 
 > "treating the generated code as a Merge Request on which you submit comment for correction"
 > — [HN Discussion](https://news.ycombinator.com/item?id=45415232)
 
-### Ask the Agent to Review Its Own Code
+### エージェントに自分のコードをレビューさせる
 
-Have the assistant perform a code review on its own work before human review to surface issues and improvements.
+人間のレビューの前に、アシスタントに自分の作業のコードレビューを実行させて、問題と改善を明らかにします。
 
 > "Asking the agent to perform a code review on its own work is surprisingly fruitful."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review)
 
-### Actually Read the Code
+### 実際にコードを読む
 
-Stop and actually inspect what has been written - you might be surprised.
+立ち止まって、書かれたものを実際に検査してください - 驚くかもしれません。
 
 **Community adoption**: 63% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-critical-code-review-strategy) (n=19)
 
 > "Asking the agent to perform a code review on its own work is surprisingly fruitful. AI-generated code is often incorrect or inefficient. It's important for me to call out that I believe I'm ultimately responsible for the code that goes into a PR with my name on it, regardless of how it was produced. Therefore, especially in any professional context, I manually review all AI-written code and test cases."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review)
 
-### Always Review the Full Diff
+### 常に完全な差分をレビューする
 
-Vibe coding can introduce unintended side effects - always review diffs carefully as the assistant may alter more than requested.
+バイブコーディングは意図しない副作用を引き起こす可能性があります - アシスタントが要求以上のものを変更する可能性があるため、常に差分を注意深くレビューしてください。
 
 **Community adoption**: 56% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-check-for-unintended-changes) (n=16)
 
 > "I believe I'm ultimately responsible for the code that goes into a PR with my name on it, regardless of how it was produced. Therefore, especially in any professional context, I manually review all AI-written code and test cases."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/Getting-Good-Results-from-Claude-Code.html#:~:text=I%20believe%20I'm%20ultimately%20responsible,manually%20review%20all%20AI-written%20code)
 
-### Keep Asking for Changes
+### 変更を求め続ける
 
-Unlike humans, assistants never get annoyed - keep asking for refactors until you're happy.
+人間とは異なり、アシスタントは決してイライラしません - 満足するまでリファクタリングを求め続けてください。
 
 **Community adoption**: 47% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-conversational-code-refinement) (n=17)
 
 > "If I don't like what an LLM has written, they'll never complain at being told to refactor it! `Break that repetitive code out into a function`, `use string manipulation methods rather than a regular expression`, or even `write that better!`—the code an LLM produces first time is rarely the final implementation, but they can re-type it dozens of times for you without ever getting frustrated or bored."
 > — [Simon Willison](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written)
 
-### Edit Code in the Diff
+### 差分でコードを編集する
 
-Review changes in diff view and type corrections directly into the diff before committing.
+差分ビューで変更をレビューし、コミットする前に差分に直接修正を入力します。
 
 **Community adoption**: 27% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-diff-based-iterative-refinement) (n=15)
 
 > "I manually review all AI-written code and test cases. I'll add test cases for anything I think is missing or needs improvement, either manually or by asking the LLM to write those cases (which I then review)."
 > — [Chris Dzombak](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all)
 
-### One Writes, Another Reviews
+### 1つが書き、別の1つがレビューする
 
-Have one agent write code, then use a fresh agent to review and find problems.
+1つのエージェントにコードを書かせ、次に新しいエージェントを使ってレビューし、問題を見つけます。
 
 **Community adoption**: 31% situational • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-multi-agent-verification) (n=16)
 
@@ -500,41 +500,41 @@ Have one agent write code, then use a fresh agent to review and find problems.
 
 ## Cross-Stage Techniques
 
-### Switch Assistant Output Styles
+### アシスタント出力スタイルを切り替える
 
-Select the assistant output style that matches your current goal.
+現在の目標に合わせてアシスタント出力スタイルを選択します。
 
 **Tool Implementations:**
 
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-**Switch styles quickly**
-Run `/output-style` to open the picker, or `/output-style learning` to jump straight into Learning mode. The selection is stored per project in `.claude/settings.local.json`.
+**スタイルを素早く切り替え**
+`/output-style`を実行してピッカーを開くか、`/output-style learning`で学習モードに直接ジャンプします。選択は`.claude/settings.local.json`でプロジェクトごとに保存されます。
 
-**Teach-yourself modes**
-Default stays focused on shipping; `explanatory` inserts insight callouts; `learning` adds `TODO(human)` markers so you fill in key pieces yourself.
+**自己学習モード**
+デフォルトは出荷に集中し続け、`explanatory`はインサイトコールアウトを挿入し、`learning`は`TODO(human)`マーカーを追加するため、重要な部分を自分で埋めることができます。
 
-**Create custom styles**
-Run `/output-style:new I want ...` to scaffold a markdown file in `~/.claude/output-styles`. Tweak the frontmatter and instructions; project-specific variants live in `.claude/output-styles/`.
+**カスタムスタイルを作成**
+`/output-style:new I want ...`を実行して`~/.claude/output-styles`にマークダウンファイルをスキャフォールドします。フロントマターと指示を調整します。プロジェクト固有のバリアントは`.claude/output-styles/`に配置されます。
 
-**Why styles differ**
-Styles replace Claude Code's default system prompt, unlike `CLAUDE.md` (user message) or `--append-system-prompt` (appends).
+**スタイルが異なる理由**
+スタイルはClaude Codeのデフォルトシステムプロンプトを置き換えます。`CLAUDE.md`（ユーザーメッセージ）や`--append-system-prompt`（追加）とは異なります。
 
 </details>
 
-### Clear Context Between Tasks
+### タスク間でコンテキストをクリアする
 
-Reset the assistant's context window between unrelated tasks to prevent confusion and improve performance on new problems.
+関連のないタスク間でアシスタントのコンテキストウィンドウをリセットして、混乱を防ぎ、新しい問題でのパフォーマンスを向上させます。
 
 **Community adoption**: 67% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-clear-context-between-tasks) (n=15)
 
 > "During long sessions, Claude's context window can fill with irrelevant conversation, file contents, and commands. This can reduce performance and sometimes distract Claude. Use the `/clear` command frequently between tasks to reset the context window."
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context)
 
-### Choose Tools by Conversational Style
+### 会話スタイルでツールを選ぶ
 
-Pick coding assistants based on whether you prefer human-like collaboration or structured, robot-like efficiency - conversational personality significantly affects productivity and enjoyment.
+人間のような協力か、構造化されたロボットのような効率のどちらを好むかでコーディングアシスタントを選択します - 会話の個性が生産性と楽しさに大きく影響します。
 
 > "In terms of personality, it's the opposite for me: Claude Code feels like my pair-programming partner, while Codex feels like a robot (very structured but not very human in its conversational style).
 
@@ -545,117 +545,117 @@ Codex is dry. You can insult it and it doesn't even answer. No personality. Clau
 Codex is monotone straight to the point, but most importantly the reason why it is better is because it's not agreeable at all. It will challenge you when you're suggesting something wrong and stay with its opinion."
 > — [Reddit Community](https://www.reddit.com/r/ClaudeAI/comments/1nk4v4k/comment/nev86ot)
 
-### Choose the Right Model for the Job
+### タスクに適したモデルを選択する
 
-Before starting a new task, choose two levers: the right model (modality, context length, tool-calling reliability, latency, cost) and the right reasoning level (allocate more/less thinking tokens) — don’t default blindly.
-
-**Tool Implementations:**
-
-<details>
-<summary><strong>Claude Code</strong></summary>
-
-Two levers at task start:
-1. `/model` - pick `fast` for routine edits, `long-context` for multi-file or long docs, `vision-strong` for UI/screenshots.
-2. Reasoning level - enable extended thinking for complex debugging, architecture work, or ambiguous specs so the assistant budgets more reasoning tokens.
-
-</details>
-
-<details>
-<summary><strong>Codex CLI</strong></summary>
-
-Start with `gpt-5-minimal`/`gpt-5-low` for quick edits; choose a higher‑reasoning variant `gpt-5-high`/`gpt-5-medium` when complexity rises.
-
-</details>
-
-### Centralise Memory Files
-
-Keep one canonical instruction doc and route every other agent file to it with a shouty pointer line, a symlink, or an @file include so cross-tool guidance stays consistent.
+新しいタスクを開始する前に、2つのレバーを選択してください：適切なモデル（モダリティ、コンテキスト長、ツール呼び出しの信頼性、レイテンシ、コスト）と適切な推論レベル（思考トークンを多く/少なく割り当てる）— 盲目的にデフォルトにしないでください。
 
 **Tool Implementations:**
 
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Keep `CLAUDE.md` as the source of truth and use one of these three ways.
-
-1. Put `@CLAUDE.md` into `AGENTS.md`.
-
-2. Symlink `AGENTS.md` to `CLAUDE.md` with `ln -sf CLAUDE.md AGENTS.md` so both tools share the same file.
-
-3. Leave `AGENTS.md` as a single line: `READ CLAUDE.md FIRST!!!`.
+タスク開始時の2つのレバー:
+1. `/model` - 通常の編集には`fast`、マルチファイルや長いドキュメントには`long-context`、UI/スクリーンショットには`vision-strong`を選択
+2. 推論レベル - 複雑なデバッグ、アーキテクチャ作業、曖昧な仕様には拡張思考を有効にして、アシスタントがより多くの推論トークンを割り当てられるようにする
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Use the same trio from the Codex side.
-
-1. If Codex holds the primary text, leave `AGENTS.md` full and place `@AGENTS.md` inside `CLAUDE.md` so both tools land in the same doc.
-
-2. Run `ln -sf CLAUDE.md AGENTS.md` so the file Codex reads is just a symlink to `CLAUDE.md`.
-
-3. When `CLAUDE.md` is canonical, keep `AGENTS.md` to one line: `READ CLAUDE.md FIRST!!!`.
+クイック編集には`gpt-5-minimal`/`gpt-5-low`から始め、複雑さが増したら高推論バリアント`gpt-5-high`/`gpt-5-medium`を選択します。
 
 </details>
 
-### Interrupt and Redirect Often
+### メモリファイルを一元化する
 
-Don't let the assistant go too far down the wrong path - interrupt, provide feedback, and redirect as soon as you notice issues.
+1つの正規の指示ドキュメントを保持し、他のすべてのエージェントファイルを、目立つポインター行、シンボリックリンク、または@fileインクルードでそれにルーティングして、ツール間のガイダンスが一貫性を保つようにします。
+
+**Tool Implementations:**
+
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+`CLAUDE.md`を信頼できる情報源として保持し、次の3つの方法のいずれかを使用します。
+
+1. `AGENTS.md`に`@CLAUDE.md`を入れる。
+
+2. `ln -sf CLAUDE.md AGENTS.md`で`AGENTS.md`を`CLAUDE.md`にシンボリックリンクして、両方のツールが同じファイルを共有するようにする。
+
+3. `AGENTS.md`を1行のみにする：`READ CLAUDE.md FIRST!!!`。
+
+</details>
+
+<details>
+<summary><strong>Codex CLI</strong></summary>
+
+Codex側から同じ3つの方法を使用します。
+
+1. Codexがプライマリテキストを保持している場合、`AGENTS.md`を完全に残し、`CLAUDE.md`内に`@AGENTS.md`を配置して、両方のツールが同じドキュメントに到達するようにする。
+
+2. `ln -sf CLAUDE.md AGENTS.md`を実行して、Codexが読み取るファイルが`CLAUDE.md`へのシンボリックリンクになるようにする。
+
+3. `CLAUDE.md`が正規の場合、`AGENTS.md`を1行のみにする：`READ CLAUDE.md FIRST!!!`。
+
+</details>
+
+### 頻繁に中断してリダイレクトする
+
+アシスタントが間違った道を進みすぎないようにします - 問題に気付いたらすぐに中断し、フィードバックを提供して、リダイレクトします。
 
 **Community adoption**: 60% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-interrupt-and-redirect-often) (n=15)
 
 > "Press Escape to interrupt Claude during any phase (thinking, tool calls, file edits), preserving context so you can redirect or expand instructions. Double-tap Escape to jump back in history, edit a previous prompt, and explore a different direction. You can edit the prompt and repeat until you get the result you're looking for."
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude)
 
-### Use an Agent as a Coding Partner
+### エージェントをコーディングパートナーとして使う
 
-Collaborate like with a coding partner - explain problems, get feedback, and work together on solutions.
+コーディングパートナーとして協力します - 問題を説明し、フィードバックを得て、解決策に一緒に取り組みます。
 
 **Community adoption**: 63% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-ai-coding-partner) (n=16)
 
 > "Claude Code feels like pairing with someone with a few years under their belt who just needs the occasional nudge. Then like with pairing, it's review, refactor and test time because it's still your name on the git commit."
 > — [Orta Therox](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing)
 
-### Learn From It, Code Yourself
+### それから学び、自分でコードを書く
 
-Use assistants to learn new languages and concepts, then apply that knowledge when you code.
+アシスタントを使って新しい言語や概念を学び、コーディング時にその知識を適用します。
 
 **Community adoption**: 43% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-learning-oriented-ai-interaction) (n=14)
 
 > "I'm leveraging them to learn Go, to upskill myself. And then I apply this new knowledge when I code."
 > — [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go)
 
-### Use Strong Emphasis in Prompts
+### プロンプトで強い強調を使用する
 
-Use IMPORTANT, NEVER, ALWAYS liberally in prompts to steer the model away from common mistakes - it's still the most effective approach.
+プロンプトでIMPORTANT、NEVER、ALWAYSを自由に使用して、一般的なミスからモデルを遠ざけます - これは今でも最も効果的なアプローチです。
 
 **Community adoption**: 50% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-use-strong-emphasis-words) (n=14)
 
 > "Unfortunately CC is no better when it comes to asking the model to not do something. IMPORTANT, VERY IMPORTANT, NEVER and ALWAYS seem to be the best way to steer the model away from landmines. I expect the models to get more steerable in the future and avoid this ugliness. But for now, CC uses this liberally, and so should you."
 > — [Vivek (MinusX AI Team)](https://minusx.ai/blog/decoding-claude-code/#:~:text=Unfortunately%20CC%20is%20no%20better)
 
-### Build Fast, Foolproof Tools
+### 高速で確実なツールを構築する
 
-Create tools that respond quickly, provide clear error messages, and protect against misuse by agents.
+迅速に応答し、明確なエラーメッセージを提供し、エージェントによる誤用から保護するツールを作成します。
 
 **Community adoption**: 17% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-build-fast-foolproof-tools) (n=12)
 
 > "Tools need to be fast. The quicker they respond (and the less useless output they produce) the better. Crashes are tolerable; hangs are problematic. Tools need to be user friendly! Tools must clearly inform agents of misuse or errors to ensure forward progress. Tools need to be protected against an LLM chaos monkey using them completely wrong. There is no such thing as user error or undefined behavior!"
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Tools%20need%20to%20be%20fast)
 
-### Run Multiple Agents in Parallel
+### 複数のエージェントを並列実行する
 
-Stop waiting for one agent to finish before starting another - run multiple agents in parallel on separate features without conflicts or confusion.
+あるエージェントが終了するのを待ってから別のエージェントを開始するのをやめましょう - 別々の機能で複数のエージェントを並列実行し、競合や混乱がないようにします。
 
 **Community adoption**: 14% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-run-multiple-agents-parallel) (n=14)
 
 > "We are exploring solving both of these issues in sketch.dev using containers. By default sketch creates a little development environment in a container with a copy of the source code and the runner has the ability to extract git commits from the container. This lets you run many simultaneously."
 > — [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues)
 
-### Run Without Permissions for Easy Tasks
+### 簡単なタスクには権限なしで実行する
 
-Enable autonomous mode when tasks are straightforward enough that you'd accept all changes anyway - skip the babysitting.
+とにかくすべての変更を受け入れるほど簡単なタスクの場合は、自律モードを有効にします - 監視をスキップします。
 
 > "I disable all permission checks. Which basically means I run `claude --dangerously-skip-permissions`. More specifically I have an alias called claude-yolo set up."
 > — [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks)
@@ -665,70 +665,70 @@ Enable autonomous mode when tasks are straightforward enough that you'd accept a
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Run `claude --dangerously-skip-permissions` to enable YOLO mode where Claude runs uninterrupted without permission prompts.
+`claude --dangerously-skip-permissions`を実行すると、Claudeが権限プロンプトなしで中断なく実行されるYOLOモードが有効になります。
 
-**Switch during session:** Use `/permissions` to manage tool permissions mid-session without restarting. Set allow rules for specific tools to skip approval prompts.
+**セッション中に切り替え:** `/permissions`を使用して、再起動せずにセッション途中でツール権限を管理します。特定のツールに対して許可ルールを設定し、承認プロンプトをスキップします。
 
-**When to use:**
-• Fixing lint errors across multiple files
-• Simple refactoring and variable renames
-• Routine code updates and migrations
-• Tasks where you'd likely accept all changes anyway
+**使用するタイミング:**
+• 複数ファイルにわたるlintエラーの修正
+• シンプルなリファクタリングと変数の名前変更
+• 日常的なコード更新と移行
+• とにかくすべての変更を受け入れそうなタスク
 
-**Safety considerations:**
-• Best used in containers or VMs for isolation
-• Avoid on critical production systems
-• Consider using `allowedTools` config for granular control instead of blanket permissions
+**安全性の考慮事項:**
+• 隔離のためにコンテナやVMで使用するのがベスト
+• 重要な本番システムでは避ける
+• 一括権限ではなく`allowedTools`設定を使用して詳細な制御を検討する
 
-**Setup alias:** Many users create `alias cc='claude --dangerously-skip-permissions'` for quick access.
+**エイリアスの設定:** 多くのユーザーは`alias cc='claude --dangerously-skip-permissions'`を作成してクイックアクセスしています。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Enable full autonomous mode with `codex --full-auto` or use in-session `/mode` command.
+`codex --full-auto`で完全自律モードを有効にするか、セッション内`/mode`コマンドを使用します。
 
-**Switch during session:** Use `/mode` to hot-swap between permission levels without losing session context. Select with arrow keys from suggest/auto-edit/full-auto modes.
+**セッション中に切り替え:** `/mode`を使用してセッションコンテキストを失わずに権限レベル間をホットスワップします。suggest/auto-edit/full-autoモードから矢印キーで選択します。
 
-**Permission modes:**
-• `--suggest` - Suggests changes, requires approval
-• `--auto-edit` - Auto-edits files, asks for command approval  
-• `--full-auto` - Complete autonomy for files and commands
+**権限モード:**
+• `--suggest` - 変更を提案、承認が必要
+• `--auto-edit` - ファイルを自動編集、コマンド承認を求める
+• `--full-auto` - ファイルとコマンドの完全な自律性
 
-**When to use full-auto:**
-• Systematic refactoring tasks
-• Bulk file operations
-• Lint fixes and code cleanup
-• Well-defined, low-risk operations
+**full-autoを使用するタイミング:**
+• 体系的なリファクタリングタスク
+• 一括ファイル操作
+• lintの修正とコードクリーンアップ
+• 明確に定義された低リスクの操作
 
 </details>
 
-### A Session Should Have One Goal
+### セッションには1つの目標があるべき
 
-Use the prompt `The goal of this session is <specific goal>. Inform me if we drift off track.` either at the start of each session or add it to your memory file (AGENTS.md, CLAUDE.md) to prevent context poisoning and increase agent steerability - applying the Single Responsibility Principle to AI conversations.
+`このセッションの目標は<具体的な目標>です。コースから外れたら知らせてください。`というプロンプトを各セッションの開始時に使用するか、メモリファイル（AGENTS.md、CLAUDE.md）に追加して、コンテキストの汚染を防ぎ、エージェントの操縦性を高めます — AI会話に単一責任の原則を適用します。
 
-### Let Assistant Work While You Do Other Things
+### 他のことをしながらアシスタントに作業させる
 
-Use assistants asynchronously so they can work on tasks while you handle other responsibilities.
+アシスタントを非同期で使用して、他の責任を処理している間にタスクに取り組めるようにします。
 
 > "I think the faster/slower argument for me personally is missing the thing I like the most: the AI can work for me while I step away to do other things."
 > — [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster)
 
-### Use Feature Sessions
+### 機能セッションを使用する
 
-Isolate each feature or task in separate sessions to reduce context bloat and improve accuracy, just like feature branches in git isolate code changes.
+各機能またはタスクを別々のセッションに分離して、コンテキストの肥大化を減らし、精度を向上させます。gitの機能ブランチがコード変更を分離するのと同じです。
 
-### Ask Open Questions, Not Leading Ones
+### 誘導的ではなく、開かれた質問をする
 
-Avoid 'Am I right that...' questions - instead ask for pros/cons, alternatives, and 'What am I missing?' to counteract LLM's tendency to agree.
+「私は正しいですよね...」という質問を避けます - 代わりに、賛否両論、代替案、「何を見逃していますか？」と尋ねて、LLMの同意する傾向に対抗します。
 
 > "My best current technique for avoiding this is a bit of role-play that gives the coding agent a reason not to blindly trust the code review... 'A reviewer did some analysis of this PR. They're external, so reading the codebase cold... 1) should we hire this reviewer 2) which of the issues they've flagged should be fixed?'"
 > — [Jesse Vincent](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=My%20best%20current%20technique)
 
-### Start cheap and fast; escalate when stuck
+### 安価で高速から開始し、行き詰まったらエスカレートする
 
-Begin with faster/cheaper models for routine tasks, then escalate to more powerful models only when you hit complex problems.
+日常的なタスクには高速/安価なモデルから始め、複雑な問題に遭遇した場合のみ、より強力なモデルにエスカレートします。
 
 **Community adoption**: 19% essential • [Vote on coding-with-ai.dev](https://coding-with-ai.dev#tech-smart-model-escalation) (n=16)
 
@@ -740,41 +740,41 @@ Begin with faster/cheaper models for routine tasks, then escalate to more powerf
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4`. Top-graded: `Claude Opus 4.1`.
+`/model`を使用して切り替えます。より安価で高速だが精度は低い：`Claude Sonnet 4`。最高評価：`Claude Opus 4.1`。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-graded: `gpt-5-high`.
+`/model`を使用して切り替えます。より安価で高速だが精度は低い：`gpt-5-medium`。最高評価：`gpt-5-high`。
 
 </details>
 
-### Create Rollback Points While Coding
+### コーディング中にロールバックポイントを作成する
 
-Create checkpoints you can revert to when experiments fail—capture known‑good working states before risky changes.
+実験が失敗したときに戻ることができるチェックポイントを作成します—リスクの高い変更の前に既知の良好な動作状態をキャプチャします。
 
 **Tool Implementations:**
 
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Commit known‑good states before experiments. Example: `git commit -m "Working state before refactor"`. For risky changes, branch first: `git checkout -b experiment/feature`. If it fails, `git reset --hard HEAD~1` or switch back to `main`. Use `git stash` for quick temporary saves.
+実験の前に既知の良好な状態をコミットします。例：`git commit -m "Working state before refactor"`。リスクの高い変更の場合は、最初にブランチ：`git checkout -b experiment/feature`。失敗した場合は、`git reset --hard HEAD~1`またはmainに戻ります。クイック一時保存には`git stash`を使用します。
 
 </details>
 
 <details>
 <summary><strong>Cursor</strong></summary>
 
-Cursor records AI edits as undoable checkpoints. Use Cmd+Z/Ctrl+Z to step back through changes. For durable rollback, commit working states with messages like ‘Checkpoint before schema rewrite’; use branches for experiments and review diffs before merge.
+CursorはAI編集をアンドゥ可能なチェックポイントとして記録します。Cmd+Z/Ctrl+Zを使用して変更を遡ります。耐久性のあるロールバックには、「スキーマ書き換え前のチェックポイント」のようなメッセージで動作状態をコミットします。実験にはブランチを使用し、マージ前に差分をレビューします。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Before large edits, run a save‑state commit: `git commit -am "Checkpoint before Codex changes"`. For experiments, branch: `git checkout -b codex/experiment`. If results disappoint, `git reset --hard HEAD~1` or abandon branch. Use session separation for risky attempts.
+大きな編集の前に、保存状態のコミットを実行します：`git commit -am "Checkpoint before Codex changes"`。実験の場合は、ブランチ：`git checkout -b codex/experiment`。結果が期待外れの場合は、`git reset --hard HEAD~1`またはブランチを放棄します。リスクの高い試みにはセッション分離を使用します。
 
 </details>
 
