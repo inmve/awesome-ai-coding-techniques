@@ -154,6 +154,13 @@ Codex automatically reads this file at the start of every session.
 
 </details>
 
+<details>
+<summary><strong>Cortex</strong></summary>
+
+[Cortex](https://github.com/SKULLFIRE07/cortex-memory) - Persistent AI memory for coding assistants. Auto-captures decisions, patterns, and context from Claude Code, Cursor, and Cline sessions. 3-layer memory. VSCode extension + CLI + MCP server. Free.
+
+</details>
+
 ### Ask to Plan First
 
 Tell the assistant to outline steps, risks, and quick tests before touching code so you can review and adjust the approach.
