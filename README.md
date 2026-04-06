@@ -26,6 +26,7 @@ Community-maintained and living. Contributions welcome.
 
 📝 **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md) to share your techniques and experiences
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for Claude Code. Techniques for multi-agent orchestration, automated delegation, and quality-gated workflows. MIT licensed.
 ## Table of Contents
 - [Requirements & Planning](#requirements--planning)
 - [UI & Prototyping](#ui--prototyping)
