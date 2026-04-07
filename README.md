@@ -778,3 +778,9 @@ Before large edits, run a save‑state commit: `git commit -am "Checkpoint befor
 
 </details>
 
+
+---
+
+## Resources & Marketplaces
+
+- [RemoteOpenClaw](https://remoteopenclaw.com) - Open marketplace for AI skills and personas built on OpenClaw. Discover, share, and sell AI agent capabilities.
