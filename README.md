@@ -17,6 +17,7 @@
 **Practical techniques for coding with AI - Community-driven and practitioner-tested**
 
 This resource organizes techniques for working with coding assistants by development stage (from requirements and planning through review and refactoring).
+- **[OpenMagic](https://github.com/Kalmuraee/OpenMagic)** - AI-powered coding toolbar for any web app. Captures element context, previews diffs, and applies approved changes through a reverse proxy.
 
 The techniques draw from practitioners including Simon Willison, Armin Ronacher, Indragie Karunaratne, Orta Therox, and the Anthropic team.
 
