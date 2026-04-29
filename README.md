@@ -750,6 +750,15 @@ Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4`. T
 Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-graded: `gpt-5-high`.
 
 </details>
+### Govern Autonomous Coding Loops
+
+Wrap long-running Claude Code, Codex, or Ralph-style coding loops with budget caps, max iteration limits, verifier gates, rollback evidence, explicit stop reasons, and JSONL run records so agents can run unattended without becoming unbounded.
+
+Useful when you want an AI coding agent to keep working, but only inside a clear budget, policy, and verification boundary.
+
+Tool Implementations:
+
+[MartinLoop](https://github.com/Keesan12/Martin-Loop)
 
 ### Create Rollback Points While Coding
 
