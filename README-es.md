@@ -653,6 +653,15 @@ Deja de esperar a que termine un agente antes de iniciar otro - ejecuta múltipl
 > "We are exploring solving both of these issues in sketch.dev using containers. By default sketch creates a little development environment in a container with a copy of the source code and the runner has the ability to extract git commits from the container. This lets you run many simultaneously."
 > — [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues)
 
+**Tool Implementations:**
+
+<details>
+<summary><strong>Parallel Code</strong></summary>
+
+Usa un worktree de Git aislado por agente o tarea y revisa cada diff antes de fusionarlo. Funciona mejor para funciones independientes, investigaciones de bugs o implementaciones alternativas donde las sesiones no deberían editar los mismos archivos al mismo tiempo.
+
+</details>
+
 ### Ejecutar Sin Permisos para Tareas Fáciles
 
 Habilita el modo autónomo cuando las tareas son lo suficientemente directas como para aceptar todos los cambios de todos modos - evita la supervisión constante.
@@ -777,4 +786,3 @@ Cursor registra ediciones de IA como puntos de control deshacibles. Usa Cmd+Z/Ct
 Antes de ediciones grandes, ejecuta un commit de estado guardado: `git commit -am "Checkpoint before Codex changes"`. Para experimentos, crea rama: `git checkout -b codex/experiment`. Si los resultados decepcionan, `git reset --hard HEAD~1` o abandona la rama. Usa separación de sesiones para intentos riesgosos.
 
 </details>
-

@@ -653,6 +653,15 @@ Stop waiting for one agent to finish before starting another - run multiple agen
 > "We are exploring solving both of these issues in sketch.dev using containers. By default sketch creates a little development environment in a container with a copy of the source code and the runner has the ability to extract git commits from the container. This lets you run many simultaneously."
 > — [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues)
 
+**Tool Implementations:**
+
+<details>
+<summary><strong>Parallel Code</strong></summary>
+
+Utilisez un worktree Git isolé par agent ou par tâche, puis relisez chaque diff avant de le fusionner. C'est surtout utile pour des fonctionnalités indépendantes, des recherches de bugs ou des implémentations alternatives où les sessions ne doivent pas modifier les mêmes fichiers en même temps.
+
+</details>
+
 ### Run Without Permissions for Easy Tasks
 
 Enable autonomous mode when tasks are straightforward enough that you'd accept all changes anyway - skip the babysitting.
@@ -777,4 +786,3 @@ Cursor records AI edits as undoable checkpoints. Use Cmd+Z/Ctrl+Z to step back t
 Before large edits, run a save‑state commit: `git commit -am "Checkpoint before Codex changes"`. For experiments, branch: `git checkout -b codex/experiment`. If results disappoint, `git reset --hard HEAD~1` or abandon branch. Use session separation for risky attempts.
 
 </details>
-

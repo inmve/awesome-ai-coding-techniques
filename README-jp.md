@@ -653,6 +653,15 @@ Codex側から同じ3つの方法を使用します。
 > "We are exploring solving both of these issues in sketch.dev using containers. By default sketch creates a little development environment in a container with a copy of the source code and the runner has the ability to extract git commits from the container. This lets you run many simultaneously."
 > — [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues)
 
+**Tool Implementations:**
+
+<details>
+<summary><strong>Parallel Code</strong></summary>
+
+エージェントまたはタスクごとに分離された Git worktree を使い、マージ前に各 diff を確認します。独立した機能、バグ調査、代替実装など、複数のセッションが同じファイルを同時に編集しない場合に向いています。
+
+</details>
+
 ### 簡単なタスクには権限なしで実行する
 
 とにかくすべての変更を受け入れるほど簡単なタスクの場合は、自律モードを有効にします - 監視をスキップします。
@@ -777,4 +786,3 @@ CursorはAI編集をアンドゥ可能なチェックポイントとして記録
 大きな編集の前に、保存状態のコミットを実行します：`git commit -am "Checkpoint before Codex changes"`。実験の場合は、ブランチ：`git checkout -b codex/experiment`。結果が期待外れの場合は、`git reset --hard HEAD~1`またはブランチを放棄します。リスクの高い試みにはセッション分離を使用します。
 
 </details>
-
