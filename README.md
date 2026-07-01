@@ -778,3 +778,7 @@ Before large edits, run a save‑state commit: `git commit -am "Checkpoint befor
 
 </details>
 
+
+
+## Related Resources
+- [Skill Hub](https://skill.442595.xyz/) — 5800+ curated AI Agent Skills for Claude Code, Codex, Cursor, Hermes & more across 22 categories.
