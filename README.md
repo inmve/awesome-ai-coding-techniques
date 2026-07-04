@@ -778,3 +778,5 @@ Before large edits, run a save‑state commit: `git commit -am "Checkpoint befor
 
 </details>
 
+
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates + 5 Claude Code skills for giving AI agents deep personal context. MIT-licensed, one-command install.
