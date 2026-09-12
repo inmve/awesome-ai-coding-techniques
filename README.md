@@ -27,6 +27,7 @@ Community-maintained and living. Contributions welcome.
 📝 **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md) to share your techniques and experiences
 
 ## Table of Contents
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) - Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops
 - [Requirements & Planning](#requirements--planning)
 - [UI & Prototyping](#ui--prototyping)
 - [Coding](#coding)
