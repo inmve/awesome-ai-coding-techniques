@@ -2,7 +2,7 @@
 
 ---
 
-> **Active Development** - Updated November 26, 2025
+> **Active Development** - Updated November 12, 2026
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
 
@@ -258,6 +258,13 @@ Draft the solution yourself first, then use assistants to refine it.
 
 ## UI & Prototyping
 
+### Baue das Feature dreimal, behalte eins
+
+Implementiere mehrere funktionierende Versionen eines Features, vergleiche sie im Einsatz oder per A/B-Test und behalte die beste. Wenn Implementierung billig ist, beantworten echte Varianten die Frage schneller als Mockups oder Diskussionen.
+
+> "Now it's often the fastest way to figure out which approach is actually right."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=often%20the%20fastest%20way%20to%20figure%20out%20which%20approach%20is%20actually%20right)
+
 ### Build a Prototype First
 
 Start every project with a quick generated prototype to prove it can work.
@@ -432,6 +439,20 @@ Write tests first, confirm they fail, then implement until they pass.
 
 ## Review & Refactoring
 
+### Der Ticket-Verantwortliche prüft den PR des Agenten
+
+Lass den Agenten den Pull Request öffnen und die Person, der das Ticket gehört, ihn prüfen; gemergt wird, sobald CI und ein automatisches Review bestanden sind. Die verantwortliche Person hat den Kontext bereits, ein zusätzliches Peer-Review bringt wenig.
+
+> "it's just that the author is Claude and the reviewer is the human who owns the ticket."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20reviewer%20is%20the%20human%20who%20owns%20the%20ticket)
+
+### Schreib neu, wenn es nur Tage dauert
+
+Ziehe eine komplette Neuschreibung in Betracht, wenn ein Agent sie in Tagen oder Wochen umsetzen kann. Das klassische Risiko entstand vor allem, weil sich das alte System während einer langen Neuschreibung veränderte; eine kurze Neuschreibung vermeidet das größtenteils.
+
+> "If a rewrite takes days or weeks instead of years, a lot of that risk goes away."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=If%20a%20rewrite%20takes%20days%20or%20weeks%20instead%20of%20years)
+
 ### Selbst auf Assistenten-Ausgabe Iterieren
 
 Nachdem der Assistent die Arbeit abgeschlossen hat, manuell iterieren und die Implementierung verfeinern, anstatt sie so zu akzeptieren.
@@ -499,6 +520,27 @@ Have one agent write code, then use a fresh agent to review and find problems.
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code)
 
 ## Cross-Stage Techniques
+
+### LLMs als Perspektiv-Simulatoren Darstellen
+
+Erkennen Sie LLMs als Simulatoren an, die verschiedene Perspektiven kanalisieren, anstatt als Entitäten mit Gedanken. Fragen Sie statt 'Was hältst du von xyz?' besser 'Was würde eine Gruppe erfahrener Menschen über xyz erforschen? Was würden sie sagen?'
+
+> "Don't think of LLMs as entities but as simulators. For example, when exploring a topic, don't ask: 'What do you think about xyz'? There is no 'you'. Next time try: 'What would be a good group of people to explore xyz? What would they say?' The LLM can channel/simulate many perspectives but it hasn't 'thought about' xyz for a while and over time and formed its own opinions in the way we're used to. If you force it via the use of 'you', it will give you something by adopting a personality embedding vector implied by the statistics of its finetuning data and then simulate that."
+> — [Andrej Karpathy](https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities)
+
+### Prüfe die Kosten hinter alten Regeln
+
+Benenne für jede Praxis, die dein Team für eine schlechte Idee hält, die Kosten, die sie schlecht gemacht haben, und prüfe, ob Agenten diese Kosten beseitigt haben. Regeln, die auf teurem Code, langsamem Kontextwechsel oder langen Neuschreibungen beruhen, gelten womöglich nicht mehr.
+
+> "what's the cost that made this a bad idea, and is that cost still there?"
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=what%27s%20the%20cost%20that%20made%20this%20a%20bad%20idea)
+
+### Lass dich vom Agenten über die Arbeit eines Kollegen briefen
+
+Bevor du den Arbeitsstrang eines Kollegen übernimmst oder besprichst, lass einen Agenten zusammenfassen, was gebaut wurde und warum. Schnelles Einarbeiten erlaubt getrennte Arbeitsstränge ohne Wissenssilos.
+
+> "the cost of context switching has dropped dramatically, because we're operating a level higher than we used to."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20cost%20of%20context%20switching%20has%20dropped%20dramatically)
 
 ### Assistenten-Ausgabestile Wechseln
 
@@ -740,14 +782,14 @@ Beginnen Sie mit schnelleren/günstigeren Modellen für Routineaufgaben, dann es
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4`. Top-graded: `Claude Opus 4.1`.
+Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4.5`. Top-graded: `Claude Opus 4.5`.
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-graded: `gpt-5-high`.
+Use `/model` to switch. Cheaper, faster, but less accurate: `GPT-5.1-Codex-Mini`. Top-graded: `GPT-5.1-Codex`.
 
 </details>
 

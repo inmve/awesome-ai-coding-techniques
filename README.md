@@ -2,7 +2,7 @@
 
 ---
 
-> **Active Development** - Updated November 26, 2025
+> **Active Development** - Updated November 12, 2026
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
 
@@ -258,6 +258,13 @@ Draft the solution yourself first, then use assistants to refine it.
 
 ## UI & Prototyping
 
+### Build the Feature Three Ways, Keep One
+
+Implement several working versions of a feature, compare them in use or in an A/B test, and keep the best one. When implementation is cheap, real variants answer the question faster than mockups or debate.
+
+> "Now it's often the fastest way to figure out which approach is actually right."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=often%20the%20fastest%20way%20to%20figure%20out%20which%20approach%20is%20actually%20right)
+
 ### Build a Prototype First
 
 Start every project with a quick generated prototype to prove it can work.
@@ -432,6 +439,20 @@ Write tests first, confirm they fail, then implement until they pass.
 
 ## Review & Refactoring
 
+### Ticket Owner Reviews the Agent's PR
+
+Let the agent open the pull request and have the person who owns the ticket review it, then merge once CI and an automated review pass. The owner already has the context, so a separate peer review gate adds little.
+
+> "it's just that the author is Claude and the reviewer is the human who owns the ticket."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20reviewer%20is%20the%20human%20who%20owns%20the%20ticket)
+
+### Rewrite From Scratch When It Takes Days
+
+Reconsider a full rewrite when an agent can produce it in days or weeks. Most of the classic risk came from the old system changing during a long rewrite, and a short rewrite avoids most of it.
+
+> "If a rewrite takes days or weeks instead of years, a lot of that risk goes away."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=If%20a%20rewrite%20takes%20days%20or%20weeks%20instead%20of%20years)
+
 ### Iterate on Assistant Output Yourself
 
 After the assistant completes work, manually iterate and refine the implementation rather than accepting it as-is.
@@ -499,6 +520,27 @@ Have one agent write code, then use a fresh agent to review and find problems.
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code)
 
 ## Cross-Stage Techniques
+
+### Frame LLMs as Perspective Simulators
+
+Recognize LLMs as simulators that channel different perspectives rather than entities with thoughts. Instead of asking 'What do you think about xyz?', ask 'What would a group of experienced people explore about xyz? What would they say?'
+
+> "Don't think of LLMs as entities but as simulators. For example, when exploring a topic, don't ask: 'What do you think about xyz'? There is no 'you'. Next time try: 'What would be a good group of people to explore xyz? What would they say?' The LLM can channel/simulate many perspectives but it hasn't 'thought about' xyz for a while and over time and formed its own opinions in the way we're used to. If you force it via the use of 'you', it will give you something by adopting a personality embedding vector implied by the statistics of its finetuning data and then simulate that."
+> — [Andrej Karpathy](https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities)
+
+### Re-check the Cost Behind Old Rules
+
+For every practice your team calls a bad idea, name the cost that made it bad and check whether agents have removed that cost. Rules built on expensive code, slow context switching, or long rewrites may no longer hold.
+
+> "what's the cost that made this a bad idea, and is that cost still there?"
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=what%27s%20the%20cost%20that%20made%20this%20a%20bad%20idea)
+
+### Ask the Agent to Brief You on a Teammate's Work
+
+Before picking up or discussing a colleague's work stream, ask an agent to summarize what was built and why. Fast onboarding lets people own separate streams without creating knowledge silos.
+
+> "the cost of context switching has dropped dramatically, because we're operating a level higher than we used to."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20cost%20of%20context%20switching%20has%20dropped%20dramatically)
 
 ### Switch Assistant Output Styles
 
@@ -740,14 +782,14 @@ Begin with faster/cheaper models for routine tasks, then escalate to more powerf
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4`. Top-graded: `Claude Opus 4.1`.
+Use `/model` to switch. Cheaper, faster, but less accurate: `Claude Sonnet 4.5`. Top-graded: `Claude Opus 4.5`.
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-Use `/model` to switch. Cheaper, faster, but less accurate: `gpt-5-medium`. Top-graded: `gpt-5-high`.
+Use `/model` to switch. Cheaper, faster, but less accurate: `GPT-5.1-Codex-Mini`. Top-graded: `GPT-5.1-Codex`.
 
 </details>
 
