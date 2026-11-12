@@ -2,7 +2,7 @@
 
 ---
 
-> **Active Development** - Updated November 26, 2025
+> **Active Development** - Updated November 12, 2026
 
 > [coding-with-ai.dev](https://coding-with-ai.dev)
 
@@ -258,6 +258,13 @@ LLMに賛否両論を含むいくつかのアプローチを提示させて、�
 
 ## UI & Prototyping
 
+### 機能を3通りで作り、1つを残す
+
+機能を動作する複数のバージョンで実装し、実際の利用やA/Bテストで比較して最良のものを残す。実装が安いなら、モックアップや議論よりも実際のバリエーションの方が早く答えを出す。
+
+> "Now it's often the fastest way to figure out which approach is actually right."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=often%20the%20fastest%20way%20to%20figure%20out%20which%20approach%20is%20actually%20right)
+
 ### まずプロトタイプを構築する
 
 すべてのプロジェクトを、機能することを証明するための迅速に生成されたプロトタイプから始めます。
@@ -432,6 +439,20 @@ UIを`もっと美しく`または`もっとエレガントに`するように�
 
 ## Review & Refactoring
 
+### チケット担当者がエージェントのPRをレビューする
+
+エージェントにプルリクエストを作らせ、チケットの担当者がレビューし、CIと自動レビューが通ったらマージする。担当者はすでにコンテキストを持っているため、別のピアレビューを挟む価値は小さい。
+
+> "it's just that the author is Claude and the reviewer is the human who owns the ticket."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20reviewer%20is%20the%20human%20who%20owns%20the%20ticket)
+
+### 数日で済むならゼロから書き直す
+
+エージェントが数日から数週間で書き直せるなら、全面的な書き直しを再検討する。従来のリスクの大半は、長い書き直しの間に旧システムが変わり続けることにあり、短い書き直しならその多くを避けられる。
+
+> "If a rewrite takes days or weeks instead of years, a lot of that risk goes away."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=If%20a%20rewrite%20takes%20days%20or%20weeks%20instead%20of%20years)
+
 ### アシスタント出力を自分で反復する
 
 アシスタントが作業を完了した後、そのまま受け入れるのではなく、手動で反復し実装を洗練させます。
@@ -499,6 +520,27 @@ AI生成コードを同僚のプルリクエストのようにレビューし、
 > — [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code)
 
 ## Cross-Stage Techniques
+
+### LLMsを視点シミュレーターとしてフレーム化する
+
+LLMsを思考を持つエンティティではなく、異なる視点をチャネルするシミュレーターとして認識します。「xyzについて何を考える?」ではなく、「経験豊富な人たちのグループはxyzについて何を探索する? 何と言う?」と尋ねてください。
+
+> "Don't think of LLMs as entities but as simulators. For example, when exploring a topic, don't ask: 'What do you think about xyz'? There is no 'you'. Next time try: 'What would be a good group of people to explore xyz? What would they say?' The LLM can channel/simulate many perspectives but it hasn't 'thought about' xyz for a while and over time and formed its own opinions in the way we're used to. If you force it via the use of 'you', it will give you something by adopting a personality embedding vector implied by the statistics of its finetuning data and then simulate that."
+> — [Andrej Karpathy](https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities)
+
+### 古いルールの背後にあるコストを見直す
+
+チームが「悪いアイデア」と見なしている慣行ごとに、それを悪くしていたコストを特定し、エージェントによってそのコストがなくなっていないか確認する。高価なコード、遅いコンテキスト切り替え、長期の書き直しを前提にしたルールは、もう当てはまらないかもしれない。
+
+> "what's the cost that made this a bad idea, and is that cost still there?"
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=what%27s%20the%20cost%20that%20made%20this%20a%20bad%20idea)
+
+### 同僚の作業をエージェントに説明してもらう
+
+同僚の作業ストリームを引き継いだり議論したりする前に、何がなぜ作られたのかをエージェントに要約させる。素早くキャッチアップできるので、知識のサイロを作らずに各自が別々のストリームを担当できる。
+
+> "the cost of context switching has dropped dramatically, because we're operating a level higher than we used to."
+> — [Devon C. Estes](https://devonestes.com/bad-ideas-that-arent-bad-anymore#:~:text=the%20cost%20of%20context%20switching%20has%20dropped%20dramatically)
 
 ### アシスタント出力スタイルを切り替える
 
@@ -740,14 +782,14 @@ Codex側から同じ3つの方法を使用します。
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-`/model`を使用して切り替えます。より安価で高速だが精度は低い：`Claude Sonnet 4`。最高評価：`Claude Opus 4.1`。
+`/model`を使用して切り替えます。より安価で高速だが精度は低い：`Claude Sonnet 4.5`。最高評価：`Claude Opus 4.5`。
 
 </details>
 
 <details>
 <summary><strong>Codex CLI</strong></summary>
 
-`/model`を使用して切り替えます。より安価で高速だが精度は低い：`gpt-5-medium`。最高評価：`gpt-5-high`。
+`/model`を使用して切り替えます。より安価で高速だが精度は低い：`GPT-5.1-Codex-Mini`。最高評価：`GPT-5.1-Codex`。
 
 </details>
 
