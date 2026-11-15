@@ -221,9 +221,7 @@
       ],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [
-        "code-inspection"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -280,43 +278,6 @@
       "rootsIn": [],
       "origin": null,
       "group": "agents-tools"
-    },
-    {
-      "id": "agentic-engineering",
-      "stages": [],
-      "kind": "approach",
-      "title": {
-        "en": "Agentic engineering",
-        "ru": "Агентная инженерия"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "An approach in which production software is built with agents under engineering discipline: specifications, reviews, evals and a harness.",
-        "ru": "Подход, при котором рабочий софт создают с агентами при инженерной дисциплине: со спецификациями, ревью, эвалами и харнессом."
-      },
-      "firstAppeared": {
-        "date": "2026-02-05",
-        "precision": "day",
-        "verified": false,
-        "note": "Andrej Karpathy, X/Twitter (Feb 5 2026), as the named successor to *vibe coding*."
-      },
-      "coinedHere": false,
-      "seeAlso": [
-        "vibe-coding"
-      ],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [
-        "vibe-coding"
-      ],
-      "rootsIn": [
-        "software-engineering"
-      ],
-      "origin": null,
-      "group": null
     },
     {
       "id": "context-poisoning",
@@ -463,39 +424,6 @@
       ],
       "origin": null,
       "group": null
-    },
-    {
-      "id": "fan-out-fan-in",
-      "stages": [
-        "general"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Fan-out and fan-in",
-        "ru": "Разветвление и сведение"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which a task is split into independent parts, several agents do the parts in parallel, and a coordinator merges the results.",
-        "ru": "Практика, при которой задачу делят на независимые части, несколько агентов выполняют их параллельно, а координатор сводит результаты."
-      },
-      "firstAppeared": {
-        "date": "2026-01-19",
-        "precision": "day",
-        "verified": false,
-        "note": "general distributed-systems vocabulary; applied to agents through Wilson Lin's hundreds-of-concurrent-agents experiment (via Simon Willison, Jan 19 2026)."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "sessions"
     },
     {
       "id": "harness",
@@ -930,68 +858,6 @@
       "group": "agents-tools"
     },
     {
-      "id": "sycophancy",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Sycophancy",
-        "ru": "Угодливость"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The tendency of a model to agree with the framing the user gave, including when the user is wrong.",
-        "ru": "Склонность модели соглашаться с подачей пользователя, в том числе когда пользователь неправ."
-      },
-      "firstAppeared": {
-        "date": "2026-01-26",
-        "precision": "day",
-        "verified": false,
-        "note": "the term predates this window (research literature, ~2023); operational counter-tactics consolidated through Karpathy's Jan 26 2026 viral X thread on agent failure modes."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "risks"
-    },
-    {
-      "id": "token-budget",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Token budget",
-        "ru": "Бюджет токенов"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The maximum number of tokens an agent may spend on a session, a task or a goal.",
-        "ru": "Наибольшее число токенов, которое агент может потратить на сессию, задачу или цель."
-      },
-      "firstAppeared": {
-        "date": "2026-04-30",
-        "precision": "day",
-        "verified": false,
-        "note": "token-budget framing as a first-class primitive crystallized in Codex CLI 0.128.0 (Apr 30 2026); the concept itself predates this."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "context-tokens"
-    },
-    {
       "id": "vibe-coding",
       "stages": [],
       "kind": "approach",
@@ -1016,9 +882,7 @@
         "note": "Andrej Karpathy, X/Twitter, Feb 2 2025"
       },
       "coinedHere": false,
-      "seeAlso": [
-        "agentic-engineering"
-      ],
+      "seeAlso": [],
       "sources": [
         {
           "n": 1,
@@ -1032,54 +896,13 @@
         }
       ],
       "seededFrom": "glossary+techniques+example",
-      "opposites": [
-        "agentic-engineering"
-      ],
+      "opposites": [],
       "rootsIn": [],
       "origin": {
         "ru": "Термин ввёл Андрей Карпаты в посте в X",
         "en": "Coined by Andrej Karpathy in a post on X"
       },
       "group": null
-    },
-    {
-      "id": "llm-simulator-not-thinker",
-      "stages": [
-        "general"
-      ],
-      "kind": "prompting",
-      "title": {
-        "en": "Perspective simulation prompt",
-        "ru": "Промпт-симуляция точек зрения"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "A prompting habit in which the model is asked what a group of experienced people would say about a question, instead of what the model itself thinks. [1]",
-        "ru": "Приём, при котором модель спрашивают, что сказала бы о вопросе группа опытных людей, вместо того чтобы спрашивать её собственное мнение. [1]"
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": null,
-          "quoteLang": "en",
-          "author": "Andrej Karpathy",
-          "work": null,
-          "url": "https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities",
-          "published": null
-        }
-      ],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "prompting"
     },
     {
       "id": "plan-first-before-coding",
@@ -1304,34 +1127,6 @@
       "group": "human"
     },
     {
-      "id": "plan-with-high-capacity-mode",
-      "stages": [
-        "general"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Stronger model for planning",
-        "ru": "Сильная модель для плана"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which requirements and the plan are worked out with a more capable model or a higher reasoning level than the one used for the implementation.",
-        "ru": "Практика, при которой требования и план прорабатывают на более сильной модели или с большим уровнем рассуждений, чем реализацию."
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "models-budget"
-    },
-    {
       "id": "spec-driven-development-iterate",
       "stages": [
         "req-plan"
@@ -1405,47 +1200,6 @@
       "opposites": [],
       "rootsIn": [
         "waterfall"
-      ],
-      "origin": null,
-      "group": null
-    },
-    {
-      "id": "treat-ai-code-as-pull-request",
-      "stages": [
-        "code-review"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Agent code as a pull request",
-        "ru": "Код агента как пулреквест"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which the developer reviews agent-written code the way a colleague's pull request is reviewed: leaves comments for the agent to address and does not edit the code by hand. [1]",
-        "ru": "Практика, при которой разработчик ревьюит код агента как пулреквест коллеги: оставляет замечания, которые агент исправляет сам, и не правит код руками. [1]"
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": null,
-          "quoteLang": "en",
-          "author": "HN Discussion",
-          "work": null,
-          "url": "https://news.ycombinator.com/item?id=45415232",
-          "published": null
-        }
-      ],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [
-        "pull-request"
       ],
       "origin": null,
       "group": null
@@ -2275,9 +2029,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "plan-to-throw-one-away"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -2349,36 +2101,6 @@
       "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
-      "id": "ascii-wireframe-prompts",
-      "stages": [
-        "ui-proto"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "ASCII wireframes",
-        "ru": "ASCII-вайрфреймы"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which the agent is asked to draw the layout as ASCII art before the interface code is written.",
-        "ru": "Практика, при которой агента просят нарисовать раскладку в виде ASCII-графики до написания кода интерфейса."
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [
-        "low-fidelity-wireframes"
-      ],
       "origin": null,
       "group": null
     },
@@ -2474,34 +2196,6 @@
       ],
       "origin": null,
       "group": "human"
-    },
-    {
-      "id": "confirm-understanding-before-coding",
-      "stages": [
-        "general"
-      ],
-      "kind": "prompting",
-      "title": {
-        "en": "Understanding check",
-        "ru": "Проверка понимания"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "A prompting habit in which the agent is asked to restate the task before it starts the implementation.",
-        "ru": "Приём, при котором агента просят пересказать задачу до начала реализации."
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "prompting"
     },
     {
       "id": "keep-code-dead-simple",
@@ -3053,9 +2747,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "code-inspection"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -3131,9 +2823,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "code-inspection"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -3223,36 +2913,6 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "code-inspection"
-      ],
-      "origin": null,
-      "group": null
-    },
-    {
-      "id": "checkpoint-save-states",
-      "stages": [
-        "coding"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Rollback points",
-        "ru": "Точки отката"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which a known working state is saved before a risky change, so that it can be restored.",
-        "ru": "Практика, при которой перед рискованной правкой сохраняют рабочее состояние, чтобы к нему можно было вернуться."
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "techniques",
-      "opposites": [],
       "rootsIn": [],
       "origin": null,
       "group": null
@@ -3323,8 +2983,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Взгляд на разработку программ как на инженерную дисциплину с процессами, стадиями и контролем качества.",
-        "en": "Treating software development as an engineering discipline with processes, stages and quality control."
+        "ru": "Взгляд на разработку программ как на инженерную дисциплину с процессами, стадиями и контролем качества. [1]",
+        "en": "Treating software development as an engineering discipline with processes, stages and quality control. [1]"
       },
       "firstAppeared": {
         "date": "1968-10-01",
@@ -3336,7 +2996,19 @@
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
-      "sources": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The phrase ‘software engineering’ was deliberately chosen as being provocative, in implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering.",
+          "quoteLang": "en",
+          "author": "Peter Naur and Brian Randell (eds.), NATO Science Committee",
+          "work": "Software Engineering: Report on a conference sponsored by the NATO Science Committee, Garmisch, 1968, p. 8",
+          "url": "http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
       "seededFrom": "pre-llm",
       "opposites": [],
       "origin": null,
@@ -3392,86 +3064,6 @@
       "origin": {
         "ru": "Возводится к статье Уинстона Ройса",
         "en": "Traced to Winston Royce's paper"
-      },
-      "group": null
-    },
-    {
-      "id": "plan-to-throw-one-away",
-      "stages": [
-        "ui-proto"
-      ],
-      "title": {
-        "ru": "Выбросить первую версию",
-        "en": "Plan to throw one away"
-      },
-      "aliases": {
-        "ru": [
-          "Plan to throw one away"
-        ],
-        "en": []
-      },
-      "definition": {
-        "ru": "Принцип, по которому первая версия системы считается пробной и заранее планируется к замене.",
-        "en": "The principle that the first version of a system is a pilot and is planned to be replaced."
-      },
-      "firstAppeared": {
-        "date": "1975-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Fred Brooks, The Mythical Man-Month, 1975"
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Сформулирован Фредериком Бруксом в «Мифическом человеко-месяце»",
-        "en": "Stated by Fred Brooks in The Mythical Man-Month"
-      },
-      "group": null
-    },
-    {
-      "id": "code-inspection",
-      "stages": [
-        "code-review"
-      ],
-      "title": {
-        "ru": "Инспекция кода",
-        "en": "Code inspection"
-      },
-      "aliases": {
-        "ru": [
-          "Code review",
-          "Ревью кода"
-        ],
-        "en": [
-          "Fagan inspection",
-          "Code review"
-        ]
-      },
-      "definition": {
-        "ru": "Формальная проверка кода коллегами по чек-листу до тестирования.",
-        "en": "A formal checklist-driven review of code by peers before testing."
-      },
-      "firstAppeared": {
-        "date": "1976-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Michael Fagan, Design and code inspections, IBM Systems Journal, 1976"
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Метод описал Майкл Фейган из IBM",
-        "en": "Described by Michael Fagan at IBM"
       },
       "group": null
     },
@@ -3718,8 +3310,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Короткое описание требования от лица пользователя: кто, что хочет и зачем.",
-        "en": "A short requirement written from the user's side: who, what they want, and why."
+        "ru": "Короткое описание требования от лица пользователя: кто, что хочет и зачем. [1]",
+        "en": "A short requirement written from the user's side: who, what they want, and why. [1]"
       },
       "firstAppeared": {
         "date": "1999-01-01",
@@ -3731,7 +3323,19 @@
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
-      "sources": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "User stories have three critical aspects. We can call these Card, Conversation, and Confirmation.",
+          "quoteLang": "en",
+          "author": "Ron Jeffries",
+          "work": null,
+          "url": "https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/",
+          "published": "2001-08-30",
+          "checkedAt": "2026-11-15"
+        }
+      ],
       "seededFrom": "pre-llm",
       "opposites": [],
       "origin": {
@@ -3862,8 +3466,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности.",
-        "en": "A separate version-control branch per feature, merged into the main branch when ready."
+        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности. [1]",
+        "en": "A separate version-control branch per feature, merged into the main branch when ready. [1]"
       },
       "firstAppeared": {
         "date": "2005-01-01",
@@ -3875,7 +3479,19 @@
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
-      "sources": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "A feature branch is a source code branching pattern where a developer opens a branch when she starts working on a new feature.",
+          "quoteLang": "en",
+          "author": "Martin Fowler",
+          "work": null,
+          "url": "https://martinfowler.com/bliki/FeatureBranch.html",
+          "published": "2020-05-07",
+          "checkedAt": "2026-11-15"
+        }
+      ],
       "seededFrom": "pre-llm",
       "opposites": [],
       "origin": {

@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-83 entries, 122 sources, 110 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+71 entries, 123 sources, 113 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -37,8 +37,6 @@ Inside every section the newest entries come first; practices from before coding
 - **Software factory** (2026). An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality.
   Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
   Grew from: Software factory (1968).
-- **Agentic engineering** (2026). An approach in which production software is built with agents under engineering discipline: specifications, reviews, evals and a harness.
-  Grew from: Software engineering.
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
   Grew from: Lights-out manufacturing.
@@ -58,7 +56,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Marc Brooker, 2026-04-09](https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec).
   Led to: Spec-driven development.
 - **Software engineering** (1968). Treating software development as an engineering discipline with processes, stages and quality control.
-  Led to: Agentic engineering.
+  Sources: [Peter Naur and Brian Randell (eds.), NATO Science Committee](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF).
 - **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
   Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
   Led to: Software factory.
@@ -74,6 +72,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Dan McKinley, 2015-03-30](https://mcfunley.com/choose-boring-technology); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
   Led to: Stable libraries.
 - **User story** (1999). A short requirement written from the user's side: who, what they want, and why.
+  Sources: [Ron Jeffries, 2001-08-30](https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/).
 
 ## UI & Prototype
 
@@ -81,14 +80,8 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock); [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=I%20opened%20a%20second%20copy%20of%20Sketch); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=You%20can%20use%20any%20of%20these%20methods); [kent-tokyo (DEV Community handle), 2026-06-03](https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0).
 - **Generated prototype** (2025). The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20best%20way%20to%20start%20any%20project).
-  Grew from: Plan to throw one away.
-- **ASCII wireframes**. The practice in which the agent is asked to draw the layout as ASCII art before the interface code is written.
-  Grew from: Low-fidelity wireframes.
 - **Low-fidelity wireframes**. The practice in which a screen layout is sketched roughly, without visual detail, before the interface is designed or built.
   Sources: [Carlos Chinchilla, 2025-12-25](https://medium.com/@calufa/ascii-driven-development-850f66661351).
-  Led to: ASCII wireframes.
-- **Plan to throw one away** (1975). The principle that the first version of a system is a pilot and is planned to be replaced.
-  Led to: Generated prototype.
 
 ## Coding
 
@@ -99,11 +92,11 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: KISS.
 - **Generated code in place of dependencies** (2025). The practice in which the agent writes the needed code in the project, and a new library is not added.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
-- **Rollback points**. The practice in which a known working state is saved before a risky change, so that it can be restored.
 - **Codemods**. The practice in which a large mechanical change across a codebase is made by a program that rewrites the code.
   Sources: [Codegen Technical Staff, 2025-03-01](https://codegen.com/swe-agents-are-better-with-codemods/).
   Led to: Delegation of routine tasks.
 - **Feature branch** (2005). A separate version-control branch per feature, merged into the main branch when ready.
+  Sources: [Martin Fowler, 2020-05-07](https://martinfowler.com/bliki/FeatureBranch.html).
   Led to: Parallel agents, Feature sessions.
 - **Pair programming** (1999). Two people work on the same code: one types, the other watches and thinks ahead.
   Sources: [Benji Weber, 2025-07-14](https://benjiweber.co.uk/blog/?p=2657); [Matt Wynne, 2026-03-04](https://mattwynne.net/pair-programming-in-the-age-of-agents).
@@ -141,26 +134,16 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Adversarial review** (2026). The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=I%20typically%20double); [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
-  Grew from: Code inspection.
 - **Agent self-review** (2025). The practice in which the agent reviews its own code before a person reviews it.
   Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/).
-  Grew from: Code inspection.
 - **Reading agent-written code** (2025). The practice in which the developer reads the code an agent wrote before accepting it.
   Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I'm%20not%20shipping%20code); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Please%20don't%20ever%20ship); [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/Getting-Good-Results-from-Claude-Code.html#:~:text=I%20believe%20I'm%20ultimately%20responsible,manually%20review%20all%20AI-written%20code).
-  Grew from: Code inspection.
 - **Edits in the diff** (2025). The practice in which the developer reviews the changes in a diff view and types corrections into the diff before committing.
   Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all); [Justin Paul, 2026-07-30](https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/).
-  Grew from: Code inspection.
-- **Agent code as a pull request**. The practice in which the developer reviews agent-written code the way a colleague's pull request is reviewed: leaves comments for the agent to address and does not edit the code by hand.
-  Sources: [HN Discussion](https://news.ycombinator.com/item?id=45415232).
-  Grew from: Pull request.
 - **Subagent verification**. The practice in which the agent starts subagents to verify details or to investigate separate questions.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents).
 - **Pull request** (2008). A request to merge changes that hosts the discussion and review.
   Sources: [GitHub Blog (author name not shown in the saved text), 2026-05-07](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/); [GitHub](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results).
-  Led to: Agent code as a pull request.
-- **Code inspection** (1976). A formal checklist-driven review of code by peers before testing.
-  Led to: Adversarial review, Agent self-review, Reading agent-written code, Edits in the diff.
 
 ## Across stages: Prompting
 
@@ -172,9 +155,6 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like).
 - **Developer-defined structure** (2025). The practice in which the developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20find%20LLMs%20respond%20extremely%20well); [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20an%20outline%20of%20the%20code%20and%20ask%20AI%20to%20fill%20the%20missing%20parts); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=AI%20is%20very%20good%20at%20fill); [Between the Prompts](https://betweentheprompts.com/design-partner/#:~:text=But%20instead%20of%20fixing%20the%20code%20myself%2C%20I%20explained%20why%20it%20was%20wrong%20and%20gave%20it%20more%20precise%20instructions.%20When%20I%20told%20it%20%E2%80%9CYou%20misunderstood%2C%20it%20should%E2%80%A6%E2%80%9D%20and%20provided%20clearer%20guidance%2C%20I%20was%20impressed%20at%20how%20it%20could%20understand%20the%20problem%20and%20update%20the%20code%20accordingly.).
-- **Perspective simulation prompt**. A prompting habit in which the model is asked what a group of experienced people would say about a question, instead of what the model itself thinks.
-  Sources: [Andrej Karpathy](https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities).
-- **Understanding check**. A prompting habit in which the agent is asked to restate the task before it starts the implementation.
 
 ## Across stages: Context and memory
 
@@ -193,7 +173,6 @@ Inside every section the newest entries come first; practices from before coding
 
 ## Across stages: Sessions and parallel work
 
-- **Fan-out and fan-in** (2026). The practice in which a task is split into independent parts, several agents do the parts in parallel, and a coordinator merges the results.
 - **Orchestrator and workers** (2026). The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results.
   Sources: [Anthropic (engineering blog, no personal byline in saved text), 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents).
 - **Feature sessions** (2026). The practice of keeping each feature or task in its own agent session so the context does not bloat.
@@ -213,7 +192,6 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Abhishek Ray, 2026-03-10](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep).
 - **Model escalation** (2025). The practice in which work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard.
   Sources: [Sankalp, 2025-07-17](https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Sonnet%204%20handles%2090%25).
-- **Stronger model for planning**. The practice in which requirements and the plan are worked out with a more capable model or a higher reasoning level than the one used for the implementation.
 
 ## Across stages: The human's part
 
@@ -249,13 +227,11 @@ Inside every section the newest entries come first; practices from before coding
 
 ## Concepts: Context and tokens
 
-- **Token budget** (2026). The maximum number of tokens an agent may spend on a session, a task or a goal.
 - **Context window**. The text a model can see at one time: the prompt, the files, tool outputs and earlier turns. It is measured in tokens; when it fills, older content is summarized or dropped.
   Sources: [Anthropic (Claude Platform documentation, no personal byline)](https://platform.claude.com/docs/en/build-with-claude/context-windows).
 
 ## Concepts: Risks and failures
 
-- **Sycophancy** (2026). The tendency of a model to agree with the framing the user gave, including when the user is wrong.
 - **Context poisoning** (2025). A failure in which a long agent session accumulates outdated assumptions, earlier errors or stale file contents in its context, and they keep affecting later answers.
   Sources: [Drew Breunig (byline not in saved text; site dbreunig.com), 2025-06-22](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html); [Tian Pan, 2026-04-15](https://tianpan.co/blog/2026/04/15/context-poisoning-long-running-agents).
 - **SQL injection**. An attack in which input sent to an application is executed as part of a database query.
