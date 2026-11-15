@@ -2978,51 +2978,6 @@
       "group": null
     },
     {
-      "id": "software-engineering",
-      "stages": [],
-      "title": {
-        "ru": "Программная инженерия",
-        "en": "Software engineering"
-      },
-      "aliases": {
-        "ru": [
-          "Software engineering"
-        ],
-        "en": []
-      },
-      "definition": {
-        "ru": "Взгляд на разработку программ как на инженерную дисциплину с процессами, стадиями и контролем качества. [1]",
-        "en": "Treating software development as an engineering discipline with processes, stages and quality control. [1]"
-      },
-      "firstAppeared": {
-        "date": "1968-10-01",
-        "precision": "month",
-        "verified": false,
-        "note": "NATO Software Engineering Conference, Garmisch, Oct 1968"
-      },
-      "kind": "approach",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "The phrase ‘software engineering’ was deliberately chosen as being provocative, in implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering.",
-          "quoteLang": "en",
-          "author": "Peter Naur and Brian Randell (eds.), NATO Science Committee",
-          "work": "Software Engineering: Report on a conference sponsored by the NATO Science Committee, Garmisch, 1968, p. 8",
-          "url": "http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF",
-          "published": null,
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "waterfall",
       "stages": [],
       "title": {

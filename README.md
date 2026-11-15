@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-98 entries, 167 sources, 157 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+97 entries, 166 sources, 156 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -56,8 +56,6 @@ Inside every section the newest entries come first; practices from before coding
 - **Waterfall** (1970). A development model where stages run strictly in order: requirements, design, code, testing, deployment.
   Sources: [Marc Brooker, 2026-04-09](https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec).
   Led to: Spec-driven development.
-- **Software engineering** (1968). Treating software development as an engineering discipline with processes, stages and quality control.
-  Sources: [Peter Naur and Brian Randell (eds.), NATO Science Committee](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF).
 - **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
   Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
   Led to: Software factory.
