@@ -22,7 +22,8 @@ def entry_date(entry, by_id):
     appeared = (entry.get("firstAppeared") or {}).get("date")
     if appeared:
         return appeared
-    published = [s["published"] for s in entry["sources"] if s.get("published")]
+    # the date of a quote about what changes with agents is not the date of the practice
+    published = [s["published"] for s in entry["sources"] if s.get("published") and s.get("role") != "relevance"]
     return min(published) if published else None
 
 
@@ -42,7 +43,7 @@ def anchor(title):
 
 def entry_lines(entry, by_id):
     date = entry_date(entry, by_id)
-    year = f" ({date[:4]})" if date else ""
+    year = f" ({date[:4]})" if date and date[:4] not in entry["title"]["en"] else ""
     lines = [f"- **{entry['title']['en']}**{year}. {plain_definition(entry)}"]
     sources = []
     for source in sorted(entry["sources"], key=lambda s: s.get("n", 0)):
