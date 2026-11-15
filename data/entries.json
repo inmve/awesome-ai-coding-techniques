@@ -128,40 +128,12 @@
         "id": "team",
         "section": "general",
         "title": {
-          "ru": "Правила команды",
-          "en": "Team rules"
-        }
-      },
-      {
-        "id": "agents-tools",
-        "section": "concepts",
-        "title": {
-          "ru": "Агенты и инструменты",
-          "en": "Agents and tools"
-        }
-      },
-      {
-        "id": "context-tokens",
-        "section": "concepts",
-        "title": {
-          "ru": "Контекст и токены",
-          "en": "Context and tokens"
-        }
-      },
-      {
-        "id": "risks",
-        "section": "concepts",
-        "title": {
-          "ru": "Риски и сбои",
-          "en": "Risks and failures"
-        }
-      },
-      {
-        "id": "ideas",
-        "section": "concepts",
-        "title": {
-          "ru": "Идеи и модели развития",
-          "en": "Ideas and maturity models"
+          "en": "Teams and projects",
+          "ru": "Команды и проекты"
+        },
+        "description": {
+          "en": "Rules that engineering teams and open-source projects set for work done with agents: how agent-written changes are disclosed and reviewed, who may let an agent act in shared spaces, who owns the shared agent setup, and how hiring interviews change.",
+          "ru": "Правила, которые команды разработки и открытые проекты вводят для работы с агентами: как раскрывать и проверять изменения, написанные агентом, кто может пускать агента в общие пространства, кто владеет общей настройкой агентов и как меняются собеседования."
         }
       }
     ]
@@ -234,159 +206,6 @@
       "group": null
     },
     {
-      "id": "agent",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Agent",
-        "ru": "Агент"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "A program that uses a language model to take actions (read files, run commands, call tools, edit code) in pursuit of a stated goal, repeating until the goal is met or the work is stopped. [1][2]",
-        "ru": "Программа, которая с помощью языковой модели выполняет действия (читает файлы, запускает команды, вызывает инструменты, правит код) ради поставленной цели и повторяет их, пока цель не достигнута или работа не остановлена. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2024-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "the term predates this catalog; current usage stabilized through Anthropic and OpenAI product naming in 2024–2025."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "An LLM agent runs tools in a loop to achieve a goal.",
-          "quoteLang": "en",
-          "author": "Simon Willison",
-          "work": null,
-          "url": "https://simonwillison.net/2025/Sep/18/agents",
-          "published": "2025-09-18",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "An agent is the industry-adopted term for an LLM that can chat and invoke external behavior in a loop",
-          "quoteLang": "en",
-          "author": "Mitchell Hashimoto",
-          "work": null,
-          "url": "https://mitchellh.com/writing/my-ai-adoption-journey",
-          "published": "2026-02-05",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "agents-tools"
-    },
-    {
-      "id": "context-poisoning",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Context poisoning",
-        "ru": "Отравление контекста"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "A failure in which a long agent session accumulates outdated assumptions, earlier errors or stale file contents in its context, and they keep affecting later answers. [1][2]",
-        "ru": "Сбой, при котором в контексте длинной сессии агента накапливаются устаревшие допущения, прежние ошибки или старое содержимое файлов и продолжают влиять на следующие ответы. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2025-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "fuzzy: term emerged through Anthropic engineering posts and practitioner write-ups in 2025."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "Context Poisoning is when a hallucination or other error makes it into the context, where it is repeatedly referenced.",
-          "quoteLang": "en",
-          "author": "Drew Breunig (byline not in saved text; site dbreunig.com)",
-          "work": null,
-          "url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
-          "published": "2025-06-22",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "This is context poisoning: not a security attack, but a reliability failure mode where the agent's own accumulated context becomes a source of wrong information.",
-          "quoteLang": "en",
-          "author": "Tian Pan",
-          "work": null,
-          "url": "https://tianpan.co/blog/2026/04/15/context-poisoning-long-running-agents",
-          "published": "2026-04-15",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "risks"
-    },
-    {
-      "id": "context-window",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Context window",
-        "ru": "Контекстное окно"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The text a model can see at one time: the prompt, the files, tool outputs and earlier turns. It is measured in tokens; when it fills, older content is summarized or dropped. [1]",
-        "ru": "Текст, который модель видит одновременно: промпт, файлы, выводы инструментов и предыдущие реплики. Измеряется в токенах; когда окно заполняется, старое содержимое сжимается или отбрасывается. [1]"
-      },
-      "firstAppeared": {
-        "date": null,
-        "precision": null,
-        "verified": false,
-        "note": "standard model-vendor terminology; ubiquitous since GPT-3 era."
-      },
-      "coinedHere": false,
-      "seeAlso": [
-        "context-poisoning"
-      ],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "Everything in the request counts toward the context window: the system prompt, every message in messages (including tool results, images, and documents), and your tool definitions.",
-          "quoteLang": "en",
-          "author": "Anthropic (Claude Platform documentation, no personal byline)",
-          "work": null,
-          "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
-          "published": null,
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "context-tokens"
-    },
-    {
       "id": "dark-factory",
       "stages": [],
       "kind": "approach",
@@ -409,9 +228,7 @@
         "note": "Dan Shapiro's six-level framework, popularized via Simon Willison, *The Five Levels: from Spicy Autocomplete to the Dark Factory* (Jan 28 2026)."
       },
       "coinedHere": false,
-      "seeAlso": [
-        "six-levels"
-      ],
+      "seeAlso": [],
       "sources": [
         {
           "n": 1,
@@ -432,60 +249,6 @@
       ],
       "origin": null,
       "group": null
-    },
-    {
-      "id": "harness",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Harness",
-        "ru": "Харнесс"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "Everything around a model that makes it an agent: the system prompt, tools, hooks, memory files, evals, the sandbox and the loop that connects them. [1][2]",
-        "ru": "Всё, что окружает модель и делает её агентом: системный промпт, инструменты, хуки, memory-файлы, эвалы, песочница и цикл, который их связывает. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2026-02-05",
-        "precision": "day",
-        "verified": false,
-        "note": "Mitchell Hashimoto, *My AI Adoption Journey* (Feb 5 2026), as part of the *harness engineering* coinage."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "The term harness has emerged as a shorthand to mean everything in an AI agent except the model itself - Agent = Model + Harness.",
-          "quoteLang": "en",
-          "author": "Birgitta Böckeler",
-          "work": null,
-          "url": "https://martinfowler.com/articles/harness-engineering.html",
-          "published": "2026-04-02",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "For Insight Miner, separate agentic systems help us update instructions for new model releases, fold in new best practices, review live use to identify pain points, and watch for, reproduce, and propose fixes for new bugs.",
-          "quoteLang": "en",
-          "author": "Wren Dougherty",
-          "work": null,
-          "url": "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4",
-          "published": "2026-09-15",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "agents-tools"
     },
     {
       "id": "harness-engineering",
@@ -663,99 +426,6 @@
       "group": "sessions"
     },
     {
-      "id": "prompt-injection",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Prompt injection",
-        "ru": "Промпт-инъекция"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "An attack in which content the agent reads (a web page, an email, a file) contains instructions that redirect the agent away from what the user asked. [1]",
-        "ru": "Атака, при которой в содержимом, которое читает агент (веб-страница, письмо, файл), есть инструкции, уводящие его от задачи пользователя. [1]"
-      },
-      "firstAppeared": {
-        "date": "2022-09-01",
-        "precision": "month",
-        "verified": false,
-        "note": "Simon Willison's coining (Sep 2022), with growing relevance as agents gained tool access through 2024–2025."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "coined",
-          "quote": "This isn’t just an interesting academic trick: it’s a form of security exploit. I propose that the obvious name for this should be prompt injection.",
-          "quoteLang": "en",
-          "author": "Simon Willison",
-          "work": null,
-          "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
-          "published": "2022-09-12",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [
-        "sql-injection"
-      ],
-      "origin": null,
-      "group": "risks"
-    },
-    {
-      "id": "six-levels",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Five levels",
-        "ru": "Пять уровней"
-      },
-      "aliases": {
-        "en": [
-          "Six Levels"
-        ],
-        "ru": [
-          "Шесть уровней",
-          "Five levels"
-        ]
-      },
-      "definition": {
-        "en": "A scale that describes how much of development is handed to agents, from autocomplete at the lowest level to the dark factory at the highest. [1]",
-        "ru": "Шкала, описывающая, какую долю разработки передают агентам: от автодополнения на нижнем уровне до тёмной фабрики на верхнем. [1]"
-      },
-      "firstAppeared": {
-        "date": "2026-01-28",
-        "precision": "day",
-        "verified": false,
-        "note": "Dan Shapiro's six-level framework; popularized through Simon Willison's *The Five Levels* (Jan 28 2026)."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "I’ve now seen dozens of companies struggling to put AI to work writing code, and each one has moved through five clear tiers of automation.",
-          "quoteLang": "en",
-          "author": "Dan Shapiro",
-          "work": null,
-          "url": "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/",
-          "published": "2026-01-23",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "ideas"
-    },
-    {
       "id": "software-factory",
       "stages": [],
       "kind": "approach",
@@ -810,60 +480,6 @@
       ],
       "origin": null,
       "group": null
-    },
-    {
-      "id": "sub-agent",
-      "stages": [],
-      "kind": "concept",
-      "title": {
-        "en": "Subagent",
-        "ru": "Субагент"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "An agent started by another agent for a subtask, usually with its own context window, so that its work does not fill the parent's context. [1][2]",
-        "ru": "Агент, которого другой агент запускает для подзадачи, обычно с отдельным контекстным окном, чтобы его работа не занимала контекст родителя. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2025-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Anthropic Claude Code sub-agents documentation (mid-2025); related practice in OpenAI Agents SDK."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "Rather than one agent attempting to maintain state across an entire project, specialized sub-agents can handle focused tasks with clean context windows.",
-          "quoteLang": "en",
-          "author": "Written by Anthropic's Applied AI team: Prithvi Rajasekaran, Ethan Dixon, Carly Ryan, and Jeremy Hadfield",
-          "work": null,
-          "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
-          "published": "2025-09-29",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "I put all my key context in the CLAUDE.md. Then, I let the main agent decide when and how to delegate work to copies of itself.",
-          "quoteLang": "en",
-          "author": "Shrivu Shankar",
-          "work": null,
-          "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
-          "published": "2025-11-02",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "agents-tools"
     },
     {
       "id": "vibe-coding",
@@ -3574,44 +3190,6 @@
       "group": null
     },
     {
-      "id": "sql-injection",
-      "stages": [],
-      "title": {
-        "en": "SQL injection",
-        "ru": "SQL-инъекция"
-      },
-      "aliases": {
-        "ru": [],
-        "en": []
-      },
-      "definition": {
-        "en": "An attack in which input sent to an application is executed as part of a database query. [1]",
-        "ru": "Атака, при которой ввод, переданный приложению, выполняется как часть запроса к базе данных. [1]"
-      },
-      "firstAppeared": null,
-      "kind": "concept",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "The obvious parallel here is SQL injection.",
-          "quoteLang": "en",
-          "author": "Simon Willison",
-          "work": null,
-          "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
-          "published": "2022-09-12",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": null,
-      "group": "risks"
-    },
-    {
       "id": "codemods",
       "stages": [
         "coding"
@@ -5054,6 +4632,239 @@
       "opposites": [],
       "origin": null,
       "group": "human"
+    },
+    {
+      "id": "interview-build-session",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Build session in the interview",
+        "ru": "Сборка на собеседовании"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an interview gives the candidate a few hours to build a working prototype with coding agents and tools of their choice. [1][2]",
+        "ru": "Практика, при которой на собеседовании кандидату дают несколько часов, чтобы собрать работающий прототип с агентами и инструментами на свой выбор. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "After that, the candidate gets two hours to build a working prototype of the system they just designed using any AI model they want, and any frameworks.",
+          "quoteLang": "en",
+          "author": "Applied Intuition",
+          "work": null,
+          "url": "https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents",
+          "published": "2026-07-22",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "The centerpiece of our on-site was a three-hour build session. Candidates chose from a short list of assigned prompts and were asked to design, build, and deploy a working prototype on DigitalOcean by the end of the session.",
+          "quoteLang": "en",
+          "author": "DigitalOcean",
+          "work": null,
+          "url": "https://digitalocean.com/blog/ai-native-engineering-interview",
+          "published": "2026-06-09",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "interview-agent-direction",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Assessing how a candidate directs agents",
+        "ru": "Оценка того, как кандидат направляет агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced. [1][2]",
+        "ru": "Практика, при которой интервьюеры оценивают, как кандидат планирует работу, направляет агента и проверяет результат. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Steering, not just prompting. Are you thinking about the how and why of the work, or just feeding the spec to an agent and hoping for the best?",
+          "quoteLang": "en",
+          "author": "Elicit",
+          "work": null,
+          "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
+          "published": "2026-03-30",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Can they effectively direct and validate AI-generated work?",
+          "quoteLang": "en",
+          "author": "Augment Code",
+          "work": null,
+          "url": "https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now",
+          "published": "2026-03-12",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "interview-own-tools",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Candidate's own agents in the interview",
+        "ru": "Свои агенты кандидата на собеседовании"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work. [1][2]",
+        "ru": "Практика, при которой кандидат может пользоваться на собеседовании своими агентами и инструментами, теми же, что и на работе. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The interviews where we want you to use AI tend to be deeper technical sessions. You’re on your own machine, using whatever tools you’re comfortable with.",
+          "quoteLang": "en",
+          "author": "Elicit",
+          "work": null,
+          "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
+          "published": "2026-03-30",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "We’re open to any type of tools, from none at all, to autocompletes, to full coding agents.",
+          "quoteLang": "en",
+          "author": "Omnea",
+          "work": null,
+          "url": "https://www.omnea.co/resource/ai-in-our-programming-interviews",
+          "published": "2026-05-26",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "interview-draft-review",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Review of a draft change in the interview",
+        "ru": "Ревью черновика изменения на собеседовании"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a candidate reviews and improves a colleague's draft pull request in an unfamiliar codebase, with agents allowed. [1]",
+        "ru": "Практика, при которой кандидат на собеседовании проверяет и дорабатывает черновой pull request коллеги в незнакомой кодовой базе, с агентами. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Candidates are given a medium-sized codebase and a draft PR from a colleague that introduces a cross-cutting feature. Their job is to review and improve it — pulling down the code, inspecting the output, and iterating with coding agents to make it better.",
+          "quoteLang": "en",
+          "author": "Sierra",
+          "work": null,
+          "url": "https://sierra.ai/blog/the-ai-native-interview",
+          "published": "2026-04-22",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "interview-without-agents",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Interviews without agents",
+        "ru": "Собеседования без агентов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1]",
+        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "There are some interviews where we explicitly ask candidates not to use AI.",
+          "quoteLang": "en",
+          "author": "Elicit",
+          "work": null,
+          "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
+          "published": "2026-03-30",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
     }
   ]
 }

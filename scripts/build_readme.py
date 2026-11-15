@@ -69,7 +69,7 @@ def main():
     stages = data["meta"]["stages"]
     groups = data["meta"]["groups"]
 
-    blocks = [("Approaches", [e for e in entries if e["kind"] == "approach"])]
+    blocks = [("Approaches", [e for e in entries if e["kind"] == "approach"], None)]
     placed = {e["id"] for e in blocks[0][1]}
     for stage in stages:
         if stage["id"] == "general":
@@ -77,21 +77,23 @@ def main():
         members = [e for e in entries if e["id"] not in placed and e["kind"] != "concept" and not e.get("group")
                    and (e.get("stages") or [None])[0] == stage["id"]]
         if members:
-            blocks.append((stage["title"]["en"], members))
+            blocks.append((stage["title"]["en"], members, None))
             placed |= {e["id"] for e in members}
     for group in groups:
         members = [e for e in entries if e["id"] not in placed and e.get("group") == group["id"]]
         if members:
             prefix = "Concepts: " if group["section"] == "concepts" else "Across stages: "
-            blocks.append((prefix + group["title"]["en"], members))
+            if group["id"] == "team":
+                prefix = ""
+            blocks.append((prefix + group["title"]["en"], members, group.get("description", {}).get("en")))
             placed |= {e["id"] for e in members}
     rest = [e for e in entries if e["id"] not in placed and e.get("seededFrom") == "pre-llm"]
     if rest:
-        blocks.append(("Before coding agents", rest))
+        blocks.append(("Before coding agents", rest, None))
         placed |= {e["id"] for e in rest}
     other = [e for e in entries if e["id"] not in placed]
     if other:
-        blocks.append(("Across stages: other", other))
+        blocks.append(("Across stages: other", other, None))
 
     quoted = sum(1 for e in entries for s in e["sources"] if s.get("quote"))
     out = [
@@ -99,7 +101,7 @@ def main():
         "",
         "# Software Practices",
         "",
-        "An open reference of software development practices, from code inspection to work with coding agents.",
+        "An open reference of software development practices, from older engineering practices to work with coding agents.",
         "For each practice: a definition, when it appeared, where it grew from, and the sources that describe it.",
         "",
         f"- **Site:** [{SITE_URL}]({SITE_URL}) (the same data, with a timeline and quotes on hover)",
@@ -114,10 +116,12 @@ def main():
         "## Contents",
         "",
     ]
-    out += [f"- [{title}](#{anchor(title)})" for title, _ in blocks]
+    out += [f"- [{title}](#{anchor(title)})" for title, _, _ in blocks]
     out.append("")
-    for title, members in blocks:
+    for title, members, description in blocks:
         out += [f"## {title}", ""]
+        if description:
+            out += [description, ""]
         for entry in sorted(members, key=lambda e: sort_key(e, by_id, llm_era_start)):
             out += entry_lines(entry, by_id)
         out.append("")

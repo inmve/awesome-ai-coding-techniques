@@ -2,14 +2,14 @@
 
 # Software Practices
 
-An open reference of software development practices, from code inspection to work with coding agents.
+An open reference of software development practices, from older engineering practices to work with coding agents.
 For each practice: a definition, when it appeared, where it grew from, and the sources that describe it.
 
 - **Site:** [https://inmve.github.io/software-practices/](https://inmve.github.io/software-practices/) (the same data, with a timeline and quotes on hover)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-97 entries, 166 sources, 156 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+94 entries, 162 sources, 152 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -27,11 +27,7 @@ Inside every section the newest entries come first; practices from before coding
 - [Across stages: Sessions and parallel work](#across-stages-sessions-and-parallel-work)
 - [Across stages: Models and budget](#across-stages-models-and-budget)
 - [Across stages: The human's part](#across-stages-the-humans-part)
-- [Across stages: Team rules](#across-stages-team-rules)
-- [Concepts: Agents and tools](#concepts-agents-and-tools)
-- [Concepts: Context and tokens](#concepts-context-and-tokens)
-- [Concepts: Risks and failures](#concepts-risks-and-failures)
-- [Concepts: Ideas and maturity models](#concepts-ideas-and-maturity-models)
+- [Teams and projects](#teams-and-projects)
 
 ## Approaches
 
@@ -247,12 +243,24 @@ Inside every section the newest entries come first; practices from before coding
 - **Repeated rework requests** (2025). The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written).
 
-## Across stages: Team rules
+## Teams and projects
+
+Rules that engineering teams and open-source projects set for work done with agents: how agent-written changes are disclosed and reviewed, who may let an agent act in shared spaces, who owns the shared agent setup, and how hiring interviews change.
 
 - **Ownership of agent controls** (2026). The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild that watches monitoring data and updates them.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
 - **Analyze, not create** (2026). The practice in which a project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit.
   Sources: [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
+- **Build session in the interview** (2026). The practice in which an interview gives the candidate a few hours to build a working prototype with coding agents and tools of their choice.
+  Sources: [Applied Intuition, 2026-07-22](https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents); [DigitalOcean, 2026-06-09](https://digitalocean.com/blog/ai-native-engineering-interview).
+- **Review of a draft change in the interview** (2026). The practice in which a candidate reviews and improves a colleague's draft pull request in an unfamiliar codebase, with agents allowed.
+  Sources: [Sierra, 2026-04-22](https://sierra.ai/blog/the-ai-native-interview).
+- **Candidate's own agents in the interview** (2026). The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Omnea, 2026-05-26](https://www.omnea.co/resource/ai-in-our-programming-interviews).
+- **Interviews without agents** (2026). The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents).
+- **Assessing how a candidate directs agents** (2026). The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Augment Code, 2026-03-12](https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now).
 - **Agent review of every pull request** (2026). The practice in which a team has an agent review every pull request, and review by a person becomes optional.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [OpenAI](https://developers.openai.com/codex/learn/best-practices).
 - **Disclosure of agent use** (2025). The practice in which contributors state in the pull request, commit message or post whether and how a model or agent produced the content.
@@ -271,36 +279,6 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [OpenJDK Governing Board](https://openjdk.org/legal/ai).
 - **Agent questions in incident retrospectives**. The practice in which a team's regular incident retrospective adds two questions: whether agent-written code contributed to the incident, and whether the larger volume of change strained review, testing, rollout or observability.
   Sources: [Tyson Singer](https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/).
-
-## Concepts: Agents and tools
-
-- **Harness** (2026). Everything around a model that makes it an agent: the system prompt, tools, hooks, memory files, evals, the sandbox and the loop that connects them.
-  Sources: [Birgitta Böckeler, 2026-04-02](https://martinfowler.com/articles/harness-engineering.html); [Wren Dougherty, 2026-09-15](https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4).
-- **Subagent** (2025). An agent started by another agent for a subtask, usually with its own context window, so that its work does not fill the parent's context.
-  Sources: [Written by Anthropic's Applied AI team: Prithvi Rajasekaran, Ethan Dixon, Carly Ryan, and Jeremy Hadfield, 2025-09-29](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
-- **Agent** (2024). A program that uses a language model to take actions (read files, run commands, call tools, edit code) in pursuit of a stated goal, repeating until the goal is met or the work is stopped.
-  Sources: [Simon Willison, 2025-09-18](https://simonwillison.net/2025/Sep/18/agents); [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey).
-
-## Concepts: Context and tokens
-
-- **Context window**. The text a model can see at one time: the prompt, the files, tool outputs and earlier turns. It is measured in tokens; when it fills, older content is summarized or dropped.
-  Sources: [Anthropic (Claude Platform documentation, no personal byline)](https://platform.claude.com/docs/en/build-with-claude/context-windows).
-
-## Concepts: Risks and failures
-
-- **Context poisoning** (2025). A failure in which a long agent session accumulates outdated assumptions, earlier errors or stale file contents in its context, and they keep affecting later answers.
-  Sources: [Drew Breunig (byline not in saved text; site dbreunig.com), 2025-06-22](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html); [Tian Pan, 2026-04-15](https://tianpan.co/blog/2026/04/15/context-poisoning-long-running-agents).
-- **SQL injection**. An attack in which input sent to an application is executed as part of a database query.
-  Sources: [Simon Willison, 2022-09-12](https://simonwillison.net/2022/Sep/12/prompt-injection/).
-  Led to: Prompt injection.
-- **Prompt injection** (2022). An attack in which content the agent reads (a web page, an email, a file) contains instructions that redirect the agent away from what the user asked.
-  Sources: [Simon Willison, 2022-09-12](https://simonwillison.net/2022/Sep/12/prompt-injection/).
-  Grew from: SQL injection.
-
-## Concepts: Ideas and maturity models
-
-- **Five levels** (2026). A scale that describes how much of development is handed to agents, from autocomplete at the lowest level to the dark factory at the highest.
-  Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
 
 ## Contributing
 
