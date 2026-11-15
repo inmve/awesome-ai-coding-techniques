@@ -1,0 +1,3611 @@
+{
+  "meta": {
+    "schemaVersion": 3,
+    "newWindowDays": 120,
+    "timelineStartYear": 1960,
+    "llmEraStart": "2022-11-30",
+    "issuesUrl": "https://github.com/inmve/awesome-ai-coding-techniques/issues",
+    "answersRepo": "inmve/awesome-ai-coding-techniques",
+    "answersDir": "answers",
+    "minAnswersForBar": 5,
+    "siteUrl": "https://inmve.github.io/software-practices/",
+    "usefulQuestion": {
+      "id": "frontier-2026-10",
+      "ru": "Пользуетесь этим сейчас?",
+      "en": "Do you use it nowadays?",
+      "hint": {
+        "ru": "с моделями уровня Opus 5.5 и GPT-6",
+        "en": "with models like Opus 5.5 and GPT-6"
+      }
+    },
+    "stages": [
+      {
+        "id": "req-plan",
+        "title": {
+          "ru": "Планирование",
+          "en": "Planning"
+        }
+      },
+      {
+        "id": "ui-proto",
+        "title": {
+          "ru": "Интерфейс и прототип",
+          "en": "UI & Prototype"
+        }
+      },
+      {
+        "id": "coding",
+        "title": {
+          "ru": "Код",
+          "en": "Coding"
+        }
+      },
+      {
+        "id": "debugging",
+        "title": {
+          "ru": "Отладка",
+          "en": "Debugging"
+        }
+      },
+      {
+        "id": "test-qa",
+        "title": {
+          "ru": "Тестирование",
+          "en": "Testing & QA"
+        }
+      },
+      {
+        "id": "code-review",
+        "title": {
+          "ru": "Ревью",
+          "en": "Review"
+        }
+      },
+      {
+        "id": "release",
+        "title": {
+          "ru": "Релиз",
+          "en": "Release"
+        }
+      },
+      {
+        "id": "ops",
+        "title": {
+          "ru": "Эксплуатация",
+          "en": "Operations"
+        }
+      },
+      {
+        "id": "general",
+        "title": {
+          "ru": "Сквозное",
+          "en": "Cross-stage"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "id": "prompting",
+        "section": "general",
+        "title": {
+          "ru": "Промптинг",
+          "en": "Prompting"
+        }
+      },
+      {
+        "id": "context-memory",
+        "section": "general",
+        "title": {
+          "ru": "Контекст и память",
+          "en": "Context and memory"
+        }
+      },
+      {
+        "id": "sessions",
+        "section": "general",
+        "title": {
+          "ru": "Сессии и параллельная работа",
+          "en": "Sessions and parallel work"
+        }
+      },
+      {
+        "id": "models-budget",
+        "section": "general",
+        "title": {
+          "ru": "Модели и бюджет",
+          "en": "Models and budget"
+        }
+      },
+      {
+        "id": "human",
+        "section": "general",
+        "title": {
+          "ru": "Роль человека",
+          "en": "The human's part"
+        }
+      },
+      {
+        "id": "agents-tools",
+        "section": "concepts",
+        "title": {
+          "ru": "Агенты и инструменты",
+          "en": "Agents and tools"
+        }
+      },
+      {
+        "id": "context-tokens",
+        "section": "concepts",
+        "title": {
+          "ru": "Контекст и токены",
+          "en": "Context and tokens"
+        }
+      },
+      {
+        "id": "risks",
+        "section": "concepts",
+        "title": {
+          "ru": "Риски и сбои",
+          "en": "Risks and failures"
+        }
+      },
+      {
+        "id": "ideas",
+        "section": "concepts",
+        "title": {
+          "ru": "Идеи и модели развития",
+          "en": "Ideas and maturity models"
+        }
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "adversarial-review",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Adversarial review",
+        "ru": "Состязательное ревью"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2]",
+        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2]"
+      },
+      "firstAppeared": {
+        "date": "2026-03-31",
+        "precision": "day",
+        "verified": false,
+        "note": "Jesse Vincent, *Agentic slop PRs* (Mar 31 2026) and *My favorite adversarial review prompt* (May 1 2026); concept generalized through the Superpowers plugin."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code",
+          "published": null
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "I typically double-ESC to reset the architect to a previous checkpoint and tell it to review up to the now-current checkpoint.",
+          "quoteLang": "en",
+          "author": "Jesse Vincent",
+          "work": null,
+          "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=I%20typically%20double",
+          "published": "2025-10-05",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [
+        "code-inspection"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "agent",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Agent",
+        "ru": "Агент"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A program that uses a language model to take actions (read files, run commands, call tools, edit code) in pursuit of a stated goal, repeating until the goal is met or the work is stopped.",
+        "ru": "Программа, которая с помощью языковой модели выполняет действия (читает файлы, запускает команды, вызывает инструменты, правит код) ради поставленной цели и повторяет их, пока цель не достигнута или работа не остановлена."
+      },
+      "firstAppeared": {
+        "date": "2024-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "the term predates this catalog; current usage stabilized through Anthropic and OpenAI product naming in 2024–2025."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "agents-tools"
+    },
+    {
+      "id": "agent-war",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent War",
+        "ru": "Война агентов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which two agents are instructed to disagree by default and to agree only on claims that can be proven.",
+        "ru": "Практика, при которой двум агентам велят по умолчанию не соглашаться друг с другом и сходиться только на утверждениях, которые можно доказать."
+      },
+      "firstAppeared": {
+        "date": "2026-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "fuzzy: discussed across practitioner threads in early 2026; not formally coined."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "agentic-engineering",
+      "stages": [],
+      "kind": "approach",
+      "title": {
+        "en": "Agentic engineering",
+        "ru": "Агентная инженерия"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An approach in which production software is built with agents under engineering discipline: specifications, reviews, evals and a harness.",
+        "ru": "Подход, при котором рабочий софт создают с агентами при инженерной дисциплине: со спецификациями, ревью, эвалами и харнессом."
+      },
+      "firstAppeared": {
+        "date": "2026-02-05",
+        "precision": "day",
+        "verified": false,
+        "note": "Andrej Karpathy, X/Twitter (Feb 5 2026), as the named successor to *vibe coding*."
+      },
+      "coinedHere": false,
+      "seeAlso": [
+        "vibe-coding"
+      ],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [
+        "vibe-coding"
+      ],
+      "rootsIn": [
+        "software-engineering"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "autoresearch",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Autoresearch",
+        "ru": "Авторисёрч"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which an agent runs experiments in a loop against a measurable result: it proposes a change, runs the check, keeps the change if the result improved and discards it otherwise.",
+        "ru": "Практика, при которой агент в цикле ставит эксперименты с измеримым результатом: предлагает изменение, запускает проверку, оставляет изменение, если результат улучшился, и отбрасывает, если нет."
+      },
+      "firstAppeared": {
+        "date": "2026-03-07",
+        "precision": "day",
+        "verified": false,
+        "note": "Andrej Karpathy, autoresearch release (Mar 7 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "context-poisoning",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Context poisoning",
+        "ru": "Отравление контекста"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A failure in which a long agent session accumulates outdated assumptions, earlier errors or stale file contents in its context, and they keep affecting later answers.",
+        "ru": "Сбой, при котором в контексте длинной сессии агента накапливаются устаревшие допущения, прежние ошибки или старое содержимое файлов и продолжают влиять на следующие ответы."
+      },
+      "firstAppeared": {
+        "date": "2025-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "fuzzy: term emerged through Anthropic engineering posts and practitioner write-ups in 2025."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "risks"
+    },
+    {
+      "id": "context-window",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Context window",
+        "ru": "Контекстное окно"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The text a model can see at one time: the prompt, the files, tool outputs and earlier turns. It is measured in tokens; when it fills, older content is summarized or dropped.",
+        "ru": "Текст, который модель видит одновременно: промпт, файлы, выводы инструментов и предыдущие реплики. Измеряется в токенах; когда окно заполняется, старое содержимое сжимается или отбрасывается."
+      },
+      "firstAppeared": {
+        "date": null,
+        "precision": null,
+        "verified": false,
+        "note": "standard model-vendor terminology; ubiquitous since GPT-3 era."
+      },
+      "coinedHere": false,
+      "seeAlso": [
+        "context-poisoning"
+      ],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-tokens"
+    },
+    {
+      "id": "dark-factory",
+      "stages": [],
+      "kind": "approach",
+      "title": {
+        "en": "Dark factory",
+        "ru": "Тёмная фабрика"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.",
+        "ru": "Подход, при котором процесс разработки работает как чёрный ящик, превращающий спецификации в софт, и люди не пишут код."
+      },
+      "firstAppeared": {
+        "date": "2026-01-28",
+        "precision": "day",
+        "verified": false,
+        "note": "Dan Shapiro's six-level framework, popularized via Simon Willison, *The Five Levels: from Spicy Autocomplete to the Dark Factory* (Jan 28 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [
+        "six-levels"
+      ],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "eval-evaluation-suite",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Eval suite",
+        "ru": "Набор эвалов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a team keeps a versioned set of inputs with expected results and runs it automatically after each change of a prompt, a model or tools.",
+        "ru": "Практика, при которой команда ведёт версионируемый набор входов с ожидаемыми результатами и автоматически прогоняет его после каждой смены промпта, модели или инструментов."
+      },
+      "firstAppeared": {
+        "date": "2024-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "the term predates this window; first-class platform support arrived through Anthropic Workbench evals, OpenAI Evals, PromptFoo, Braintrust, and Inspect AI through 2024–2025."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "eval-pyramid",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Eval pyramid",
+        "ru": "Пирамида эвалов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which eval coverage is split into three layers: automated assertions, scoring by a language model and spot checks by people, from the cheapest and most numerous to the most expensive and rarest.",
+        "ru": "Практика, при которой покрытие эвалами делят на три слоя: автоматические проверки, оценку языковой моделью и выборочные проверки людьми, от самых дешёвых и многочисленных к самым дорогим и редким."
+      },
+      "firstAppeared": {
+        "date": "2025-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "fuzzy: emerged through practitioner blog posts and vendor docs in late 2025; no single coiner."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "fan-out-fan-in",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Fan-out and fan-in",
+        "ru": "Разветвление и сведение"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a task is split into independent parts, several agents do the parts in parallel, and a coordinator merges the results.",
+        "ru": "Практика, при которой задачу делят на независимые части, несколько агентов выполняют их параллельно, а координатор сводит результаты."
+      },
+      "firstAppeared": {
+        "date": "2026-01-19",
+        "precision": "day",
+        "verified": false,
+        "note": "general distributed-systems vocabulary; applied to agents through Wilson Lin's hundreds-of-concurrent-agents experiment (via Simon Willison, Jan 19 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "harness",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Harness",
+        "ru": "Харнесс"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "Everything around a model that makes it an agent: the system prompt, tools, hooks, memory files, evals, the sandbox and the loop that connects them.",
+        "ru": "Всё, что окружает модель и делает её агентом: системный промпт, инструменты, хуки, memory-файлы, эвалы, песочница и цикл, который их связывает."
+      },
+      "firstAppeared": {
+        "date": "2026-02-05",
+        "precision": "day",
+        "verified": false,
+        "note": "Mitchell Hashimoto, *My AI Adoption Journey* (Feb 5 2026), as part of the *harness engineering* coinage."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "agents-tools"
+    },
+    {
+      "id": "harness-engineering",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Harness engineering",
+        "ru": "Харнесс-инженерия"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again.",
+        "ru": "Практика, при которой после каждой ошибки агента разработчик добавляет в его окружение правило, скрипт или проверку, чтобы ошибка не повторилась."
+      },
+      "firstAppeared": {
+        "date": "2026-02-05",
+        "precision": "day",
+        "verified": false,
+        "note": "Mitchell Hashimoto, *My AI Adoption Journey* (Feb 5 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "llm-as-judge",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "LLM as judge",
+        "ru": "LLM-судья"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a language model scores the output of another agent or model against stated criteria.",
+        "ru": "Практика, при которой языковая модель оценивает результат другого агента или модели по заданным критериям."
+      },
+      "firstAppeared": {
+        "date": "2023-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "term emerged in academic and industry eval literature through 2023–2024; widespread practitioner adoption by 2025."
+      },
+      "coinedHere": false,
+      "seeAlso": [
+        "eval-pyramid"
+      ],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "memory-file",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Memory file",
+        "ru": "Memory-файл"
+      },
+      "aliases": {
+        "en": [
+          "AGENTS.md",
+          "CLAUDE.md"
+        ],
+        "ru": [
+          "AGENTS.md",
+          "CLAUDE.md",
+          "Memory file"
+        ]
+      },
+      "definition": {
+        "en": "The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1]",
+        "ru": "Практика, при которой инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1]"
+      },
+      "firstAppeared": {
+        "date": "2025-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "term stabilized through 2025 alongside CLAUDE.md and AGENTS.md adoption."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Think of AGENTS.md as a README for agents: a dedicated, predictable place to provide the context and instructions to help AI coding agents work on your project.",
+          "quoteLang": "en",
+          "author": "agents.md community",
+          "work": null,
+          "url": "https://agents.md/#:~:text=Think%20of%20AGENTS.md%20as%20a%20README%20for%20agents",
+          "published": null,
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "agents-tools"
+    },
+    {
+      "id": "orchestrator-worker",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Orchestrator and workers",
+        "ru": "Оркестратор и исполнители"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results.",
+        "ru": "Практика, при которой один агент ведёт план, раздаёт подзадачи агентам-исполнителям и сводит их результаты."
+      },
+      "firstAppeared": {
+        "date": "2026-01-19",
+        "precision": "day",
+        "verified": false,
+        "note": "multi-agent literature; named pattern crystallized through Wilson Lin's planners → sub-planners → workers → judges shape (via Willison Jan 19 2026) and Anthropic Agents SDK examples."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "prompt-injection",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Prompt injection",
+        "ru": "Промпт-инъекция"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An attack in which content the agent reads (a web page, an email, a file) contains instructions that redirect the agent away from what the user asked.",
+        "ru": "Атака, при которой в содержимом, которое читает агент (веб-страница, письмо, файл), есть инструкции, уводящие его от задачи пользователя."
+      },
+      "firstAppeared": {
+        "date": "2022-09-01",
+        "precision": "month",
+        "verified": false,
+        "note": "Simon Willison's coining (Sep 2022), with growing relevance as agents gained tool access through 2024–2025."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "risks"
+    },
+    {
+      "id": "six-levels",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Five levels",
+        "ru": "Пять уровней"
+      },
+      "aliases": {
+        "en": [
+          "Six Levels"
+        ],
+        "ru": [
+          "Шесть уровней",
+          "Five levels"
+        ]
+      },
+      "definition": {
+        "en": "A scale that describes how much of development is handed to agents, from autocomplete at the lowest level to the dark factory at the highest.",
+        "ru": "Шкала, описывающая, какую долю разработки передают агентам: от автодополнения на нижнем уровне до тёмной фабрики на верхнем."
+      },
+      "firstAppeared": {
+        "date": "2026-01-28",
+        "precision": "day",
+        "verified": false,
+        "note": "Dan Shapiro's six-level framework; popularized through Simon Willison's *The Five Levels* (Jan 28 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "ideas"
+    },
+    {
+      "id": "software-factory",
+      "stages": [],
+      "kind": "approach",
+      "title": {
+        "en": "Software factory",
+        "ru": "Софтверная фабрика"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality.",
+        "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы."
+      },
+      "firstAppeared": {
+        "date": "2026-02-07",
+        "precision": "day",
+        "verified": false,
+        "note": "Simon Willison, *How StrongDM's AI team build serious software without even looking at the code* (Feb 7 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "sub-agent",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Subagent",
+        "ru": "Субагент"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An agent started by another agent for a subtask, usually with its own context window, so that its work does not fill the parent's context.",
+        "ru": "Агент, которого другой агент запускает для подзадачи, обычно с отдельным контекстным окном, чтобы его работа не занимала контекст родителя."
+      },
+      "firstAppeared": {
+        "date": "2025-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Anthropic Claude Code sub-agents documentation (mid-2025); related practice in OpenAI Agents SDK."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "agents-tools"
+    },
+    {
+      "id": "sycophancy",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Sycophancy",
+        "ru": "Угодливость"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The tendency of a model to agree with the framing the user gave, including when the user is wrong.",
+        "ru": "Склонность модели соглашаться с подачей пользователя, в том числе когда пользователь неправ."
+      },
+      "firstAppeared": {
+        "date": "2026-01-26",
+        "precision": "day",
+        "verified": false,
+        "note": "the term predates this window (research literature, ~2023); operational counter-tactics consolidated through Karpathy's Jan 26 2026 viral X thread on agent failure modes."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "risks"
+    },
+    {
+      "id": "token-budget",
+      "stages": [],
+      "kind": "concept",
+      "title": {
+        "en": "Token budget",
+        "ru": "Бюджет токенов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The maximum number of tokens an agent may spend on a session, a task or a goal.",
+        "ru": "Наибольшее число токенов, которое агент может потратить на сессию, задачу или цель."
+      },
+      "firstAppeared": {
+        "date": "2026-04-30",
+        "precision": "day",
+        "verified": false,
+        "note": "token-budget framing as a first-class primitive crystallized in Codex CLI 0.128.0 (Apr 30 2026); the concept itself predates this."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-tokens"
+    },
+    {
+      "id": "tokenmaxxing",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Tokenmaxxing",
+        "ru": "Токенмаксинг"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice of getting more work out of a fixed token budget through caching, summarization, context pruning and running tool calls from code.",
+        "ru": "Практика, при которой из фиксированного бюджета токенов извлекают больше работы за счёт кеширования, сжатия, обрезки контекста и вызова инструментов из кода."
+      },
+      "firstAppeared": {
+        "date": "2026-04-01",
+        "precision": "month",
+        "verified": false,
+        "note": "Axios coverage of Salesforce internal usage (Apr 2026)."
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "glossary",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "models-budget"
+    },
+    {
+      "id": "vibe-coding",
+      "stages": [],
+      "kind": "approach",
+      "title": {
+        "en": "Vibe coding",
+        "ru": "Вайб-кодинг"
+      },
+      "aliases": {
+        "ru": [
+          "Vibe coding"
+        ],
+        "en": []
+      },
+      "definition": {
+        "en": "Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.",
+        "ru": "Разработка разговором с агентом без чтения кода: все правки принимаются, ошибки вставляются обратно, пока не заработает."
+      },
+      "firstAppeared": {
+        "date": "2025-02-02",
+        "precision": "day",
+        "verified": false,
+        "note": "Andrej Karpathy, X/Twitter, Feb 2 2025"
+      },
+      "coinedHere": false,
+      "seeAlso": [
+        "agentic-engineering"
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "quote": "There's a new kind of coding I call \"vibe coding\", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.",
+          "quoteLang": "en",
+          "author": "Andrej Karpathy",
+          "url": "https://x.com/karpathy/status/1886192184808149383",
+          "published": "2025-02-02",
+          "role": "coined",
+          "work": null
+        }
+      ],
+      "seededFrom": "glossary+techniques+example",
+      "opposites": [
+        "agentic-engineering"
+      ],
+      "rootsIn": [],
+      "origin": {
+        "ru": "Термин ввёл Андрей Карпаты в посте в X",
+        "en": "Coined by Andrej Karpathy in a post on X"
+      },
+      "group": null
+    },
+    {
+      "id": "llm-simulator-not-thinker",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "en": "Perspective simulation prompt",
+        "ru": "Промпт-симуляция точек зрения"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the model is asked what a group of experienced people would say about a question, instead of what the model itself thinks. [1]",
+        "ru": "Приём, при котором модель спрашивают, что сказала бы о вопросе группа опытных людей, вместо того чтобы спрашивать её собственное мнение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Andrej Karpathy",
+          "work": null,
+          "url": "https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "plan-first-before-coding",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Plan before code",
+        "ru": "План до кода"
+      },
+      "aliases": {
+        "en": [
+          "Plan mode"
+        ],
+        "ru": [
+          "Plan mode",
+          "Режим плана"
+        ]
+      },
+      "definition": {
+        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3]",
+        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "If you want to iterate on the plan, it helps to explicitly include instructions in the prompt to not proceed with implementation until the plan has been accepted by the user.",
+          "quoteLang": "en",
+          "author": "Indragie Karunaratne",
+          "work": null,
+          "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan",
+          "published": "2025-07-01",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Check out the current state of the project in our working directory to understand where we're starting off, then ask me questions, one at a time, to help refine the idea.",
+          "quoteLang": "en",
+          "author": "Jesse Vincent",
+          "work": null,
+          "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=Check%20out%20the%20current%20state",
+          "published": "2025-10-05",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Tip: Creating a comprehensive plan interactively with an agent is a really important",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "agents-tools"
+    },
+    {
+      "id": "iterate-on-ai-output-yourself",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Manual refinement of agent output",
+        "ru": "Ручная доработка результата агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer reworks the agent's implementation by hand after the agent has finished. [1]",
+        "ru": "Практика, при которой разработчик руками дорабатывает реализацию после того, как агент закончил работу. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I almost always go in after an AI does work",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "pivot-when-assistant-struggles",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Change of approach after repeated failures",
+        "ru": "Смена подхода после повторных неудач"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which, after the agent fails at the same problem several times, the developer switches to a different approach. [1]",
+        "ru": "Практика, при которой после нескольких неудач агента на одной задаче разработчик переходит к другому подходу. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "It's at this point that I know I need to step back, review what it did,",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "critical-paths-assistant-rest",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Critical parts by hand",
+        "ru": "Критичные части руками"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer writes the critical and complex parts of the code and hands the rest to the agent. [1]",
+        "ru": "Практика, при которой разработчик сам пишет критичные и сложные части кода, а остальное отдаёт агенту. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Write the critical parts and ask AI to do the rest.",
+          "quoteLang": "en",
+          "author": "Anton Zhiyanov",
+          "work": null,
+          "url": "https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest",
+          "published": "2025-09-26",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "plan-with-high-capacity-mode",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Stronger model for planning",
+        "ru": "Сильная модель для плана"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which requirements and the plan are worked out with a more capable model or a higher reasoning level than the one used for the implementation.",
+        "ru": "Практика, при которой требования и план прорабатывают на более сильной модели или с большим уровнем рассуждений, чем реализацию."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "models-budget"
+    },
+    {
+      "id": "spec-driven-development-iterate",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "approach",
+      "title": {
+        "en": "Spec-driven development",
+        "ru": "Разработка от спецификации"
+      },
+      "aliases": {
+        "en": [
+          "SDD"
+        ],
+        "ru": [
+          "SDD",
+          "Spec-driven development"
+        ]
+      },
+      "definition": {
+        "en": "An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it. [1][2]",
+        "ru": "Подход, при котором источником правды служит спецификация: разработчик правит её, а агент генерирует по ней код. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "GitHub Engineering",
+          "work": null,
+          "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/",
+          "published": null
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anton Zhiyanov",
+          "work": null,
+          "url": "https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt",
+          "published": null
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example",
+          "published": "2025-03-11"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "waterfall"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "treat-ai-code-as-pull-request",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent code as a pull request",
+        "ru": "Код агента как пулреквест"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer reviews agent-written code the way a colleague's pull request is reviewed: leaves comments for the agent to address and does not edit the code by hand. [1]",
+        "ru": "Практика, при которой разработчик ревьюит код агента как пулреквест коллеги: оставляет замечания, которые агент исправляет сам, и не правит код руками. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "HN Discussion",
+          "work": null,
+          "url": "https://news.ycombinator.com/item?id=45415232",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "pull-request"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "clear-context-between-tasks",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Context reset between tasks",
+        "ru": "Сброс контекста между задачами"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent's context is cleared before an unrelated task begins. [1]",
+        "ru": "Практика, при которой контекст агента очищают перед началом не связанной задачи. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "choose-right-model-for-the-task",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Model choice per task",
+        "ru": "Выбор модели под задачу"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the model and its reasoning level are chosen for each task by modality, context length, tool-call reliability, latency and cost.",
+        "ru": "Практика, при которой модель и уровень рассуждений выбирают под каждую задачу по модальности, длине контекста, надёжности вызова инструментов, задержке и цене."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "models-budget"
+    },
+    {
+      "id": "centralize-assistant-instructions",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Single source for agent instructions",
+        "ru": "Единый источник инструкций для агентов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which one instruction document is canonical and the documents of other agent tools point to it through a pointer line, a symlink or an include.",
+        "ru": "Практика, при которой один документ с инструкциями считается основным, а документы других инструментов ссылаются на него строкой-указателем, симлинком или включением."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "interrupt-and-redirect-often",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Early interruption",
+        "ru": "Раннее прерывание"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer stops the agent as soon as it goes in a wrong direction and gives it a correction. [1]",
+        "ru": "Практика, при которой разработчик останавливает агента, как только тот уходит не туда, и даёт поправку. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "agile"
+      ],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "ai-coding-partner",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent as a pair partner",
+        "ru": "Агент как напарник"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer explains a problem to the agent, gets its feedback and works out the solution together with it. [1]",
+        "ru": "Практика, при которой разработчик объясняет агенту задачу, получает его замечания и вырабатывает решение вместе с ним. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Orta Therox",
+          "work": null,
+          "url": "https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing",
+          "published": "2025-06-07"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "pair-programming",
+        "rubber-duck-debugging"
+      ],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "learning-oriented-ai-interaction",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Learning with an agent",
+        "ru": "Обучение с агентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer uses an agent to learn a language or a concept and then writes the code without it. [1]",
+        "ru": "Практика, при которой разработчик с помощью агента изучает язык или концепцию, а код затем пишет сам. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I’m leveraging them to learn Go, to upskill myself. And then I apply this new knowledge when I code.",
+          "quoteLang": "en",
+          "author": "Alberto Fortin",
+          "work": null,
+          "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go",
+          "published": null,
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "use-strong-emphasis-words",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "ru": "Слова-усилители в промптах",
+        "en": "Emphasis words in prompts"
+      },
+      "aliases": {
+        "ru": [
+          "IMPORTANT, NEVER, ALWAYS"
+        ],
+        "en": [
+          "IMPORTANT, NEVER, ALWAYS"
+        ]
+      },
+      "definition": {
+        "ru": "Приём, при котором критичные правила в промпте помечают словами IMPORTANT, NEVER, ALWAYS, чтобы модель их не пропустила.",
+        "en": "A prompting habit of marking critical rules with IMPORTANT, NEVER or ALWAYS so the model does not skip them."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques+example",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "build-fast-foolproof-tools",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Tools built for agents",
+        "ru": "Инструменты под агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the tools an agent calls are made to respond quickly, report errors clearly and withstand misuse. [1]",
+        "ru": "Практика, при которой инструменты, которые вызывает агент, делают быстрыми, с понятными сообщениями об ошибках и устойчивыми к неправильному использованию. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Tools need to be fast. The quicker they respond (and the less",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Tools%20need%20to%20be%20fast",
+          "published": "2025-06-12",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "run-multiple-agents-parallel",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Parallel agents",
+        "ru": "Параллельные агенты"
+      },
+      "aliases": {
+        "en": [
+          "Agents in git worktrees"
+        ],
+        "ru": [
+          "Агенты в git worktree"
+        ]
+      },
+      "definition": {
+        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3]",
+        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "David Crawshaw",
+          "work": null,
+          "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues",
+          "published": null
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks",
+          "published": null
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "feature-branch"
+      ],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "run-without-permissions",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Permission-free mode",
+        "ru": "Режим без подтверждений"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which permission prompts are switched off for tasks whose changes the developer would accept anyway. [1][2]",
+        "ru": "Практика, при которой запросы подтверждений отключают для задач, чьи правки разработчик принял бы в любом случае. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I disable all permission checks. Which basically means I run claude --dangerously-skip-permissions.",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks",
+          "published": "2025-06-12",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Jökull Sólberg",
+          "work": null,
+          "url": "https://www.solberg.is/claude-devcontainer",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "async-agent-work",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Asynchronous agent work",
+        "ru": "Асинхронная работа агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent works on a task while the developer is busy with something else. [1]",
+        "ru": "Практика, при которой агент работает над задачей, пока разработчик занят другим делом. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "feature-sessions",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "ru": "Сессии по фичам",
+        "en": "Feature sessions"
+      },
+      "aliases": {
+        "ru": [
+          "Feature sessions",
+          "Одна цель на сессию"
+        ],
+        "en": [
+          "One goal per session"
+        ]
+      },
+      "definition": {
+        "ru": "Практика, при которой каждая фича или задача ведётся в отдельной сессии агента, чтобы контекст не разрастался.",
+        "en": "The practice of keeping each feature or task in its own agent session so the context does not bloat."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques+example",
+      "opposites": [],
+      "rootsIn": [
+        "feature-branch",
+        "user-story"
+      ],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "avoid-llm-agreeability-bias",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "en": "Open questions",
+        "ru": "Открытые вопросы"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the model is asked for pros and cons, alternatives and missing points, instead of being asked to confirm an opinion. [1]",
+        "ru": "Приём, при котором модель просят назвать плюсы и минусы, альтернативы и упущенное, вместо просьбы подтвердить мнение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "My best current technique for avoiding this is a bit of role-play that gives the coding agent a reason not to blindly trust the code review.",
+          "quoteLang": "en",
+          "author": "Jesse Vincent",
+          "work": null,
+          "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=My%20best%20current%20technique",
+          "published": "2025-10-05",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "smart-model-escalation",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Model escalation",
+        "ru": "Эскалация модели"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard. [1]",
+        "ru": "Практика, при которой работу начинают на быстрой и дешёвой модели и переходят на более сильную, когда задача оказывается сложной. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Sankalp",
+          "work": null,
+          "url": "https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Sonnet%204%20handles%2090%25",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "models-budget"
+    },
+    {
+      "id": "choose-boring-stable-libraries",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Stable libraries",
+        "ru": "Стабильные библиотеки"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer picks established libraries that existed before the model's training cutoff. [1]",
+        "ru": "Практика, при которой выбирают устоявшиеся библиотеки, существовавшие до даты, на которой заканчиваются обучающие данные модели. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I gain enough value from LLMs that I now deliberately consider this when picking a library—I try to stick with libraries with good stability and that are popular enough that many examples of them will have made it into the training data.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "ai-technology-exploration",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "en": "Several options with trade-offs",
+        "ru": "Несколько вариантов с компромиссами"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the model is asked for several approaches with the pros and cons of each. [1]",
+        "ru": "Приём, при котором модель просят предложить несколько подходов с плюсами и минусами каждого. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I’ll use prompts like “what are options for HTTP libraries in Rust?",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "explore-plan-code-commit",
+      "stages": [],
+      "kind": "approach",
+      "title": {
+        "en": "Explore, plan, code, commit",
+        "ru": "Изучить, спланировать, написать, закоммитить"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "An approach in which the agent first reads the relevant code, then makes a plan, then implements it and commits. [1][2]",
+        "ru": "Подход, при котором агент сначала читает нужный код, затем составляет план, затем реализует его и коммитит. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "There's a process that I call \"priming\" the agent, where instead of having the agent jump straight to performing a task, I have it read additional context upfront to increase the chances that it will produce good outputs.",
+          "quoteLang": "en",
+          "author": "Indragie Karunaratne",
+          "work": null,
+          "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call",
+          "published": "2025-07-01",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Ask%20Claude%20to%20read%20relevant%20files",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "extreme-programming"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "brain-first-coding",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Own draft first",
+        "ru": "Сначала свой набросок"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer drafts the solution without an agent and then gives it to an agent to review and improve. [1][2][3]",
+        "ru": "Практика, при которой разработчик сначала набрасывает решение без агента, а затем отдаёт агенту на проверку и улучшение. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I'm subconsciously defaulting to AI for all things coding.",
+          "quoteLang": "en",
+          "author": "Alberto Fortin",
+          "work": null,
+          "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20subconsciously%20defaulting%20to%20AI",
+          "published": null,
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Write the initial version yourself and ask AI to review and improve it.",
+          "quoteLang": "en",
+          "author": "Anton Zhiyanov",
+          "work": null,
+          "url": "https://antonz.org/write-code/#:~:text=Write%20the%20initial%20version%20yourself%20and%20ask%20AI%20to%20review%20and%20improve%20it",
+          "published": "2025-09-26",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=So%20I%20pulled%20out%20my%20AI%20tooling",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "prototype-first-development",
+      "stages": [
+        "ui-proto"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Generated prototype",
+        "ru": "Сгенерированный прототип"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met. [1]",
+        "ru": "Практика, при которой проект начинают с быстро сгенерированного прототипа, показывающего, выполнимо ли ключевое требование. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The best way to start any project is with a prototype that proves that the key requirements of that project can be met.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20best%20way%20to%20start%20any%20project",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "plan-to-throw-one-away"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "visual-iteration-technique",
+      "stages": [
+        "ui-proto"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Screenshot iteration",
+        "ru": "Итерации по скриншотам"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match. [1][2][3]",
+        "ru": "Практика, при которой агенту дают скриншот результата или макета и повторяют правку и скриншот, пока они не совпадут. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock",
+          "published": null
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Instead, I opened a second copy of Sketch and pasted in a screenshot of the form and wrote “this is ugly, please make it less ugly.",
+          "quoteLang": "en",
+          "author": "David Crawshaw",
+          "work": null,
+          "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=I%20opened%20a%20second%20copy%20of%20Sketch",
+          "published": null,
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=You%20can%20use%20any%20of%20these%20methods",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "ascii-wireframe-prompts",
+      "stages": [
+        "ui-proto"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "ASCII wireframes",
+        "ru": "ASCII-вайрфреймы"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent is asked to draw the layout as ASCII art before the interface code is written.",
+        "ru": "Практика, при которой агента просят нарисовать раскладку в виде ASCII-графики до написания кода интерфейса."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "iterative-ui-refinement",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "en": "“More beautiful” prompt",
+        "ru": "Промпт «сделай красивее»"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail. [1]",
+        "ru": "Приём, при котором агента просят сделать интерфейс «красивее» или «элегантнее» без уточнений. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "If Claude doesn't produce a well-designed UI the first time, you can just tell it to \"make it more beautiful/elegant/usable\".",
+          "quoteLang": "en",
+          "author": "Indragie Karunaratne",
+          "work": null,
+          "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20Claude%20doesn't%20produce",
+          "published": "2025-07-01",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "offload-tedious-tasks",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Delegation of routine tasks",
+        "ru": "Делегирование рутины"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2]",
+        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Alberto Fortin",
+          "work": null,
+          "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things",
+          "published": null
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Thus, AI's best use case for me remains writing one-off scripts.",
+          "quoteLang": "en",
+          "author": "Colton",
+          "work": null,
+          "url": "https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/#:~:text=AI's%20best%20use%20case%20for%20me",
+          "published": "2025-08-05",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "confirm-understanding-before-coding",
+      "stages": [
+        "general"
+      ],
+      "kind": "prompting",
+      "title": {
+        "en": "Understanding check",
+        "ru": "Проверка понимания"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the agent is asked to restate the task before it starts the implementation.",
+        "ru": "Приём, при котором агента просят пересказать задачу до начала реализации."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "keep-code-dead-simple",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Simple code for agents",
+        "ru": "Простой код для агентов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which code is kept plain: descriptive function names, no inheritance, no clever constructs. [1]",
+        "ru": "Практика, при которой код держат простым: говорящие имена функций, без наследования и без хитрых конструкций. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Simple code significantly outperforms complex code in agentic contexts.",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Simple%20code%20significantly%20outperforms%20complex%20code",
+          "published": "2025-06-12",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "kiss"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "context-priming",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Context priming with code",
+        "ru": "Затравка контекста кодом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a session starts by placing existing code into the context, and changes are made from there. [1]",
+        "ru": "Практика, при которой сессию начинают с загрузки существующего кода в контекст и дальше вносят изменения от него. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I often start a new chat by dumping in existing code to seed that context, then work with the LLM to modify it in some way.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "precise-function-specification",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Developer-defined structure",
+        "ru": "Структура от разработчика"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation. [1][2][3]",
+        "ru": "Практика, при которой разработчик задаёт сигнатуры функций, каркас или заготовку, а агент пишет реализацию. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I find LLMs respond extremely well to function signatures like the one I use here.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20find%20LLMs%20respond%20extremely%20well",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Write an outline of the code and ask AI to fill the missing parts.",
+          "quoteLang": "en",
+          "author": "Anton Zhiyanov",
+          "work": null,
+          "url": "https://antonz.org/write-code/#:~:text=Write%20an%20outline%20of%20the%20code%20and%20ask%20AI%20to%20fill%20the%20missing%20parts",
+          "published": "2025-09-26",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Tip: AI is very good at fill-in-the-blank or draw-the-rest-of-the-owl.",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=AI%20is%20very%20good%20at%20fill",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Between the Prompts",
+          "work": null,
+          "url": "https://betweentheprompts.com/design-partner/#:~:text=But%20instead%20of%20fixing%20the%20code%20myself%2C%20I%20explained%20why%20it%20was%20wrong%20and%20gave%20it%20more%20precise%20instructions.%20When%20I%20told%20it%20%E2%80%9CYou%20misunderstood%2C%20it%20should%E2%80%A6%E2%80%9D%20and%20provided%20clearer%20guidance%2C%20I%20was%20impressed%20at%20how%20it%20could%20understand%20the%20problem%20and%20update%20the%20code%20accordingly.",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "providing-context-for-unfamiliar-apis",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Documentation for new libraries",
+        "ru": "Документация для новых библиотек"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent is given current documentation and examples for a library that is missing from the model's training data. [1]",
+        "ru": "Практика, при которой агенту дают актуальную документацию и примеры по библиотеке, которой нет в обучающих данных модели. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "LLMs can still help you work with libraries that exist outside their training data, but you need to put in more work—you’ll need to feed them recent examples of how those libraries should be used as part of your prompt.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=LLMs%20can%20still%20help%20you%20work%20with%20libraries",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "conservative-dependency-management",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Generated code in place of dependencies",
+        "ru": "Свой код вместо зависимостей"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent writes the needed code in the project, and a new library is not added. [1]",
+        "ru": "Практика, при которой нужный код агент пишет в проекте, а новую библиотеку не подключают. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Be even more conservative about upgrades than",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about",
+          "published": "2025-06-12",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "log-everything-for-debugging",
+      "stages": [
+        "debugging"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Logs for agent debugging",
+        "ru": "Логи для отладки агентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a system is built with detailed logging, so that an agent can read the logs and find the cause of a problem. [1]",
+        "ru": "Практика, при которой систему делают с подробным логированием, чтобы агент мог прочитать логи и найти причину проблемы. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "In general logging is super important. For instance my app currently has",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important",
+          "published": "2025-06-12",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "ai-feedback-loops",
+      "stages": [
+        "debugging"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent feedback loop",
+        "ru": "Цикл обратной связи агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes. [1][2]",
+        "ru": "Практика, при которой агенту дают проверку, которую он может запустить (тесты, сборку, линтер), и он повторяет правку и проверку, пока проверка не пройдёт. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Claude is most useful when it's capable of independently driving feedback loops that allow it to make a change, test the change, and gather context on what failed to try another iteration.",
+          "quoteLang": "en",
+          "author": "Indragie Karunaratne",
+          "work": null,
+          "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=Claude%20is%20most%20useful%20when",
+          "published": "2025-07-01",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Warnings are a great example. Is your test suite spitting out a warning that something you are using is deprecated?",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents/#:~:text=Warnings%20are%20a%20great%20example",
+          "published": "2025-10-05",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "continuous-integration"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "subagent-verification",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Subagent verification",
+        "ru": "Проверка субагентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent starts subagents to verify details or to investigate separate questions. [1]",
+        "ru": "Практика, при которой агент запускает субагентов, чтобы проверить детали или разобрать отдельные вопросы. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "code-inspection"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "comprehensive-testing-mandate",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Manual verification of agent code",
+        "ru": "Ручная проверка кода агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer runs agent-written code and confirms that it works, without relying on the agent's own report about tests. [1]",
+        "ru": "Практика, при которой разработчик сам запускает код, написанный агентом, и убеждается, что он работает, не полагаясь на отчёт агента о тестах. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I wrote about this at length last week: the one thing you absolutely cannot outsource to the machine is testing that the code actually works.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "tdd"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "test-driven-development-ai",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Tests before agent code",
+        "ru": "Тесты до кода агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which tests are written first and shown to fail, and the agent then writes the implementation until they pass. [1][2]",
+        "ru": "Практика, при которой сначала пишут тесты и убеждаются, что они падают, а затем агент пишет реализацию, пока они не пройдут. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "- **Test-driven when possible** - Never disable tests, fix them",
+          "quoteLang": "en",
+          "author": "Chris Dzombak",
+          "work": null,
+          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Test-driven%20when%20possible",
+          "published": "2025-08",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Ask%20Claude%20to%20write%20tests",
+          "published": null
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "tdd"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "agent-self-review",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent self-review",
+        "ru": "Самопроверка агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent reviews its own code before a person reviews it. [1]",
+        "ru": "Практика, при которой агент делает ревью собственного кода до ревью человеком. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Asking the agent to perform a code review on its own work is surprisingly fruitful.",
+          "quoteLang": "en",
+          "author": "Chris Dzombak",
+          "work": null,
+          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review",
+          "published": "2025-08",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "code-inspection"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "critical-code-review-strategy",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Reading agent-written code",
+        "ru": "Чтение кода агента"
+      },
+      "aliases": {
+        "en": [
+          "Full diff review"
+        ],
+        "ru": [
+          "Просмотр полного диффа"
+        ]
+      },
+      "definition": {
+        "en": "The practice in which the developer reads the code an agent wrote before accepting it. [1][2][3]",
+        "ru": "Практика, при которой разработчик читает код, написанный агентом, до того как его принять. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Chris Dzombak",
+          "work": null,
+          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review",
+          "published": "2025-08"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "I'm not shipping code I don't understand.",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I'm%20not%20shipping%20code",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Please don't ever ship AI-written code without a thorough manual review.",
+          "quoteLang": "en",
+          "author": "Mitchell Hashimoto",
+          "work": null,
+          "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=Please%20don't%20ever%20ship",
+          "published": "2025-10-11",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Chris Dzombak",
+          "work": null,
+          "url": "https://www.dzombak.com/blog/2025/08/Getting-Good-Results-from-Claude-Code.html#:~:text=I%20believe%20I'm%20ultimately%20responsible,manually%20review%20all%20AI-written%20code",
+          "published": "2025-08"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "code-inspection"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "conversational-code-refinement",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Repeated rework requests",
+        "ru": "Повторные запросы на переделку"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result. [1]",
+        "ru": "Практика, при которой разработчик просит агента переделывать код столько раз, сколько нужно для приемлемого результата. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "If I don’t like what an LLM has written, they’ll never complain at being told to refactor it!",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "diff-based-iterative-refinement",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Edits in the diff",
+        "ru": "Правки в диффе"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer reviews the changes in a diff view and types corrections into the diff before committing. [1]",
+        "ru": "Практика, при которой разработчик просматривает изменения в диффе и вносит исправления прямо в нём до коммита. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": null,
+          "quoteLang": "en",
+          "author": "Chris Dzombak",
+          "work": null,
+          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all",
+          "published": "2025-08"
+        }
+      ],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "code-inspection"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "checkpoint-save-states",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Rollback points",
+        "ru": "Точки отката"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a known working state is saved before a risky change, so that it can be restored.",
+        "ru": "Практика, при которой перед рискованной правкой сохраняют рабочее состояние, чтобы к нему можно было вернуться."
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [],
+      "seededFrom": "techniques",
+      "opposites": [],
+      "rootsIn": [
+        "feature-branch"
+      ],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "kiss",
+      "stages": [
+        "coding"
+      ],
+      "title": {
+        "ru": "KISS",
+        "en": "KISS"
+      },
+      "aliases": {
+        "ru": [
+          "Keep it simple, stupid"
+        ],
+        "en": [
+          "Keep it simple, stupid"
+        ]
+      },
+      "definition": {
+        "ru": "Принцип проектирования: простая система надёжнее сложной.",
+        "en": "A design principle: a simple system is more reliable than a complex one."
+      },
+      "firstAppeared": {
+        "date": "1960-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Kelly Johnson, Lockheed, around 1960"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Приписывается авиаинженеру Келли Джонсону (Lockheed)",
+        "en": "Attributed to aircraft engineer Kelly Johnson (Lockheed)"
+      },
+      "group": null
+    },
+    {
+      "id": "software-engineering",
+      "stages": [],
+      "title": {
+        "ru": "Программная инженерия",
+        "en": "Software engineering"
+      },
+      "aliases": {
+        "ru": [
+          "Software engineering"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Взгляд на разработку программ как на инженерную дисциплину с процессами, стадиями и контролем качества.",
+        "en": "Treating software development as an engineering discipline with processes, stages and quality control."
+      },
+      "firstAppeared": {
+        "date": "1968-10-01",
+        "precision": "month",
+        "verified": false,
+        "note": "NATO Software Engineering Conference, Garmisch, Oct 1968"
+      },
+      "kind": "concept",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Термин закрепился после конференции НАТО в Гармише",
+        "en": "The term stuck after the NATO conference in Garmisch"
+      },
+      "group": "ideas"
+    },
+    {
+      "id": "waterfall",
+      "stages": [],
+      "title": {
+        "ru": "Каскадная модель",
+        "en": "Waterfall"
+      },
+      "aliases": {
+        "ru": [
+          "Waterfall",
+          "Водопад"
+        ],
+        "en": [
+          "Waterfall model"
+        ]
+      },
+      "definition": {
+        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение.",
+        "en": "A development model where stages run strictly in order: requirements, design, code, testing, deployment."
+      },
+      "firstAppeared": {
+        "date": "1970-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Winston Royce, Managing the Development of Large Software Systems, 1970; the word waterfall came later"
+      },
+      "kind": "approach",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [
+        "agile"
+      ],
+      "origin": {
+        "ru": "Возводится к статье Уинстона Ройса, хотя сам Ройс предупреждал об опасности такого порядка",
+        "en": "Traced to Winston Royce's paper, although Royce himself warned against that order"
+      },
+      "group": null
+    },
+    {
+      "id": "plan-to-throw-one-away",
+      "stages": [
+        "ui-proto"
+      ],
+      "title": {
+        "ru": "Выбросить первую версию",
+        "en": "Plan to throw one away"
+      },
+      "aliases": {
+        "ru": [
+          "Plan to throw one away"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Принцип, по которому первая версия системы считается пробной и заранее планируется к замене.",
+        "en": "The principle that the first version of a system is a pilot and is planned to be replaced."
+      },
+      "firstAppeared": {
+        "date": "1975-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Fred Brooks, The Mythical Man-Month, 1975"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Сформулирован Фредериком Бруксом в «Мифическом человеко-месяце»",
+        "en": "Stated by Fred Brooks in The Mythical Man-Month"
+      },
+      "group": null
+    },
+    {
+      "id": "code-inspection",
+      "stages": [
+        "code-review"
+      ],
+      "title": {
+        "ru": "Инспекция кода",
+        "en": "Code inspection"
+      },
+      "aliases": {
+        "ru": [
+          "Code review",
+          "Ревью кода"
+        ],
+        "en": [
+          "Fagan inspection",
+          "Code review"
+        ]
+      },
+      "definition": {
+        "ru": "Формальная проверка кода коллегами по чек-листу до тестирования.",
+        "en": "A formal checklist-driven review of code by peers before testing."
+      },
+      "firstAppeared": {
+        "date": "1976-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Michael Fagan, Design and code inspections, IBM Systems Journal, 1976"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Метод описал Майкл Фейган из IBM",
+        "en": "Described by Michael Fagan at IBM"
+      },
+      "group": null
+    },
+    {
+      "id": "continuous-integration",
+      "stages": [
+        "test-qa",
+        "release"
+      ],
+      "title": {
+        "ru": "Непрерывная интеграция",
+        "en": "Continuous integration"
+      },
+      "aliases": {
+        "ru": [
+          "CI",
+          "Continuous integration"
+        ],
+        "en": [
+          "CI"
+        ]
+      },
+      "definition": {
+        "ru": "Практика частого слияния изменений в общую ветку с автоматической сборкой и тестами на каждое слияние.",
+        "en": "Merging changes into the shared branch often, with an automatic build and tests on every merge."
+      },
+      "firstAppeared": {
+        "date": "1991-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Grady Booch, Object-Oriented Design, 1991"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Термин встречается у Грэди Буча, распространился через XP",
+        "en": "The term appears in Grady Booch's work and spread through XP"
+      },
+      "group": null
+    },
+    {
+      "id": "extreme-programming",
+      "stages": [],
+      "title": {
+        "ru": "Экстремальное программирование",
+        "en": "Extreme Programming"
+      },
+      "aliases": {
+        "ru": [
+          "XP",
+          "Extreme Programming"
+        ],
+        "en": [
+          "XP"
+        ]
+      },
+      "definition": {
+        "ru": "Гибкая методология: парное программирование, тесты до кода, непрерывная интеграция, частые релизы.",
+        "en": "An agile method: pair programming, tests before code, continuous integration, frequent releases."
+      },
+      "firstAppeared": {
+        "date": "1999-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Kent Beck, Extreme Programming Explained, 1999"
+      },
+      "kind": "approach",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Описана Кентом Беком в книге «Extreme Programming Explained»",
+        "en": "Described by Kent Beck in Extreme Programming Explained"
+      },
+      "group": null
+    },
+    {
+      "id": "pair-programming",
+      "stages": [
+        "coding"
+      ],
+      "title": {
+        "ru": "Парное программирование",
+        "en": "Pair programming"
+      },
+      "aliases": {
+        "ru": [
+          "Pair programming"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Практика, при которой двое работают над одним кодом: один пишет, другой следит и думает наперёд.",
+        "en": "Two people work on the same code: one types, the other watches and thinks ahead."
+      },
+      "firstAppeared": {
+        "date": "1999-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Popularised by Extreme Programming, late 1990s"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Стало известно как часть экстремального программирования",
+        "en": "Became known as part of Extreme Programming"
+      },
+      "group": null
+    },
+    {
+      "id": "rubber-duck-debugging",
+      "stages": [
+        "debugging"
+      ],
+      "title": {
+        "ru": "Метод утёнка",
+        "en": "Rubber duck debugging"
+      },
+      "aliases": {
+        "ru": [
+          "Rubber duck debugging"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Поиск ошибки через построчное объяснение кода вслух кому угодно, хоть резиновой уточке.",
+        "en": "Finding a bug by explaining the code line by line out loud to anyone, even a rubber duck."
+      },
+      "firstAppeared": {
+        "date": "1999-10-01",
+        "precision": "month",
+        "verified": false,
+        "note": "Andrew Hunt and David Thomas, The Pragmatic Programmer, Oct 1999"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Описан Эндрю Хантом и Дэвидом Томасом в книге «Программист-прагматик»",
+        "en": "Described by Andrew Hunt and David Thomas in The Pragmatic Programmer"
+      },
+      "group": null
+    },
+    {
+      "id": "user-story",
+      "stages": [
+        "req-plan"
+      ],
+      "title": {
+        "ru": "Пользовательская история",
+        "en": "User story"
+      },
+      "aliases": {
+        "ru": [
+          "User story"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Короткое описание требования от лица пользователя: кто, что хочет и зачем.",
+        "en": "A short requirement written from the user's side: who, what they want, and why."
+      },
+      "firstAppeared": {
+        "date": "1999-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Extreme Programming, late 1990s"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Пришла из экстремального программирования",
+        "en": "Came from Extreme Programming"
+      },
+      "group": null
+    },
+    {
+      "id": "agile",
+      "stages": [],
+      "title": {
+        "ru": "Гибкая разработка",
+        "en": "Agile"
+      },
+      "aliases": {
+        "ru": [
+          "Agile",
+          "Эджайл"
+        ],
+        "en": [
+          "Agile software development"
+        ]
+      },
+      "definition": {
+        "ru": "Подход к разработке короткими итерациями с частой обратной связью вместо подробного плана наперёд.",
+        "en": "Developing in short iterations with frequent feedback instead of a detailed upfront plan."
+      },
+      "firstAppeared": {
+        "date": "2001-02-01",
+        "precision": "month",
+        "verified": false,
+        "note": "Manifesto for Agile Software Development, Snowbird, Feb 2001"
+      },
+      "kind": "approach",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [
+        "waterfall"
+      ],
+      "origin": {
+        "ru": "Закреплён в Манифесте гибкой разработки, подписанном в Сноуберде",
+        "en": "Set out in the Agile Manifesto, signed at Snowbird"
+      },
+      "group": null
+    },
+    {
+      "id": "tdd",
+      "stages": [
+        "test-qa"
+      ],
+      "title": {
+        "ru": "Разработка через тестирование",
+        "en": "Test-driven development"
+      },
+      "aliases": {
+        "ru": [
+          "TDD",
+          "Test-driven development"
+        ],
+        "en": [
+          "TDD"
+        ]
+      },
+      "definition": {
+        "ru": "Практика, при которой сначала пишется падающий тест, затем минимальный код, чтобы он прошёл, затем рефакторинг.",
+        "en": "Write a failing test first, then the minimal code to pass it, then refactor."
+      },
+      "firstAppeared": {
+        "date": "2002-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Kent Beck, Test-Driven Development: By Example, 2002; test-first was already part of XP in 1999"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Сформулирована Кентом Беком в книге «Test-Driven Development: By Example»",
+        "en": "Formulated by Kent Beck in Test-Driven Development: By Example"
+      },
+      "group": null
+    },
+    {
+      "id": "feature-branch",
+      "stages": [
+        "coding"
+      ],
+      "title": {
+        "ru": "Feature-ветка",
+        "en": "Feature branch"
+      },
+      "aliases": {
+        "ru": [
+          "Feature branch"
+        ],
+        "en": []
+      },
+      "definition": {
+        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности.",
+        "en": "A separate version-control branch per feature, merged into the main branch when ready."
+      },
+      "firstAppeared": {
+        "date": "2005-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Approximate: Git released Apr 2005; the practice is older"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Стала нормой вместе с Git и GitHub",
+        "en": "Became the norm with Git and GitHub"
+      },
+      "group": null
+    },
+    {
+      "id": "pull-request",
+      "stages": [],
+      "title": {
+        "ru": "Пул-реквест",
+        "en": "Pull request"
+      },
+      "aliases": {
+        "ru": [
+          "Pull request",
+          "PR"
+        ],
+        "en": [
+          "PR"
+        ]
+      },
+      "definition": {
+        "ru": "Запрос на слияние изменений, вокруг которого идут обсуждение и ревью.",
+        "en": "A request to merge changes that hosts the discussion and review."
+      },
+      "firstAppeared": {
+        "date": "2008-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "GitHub, 2008"
+      },
+      "kind": "concept",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "ru": "Введён GitHub",
+        "en": "Introduced by GitHub"
+      },
+      "group": "agents-tools"
+    }
+  ]
+}

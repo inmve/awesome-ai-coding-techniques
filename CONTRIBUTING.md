@@ -1,66 +1,25 @@
-# Contributing to Coding with AI
+# Contributing
 
-Thanks for considering a contribution. This project collects practical, real‑world workflows with LLMs and coding assistants.
+This repository is an open reference of software development practices. Every entry in
+[`data/entries.json`](data/entries.json) has a definition, a date and sources; `README.md` and the
+[site](https://inmve.github.io/software-practices/) are built from that file.
 
-  - Repo issues: https://github.com/inmve/ai-patterns/issues
-  - Email (for quick notes): hi@coding-with-ai.dev
-    
-## How to Contribute
+## What an entry needs
 
-### Share Your Experience
-Have experience with an existing technique? Your real-world usage helps others understand what actually works.
+- **A practice:** a repeatable way of working that someone could start tomorrow. Tools, products and
+  opinions without an action are not entries.
+- **What changes with coding agents.** An older practice is included when it is the root of a newer one.
+- **A first-hand source:** the author describes their own work or their company's process. Content
+  marketing, listicles and rewrites of someone else's post are not sources.
+- **A verbatim quote** from that source, 1 to 2 sentences, that states the practice itself. It is shown
+  on the site when the reader hovers or clicks a footnote.
+- **A neutral definition** in the third person: what practitioners do, without "you", without advice,
+  without claims the source does not make.
 
-**To share your experience:**
-1. [Open an issue](https://github.com/inmve/coding-with-ai/issues/new)
-2. Include:
-   - Which technique you used
-   - Your specific experience (what worked, what didn't)
-   - Any tips or variations you discovered
-   - The AI tool you used (Claude, Cursor, Copilot, etc.)
+## How to contribute
 
-### Suggest New Techniques
-Know a technique that should be included? We're always looking for proven patterns that deliver real productivity gains.
+- [Open an issue](https://github.com/inmve/awesome-ai-coding-techniques/issues/new) with the practice,
+  the link to the source and the quote; or
+- open a pull request that edits `data/entries.json` and run `python3 scripts/build_readme.py`.
 
-**To suggest a new technique:**
-1. [Open an issue](https://github.com/inmve/coding-with-ai/issues/new)
-2. Include:
-   - The technique name and description
-   - How you actually use it (with specific examples)
-   - Why it's valuable (productivity impact)
-   - A quote about your experience with it
-
-### General Feedback
-Ideas for improvement? Found an error? Have suggestions for the website?
-
-**To provide feedback:**
-- [Open an issue](https://github.com/inmve/coding-with-ai/issues/new) on GitHub
-- Email [hi@coding-with-ai.dev](mailto:hi@coding-with-ai.dev)
-
-## What Makes a Good Technique
-
-We're looking for techniques that meet these criteria:
-
-- **Real usage** - You actually use this, not just theory
-- **Specific** - "Ask Claude to refactor while preserving tests" not "use AI for refactoring"  
-- **Actionable** - Others can immediately try it
-- **Quote-worthy** - You can describe your experience with it
-
-## Examples of Good Contributions
-
-### Good Technique Suggestion
-> "I use 'Write Tests First, Then Code' - I have Claude write comprehensive tests based on expected behavior, then iterate on implementation until all tests pass. This caught so many edge cases I would have missed. Here's exactly how I do it: [specific steps]"
-
-### Good Experience Share
-> "I tried 'Run Multiple Agents in Parallel' using git worktrees. It was game-changing for my workflow. I run Claude on auth features while Cursor builds the UI. Cut my development time by 3x. One tip: always create separate branches first."
-
-## Contribution Guidelines
-
-- Focus on **practical implementation details**, not theory
-- Include **specific commands, configurations, or prompts** you use
-- Share **honest experiences** - what didn't work is as valuable as what did
-- Mention **which AI tools** you used (different tools may require different approaches)
-- Provide **concrete examples** from real projects when possible
-
-## Questions?
-
-Not sure if it fits? Submit it anyway with concrete examples; we’ll help refine. For quick coordination, open a GitHub issue or email hi@coding-with-ai.dev.
+Reports of a wrong date, a dead link or a quote that is no longer on the page are as welcome as new entries.
