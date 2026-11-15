@@ -125,6 +125,14 @@
         }
       },
       {
+        "id": "team",
+        "section": "general",
+        "title": {
+          "ru": "Правила команды",
+          "en": "Team rules"
+        }
+      },
+      {
         "id": "agents-tools",
         "section": "concepts",
         "title": {
@@ -3824,6 +3832,1273 @@
       "opposites": [],
       "origin": null,
       "group": null
+    },
+    {
+      "id": "plan-and-progress-file",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Document & Clear",
+        "ru": "Document & Clear (план в файл и сброс)"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which, for a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work. [1][2]",
+        "ru": "Практика, при которой на большой задаче агент записывает план и ход работы в файл, контекст очищается, а новая сессия читает этот файл и продолжает работу. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "For large tasks. I have Claude dump its plan and progress into a .md, /clear the state, then start a new session by telling it to read the .md and continue.",
+          "quoteLang": "en",
+          "author": "Shrivu Shankar",
+          "work": null,
+          "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
+          "published": "2025-11-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "If you need task tracking, make it externally stateful by writing to a file:",
+          "quoteLang": "en",
+          "author": "Mario Zechner",
+          "work": null,
+          "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+          "published": "2025-11-30",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "scheduled-background-agents",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Recurring cleanup process",
+        "ru": "Регулярная уборка агентами"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team records its code rules in the repository and on a regular cadence runs background agent tasks that look for deviations from the rules or stale documentation and open pull requests with fixes. [1][2]",
+        "ru": "Практика, при которой команда записывает правила кода в репозиторий и регулярно запускает фоновые задачи агента, которые ищут отступления от правил или устаревшую документацию и открывают pull request с исправлениями. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Instead, we started encoding what we call “golden principles” directly into the repository and built a recurring cleanup process.",
+          "quoteLang": "en",
+          "author": "Ryan Lopopolo",
+          "work": null,
+          "url": "https://openai.com/index/harness-engineering/",
+          "published": "2026-02-11",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Suppose you want Claude to handle a task automatically on a recurring basis, like reviewing open PRs every morning, auditing dependencies weekly, or checking for CI failures overnight.",
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": null,
+          "url": "https://code.claude.com/docs/en/common-workflows",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "session-log-review",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent session log review",
+        "ru": "Разбор логов сессий агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2]",
+        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I have scripts that run meta-analysis on these logs, looking for common exceptions, permission requests, and error patterns to help improve agent-facing context.",
+          "quoteLang": "en",
+          "author": "Shrivu Shankar",
+          "work": null,
+          "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
+          "published": "2025-11-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Use scheduled tasks for reflection and maintenance, not just execution.",
+          "quoteLang": "en",
+          "author": "OpenAI",
+          "work": null,
+          "url": "https://developers.openai.com/codex/learn/best-practices",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "agent-review-on-every-pull-request",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent review of every pull request",
+        "ru": "Ревью агентом каждого pull request"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team has an agent review every pull request, and review by a person becomes optional. [1][2]",
+        "ru": "Практика, при которой команда отдаёт каждый pull request на ревью агенту, а ревью человеком становится необязательным. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Humans may review pull requests, but aren’t required to. Over time, we’ve pushed almost all review effort towards being handled agent-to-agent.",
+          "quoteLang": "en",
+          "author": "Ryan Lopopolo",
+          "work": null,
+          "url": "https://openai.com/index/harness-engineering/",
+          "published": "2026-02-11",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "At OpenAI, Codex reviews 100% of PRs.",
+          "quoteLang": "en",
+          "author": "OpenAI",
+          "work": null,
+          "url": "https://developers.openai.com/codex/learn/best-practices",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "browser-verification-by-agent",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Browser checks by an agent",
+        "ru": "Проверка в браузере агентом"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an agent drives a browser on the running application to check a change against each acceptance criterion and reports what it saw, with screenshots, for each criterion. [1]",
+        "ru": "Практика, при которой агент управляет браузером на запущенном приложении, проверяет изменение по каждому критерию приёмки и сообщает по каждому критерию, что увидел, со скриншотами. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Once the agent builds the feature, verification runs Playwright browser agents against each AC, takes screenshots, and produces a report with per-criterion verdicts.",
+          "quoteLang": "en",
+          "author": "Abhishek Ray",
+          "work": null,
+          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+          "published": "2026-03-10",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "disposable-agent-machine",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Disposable machine for the agent",
+        "ru": "Одноразовая машина для агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2]",
+        "ru": "Практика, при которой агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I run Claude Code in permissive mode. The VM is isolated—no access to production systems, no secrets beyond what’s needed for development.",
+          "quoteLang": "en",
+          "author": "Granda",
+          "work": null,
+          "url": "https://granda.org/en/2026/01/02/claude-code-on-the-go/",
+          "published": "2026-01-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "I built a thing called the observatory (very very earlier) that will run firecracker VMs that have a network ingress/egress shims, and file I/O shims so that I can audit and watch what the agents are doing.",
+          "quoteLang": "en",
+          "author": "Harper Reed",
+          "work": null,
+          "url": "https://harper.blog/2026/09/22/break-away/",
+          "published": "2026-09-22",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "cli-instead-of-mcp",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "CLI tools instead of MCP",
+        "ru": "CLI-утилиты вместо MCP"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2]",
+        "ru": "Практика, при которой сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "All my stateless tools (like Jira, AWS, GitHub) have been migrated to simple CLIs.",
+          "quoteLang": "en",
+          "author": "Shrivu Shankar",
+          "work": null,
+          "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
+          "published": "2025-11-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "The alternative is simple: build CLI tools with README files. The agent reads the README when it needs the tool, pays the token cost only when necessary (progressive disclosure), and can use bash to invoke the tool.",
+          "quoteLang": "en",
+          "author": "Mario Zechner",
+          "work": null,
+          "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+          "published": "2025-11-30",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "instruction-file-evals",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Evals for agent instructions",
+        "ru": "Оценка инструкций агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1][2]",
+        "ru": "Практика, при которой команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Build evals targeting APIs not in training data. That's where doc access matters most.",
+          "quoteLang": "en",
+          "author": "Jude Gao",
+          "work": null,
+          "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
+          "published": "2026-01-27",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "To test these concerns, we created a set of evaluations that measured agent performance within our current setup against a branch without root-level documentation files.",
+          "quoteLang": "en",
+          "author": "Addie Beach, Rui Martins Lacerda",
+          "work": null,
+          "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
+          "published": "2026-09-09",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "instruction-file-load-check",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Check that the instruction file is loaded",
+        "ru": "Проверка загрузки файла инструкций"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the developer checks which instruction file the agent tool actually reads, for example with a marker word, before relying on it. [1][2]",
+        "ru": "Практика, при которой разработчик проверяет, какой файл инструкций агент на самом деле читает, например по контрольному слову, прежде чем на него полагаться. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Check which filename your harness actually honours, because an ignored instruction file is silent.",
+          "quoteLang": "en",
+          "author": "Systima",
+          "work": null,
+          "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+          "published": "2026-07-12",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "I made an empty directory that holds only an AGENTS.md with a canary word in it, and asked claude -p for the word.",
+          "quoteLang": "en",
+          "author": "Przemek",
+          "work": null,
+          "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "repeated-prompt-to-command",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Repeated prompt as a skill",
+        "ru": "Повторяющийся промпт как скилл"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name. [1][2]",
+        "ru": "Практика, при которой промпт или порядок действий, который разработчик повторяет снова и снова, сохраняется как скилл или команда, кладётся в git и запускается по имени. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "But I was able to coach it, and once it was in a good place I had it make a skill based on what we discovered together.",
+          "quoteLang": "en",
+          "author": "Harper Reed",
+          "work": null,
+          "url": "https://harper.blog/2025/12/03/claude-code-email-productivity-mcp-agents/",
+          "published": "2025-12-03",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "If you do something more than once a day, turn it into a skill. Anything you repeat is a skill waiting to be written.",
+          "quoteLang": "en",
+          "author": "Arpan Patel",
+          "work": null,
+          "url": "https://arps18.github.io/posts/claude-code-mastery/",
+          "published": "2026-05-26",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "repository-as-system-of-record",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Repository knowledge as the system of record",
+        "ru": "Репозиторий как источник правды"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them. [1][2]",
+        "ru": "Практика, при которой решения, планы, соглашения и прочий контекст хранятся как версионируемые файлы в репозитории, а не в чатах, документах и головах людей, чтобы агенты могли их прочитать. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "We learned that we needed to push more and more context into the repo over time.",
+          "quoteLang": "en",
+          "author": "Ryan Lopopolo",
+          "work": null,
+          "url": "https://openai.com/index/harness-engineering/",
+          "published": "2026-02-11",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "PRDs, ADRs, UI Specs, and Design Docs live in their own directories (docs/prd/, docs/adr/, docs/ui-spec/, docs/design/) and are intended to be committed.",
+          "quoteLang": "en",
+          "author": "shinpr",
+          "work": null,
+          "url": "https://github.com/shinpr/claude-code-workflows",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "context-compaction",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Compaction",
+        "ru": "Сжатие контекста"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a long agent session is summarized at a milestone or near the context limit, with instructions on what the summary keeps, and work continues in a new context from the summary. [1]",
+        "ru": "Практика, при которой длинную сессию агента сжимают в краткое изложение на рубеже работы или у предела контекста, с указанием, что сохранить, и работа продолжается в новом контексте с этого изложения. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Compact at milestones. After you finish a logical chunk, run /compact Preserve the decisions made, files changed, and test commands.",
+          "quoteLang": "en",
+          "author": "Arpan Patel",
+          "work": null,
+          "url": "https://arps18.github.io/posts/claude-code-mastery/",
+          "published": "2026-05-26",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "parallel-attempts",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Parallel attempts",
+        "ru": "Параллельные попытки"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results. [1][2]",
+        "ru": "Практика, при которой несколько агентов или моделей одновременно работают над одной задачей, каждый своим подходом, а разработчик сравнивает результаты. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Another researcher explained that they ran many versions of Claude simultaneously, all exploring different approaches to a problem:",
+          "quoteLang": "en",
+          "author": "Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli",
+          "work": null,
+          "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+          "published": "2025-12-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "We've found that having multiple models attempt the same problem and picking the best result significantly improves the final output, especially for harder tasks.",
+          "quoteLang": "en",
+          "author": "Lee Robinson",
+          "work": null,
+          "url": "https://cursor.com/blog/agent-best-practices",
+          "published": "2026-01-09",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "worktree-bootable-app",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Bootable app per worktree",
+        "ru": "Приложение в каждом worktree"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance. [1]",
+        "ru": "Практика, при которой приложение запускается отдельно в каждом git worktree, и каждый агент запускает и проверяет свой экземпляр. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "For example, we made the app bootable per git worktree, so Codex could launch and drive one instance per change.",
+          "quoteLang": "en",
+          "author": "Ryan Lopopolo",
+          "work": null,
+          "url": "https://openai.com/index/harness-engineering/",
+          "published": "2026-02-11",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "agent-security-review",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Vulnerability hunting agents with test proof",
+        "ru": "Поиск уязвимостей агентами с доказательством тестом"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agents search parts of an application for one category of vulnerability, a separate verifier agent proves each finding with a test in the application's own test suite, and findings arrive as pull requests. [1]",
+        "ru": "Практика, при которой агенты ищут в частях приложения уязвимости одной категории, отдельный агент-проверяющий доказывает каждую находку тестом в наборе тестов самого приложения, а находки приходят как pull request. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Our Verifier agent is tasked with authoring and embedding its validations into the existing tests and primitives available in that app.",
+          "quoteLang": "en",
+          "author": "Zack Deveau",
+          "work": null,
+          "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
+          "published": "2026-07-29",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "vertical-slices-for-agents",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Vertical slices in agent work plans",
+        "ru": "Вертикальные срезы в плане агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work. [1]",
+        "ru": "Практика, при которой план работы агента над фичей режут на вертикальные срезы через бэкенд и фронтенд, чтобы интеграция проверялась до конца работы. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Backend and frontend design stay separate, a consistency check covers the boundary between them, and the work plan uses vertical slices so integration is exercised before the end.",
+          "quoteLang": "en",
+          "author": "shinpr",
+          "work": null,
+          "url": "https://github.com/shinpr/claude-code-workflows",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "agent-use-disclosure",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Disclosure of agent use",
+        "ru": "Раскрытие работы агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which contributors state in the pull request, commit message or post whether and how a model or agent produced the content. [1][2]",
+        "ru": "Практика, при которой участники указывают в pull request, коммите или сообщении, создавали ли содержимое модель или агент и как. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Contributors should note tool usage in their pull request description, commit message, or wherever authorship is normally indicated for the work.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": null,
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "You must disclose LLM-generated content. You can choose to not post LLM content, or you can choose to post it and disclose its origin.",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "contributor-reviews-generated-code",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Contributor review of generated code",
+        "ru": "Проверка сгенерированного кода автором вклада"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review. [1][2]",
+        "ru": "Практика, при которой проект требует от авторов вкладов прочитать и проверить весь сгенерированный код или текст и уметь его объяснить, прежде чем просить ревью у мейнтейнеров. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Contributors must read and review all LLM-generated code or text before they ask other project members to review it.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": null,
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "LLM reviews cannot substitute for human review or self-review.",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "own-words-in-review",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Own words in project communication",
+        "ru": "Свои слова в общении в проекте"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output. [1][2]",
+        "ru": "Практика, при которой проект требует, чтобы issues, описания pull request, комментарии и ответы на ревью были написаны своими словами автора, а не вставленным выводом модели. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Passing maintainer feedback to an LLM doesn’t help anyone grow, and does not sustain our community.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": null,
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "In short, if you are posting any of those things, the output must be your own words, explanation, description, etc., not a verbatim dump of an LLM's output.",
+          "quoteLang": "en",
+          "author": "Jellyfin project",
+          "work": null,
+          "url": "https://jellyfin.org/docs/general/contributing/llm-policies/",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "approved-agents-in-project-spaces",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agents in project spaces only with approval",
+        "ru": "Агенты в пространствах проекта только с одобрения"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an agent may comment on or act in shared project spaces only after people approve it or explicitly invoke it. [1][2]",
+        "ru": "Практика, при которой агент может комментировать или действовать в общих пространствах проекта только после одобрения людьми или по явному вызову. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "An important implication of this policy is that it bans agents that take action in our digital spaces without human approval, such as the GitHub @claude agent.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": null,
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "This skill requires explicit invocation because it can comment, label, or close another person's contribution.",
+          "quoteLang": "en",
+          "author": "Wirasm",
+          "work": null,
+          "url": "https://github.com/Wirasm/prp",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "extractive-contribution-handling",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Extractive contribution handling",
+        "ru": "Обработка извлекающих вкладов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which maintainers who judge a generated contribution to cost more review time than it is worth reply with a standard request, label it, and stop engaging or close it. [1][2]",
+        "ru": "Практика, при которой мейнтейнеры, решив, что сгенерированный вклад отнимает на ревью больше времени, чем стоит, отвечают стандартной просьбой, ставят метку и прекращают обсуждение или закрывают вклад. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Other reviewers should use the label to prioritize their review time.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": null,
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "You are allowed to close PRs that don't follow the policy, no questions asked. Please point the author to #llm-mentoring at the same time.",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "generated-contribution-ban",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Ban on generated contributions",
+        "ru": "Запрет сгенерированных вкладов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a project does not accept contributions that include content generated, in part or in full, by language models or similar systems. [1]",
+        "ru": "Практика, при которой проект не принимает вклады, содержащие материал, созданный целиком или частично языковыми моделями или похожими системами. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Contributions in the OpenJDK Community must not include content generated, in part or in full, by large language models, diffusion models, or similar deep-learning systems.",
+          "quoteLang": "en",
+          "author": "OpenJDK Governing Board",
+          "work": null,
+          "url": "https://openjdk.org/legal/ai",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "analyze-not-create",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Analyze, not create",
+        "ru": "Анализировать, а не создавать"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit. [1]",
+        "ru": "Практика, при которой проект разрешает участникам использовать языковые модели, чтобы отвечать на вопросы, анализировать, проверять и ревьюить свою работу, но не создавать то, что они присылают. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "LLMs must not generate soundness-critical changes unless the author is already a domain expert, and even then it's strongly discouraged.",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "agent-configuration-ownership",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Ownership of agent controls",
+        "ru": "Владение настройками агентов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild that watches monitoring data and updates them. [1]",
+        "ru": "Практика, при которой у общих настроек агентов для многих команд, таких как скиллы, команды и корневые файлы инструкций, есть команда или гильдия-владелец, которая следит за данными мониторинга и обновляет их. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "On the other hand, more complex controls like skills, commands, or root-level documentation may be owned by entire teams or guilds.",
+          "quoteLang": "en",
+          "author": "Addie Beach, Rui Martins Lacerda",
+          "work": null,
+          "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
+          "published": "2026-09-09",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "agent-delivery-metrics",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent questions in incident retrospectives",
+        "ru": "Вопросы об агентах в разборе инцидентов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team's regular incident retrospective adds two questions: whether agent-written code contributed to the incident, and whether the larger volume of change strained review, testing, rollout or observability. [1]",
+        "ru": "Практика, при которой в регулярный разбор инцидентов команды добавляют два вопроса: повлиял ли на инцидент код, написанный агентом, и не перегрузил ли возросший объём изменений ревью, тестирование, выкатку или наблюдаемость. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "During our AI ramp-up, we began asking two additional questions: Did AI-authored code directly contribute to the incident? And did the increased volume of change put additional pressure on review, testing, rollout, or observability?",
+          "quoteLang": "en",
+          "author": "Tyson Singer",
+          "work": null,
+          "url": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/",
+          "published": null,
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "extra-approval-for-agent-prs",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Extra approval for agent pull requests",
+        "ru": "Повышенная планка для pull request агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests. [1][2]",
+        "ru": "Практика, при которой pull request, начатые агентом или созданные моделью, должны пройти более высокую планку, чем остальные: больше одобрений людей или обязательные тесты. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "We’ve settled on 2 human approvals for any AI-initiated PR for now, but it is kind of a weird paradigm shift (for me at least) when it’s no longer a human making something for another human to review.",
+          "quoteLang": "en",
+          "author": "Shrivu Shankar",
+          "work": null,
+          "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
+          "published": "2025-11-02",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "LLM PRs are required to have tests, full stop, regardless of how hard that is, as well as various other restrictions;",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "unassisted-practice",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Deliberate practice without agents",
+        "ru": "Намеренная работа без агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an engineer now and then solves a problem without an agent, even one the agent could solve, to keep their own skills. [1]",
+        "ru": "Практика, при которой инженер время от времени решает задачу без агента, даже если агент бы с ней справился, чтобы сохранить свои навыки. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "To combat this, some engineers deliberately practice without AI: \"Every once in a while, even if I know that Claude can nail a problem, I will not ask it to. It helps me keep myself sharp.\"",
+          "quoteLang": "en",
+          "author": "Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli",
+          "work": null,
+          "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+          "published": "2025-12-02",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "run-1",
+      "opposites": [],
+      "origin": null,
+      "group": "human"
     }
   ]
 }
