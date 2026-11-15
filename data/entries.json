@@ -3168,8 +3168,8 @@
         "agile"
       ],
       "origin": {
-        "ru": "Возводится к статье Уинстона Ройса, хотя сам Ройс предупреждал об опасности такого порядка",
-        "en": "Traced to Winston Royce's paper, although Royce himself warned against that order"
+        "ru": "Возводится к статье Уинстона Ройса",
+        "en": "Traced to Winston Royce's paper"
       },
       "group": null
     },
