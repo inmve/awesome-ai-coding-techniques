@@ -443,7 +443,9 @@
       "sources": [],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "lights-out-manufacturing"
+      ],
       "origin": null,
       "group": null
     },
@@ -757,7 +759,9 @@
       "sources": [],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "sql-injection"
+      ],
       "origin": null,
       "group": "risks"
     },
@@ -824,7 +828,9 @@
       "sources": [],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "software-factory-1968"
+      ],
       "origin": null,
       "group": null
     },
@@ -1496,9 +1502,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "agile"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": "human"
     },
@@ -1840,8 +1844,7 @@
       "seededFrom": "techniques+example",
       "opposites": [],
       "rootsIn": [
-        "feature-branch",
-        "user-story"
+        "feature-branch"
       ],
       "origin": null,
       "group": "sessions"
@@ -1961,7 +1964,9 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "choose-boring-technology"
+      ],
       "origin": null,
       "group": null
     },
@@ -2049,9 +2054,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "extreme-programming"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -2242,7 +2245,9 @@
       "sources": [],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "low-fidelity-wireframes"
+      ],
       "origin": null,
       "group": null
     },
@@ -2332,7 +2337,9 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "codemods"
+      ],
       "origin": null,
       "group": "human"
     },
@@ -2726,9 +2733,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "code-inspection"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -2768,9 +2773,7 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "tdd"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -3050,9 +3053,7 @@
       "sources": [],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [
-        "feature-branch"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -3168,8 +3169,8 @@
         "agile"
       ],
       "origin": {
-        "ru": "Возводится к статье Уинстона Ройса, хотя сам Ройс предупреждал об опасности такого порядка",
-        "en": "Traced to Winston Royce's paper, although Royce himself warned against that order"
+        "ru": "Возводится к статье Уинстона Ройса",
+        "en": "Traced to Winston Royce's paper"
       },
       "group": null
     },
@@ -3606,6 +3607,265 @@
         "en": "Introduced by GitHub"
       },
       "group": "agents-tools"
+    },
+    {
+      "id": "software-factory-1968",
+      "stages": [],
+      "title": {
+        "en": "Software factory (1968)",
+        "ru": "Программная фабрика (1968)"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "An approach in which software is produced the way industry produces goods, with standard tools and a managed process. [1]",
+        "ru": "Подход, при котором софт производят так, как промышленность производит товары: со стандартными инструментами и управляемым процессом. [1]"
+      },
+      "firstAppeared": {
+        "date": "1968-01-01",
+        "precision": "year",
+        "verified": false,
+        "note": "Year stated by Addy Osmani (2026): Bob Bemer, «The economics of program production», 1968"
+      },
+      "kind": "approach",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "This idea of the software factory is a term that dates back to Bob Bemer’s paper, “The economics of program production,” given in 1968.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/software-factories/",
+          "published": "2026-07-20",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "en": "Proposed by Bob Bemer in «The economics of program production»",
+        "ru": "Предложил Боб Бемер в докладе «The economics of program production»"
+      },
+      "group": null
+    },
+    {
+      "id": "sql-injection",
+      "stages": [],
+      "title": {
+        "en": "SQL injection",
+        "ru": "SQL-инъекция"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "An attack in which input sent to an application is executed as part of a database query. [1]",
+        "ru": "Атака, при которой ввод, переданный приложению, выполняется как часть запроса к базе данных. [1]"
+      },
+      "firstAppeared": null,
+      "kind": "concept",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "The obvious parallel here is SQL injection.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
+          "published": "2022-09-12",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": "risks"
+    },
+    {
+      "id": "codemods",
+      "stages": [
+        "coding"
+      ],
+      "title": {
+        "en": "Codemods",
+        "ru": "Кодмоды"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1]",
+        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1]"
+      },
+      "firstAppeared": null,
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "A codemod is a program that operates on a codebase, and when you give an AI agent the ability to write and execute them, these platform-level tasks fall below the high-water mark of AI capabilities.",
+          "quoteLang": "en",
+          "author": "Codegen Technical Staff",
+          "work": null,
+          "url": "https://codegen.com/swe-agents-are-better-with-codemods/",
+          "published": "2025-03-01",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "choose-boring-technology",
+      "stages": [],
+      "title": {
+        "en": "Choose boring technology",
+        "ru": "Скучные технологии"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else. [1][2]",
+        "ru": "Практика, при которой команда тратит небольшое фиксированное число «жетонов на новизну» на новые технологии, а в остальном берёт хорошо известные. [1][2]"
+      },
+      "firstAppeared": {
+        "date": "2015-03-30",
+        "precision": "day",
+        "verified": true,
+        "note": "Dan McKinley, «Choose Boring Technology», dated on the page"
+      },
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Let’s say every company gets about three innovation tokens.",
+          "quoteLang": "en",
+          "author": "Dan McKinley",
+          "work": null,
+          "url": "https://mcfunley.com/choose-boring-technology",
+          "published": "2015-03-30",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "relevance",
+          "quote": "I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach, but in practice they don’t seem to be affecting my technology choices in that way at all.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": null,
+          "url": "https://simonwillison.net/2026/Mar/9/not-so-boring/",
+          "published": "2026-03-09",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "en": "Set out by Dan McKinley in «Choose Boring Technology»",
+        "ru": "Изложил Дэн Маккинли в посте «Choose Boring Technology»"
+      },
+      "group": null
+    },
+    {
+      "id": "lights-out-manufacturing",
+      "stages": [],
+      "title": {
+        "en": "Lights-out manufacturing",
+        "ru": "Безлюдное производство"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "An approach to manufacturing in which a factory runs without people on site, so it can work with the lights off. [1]",
+        "ru": "Подход к производству, при котором завод работает без людей на месте и может работать с выключенным светом. [1]"
+      },
+      "firstAppeared": null,
+      "kind": "approach",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "An AI dark factory applies the same idea to software: a defined class of development work running autonomously through implementation, verification, and delivery, with humans defining goals and constraints, setting the process, and handling exceptions rather than supervising every step.",
+          "quoteLang": "en",
+          "author": "Owen Sweeney",
+          "work": null,
+          "url": "https://www.openhands.dev/blog/what-is-an-ai-dark-factory",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "low-fidelity-wireframes",
+      "stages": [
+        "ui-proto"
+      ],
+      "title": {
+        "en": "Low-fidelity wireframes",
+        "ru": "Черновые вайрфреймы"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a screen layout is sketched roughly, without visual detail, before the interface is designed or built. [1]",
+        "ru": "Практика, при которой раскладку экрана набрасывают грубо, без визуальных деталей, до того как интерфейс проектируют или делают. [1]"
+      },
+      "firstAppeared": null,
+      "kind": "practice",
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "Prototyping has come full circle. From Balsamiq’s intentional sketchiness → to Figma’s pixel-perfect fidelity → to ASCII’s structured minimalism.",
+          "quoteLang": "en",
+          "author": "Carlos Chinchilla",
+          "work": null,
+          "url": "https://medium.com/@calufa/ascii-driven-development-850f66661351",
+          "published": "2025-12-25",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
     }
   ]
 }

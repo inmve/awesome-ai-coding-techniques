@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-85 entries, 64 sources, 38 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+91 entries, 71 sources, 45 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -31,35 +31,41 @@ Inside every section the newest entries come first; practices from before coding
 - [Concepts: Context and tokens](#concepts-context-and-tokens)
 - [Concepts: Risks and failures](#concepts-risks-and-failures)
 - [Concepts: Ideas and maturity models](#concepts-ideas-and-maturity-models)
+- [Before coding agents](#before-coding-agents)
 
 ## Approaches
 
 - **Software factory** (2026). An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality.
+  Grew from: Software factory (1968).
 - **Agentic engineering** (2026). An approach in which production software is built with agents under engineering discipline: specifications, reviews, evals and a harness.
   Grew from: Software engineering.
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
+  Grew from: Lights-out manufacturing.
 - **Explore, plan, code, commit** (2025). An approach in which the agent first reads the relevant code, then makes a plan, then implements it and commits.
   Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Ask%20Claude%20to%20read%20relevant%20files).
-  Grew from: Extreme Programming.
 - **Spec-driven development** (2025). An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it.
   Sources: [GitHub Engineering](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt); [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example).
   Grew from: Waterfall.
 - **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.
   Sources: [Andrej Karpathy, 2025-02-02](https://x.com/karpathy/status/1886192184808149383).
+- **Lights-out manufacturing**. An approach to manufacturing in which a factory runs without people on site, so it can work with the lights off.
+  Sources: [Owen Sweeney, 2026-09-23](https://www.openhands.dev/blog/what-is-an-ai-dark-factory).
+  Led to: Dark factory.
 - **Agile** (2001). Developing in short iterations with frequent feedback instead of a detailed upfront plan.
-  Led to: Early interruption.
 - **Extreme Programming** (1999). An agile method: pair programming, tests before code, continuous integration, frequent releases.
-  Led to: Explore, plan, code, commit.
 - **Waterfall** (1970). A development model where stages run strictly in order: requirements, design, code, testing, deployment.
   Led to: Spec-driven development.
+- **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
+  Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
+  Led to: Software factory.
 
 ## Planning
 
 - **Agent War** (2026). The practice in which two agents are instructed to disagree by default and to agree only on claims that can be proven.
 - **Stable libraries** (2025). The practice in which the developer picks established libraries that existed before the model's training cutoff.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs).
+  Grew from: Choose boring technology.
 - **User story** (1999). A short requirement written from the user's side: who, what they want, and why.
-  Led to: Feature sessions.
 
 ## UI & Prototype
 
@@ -69,6 +75,10 @@ Inside every section the newest entries come first; practices from before coding
 - **Screenshot iteration**. The practice in which the agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock); [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=I%20opened%20a%20second%20copy%20of%20Sketch); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=You%20can%20use%20any%20of%20these%20methods).
 - **ASCII wireframes**. The practice in which the agent is asked to draw the layout as ASCII art before the interface code is written.
+  Grew from: Low-fidelity wireframes.
+- **Low-fidelity wireframes**. The practice in which a screen layout is sketched roughly, without visual detail, before the interface is designed or built.
+  Sources: [Carlos Chinchilla, 2025-12-25](https://medium.com/@calufa/ascii-driven-development-850f66661351).
+  Led to: ASCII wireframes.
 - **Plan to throw one away** (1975). The principle that the first version of a system is a pilot and is planned to be replaced.
   Led to: Generated prototype.
 
@@ -82,9 +92,11 @@ Inside every section the newest entries come first; practices from before coding
 - **Generated code in place of dependencies** (2025). The practice in which the agent writes the needed code in the project, and a new library is not added.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about).
 - **Rollback points**. The practice in which a known working state is saved before a risky change, so that it can be restored.
-  Grew from: Feature branch.
+- **Codemods**. The practice in which a large mechanical change across a codebase is made by a program that rewrites the code.
+  Sources: [Codegen Technical Staff, 2025-03-01](https://codegen.com/swe-agents-are-better-with-codemods/).
+  Led to: Delegation of routine tasks.
 - **Feature branch** (2005). A separate version-control branch per feature, merged into the main branch when ready.
-  Led to: Parallel agents, Feature sessions, Rollback points.
+  Led to: Parallel agents, Feature sessions.
 - **Pair programming** (1999). Two people work on the same code: one types, the other watches and thinks ahead.
   Led to: Agent as a pair partner.
 - **KISS** (1960). A design principle: a simple system is more reliable than a complex one.
@@ -107,12 +119,11 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Test-driven development.
 - **Manual verification of agent code** (2025). The practice in which the developer runs agent-written code and confirms that it works, without relying on the agent's own report about tests.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource).
-  Grew from: Test-driven development.
 - **Eval pyramid** (2025). The practice in which eval coverage is split into three layers: automated assertions, scoring by a language model and spot checks by people, from the cheapest and most numerous to the most expensive and rarest.
 - **Eval suite** (2024). The practice in which a team keeps a versioned set of inputs with expected results and runs it automatically after each change of a prompt, a model or tools.
 - **LLM as judge** (2023). The practice in which a language model scores the output of another agent or model against stated criteria.
 - **Test-driven development** (2002). Write a failing test first, then the minimal code to pass it, then refactor.
-  Led to: Manual verification of agent code, Tests before agent code.
+  Led to: Tests before agent code.
 - **Continuous integration** (1991). Merging changes into the shared branch often, with an automatic build and tests on every merge.
   Led to: Agent feedback loop.
 
@@ -135,9 +146,8 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Pull request.
 - **Subagent verification**. The practice in which the agent starts subagents to verify details or to investigate separate questions.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents).
-  Grew from: Code inspection.
 - **Code inspection** (1976). A formal checklist-driven review of code by peers before testing.
-  Led to: Adversarial review, Subagent verification, Agent self-review, Reading agent-written code, Edits in the diff.
+  Led to: Adversarial review, Agent self-review, Reading agent-written code, Edits in the diff.
 
 ## Across stages: Prompting
 
@@ -178,7 +188,7 @@ Inside every section the newest entries come first; practices from before coding
 - **Asynchronous agent work**. The practice in which the agent works on a task while the developer is busy with something else.
   Sources: [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster).
 - **Feature sessions**. The practice of keeping each feature or task in its own agent session so the context does not bloat.
-  Grew from: Feature branch, User story.
+  Grew from: Feature branch.
 
 ## Across stages: Models and budget
 
@@ -200,6 +210,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20subconsciously%20defaulting%20to%20AI); [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20the%20initial%20version%20yourself%20and%20ask%20AI%20to%20review%20and%20improve%20it); [Mitchell Hashimoto](https://mitchellh.com/writing/non-trivial-vibing#:~:text=So%20I%20pulled%20out%20my%20AI%20tooling).
 - **Delegation of routine tasks** (2025). The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent.
   Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things); [Colton, 2025-08-05](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/#:~:text=AI's%20best%20use%20case%20for%20me).
+  Grew from: Codemods.
 - **Agent as a pair partner** (2025). The practice in which the developer explains a problem to the agent, gets its feedback and works out the solution together with it.
   Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing).
   Grew from: Pair programming, Rubber duck debugging.
@@ -207,7 +218,6 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written).
 - **Early interruption**. The practice in which the developer stops the agent as soon as it goes in a wrong direction and gives it a correction.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude).
-  Grew from: Agile.
 - **Learning with an agent**. The practice in which the developer uses an agent to learn a language or a concept and then writes the code without it.
   Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go).
 
@@ -232,13 +242,23 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Sycophancy** (2026). The tendency of a model to agree with the framing the user gave, including when the user is wrong.
 - **Context poisoning** (2025). A failure in which a long agent session accumulates outdated assumptions, earlier errors or stale file contents in its context, and they keep affecting later answers.
+- **SQL injection**. An attack in which input sent to an application is executed as part of a database query.
+  Sources: [Simon Willison, 2022-09-12](https://simonwillison.net/2022/Sep/12/prompt-injection/).
+  Led to: Prompt injection.
 - **Prompt injection** (2022). An attack in which content the agent reads (a web page, an email, a file) contains instructions that redirect the agent away from what the user asked.
+  Grew from: SQL injection.
 
 ## Concepts: Ideas and maturity models
 
 - **Five levels** (2026). A scale that describes how much of development is handed to agents, from autocomplete at the lowest level to the dark factory at the highest.
 - **Software engineering** (1968). Treating software development as an engineering discipline with processes, stages and quality control.
   Led to: Agentic engineering.
+
+## Before coding agents
+
+- **Choose boring technology** (2015). The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else.
+  Sources: [Dan McKinley, 2015-03-30](https://mcfunley.com/choose-boring-technology); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
+  Led to: Stable libraries.
 
 ## Contributing
 
