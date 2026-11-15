@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-91 entries, 128 sources, 116 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+83 entries, 122 sources, 110 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -31,7 +31,6 @@ Inside every section the newest entries come first; practices from before coding
 - [Concepts: Context and tokens](#concepts-context-and-tokens)
 - [Concepts: Risks and failures](#concepts-risks-and-failures)
 - [Concepts: Ideas and maturity models](#concepts-ideas-and-maturity-models)
-- [Before coding agents](#before-coding-agents)
 
 ## Approaches
 
@@ -43,8 +42,6 @@ Inside every section the newest entries come first; practices from before coding
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
   Grew from: Lights-out manufacturing.
-- **Explore, plan, code, commit** (2025). An approach in which the agent first reads the relevant code, then makes a plan, then implements it and commits.
-  Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Ask%20Claude%20to%20read%20relevant%20files).
 - **Spec-driven development** (2025). An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it.
   Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt); [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
   Grew from: Waterfall.
@@ -60,16 +57,22 @@ Inside every section the newest entries come first; practices from before coding
 - **Waterfall** (1970). A development model where stages run strictly in order: requirements, design, code, testing, deployment.
   Sources: [Marc Brooker, 2026-04-09](https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec).
   Led to: Spec-driven development.
+- **Software engineering** (1968). Treating software development as an engineering discipline with processes, stages and quality control.
+  Led to: Agentic engineering.
 - **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
   Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
   Led to: Software factory.
 
 ## Planning
 
-- **Agent War** (2026). The practice in which two agents are instructed to disagree by default and to agree only on claims that can be proven.
+- **Plan before code** (2025). The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written.
+  Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=Check%20out%20the%20current%20state); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan).
 - **Stable libraries** (2025). The practice in which the developer picks established libraries that existed before the model's training cutoff.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs).
   Grew from: Choose boring technology.
+- **Choose boring technology** (2015). The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else.
+  Sources: [Dan McKinley, 2015-03-30](https://mcfunley.com/choose-boring-technology); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
+  Led to: Stable libraries.
 - **User story** (1999). A short requirement written from the user's side: who, what they want, and why.
 
 ## UI & Prototype
@@ -127,11 +130,6 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Test-driven development.
 - **Manual verification of agent code** (2025). The practice in which the developer runs agent-written code and confirms that it works, without relying on the agent's own report about tests.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource).
-- **Eval pyramid** (2025). The practice in which eval coverage is split into three layers: automated assertions, scoring by a language model and spot checks by people, from the cheapest and most numerous to the most expensive and rarest.
-- **Eval suite** (2024). The practice in which a team keeps a versioned set of inputs with expected results and runs it automatically after each change of a prompt, a model or tools.
-  Sources: [Hamel Husain, 2024-03-29](https://hamel.dev/blog/posts/evals/); [Anthropic (engineering blog, no byline in saved text), 2026-01-09](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents).
-- **LLM as judge** (2023). The practice in which a language model scores the output of another agent or model against stated criteria.
-  Sources: [Hamel Husain, 2024-03-29](https://hamel.dev/blog/posts/evals/).
 - **Test-driven development** (2002). Write a failing test first, then the minimal code to pass it, then refactor.
   Sources: [thoughtbot (author name not shown in the saved text), 2026-01-12](https://thoughtbot.com/blog/prevent-the-robocalypse-with-tdd).
   Led to: Tests before agent code.
@@ -158,6 +156,9 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Pull request.
 - **Subagent verification**. The practice in which the agent starts subagents to verify details or to investigate separate questions.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents).
+- **Pull request** (2008). A request to merge changes that hosts the discussion and review.
+  Sources: [GitHub Blog (author name not shown in the saved text), 2026-05-07](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/); [GitHub](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results).
+  Led to: Agent code as a pull request.
 - **Code inspection** (1976). A formal checklist-driven review of code by peers before testing.
   Led to: Adversarial review, Agent self-review, Reading agent-written code, Edits in the diff.
 
@@ -173,7 +174,6 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20find%20LLMs%20respond%20extremely%20well); [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20an%20outline%20of%20the%20code%20and%20ask%20AI%20to%20fill%20the%20missing%20parts); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=AI%20is%20very%20good%20at%20fill); [Between the Prompts](https://betweentheprompts.com/design-partner/#:~:text=But%20instead%20of%20fixing%20the%20code%20myself%2C%20I%20explained%20why%20it%20was%20wrong%20and%20gave%20it%20more%20precise%20instructions.%20When%20I%20told%20it%20%E2%80%9CYou%20misunderstood%2C%20it%20should%E2%80%A6%E2%80%9D%20and%20provided%20clearer%20guidance%2C%20I%20was%20impressed%20at%20how%20it%20could%20understand%20the%20problem%20and%20update%20the%20code%20accordingly.).
 - **Perspective simulation prompt**. A prompting habit in which the model is asked what a group of experienced people would say about a question, instead of what the model itself thinks.
   Sources: [Andrej Karpathy](https://twitter.com/karpathy/status/1997731268969304070#:~:text=Don't%20think%20of%20LLMs%20as%20entities).
-- **Emphasis words in prompts**. A prompting habit of marking critical rules with IMPORTANT, NEVER or ALWAYS so the model does not skip them.
 - **Understanding check**. A prompting habit in which the agent is asked to restate the task before it starts the implementation.
 
 ## Across stages: Context and memory
@@ -186,13 +186,13 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices).
 - **Documentation for new libraries** (2025). The practice in which the agent is given current documentation and examples for a library that is missing from the model's training data.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=LLMs%20can%20still%20help%20you%20work%20with%20libraries); [Jude Gao, 2026-01-27](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals).
+- **Memory file** (2025). The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session.
+  Sources: [agents.md community](https://agents.md/#:~:text=Think%20of%20AGENTS.md%20as%20a%20README%20for%20agents); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
 - **Context reset between tasks**. The practice in which the agent's context is cleared before an unrelated task begins.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context); [aider.chat](https://aider.chat/docs/usage/tips.html).
 
 ## Across stages: Sessions and parallel work
 
-- **Autoresearch** (2026). The practice in which an agent runs experiments in a loop against a measurable result: it proposes a change, runs the check, keeps the change if the result improved and discards it otherwise.
-  Sources: [karpathy](https://github.com/karpathy/autoresearch).
 - **Fan-out and fan-in** (2026). The practice in which a task is split into independent parts, several agents do the parts in parallel, and a coordinator merges the results.
 - **Orchestrator and workers** (2026). The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results.
   Sources: [Anthropic (engineering blog, no personal byline in saved text), 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents).
@@ -209,7 +209,6 @@ Inside every section the newest entries come first; practices from before coding
 
 ## Across stages: Models and budget
 
-- **Tokenmaxxing** (2026). The practice of getting more work out of a fixed token budget through caching, summarization, context pruning and running tool calls from code.
 - **Model choice per task** (2026). The practice in which the model and its reasoning level are chosen for each task by modality, context length, tool-call reliability, latency and cost.
   Sources: [Abhishek Ray, 2026-03-10](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep).
 - **Model escalation** (2025). The practice in which work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard.
@@ -243,17 +242,10 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Harness** (2026). Everything around a model that makes it an agent: the system prompt, tools, hooks, memory files, evals, the sandbox and the loop that connects them.
   Sources: [Birgitta Böckeler, 2026-04-02](https://martinfowler.com/articles/harness-engineering.html); [Wren Dougherty, 2026-09-15](https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4).
-- **Plan before code** (2025). The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written.
-  Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=Check%20out%20the%20current%20state); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan).
-- **Memory file** (2025). The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session.
-  Sources: [agents.md community](https://agents.md/#:~:text=Think%20of%20AGENTS.md%20as%20a%20README%20for%20agents); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
 - **Subagent** (2025). An agent started by another agent for a subtask, usually with its own context window, so that its work does not fill the parent's context.
   Sources: [Written by Anthropic's Applied AI team: Prithvi Rajasekaran, Ethan Dixon, Carly Ryan, and Jeremy Hadfield, 2025-09-29](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
 - **Agent** (2024). A program that uses a language model to take actions (read files, run commands, call tools, edit code) in pursuit of a stated goal, repeating until the goal is met or the work is stopped.
   Sources: [Simon Willison, 2025-09-18](https://simonwillison.net/2025/Sep/18/agents); [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey).
-- **Pull request** (2008). A request to merge changes that hosts the discussion and review.
-  Sources: [GitHub Blog (author name not shown in the saved text), 2026-05-07](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/); [GitHub](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results).
-  Led to: Agent code as a pull request.
 
 ## Concepts: Context and tokens
 
@@ -277,14 +269,6 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Five levels** (2026). A scale that describes how much of development is handed to agents, from autocomplete at the lowest level to the dark factory at the highest.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
-- **Software engineering** (1968). Treating software development as an engineering discipline with processes, stages and quality control.
-  Led to: Agentic engineering.
-
-## Before coding agents
-
-- **Choose boring technology** (2015). The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else.
-  Sources: [Dan McKinley, 2015-03-30](https://mcfunley.com/choose-boring-technology); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
-  Led to: Stable libraries.
 
 ## Contributing
 

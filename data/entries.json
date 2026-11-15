@@ -282,39 +282,6 @@
       "group": "agents-tools"
     },
     {
-      "id": "agent-war",
-      "stages": [
-        "req-plan"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Agent War",
-        "ru": "Война агентов"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which two agents are instructed to disagree by default and to agree only on claims that can be proven.",
-        "ru": "Практика, при которой двум агентам велят по умолчанию не соглашаться друг с другом и сходиться только на утверждениях, которые можно доказать."
-      },
-      "firstAppeared": {
-        "date": "2026-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "fuzzy: discussed across practitioner threads in early 2026; not formally coined."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "agentic-engineering",
       "stages": [],
       "kind": "approach",
@@ -350,51 +317,6 @@
       ],
       "origin": null,
       "group": null
-    },
-    {
-      "id": "autoresearch",
-      "stages": [
-        "general"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Autoresearch",
-        "ru": "Авторисёрч"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which an agent runs experiments in a loop against a measurable result: it proposes a change, runs the check, keeps the change if the result improved and discards it otherwise. [1]",
-        "ru": "Практика, при которой агент в цикле ставит эксперименты с измеримым результатом: предлагает изменение, запускает проверку, оставляет изменение, если результат улучшился, и отбрасывает, если нет. [1]"
-      },
-      "firstAppeared": {
-        "date": "2026-03-07",
-        "precision": "day",
-        "verified": false,
-        "note": "Andrej Karpathy, autoresearch release (Mar 7 2026)."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "The idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats.",
-          "quoteLang": "en",
-          "author": "karpathy",
-          "work": null,
-          "url": "https://github.com/karpathy/autoresearch",
-          "published": null,
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "sessions"
     },
     {
       "id": "context-poisoning",
@@ -543,95 +465,6 @@
       "group": null
     },
     {
-      "id": "eval-evaluation-suite",
-      "stages": [
-        "test-qa"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Eval suite",
-        "ru": "Набор эвалов"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which a team keeps a versioned set of inputs with expected results and runs it automatically after each change of a prompt, a model or tools. [1][2]",
-        "ru": "Практика, при которой команда ведёт версионируемый набор входов с ожидаемыми результатами и автоматически прогоняет его после каждой смены промпта, модели или инструментов. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2024-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "the term predates this window; first-class platform support arrived through Anthropic Workbench evals, OpenAI Evals, PromptFoo, Braintrust, and Inspect AI through 2024–2025."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "I often run Level 1 evals on every code change, Level 2 on a set cadence and Level 3 only after significant product changes.",
-          "quoteLang": "en",
-          "author": "Hamel Husain",
-          "work": null,
-          "url": "https://hamel.dev/blog/posts/evals/",
-          "published": "2024-03-29",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "An evaluation suite is a collection of tasks designed to measure specific capabilities or behaviors.",
-          "quoteLang": "en",
-          "author": "Anthropic (engineering blog, no byline in saved text)",
-          "work": null,
-          "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
-          "published": "2026-01-09",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
-      "id": "eval-pyramid",
-      "stages": [
-        "test-qa"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Eval pyramid",
-        "ru": "Пирамида эвалов"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which eval coverage is split into three layers: automated assertions, scoring by a language model and spot checks by people, from the cheapest and most numerous to the most expensive and rarest.",
-        "ru": "Практика, при которой покрытие эвалами делят на три слоя: автоматические проверки, оценку языковой моделью и выборочные проверки людьми, от самых дешёвых и многочисленных к самым дорогим и редким."
-      },
-      "firstAppeared": {
-        "date": "2025-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "fuzzy: emerged through practitioner blog posts and vendor docs in late 2025; no single coiner."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "fan-out-fan-in",
       "stages": [
         "general"
@@ -775,53 +608,6 @@
       "group": "context-memory"
     },
     {
-      "id": "llm-as-judge",
-      "stages": [
-        "test-qa"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "LLM as judge",
-        "ru": "LLM-судья"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which a language model scores the output of another agent or model against stated criteria. [1]",
-        "ru": "Практика, при которой языковая модель оценивает результат другого агента или модели по заданным критериям. [1]"
-      },
-      "firstAppeared": {
-        "date": "2023-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "term emerged in academic and industry eval literature through 2023–2024; widespread practitioner adoption by 2025."
-      },
-      "coinedHere": false,
-      "seeAlso": [
-        "eval-pyramid"
-      ],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "You should track the correlation between model-based and human evaluation to decide how much you can rely on automatic evaluation.",
-          "quoteLang": "en",
-          "author": "Hamel Husain",
-          "work": null,
-          "url": "https://hamel.dev/blog/posts/evals/",
-          "published": "2024-03-29",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "memory-file",
       "stages": [
         "general"
@@ -882,7 +668,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "agents-tools"
+      "group": "context-memory"
     },
     {
       "id": "orchestrator-worker",
@@ -1206,39 +992,6 @@
       "group": "context-tokens"
     },
     {
-      "id": "tokenmaxxing",
-      "stages": [
-        "general"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Tokenmaxxing",
-        "ru": "Токенмаксинг"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice of getting more work out of a fixed token budget through caching, summarization, context pruning and running tool calls from code.",
-        "ru": "Практика, при которой из фиксированного бюджета токенов извлекают больше работы за счёт кеширования, сжатия, обрезки контекста и вызова инструментов из кода."
-      },
-      "firstAppeared": {
-        "date": "2026-04-01",
-        "precision": "month",
-        "verified": false,
-        "note": "Axios coverage of Salesforce internal usage (Apr 2026)."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "models-budget"
-    },
-    {
       "id": "vibe-coding",
       "stages": [],
       "kind": "approach",
@@ -1340,11 +1093,13 @@
       },
       "aliases": {
         "en": [
-          "Plan mode"
+          "Plan mode",
+          "Explore, plan, code, commit"
         ],
         "ru": [
           "Plan mode",
-          "Режим плана"
+          "Режим плана",
+          "Изучить, спланировать, написать, закоммитить"
         ]
       },
       "definition": {
@@ -1393,7 +1148,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "agents-tools"
+      "group": null
     },
     {
       "id": "iterate-on-ai-output-yourself",
@@ -1983,38 +1738,6 @@
       "group": "human"
     },
     {
-      "id": "use-strong-emphasis-words",
-      "stages": [
-        "general"
-      ],
-      "kind": "prompting",
-      "title": {
-        "ru": "Слова-усилители в промптах",
-        "en": "Emphasis words in prompts"
-      },
-      "aliases": {
-        "ru": [
-          "IMPORTANT, NEVER, ALWAYS"
-        ],
-        "en": [
-          "IMPORTANT, NEVER, ALWAYS"
-        ]
-      },
-      "definition": {
-        "ru": "Приём, при котором критичные правила в промпте помечают словами IMPORTANT, NEVER, ALWAYS, чтобы модель их не пропустила.",
-        "en": "A prompting habit of marking critical rules with IMPORTANT, NEVER or ALWAYS so the model does not skip them."
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [],
-      "seededFrom": "techniques+example",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": "prompting"
-    },
-    {
       "id": "build-fast-foolproof-tools",
       "stages": [
         "coding"
@@ -2453,55 +2176,6 @@
       "rootsIn": [],
       "origin": null,
       "group": "prompting"
-    },
-    {
-      "id": "explore-plan-code-commit",
-      "stages": [],
-      "kind": "approach",
-      "title": {
-        "en": "Explore, plan, code, commit",
-        "ru": "Изучить, спланировать, написать, закоммитить"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "An approach in which the agent first reads the relevant code, then makes a plan, then implements it and commits. [1][2]",
-        "ru": "Подход, при котором агент сначала читает нужный код, затем составляет план, затем реализует его и коммитит. [1][2]"
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "There's a process that I call \"priming\" the agent, where instead of having the agent jump straight to performing a task, I have it read additional context upfront to increase the chances that it will produce good outputs.",
-          "quoteLang": "en",
-          "author": "Indragie Karunaratne",
-          "work": null,
-          "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=There's%20a%20process%20that%20I%20call",
-          "published": "2025-07-01",
-          "checkedAt": "2026-11-14"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "For changes you want to review before they touch disk, switch to plan mode. Claude reads files and proposes a plan but makes no edits until you approve.",
-          "quoteLang": "en",
-          "author": "Anthropic",
-          "work": null,
-          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Ask%20Claude%20to%20read%20relevant%20files",
-          "published": null,
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
     },
     {
       "id": "brain-first-coding",
@@ -3658,7 +3332,7 @@
         "verified": false,
         "note": "NATO Software Engineering Conference, Garmisch, Oct 1968"
       },
-      "kind": "concept",
+      "kind": "approach",
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -3666,7 +3340,7 @@
       "seededFrom": "pre-llm",
       "opposites": [],
       "origin": null,
-      "group": "ideas"
+      "group": null
     },
     {
       "id": "waterfall",
@@ -4212,7 +3886,9 @@
     },
     {
       "id": "pull-request",
-      "stages": [],
+      "stages": [
+        "code-review"
+      ],
       "title": {
         "ru": "Пул-реквест",
         "en": "Pull request"
@@ -4236,7 +3912,7 @@
         "verified": false,
         "note": "GitHub, 2008"
       },
-      "kind": "concept",
+      "kind": "practice",
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -4270,7 +3946,7 @@
         "ru": "Введён GitHub",
         "en": "Introduced by GitHub"
       },
-      "group": "agents-tools"
+      "group": null
     },
     {
       "id": "software-factory-1968",
@@ -4398,7 +4074,9 @@
     },
     {
       "id": "choose-boring-technology",
-      "stages": [],
+      "stages": [
+        "req-plan"
+      ],
       "title": {
         "en": "Choose boring technology",
         "ru": "Скучные технологии"
