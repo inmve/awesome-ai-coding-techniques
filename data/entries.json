@@ -663,8 +663,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which, after the agent fails at the same problem several times, the developer switches to a different approach. [1][2]",
-        "ru": "Практика, при которой после нескольких неудач агента на одной задаче разработчик переходит к другому подходу. [1][2]"
+        "en": "The practice in which, after the agent fails at the same problem several times, the developer switches to a different approach. [1][2][3]",
+        "ru": "Практика, при которой после нескольких неудач агента на одной задаче разработчик переходит к другому подходу. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -691,6 +691,17 @@
           "url": "https://aider.chat/docs/usage/tips.html",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "One classic sign that you’ve got a loop spinning in place is the same command being tried over and over without any change in the result. Give the same command a third time with no change from the second and it’s probably time to stop.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/practical-loop-engineering/",
+          "published": "2026-08-14",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -3432,8 +3443,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team records its code rules in the repository and on a regular cadence runs background agent tasks that look for deviations from the rules or stale documentation and open pull requests with fixes. [1][2]",
-        "ru": "Практика, при которой команда записывает правила кода в репозиторий и регулярно запускает фоновые задачи агента, которые ищут отступления от правил или устаревшую документацию и открывают pull request с исправлениями. [1][2]"
+        "en": "The practice in which a team records its code rules in the repository and on a regular cadence runs background agent tasks that look for deviations from the rules or stale documentation and open pull requests with fixes. [1][2][3]",
+        "ru": "Практика, при которой команда записывает правила кода в репозиторий и регулярно запускает фоновые задачи агента, которые ищут отступления от правил или устаревшую документацию и открывают pull request с исправлениями. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3461,6 +3472,17 @@
           "url": "https://code.claude.com/docs/en/common-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "If there’s a check you already run every morning by hand, that’s your first loop.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/practical-loop-engineering/",
+          "published": "2026-08-14",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -3625,8 +3647,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2]",
-        "ru": "Практика, при которой агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2]"
+        "en": "The practice in which the agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2][3]",
+        "ru": "Практика, при которой агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3654,6 +3676,17 @@
           "url": "https://harper.blog/2026/09/22/break-away/",
           "published": "2026-09-22",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "I have tried just about everything and I highly recommend: use a fresh VM.",
+          "quoteLang": "en",
+          "author": "crawshaw",
+          "work": null,
+          "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
+          "published": "2026-02-08",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -3676,8 +3709,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2]",
-        "ru": "Практика, при которой сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2]"
+        "en": "The practice in which services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2][3][4]",
+        "ru": "Практика, при которой сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3705,6 +3738,28 @@
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "One of the reasons we strongly lean towards CLI and bash is because it allows easy composition of calls, and because the model also learns how the file system works when it’s trained.",
+          "quoteLang": "en",
+          "author": "Armin Ronacher",
+          "work": null,
+          "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "The simplest form is text, so by default, whatever I wanna build, it starts as CLI. Agents can call it directly and verify output - closing the loop.",
+          "quoteLang": "en",
+          "author": "Peter Steinberger",
+          "work": null,
+          "url": "https://steipete.me/posts/2025/shipping-at-inference-speed/",
+          "published": "2025-12-28",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -3727,8 +3782,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1][2]",
-        "ru": "Практика, при которой команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1][2]"
+        "en": "The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1][2][3]",
+        "ru": "Практика, при которой команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3756,6 +3811,17 @@
           "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
           "published": "2026-09-09",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Only try to complete this task using the raw model and harness. And see, is it actually okay without using any of these skills?",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/audit-your-agent-files/",
+          "published": "2026-08-27",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -4862,6 +4928,337 @@
         }
       ],
       "seededFrom": "trial-hiring",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "agent-setup-audit",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Regular audit of the agent setup",
+        "ru": "Регулярный аудит настройки агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which, every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true. [1]",
+        "ru": "Практика, при которой разработчик раз в несколько недель проверяет настройку агента, включая скиллы, плагины, файлы инструкций и память, командой проверки инструмента и пересматривает, что из этого ещё верно. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "And so I think there’s high value personally in, like maybe every couple of weeks, maybe at once a month even, just running doctor on your skills, on your setup, and auditing what you’re doing and seeing, okay, well, what still holds true?",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/audit-your-agent-files/",
+          "published": "2026-08-27",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "tests-as-data-files",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Tests-as-data",
+        "ru": "Тесты как данные"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which tests are kept as data files with the input, the expected output and the setup, read by a small test runner, so that agent changes to the tests are visible and can be blocked. [1]",
+        "ru": "Практика, при которой тесты хранятся как файлы данных со входом, ожидаемым результатом и подготовкой, а читает их небольшой тестовый раннер, чтобы правки агента в тестах были видны и их можно было запретить. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The tests are a contract that establishes what the code should do for us, and moving tests to data files, interpreted by a relatively smaller test runner, makes them easier to protect from unexpected manipulation by AI.",
+          "quoteLang": "en",
+          "author": "Matteo Vaccari",
+          "work": null,
+          "url": "https://martinfowler.com/articles/tests-as-data.html",
+          "published": "2026-11-11",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "mutation-testing-of-agent-written-tests",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Mutation testing of agent-written tests",
+        "ru": "Мутационное тестирование тестов агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which faults are injected into production code, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1]",
+        "ru": "Практика, при которой в продакшен-код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The first thing we can do is mutation testing: we inject intentional faults in production code, and see if any test breaks, and if it breaks, check that the error message is correct and informative.",
+          "quoteLang": "en",
+          "author": "Matteo Vaccari",
+          "work": null,
+          "url": "https://martinfowler.com/articles/tests-as-data.html",
+          "published": "2026-11-11",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "tests-protected-from-agent-edits",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Protected test expectations",
+        "ru": "Защищённые ожидания тестов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which test files and expected results that a task should not change are protected from the agent: made read-only, checked in CI for changes, or named in the agent's instructions as inputs to keep. [1][2]",
+        "ru": "Практика, при которой файлы тестов и ожидаемые результаты, которые задача не должна менять, защищают от агента: делают доступными только для чтения, проверяют на изменения в CI или указывают в инструкциях агента как неизменяемые. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Depending on the type of task, it’s possible to protect the files that we’re not expecting the AI to change, by making them read-only in a way that the agent cannot bypass, or by running a check in CI that verifies what files were changed depending on the type of task.",
+          "quoteLang": "en",
+          "author": "Matteo Vaccari",
+          "work": null,
+          "url": "https://martinfowler.com/articles/tests-as-data.html",
+          "published": "2026-11-11",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "The agent was instructed to preserve those inputs and the skill’s verification helpers, investigate failures, and correct the implementation or execution setup rather than weaken the expectations.",
+          "quoteLang": "en",
+          "author": "Naresh Jain",
+          "work": null,
+          "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+          "published": "2026-10-13",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "intent-review",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Intent Review",
+        "ru": "Intent Review"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which, for medium- and high-risk pull requests, an agent guides the engineer through how the change affects the system, with understanding of the change, not approval, as the goal. [1]",
+        "ru": "Практика, при которой для pull request среднего и высокого риска агент проводит инженера по тому, как изменение влияет на систему, и цель — понимание изменения, а не одобрение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "We’ve been experimenting with a new process called Intent Review. For medium and high risk PRs, the agent guides the engineer through understanding how the change affects the system.",
+          "quoteLang": "en",
+          "author": "Vinay Perneti and Emma Webb",
+          "work": null,
+          "url": "https://www.augmentcode.com/downloads/state-of-ai-native-engineering-2026.pdf",
+          "published": null,
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "knowledge-base-from-project-history",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Knowledge base from project history",
+        "ru": "База знаний из истории проекта"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agents read the codebase, issues, pull requests and discussion threads and write a knowledge base of unrecorded decisions and conventions, which other agents use when they work on the code. [1]",
+        "ru": "Практика, при которой агенты читают код, issues, pull request и обсуждения и пишут базу знаний о незаписанных решениях и соглашениях, которой другие агенты пользуются, когда работают с кодом. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Agents that crawl the codebase, the issues, the PRs, the threads, and produce a knowledge base of the implicit decisions, the conventions, the why-we-did-it-this-way that nobody had time to document.",
+          "quoteLang": "en",
+          "author": ".txt",
+          "work": null,
+          "url": "https://www.thetypicalset.com/blog/thoughts-on-coding-agents",
+          "published": "2026-04-29",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "smallest-scope-agent-controls",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Smallest-scope agent control",
+        "ru": "Управление агентом на самом узком уровне"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last. [1]",
+        "ru": "Практика, при которой команда исправляет поведение агента средством самого узкого охвата, которое ещё даёт нужный результат: сначала контракты интерфейса и вывода, затем автоматические проверки, затем скиллы или команды и в последнюю очередь корневые файлы инструкций. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "At Datadog, we aim to use the control with the smallest scope that still gives us the output we want.",
+          "quoteLang": "en",
+          "author": "Addie Beach, Rui Martins Lacerda",
+          "work": null,
+          "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
+          "published": "2026-09-09",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "voluntary-review-of-model-prs",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Volunteer-only review of model-written pull requests",
+        "ru": "Ревью pull request от модели только добровольцами"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code. [1]",
+        "ru": "Практика, при которой проект отдаёт pull request, написанные с помощью языковой модели, только тем ревьюерам, кто вызвался их проверять, и такой ревьюер может попросить автора переделать изменение без сгенерированного кода. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "No one is required to review LLM PRs unless they volunteer.",
+          "quoteLang": "en",
+          "author": "Jynn Nelson",
+          "work": null,
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "published": "2026-08-05",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": "team"
