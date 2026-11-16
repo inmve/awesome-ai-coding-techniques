@@ -5416,8 +5416,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several agents look for bugs in a change at the same time, a separate group of agents votes on each finding, and only findings with enough votes are posted. [1]",
-        "ru": "Практика, при которой несколько агентов одновременно ищут ошибки в изменении, отдельная группа агентов голосует по каждой находке, и публикуются только находки, набравшие достаточно голосов. [1]"
+        "en": "The practice in which several agents look for bugs in a change at the same time, a separate group of agents votes on each finding, and only findings with enough votes are posted. [1][2]",
+        "ru": "Практика, при которой несколько агентов одновременно ищут ошибки в изменении, отдельная группа агентов голосует по каждой находке, и публикуются только находки, набравшие достаточно голосов. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5433,6 +5433,17 @@
           "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "One of the most effective quality improvements we found early on was running multiple bug-finding passes in parallel and combining their results with majority voting. Each pass received a different ordering of the diff, which nudged the model toward different lines of reasoning.",
+          "quoteLang": "en",
+          "author": "Jon Kaplan",
+          "work": "Building a better Bugbot",
+          "url": "https://cursor.com/blog/building-bugbot",
+          "published": "2026-01-15",
           "checkedAt": "2026-11-16"
         }
       ],
