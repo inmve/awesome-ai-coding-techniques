@@ -4431,8 +4431,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project does not accept contributions that include content generated, in part or in full, by language models or similar systems. [1]",
-        "ru": "Практика, при которой проект не принимает вклады, содержащие материал, созданный целиком или частично языковыми моделями или похожими системами. [1]"
+        "en": "The practice in which a project does not accept contributions that include content generated, in part or in full, by language models or similar systems. [1][2]",
+        "ru": "Практика, при которой проект не принимает вклады, содержащие материал, созданный целиком или частично языковыми моделями или похожими системами. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4449,6 +4449,17 @@
           "url": "https://openjdk.org/legal/ai",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "This patch thus defines a policy that the QEMU project will currently not accept contributions where use of AI code generators is either known, or suspected.",
+          "quoteLang": "en",
+          "author": "Daniel P. Berrangé",
+          "work": "[PATCH v2 3/3] docs: define policy forbidding use of AI code generators",
+          "url": "https://patchew.org/QEMU/20240516162230.937047-1-berrange@redhat.com/20240516162230.937047-4-berrange@redhat.com/",
+          "published": "2024-05-16",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -6680,8 +6691,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup. [1]",
-        "ru": "Практика, при которой команда держит пул подготовленных машин для агентов: основная ветка выкачана, инструменты установлены, приложения собраны, кэши прогреты, и агент берёт готовую машину вместо ожидания настройки. [1]"
+        "en": "The practice in which a team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup. [1][2]",
+        "ru": "Практика, при которой команда держит пул подготовленных машин для агентов: основная ветка выкачана, инструменты установлены, приложения собраны, кэши прогреты, и агент берёт готовую машину вместо ожидания настройки. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6697,6 +6708,17 @@
           "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Devboxes are pre-warmed so one can be spun up in 10 seconds, with Stripe code and services pre-loaded.",
+          "quoteLang": "en",
+          "author": "Alistair Gray",
+          "work": "Minions: Stripe’s one-shot, end-to-end coding agents",
+          "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+          "published": "2026-02-09",
           "checkedAt": "2026-11-16"
         }
       ],
