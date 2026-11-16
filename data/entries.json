@@ -154,8 +154,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3]",
-        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3]"
+        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3][4]",
+        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3][4]"
       },
       "firstAppeared": {
         "date": "2026-03-31",
@@ -197,6 +197,17 @@
           "url": "https://arps18.github.io/posts/claude-code-mastery/",
           "published": "2026-05-26",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "For each spawned agent, run a separate spawned agent to adversarially verify its output against a rubric or criteria.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "glossary",
@@ -265,8 +276,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again. [1][2]",
-        "ru": "Практика, при которой после каждой ошибки агента разработчик добавляет в его окружение правило, скрипт или проверку, чтобы ошибка не повторилась. [1][2]"
+        "en": "The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again. [1][2][3][4]",
+        "ru": "Практика, при которой после каждой ошибки агента разработчик добавляет в его окружение правило, скрипт или проверку, чтобы ошибка не повторилась. [1][2][3][4]"
       },
       "firstAppeared": {
         "date": "2026-02-05",
@@ -298,6 +309,28 @@
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "When the automated reviewer keeps flagging the same thing, we fix it at the source: in the skill, with a lint rule, or with updates to instructional files such as:",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "When something slips through that both the human driving the AI and the human reviewer missed, the miss becomes a substrate update. It goes back into CLAUDE.md, into a skill file, or into a review-agent rule.",
+          "quoteLang": "en",
+          "author": "Liz Fong-Jones",
+          "work": null,
+          "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
+          "published": "2026-07-16",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "glossary",
@@ -384,8 +417,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results. [1][2]",
-        "ru": "Практика, при которой один агент ведёт план, раздаёт подзадачи агентам-исполнителям и сводит их результаты. [1][2]"
+        "en": "The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results. [1][2][3]",
+        "ru": "Практика, при которой один агент ведёт план, раздаёт подзадачи агентам-исполнителям и сводит их результаты. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2026-01-19",
@@ -417,6 +450,17 @@
           "url": "https://cursor.com/blog/scaling-agents",
           "published": "2026-01-14",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Split up a task into many smaller steps, run an agent on each step and then synthesize those results.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "glossary",
@@ -550,8 +594,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3]",
-        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3]"
+        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3][4]",
+        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -589,6 +633,17 @@
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "For a larger change, agree on the approach first where back-and-forth is cheap. Start Claude in plan mode, work out the plan together, commit the plan, and push it.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -854,8 +909,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent's context is cleared before an unrelated task begins. [1][2]",
-        "ru": "Практика, при которой контекст агента очищают перед началом не связанной задачи. [1][2]"
+        "en": "The practice in which the agent's context is cleared before an unrelated task begins. [1][2][3][4]",
+        "ru": "Практика, при которой контекст агента очищают перед началом не связанной задачи. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -882,6 +937,28 @@
           "url": "https://aider.chat/docs/usage/tips.html",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Run /clear between tasks. This prevents prior irrelevant context from being sent back to the model, which can reduce token usage.",
+          "quoteLang": "en",
+          "author": "Lydia Hallie",
+          "work": null,
+          "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+          "published": "2026-08-14",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "Use /clear between unrelated tasks, and /compact at a break with a note on what to keep.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/",
+          "published": "2026-09-25",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1196,8 +1273,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3]",
-        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3]"
+        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3][4][5]",
+        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3][4][5]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1234,6 +1311,28 @@
           "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "Split parallel tasks along file boundaries, merge the branches in a sensible order, and expect a session to report problems that another session is already fixing.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 5,
+          "role": "support",
+          "quote": "We kept each thread deliberately narrow, focused on one benchmark or journey, and asked Claude to find improvements only within that scope.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1310,8 +1409,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent works on a task while the developer is busy with something else. [1][2]",
-        "ru": "Практика, при которой агент работает над задачей, пока разработчик занят другим делом. [1][2]"
+        "en": "The practice in which the agent works on a task while the developer is busy with something else. [1][2][3]",
+        "ru": "Практика, при которой агент работает над задачей, пока разработчик занят другим делом. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1338,6 +1437,17 @@
           "url": "https://granda.org/en/2026/01/02/claude-code-on-the-go/",
           "published": "2026-01-02",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "I gave inputs every 2-3 hours to move the model in the direction I wanted. I also let it run without supervision overnight on some days.",
+          "quoteLang": "en",
+          "author": "sankalp",
+          "work": null,
+          "url": "https://sankalp.bearblog.dev/autoresearch/",
+          "published": "2026-07-08",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1366,8 +1476,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой каждая фича или задача ведётся в отдельной сессии агента, чтобы контекст не разрастался. [1][2]",
-        "en": "The practice of keeping each feature or task in its own agent session so the context does not bloat. [1][2]"
+        "ru": "Практика, при которой каждая фича или задача ведётся в отдельной сессии агента, чтобы контекст не разрастался. [1][2][3]",
+        "en": "The practice of keeping each feature or task in its own agent session so the context does not bloat. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1394,6 +1504,17 @@
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "One task, one session. Small, separate sessions are easier to review and cheaper to throw away.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques+example",
@@ -1541,8 +1662,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A prompting habit in which the model is asked for several approaches with the pros and cons of each. [1]",
-        "ru": "Приём, при котором модель просят предложить несколько подходов с плюсами и минусами каждого. [1]"
+        "en": "A prompting habit in which the model is asked for several approaches with the pros and cons of each. [1][2]",
+        "ru": "Приём, при котором модель просят предложить несколько подходов с плюсами и минусами каждого. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1558,6 +1679,17 @@
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "For example, I might start with asking Claude Code to brainstorm and create some explorations of different options.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
+          "published": "2026-05-20",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1794,8 +1926,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2]",
-        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2]"
+        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3]",
+        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1822,6 +1954,17 @@
           "url": "https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/#:~:text=AI's%20best%20use%20case%20for%20me",
           "published": "2025-08-05",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Claude classified every flag as a kill switch or ramp, and retired each one as soon as it was safe.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1940,8 +2083,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation. [1][2][3]",
-        "ru": "Практика, при которой разработчик задаёт сигнатуры функций, каркас или заготовку, а агент пишет реализацию. [1][2][3]"
+        "en": "The practice in which the developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation. [1][2][3][5]",
+        "ru": "Практика, при которой разработчик задаёт сигнатуры функций, каркас или заготовку, а агент пишет реализацию. [1][2][3][5]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1989,6 +2132,17 @@
           "work": null,
           "url": "https://betweentheprompts.com/design-partner/#:~:text=But%20instead%20of%20fixing%20the%20code%20myself%2C%20I%20explained%20why%20it%20was%20wrong%20and%20gave%20it%20more%20precise%20instructions.%20When%20I%20told%20it%20%E2%80%9CYou%20misunderstood%2C%20it%20should%E2%80%A6%E2%80%9D%20and%20provided%20clearer%20guidance%2C%20I%20was%20impressed%20at%20how%20it%20could%20understand%20the%20problem%20and%20update%20the%20code%20accordingly.",
           "published": null
+        },
+        {
+          "n": 5,
+          "role": "support",
+          "quote": "But what I see working well is that before anyone (human or agent) writes the implementation, we go a level down from architecture into the shape of code: the types, the method signatures, the program layout, and the call stacks.",
+          "quoteLang": "en",
+          "author": "Dex",
+          "work": null,
+          "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+          "published": null,
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -2154,8 +2308,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes. [1][2]",
-        "ru": "Практика, при которой агенту дают проверку, которую он может запустить (тесты, сборку, линтер), и он повторяет правку и проверку, пока проверка не пройдёт. [1][2]"
+        "en": "The practice in which the agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes. [1][2][3][4]",
+        "ru": "Практика, при которой агенту дают проверку, которую он может запустить (тесты, сборку, линтер), и он повторяет правку и проверку, пока проверка не пройдёт. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2182,6 +2336,28 @@
           "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents/#:~:text=Warnings%20are%20a%20great%20example",
           "published": "2025-10-05",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "We give Claude something it can run—like tests, a build or a screenshot to compare against the design—and ask it to show the output instead of saying it's done. Then a subagent reviews the diff with fresh context.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "Sensors (feedback): These are tools that observe what the agent actually produced. They provide a loop for the agent to self-correct before a human even looks at the code.",
+          "quoteLang": "en",
+          "author": "Birgitta Böckeler, Chris Ford",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors",
+          "published": "2026-05-13",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -2350,8 +2526,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent reviews its own code before a person reviews it. [1][2]",
-        "ru": "Практика, при которой агент делает ревью собственного кода до ревью человеком. [1][2]"
+        "en": "The practice in which the agent reviews its own code before a person reviews it. [1][2][3]",
+        "ru": "Практика, при которой агент делает ревью собственного кода до ревью человеком. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2378,6 +2554,17 @@
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least once before a human is asked to look.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -3392,8 +3579,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, for a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work. [1][2]",
-        "ru": "Практика, при которой на большой задаче агент записывает план и ход работы в файл, контекст очищается, а новая сессия читает этот файл и продолжает работу. [1][2]"
+        "en": "The practice in which, for a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work. [1][2][3][4]",
+        "ru": "Практика, при которой на большой задаче агент записывает план и ход работы в файл, контекст очищается, а новая сессия читает этот файл и продолжает работу. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3421,6 +3608,28 @@
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Before we even reach the tests, to help Claude help itself, I included instructions to maintain extensive READMEs and progress files that should be updated frequently with the current status.",
+          "quoteLang": "en",
+          "author": "Nicholas Carlini",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "End sessions by asking Claude to update CLAUDE.md with where you left off.",
+          "quoteLang": "en",
+          "author": "rberg27",
+          "work": null,
+          "url": "https://github.com/rberg27/doom-coding",
+          "published": null,
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -3443,8 +3652,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team records its code rules in the repository and on a regular cadence runs background agent tasks that look for deviations from the rules or stale documentation and open pull requests with fixes. [1][2][3]",
-        "ru": "Практика, при которой команда записывает правила кода в репозиторий и регулярно запускает фоновые задачи агента, которые ищут отступления от правил или устаревшую документацию и открывают pull request с исправлениями. [1][2][3]"
+        "en": "The practice in which a team records its code rules in the repository and on a regular cadence runs background agent tasks that look for deviations from the rules or stale documentation and open pull requests with fixes. [1][2][3][4]",
+        "ru": "Практика, при которой команда записывает правила кода в репозиторий и регулярно запускает фоновые задачи агента, которые ищут отступления от правил или устаревшую документацию и открывают pull request с исправлениями. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3483,6 +3692,17 @@
           "url": "https://addyosmani.com/blog/practical-loop-engineering/",
           "published": "2026-08-14",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "Review agents also run nightly over existing code, helping us catch old bugs before they show up somewhere else.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -3505,8 +3725,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2]",
-        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2]"
+        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2][3]",
+        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3534,6 +3754,17 @@
           "url": "https://developers.openai.com/codex/learn/best-practices",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Using a workflow, go through my last 50 sessions and mine them for corrections I keep making and turn the recurring ones into CLAUDE.md rules",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -4037,8 +4268,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results. [1][2]",
-        "ru": "Практика, при которой несколько агентов или моделей одновременно работают над одной задачей, каждый своим подходом, а разработчик сравнивает результаты. [1][2]"
+        "en": "The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results. [1][2][3]",
+        "ru": "Практика, при которой несколько агентов или моделей одновременно работают над одной задачей, каждый своим подходом, а разработчик сравнивает результаты. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4066,6 +4297,17 @@
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Instead of dividing the work, have agents compete on it. Spawn N agents that each attempt the same task using different approaches.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -4168,8 +4410,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work. [1]",
-        "ru": "Практика, при которой план работы агента над фичей режут на вертикальные срезы через бэкенд и фронтенд, чтобы интеграция проверялась до конца работы. [1]"
+        "en": "The practice in which the agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work. [1][2]",
+        "ru": "Практика, при которой план работы агента над фичей режут на вертикальные срезы через бэкенд и фронтенд, чтобы интеграция проверялась до конца работы. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4186,6 +4428,17 @@
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "And in most cases, I'll send off a model to do 1-3 slices at a time, and review the code as I go. It's a lot easier to resteer early on, whether it's the internals or the actual functionality, than to end up on the other side of 2k+ lines of code with no idea what's broken.",
+          "quoteLang": "en",
+          "author": "Dex",
+          "work": null,
+          "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+          "published": null,
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -5262,6 +5515,1211 @@
       "opposites": [],
       "origin": null,
       "group": "team"
+    },
+    {
+      "id": "ratcheted-benchmarks",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Ratcheted benchmark",
+        "ru": "Храповик на бенчмарке"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which each benchmark an agent optimizes also runs in CI as a guardrail whose threshold may only move in one direction, and benchmarks that are flaky or do not track the real metric are dropped. [1][2]",
+        "ru": "Практика, при которой каждый бенчмарк, который оптимизирует агент, также работает в CI как ограничитель с порогом, который может сдвигаться только в одну сторону, а нестабильные или не отражающие реальную метрику бенчмарки убираются. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Each one had two jobs: first, a metric Claude could move in the lab; second, a guardrail in CI with a number that could only ratchet down.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "If a benchmark was flaky, or if it didn’t actually correlate with user latency, we threw it out rather than let Claude climb the wrong hill.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "benchmark-hill-climbing",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Hill climbing on a metric",
+        "ru": "Подъём по метрике"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves. [1][2]",
+        "ru": "Практика, при которой агенту дают измеряемое число, которое надо улучшить, и он раз за разом меняет код и перемеряет, пока число не улучшится. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "As soon as Claude had a number to beat, it could start optimizing.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Agents yearn for tight feedback loops. They allow them to hill-climb to their heart's content.",
+          "quoteLang": "en",
+          "author": "sankalp",
+          "work": null,
+          "url": "https://sankalp.bearblog.dev/autoresearch/",
+          "published": "2026-07-08",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "voted-review-findings",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Voted review findings",
+        "ru": "Голосование за находки ревью"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which several agents look for bugs in a change at the same time, a separate group of agents votes on each finding, and only findings with enough votes are posted. [1]",
+        "ru": "Практика, при которой несколько агентов одновременно ищут ошибки в изменении, отдельная группа агентов голосует по каждой находке, и публикуются только находки, набравшие достаточно голосов. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Several agents look for bugs at the same time. Then a separate group votes on each finding, and it only gets posted if enough of them agree it's real.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "every-review-finding-answered",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Answer to every review finding",
+        "ru": "Ответ на каждую находку ревью"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "A team rule in which every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open. [1][2]",
+        "ru": "Командное правило, при котором каждую находку агента-ревьюера нужно исправить или закрыть с указанием причины, а пул-реквест нельзя слить, пока открыта находка об ошибке или безопасности. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Every finding has to be answered. You either fix it or resolve the thread with a reason.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "A PR can't merge while any finding from the bug review or the security review is still open.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "prompter-as-reviewer",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Prompter as a required reviewer",
+        "ru": "Автор промпта как ревьюер"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "A team rule in which the person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's. [1][2]",
+        "ru": "Командное правило, при котором человек, направлявший агента, считается одним из обязательных ревьюеров его пул-реквеста, а одобрение агента никогда не засчитывается как одобрение человека. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Whoever prompted the change is on the hook for it. On an agent-written PR, the person directing the agent counts as one of the required reviewers, the same as if they'd typed the code themselves.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "An agent's approval never counts as a person's, either.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "approval-per-commit",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Approval bound to a commit",
+        "ru": "Одобрение на конкретный коммит"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again. [1]",
+        "ru": "Командное правило, при котором одобрение ревью относится к одному конкретному коммиту, а новые коммиты, за которые система не ручается, например пуш агента или слияние, разрешённое вручную, требуют повторного одобрения. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "An approval covers one specific commit. If new commits land that the system can't vouch for, like an agent's push or a merge someone resolved by hand, the approval has to be given again.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "untrusted-content-quarantine",
+      "stages": [
+        "ops"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Quarantine",
+        "ru": "Карантин"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents. [1][2]",
+        "ru": "Практика, при которой агентам, читающим недоверенный контент, например публичные задачи или сообщения, запрещены действия с высокими правами, а такие действия выполняют отдельные агенты. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "This involves barring the agents that read untrusted public content from taking high-privilege actions, which are instead done by the agents in charge of acting on the information.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "The agent reads messages and issues that other people wrote, and that text can be interpreted as instructions. Limit what the agent could do if it followed them.",
+          "quoteLang": "en",
+          "author": "Lance Martin and CJ Avilla",
+          "work": null,
+          "url": "https://claude.dev/blog/building-effective-agent-automations/",
+          "published": "2026-10-08",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "agent-task-claiming",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Task claiming by agents",
+        "ru": "Захват задач агентами"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which parallel agents take work from a shared list, and an agent claims a task, for example by writing a lock file, before working on it, so that no two agents take the same task. [1][2]",
+        "ru": "Практика, при которой параллельные агенты берут работу из общего списка, и агент занимает задачу, например записывая файл-блокировку, прежде чем работать над ней, чтобы двое не взяли одно и то же. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Claude takes a \"lock\" on a task by writing a text file to current_tasks/ (e.g., one agent might lock current_tasks/parse_if_statement.txt, while another locks current_tasks/codegen_function_definition.txt).",
+          "quoteLang": "en",
+          "author": "Nicholas Carlini",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Subtasks: A to-do list where any agent can add a task and the first helper to claim it owns it.",
+          "quoteLang": "en",
+          "author": "Barry Zhang, Tianyi Peng, Elle Najt, Keller Scholl, and Lance Martin",
+          "work": null,
+          "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+          "published": "2026-11-09",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "agent-loop",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent loop",
+        "ru": "Цикл агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2]",
+        "ru": "Практика, при которой обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "To elicit sustained, autonomous progress, I built a harness that sticks Claude in a simple loop (if you’ve seen Ralph-loop, this should look familiar). When it finishes one task, it immediately picks up the next.",
+          "quoteLang": "en",
+          "author": "Nicholas Carlini",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "For tasks with an unknown amount of work, loop spawning agents until a stop condition is met (no new findings, or no more errors in the logs) instead of a fixed number of passes.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "agent-readable-test-output",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent-readable test output",
+        "ru": "Вывод тестов для агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely. [1][2]",
+        "ru": "Практика, при которой вывод тестов и CI делается коротким и быстрым для агента: несколько строк на экране, подробности в лог-файле, прогресс печатается редко. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The test harness should not print thousands of useless bytes. At most, it should print a few lines of output and log all important information to a file so Claude can find it when needed.",
+          "quoteLang": "en",
+          "author": "Nicholas Carlini",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Two things have to be true for CI to function as part of an agent’s feedback loop. It has to be fast, and it has to be AI-legible.",
+          "quoteLang": "en",
+          "author": "Liz Fong-Jones",
+          "work": null,
+          "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
+          "published": "2026-07-16",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "known-good-oracle",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Known-good oracle",
+        "ru": "Эталонная реализация как оракул"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault. [1]",
+        "ru": "Практика, при которой результат кода, написанного агентом, сравнивают с существующей заведомо верной реализацией, что также помогает найти, какая часть кода агента виновата. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The fix was to use GCC as an online known-good compiler oracle to compare against. I wrote a new test harness that randomly compiled most of the kernel using GCC, and only the remaining files with Claude’s C Compiler.",
+          "quoteLang": "en",
+          "author": "Nicholas Carlini",
+          "work": null,
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "one-verifier-per-rule",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "One verifier per rule",
+        "ru": "Один проверяющий на правило"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a list of rules or claims is checked by separate verifier agents, one for each rule or claim. [1][2]",
+        "ru": "Практика, при которой список правил или утверждений проверяют отдельные агенты-проверяющие, по одному на каждое правило или утверждение. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "If you have a particular set of rules that you find Claude misses or struggles with, even when put into the CLAUDE.mds, create a workflow with a list of rules that must be checked by verifier agents—one verifier per rule.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "On the other hand, if you have a report where you want to check and source every factual claim that it references you may want to generate a workflow which has one agent identify all of the factual claims and then spin off a subagent to check each one in-detail.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "disjoint-evidence-hypotheses",
+      "stages": [
+        "debugging"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Root-cause investigation",
+        "ru": "Поиск первопричины"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which several agents form hypotheses about a bug from separate, non-overlapping pieces of evidence, so that one early guess does not shape the whole investigation. [1]",
+        "ru": "Практика, при которой несколько агентов строят гипотезы об ошибке по отдельным, непересекающимся частям данных, чтобы одна ранняя догадка не определяла всё расследование. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "A workflow can structurally prevent this by spinning up agents to generate hypotheses from disjoint evidence.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar and Sid Bidasaria",
+          "work": null,
+          "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+          "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "html-output",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "HTML instead of Markdown",
+        "ru": "HTML вместо Markdown"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents. [1][2]",
+        "ru": "Практика, при которой агент пишет планы, объяснения и разбор кода в виде HTML-страниц вместо документов Markdown. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I’ve started preferring HTML as an output format instead of Markdown and increasingly see this pattern being applied by others on the Claude Code team.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
+          "published": "2026-05-20",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Use HTML to understand code that the agent has written, to review code, or to explain a PR to someone reviewing your code.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
+          "published": "2026-05-20",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "throwaway-editor-with-export",
+      "stages": [
+        "ui-proto"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Throwaway editor with export",
+        "ru": "Одноразовый редактор с экспортом"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent builds a disposable interface for editing something by hand, and the interface ends with an export button that turns the edits into a prompt or a file. [1]",
+        "ru": "Практика, при которой агент делает одноразовый интерфейс для ручного редактирования, и этот интерфейс завершается кнопкой экспорта, превращающей правки в промпт или файл. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The trick is always to end with an export: a \"copy as JSON\" or \"copy as prompt\" button that turns whatever I did in the UI back into something I can paste into Claude Code or commit to a file.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
+          "published": "2026-05-20",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "spec-walkthrough-with-reviewer",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Spec walkthrough with the reviewer",
+        "ru": "Разбор спецификации с ревьюером"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which, before the agent writes code, the author walks the future pull request reviewer through the product and technical specs. [1]",
+        "ru": "Практика, при которой до того, как агент напишет код, автор проходит продуктовую и техническую спецификацию с будущим ревьюером пул-реквеста. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "If you wanna save time during review, you pick the person who would review the PR, and run through the product/tech specs with them before you get to the coding part",
+          "quoteLang": "en",
+          "author": "Dex",
+          "work": null,
+          "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+          "published": null,
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "shared-experiment-log",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Shared experiment log",
+        "ru": "Общий журнал экспериментов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agents log every attempted idea and its result, and later agent sessions read the log to see whether an idea was already tried. [1]",
+        "ru": "Практика, при которой агенты записывают каждую опробованную идею и её результат, а следующие сессии агентов читают журнал, чтобы понять, пробовали ли идею раньше. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Logs serve as the evidence of the ideas that worked and didn't work. Future agent sessions could read the logs and quickly check if an idea had been tried or not.",
+          "quoteLang": "en",
+          "author": "sankalp",
+          "work": null,
+          "url": "https://sankalp.bearblog.dev/autoresearch/",
+          "published": "2026-07-08",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "agent-gated-feature-flags",
+      "stages": [
+        "release"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent-controlled feature flags",
+        "ru": "Флаги функций под управлением агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which an agent puts its own changes behind feature flags for gradual rollout and reads the flag's results as feedback on whether the change does what it claimed. [1]",
+        "ru": "Практика, при которой агент сам закрывает свои изменения флагами функций для постепенного выката и использует результаты флага как обратную связь о том, делает ли изменение заявленное. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The new angle is that agents can be given the ability to gate their own changes for gradual rollout; the flag itself becomes the feedback signal for whether the change is doing what it claimed.",
+          "quoteLang": "en",
+          "author": "Liz Fong-Jones",
+          "work": null,
+          "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
+          "published": "2026-07-16",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "named-owner-per-agent-thread",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Named owner of an agent thread",
+        "ru": "Ответственный за поток агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "A team rule in which every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings. [1]",
+        "ru": "Командное правило, при котором у каждой линии работы агента есть названный ответственный человек, и агент показывает ему видимые пользователю изменения со скриншотами или записями до и после. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Every thread had a named human owner, and Claude highlighted any user-perceptible change with before-and-after screenshots or recordings for them to rule on.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "self-contained-task-with-proof",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Self-contained task with proof",
+        "ru": "Самодостаточная задача с доказательством"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which each task for the agent is written as a self-contained ticket stating what is wrong, what done looks like and which command proves it. [1][2]",
+        "ru": "Практика, при которой каждая задача для агента записывается как самодостаточный тикет: что не так, как выглядит готовность и какая команда это доказывает. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Write each task as a self-contained ticket that states what's wrong, what done looks like, and how to prove it.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Ask for evidence. Name the command that proves the task is done, and read Claude's summary before the diff.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "encourage-bolder-attempts",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Push for bolder attempts",
+        "ru": "Поощрение смелых попыток"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "A prompting habit in which the agent is told to take more risks and try more ambitious ideas. [1][2]",
+        "ru": "Приём промптинга, при котором агенту говорят больше рисковать и пробовать более амбициозные идеи. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "A lot of what we did, especially early on, was to encourage Claude to be bolder.",
+          "quoteLang": "en",
+          "author": "Raymond Wang, Sam Attard, and Issac G.",
+          "work": null,
+          "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Encourage the model to take more risks and try ambitious ideas. You will not believe it but this worked.",
+          "quoteLang": "en",
+          "author": "sankalp",
+          "work": null,
+          "url": "https://sankalp.bearblog.dev/autoresearch/",
+          "published": "2026-07-08",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "prompting"
+    },
+    {
+      "id": "gotchas-in-instructions",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Gotchas section",
+        "ru": "Раздел подвохов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agent instructions, in a skill or the project instruction file, keep a section of gotchas built from the failure points the agent actually hit, updated over time. [1][2]",
+        "ru": "Практика, при которой инструкции агента, в скилле или в файле инструкций проекта, содержат раздел подвохов, собранный из реальных мест, где агент ошибался, и пополняемый со временем. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "These sections should be built up from common failure points that Claude runs into when using your skill. Ideally, you will update your skill over time to capture these gotchas.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/",
+          "published": "2026-06-03",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Keep your CLAUDE.md lightweight and briefly describe what your repo is for, but spend most of the tokens on gotchas inside of the codebase.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+          "published": "2026-07-24",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "progressive-disclosure",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Progressive disclosure",
+        "ru": "Постепенное раскрытие"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which agent context is split into a tree of files, and the agent is told which files exist so that it reads each one only when it becomes relevant. [1][2]",
+        "ru": "Практика, при которой контекст агента разбит на дерево файлов, и агенту сообщают, какие файлы есть, чтобы он читал каждый только тогда, когда он становится нужен. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Instead, consider having a tree of files that can be loaded at the right time.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+          "published": "2026-07-24",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Tell Claude what files are in your skill, and it will read them at appropriate times.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/",
+          "published": "2026-06-03",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "prune-constraints-after-model-upgrade",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Pruning old constraints",
+        "ru": "Удаление старых ограничений"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement. [1]",
+        "ru": "Практика, при которой ограничения, добавленные в инструкции агента ради прежних, более слабых моделей, пересматривают и удаляют, оставляя агенту опираться на контекст и суждение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "And while these constraints were once needed to avoid worst case scenarios, we have since found we can delete many of them and let the model use surrounding context and judgement instead.",
+          "quoteLang": "en",
+          "author": "Thariq Shihipar",
+          "work": null,
+          "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+          "published": "2026-07-24",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "context-memory"
+    },
+    {
+      "id": "code-slice-explainer",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Explainer for a code slice",
+        "ru": "Объяснение части кода"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a person who wants to understand part of a codebase asks the agent to write an explainer for exactly that part. [1]",
+        "ru": "Практика, при которой человек, желающий понять часть кодовой базы, просит агента написать объяснение именно этой части. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "When someone wants to understand a part of the codebase, they ask Claude to write an explainer for exactly that slice.",
+          "quoteLang": "en",
+          "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "work": null,
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "lookups-on-smaller-subagents",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Lookups on smaller subagents",
+        "ru": "Поиск на младших субагентах"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which verbose reading such as file search, logs and test output goes to subagents on a smaller model, while code edits and decisions stay on the main model. [1][2]",
+        "ru": "Практика, при которой объёмное чтение, например поиск файлов, логи и вывод тестов, отдаётся субагентам на младшей модели, а правки кода и решения остаются на основной модели. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Keep small models on work where a mistake is cheap to spot, like finding files, running tests and reading logs. Keep code edits and judgment calls on the main model.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
+          "published": "2026-11-09",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Keep the expensive model's context for the decisions, and let cheaper subagents do the verbose reading.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
+          "published": "2026-11-09",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-4",
+      "opposites": [],
+      "origin": null,
+      "group": "models-budget"
     }
   ]
 }
