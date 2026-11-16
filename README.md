@@ -150,6 +150,7 @@ Inside every section the newest entries come first; practices from before coding
 - **Subagent verification**. The practice in which the agent starts subagents to verify details or to investigate separate questions.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents).
 - **Pull request** (2008). A request to merge changes that hosts the discussion and review.
+- [VibeAudit](https://vibeaudit.sh/) - Pre-launch security audit for AI-built apps: reads the whole repo and returns findings with file:line and a paste-ready fix prompt each. Free quick scan.
   Sources: [GitHub Blog (author name not shown in the saved text), 2026-05-07](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/); [GitHub](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results).
 
 ## Across stages: Prompting
