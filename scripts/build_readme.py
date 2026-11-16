@@ -1,4 +1,4 @@
-"""Build README.md from data/entries.json.
+"""Build README.md from data/entries.json as two-column HTML cards (draft of 2026-11-16).
 
 Usage: python3 scripts/build_readme.py
 data/entries.json is the source of truth; README.md is generated from it, do not edit README.md by hand.
@@ -95,39 +95,53 @@ def main():
     if other:
         blocks.append(("Across stages: other", other, None))
 
+    import html as html_module
+    esc = html_module.escape
     quoted = sum(1 for e in entries for s in e["sources"] if s.get("quote"))
     out = [
         "<!-- Generated from data/entries.json by scripts/build_readme.py. Do not edit by hand. -->",
         "",
-        "# Software Practices",
+        "<h1>Agentic engineering reference</h1>",
         "",
-        "An open reference of software development practices, from older engineering practices to work with coding agents.",
-        "For each practice: a definition, when it appeared, where it grew from, and the sources that describe it.",
-        "",
-        f"- **Site:** [{SITE_URL}]({SITE_URL}) (the same data, with a timeline and quotes on hover)",
-        "- **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it",
-        f"- **Survey for your team:** [team-survey]({SURVEY_TEMPLATE_URL}), a GitHub template that asks the same practices inside your team",
-        "",
-        f"{len(entries)} entries, {sum(len(e['sources']) for e in entries)} sources, {quoted} of them with a verbatim quote "
-        "stored in the data. Preliminary edition: dates are not verified yet.",
-        "",
-        "Inside every section the newest entries come first; practices from before coding agents come last.",
-        "",
-        "## Contents",
+        "<table><tr>",
+        "<td width=\"62%\" valign=\"top\">",
+        "<b>Practices for coding agents and the older practices they grew from.</b><br><br>",
+        f"{len(entries)} practices. Each has a definition and first-hand sources; every source quote is checked word for word on the live page.",
+        "</td>",
+        "<td valign=\"top\">",
+        f"<b><a href=\"{SITE_URL}\">Open the site</a></b> with the timeline and quotes on hover<br>",
+        "<a href=\"data/entries.json\">data/entries.json</a>, the single source<br>",
+        f"<a href=\"{SURVEY_TEMPLATE_URL}\">team-survey</a>, the same practices as a survey for your team",
+        "</td>",
+        "</tr></table>",
         "",
     ]
-    out += [f"- [{title}](#{anchor(title)})" for title, _, _ in blocks]
-    out.append("")
+    out += ["<b>Sections:</b> " + " · ".join(f"<a href=\"#{anchor(title)}\">{esc(title)}</a> ({len(members)})" for title, members, _ in blocks), ""]
+
+    def card(entry):
+        date = entry_date(entry, by_id)
+        year = f" <sub>{date[:4]}</sub>" if date and date[:4] not in entry["title"]["en"] else ""
+        sources = "; ".join(
+            f"<a href=\"{esc(s['url'])}\">{esc(s.get('author') or s['url'].split('/')[2])}</a>"
+            for s in sorted(entry["sources"], key=lambda s: s.get("n", 0)) if s.get("quote"))
+        roots = [by_id[r]["title"]["en"] for r in entry.get("rootsIn") or [] if r in by_id]
+        extra = f"<br><sub>Grew from: {esc(', '.join(roots))}</sub>" if roots else ""
+        return (f"<td width=\"50%\" valign=\"top\"><b>{esc(entry['title']['en'])}</b>{year}<br>"
+                f"{esc(plain_definition(entry))}<br><sub>Sources: {sources}</sub>{extra}</td>")
+
     for title, members, description in blocks:
-        out += [f"## {title}", ""]
+        ordered = sorted(members, key=lambda e: sort_key(e, by_id, llm_era_start))
+        out += [f"<h2 id=\"{anchor(title)}\">{esc(title)}</h2>", ""]
         if description:
-            out += [description, ""]
-        for entry in sorted(members, key=lambda e: sort_key(e, by_id, llm_era_start)):
-            out += entry_lines(entry, by_id)
-        out.append("")
-    out += ["## Contributing", "",
-            "See [CONTRIBUTING.md](CONTRIBUTING.md). Changes go into `data/entries.json`; then run "
-            "`python3 scripts/build_readme.py`.", ""]
+            out += [f"<p><i>{esc(description)}</i></p>", ""]
+        out += [f"<details open><summary>{len(ordered)} practices</summary>", "", "<table>"]
+        for i in range(0, len(ordered), 2):
+            pair = ordered[i:i + 2]
+            out.append("<tr>" + "".join(card(e) for e in pair) + ("<td></td>" if len(pair) == 1 else "") + "</tr>")
+        out += ["</table>", "</details>", ""]
+    out += ["<h2>Contributing</h2>", "",
+            "See <a href=\"CONTRIBUTING.md\">CONTRIBUTING.md</a>. Changes go into <code>data/entries.json</code>; then run "
+            "<code>python3 scripts/build_readme.py</code>.", ""]
     (ROOT / "README.md").write_text("\n".join(out), encoding="utf-8")
     print("README.md:", len(entries), "entries in", len(blocks), "sections")
 
