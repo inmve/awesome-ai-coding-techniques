@@ -1745,8 +1745,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met. [1]",
-        "ru": "Практика, при которой проект начинают с быстро сгенерированного прототипа, показывающего, выполнимо ли ключевое требование. [1]"
+        "en": "The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met. [1][2]",
+        "ru": "Практика, при которой проект начинают с быстро сгенерированного прототипа, показывающего, выполнимо ли ключевое требование. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1762,6 +1762,17 @@
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20best%20way%20to%20start%20any%20project",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Normally, I wouldn’t bother – too time-consuming. Now I can verify anything using prototypes instantly, a massive productivity unlock.",
+          "quoteLang": "en",
+          "author": "Alex Grebenyuk",
+          "work": "Claude Code Experience",
+          "url": "https://kean.github.io/post/experiencing-claude-code",
+          "published": "2025-06-23",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -1836,8 +1847,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A prompting habit in which the agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail. [1]",
-        "ru": "Приём, при котором агента просят сделать интерфейс «красивее» или «элегантнее» без уточнений. [1]"
+        "en": "A prompting habit in which the agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail. [1][2]",
+        "ru": "Приём, при котором агента просят сделать интерфейс «красивее» или «элегантнее» без уточнений. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1853,6 +1864,17 @@
           "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20Claude%20doesn't%20produce",
           "published": "2025-07-01",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Instead, I opened a second copy of Sketch and pasted in a screenshot of the form and wrote “this is ugly, please make it less ugly.”",
+          "quoteLang": "en",
+          "author": "David Crawshaw",
+          "work": "How I program with Agents",
+          "url": "https://crawshaw.io/blog/programming-with-agents",
+          "published": "2025-06-08",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -2555,8 +2577,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result. [1]",
-        "ru": "Практика, при которой разработчик просит агента переделывать код столько раз, сколько нужно для приемлемого результата. [1]"
+        "en": "The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result. [1][2]",
+        "ru": "Практика, при которой разработчик просит агента переделывать код столько раз, сколько нужно для приемлемого результата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2572,6 +2594,17 @@
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Even with detailed prompts, expect multiple iterations. It rarely one-shots changes unless the changes themselves aren’t very specific like generating mock data.",
+          "quoteLang": "en",
+          "author": "Alex Grebenyuk",
+          "work": "Claude Code Experience",
+          "url": "https://kean.github.io/post/experiencing-claude-code",
+          "published": "2025-06-23",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -3980,8 +4013,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance. [1]",
-        "ru": "Практика, при которой приложение запускается отдельно в каждом git worktree, и каждый агент запускает и проверяет свой экземпляр. [1]"
+        "en": "The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance. [1][2]",
+        "ru": "Практика, при которой приложение запускается отдельно в каждом git worktree, и каждый агент запускает и проверяет свой экземпляр. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3998,6 +4031,17 @@
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "On this app I share one stack and give each worktree its own ports, database names, and resource names.",
+          "quoteLang": "en",
+          "author": "Ally Piechowski",
+          "work": "Your Setup Script Should Support Git Worktrees",
+          "url": "https://piechowski.io/post/setup-script-git-worktrees/",
+          "published": "2026-07-28",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -4408,8 +4452,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit. [1]",
-        "ru": "Практика, при которой проект разрешает участникам использовать языковые модели, чтобы отвечать на вопросы, анализировать, проверять и ревьюить свою работу, но не создавать то, что они присылают. [1]"
+        "en": "The practice in which a project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit. [1][2]",
+        "ru": "Практика, при которой проект разрешает участникам использовать языковые модели, чтобы отвечать на вопросы, анализировать, проверять и ревьюить свою работу, но не создавать то, что они присылают. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4425,6 +4469,17 @@
           "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Contributors in the OpenJDK Community may use generative AI tools privately to help comprehend, debug, and review OpenJDK code and other content, and to do research related to OpenJDK Projects, so long as they do not contribute content generated by such tools.",
+          "quoteLang": "en",
+          "author": "OpenJDK Governing Board",
+          "work": "OpenJDK Interim Policy on Generative AI",
+          "url": "https://openjdk.org/legal/ai",
+          "published": null,
           "checkedAt": "2026-11-16"
         }
       ],
@@ -4816,8 +4871,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1]",
-        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1]"
+        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1][2]",
+        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4834,6 +4889,17 @@
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Keep our technical phone screen as is. A 45-minute coding task with no AI.",
+          "quoteLang": "en",
+          "author": "Applied Intuition",
+          "work": "Hiring engineers for the age of agents",
+          "url": "https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents",
+          "published": "2026-07-22",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "trial-hiring",
@@ -4936,8 +5002,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which faults are injected into production code, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1]",
-        "ru": "Практика, при которой в продакшен-код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1]"
+        "en": "The practice in which faults are injected into production code, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
+        "ru": "Практика, при которой в продакшен-код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4955,6 +5021,17 @@
           "work": "Tests as data",
           "url": "https://martinfowler.com/articles/tests-as-data.html",
           "published": "2026-11-11",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "I asked AI (in a clean new session — all of these steps were done in separate conversations to avoid context pollution) to review the code without looking at the tests, and to identify possible places where we can intentionally introduce a bug.",
+          "quoteLang": "en",
+          "author": "Senko Rašić",
+          "work": "Improving AI-generated tests using mutation testing",
+          "url": "https://blog.senko.net/improving-ai-generated-tests-using-mutation-testing",
+          "published": "2026-03-22",
           "checkedAt": "2026-11-16"
         }
       ],
