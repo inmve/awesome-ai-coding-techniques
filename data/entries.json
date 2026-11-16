@@ -2369,7 +2369,7 @@
           "quote": "Warnings are a great example. Is your test suite spitting out a warning that something you are using is deprecated?",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Embracing the parallel coding agent lifestyle",
           "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents/#:~:text=Warnings%20are%20a%20great%20example",
           "published": "2025-10-05",
           "checkedAt": "2026-11-14"
@@ -2675,7 +2675,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Chris Dzombak",
-          "work": null,
+          "work": "Getting Good Results from Claude Code",
           "url": "https://www.dzombak.com/blog/2025/08/Getting-Good-Results-from-Claude-Code.html#:~:text=I%20believe%20I'm%20ultimately%20responsible,manually%20review%20all%20AI-written%20code",
           "published": "2025-08"
         }
