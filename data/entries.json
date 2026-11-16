@@ -150,31 +150,31 @@
         "ru": "Состязательное ревью"
       },
       "aliases": {
-        "en": [],
-        "ru": []
+        "en": [
+          "Writer/Reviewer pattern"
+        ],
+        "ru": [
+          "Writer/Reviewer pattern"
+        ]
       },
       "definition": {
-        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3][4]",
-        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3][4]"
+        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3][4][5]",
+        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3][4][5]"
       },
-      "firstAppeared": {
-        "date": "2026-03-31",
-        "precision": "day",
-        "verified": false,
-        "note": "Jesse Vincent, *Agentic slop PRs* (Mar 31 2026) and *My favorite adversarial review prompt* (May 1 2026); concept generalized through the Superpowers plugin."
-      },
+      "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
       "sources": [
         {
           "n": 1,
           "role": "support",
-          "quote": null,
+          "quote": "By someone who didn’t write the code: in the terminal, /code-review reviews the diff in a fresh subagent that never saw your conversation. It isn’t swayed by the reasoning that produced the code.",
           "quoteLang": "en",
           "author": "Anthropic",
           "work": "Best practices for Claude Code",
-          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code",
-          "published": null
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents",
+          "published": null,
+          "checkedAt": "2026-11-15"
         },
         {
           "n": 2,
@@ -207,6 +207,17 @@
           "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 5,
+          "role": "support",
+          "quote": "Uses a different model than the Hunting agent. Adversarial review reduces noise and prevents blind spots.",
+          "quoteLang": "en",
+          "author": "Zack Deveau",
+          "work": "Building an agentic harness that outlasts the model (2026)",
+          "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
+          "published": "2026-07-29",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -2415,46 +2426,6 @@
       "group": null
     },
     {
-      "id": "subagent-verification",
-      "stages": [
-        "code-review"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Subagent verification",
-        "ru": "Проверка субагентом"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which the agent starts subagents to verify details or to investigate separate questions. [1]",
-        "ru": "Практика, при которой агент запускает субагентов, чтобы проверить детали или разобрать отдельные вопросы. [1]"
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "By someone who didn’t write the code: in the terminal, /code-review reviews the diff in a fresh subagent that never saw your conversation. It isn’t swayed by the reasoning that produced the code.",
-          "quoteLang": "en",
-          "author": "Anthropic",
-          "work": "Best practices for Claude Code",
-          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents",
-          "published": null,
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "comprehensive-testing-mandate",
       "stages": [
         "test-qa"
@@ -2638,8 +2609,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the developer reads the code an agent wrote before accepting it. [1][2][3]",
-        "ru": "Практика, при которой разработчик читает код, написанный агентом, до того как его принять. [1][2][3]"
+        "en": "The practice in which the developer reads the code an agent wrote before accepting it. [1][2][3][4]",
+        "ru": "Практика, при которой разработчик читает код, написанный агентом, до того как его принять. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2681,12 +2652,13 @@
         {
           "n": 4,
           "role": "support",
-          "quote": null,
+          "quote": "reviewing a diff you didn’t write is one of the most important and least-taught skills in this whole space.",
           "quoteLang": "en",
-          "author": "Chris Dzombak",
-          "work": "Getting Good Results from Claude Code",
-          "url": "https://www.dzombak.com/blog/2025/08/Getting-Good-Results-from-Claude-Code.html#:~:text=I%20believe%20I'm%20ultimately%20responsible,manually%20review%20all%20AI-written%20code",
-          "published": "2025-08"
+          "author": "Justin Paul",
+          "work": "The AI’s Code Looks Right. That’s the Problem.",
+          "url": "https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/",
+          "published": "2026-07-30",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -2734,56 +2706,6 @@
       "rootsIn": [],
       "origin": null,
       "group": "human"
-    },
-    {
-      "id": "diff-based-iterative-refinement",
-      "stages": [
-        "code-review"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Edits in the diff",
-        "ru": "Правки в диффе"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "The practice in which the developer reviews the changes in a diff view and types corrections into the diff before committing. [1][2]",
-        "ru": "Практика, при которой разработчик просматривает изменения в диффе и вносит исправления прямо в нём до коммита. [1][2]"
-      },
-      "firstAppeared": null,
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": null,
-          "quoteLang": "en",
-          "author": "Chris Dzombak",
-          "work": "Getting Good Results from Claude Code",
-          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all",
-          "published": "2025-08"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "The cheapest place to catch a problem is in the diff, before the door closes.",
-          "quoteLang": "en",
-          "author": "Justin Paul",
-          "work": "The AI’s Code Looks Right. That’s the Problem.",
-          "url": "https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/",
-          "published": "2026-07-30",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "techniques",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
     },
     {
       "id": "kiss",
@@ -4202,8 +4124,8 @@
       ],
       "kind": "practice",
       "title": {
-        "en": "Vulnerability hunting agents with test proof",
-        "ru": "Поиск уязвимостей агентами с доказательством тестом"
+        "en": "Category-specific bug hunting agents",
+        "ru": "Агенты поиска ошибок по категориям"
       },
       "aliases": {
         "ru": [],
@@ -4221,13 +4143,13 @@
         {
           "n": 1,
           "role": "support",
-          "quote": "Our Verifier agent is tasked with authoring and embedding its validations into the existing tests and primitives available in that app.",
+          "quote": "It enables authors to easily create category-specific bug hunting agents, which then run safely, provide a test oracle, and open PRs for findings.",
           "quoteLang": "en",
           "author": "Zack Deveau",
           "work": "Building an agentic harness that outlasts the model (2026)",
           "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
           "published": "2026-07-29",
-          "checkedAt": "2026-11-15"
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -5207,7 +5129,7 @@
     {
       "id": "intent-review",
       "stages": [
-        "code-review"
+        "general"
       ],
       "kind": "practice",
       "title": {
@@ -5232,7 +5154,7 @@
         {
           "n": 1,
           "role": "support",
-          "quote": "We’ve been experimenting with a new process called Intent Review. For medium and high risk PRs, the agent guides the engineer through understanding how the change affects the system.",
+          "quote": "We’ve been experimenting with a new process called Intent Review. For medium and high risk PRs, the agent guides the engineer through understanding how the change affects the system. The goal is comprehension, not approval.",
           "quoteLang": "en",
           "author": "Vinay Perneti and Emma Webb",
           "work": "The State of AI-Native Engineering 2026",
@@ -5331,7 +5253,7 @@
     {
       "id": "voluntary-review-of-model-prs",
       "stages": [
-        "code-review"
+        "general"
       ],
       "kind": "practice",
       "title": {
@@ -5524,7 +5446,7 @@
     {
       "id": "every-review-finding-answered",
       "stages": [
-        "code-review"
+        "general"
       ],
       "kind": "practice",
       "title": {
@@ -5575,7 +5497,7 @@
     {
       "id": "prompter-as-reviewer",
       "stages": [
-        "code-review"
+        "general"
       ],
       "kind": "practice",
       "title": {
@@ -5628,7 +5550,7 @@
     {
       "id": "approval-per-commit",
       "stages": [
-        "code-review"
+        "general"
       ],
       "kind": "practice",
       "title": {
