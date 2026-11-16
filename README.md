@@ -216,7 +216,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Przemek, 2026-09-23](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/); [FerroxLabs](https://github.com/FerroxLabs/agents-md).
 - **Smallest-scope agent control** (2026). The practice in which a team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
-  Grew from: Rules in linters, not docs.
+  Grew from: Rules in linters.
 - **Regular audit of the agent setup** (2026). The practice in which, every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true.
   Sources: [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
 - **Context reset between tasks** (2026). The practice in which the agent's context is cleared before an unrelated task begins.
@@ -388,7 +388,7 @@ Rules that engineering teams and open-source projects set for work done with age
 - **N-version programming**. The practice in which several independent teams build separate implementations of one specification, and the versions are compared or run together to catch faults one version alone would miss.
   Sources: [Javier Ron, Benoit Baudry, Martin Monperrus, 2026-06-18](https://arxiv.org/pdf/2606.20158).
   Led to: Parallel attempts.
-- **Rules in linters, not docs**. The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation.
+- **Rules in linters**. The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation.
   Sources: [Evil Martians (team blog; author not named on the page), 2026-05-26](https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead).
   Led to: Smallest-scope agent control.
 - **Architecture Decision Records** (2011). The practice in which a team records each significant architectural decision, its context and consequences in a short document kept with the code, so later developers do not undo it unknowingly.

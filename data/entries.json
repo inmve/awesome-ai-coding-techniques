@@ -7371,8 +7371,8 @@
       ],
       "kind": "practice",
       "title": {
-        "en": "Rules in linters, not docs",
-        "ru": "Правила в линтере, а не в документации"
+        "en": "Rules in linters",
+        "ru": "Правила в линтерах"
       },
       "aliases": {
         "ru": [],
