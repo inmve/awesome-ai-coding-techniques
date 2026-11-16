@@ -3313,8 +3313,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests. [1][2][3][4][5]",
-        "ru": "Практика, при которой задачи агентов запускаются по расписанию без участия человека: ночное ревью существующего кода, регулярная уборка или ночное исправление багов, которые заканчиваются pull request. [1][2][3][4][5]"
+        "en": "The practice in which agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests. [1][2][3][4][5][6]",
+        "ru": "Практика, при которой задачи агентов запускаются по расписанию без участия человека: ночное ревью существующего кода, регулярная уборка или ночное исправление багов, которые заканчиваются pull request. [1][2][3][4][5][6]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3374,6 +3374,17 @@
           "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 6,
+          "role": "support",
+          "quote": "Akai, our internal platform for AI agents, runs the daily flag reconciliation I mentioned above and chases the mismatches so no human has to.",
+          "quoteLang": "en",
+          "author": "Georgiana Calancea",
+          "work": "Rolling Out with Confidence, Part 2: The Release Control Center",
+          "url": "https://www.deel.com/blog/deel-engineering-rolling-out-with-confidence-pt2/",
+          "published": "2026-09-10",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -6143,8 +6154,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent puts its own changes behind feature flags for gradual rollout and reads the flag's results as feedback on whether the change does what it claimed. [1]",
-        "ru": "Практика, при которой агент сам закрывает свои изменения флагами функций для постепенного выката и использует результаты флага как обратную связь о том, делает ли изменение заявленное. [1]"
+        "en": "The practice in which an agent puts its own changes behind feature flags for gradual rollout and reads the flag's results as feedback on whether the change does what it claimed. [1][2]",
+        "ru": "Практика, при которой агент сам закрывает свои изменения флагами функций для постепенного выката и использует результаты флага как обратную связь о том, делает ли изменение заявленное. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6162,6 +6173,17 @@
           "work": "AI Amplifies Your Existing Practices: Lessons from Our Shift to an AI-First Strategy",
           "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
           "published": "2026-07-16",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "The first stage of our rollout process usually involves Claude managing canary traffic, monitoring for issues, and automatically ramping a given feature flag up or down.",
+          "quoteLang": "en",
+          "author": "Sachin Malhotra",
+          "work": "How Claude Tag serves as Anthropic’s first responder for CI/CD failures",
+          "url": "https://claude.com/resources/articles/ai-ci-cd-on-call",
+          "published": "2026-08-18",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -7284,6 +7306,97 @@
         "en": "Described by Ross Harmes on the Flickr engineering blog (earliest source found)",
         "ru": "Описаны Россом Хармсом в инженерном блоге Flickr (самый ранний найденный источник)"
       },
+      "group": null
+    },
+    {
+      "id": "alert-first-investigation-by-agent",
+      "stages": [
+        "release"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "First investigation of an alert by an agent",
+        "ru": "Первое расследование алерта агентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which an agent does the first investigation of a production alert: reads the logs, metrics and code, reports a root cause with its evidence, and leaves any change to production to a person's approval. [1][2]",
+        "ru": "Практика, при которой первое расследование алерта в продакшене делает агент: читает логи, метрики и код, сообщает первопричину с доказательствами, а любое изменение в продакшене оставляет на одобрение человеку. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "The agent does the first investigation for our backend team. It reads the same logs, databases, metrics and code an engineer would, posts a root cause with its evidence in Slack, and waits for a person to approve anything that would change production.",
+          "quoteLang": "en",
+          "author": "Aditya Nugraha",
+          "work": "How We Built an AI Agent to Investigate Production Issues",
+          "url": "https://getstream.io/blog/ai-agent-production-investigation/",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Claude Tag kicks off a dynamic workflow with an orchestration agent that spins up executor subagents to investigate each dependency and source of truth.",
+          "quoteLang": "en",
+          "author": "Sachin Malhotra",
+          "work": "How Claude Tag serves as Anthropic’s first responder for CI/CD failures",
+          "url": "https://claude.com/resources/articles/ai-ci-cd-on-call",
+          "published": "2026-08-18",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-7",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "alert-triage-agent-chain",
+      "stages": [
+        "release"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent chain for alert triage",
+        "ru": "Цепочка агентов для разбора алертов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which an alert passes through a chain of agents: one investigates and writes a plan, a second reviews the plan, and a third opens a pull request with a scoped fix for the on-call engineer. [1]",
+        "ru": "Практика, при которой алерт проходит через цепочку агентов: один расследует и пишет план, второй проверяет план, третий открывает pull request с ограниченным исправлением для дежурного инженера. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "An alert lands, it gets investigated, a plan gets written, another agent reviews that plan, and if it holds up, a scoped fix shows up as a PR with the on-call already tagged.",
+          "quoteLang": "en",
+          "author": "Ari Salem",
+          "work": "Stories from the Factory Floor: Building a self-driving ops triage loop",
+          "url": "https://launchdarkly.com/blog/building-a-self-driving-ops-triage-loop/",
+          "published": "2026-09-03",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-7",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
       "group": null
     }
   ]
