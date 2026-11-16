@@ -172,7 +172,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Have%20one%20Claude%20write%20code",
           "published": null
         },
@@ -182,7 +182,7 @@
           "quote": "I typically double-ESC to reset the architect to a previous checkpoint and tell it to review up to the now-current checkpoint.",
           "quoteLang": "en",
           "author": "Jesse Vincent",
-          "work": null,
+          "work": "How I'm using coding agents in September, 2025",
           "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=I%20typically%20double",
           "published": "2025-10-05",
           "checkedAt": "2026-11-14"
@@ -193,7 +193,7 @@
           "quote": "Writer/Reviewer pattern. Session A implements the change. Session B reviews it in a completely fresh context, no prior conversation baggage.",
           "quoteLang": "en",
           "author": "Arpan Patel",
-          "work": null,
+          "work": "Beyond the Prompt: Claude Code",
           "url": "https://arps18.github.io/posts/claude-code-mastery/",
           "published": "2026-05-26",
           "checkedAt": "2026-11-15"
@@ -204,7 +204,7 @@
           "quote": "For each spawned agent, run a separate spawned agent to adversarially verify its output against a rubric or criteria.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -249,7 +249,7 @@
           "quote": "I've grown to calling this \"harness engineering.\" It is the idea that anytime you find an agent makes a mistake, you take the time to engineer a solution such that the agent never makes that mistake again.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "My AI Adoption Journey",
           "url": "https://mitchellh.com/writing/my-ai-adoption-journey",
           "published": "2026-02-05",
           "checkedAt": "2026-11-15"
@@ -260,7 +260,7 @@
           "quote": "Review comments, refactoring pull requests, and user-facing bugs are captured as documentation updates or encoded directly into tooling.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -271,7 +271,7 @@
           "quote": "When the automated reviewer keeps flagging the same thing, we fix it at the source: in the skill, with a lint rule, or with updates to instructional files such as:",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -282,7 +282,7 @@
           "quote": "When something slips through that both the human driving the AI and the human reviewer missed, the miss becomes a substrate update. It goes back into CLAUDE.md, into a skill file, or into a review-agent rule.",
           "quoteLang": "en",
           "author": "Liz Fong-Jones",
-          "work": null,
+          "work": "AI Amplifies Your Existing Practices: Lessons from Our Shift to an AI-First Strategy",
           "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
           "published": "2026-07-16",
           "checkedAt": "2026-11-16"
@@ -334,7 +334,7 @@
           "quote": "Think of AGENTS.md as a README for agents: a dedicated, predictable place to provide the context and instructions to help AI coding agents work on your project.",
           "quoteLang": "en",
           "author": "agents.md community",
-          "work": null,
+          "work": "AGENTS.md",
           "url": "https://agents.md/#:~:text=Think%20of%20AGENTS.md%20as%20a%20README%20for%20agents",
           "published": null,
           "checkedAt": "2026-11-14"
@@ -345,7 +345,7 @@
           "quote": "Start with Guardrails, Not a Manual. Your CLAUDE.md should start small, documenting based on what Claude is getting wrong.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -356,7 +356,7 @@
           "quote": "These patterns were progressively encoded into the instruction files, allowing Copilot to apply them deterministically during future migrations.",
           "quoteLang": "en",
           "author": "Aditya Sharma and Mahesh Kharade",
-          "work": null,
+          "work": "Reimagining API modernization with deterministic AI-assisted engineering",
           "url": "https://www.thoughtworks.com/insights/blog/generative-ai/reimagining-api-modernization-with-deterministic-ai-assisted-engineering",
           "published": "2026-03-27",
           "checkedAt": "2026-11-16"
@@ -401,7 +401,7 @@
           "quote": "Our Research system uses a multi-agent architecture with an orchestrator-worker pattern, where a lead agent coordinates the process while delegating to specialized subagents that operate in parallel.",
           "quoteLang": "en",
           "author": "Anthropic (engineering blog, no personal byline in saved text)",
-          "work": null,
+          "work": "How we built our multi-agent research system",
           "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
           "published": "2025-06-13",
           "checkedAt": "2026-11-15"
@@ -412,7 +412,7 @@
           "quote": "Planners continuously explore the codebase and create tasks. They can spawn sub-planners for specific areas, making planning itself parallel and recursive.",
           "quoteLang": "en",
           "author": "Wilson Lin",
-          "work": null,
+          "work": "Scaling long-running autonomous coding",
           "url": "https://cursor.com/blog/scaling-agents",
           "published": "2026-01-14",
           "checkedAt": "2026-11-15"
@@ -423,7 +423,7 @@
           "quote": "Split up a task into many smaller steps, run an agent on each step and then synthesize those results.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -470,7 +470,7 @@
           "quote": "We built a Software Factory: non-interactive development where specs + scenarios drive agents that write code, run harnesses, and converge without human review.",
           "quoteLang": "en",
           "author": "Justin McCarthy",
-          "work": null,
+          "work": "StrongDM Software Factory",
           "url": "https://factory.strongdm.ai/",
           "published": "2026-02-06",
           "checkedAt": "2026-11-15"
@@ -481,7 +481,7 @@
           "quote": "Throughout the development process, humans never directly contributed any code. This became a core philosophy for the team: no manually-written code.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -492,7 +492,7 @@
           "quote": "This idea of the software factory is a term that dates back to Bob Bemer’s paper, “The economics of program production,” given in 1968.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Software Factories, Light and Dark",
           "url": "https://addyosmani.com/blog/software-factories/",
           "published": "2026-07-20",
           "checkedAt": "2026-11-15"
@@ -503,7 +503,7 @@
           "quote": "And your software process isn’t really a software process any more. It’s a black box that turns specs into software.",
           "quoteLang": "en",
           "author": "Dan Shapiro",
-          "work": null,
+          "work": "The Five Levels: from Spicy Autocomplete to the Dark Factory",
           "url": "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/",
           "published": "2026-01-23",
           "checkedAt": "2026-11-15"
@@ -553,7 +553,7 @@
           "url": "https://x.com/karpathy/status/1886192184808149383",
           "published": "2025-02-02",
           "role": "coined",
-          "work": null
+          "work": "Andrej Karpathy (@karpathy) on X"
         }
       ],
       "seededFrom": "glossary+techniques+example",
@@ -600,7 +600,7 @@
           "quote": "If you want to iterate on the plan, it helps to explicitly include instructions in the prompt to not proceed with implementation until the plan has been accepted by the user.",
           "quoteLang": "en",
           "author": "Indragie Karunaratne",
-          "work": null,
+          "work": "I Shipped a macOS App Built Entirely by Claude Code",
           "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan",
           "published": "2025-07-01",
           "checkedAt": "2026-11-14"
@@ -611,7 +611,7 @@
           "quote": "Check out the current state of the project in our working directory to understand where we're starting off, then ask me questions, one at a time, to help refine the idea.",
           "quoteLang": "en",
           "author": "Jesse Vincent",
-          "work": null,
+          "work": "How I'm using coding agents in September, 2025",
           "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=Check%20out%20the%20current%20state",
           "published": "2025-10-05",
           "checkedAt": "2026-11-14"
@@ -622,7 +622,7 @@
           "quote": "Tip: Creating a comprehensive plan interactively with an agent is a really important",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -633,7 +633,7 @@
           "quote": "For a larger change, agree on the approach first where back-and-forth is cheap. Start Claude in plan mode, work out the plan together, commit the plan, and push it.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -644,7 +644,7 @@
           "quote": "Then I'd pick an issue and have it investigate further before changing anything. It read the code and the git history and told me what might break.",
           "quoteLang": "en",
           "author": "Scott Cooper",
-          "work": null,
+          "work": "Finding backend performance wins with a coding agent",
           "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
           "published": "2026-11-03",
           "checkedAt": "2026-11-16"
@@ -684,7 +684,7 @@
           "quote": "I almost always go in after an AI does work",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -695,7 +695,7 @@
           "quote": "I still edit the code manually to ensure the narrative is clear, to keep my mental model of the problem up to date, and to ensure that the code actually does what it purports to do.",
           "quoteLang": "en",
           "author": "Conrad Irwin",
-          "work": null,
+          "work": "We're Not Building AI Features for the Money",
           "url": "https://zed.dev/blog/not-building-ai-for-the-money",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -735,7 +735,7 @@
           "quote": "It's at this point that I know I need to step back, review what it did,",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -746,7 +746,7 @@
           "quote": "Use the /model command to switch to a different model and try again. Switching between GPT-4o and Sonnet will often get past problems.",
           "quoteLang": "en",
           "author": "aider.chat",
-          "work": null,
+          "work": "Tips",
           "url": "https://aider.chat/docs/usage/tips.html",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -757,7 +757,7 @@
           "quote": "One classic sign that you’ve got a loop spinning in place is the same command being tried over and over without any change in the result. Give the same command a third time with no change from the second and it’s probably time to stop.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Practical Loop Engineering",
           "url": "https://addyosmani.com/blog/practical-loop-engineering/",
           "published": "2026-08-14",
           "checkedAt": "2026-11-16"
@@ -797,7 +797,7 @@
           "quote": "Write the critical parts and ask AI to do the rest.",
           "quoteLang": "en",
           "author": "Anton Zhiyanov",
-          "work": null,
+          "work": "Write the damn code",
           "url": "https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest",
           "published": "2025-09-26",
           "checkedAt": "2026-11-14"
@@ -808,7 +808,7 @@
           "quote": "Engineers tend to delegate tasks that are easily verifiable, where they “can relatively easily sniff-check on correctness”, low-stakes (e.g. “throwaway debug or research code”), or boring (“The more excited I am to do the task, the more likely I am to not use Claude”).",
           "quoteLang": "en",
           "author": "Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli",
-          "work": null,
+          "work": "How AI is transforming work at Anthropic",
           "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
           "published": "2025-12-02",
           "checkedAt": "2026-11-15"
@@ -853,7 +853,7 @@
           "quote": "main.md is the actual source code of the app: the Markdown instructions file. Whenever I need to add features or fix bugs, I edit this file.",
           "quoteLang": "en",
           "author": "GitHub Engineering",
-          "work": null,
+          "work": "Spec-driven development: Using Markdown as a programming language when building with AI",
           "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/",
           "published": "2025-09-30",
           "checkedAt": "2026-11-15"
@@ -864,7 +864,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Anton Zhiyanov",
-          "work": null,
+          "work": "Write the damn code",
           "url": "https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt",
           "published": null
         },
@@ -874,7 +874,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example",
           "published": "2025-03-11"
         },
@@ -884,7 +884,7 @@
           "quote": "We prioritize work, translate user feedback into acceptance criteria, and validate outcomes.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -926,7 +926,7 @@
           "quote": "/clear between unrelated tasks. It costs nothing, and it means the next task doesn’t keep paying for the previous one’s history.",
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -937,7 +937,7 @@
           "quote": "Use /clear to discard the chat history and make a fresh start.",
           "quoteLang": "en",
           "author": "aider.chat",
-          "work": null,
+          "work": "Tips",
           "url": "https://aider.chat/docs/usage/tips.html",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -948,7 +948,7 @@
           "quote": "Run /clear between tasks. This prevents prior irrelevant context from being sent back to the model, which can reduce token usage.",
           "quoteLang": "en",
           "author": "Lydia Hallie",
-          "work": null,
+          "work": "Maximizing the value of your Claude Code sessions",
           "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
           "published": "2026-08-14",
           "checkedAt": "2026-11-16"
@@ -959,7 +959,7 @@
           "quote": "Use /clear between unrelated tasks, and /compact at a break with a note on what to keep.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "What a task costs on Opus 5.5",
           "url": "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/",
           "published": "2026-09-25",
           "checkedAt": "2026-11-16"
@@ -999,7 +999,7 @@
           "quote": "Sonnet costs 3-4x less than Opus here and works just as well for clicking around.",
           "quoteLang": "en",
           "author": "Abhishek Ray",
-          "work": null,
+          "work": "I'm Building Agents That Run While I Sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
           "published": "2026-03-10",
           "checkedAt": "2026-11-15"
@@ -1039,7 +1039,7 @@
           "quote": "CLAUDE.md supports @path imports, and those do not depend on the flag.",
           "quoteLang": "en",
           "author": "Przemek",
-          "work": null,
+          "work": "Claude Code reads AGENTS.md only when telemetry is on",
           "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-15"
@@ -1050,7 +1050,7 @@
           "quote": "Symlink all three and every agent reads the same file.",
           "quoteLang": "en",
           "author": "FerroxLabs",
-          "work": null,
+          "work": "GitHub - FerroxLabs/agents-md: Drop-in AGENTS.md that makes every coding agent behave like a senior engineer instead of an eager intern. Kills sycophancy, stops drive-by refactors, forces verification loops. Synthesizes Karpathy's four principles and Boris Cherny's Claude Code workflow. Works with Claude Code, Codex, Gemini CLI, Cursor, and the open standard.",
           "url": "https://github.com/FerroxLabs/agents-md",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -1090,7 +1090,7 @@
           "quote": "Watch the first minute, press Esc the moment Claude drifts, and after two failed corrections run /clear and write a better prompt instead of a third.",
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -1101,7 +1101,7 @@
           "quote": "Watch for signs the agent is off-track: unexpected file changes, repetitive attempts at the same fix, or TODO comments where real code should be. When you see these, stop and try to understand why the agent ran aground.",
           "quoteLang": "en",
           "author": "Mikayla Maki",
-          "work": null,
+          "work": "On Programming with Agents",
           "url": "https://zed.dev/blog/on-programming-with-agents",
           "published": "2026-01-23",
           "checkedAt": "2026-11-15"
@@ -1141,7 +1141,7 @@
           "quote": "Occasionally it feels like magic, but nowadays with Claude Code, it feels like pairing with someone with a few years under their belt who just needs the occasional nudge.",
           "quoteLang": "en",
           "author": "Orta Therox",
-          "work": null,
+          "work": "On Coding with Claude",
           "url": "https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing",
           "published": "2025-06-07",
           "checkedAt": "2026-11-15"
@@ -1184,7 +1184,7 @@
           "quote": "I’m leveraging them to learn Go, to upskill myself. And then I apply this new knowledge when I code.",
           "quoteLang": "en",
           "author": "Alberto Fortin",
-          "work": null,
+          "work": "After months of coding with LLMs, I'm going back to using my brain",
           "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go",
           "published": null,
           "checkedAt": "2026-11-14"
@@ -1195,7 +1195,7 @@
           "quote": "When onboarding to a new codebase, use the agent for learning and exploration.",
           "quoteLang": "en",
           "author": "Lee Robinson",
-          "work": null,
+          "work": "Cursor agent best practices",
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
@@ -1235,7 +1235,7 @@
           "quote": "Tools need to be fast. The quicker they respond (and the less",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Tools%20need%20to%20be%20fast",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
@@ -1246,7 +1246,7 @@
           "quote": "That’s patching a human problem. Instead, write a simple bash wrapper with a clear, intuitive API and document that.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -1290,7 +1290,7 @@
           "quote": "By default sketch creates a little development environment in a container with a copy of the source code and the runner has the ability to extract git commits from the container. This lets you run many simultaneously.",
           "quoteLang": "en",
           "author": "David Crawshaw",
-          "work": null,
+          "work": "How I program with Agents",
           "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues",
           "published": "2025-06-08",
           "checkedAt": "2026-11-15"
@@ -1301,7 +1301,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks",
           "published": null
         },
@@ -1311,7 +1311,7 @@
           "quote": "Work on a feature in one terminal while Claude fixes a bug in another, without the edits colliding.",
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Common workflows",
           "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -1322,7 +1322,7 @@
           "quote": "Split parallel tasks along file boundaries, merge the branches in a sensible order, and expect a session to report problems that another session is already fixing.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -1333,7 +1333,7 @@
           "quote": "We kept each thread deliberately narrow, focused on one benchmark or journey, and asked Claude to find improvements only within that scope.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -1344,7 +1344,7 @@
           "quote": "Each River session gets its own environment, so we can have one agent debugging something on Android, another working on an iOS feature, and another testing a PR, all in parallel.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -1386,7 +1386,7 @@
           "quote": "I disable all permission checks. Which basically means I run claude --dangerously-skip-permissions.",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
@@ -1397,7 +1397,7 @@
           "quote": "Once you have this set up, you can run claude --dangerously-skip-permissions inside the container without worrying about Claude accidentally deleting important files or breaking your system configuration.",
           "quoteLang": "en",
           "author": "Jökull Sólberg",
-          "work": null,
+          "work": "Running Claude Code Safely in Devcontainers",
           "url": "https://www.solberg.is/claude-devcontainer",
           "published": "2025-07-03",
           "checkedAt": "2026-11-15"
@@ -1437,7 +1437,7 @@
           "quote": "I think the faster/slower argument for me personally is missing the thing I like the most: the AI can work for me while I step away to do other things.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster",
           "published": "2025-10-11",
           "checkedAt": "2026-11-15"
@@ -1448,7 +1448,7 @@
           "quote": "The loop is: kick off a task, pocket the phone, get notified when Claude needs input. Async development from anywhere.",
           "quoteLang": "en",
           "author": "Granda",
-          "work": null,
+          "work": "Claude Code On-The-Go",
           "url": "https://granda.org/en/2026/01/02/claude-code-on-the-go/",
           "published": "2026-01-02",
           "checkedAt": "2026-11-15"
@@ -1459,7 +1459,7 @@
           "quote": "I gave inputs every 2-3 hours to move the model in the direction I wanted. I also let it run without supervision overnight on some days.",
           "quoteLang": "en",
           "author": "sankalp",
-          "work": null,
+          "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
           "checkedAt": "2026-11-16"
@@ -1504,7 +1504,7 @@
           "quote": "Keep the context short. This means starting a new session per feature.",
           "quoteLang": "en",
           "author": "Fabien Sanglard",
-          "work": null,
+          "work": "My agent.md to improve LLM-assisted code quality",
           "url": "https://fabiensanglard.net/agent.md/index.html",
           "published": "2026-08-21",
           "checkedAt": "2026-11-15"
@@ -1515,7 +1515,7 @@
           "quote": "If you notice the effectiveness of the agent decreasing, it's time to start a new conversation.",
           "quoteLang": "en",
           "author": "Lee Robinson",
-          "work": null,
+          "work": "Cursor agent best practices",
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
@@ -1526,7 +1526,7 @@
           "quote": "One task, one session. Small, separate sessions are easier to review and cheaper to throw away.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -1568,7 +1568,7 @@
           "quote": "My best current technique for avoiding this is a bit of role-play that gives the coding agent a reason not to blindly trust the code review.",
           "quoteLang": "en",
           "author": "Jesse Vincent",
-          "work": null,
+          "work": "How I'm using coding agents in September, 2025",
           "url": "https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=My%20best%20current%20technique",
           "published": "2025-10-05",
           "checkedAt": "2026-11-14"
@@ -1608,7 +1608,7 @@
           "quote": "Opus does well when Sonnet gets stuck - start a new window and spam Opus.",
           "quoteLang": "en",
           "author": "Sankalp",
-          "work": null,
+          "work": "My Experience With Claude Code After 2 Weeks of Adventures",
           "url": "https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Sonnet%204%20handles%2090%25",
           "published": "2025-07-17",
           "checkedAt": "2026-11-15"
@@ -1648,7 +1648,7 @@
           "quote": "I gain enough value from LLMs that I now deliberately consider this when picking a library—I try to stick with libraries with good stability and that are popular enough that many examples of them will have made it into the training data.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -1690,7 +1690,7 @@
           "quote": "I’ll use prompts like “what are options for HTTP libraries in Rust?",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -1701,7 +1701,7 @@
           "quote": "For example, I might start with asking Claude Code to brainstorm and create some explorations of different options.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Using Claude Code: The unreasonable effectiveness of HTML",
           "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
           "published": "2026-05-20",
           "checkedAt": "2026-11-16"
@@ -1741,7 +1741,7 @@
           "quote": "I'm subconsciously defaulting to AI for all things coding.",
           "quoteLang": "en",
           "author": "Alberto Fortin",
-          "work": null,
+          "work": "After months of coding with LLMs, I'm going back to using my brain",
           "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20subconsciously%20defaulting%20to%20AI",
           "published": null,
           "checkedAt": "2026-11-14"
@@ -1752,7 +1752,7 @@
           "quote": "Write the initial version yourself and ask AI to review and improve it.",
           "quoteLang": "en",
           "author": "Anton Zhiyanov",
-          "work": null,
+          "work": "Write the damn code",
           "url": "https://antonz.org/write-code/#:~:text=Write%20the%20initial%20version%20yourself%20and%20ask%20AI%20to%20review%20and%20improve%20it",
           "published": "2025-09-26",
           "checkedAt": "2026-11-14"
@@ -1763,7 +1763,7 @@
           "quote": "Absolutely not. I began by coming up with a rough plan of how I wanted this to work.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=So%20I%20pulled%20out%20my%20AI%20tooling",
           "published": "2025-10-11",
           "checkedAt": "2026-11-15"
@@ -1803,7 +1803,7 @@
           "quote": "The best way to start any project is with a prototype that proves that the key requirements of that project can be met.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20best%20way%20to%20start%20any%20project",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -1843,7 +1843,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Give%20Claude%20a%20visual%20mock",
           "published": null
         },
@@ -1853,7 +1853,7 @@
           "quote": "Instead, I opened a second copy of Sketch and pasted in a screenshot of the form and wrote “this is ugly, please make it less ugly.",
           "quoteLang": "en",
           "author": "David Crawshaw",
-          "work": null,
+          "work": "How I program with Agents",
           "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=I%20opened%20a%20second%20copy%20of%20Sketch",
           "published": null,
           "checkedAt": "2026-11-14"
@@ -1864,7 +1864,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Common workflows",
           "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=You%20can%20use%20any%20of%20these%20methods",
           "published": null
         },
@@ -1874,7 +1874,7 @@
           "quote": "Once a component is working, I give feedback based on screenshots rather than reading through the code. The official best practices guide covers this pattern too: compare a screenshot against the target design and iterate from there.",
           "quoteLang": "en",
           "author": "kent-tokyo (DEV Community handle)",
-          "work": null,
+          "work": "What I Do Before Letting Claude Code Touch Web App Design",
           "url": "https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0",
           "published": "2026-06-03",
           "checkedAt": "2026-11-15"
@@ -1914,7 +1914,7 @@
           "quote": "If Claude doesn't produce a well-designed UI the first time, you can just tell it to \"make it more beautiful/elegant/usable\".",
           "quoteLang": "en",
           "author": "Indragie Karunaratne",
-          "work": null,
+          "work": "I Shipped a macOS App Built Entirely by Claude Code",
           "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20Claude%20doesn't%20produce",
           "published": "2025-07-01",
           "checkedAt": "2026-11-14"
@@ -1954,7 +1954,7 @@
           "quote": "I’m still using LLMs, but for dumber things: \"rename all occurrences of this parameter\", or \"here’s some pseudo code, give me the Go equivalent\".",
           "quoteLang": "en",
           "author": "Alberto Fortin",
-          "work": null,
+          "work": "After months of coding with LLMs, I'm going back to using my brain",
           "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things",
           "published": "2025-05-15",
           "checkedAt": "2026-11-15"
@@ -1965,7 +1965,7 @@
           "quote": "Thus, AI's best use case for me remains writing one-off scripts.",
           "quoteLang": "en",
           "author": "Colton",
-          "work": null,
+          "work": "No, AI is not Making Engineers 10x as Productive",
           "url": "https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/#:~:text=AI's%20best%20use%20case%20for%20me",
           "published": "2025-08-05",
           "checkedAt": "2026-11-14"
@@ -1976,7 +1976,7 @@
           "quote": "Claude classified every flag as a kill switch or ramp, and retired each one as soon as it was safe.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -1987,7 +1987,7 @@
           "quote": "We can delegate things like rebasing branches, resolving merge conflicts, checking CI failures, addressing PR feedback, triaging incoming crashes, and reviewing code.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -2029,7 +2029,7 @@
           "quote": "Simple code significantly outperforms complex code in agentic contexts.",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Simple%20code%20significantly%20outperforms%20complex%20code",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
@@ -2071,7 +2071,7 @@
           "quote": "I often start a new chat by dumping in existing code to seed that context, then work with the LLM to modify it in some way.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -2082,7 +2082,7 @@
           "quote": "They write specific prompts. The agent's success rate improves significantly with specific instructions.",
           "quoteLang": "en",
           "author": "Lee Robinson",
-          "work": null,
+          "work": "Cursor agent best practices",
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
@@ -2122,7 +2122,7 @@
           "quote": "I find LLMs respond extremely well to function signatures like the one I use here.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20find%20LLMs%20respond%20extremely%20well",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -2133,7 +2133,7 @@
           "quote": "Write an outline of the code and ask AI to fill the missing parts.",
           "quoteLang": "en",
           "author": "Anton Zhiyanov",
-          "work": null,
+          "work": "Write the damn code",
           "url": "https://antonz.org/write-code/#:~:text=Write%20an%20outline%20of%20the%20code%20and%20ask%20AI%20to%20fill%20the%20missing%20parts",
           "published": "2025-09-26",
           "checkedAt": "2026-11-14"
@@ -2144,7 +2144,7 @@
           "quote": "Tip: AI is very good at fill-in-the-blank or draw-the-rest-of-the-owl.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=AI%20is%20very%20good%20at%20fill",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -2155,7 +2155,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Between the Prompts",
-          "work": null,
+          "work": "Turning Claude Code Into My Best Design Partner",
           "url": "https://betweentheprompts.com/design-partner/#:~:text=But%20instead%20of%20fixing%20the%20code%20myself%2C%20I%20explained%20why%20it%20was%20wrong%20and%20gave%20it%20more%20precise%20instructions.%20When%20I%20told%20it%20%E2%80%9CYou%20misunderstood%2C%20it%20should%E2%80%A6%E2%80%9D%20and%20provided%20clearer%20guidance%2C%20I%20was%20impressed%20at%20how%20it%20could%20understand%20the%20problem%20and%20update%20the%20code%20accordingly.",
           "published": null
         },
@@ -2165,7 +2165,7 @@
           "quote": "But what I see working well is that before anyone (human or agent) writes the implementation, we go a level down from architecture into the shape of code: the types, the method signatures, the program layout, and the call stacks.",
           "quoteLang": "en",
           "author": "Dex",
-          "work": null,
+          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -2205,7 +2205,7 @@
           "quote": "LLMs can still help you work with libraries that exist outside their training data, but you need to put in more work—you’ll need to feed them recent examples of how those libraries should be used as part of your prompt.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=LLMs%20can%20still%20help%20you%20work%20with%20libraries",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -2216,7 +2216,7 @@
           "quote": "What if we removed the decision entirely? Instead of hoping agents would invoke a skill, we could embed a docs index directly in AGENTS.md.",
           "quoteLang": "en",
           "author": "Jude Gao",
-          "work": null,
+          "work": "AGENTS.md outperforms skills in our agent evals",
           "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
           "published": "2026-01-27",
           "checkedAt": "2026-11-15"
@@ -2256,7 +2256,7 @@
           "quote": "Be even more conservative about upgrades than",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
@@ -2267,7 +2267,7 @@
           "quote": "We favored dependencies and abstractions that could be fully internalized and reasoned about in-repo.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -2307,7 +2307,7 @@
           "quote": "In general logging is super important. For instance my app currently has",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "Agentic Coding Recommendations",
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
@@ -2318,7 +2318,7 @@
           "quote": "Every measurement was mirrored to the app's on-disk log, so an agent could read runtime behavior with nobody at the keyboard.",
           "quoteLang": "en",
           "author": "Alberto Gimeno",
-          "work": null,
+          "work": "Rendering huge pull requests in the GitHub Copilot app",
           "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -2358,7 +2358,7 @@
           "quote": "Claude is most useful when it's capable of independently driving feedback loops that allow it to make a change, test the change, and gather context on what failed to try another iteration.",
           "quoteLang": "en",
           "author": "Indragie Karunaratne",
-          "work": null,
+          "work": "I Shipped a macOS App Built Entirely by Claude Code",
           "url": "https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=Claude%20is%20most%20useful%20when",
           "published": "2025-07-01",
           "checkedAt": "2026-11-14"
@@ -2380,7 +2380,7 @@
           "quote": "We give Claude something it can run—like tests, a build or a screenshot to compare against the design—and ask it to show the output instead of saying it's done. Then a subagent reviews the diff with fresh context.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -2391,7 +2391,7 @@
           "quote": "Sensors (feedback): These are tools that observe what the agent actually produced. They provide a loop for the agent to self-correct before a human even looks at the code.",
           "quoteLang": "en",
           "author": "Birgitta Böckeler, Chris Ford",
-          "work": null,
+          "work": "Harness engineering and agent feedback: Exploring AI coding sensors",
           "url": "https://www.thoughtworks.com/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors",
           "published": "2026-05-13",
           "checkedAt": "2026-11-16"
@@ -2433,7 +2433,7 @@
           "quote": "By someone who didn’t write the code: in the terminal, /code-review reviews the diff in a fresh subagent that never saw your conversation. It isn’t swayed by the reasoning that produced the code.",
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -2473,7 +2473,7 @@
           "quote": "I wrote about this at length last week: the one thing you absolutely cannot outsource to the machine is testing that the code actually works.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -2513,7 +2513,7 @@
           "quote": "- **Test-driven when possible** - Never disable tests, fix them",
           "quoteLang": "en",
           "author": "Chris Dzombak",
-          "work": null,
+          "work": "Getting Good Results from Claude Code",
           "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Test-driven%20when%20possible",
           "published": "2025-08",
           "checkedAt": "2026-11-14"
@@ -2524,7 +2524,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Best practices for Claude Code",
           "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Ask%20Claude%20to%20write%20tests",
           "published": null
         },
@@ -2534,7 +2534,7 @@
           "quote": "Pipe the error in with cat error.log | claude and ask Claude to write a failing test that reproduces the bug. Only after that test goes red do you ask for a fix.",
           "quoteLang": "en",
           "author": "Arpan Patel",
-          "work": null,
+          "work": "Beyond the Prompt: Claude Code",
           "url": "https://arps18.github.io/posts/claude-code-mastery/",
           "published": "2026-05-26",
           "checkedAt": "2026-11-15"
@@ -2576,7 +2576,7 @@
           "quote": "Asking the agent to perform a code review on its own work is surprisingly fruitful.",
           "quoteLang": "en",
           "author": "Chris Dzombak",
-          "work": null,
+          "work": "Getting Good Results from Claude Code",
           "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review",
           "published": "2025-08",
           "checkedAt": "2026-11-14"
@@ -2587,7 +2587,7 @@
           "quote": "My most common one is code review: I tell pi to spawn itself with a code review prompt (via a custom slash command) and it gets the outputs.",
           "quoteLang": "en",
           "author": "Mario Zechner",
-          "work": null,
+          "work": "What I learned building an opinionated and minimal coding agent",
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
@@ -2598,7 +2598,7 @@
           "quote": "Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least once before a human is asked to look.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -2642,7 +2642,7 @@
           "quote": "It’s important for me to call out that I believe I’m ultimately responsible for the code that goes into a PR with my name on it, regardless of how it was produced. Therefore, especially in any professional context, I manually review all AI-written code and test cases.",
           "quoteLang": "en",
           "author": "Chris Dzombak",
-          "work": null,
+          "work": "Getting Good Results from Claude Code",
           "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review",
           "published": "2025-08",
           "checkedAt": "2026-11-15"
@@ -2653,7 +2653,7 @@
           "quote": "I'm not shipping code I don't understand.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=I'm%20not%20shipping%20code",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -2664,7 +2664,7 @@
           "quote": "Please don't ever ship AI-written code without a thorough manual review.",
           "quoteLang": "en",
           "author": "Mitchell Hashimoto",
-          "work": null,
+          "work": "Vibing a Non-Trivial Ghostty Feature",
           "url": "https://mitchellh.com/writing/non-trivial-vibing#:~:text=Please%20don't%20ever%20ship",
           "published": "2025-10-11",
           "checkedAt": "2026-11-14"
@@ -2714,7 +2714,7 @@
           "quote": "If I don’t like what an LLM has written, they’ll never complain at being told to refactor it!",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Here’s how I use LLMs to help me write code",
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
@@ -2754,7 +2754,7 @@
           "quote": null,
           "quoteLang": "en",
           "author": "Chris Dzombak",
-          "work": null,
+          "work": "Getting Good Results from Claude Code",
           "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all",
           "published": "2025-08"
         },
@@ -2764,7 +2764,7 @@
           "quote": "The cheapest place to catch a problem is in the diff, before the door closes.",
           "quoteLang": "en",
           "author": "Justin Paul",
-          "work": null,
+          "work": "The AI’s Code Looks Right. That’s the Problem.",
           "url": "https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/",
           "published": "2026-07-30",
           "checkedAt": "2026-11-15"
@@ -2814,7 +2814,7 @@
           "quote": "Develop simple code that assembles small components into a logical whole, write good documentation, and automate common tasks using standard tools.",
           "quoteLang": "en",
           "author": "Erick",
-          "work": null,
+          "work": "Agentic coding from first principles",
           "url": "https://matsen.fredhutch.org/general/2025/10/30/agentic-coding-principles.html",
           "published": "2025-10-30",
           "checkedAt": "2026-11-15"
@@ -2865,7 +2865,7 @@
           "quote": "Specifications aren’t up-front designs because you don’t need to, and probably shouldn’t, develop the entire specification upfront.",
           "quoteLang": "en",
           "author": "Marc Brooker",
-          "work": null,
+          "work": "Spec Driven Development isn't Waterfall",
           "url": "https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec",
           "published": "2026-04-09",
           "checkedAt": "2026-11-15"
@@ -2919,7 +2919,7 @@
           "quote": "The repository operates with minimal blocking merge gates. Pull requests are short-lived.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -2930,7 +2930,7 @@
           "quote": "With lot of agents working in one repo, build pipelines suffered. To deal with this we introduced a discipline: our agents were to continually commit and rebase from main.",
           "quoteLang": "en",
           "author": "Giles Edwards-Alexander",
-          "work": null,
+          "work": "An Accidental Blackboard",
           "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
           "published": "2026-09-02",
           "checkedAt": "2026-11-15"
@@ -2980,7 +2980,7 @@
           "quote": "Pairing with coding agents you can spot where they’re working towards the wrong goal and steer them back.",
           "quoteLang": "en",
           "author": "Benji Weber",
-          "work": null,
+          "work": "Teamwork & XP in the era of Genies",
           "url": "https://benjiweber.co.uk/blog/?p=2657",
           "published": "2025-07-14",
           "checkedAt": "2026-11-15"
@@ -2991,7 +2991,7 @@
           "quote": "In my experience, you don’t really take turns anymore when you “pair” with an LLM. In the driver-navigator dynamic, you’re spending a lot more time reading the map.",
           "quoteLang": "en",
           "author": "Matt Wynne",
-          "work": null,
+          "work": "Pair Programming in the Age of Agents",
           "url": "https://mattwynne.net/pair-programming-in-the-age-of-agents",
           "published": "2026-03-04",
           "checkedAt": "2026-11-15"
@@ -3041,7 +3041,7 @@
           "quote": "I’ve been doing the same thing with AI, just thinking out loud to something that happens to talk back.",
           "quoteLang": "en",
           "author": "Emma Klint",
-          "work": null,
+          "work": "Why I explain my problems to a robot instead of having it solve them",
           "url": "https://emmaklint.substack.com/p/why-i-explain-my-problems-to-a-robot",
           "published": "2026-03-17",
           "checkedAt": "2026-11-15"
@@ -3094,7 +3094,7 @@
           "quote": "When working on a new feature or a bug fix, you always write a failing test or series of tests first and then wait for me to review them.",
           "quoteLang": "en",
           "author": "thoughtbot (author name not shown in the saved text)",
-          "work": null,
+          "work": "Prevent the Robocalypse with Claude Code and TDD",
           "url": "https://thoughtbot.com/blog/prevent-the-robocalypse-with-tdd",
           "published": "2026-01-12",
           "checkedAt": "2026-11-15"
@@ -3144,7 +3144,7 @@
           "quote": "A feature branch is a source code branching pattern where a developer opens a branch when she starts working on a new feature.",
           "quoteLang": "en",
           "author": "Martin Fowler",
-          "work": null,
+          "work": "Feature Branch",
           "url": "https://martinfowler.com/bliki/FeatureBranch.html",
           "published": "2020-05-07",
           "checkedAt": "2026-11-15"
@@ -3197,7 +3197,7 @@
           "quote": "Reviewing your own pull request isn’t optional when agents are involved.",
           "quoteLang": "en",
           "author": "GitHub Blog (author name not shown in the saved text)",
-          "work": null,
+          "work": "Agent pull requests are everywhere. Here's how to review them.",
           "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
           "published": "2026-05-07",
           "checkedAt": "2026-11-15"
@@ -3208,7 +3208,7 @@
           "quote": "Because Copilot starts looking at comments as soon as they are submitted, if you are likely to make multiple comments on a pull request it's best to batch them by clicking Start a review, rather than clicking Add single comment.",
           "quoteLang": "en",
           "author": "GitHub",
-          "work": null,
+          "work": "Best practices for using GitHub Copilot to work on tasks",
           "url": "https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3251,7 +3251,7 @@
           "quote": "A codemod is a program that operates on a codebase, and when you give an AI agent the ability to write and execute them, these platform-level tasks fall below the high-water mark of AI capabilities.",
           "quoteLang": "en",
           "author": "Codegen Technical Staff",
-          "work": null,
+          "work": "SWE Agents are Better with Codemods",
           "url": "https://codegen.com/swe-agents-are-better-with-codemods/",
           "published": "2025-03-01",
           "checkedAt": "2026-11-15"
@@ -3296,7 +3296,7 @@
           "quote": "Let’s say every company gets about three innovation tokens.",
           "quoteLang": "en",
           "author": "Dan McKinley",
-          "work": null,
+          "work": "Choose Boring Technology",
           "url": "https://mcfunley.com/choose-boring-technology",
           "published": "2015-03-30",
           "checkedAt": "2026-11-15"
@@ -3307,7 +3307,7 @@
           "quote": "I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach, but in practice they don’t seem to be affecting my technology choices in that way at all.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": null,
+          "work": "Perhaps not Boring Technology after all",
           "url": "https://simonwillison.net/2026/Mar/9/not-so-boring/",
           "published": "2026-03-09",
           "checkedAt": "2026-11-15"
@@ -3350,7 +3350,7 @@
           "quote": "For large tasks. I have Claude dump its plan and progress into a .md, /clear the state, then start a new session by telling it to read the .md and continue.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -3361,7 +3361,7 @@
           "quote": "If you need task tracking, make it externally stateful by writing to a file:",
           "quoteLang": "en",
           "author": "Mario Zechner",
-          "work": null,
+          "work": "What I learned building an opinionated and minimal coding agent",
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
@@ -3372,7 +3372,7 @@
           "quote": "Before we even reach the tests, to help Claude help itself, I included instructions to maintain extensive READMEs and progress files that should be updated frequently with the current status.",
           "quoteLang": "en",
           "author": "Nicholas Carlini",
-          "work": null,
+          "work": "Building a C compiler with parallel Claudes",
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
           "checkedAt": "2026-11-16"
@@ -3383,7 +3383,7 @@
           "quote": "End sessions by asking Claude to update CLAUDE.md with where you left off.",
           "quoteLang": "en",
           "author": "rberg27",
-          "work": null,
+          "work": "GitHub - rberg27/doom-coding: A guide for how to use your smartphone to code anywhere at anytime.",
           "url": "https://github.com/rberg27/doom-coding",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -3423,7 +3423,7 @@
           "quote": "Instead, we started encoding what we call “golden principles” directly into the repository and built a recurring cleanup process.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -3434,7 +3434,7 @@
           "quote": "Suppose you want Claude to handle a task automatically on a recurring basis, like reviewing open PRs every morning, auditing dependencies weekly, or checking for CI failures overnight.",
           "quoteLang": "en",
           "author": "Anthropic",
-          "work": null,
+          "work": "Common workflows",
           "url": "https://code.claude.com/docs/en/common-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3445,7 +3445,7 @@
           "quote": "If there’s a check you already run every morning by hand, that’s your first loop.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Practical Loop Engineering",
           "url": "https://addyosmani.com/blog/practical-loop-engineering/",
           "published": "2026-08-14",
           "checkedAt": "2026-11-16"
@@ -3456,7 +3456,7 @@
           "quote": "Review agents also run nightly over existing code, helping us catch old bugs before they show up somewhere else.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -3498,7 +3498,7 @@
           "quote": "I have scripts that run meta-analysis on these logs, looking for common exceptions, permission requests, and error patterns to help improve agent-facing context.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -3509,7 +3509,7 @@
           "quote": "Use scheduled tasks for reflection and maintenance, not just execution.",
           "quoteLang": "en",
           "author": "OpenAI",
-          "work": null,
+          "work": "Best practices",
           "url": "https://developers.openai.com/codex/learn/best-practices",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3520,7 +3520,7 @@
           "quote": "Using a workflow, go through my last 50 sessions and mine them for corrections I keep making and turn the recurring ones into CLAUDE.md rules",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -3531,7 +3531,7 @@
           "quote": "We categorize each conversation based on how good the outcome was, and use the failures as input for an LLM to find improvements.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -3573,7 +3573,7 @@
           "quote": "Humans may review pull requests, but aren’t required to. Over time, we’ve pushed almost all review effort towards being handled agent-to-agent.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -3584,7 +3584,7 @@
           "quote": "At OpenAI, Codex reviews 100% of PRs.",
           "quoteLang": "en",
           "author": "OpenAI",
-          "work": null,
+          "work": "Best practices",
           "url": "https://developers.openai.com/codex/learn/best-practices",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3624,7 +3624,7 @@
           "quote": "Once the agent builds the feature, verification runs Playwright browser agents against each AC, takes screenshots, and produces a report with per-criterion verdicts.",
           "quoteLang": "en",
           "author": "Abhishek Ray",
-          "work": null,
+          "work": "I'm Building Agents That Run While I Sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
           "published": "2026-03-10",
           "checkedAt": "2026-11-15"
@@ -3664,7 +3664,7 @@
           "quote": "I run Claude Code in permissive mode. The VM is isolated—no access to production systems, no secrets beyond what’s needed for development.",
           "quoteLang": "en",
           "author": "Granda",
-          "work": null,
+          "work": "Claude Code On-The-Go",
           "url": "https://granda.org/en/2026/01/02/claude-code-on-the-go/",
           "published": "2026-01-02",
           "checkedAt": "2026-11-15"
@@ -3675,7 +3675,7 @@
           "quote": "I built a thing called the observatory (very very earlier) that will run firecracker VMs that have a network ingress/egress shims, and file I/O shims so that I can audit and watch what the agents are doing.",
           "quoteLang": "en",
           "author": "Harper Reed",
-          "work": null,
+          "work": "Why Don't My Agents Break Containment?",
           "url": "https://harper.blog/2026/09/22/break-away/",
           "published": "2026-09-22",
           "checkedAt": "2026-11-15"
@@ -3686,7 +3686,7 @@
           "quote": "I have tried just about everything and I highly recommend: use a fresh VM.",
           "quoteLang": "en",
           "author": "crawshaw",
-          "work": null,
+          "work": "Eight more months of agents",
           "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
           "published": "2026-02-08",
           "checkedAt": "2026-11-16"
@@ -3726,7 +3726,7 @@
           "quote": "All my stateless tools (like Jira, AWS, GitHub) have been migrated to simple CLIs.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -3737,7 +3737,7 @@
           "quote": "The alternative is simple: build CLI tools with README files. The agent reads the README when it needs the tool, pays the token cost only when necessary (progressive disclosure), and can use bash to invoke the tool.",
           "quoteLang": "en",
           "author": "Mario Zechner",
-          "work": null,
+          "work": "What I learned building an opinionated and minimal coding agent",
           "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
           "published": "2025-11-30",
           "checkedAt": "2026-11-15"
@@ -3748,7 +3748,7 @@
           "quote": "One of the reasons we strongly lean towards CLI and bash is because it allows easy composition of calls, and because the model also learns how the file system works when it’s trained.",
           "quoteLang": "en",
           "author": "Armin Ronacher",
-          "work": null,
+          "work": "What is Codemode",
           "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -3759,7 +3759,7 @@
           "quote": "The simplest form is text, so by default, whatever I wanna build, it starts as CLI. Agents can call it directly and verify output - closing the loop.",
           "quoteLang": "en",
           "author": "Peter Steinberger",
-          "work": null,
+          "work": "Shipping at Inference-Speed",
           "url": "https://steipete.me/posts/2025/shipping-at-inference-speed/",
           "published": "2025-12-28",
           "checkedAt": "2026-11-16"
@@ -3799,7 +3799,7 @@
           "quote": "Build evals targeting APIs not in training data. That's where doc access matters most.",
           "quoteLang": "en",
           "author": "Jude Gao",
-          "work": null,
+          "work": "AGENTS.md outperforms skills in our agent evals",
           "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
           "published": "2026-01-27",
           "checkedAt": "2026-11-15"
@@ -3810,7 +3810,7 @@
           "quote": "To test these concerns, we created a set of evaluations that measured agent performance within our current setup against a branch without root-level documentation files.",
           "quoteLang": "en",
           "author": "Addie Beach, Rui Martins Lacerda",
-          "work": null,
+          "work": "How we built data-driven AI Golden Paths at Datadog",
           "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
           "published": "2026-09-09",
           "checkedAt": "2026-11-15"
@@ -3821,7 +3821,7 @@
           "quote": "Only try to complete this task using the raw model and harness. And see, is it actually okay without using any of these skills?",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Audit your Agent files",
           "url": "https://addyosmani.com/blog/audit-your-agent-files/",
           "published": "2026-08-27",
           "checkedAt": "2026-11-16"
@@ -3861,7 +3861,7 @@
           "quote": "Check which filename your harness actually honours, because an ignored instruction file is silent.",
           "quoteLang": "en",
           "author": "Systima",
-          "work": null,
+          "work": "Claude Code Is Way More Token-Hungry Than OpenCode. We Measured Exactly How Much",
           "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
           "published": "2026-07-12",
           "checkedAt": "2026-11-15"
@@ -3872,7 +3872,7 @@
           "quote": "I made an empty directory that holds only an AGENTS.md with a canary word in it, and asked claude -p for the word.",
           "quoteLang": "en",
           "author": "Przemek",
-          "work": null,
+          "work": "Claude Code reads AGENTS.md only when telemetry is on",
           "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-15"
@@ -3912,7 +3912,7 @@
           "quote": "But I was able to coach it, and once it was in a good place I had it make a skill based on what we discovered together.",
           "quoteLang": "en",
           "author": "Harper Reed",
-          "work": null,
+          "work": "Getting Claude Code to do my emails",
           "url": "https://harper.blog/2025/12/03/claude-code-email-productivity-mcp-agents/",
           "published": "2025-12-03",
           "checkedAt": "2026-11-15"
@@ -3923,7 +3923,7 @@
           "quote": "If you do something more than once a day, turn it into a skill. Anything you repeat is a skill waiting to be written.",
           "quoteLang": "en",
           "author": "Arpan Patel",
-          "work": null,
+          "work": "Beyond the Prompt: Claude Code",
           "url": "https://arps18.github.io/posts/claude-code-mastery/",
           "published": "2026-05-26",
           "checkedAt": "2026-11-15"
@@ -3965,7 +3965,7 @@
           "quote": "We learned that we needed to push more and more context into the repo over time.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -3976,7 +3976,7 @@
           "quote": "PRDs, ADRs, UI Specs, and Design Docs live in their own directories (docs/prd/, docs/adr/, docs/ui-spec/, docs/design/) and are intended to be committed.",
           "quoteLang": "en",
           "author": "shinpr",
-          "work": null,
+          "work": "GitHub - shinpr/claude-code-workflows: Development workflows for Claude Code that keep broad exploration focused on the outcome you approved.",
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3987,7 +3987,7 @@
           "quote": "We also maintained architecture decision records (ADR) that captured every significant structural choice, so the AI followed decisions the team had already made, rather than guessing.",
           "quoteLang": "en",
           "author": "Shashank Mishra",
-          "work": null,
+          "work": "AI-assisted migration: Critical lessons from the modernization frontlines",
           "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
           "published": "2026-07-13",
           "checkedAt": "2026-11-16"
@@ -4027,7 +4027,7 @@
           "quote": "Compact at milestones. After you finish a logical chunk, run /compact Preserve the decisions made, files changed, and test commands.",
           "quoteLang": "en",
           "author": "Arpan Patel",
-          "work": null,
+          "work": "Beyond the Prompt: Claude Code",
           "url": "https://arps18.github.io/posts/claude-code-mastery/",
           "published": "2026-05-26",
           "checkedAt": "2026-11-15"
@@ -4069,7 +4069,7 @@
           "quote": "Another researcher explained that they ran many versions of Claude simultaneously, all exploring different approaches to a problem:",
           "quoteLang": "en",
           "author": "Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli",
-          "work": null,
+          "work": "How AI is transforming work at Anthropic",
           "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
           "published": "2025-12-02",
           "checkedAt": "2026-11-15"
@@ -4080,7 +4080,7 @@
           "quote": "We've found that having multiple models attempt the same problem and picking the best result significantly improves the final output, especially for harder tasks.",
           "quoteLang": "en",
           "author": "Lee Robinson",
-          "work": null,
+          "work": "Cursor agent best practices",
           "url": "https://cursor.com/blog/agent-best-practices",
           "published": "2026-01-09",
           "checkedAt": "2026-11-15"
@@ -4091,7 +4091,7 @@
           "quote": "Instead of dividing the work, have agents compete on it. Spawn N agents that each attempt the same task using different approaches.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -4131,7 +4131,7 @@
           "quote": "For example, we made the app bootable per git worktree, so Codex could launch and drive one instance per change.",
           "quoteLang": "en",
           "author": "Ryan Lopopolo",
-          "work": null,
+          "work": "Harness engineering: leveraging Codex in an agent-first world",
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
@@ -4171,7 +4171,7 @@
           "quote": "Our Verifier agent is tasked with authoring and embedding its validations into the existing tests and primitives available in that app.",
           "quoteLang": "en",
           "author": "Zack Deveau",
-          "work": null,
+          "work": "Building an agentic harness that outlasts the model (2026)",
           "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
           "published": "2026-07-29",
           "checkedAt": "2026-11-15"
@@ -4213,7 +4213,7 @@
           "quote": "Backend and frontend design stay separate, a consistency check covers the boundary between them, and the work plan uses vertical slices so integration is exercised before the end.",
           "quoteLang": "en",
           "author": "shinpr",
-          "work": null,
+          "work": "GitHub - shinpr/claude-code-workflows: Development workflows for Claude Code that keep broad exploration focused on the outcome you approved.",
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4224,7 +4224,7 @@
           "quote": "And in most cases, I'll send off a model to do 1-3 slices at a time, and review the code as I go. It's a lot easier to resteer early on, whether it's the internals or the actual functionality, than to end up on the other side of 2k+ lines of code with no idea what's broken.",
           "quoteLang": "en",
           "author": "Dex",
-          "work": null,
+          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -4264,7 +4264,7 @@
           "quote": "Contributors should note tool usage in their pull request description, commit message, or wherever authorship is normally indicated for the work.",
           "quoteLang": "en",
           "author": "rnk",
-          "work": null,
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
           "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
           "published": "2025-12-17",
           "checkedAt": "2026-11-15"
@@ -4275,7 +4275,7 @@
           "quote": "You must disclose LLM-generated content. You can choose to not post LLM content, or you can choose to post it and disclose its origin.",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-15"
@@ -4315,7 +4315,7 @@
           "quote": "Contributors must read and review all LLM-generated code or text before they ask other project members to review it.",
           "quoteLang": "en",
           "author": "rnk",
-          "work": null,
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
           "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
           "published": "2025-12-17",
           "checkedAt": "2026-11-15"
@@ -4326,7 +4326,7 @@
           "quote": "LLM reviews cannot substitute for human review or self-review.",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-15"
@@ -4366,7 +4366,7 @@
           "quote": "Passing maintainer feedback to an LLM doesn’t help anyone grow, and does not sustain our community.",
           "quoteLang": "en",
           "author": "rnk",
-          "work": null,
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
           "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
           "published": "2025-12-17",
           "checkedAt": "2026-11-15"
@@ -4377,7 +4377,7 @@
           "quote": "In short, if you are posting any of those things, the output must be your own words, explanation, description, etc., not a verbatim dump of an LLM's output.",
           "quoteLang": "en",
           "author": "Jellyfin project",
-          "work": null,
+          "work": "LLM/\"AI\" Policies",
           "url": "https://jellyfin.org/docs/general/contributing/llm-policies/",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4417,7 +4417,7 @@
           "quote": "An important implication of this policy is that it bans agents that take action in our digital spaces without human approval, such as the GitHub @claude agent.",
           "quoteLang": "en",
           "author": "rnk",
-          "work": null,
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
           "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
           "published": "2025-12-17",
           "checkedAt": "2026-11-15"
@@ -4428,7 +4428,7 @@
           "quote": "This skill requires explicit invocation because it can comment, label, or close another person's contribution.",
           "quoteLang": "en",
           "author": "Wirasm",
-          "work": null,
+          "work": "GitHub - Wirasm/prp: Prompts, workflows and more for agentic engineering",
           "url": "https://github.com/Wirasm/prp",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4468,7 +4468,7 @@
           "quote": "Other reviewers should use the label to prioritize their review time.",
           "quoteLang": "en",
           "author": "rnk",
-          "work": null,
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
           "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
           "published": "2025-12-17",
           "checkedAt": "2026-11-15"
@@ -4479,7 +4479,7 @@
           "quote": "You are allowed to close PRs that don't follow the policy, no questions asked. Please point the author to #llm-mentoring at the same time.",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-15"
@@ -4519,7 +4519,7 @@
           "quote": "Contributions in the OpenJDK Community must not include content generated, in part or in full, by large language models, diffusion models, or similar deep-learning systems.",
           "quoteLang": "en",
           "author": "OpenJDK Governing Board",
-          "work": null,
+          "work": "OpenJDK Interim Policy on Generative AI",
           "url": "https://openjdk.org/legal/ai",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4559,7 +4559,7 @@
           "quote": "LLMs must not generate soundness-critical changes unless the author is already a domain expert, and even then it's strongly discouraged.",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-15"
@@ -4599,7 +4599,7 @@
           "quote": "On the other hand, more complex controls like skills, commands, or root-level documentation may be owned by entire teams or guilds.",
           "quoteLang": "en",
           "author": "Addie Beach, Rui Martins Lacerda",
-          "work": null,
+          "work": "How we built data-driven AI Golden Paths at Datadog",
           "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
           "published": "2026-09-09",
           "checkedAt": "2026-11-15"
@@ -4639,7 +4639,7 @@
           "quote": "During our AI ramp-up, we began asking two additional questions: Did AI-authored code directly contribute to the incident? And did the increased volume of change put additional pressure on review, testing, rollout, or observability?",
           "quoteLang": "en",
           "author": "Tyson Singer",
-          "work": null,
+          "work": "AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity",
           "url": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4681,7 +4681,7 @@
           "quote": "We’ve settled on 2 human approvals for any AI-initiated PR for now, but it is kind of a weird paradigm shift (for me at least) when it’s no longer a human making something for another human to review.",
           "quoteLang": "en",
           "author": "Shrivu Shankar",
-          "work": null,
+          "work": "How I Use Every Claude Code Feature",
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
@@ -4692,7 +4692,7 @@
           "quote": "LLM PRs are required to have tests, full stop, regardless of how hard that is, as well as various other restrictions;",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-15"
@@ -4732,7 +4732,7 @@
           "quote": "To combat this, some engineers deliberately practice without AI: \"Every once in a while, even if I know that Claude can nail a problem, I will not ask it to. It helps me keep myself sharp.\"",
           "quoteLang": "en",
           "author": "Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli",
-          "work": null,
+          "work": "How AI is transforming work at Anthropic",
           "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
           "published": "2025-12-02",
           "checkedAt": "2026-11-15"
@@ -4772,7 +4772,7 @@
           "quote": "After that, the candidate gets two hours to build a working prototype of the system they just designed using any AI model they want, and any frameworks.",
           "quoteLang": "en",
           "author": "Applied Intuition",
-          "work": null,
+          "work": "Hiring engineers for the age of agents",
           "url": "https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents",
           "published": "2026-07-22",
           "checkedAt": "2026-11-14"
@@ -4783,7 +4783,7 @@
           "quote": "The centerpiece of our on-site was a three-hour build session. Candidates chose from a short list of assigned prompts and were asked to design, build, and deploy a working prototype on DigitalOcean by the end of the session.",
           "quoteLang": "en",
           "author": "DigitalOcean",
-          "work": null,
+          "work": "What We Learned Hiring 33 Engineers in Two Weeks",
           "url": "https://digitalocean.com/blog/ai-native-engineering-interview",
           "published": "2026-06-09",
           "checkedAt": "2026-11-14"
@@ -4823,7 +4823,7 @@
           "quote": "Steering, not just prompting. Are you thinking about the how and why of the work, or just feeding the spec to an agent and hoping for the best?",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": null,
+          "work": "Engineering interviews in the era of agents - Elicit",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -4834,7 +4834,7 @@
           "quote": "Can they effectively direct and validate AI-generated work?",
           "quoteLang": "en",
           "author": "Augment Code",
-          "work": null,
+          "work": "How we hire AI-native engineers now: our criteria",
           "url": "https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now",
           "published": "2026-03-12",
           "checkedAt": "2026-11-14"
@@ -4874,7 +4874,7 @@
           "quote": "The interviews where we want you to use AI tend to be deeper technical sessions. You’re on your own machine, using whatever tools you’re comfortable with.",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": null,
+          "work": "Engineering interviews in the era of agents - Elicit",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -4885,7 +4885,7 @@
           "quote": "We’re open to any type of tools, from none at all, to autocompletes, to full coding agents.",
           "quoteLang": "en",
           "author": "Omnea",
-          "work": null,
+          "work": "Why we let candidates use AI in our programming interviews",
           "url": "https://www.omnea.co/resource/ai-in-our-programming-interviews",
           "published": "2026-05-26",
           "checkedAt": "2026-11-14"
@@ -4925,7 +4925,7 @@
           "quote": "Candidates are given a medium-sized codebase and a draft PR from a colleague that introduces a cross-cutting feature. Their job is to review and improve it — pulling down the code, inspecting the output, and iterating with coding agents to make it better.",
           "quoteLang": "en",
           "author": "Sierra",
-          "work": null,
+          "work": "The AI-native interview",
           "url": "https://sierra.ai/blog/the-ai-native-interview",
           "published": "2026-04-22",
           "checkedAt": "2026-11-14"
@@ -4965,7 +4965,7 @@
           "quote": "There are some interviews where we explicitly ask candidates not to use AI.",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": null,
+          "work": "Engineering interviews in the era of agents - Elicit",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -5005,7 +5005,7 @@
           "quote": "And so I think there’s high value personally in, like maybe every couple of weeks, maybe at once a month even, just running doctor on your skills, on your setup, and auditing what you’re doing and seeing, okay, well, what still holds true?",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Audit your Agent files",
           "url": "https://addyosmani.com/blog/audit-your-agent-files/",
           "published": "2026-08-27",
           "checkedAt": "2026-11-16"
@@ -5045,7 +5045,7 @@
           "quote": "The tests are a contract that establishes what the code should do for us, and moving tests to data files, interpreted by a relatively smaller test runner, makes them easier to protect from unexpected manipulation by AI.",
           "quoteLang": "en",
           "author": "Matteo Vaccari",
-          "work": null,
+          "work": "Tests as data",
           "url": "https://martinfowler.com/articles/tests-as-data.html",
           "published": "2026-11-11",
           "checkedAt": "2026-11-16"
@@ -5087,7 +5087,7 @@
           "quote": "The first thing we can do is mutation testing: we inject intentional faults in production code, and see if any test breaks, and if it breaks, check that the error message is correct and informative.",
           "quoteLang": "en",
           "author": "Matteo Vaccari",
-          "work": null,
+          "work": "Tests as data",
           "url": "https://martinfowler.com/articles/tests-as-data.html",
           "published": "2026-11-11",
           "checkedAt": "2026-11-16"
@@ -5127,7 +5127,7 @@
           "quote": "Depending on the type of task, it’s possible to protect the files that we’re not expecting the AI to change, by making them read-only in a way that the agent cannot bypass, or by running a check in CI that verifies what files were changed depending on the type of task.",
           "quoteLang": "en",
           "author": "Matteo Vaccari",
-          "work": null,
+          "work": "Tests as data",
           "url": "https://martinfowler.com/articles/tests-as-data.html",
           "published": "2026-11-11",
           "checkedAt": "2026-11-16"
@@ -5138,7 +5138,7 @@
           "quote": "The agent was instructed to preserve those inputs and the skill’s verification helpers, investigate failures, and correct the implementation or execution setup rather than weaken the expectations.",
           "quoteLang": "en",
           "author": "Naresh Jain",
-          "work": null,
+          "work": "Are Harnesses Worth the Cost?",
           "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
           "published": "2026-10-13",
           "checkedAt": "2026-11-16"
@@ -5180,7 +5180,7 @@
           "quote": "We’ve been experimenting with a new process called Intent Review. For medium and high risk PRs, the agent guides the engineer through understanding how the change affects the system.",
           "quoteLang": "en",
           "author": "Vinay Perneti and Emma Webb",
-          "work": null,
+          "work": "The State of AI-Native Engineering 2026",
           "url": "https://www.augmentcode.com/downloads/state-of-ai-native-engineering-2026.pdf",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -5220,7 +5220,7 @@
           "quote": "Agents that crawl the codebase, the issues, the PRs, the threads, and produce a knowledge base of the implicit decisions, the conventions, the why-we-did-it-this-way that nobody had time to document.",
           "quoteLang": "en",
           "author": ".txt",
-          "work": null,
+          "work": "The bottleneck was never the code",
           "url": "https://www.thetypicalset.com/blog/thoughts-on-coding-agents",
           "published": "2026-04-29",
           "checkedAt": "2026-11-16"
@@ -5262,7 +5262,7 @@
           "quote": "At Datadog, we aim to use the control with the smallest scope that still gives us the output we want.",
           "quoteLang": "en",
           "author": "Addie Beach, Rui Martins Lacerda",
-          "work": null,
+          "work": "How we built data-driven AI Golden Paths at Datadog",
           "url": "https://www.datadoghq.com/blog/ai-development-golden-paths/",
           "published": "2026-09-09",
           "checkedAt": "2026-11-16"
@@ -5302,7 +5302,7 @@
           "quote": "No one is required to review LLM PRs unless they volunteer.",
           "quoteLang": "en",
           "author": "Jynn Nelson",
-          "work": null,
+          "work": "rust-lang/rust is adopting an LLM policy",
           "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
           "published": "2026-08-05",
           "checkedAt": "2026-11-16"
@@ -5342,7 +5342,7 @@
           "quote": "Each one had two jobs: first, a metric Claude could move in the lab; second, a guardrail in CI with a number that could only ratchet down.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -5353,7 +5353,7 @@
           "quote": "If a benchmark was flaky, or if it didn’t actually correlate with user latency, we threw it out rather than let Claude climb the wrong hill.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -5393,7 +5393,7 @@
           "quote": "As soon as Claude had a number to beat, it could start optimizing.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -5404,7 +5404,7 @@
           "quote": "Agents yearn for tight feedback loops. They allow them to hill-climb to their heart's content.",
           "quoteLang": "en",
           "author": "sankalp",
-          "work": null,
+          "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
           "checkedAt": "2026-11-16"
@@ -5415,7 +5415,7 @@
           "quote": "So we defined what healthy meant, instrumented the surface to answer it, and ran the whole change → measure → improve loop unattended.",
           "quoteLang": "en",
           "author": "Alberto Gimeno",
-          "work": null,
+          "work": "Rendering huge pull requests in the GitHub Copilot app",
           "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -5455,7 +5455,7 @@
           "quote": "Several agents look for bugs at the same time. Then a separate group votes on each finding, and it only gets posted if enough of them agree it's real.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5495,7 +5495,7 @@
           "quote": "Every finding has to be answered. You either fix it or resolve the thread with a reason.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5506,7 +5506,7 @@
           "quote": "A PR can't merge while any finding from the bug review or the security review is still open.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5548,7 +5548,7 @@
           "quote": "Whoever prompted the change is on the hook for it. On an agent-written PR, the person directing the agent counts as one of the required reviewers, the same as if they'd typed the code themselves.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5559,7 +5559,7 @@
           "quote": "An agent's approval never counts as a person's, either.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5599,7 +5599,7 @@
           "quote": "An approval covers one specific commit. If new commits land that the system can't vouch for, like an agent's push or a merge someone resolved by hand, the approval has to be given again.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -5639,7 +5639,7 @@
           "quote": "This involves barring the agents that read untrusted public content from taking high-privilege actions, which are instead done by the agents in charge of acting on the information.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -5650,7 +5650,7 @@
           "quote": "The agent reads messages and issues that other people wrote, and that text can be interpreted as instructions. Limit what the agent could do if it followed them.",
           "quoteLang": "en",
           "author": "Lance Martin and CJ Avilla",
-          "work": null,
+          "work": "Building effective agent automations",
           "url": "https://claude.dev/blog/building-effective-agent-automations/",
           "published": "2026-10-08",
           "checkedAt": "2026-11-16"
@@ -5690,7 +5690,7 @@
           "quote": "Claude takes a \"lock\" on a task by writing a text file to current_tasks/ (e.g., one agent might lock current_tasks/parse_if_statement.txt, while another locks current_tasks/codegen_function_definition.txt).",
           "quoteLang": "en",
           "author": "Nicholas Carlini",
-          "work": null,
+          "work": "Building a C compiler with parallel Claudes",
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
           "checkedAt": "2026-11-16"
@@ -5701,7 +5701,7 @@
           "quote": "Subtasks: A to-do list where any agent can add a task and the first helper to claim it owns it.",
           "quoteLang": "en",
           "author": "Barry Zhang, Tianyi Peng, Elle Najt, Keller Scholl, and Lance Martin",
-          "work": null,
+          "work": "Safely scaling multi-agent teams with Claude Fable 5.2",
           "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
           "published": "2026-11-09",
           "checkedAt": "2026-11-16"
@@ -5741,7 +5741,7 @@
           "quote": "To elicit sustained, autonomous progress, I built a harness that sticks Claude in a simple loop (if you’ve seen Ralph-loop, this should look familiar). When it finishes one task, it immediately picks up the next.",
           "quoteLang": "en",
           "author": "Nicholas Carlini",
-          "work": null,
+          "work": "Building a C compiler with parallel Claudes",
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
           "checkedAt": "2026-11-16"
@@ -5752,7 +5752,7 @@
           "quote": "For tasks with an unknown amount of work, loop spawning agents until a stop condition is met (no new findings, or no more errors in the logs) instead of a fixed number of passes.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -5792,7 +5792,7 @@
           "quote": "The test harness should not print thousands of useless bytes. At most, it should print a few lines of output and log all important information to a file so Claude can find it when needed.",
           "quoteLang": "en",
           "author": "Nicholas Carlini",
-          "work": null,
+          "work": "Building a C compiler with parallel Claudes",
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
           "checkedAt": "2026-11-16"
@@ -5803,7 +5803,7 @@
           "quote": "Two things have to be true for CI to function as part of an agent’s feedback loop. It has to be fast, and it has to be AI-legible.",
           "quoteLang": "en",
           "author": "Liz Fong-Jones",
-          "work": null,
+          "work": "AI Amplifies Your Existing Practices: Lessons from Our Shift to an AI-First Strategy",
           "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
           "published": "2026-07-16",
           "checkedAt": "2026-11-16"
@@ -5843,7 +5843,7 @@
           "quote": "The fix was to use GCC as an online known-good compiler oracle to compare against. I wrote a new test harness that randomly compiled most of the kernel using GCC, and only the remaining files with Claude’s C Compiler.",
           "quoteLang": "en",
           "author": "Nicholas Carlini",
-          "work": null,
+          "work": "Building a C compiler with parallel Claudes",
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
           "checkedAt": "2026-11-16"
@@ -5854,7 +5854,7 @@
           "quote": "Automated comparison tests validated behavioral parity between legacy endpoints and migrated APIs.",
           "quoteLang": "en",
           "author": "Aditya Sharma and Mahesh Kharade",
-          "work": null,
+          "work": "Reimagining API modernization with deterministic AI-assisted engineering",
           "url": "https://www.thoughtworks.com/insights/blog/generative-ai/reimagining-api-modernization-with-deterministic-ai-assisted-engineering",
           "published": "2026-03-27",
           "checkedAt": "2026-11-16"
@@ -5894,7 +5894,7 @@
           "quote": "If you have a particular set of rules that you find Claude misses or struggles with, even when put into the CLAUDE.mds, create a workflow with a list of rules that must be checked by verifier agents—one verifier per rule.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -5905,7 +5905,7 @@
           "quote": "On the other hand, if you have a report where you want to check and source every factual claim that it references you may want to generate a workflow which has one agent identify all of the factual claims and then spin off a subagent to check each one in-detail.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -5945,7 +5945,7 @@
           "quote": "A workflow can structurally prevent this by spinning up agents to generate hypotheses from disjoint evidence.",
           "quoteLang": "en",
           "author": "Thariq Shihipar and Sid Bidasaria",
-          "work": null,
+          "work": "A harness for every task: dynamic workflows in Claude Code",
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
@@ -5985,7 +5985,7 @@
           "quote": "I’ve started preferring HTML as an output format instead of Markdown and increasingly see this pattern being applied by others on the Claude Code team.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Using Claude Code: The unreasonable effectiveness of HTML",
           "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
           "published": "2026-05-20",
           "checkedAt": "2026-11-16"
@@ -5996,7 +5996,7 @@
           "quote": "Use HTML to understand code that the agent has written, to review code, or to explain a PR to someone reviewing your code.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Using Claude Code: The unreasonable effectiveness of HTML",
           "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
           "published": "2026-05-20",
           "checkedAt": "2026-11-16"
@@ -6036,7 +6036,7 @@
           "quote": "The trick is always to end with an export: a \"copy as JSON\" or \"copy as prompt\" button that turns whatever I did in the UI back into something I can paste into Claude Code or commit to a file.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Using Claude Code: The unreasonable effectiveness of HTML",
           "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
           "published": "2026-05-20",
           "checkedAt": "2026-11-16"
@@ -6076,7 +6076,7 @@
           "quote": "If you wanna save time during review, you pick the person who would review the PR, and run through the product/tech specs with them before you get to the coding part",
           "quoteLang": "en",
           "author": "Dex",
-          "work": null,
+          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -6116,7 +6116,7 @@
           "quote": "Logs serve as the evidence of the ideas that worked and didn't work. Future agent sessions could read the logs and quickly check if an idea had been tried or not.",
           "quoteLang": "en",
           "author": "sankalp",
-          "work": null,
+          "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
           "checkedAt": "2026-11-16"
@@ -6156,7 +6156,7 @@
           "quote": "The new angle is that agents can be given the ability to gate their own changes for gradual rollout; the flag itself becomes the feedback signal for whether the change is doing what it claimed.",
           "quoteLang": "en",
           "author": "Liz Fong-Jones",
-          "work": null,
+          "work": "AI Amplifies Your Existing Practices: Lessons from Our Shift to an AI-First Strategy",
           "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
           "published": "2026-07-16",
           "checkedAt": "2026-11-16"
@@ -6196,7 +6196,7 @@
           "quote": "Every thread had a named human owner, and Claude highlighted any user-perceptible change with before-and-after screenshots or recordings for them to rule on.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -6236,7 +6236,7 @@
           "quote": "Write each task as a self-contained ticket that states what's wrong, what done looks like, and how to prove it.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -6247,7 +6247,7 @@
           "quote": "Ask for evidence. Name the command that proves the task is done, and read Claude's summary before the diff.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
           "checkedAt": "2026-11-16"
@@ -6287,7 +6287,7 @@
           "quote": "A lot of what we did, especially early on, was to encourage Claude to be bolder.",
           "quoteLang": "en",
           "author": "Raymond Wang, Sam Attard, and Issac G.",
-          "work": null,
+          "work": "How we made claude.ai 3x faster in two weeks",
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
           "checkedAt": "2026-11-16"
@@ -6298,7 +6298,7 @@
           "quote": "Encourage the model to take more risks and try ambitious ideas. You will not believe it but this worked.",
           "quoteLang": "en",
           "author": "sankalp",
-          "work": null,
+          "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
           "checkedAt": "2026-11-16"
@@ -6338,7 +6338,7 @@
           "quote": "These sections should be built up from common failure points that Claude runs into when using your skill. Ideally, you will update your skill over time to capture these gotchas.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Lessons from building Claude Code: How we use skills",
           "url": "https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/",
           "published": "2026-06-03",
           "checkedAt": "2026-11-16"
@@ -6349,7 +6349,7 @@
           "quote": "Keep your CLAUDE.md lightweight and briefly describe what your repo is for, but spend most of the tokens on gotchas inside of the codebase.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "The new rules of context engineering for Claude 5 generation models",
           "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
           "published": "2026-07-24",
           "checkedAt": "2026-11-16"
@@ -6389,7 +6389,7 @@
           "quote": "Instead, consider having a tree of files that can be loaded at the right time.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "The new rules of context engineering for Claude 5 generation models",
           "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
           "published": "2026-07-24",
           "checkedAt": "2026-11-16"
@@ -6400,7 +6400,7 @@
           "quote": "Tell Claude what files are in your skill, and it will read them at appropriate times.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "Lessons from building Claude Code: How we use skills",
           "url": "https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/",
           "published": "2026-06-03",
           "checkedAt": "2026-11-16"
@@ -6440,7 +6440,7 @@
           "quote": "And while these constraints were once needed to avoid worst case scenarios, we have since found we can delete many of them and let the model use surrounding context and judgement instead.",
           "quoteLang": "en",
           "author": "Thariq Shihipar",
-          "work": null,
+          "work": "The new rules of context engineering for Claude 5 generation models",
           "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
           "published": "2026-07-24",
           "checkedAt": "2026-11-16"
@@ -6480,7 +6480,7 @@
           "quote": "When someone wants to understand a part of the codebase, they ask Claude to write an explainer for exactly that slice.",
           "quoteLang": "en",
           "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-          "work": null,
+          "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
@@ -6520,7 +6520,7 @@
           "quote": "Keep small models on work where a mistake is cheap to spot, like finding files, running tests and reading logs. Keep code edits and judgment calls on the main model.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku",
           "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
           "published": "2026-11-09",
           "checkedAt": "2026-11-16"
@@ -6531,7 +6531,7 @@
           "quote": "Keep the expensive model's context for the decisions, and let cheaper subagents do the verbose reading.",
           "quoteLang": "en",
           "author": "Addy Osmani",
-          "work": null,
+          "work": "Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku",
           "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
           "published": "2026-11-09",
           "checkedAt": "2026-11-16"
@@ -6571,7 +6571,7 @@
           "quote": "I connected my agent (in this case Claude with Opus 5.5) to the Sentry MCP, pointed it at our own Sentry org and project, and asked it to find hot code path issues similar to a small performance PR I had drafted:",
           "quoteLang": "en",
           "author": "Scott Cooper",
-          "work": null,
+          "work": "Finding backend performance wins with a coding agent",
           "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
           "published": "2026-11-03",
           "checkedAt": "2026-11-16"
@@ -6582,7 +6582,7 @@
           "quote": "Every PR links an example trace showing the extra query or call, so that it's a bit easier for a reviewer to understand.",
           "quoteLang": "en",
           "author": "Scott Cooper",
-          "work": null,
+          "work": "Finding backend performance wins with a coding agent",
           "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
           "published": "2026-11-03",
           "checkedAt": "2026-11-16"
@@ -6622,7 +6622,7 @@
           "quote": "Making sure the agent has the ability to validate changes in the read-only database rather than guessing leads to much better results.",
           "quoteLang": "en",
           "author": "Scott Cooper",
-          "work": null,
+          "work": "Finding backend performance wins with a coding agent",
           "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
           "published": "2026-11-03",
           "checkedAt": "2026-11-16"
@@ -6662,7 +6662,7 @@
           "quote": "For bug fixes, River can reproduce the issue, record the broken behavior, implement the fix, and then repeat the same steps to show the before and after.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6673,7 +6673,7 @@
           "quote": "So we created a skill to teach agents how to test their changes and prove their work.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6713,7 +6713,7 @@
           "quote": "So, instead of preparing a Mac after a request arrives, we switched to keeping a pool of warm Macs at the ready: main checked out (no small feat, as our monorepo is massive), tools installed, apps built, and caches warm.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6753,7 +6753,7 @@
           "quote": "And instead of sleeping or setting timeouts for the Mac to finish long-running tasks, we used tmux panes that River could observe in real time.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6793,7 +6793,7 @@
           "quote": "Some of these run overnight, automatically picking up bugs, implementing fixes, testing them, and creating PRs.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": null,
+          "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6833,7 +6833,7 @@
           "quote": "Source traceability is the real anti-hallucination mechanism. Every extracted fact carries a file:line reference back to the legacy code.",
           "quoteLang": "en",
           "author": "Shashank Mishra",
-          "work": null,
+          "work": "AI-assisted migration: Critical lessons from the modernization frontlines",
           "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
           "published": "2026-07-13",
           "checkedAt": "2026-11-16"
@@ -6873,7 +6873,7 @@
           "quote": "To achieve this, every extracted fact carried a green, amber or red confidence marker.",
           "quoteLang": "en",
           "author": "Shashank Mishra",
-          "work": null,
+          "work": "AI-assisted migration: Critical lessons from the modernization frontlines",
           "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
           "published": "2026-07-13",
           "checkedAt": "2026-11-16"
@@ -6884,7 +6884,7 @@
           "quote": "One was that if the code was ambiguous, the AI had to flag the ambiguity in its output so a human expert could resolve it.",
           "quoteLang": "en",
           "author": "Shashank Mishra",
-          "work": null,
+          "work": "AI-assisted migration: Critical lessons from the modernization frontlines",
           "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
           "published": "2026-07-13",
           "checkedAt": "2026-11-16"
@@ -6924,7 +6924,7 @@
           "quote": "Team retrospectives examine what went well, what caused difficulty, and what to improve. Session logs give us a detailed record for a similar process around our agents.",
           "quoteLang": "en",
           "author": "Not shown in saved page text (Faros AI company blog)",
-          "work": null,
+          "work": "How to use AI session logs to improve coding agent workflows",
           "url": "https://www.faros.ai/blog/how-to-use-ai-session-logs-to-improve-agent-workflows",
           "published": "2026-11-04",
           "checkedAt": "2026-11-16"
@@ -6969,7 +6969,7 @@
           "quote": "The point of an ADR was always to stop the next person from undoing a decision they didn’t know about. The next person is now, more often than not, an agent.",
           "quoteLang": "en",
           "author": "Edy Silva",
-          "work": null,
+          "work": "Stale docs are prompt injection you wrote yourself - The Miners",
           "url": "https://blog.codeminer42.com/stale-docs-are-prompt-injection-you-wrote-yourself/",
           "published": "2026-10-16",
           "checkedAt": "2026-11-16"
@@ -7012,7 +7012,7 @@
           "quote": "This paper revisits the classical N-Version Programming literature in the modern agentic setting. We design and perform a reproduction of the original Knight–Leveson experiment with AI coding agents.",
           "quoteLang": "en",
           "author": "Javier Ron, Benoit Baudry, Martin Monperrus",
-          "work": null,
+          "work": "N-Version Programming with Coding Agents",
           "url": "https://arxiv.org/pdf/2606.20158",
           "published": "2026-06-18",
           "checkedAt": "2026-11-16"
@@ -7052,7 +7052,7 @@
           "quote": "The concept of a tracer bullet comes from The Pragmatic Programmer. It's a small, end-to-end slice of functionality that touches all the layers of your system at once.",
           "quoteLang": "en",
           "author": "Matt Pocock",
-          "work": null,
+          "work": "Tracer Bullets: Keeping AI Slop Under Control",
           "url": "https://www.aihero.dev/tracer-bullets",
           "published": "2026-01-22",
           "checkedAt": "2026-11-16"
@@ -7095,7 +7095,7 @@
           "quote": "Mutation testing is an old technique. What's interesting here is that the AI can create more realistic, plausible mutations, much cheaper (in time, money, tears, and sweat) than a human developer.",
           "quoteLang": "en",
           "author": "Senko Rašić",
-          "work": null,
+          "work": "Improving AI-generated tests using mutation testing",
           "url": "https://blog.senko.net/improving-ai-generated-tests-using-mutation-testing",
           "published": "2026-03-22",
           "checkedAt": "2026-11-16"
@@ -7135,7 +7135,7 @@
           "quote": "Now, with agents producing code at a pace that makes every PR feel like one of those massive ones, the approach I used — sitting down and talking it through — clearly can't happen for every change. But the principle behind it can.",
           "quoteLang": "en",
           "author": "Chris Hughes",
-          "work": null,
+          "work": "Pull Requests Were Never Really About the Code",
           "url": "https://chris-hughes10.github.io/writing/pull-requests-were-never-about-the-code/index.html",
           "published": "2026-02-22",
           "checkedAt": "2026-11-16"
@@ -7175,7 +7175,7 @@
           "quote": "Code style rules, in particular, should live in a formatter or linter rather than in docs. The same rule applies to LLM safeguards: it’s better to move a rule into a formatter config or a custom linter rule than to add it to AGENTS.md.",
           "quoteLang": "en",
           "author": "Evil Martians (team blog; author not named on the page)",
-          "work": null,
+          "work": "Stop writing rules in AGENTS.md: use agent hooks and nano-staged instead—Martian Chronicles, Evil Martians’ team blog",
           "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
           "published": "2026-05-26",
           "checkedAt": "2026-11-16"
