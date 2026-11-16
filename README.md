@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-136 entries, 261 sources, 251 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+135 entries, 260 sources, 250 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -39,15 +39,11 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Software factory (1968).
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
-  Grew from: Lights-out manufacturing.
 - **Spec-driven development** (2025). An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it.
   Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt); [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
   Grew from: Waterfall.
 - **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.
   Sources: [Andrej Karpathy, 2025-02-02](https://x.com/karpathy/status/1886192184808149383).
-- **Lights-out manufacturing**. An approach to manufacturing in which a factory runs without people on site, so it can work with the lights off.
-  Sources: [Owen Sweeney, 2026-09-23](https://www.openhands.dev/blog/what-is-an-ai-dark-factory).
-  Led to: Dark factory.
 - **Agile** (2001). Developing in short iterations with frequent feedback instead of a detailed upfront plan.
   Sources: [Claude Code team director (page event summary names Fiona Fung), 2026-06-03](https://claude.com/de/resources/articles/running-an-ai-native-engineering-org).
 - **Extreme Programming** (1999). An agile method: pair programming, tests before code, continuous integration, frequent releases.
