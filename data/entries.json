@@ -5349,8 +5349,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open. [1][2]",
-        "ru": "Командное правило, при котором каждую находку агента-ревьюера нужно исправить или закрыть с указанием причины, а пул-реквест нельзя слить, пока открыта находка об ошибке или безопасности. [1][2]"
+        "en": "A team rule in which every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open. [1][2][3]",
+        "ru": "Командное правило, при котором каждую находку агента-ревьюера нужно исправить или закрыть с указанием причины, а пул-реквест нельзя слить, пока открыта находка об ошибке или безопасности. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5377,6 +5377,17 @@
           "work": "How the Claude Code team does code review",
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Every finding it raises becomes a discussion thread that has to be resolved — fixed, or explicitly dismissed with a reason — before the branch can merge.",
+          "quoteLang": "en",
+          "author": "Christopher Olsen",
+          "work": "Putting an AI Reviewer in the Merge Gate",
+          "url": "https://brainchurts.com/lessons/2026-08-06-ai-reviewer-in-the-merge-gate",
+          "published": "2026-08-06",
           "checkedAt": "2026-11-16"
         }
       ],
