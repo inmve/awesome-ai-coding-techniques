@@ -2803,8 +2803,8 @@
         ]
       },
       "definition": {
-        "ru": "Принцип проектирования: простая система надёжнее сложной. [1]",
-        "en": "A design principle: a simple system is more reliable than a complex one. [1]"
+        "ru": "Принцип проектирования: делать систему настолько простой, насколько возможно. [1]",
+        "en": "The design principle of keeping a system as simple as possible. [1]"
       },
       "firstAppeared": {
         "date": "1960-01-01",
@@ -2855,7 +2855,7 @@
       },
       "definition": {
         "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1][2]",
-        "en": "A development model where stages run strictly in order: requirements, design, code, testing, deployment. [1][2]"
+        "en": "A development model in which the stages run strictly in order: requirements, design, code, testing, deployment. [1][2]"
       },
       "firstAppeared": {
         "date": "1970-01-01",
@@ -2919,8 +2919,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика частого слияния изменений в общую ветку с автоматической сборкой и тестами на каждое слияние. [1][2]",
-        "en": "Merging changes into the shared branch often, with an automatic build and tests on every merge. [1][2]"
+        "ru": "Практика, при которой изменения часто сливают в общую ветку, и каждое слияние запускает автоматическую сборку и тесты. [1][2]",
+        "en": "The practice in which changes are merged into the shared branch often, and every merge runs an automatic build and tests. [1][2]"
       },
       "firstAppeared": {
         "date": "1991-01-01",
@@ -2980,8 +2980,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Практика, при которой двое работают над одним кодом: один пишет, другой следит и думает наперёд. [1][2]",
-        "en": "Two people work on the same code: one types, the other watches and thinks ahead. [1][2]"
+        "ru": "Практика, при которой двое пишут один код вместе: один набирает, другой проверяет и думает наперёд. [1][2]",
+        "en": "The practice in which two people write the same code together: one types, the other reviews and thinks ahead. [1][2]"
       },
       "firstAppeared": {
         "date": "1999-01-01",
@@ -3041,8 +3041,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Поиск ошибки через построчное объяснение кода вслух кому угодно, хоть резиновой уточке. [1]",
-        "en": "Finding a bug by explaining the code line by line out loud to anyone, even a rubber duck. [1]"
+        "ru": "Практика, при которой разработчик вслух объясняет проблему слушателю, которому не нужно отвечать, например резиновой утке, и находит причину по ходу объяснения. [1]",
+        "en": "The practice in which a developer explains a problem aloud to a listener that need not respond, such as a rubber duck, and finds the cause while explaining. [1]"
       },
       "firstAppeared": {
         "date": "1999-10-01",
@@ -3094,8 +3094,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой сначала пишется падающий тест, затем минимальный код, чтобы он прошёл, затем рефакторинг. [1][2]",
-        "en": "Write a failing test first, then the minimal code to pass it, then refactor. [1][2]"
+        "ru": "Практика, при которой сначала пишут тест и убеждаются, что он падает, затем пишут код, пока тест не пройдёт, и после этого рефакторят код. [1][2]",
+        "en": "The practice in which a test is written first and shown to fail, the code is then written until the test passes, and the code is refactored. [1][2]"
       },
       "firstAppeared": {
         "date": "2002-01-01",
@@ -3155,8 +3155,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности. [1][2]",
-        "en": "A separate version-control branch per feature, merged into the main branch when ready. [1][2]"
+        "ru": "Практика, при которой разработчик открывает ветку в начале работы над фичей, ведёт в ней всю работу и вливает изменения, когда фича готова. [1][2]",
+        "en": "The practice in which a developer opens a branch when starting a feature, does all the work on it there and integrates the changes when the feature is done. [1][2]"
       },
       "firstAppeared": {
         "date": "2005-01-01",
@@ -3219,8 +3219,8 @@
         ]
       },
       "definition": {
-        "ru": "Запрос на слияние изменений, вокруг которого идут обсуждение и ревью. [1][2]",
-        "en": "A request to merge changes that hosts the discussion and review. [1][2]"
+        "ru": "Практика, при которой изменение подают как запрос на слияние, и до слияния его обсуждают и проверяют в этом запросе. [1][2]",
+        "en": "The practice in which a change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1][2]"
       },
       "firstAppeared": {
         "date": "2008-01-01",
@@ -3329,7 +3329,7 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else. [1][2]",
+        "en": "The practice in which a team spends a small, fixed number of “innovation tokens” on new technologies and uses well-known ones for everything else. [1][2]",
         "ru": "Практика, при которой команда тратит небольшое фиксированное число «жетонов на новизну» на новые технологии, а в остальном берёт хорошо известные. [1][2]"
       },
       "firstAppeared": {
@@ -7005,8 +7005,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team records each significant architectural decision, its context and consequences in a short document kept with the code, so later developers do not undo it unknowingly. [1]",
-        "ru": "Практика, при которой команда записывает каждое значимое архитектурное решение, его контекст и последствия в короткий документ рядом с кодом, чтобы следующие разработчики не отменили его по незнанию. [1]"
+        "en": "The practice in which a team writes down each significant architectural decision as a short record kept with the code. [1]",
+        "ru": "Практика, при которой команда записывает каждое значимое архитектурное решение короткой записью, которая хранится рядом с кодом. [1]"
       },
       "firstAppeared": {
         "date": "2011-01-01",
@@ -7053,8 +7053,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several independent teams build separate implementations of one specification, and the versions are compared or run together to catch faults one version alone would miss. [1]",
-        "ru": "Практика, при которой несколько независимых команд пишут отдельные реализации одной спецификации, а версии сравниваются или работают вместе, чтобы поймать ошибки, которые одна версия пропустила бы. [1]"
+        "en": "The practice in which several independent teams implement the same specification, the versions run in parallel, and a voting rule masks the faults of a single version. [1]",
+        "ru": "Практика, при которой несколько независимых команд реализуют одну спецификацию, версии работают параллельно, и правило голосования скрывает ошибки отдельной версии. [1]"
       },
       "firstAppeared": {
         "date": "1978-01-01",
@@ -7144,8 +7144,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which small deliberate faults are introduced into the code to check whether the test suite detects them, measuring how well the tests guard the behavior. [1]",
-        "ru": "Практика, при которой в код вносят небольшие намеренные ошибки и проверяют, ловят ли их тесты, чтобы оценить, насколько тесты защищают поведение. [1]"
+        "en": "The practice in which deliberate faults are introduced into the code to check whether the tests detect them. [1]",
+        "ru": "Практика, при которой в код намеренно вносят ошибки, чтобы проверить, обнаруживают ли их тесты. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7184,8 +7184,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the author of a change sits with the reviewer and talks through its intent and reasoning, so the review covers why the change was made, not only the code. [1]",
-        "ru": "Практика, при которой автор изменения садится с ревьюером и проговаривает замысел и ход мысли, чтобы ревью касалось причины изменения, а не только кода. [1]"
+        "en": "The practice in which the reviewer sits with the author of a change, and the author talks through its intent and structure. [1]",
+        "ru": "Практика, при которой ревьюер садится рядом с автором изменения, и автор рассказывает о его замысле и устройстве. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
