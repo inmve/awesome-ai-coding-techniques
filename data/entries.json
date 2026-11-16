@@ -361,8 +361,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1][2]",
-        "ru": "Практика, при которой инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1][2]"
+        "en": "The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1][2][3]",
+        "ru": "Практика, при которой инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2025-01-01",
@@ -394,6 +394,17 @@
           "url": "https://blog.sshh.io/p/how-i-use-every-claude-code-feature",
           "published": "2025-11-02",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "These patterns were progressively encoded into the instruction files, allowing Copilot to apply them deterministically during future migrations.",
+          "quoteLang": "en",
+          "author": "Aditya Sharma and Mahesh Kharade",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/blog/generative-ai/reimagining-api-modernization-with-deterministic-ai-assisted-engineering",
+          "published": "2026-03-27",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "glossary",
@@ -594,8 +605,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3][4]",
-        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3][4]"
+        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3][4][5]",
+        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3][4][5]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -643,6 +654,17 @@
           "work": null,
           "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 5,
+          "role": "support",
+          "quote": "Then I'd pick an issue and have it investigate further before changing anything. It read the code and the git history and told me what might break.",
+          "quoteLang": "en",
+          "author": "Scott Cooper",
+          "work": null,
+          "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+          "published": "2026-11-03",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -1273,8 +1295,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3][4][5]",
-        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3][4][5]"
+        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3][4][5][6]",
+        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3][4][5][6]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1332,6 +1354,17 @@
           "work": null,
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 6,
+          "role": "support",
+          "quote": "Each River session gets its own environment, so we can have one agent debugging something on Android, another working on an iOS feature, and another testing a PR, all in parallel.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -1926,8 +1959,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3]",
-        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3]"
+        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3][4]",
+        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1964,6 +1997,17 @@
           "work": null,
           "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
           "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "We can delegate things like rebasing branches, resolving merge conflicts, checking CI failures, addressing PR feedback, triaging incoming crashes, and reviewing code.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -2268,8 +2312,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a system is built with detailed logging, so that an agent can read the logs and find the cause of a problem. [1]",
-        "ru": "Практика, при которой систему делают с подробным логированием, чтобы агент мог прочитать логи и найти причину проблемы. [1]"
+        "en": "The practice in which a system is built with detailed logging, so that an agent can read the logs and find the cause of a problem. [1][2]",
+        "ru": "Практика, при которой систему делают с подробным логированием, чтобы агент мог прочитать логи и найти причину проблемы. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2285,6 +2329,17 @@
           "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important",
           "published": "2025-06-12",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Every measurement was mirrored to the app's on-disk log, so an agent could read runtime behavior with nobody at the keyboard.",
+          "quoteLang": "en",
+          "author": "Alberto Gimeno",
+          "work": null,
+          "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+          "published": "2026-09-23",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -3725,8 +3780,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2][3]",
-        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2][3]"
+        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2][3][4]",
+        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3764,6 +3819,17 @@
           "work": null,
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "We categorize each conversation based on how good the outcome was, and use the failures as input for an LLM to find improvements.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -4177,8 +4243,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them. [1][2]",
-        "ru": "Практика, при которой решения, планы, соглашения и прочий контекст хранятся как версионируемые файлы в репозитории, а не в чатах, документах и головах людей, чтобы агенты могли их прочитать. [1][2]"
+        "en": "The practice in which decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them. [1][2][3]",
+        "ru": "Практика, при которой решения, планы, соглашения и прочий контекст хранятся как версионируемые файлы в репозитории, а не в чатах, документах и головах людей, чтобы агенты могли их прочитать. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4206,6 +4272,17 @@
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "We also maintained architecture decision records (ADR) that captured every significant structural choice, so the AI followed decisions the team had already made, rather than guessing.",
+          "quoteLang": "en",
+          "author": "Shashank Mishra",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
+          "published": "2026-07-13",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "run-1",
@@ -5582,8 +5659,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves. [1][2]",
-        "ru": "Практика, при которой агенту дают измеряемое число, которое надо улучшить, и он раз за разом меняет код и перемеряет, пока число не улучшится. [1][2]"
+        "en": "The practice in which an agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves. [1][2][3]",
+        "ru": "Практика, при которой агенту дают измеряемое число, которое надо улучшить, и он раз за разом меняет код и перемеряет, пока число не улучшится. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5610,6 +5687,17 @@
           "work": null,
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "So we defined what healthy meant, instrumented the surface to answer it, and ran the whole change → measure → improve loop unattended.",
+          "quoteLang": "en",
+          "author": "Alberto Gimeno",
+          "work": null,
+          "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+          "published": "2026-09-23",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -6019,8 +6107,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault. [1]",
-        "ru": "Практика, при которой результат кода, написанного агентом, сравнивают с существующей заведомо верной реализацией, что также помогает найти, какая часть кода агента виновата. [1]"
+        "en": "The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault. [1][2]",
+        "ru": "Практика, при которой результат кода, написанного агентом, сравнивают с существующей заведомо верной реализацией, что также помогает найти, какая часть кода агента виновата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6036,6 +6124,17 @@
           "work": null,
           "url": "https://www.anthropic.com/engineering/building-c-compiler",
           "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Automated comparison tests validated behavioral parity between legacy endpoints and migrated APIs.",
+          "quoteLang": "en",
+          "author": "Aditya Sharma and Mahesh Kharade",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/blog/generative-ai/reimagining-api-modernization-with-deterministic-ai-assisted-engineering",
+          "published": "2026-03-27",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -6720,6 +6819,359 @@
       "opposites": [],
       "origin": null,
       "group": "models-budget"
+    },
+    {
+      "id": "trace-driven-performance-fixes",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Performance fixes from production traces",
+        "ru": "Исправления производительности по трейсам продакшена"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent is connected to the team's own production traces and asked to find issues on hot code paths, and each resulting pull request links an example trace that shows the extra query or call. [1][2]",
+        "ru": "Практика, при которой агента подключают к трейсам продакшена самой команды и просят найти проблемы на горячих участках кода, а каждый итоговый пул-реквест ссылается на пример трейса с лишним запросом или вызовом. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I connected my agent (in this case Claude with Opus 5.5) to the Sentry MCP, pointed it at our own Sentry org and project, and asked it to find hot code path issues similar to a small performance PR I had drafted:",
+          "quoteLang": "en",
+          "author": "Scott Cooper",
+          "work": null,
+          "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+          "published": "2026-11-03",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Every PR links an example trace showing the extra query or call, so that it's a bit easier for a reviewer to understand.",
+          "quoteLang": "en",
+          "author": "Scott Cooper",
+          "work": null,
+          "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+          "published": "2026-11-03",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "read-only-database-for-agent",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Read-only database for the agent",
+        "ru": "База только для чтения для агента"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the agent has access to a read-only copy of the database and validates its query changes there instead of guessing their effect. [1]",
+        "ru": "Практика, при которой у агента есть доступ к копии базы данных только для чтения, и он проверяет на ней свои изменения запросов, а не угадывает их эффект. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Making sure the agent has the ability to validate changes in the read-only database rather than guessing leads to much better results.",
+          "quoteLang": "en",
+          "author": "Scott Cooper",
+          "work": null,
+          "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+          "published": "2026-11-03",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "before-and-after-reproduction",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Before-and-after recording of a fix",
+        "ru": "Запись бага до и после исправления"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which, for a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the before and after; the team keeps the instructions for this in a skill. [1][2]",
+        "ru": "Практика, при которой для исправления бага агент воспроизводит проблему, записывает сломанное поведение, вносит исправление и повторяет те же шаги, чтобы показать «до» и «после»; инструкции для этого команда держит в скилле. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "For bug fixes, River can reproduce the issue, record the broken behavior, implement the fix, and then repeat the same steps to show the before and after.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "So we created a skill to teach agents how to test their changes and prove their work.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "warm-agent-environment-pool",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Warm environment pool for agents",
+        "ru": "Пул прогретых окружений для агентов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup. [1]",
+        "ru": "Практика, при которой команда держит пул подготовленных машин для агентов: основная ветка выкачана, инструменты установлены, приложения собраны, кэши прогреты, и агент берёт готовую машину вместо ожидания настройки. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "So, instead of preparing a Mac after a request arrives, we switched to keeping a pool of warm Macs at the ready: main checked out (no small feat, as our monorepo is massive), tools installed, apps built, and caches warm.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "observable-long-running-commands",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Observable long-running commands",
+        "ru": "Наблюдаемые долгие команды"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which long-running tasks are started in terminal panes, such as tmux panes, that the agent observes in real time, instead of the agent sleeping or setting timeouts while it waits. [1]",
+        "ru": "Практика, при которой долгие задачи запускаются в панелях терминала, например tmux, за которыми агент следит в реальном времени, вместо того чтобы засыпать или ставить таймауты в ожидании. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "And instead of sleeping or setting timeouts for the Mac to finish long-running tasks, we used tmux panes that River could observe in real time.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "overnight-bug-fix-runs",
+      "stages": [
+        "debugging"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Overnight bug-fix runs",
+        "ru": "Ночные прогоны исправления багов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which automated agent workflows run overnight without anyone starting them, pick up bugs, implement and test fixes, and open pull requests that are ready for review the next morning. [1]",
+        "ru": "Практика, при которой автоматические процессы с агентом работают ночью без ручного запуска: берут баги, реализуют и тестируют исправления и открывают пул-реквесты, готовые к ревью утром. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Some of these run overnight, automatically picking up bugs, implementing fixes, testing them, and creating PRs.",
+          "quoteLang": "en",
+          "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
+          "work": null,
+          "url": "https://shopify.engineering/remote-dev",
+          "published": "2026-10-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "source-traceability",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Source traceability",
+        "ru": "Прослеживаемость до исходника"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which every fact the agent extracts from legacy code carries a file:line reference back to that code. [1]",
+        "ru": "Практика, при которой каждый факт, извлечённый агентом из унаследованного кода, несёт ссылку file:line на этот код. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Source traceability is the real anti-hallucination mechanism. Every extracted fact carries a file:line reference back to the legacy code.",
+          "quoteLang": "en",
+          "author": "Shashank Mishra",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
+          "published": "2026-07-13",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "confidence-markers-on-extracted-facts",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Confidence markers on extracted facts",
+        "ru": "Метки уверенности у извлечённых фактов"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which every fact the agent extracts from legacy code carries a green, amber or red confidence marker, and ambiguous code is flagged in the output so that a human expert resolves it. [1][2]",
+        "ru": "Практика, при которой каждый факт, извлечённый агентом из унаследованного кода, несёт зелёную, жёлтую или красную метку уверенности, а неоднозначный код отмечается в выводе, чтобы его разрешил эксперт. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "To achieve this, every extracted fact carried a green, amber or red confidence marker.",
+          "quoteLang": "en",
+          "author": "Shashank Mishra",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
+          "published": "2026-07-13",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "One was that if the code was ambiguous, the AI had to flag the ambiguity in its output so a human expert could resolve it.",
+          "quoteLang": "en",
+          "author": "Shashank Mishra",
+          "work": null,
+          "url": "https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons",
+          "published": "2026-07-13",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
     }
   ]
 }
