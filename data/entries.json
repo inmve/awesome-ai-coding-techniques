@@ -5148,7 +5148,7 @@
       "sources": [
         {
           "n": 1,
-          "role": "support",
+          "role": "coined",
           "quote": "We’ve been experimenting with a new process called Intent Review. For medium and high risk PRs, the agent guides the engineer through understanding how the change affects the system. The goal is comprehension, not approval.",
           "quoteLang": "en",
           "author": "Vinay Perneti and Emma Webb",
