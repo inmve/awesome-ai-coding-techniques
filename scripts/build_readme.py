@@ -52,19 +52,21 @@ def entry_lines(entry, by_id):
         sources.append(f"[{who}{when}]({source['url']})")
     if sources:
         lines.append(f"  Sources: {'; '.join(sources)}.")
-    roots = [by_id[r]["title"]["en"] for r in entry.get("rootsIn") or [] if r in by_id]
+    roots = []
+    for r in entry.get("rootsIn") or []:
+        if r in by_id:
+            root_date = entry_date(by_id[r], by_id)
+            roots.append(by_id[r]["title"]["en"] + (f" ({root_date[:4]})" if root_date else ""))
     if roots:
         lines.append(f"  Grew from: {', '.join(roots)}.")
-    descendants = [e["title"]["en"] for e in by_id.values() if entry["id"] in (e.get("rootsIn") or [])]
-    if descendants:
-        lines.append(f"  Led to: {', '.join(descendants)}.")
     return lines
 
 
 def main():
     data = json.loads((ROOT / "data/entries.json").read_text(encoding="utf-8"))
-    entries = data["entries"]
-    by_id = {e["id"]: e for e in entries}
+    by_id = {e["id"]: e for e in data["entries"]}
+    # older practices appear only as «Grew from» of an agent-era entry, not as entries of their own
+    entries = [e for e in data["entries"] if e.get("seededFrom") != "pre-llm"]
     llm_era_start = data["meta"]["llmEraStart"]
     stages = data["meta"]["stages"]
     groups = data["meta"]["groups"]

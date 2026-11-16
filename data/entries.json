@@ -217,49 +217,6 @@
       "group": null
     },
     {
-      "id": "dark-factory",
-      "stages": [],
-      "kind": "approach",
-      "title": {
-        "en": "Dark factory",
-        "ru": "Тёмная фабрика"
-      },
-      "aliases": {
-        "en": [],
-        "ru": []
-      },
-      "definition": {
-        "en": "An approach in which the development process works as a black box that turns specifications into software, and people do not write the code. [1]",
-        "ru": "Подход, при котором процесс разработки работает как чёрный ящик, превращающий спецификации в софт, и люди не пишут код. [1]"
-      },
-      "firstAppeared": {
-        "date": "2026-01-28",
-        "precision": "day",
-        "verified": false,
-        "note": "Dan Shapiro's six-level framework, popularized via Simon Willison, *The Five Levels: from Spicy Autocomplete to the Dark Factory* (Jan 28 2026)."
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "And your software process isn’t really a software process any more. It’s a black box that turns specs into software.",
-          "quoteLang": "en",
-          "author": "Dan Shapiro",
-          "work": null,
-          "url": "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/",
-          "published": "2026-01-23",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "glossary",
-      "opposites": [],
-      "rootsIn": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "harness-engineering",
       "stages": [
         "general"
@@ -487,12 +444,16 @@
         "ru": "Софтверная фабрика"
       },
       "aliases": {
-        "en": [],
-        "ru": []
+        "en": [
+          "Dark factory"
+        ],
+        "ru": [
+          "Тёмная фабрика"
+        ]
       },
       "definition": {
-        "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality. [1][2][3]",
-        "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы. [1][2][3]"
+        "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality. [1][2][3][4]",
+        "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы. [1][2][3][4]"
       },
       "firstAppeared": {
         "date": "2026-02-07",
@@ -534,6 +495,17 @@
           "work": null,
           "url": "https://addyosmani.com/blog/software-factories/",
           "published": "2026-07-20",
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 4,
+          "role": "support",
+          "quote": "And your software process isn’t really a software process any more. It’s a black box that turns specs into software.",
+          "quoteLang": "en",
+          "author": "Dan Shapiro",
+          "work": null,
+          "url": "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/",
+          "published": "2026-01-23",
           "checkedAt": "2026-11-15"
         }
       ],
@@ -2900,9 +2872,7 @@
         }
       ],
       "seededFrom": "pre-llm",
-      "opposites": [
-        "agile"
-      ],
+      "opposites": [],
       "origin": {
         "ru": "Возводится к статье Уинстона Ройса",
         "en": "Traced to Winston Royce's paper"
@@ -2971,57 +2941,6 @@
       "origin": {
         "ru": "Термин встречается у Грэди Буча, распространился через XP",
         "en": "The term appears in Grady Booch's work and spread through XP"
-      },
-      "group": null
-    },
-    {
-      "id": "extreme-programming",
-      "stages": [],
-      "title": {
-        "ru": "Экстремальное программирование",
-        "en": "Extreme Programming"
-      },
-      "aliases": {
-        "ru": [
-          "XP",
-          "Extreme Programming"
-        ],
-        "en": [
-          "XP"
-        ]
-      },
-      "definition": {
-        "ru": "Гибкая методология: парное программирование, тесты до кода, непрерывная интеграция, частые релизы. [1]",
-        "en": "An agile method: pair programming, tests before code, continuous integration, frequent releases. [1]"
-      },
-      "firstAppeared": {
-        "date": "1999-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Kent Beck, Extreme Programming Explained, 1999"
-      },
-      "kind": "approach",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "TDDing with coding agents keeps them on track, a failing test allows the bots to loop until it finds a working solution to a small increment of behaviour.",
-          "quoteLang": "en",
-          "author": "Benji Weber",
-          "work": null,
-          "url": "https://benjiweber.co.uk/blog/?p=2657",
-          "published": "2025-07-14",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Описана Кентом Беком в книге «Extreme Programming Explained»",
-        "en": "Described by Kent Beck in Extreme Programming Explained"
       },
       "group": null
     },
@@ -3133,109 +3052,6 @@
       "origin": {
         "ru": "Описан Эндрю Хантом и Дэвидом Томасом в книге «Программист-прагматик»",
         "en": "Described by Andrew Hunt and David Thomas in The Pragmatic Programmer"
-      },
-      "group": null
-    },
-    {
-      "id": "user-story",
-      "stages": [
-        "req-plan"
-      ],
-      "title": {
-        "ru": "Пользовательская история",
-        "en": "User story"
-      },
-      "aliases": {
-        "ru": [
-          "User story"
-        ],
-        "en": []
-      },
-      "definition": {
-        "ru": "Короткое описание требования от лица пользователя: кто, что хочет и зачем. [1]",
-        "en": "A short requirement written from the user's side: who, what they want, and why. [1]"
-      },
-      "firstAppeared": {
-        "date": "1999-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Extreme Programming, late 1990s"
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "support",
-          "quote": "User stories have three critical aspects. We can call these Card, Conversation, and Confirmation.",
-          "quoteLang": "en",
-          "author": "Ron Jeffries",
-          "work": null,
-          "url": "https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/",
-          "published": "2001-08-30",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Пришла из экстремального программирования",
-        "en": "Came from Extreme Programming"
-      },
-      "group": null
-    },
-    {
-      "id": "agile",
-      "stages": [],
-      "title": {
-        "ru": "Гибкая разработка",
-        "en": "Agile"
-      },
-      "aliases": {
-        "ru": [
-          "Agile",
-          "Эджайл"
-        ],
-        "en": [
-          "Agile software development"
-        ]
-      },
-      "definition": {
-        "ru": "Подход к разработке короткими итерациями с частой обратной связью вместо подробного плана наперёд. [1]",
-        "en": "Developing in short iterations with frequent feedback instead of a detailed upfront plan. [1]"
-      },
-      "firstAppeared": {
-        "date": "2001-02-01",
-        "precision": "month",
-        "verified": false,
-        "note": "Manifesto for Agile Software Development, Snowbird, Feb 2001"
-      },
-      "kind": "approach",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "Engineering speed and throughput is different now, so the way we plan sprints has changed.",
-          "quoteLang": "en",
-          "author": "Claude Code team director (page event summary names Fiona Fung)",
-          "work": null,
-          "url": "https://claude.com/de/resources/articles/running-an-ai-native-engineering-org",
-          "published": "2026-06-03",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [
-        "waterfall"
-      ],
-      "origin": {
-        "ru": "Закреплён в Манифесте гибкой разработки, подписанном в Сноуберде",
-        "en": "Set out in the Agile Manifesto, signed at Snowbird"
       },
       "group": null
     },
@@ -3506,46 +3322,6 @@
       "group": null
     },
     {
-      "id": "low-fidelity-wireframes",
-      "stages": [
-        "ui-proto"
-      ],
-      "title": {
-        "en": "Low-fidelity wireframes",
-        "ru": "Черновые вайрфреймы"
-      },
-      "aliases": {
-        "ru": [],
-        "en": []
-      },
-      "definition": {
-        "en": "The practice in which a screen layout is sketched roughly, without visual detail, before the interface is designed or built. [1]",
-        "ru": "Практика, при которой раскладку экрана набрасывают грубо, без визуальных деталей, до того как интерфейс проектируют или делают. [1]"
-      },
-      "firstAppeared": null,
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "Prototyping has come full circle. From Balsamiq’s intentional sketchiness → to Figma’s pixel-perfect fidelity → to ASCII’s structured minimalism.",
-          "quoteLang": "en",
-          "author": "Carlos Chinchilla",
-          "work": null,
-          "url": "https://medium.com/@calufa/ascii-driven-development-850f66661351",
-          "published": "2025-12-25",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": null,
-      "group": null
-    },
-    {
       "id": "plan-and-progress-file",
       "stages": [
         "general"
@@ -3787,7 +3563,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "pull-request"
+      ],
       "sources": [
         {
           "n": 1,
@@ -4893,7 +4671,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "pull-request"
+      ],
       "sources": [
         {
           "n": 1,
@@ -5758,7 +5538,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "pull-request"
+      ],
       "sources": [
         {
           "n": 1,
