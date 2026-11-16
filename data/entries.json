@@ -255,9 +255,7 @@
       ],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [
-        "software-factory-1968"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -493,8 +491,8 @@
         "ru": []
       },
       "definition": {
-        "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality. [1][2]",
-        "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы. [1][2]"
+        "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality. [1][2][3]",
+        "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2026-02-07",
@@ -526,14 +524,26 @@
           "url": "https://openai.com/index/harness-engineering/",
           "published": "2026-02-11",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "This idea of the software factory is a term that dates back to Bob Bemer’s paper, “The economics of program production,” given in 1968.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": null,
+          "url": "https://addyosmani.com/blog/software-factories/",
+          "published": "2026-07-20",
+          "checkedAt": "2026-11-15"
         }
       ],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [
-        "software-factory-1968"
-      ],
-      "origin": null,
+      "rootsIn": [],
+      "origin": {
+        "en": "The name goes back to Bob Bemer's 1968 paper «The economics of program production», where it meant standardized, tool-supported production of software by people",
+        "ru": "Название восходит к докладу Боба Бемера «The economics of program production» 1968 года, где так называлось стандартизованное производство софта людьми с общими инструментами"
+      },
       "group": null
     },
     {
@@ -3393,52 +3403,6 @@
       "origin": {
         "ru": "Введён GitHub",
         "en": "Introduced by GitHub"
-      },
-      "group": null
-    },
-    {
-      "id": "software-factory-1968",
-      "stages": [],
-      "title": {
-        "en": "Software factory (1968)",
-        "ru": "Программная фабрика (1968)"
-      },
-      "aliases": {
-        "ru": [],
-        "en": []
-      },
-      "definition": {
-        "en": "An approach in which software is produced the way industry produces goods, with standard tools and a managed process. [1]",
-        "ru": "Подход, при котором софт производят так, как промышленность производит товары: со стандартными инструментами и управляемым процессом. [1]"
-      },
-      "firstAppeared": {
-        "date": "1968-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Year stated by Addy Osmani (2026): Bob Bemer, «The economics of program production», 1968"
-      },
-      "kind": "approach",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "This idea of the software factory is a term that dates back to Bob Bemer’s paper, “The economics of program production,” given in 1968.",
-          "quoteLang": "en",
-          "author": "Addy Osmani",
-          "work": null,
-          "url": "https://addyosmani.com/blog/software-factories/",
-          "published": "2026-07-20",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "en": "Proposed by Bob Bemer in «The economics of program production»",
-        "ru": "Предложил Боб Бемер в докладе «The economics of program production»"
       },
       "group": null
     },

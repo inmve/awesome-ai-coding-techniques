@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-142 entries, 267 sources, 257 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+141 entries, 267 sources, 257 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -36,11 +36,9 @@ Inside every section the newest entries come first; practices from before coding
 ## Approaches
 
 - **Software factory** (2026). An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality.
-  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
-  Grew from: Software factory (1968).
+  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
-  Grew from: Software factory (1968).
 - **Spec-driven development** (2025). An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it.
   Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt); [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
   Grew from: Waterfall.
@@ -53,9 +51,6 @@ Inside every section the newest entries come first; practices from before coding
 - **Waterfall** (1970). A development model where stages run strictly in order: requirements, design, code, testing, deployment.
   Sources: [Marc Brooker, 2026-04-09](https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec).
   Led to: Spec-driven development.
-- **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
-  Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
-  Led to: Dark factory, Software factory.
 
 ## Planning
 
