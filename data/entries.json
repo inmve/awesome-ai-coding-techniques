@@ -1534,9 +1534,7 @@
       ],
       "seededFrom": "techniques+example",
       "opposites": [],
-      "rootsIn": [
-        "feature-branch"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": "sessions"
     },
@@ -1635,8 +1633,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer picks established libraries that existed before the model's training cutoff. [1]",
-        "ru": "Практика, при которой выбирают устоявшиеся библиотеки, существовавшие до даты, на которой заканчиваются обучающие данные модели. [1]"
+        "en": "The practice in which the developer picks stable libraries that are popular enough for many examples of them to be in the model's training data. [1][2]",
+        "ru": "Практика, при которой разработчик выбирает стабильные библиотеки, достаточно популярные, чтобы в обучающих данных модели было много примеров их использования. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1652,6 +1650,17 @@
           "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs",
           "published": "2025-03-11",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 2,
+          "role": "update",
+          "quote": "I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach, but in practice they don’t seem to be affecting my technology choices in that way at all.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": "Perhaps not Boring Technology after all",
+          "url": "https://simonwillison.net/2026/Mar/9/not-so-boring/",
+          "published": "2026-03-09",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "techniques",
@@ -2811,13 +2820,13 @@
         {
           "n": 1,
           "role": "relevance",
-          "quote": "Develop simple code that assembles small components into a logical whole, write good documentation, and automate common tasks using standard tools.",
+          "quote": "The funny thing is that in the end, we arrived at a simple conclusion: Write good code. Develop simple code that assembles small components into a logical whole, write good documentation, and automate common tasks using standard tools.",
           "quoteLang": "en",
-          "author": "Erick",
+          "author": "Erick Matsen",
           "work": "Agentic coding from first principles",
           "url": "https://matsen.fredhutch.org/general/2025/10/30/agentic-coding-principles.html",
           "published": "2025-10-30",
-          "checkedAt": "2026-11-15"
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
@@ -2845,8 +2854,8 @@
         ]
       },
       "definition": {
-        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1]",
-        "en": "A development model where stages run strictly in order: requirements, design, code, testing, deployment. [1]"
+        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1][2]",
+        "en": "A development model where stages run strictly in order: requirements, design, code, testing, deployment. [1][2]"
       },
       "firstAppeared": {
         "date": "1970-01-01",
@@ -2861,6 +2870,17 @@
       "sources": [
         {
           "n": 1,
+          "role": "relevance",
+          "quote": "I’ve heard some people claim this is a return to waterfall — not unreasonably — but I believe this time is different.",
+          "quoteLang": "en",
+          "author": "Liu Shangqi",
+          "work": "Spec-driven development: Unpacking one of 2025’s key new AI-assisted engineering practices",
+          "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices",
+          "published": "2025-12-04",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
           "role": "relevance",
           "quote": "Specifications aren’t up-front designs because you don’t need to, and probably shouldn’t, develop the entire specification upfront.",
           "quoteLang": "en",
@@ -2915,14 +2935,14 @@
       "sources": [
         {
           "n": 1,
-          "role": "support",
-          "quote": "The repository operates with minimal blocking merge gates. Pull requests are short-lived.",
+          "role": "relevance",
+          "quote": "To address this, I built a continuous integration pipeline and implemented stricter enforcement that allowed Claude to better test its work so that new commits can’t break existing code.",
           "quoteLang": "en",
-          "author": "Ryan Lopopolo",
-          "work": "Harness engineering: leveraging Codex in an agent-first world",
-          "url": "https://openai.com/index/harness-engineering/",
-          "published": "2026-02-11",
-          "checkedAt": "2026-11-15"
+          "author": "Nicholas Carlini",
+          "work": "Building a C compiler with parallel Claudes",
+          "url": "https://www.anthropic.com/engineering/building-c-compiler",
+          "published": "2026-02-05",
+          "checkedAt": "2026-11-16"
         },
         {
           "n": 2,
@@ -3074,8 +3094,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой сначала пишется падающий тест, затем минимальный код, чтобы он прошёл, затем рефакторинг. [1]",
-        "en": "Write a failing test first, then the minimal code to pass it, then refactor. [1]"
+        "ru": "Практика, при которой сначала пишется падающий тест, затем минимальный код, чтобы он прошёл, затем рефакторинг. [1][2]",
+        "en": "Write a failing test first, then the minimal code to pass it, then refactor. [1][2]"
       },
       "firstAppeared": {
         "date": "2002-01-01",
@@ -3091,9 +3111,20 @@
         {
           "n": 1,
           "role": "relevance",
+          "quote": "The most disciplined form of TDD is test-first development. You write the automated tests first, confirm that they fail, then iterate on the implementation until the tests pass. This turns out to be a fantastic fit for coding agents.",
+          "quoteLang": "en",
+          "author": "Simon Willison",
+          "work": "Red/green TDD",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/",
+          "published": null,
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "relevance",
           "quote": "When working on a new feature or a bug fix, you always write a failing test or series of tests first and then wait for me to review them.",
           "quoteLang": "en",
-          "author": "thoughtbot (author name not shown in the saved text)",
+          "author": "Louis Antonopoulos",
           "work": "Prevent the Robocalypse with Claude Code and TDD",
           "url": "https://thoughtbot.com/blog/prevent-the-robocalypse-with-tdd",
           "published": "2026-01-12",
@@ -3124,8 +3155,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности. [1]",
-        "en": "A separate version-control branch per feature, merged into the main branch when ready. [1]"
+        "ru": "Отдельная ветка в системе контроля версий на каждую фичу, которая сливается в основную после готовности. [1][2]",
+        "en": "A separate version-control branch per feature, merged into the main branch when ready. [1][2]"
       },
       "firstAppeared": {
         "date": "2005-01-01",
@@ -3140,6 +3171,17 @@
       "sources": [
         {
           "n": 1,
+          "role": "relevance",
+          "quote": "Each session had its own copy of the repository, its own processes and its own branch.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Claude Code in the cloud: a field guide to cloud sessions",
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "published": "2026-10-06",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
           "role": "support",
           "quote": "A feature branch is a source code branching pattern where a developer opens a branch when she starts working on a new feature.",
           "quoteLang": "en",
@@ -3196,7 +3238,7 @@
           "role": "relevance",
           "quote": "Reviewing your own pull request isn’t optional when agents are involved.",
           "quoteLang": "en",
-          "author": "GitHub Blog (author name not shown in the saved text)",
+          "author": "Andrea Griffiths",
           "work": "Agent pull requests are everywhere. Here's how to review them.",
           "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
           "published": "2026-05-07",
@@ -3236,8 +3278,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1]",
-        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1]"
+        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1][2]",
+        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2]"
       },
       "firstAppeared": null,
       "kind": "practice",
@@ -3247,6 +3289,17 @@
       "sources": [
         {
           "n": 1,
+          "role": "relevance",
+          "quote": "If a codemod can make the routine change, use the agent to help write and check it. Give agents the exception queue.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Brownfield Agentic Engineering",
+          "url": "https://addyosmani.com/blog/brownfield-agentic-engineering/",
+          "published": "2026-09-14",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
           "role": "relevance",
           "quote": "A codemod is a program that operates on a codebase, and when you give an AI agent the ability to write and execute them, these platform-level tasks fall below the high-water mark of AI capabilities.",
           "quoteLang": "en",
@@ -3304,13 +3357,13 @@
         {
           "n": 2,
           "role": "relevance",
-          "quote": "I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach, but in practice they don’t seem to be affecting my technology choices in that way at all.",
+          "quote": "I like applying the principles of boring technology—innovate on your project’s unique selling points, stick with tried and tested solutions for everything else.",
           "quoteLang": "en",
           "author": "Simon Willison",
-          "work": "Perhaps not Boring Technology after all",
-          "url": "https://simonwillison.net/2026/Mar/9/not-so-boring/",
-          "published": "2026-03-09",
-          "checkedAt": "2026-11-15"
+          "work": "Here’s how I use LLMs to help me write code",
+          "url": "https://simonwillison.net/2025/Mar/11/using-llms-for-code/",
+          "published": "2025-03-11",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
@@ -4631,7 +4684,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "retrospective"
+      ],
       "sources": [
         {
           "n": 1,
@@ -6923,7 +6978,7 @@
           "role": "relevance",
           "quote": "Team retrospectives examine what went well, what caused difficulty, and what to improve. Session logs give us a detailed record for a similar process around our agents.",
           "quoteLang": "en",
-          "author": "Not shown in saved page text (Faros AI company blog)",
+          "author": "Ron Meldiner",
           "work": "How to use AI session logs to improve coding agent workflows",
           "url": "https://www.faros.ai/blog/how-to-use-ai-session-logs-to-improve-agent-workflows",
           "published": "2026-11-04",
@@ -7001,7 +7056,12 @@
         "en": "The practice in which several independent teams build separate implementations of one specification, and the versions are compared or run together to catch faults one version alone would miss. [1]",
         "ru": "Практика, при которой несколько независимых команд пишут отдельные реализации одной спецификации, а версии сравниваются или работают вместе, чтобы поймать ошибки, которые одна версия пропустила бы. [1]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "1978-01-01",
+        "precision": "year",
+        "verified": true,
+        "note": "year stated on the source page"
+      },
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -7020,7 +7080,10 @@
       ],
       "seededFrom": "pre-llm",
       "opposites": [],
-      "origin": null,
+      "origin": {
+        "en": "Proposed by Liming Chen and Algirdas Avizienis in 1978 (per Ron, Baudry and Monperrus).",
+        "ru": "Предложено Лимином Чэнем и Альгирдасом Авиженисом в 1978 году (по Рону, Бодри и Монперрюсу)."
+      },
       "group": null
     },
     {
@@ -7174,8 +7237,8 @@
           "role": "relevance",
           "quote": "Code style rules, in particular, should live in a formatter or linter rather than in docs. The same rule applies to LLM safeguards: it’s better to move a rule into a formatter config or a custom linter rule than to add it to AGENTS.md.",
           "quoteLang": "en",
-          "author": "Evil Martians (team blog; author not named on the page)",
-          "work": "Stop writing rules in AGENTS.md: use agent hooks and nano-staged instead—Martian Chronicles, Evil Martians’ team blog",
+          "author": "Andrey Sitnik and Travis Turner",
+          "work": "Stop writing rules in AGENTS.md: use agent hooks and nano-staged instead",
           "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
           "published": "2026-05-26",
           "checkedAt": "2026-11-16"
