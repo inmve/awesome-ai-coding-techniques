@@ -3106,10 +3106,15 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1][2]",
-        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2]"
+        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1][2][3]",
+        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2][3]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "2008-12-01",
+        "precision": "year",
+        "verified": true,
+        "note": "the source page says «circa December 2008»; approx"
+      },
       "kind": "practice",
       "coinedHere": false,
       "seeAlso": [],
@@ -3136,11 +3141,25 @@
           "url": "https://codegen.com/swe-agents-are-better-with-codemods/",
           "published": "2025-03-01",
           "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Codemod is a tool/library to assist you with large-scale codebase refactors that can be partially automated but still require human oversight and occasional intervention. Codemod was developed at Facebook and released as open source.",
+          "quoteLang": "en",
+          "author": "Justin Rosenstein",
+          "work": "codemod",
+          "url": "https://github.com/facebookarchive/codemod",
+          "published": "2008-01-01",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
       "opposites": [],
-      "origin": null,
+      "origin": {
+        "en": "The tool codemod was announced by Justin Rosenstein at Facebook",
+        "ru": "Инструмент codemod анонсировал Джастин Розенштейн в Facebook"
+      },
       "group": null
     },
     {
@@ -6968,14 +6987,14 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice. [1]",
-        "ru": "Практика, при которой разработчик сначала строит небольшой сквозной срез функциональности через все слои системы, а затем наращивает систему от этого работающего среза. [1]"
+        "en": "The practice in which a developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice. [1][2]",
+        "ru": "Практика, при которой разработчик сначала строит небольшой сквозной срез функциональности через все слои системы, а затем наращивает систему от этого работающего среза. [1][2]"
       },
       "firstAppeared": {
         "date": "1999-01-01",
         "precision": "year",
-        "verified": false,
-        "note": "The Pragmatic Programmer, 1999 (the book named in the origin line); the year is not on the source page"
+        "verified": true,
+        "note": "year stated on the source page"
       },
       "coinedHere": false,
       "seeAlso": [],
@@ -6990,6 +7009,17 @@
           "work": "Tracer Bullets: Keeping AI Slop Under Control",
           "url": "https://www.aihero.dev/tracer-bullets",
           "published": "2026-01-22",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Central to tracer bullet development is the idea of a skeleton application, in which one thin line of execution goes end to end.",
+          "quoteLang": "en",
+          "author": "Andy Hunt and Dave Thomas",
+          "work": "Tracer Bullets and Prototypes",
+          "url": "https://www.artima.com/articles/tracer-bullets-and-prototypes",
+          "published": "1999-01-01",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -7056,10 +7086,15 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the reviewer sits with the author of a change, and the author talks through its intent and structure. [1]",
-        "ru": "Практика, при которой ревьюер садится рядом с автором изменения, и автор рассказывает о его замысле и устройстве. [1]"
+        "en": "The practice in which the reviewer sits with the author of a change, and the author talks through its intent and structure. [1][2]",
+        "ru": "Практика, при которой ревьюер садится рядом с автором изменения, и автор рассказывает о его замысле и устройстве. [1][2]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "1974-10-01",
+        "precision": "month",
+        "verified": true,
+        "note": "year stated on the source page"
+      },
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -7074,11 +7109,25 @@
           "url": "https://chris-hughes10.github.io/writing/pull-requests-were-never-about-the-code/index.html",
           "published": "2026-02-22",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "A structured walk-through is a review of a developer's work (program design, code, documentation, etc.) by fellow project members invited by the developer.",
+          "quoteLang": "en",
+          "author": "IBM",
+          "work": "Improved Programming Technologies: An Overview",
+          "url": "https://bitsavers.org/pdf/ibm/generalInfo/GC20-1850-0_Improved_Programming_Technologies_-_An_Overview_1st_ed_197410.pdf",
+          "published": "1974-10-01",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
       "opposites": [],
-      "origin": null,
+      "origin": {
+        "en": "Described as the «structured walk-through» in an IBM overview of programming technologies (earliest source found)",
+        "ru": "Описан как «structured walk-through» в обзоре IBM о технологиях программирования (самый ранний найденный источник)"
+      },
       "group": null
     },
     {
@@ -7096,10 +7145,15 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1]",
-        "ru": "Практика, при которой команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1]"
+        "en": "The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1][2]",
+        "ru": "Практика, при которой команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1][2]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "1978-07-26",
+        "precision": "year",
+        "verified": true,
+        "note": "year stated on the source page"
+      },
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -7114,11 +7168,25 @@
           "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
           "published": "2026-05-26",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Lint is a command which examines C source programs, detecting a number of bugs and obscurities.",
+          "quoteLang": "en",
+          "author": "S. C. Johnson",
+          "work": "Lint, a C Program Checker",
+          "url": "https://www.silicon-russia.com/wp-content/uploads/2019/02/lint_1978_stephen_johnson.pdf",
+          "published": "1978-01-01",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
       "opposites": [],
-      "origin": null,
+      "origin": {
+        "en": "The checker lint was described by S. C. Johnson at Bell Laboratories",
+        "ru": "Программу проверки lint описал С. Джонсон в Bell Laboratories"
+      },
       "group": null
     },
     {
@@ -7141,14 +7209,14 @@
         ]
       },
       "definition": {
-        "en": "The practice in which a change is released behind a switch that turns it on for some users or for all, without a new release. [1]",
-        "ru": "Практика, при которой изменение выпускают за переключателем, который включает его для части пользователей или для всех без нового релиза. [1]"
+        "en": "The practice in which a change is released behind a switch that turns it on for some users or for all, without a new release. [1][2]",
+        "ru": "Практика, при которой изменение выпускают за переключателем, который включает его для части пользователей или для всех без нового релиза. [1][2]"
       },
       "firstAppeared": {
-        "date": "2009-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Approximate: Flickr, Flipping Out, 2009"
+        "date": "2009-12-02",
+        "precision": "day",
+        "verified": true,
+        "note": "year stated on the source page"
       },
       "coinedHere": false,
       "seeAlso": [],
@@ -7163,12 +7231,26 @@
           "url": "https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy",
           "published": "2026-07-16",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Flags allow us to restrict features to certain environments, while still using the same code base on all servers.",
+          "quoteLang": "en",
+          "author": "Ross Harmes",
+          "work": "Flipping Out",
+          "url": "https://code.flickr.net/2009/12/02/flipping-out/",
+          "published": "2009-12-02",
+          "checkedAt": "2026-11-16"
         }
       ],
       "seededFrom": "pre-llm",
       "opposites": [],
       "rootsIn": [],
-      "origin": null,
+      "origin": {
+        "en": "Described by Ross Harmes on the Flickr engineering blog (earliest source found)",
+        "ru": "Описаны Россом Хармсом в инженерном блоге Flickr (самый ранний найденный источник)"
+      },
       "group": null
     }
   ]
