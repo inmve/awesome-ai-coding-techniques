@@ -466,12 +466,7 @@
         "en": "An approach in which a team agrees that people neither write nor review the code: the team states the intent, and evals control the quality. [1][2][3][4]",
         "ru": "Подход, при котором команда договаривается, что люди не пишут и не ревьюят код: команда формулирует намерение, а качество контролируют эвалы. [1][2][3][4]"
       },
-      "firstAppeared": {
-        "date": "2026-02-07",
-        "precision": "day",
-        "verified": false,
-        "note": "Simon Willison, *How StrongDM's AI team build serious software without even looking at the code* (Feb 7 2026)."
-      },
+      "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
       "sources": [
