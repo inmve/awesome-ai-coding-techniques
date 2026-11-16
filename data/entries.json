@@ -255,7 +255,9 @@
       ],
       "seededFrom": "glossary",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "software-factory-1968"
+      ],
       "origin": null,
       "group": null
     },
@@ -3746,7 +3748,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "retrospective"
+      ],
       "sources": [
         {
           "n": 1,
@@ -4209,7 +4213,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "architecture-decision-records"
+      ],
       "sources": [
         {
           "n": 1,
@@ -4311,7 +4317,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "n-version-programming"
+      ],
       "sources": [
         {
           "n": 1,
@@ -4453,7 +4461,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "tracer-bullets"
+      ],
       "sources": [
         {
           "n": 1,
@@ -5323,7 +5333,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "mutation-testing"
+      ],
       "sources": [
         {
           "n": 1,
@@ -5414,7 +5426,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "code-walkthrough"
+      ],
       "sources": [
         {
           "n": 1,
@@ -5494,7 +5508,9 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "linters-over-documentation"
+      ],
       "sources": [
         {
           "n": 1,
@@ -7129,6 +7145,297 @@
         }
       ],
       "seededFrom": "run-5",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "retrospective",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Retrospective",
+        "ru": "Ретроспектива"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team meets at regular intervals to examine what went well, what caused difficulty and what to change in how it works. [1]",
+        "ru": "Практика, при которой команда регулярно собирается и разбирает, что прошло хорошо, что вызвало трудности и что изменить в своей работе. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "Team retrospectives examine what went well, what caused difficulty, and what to improve. Session logs give us a detailed record for a similar process around our agents.",
+          "quoteLang": "en",
+          "author": "Not shown in saved page text (Faros AI company blog)",
+          "work": null,
+          "url": "https://www.faros.ai/blog/how-to-use-ai-session-logs-to-improve-agent-workflows",
+          "published": "2026-11-04",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "architecture-decision-records",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Architecture Decision Records",
+        "ru": "Записи архитектурных решений (ADR)"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team records each significant architectural decision, its context and consequences in a short document kept with the code, so later developers do not undo it unknowingly. [1]",
+        "ru": "Практика, при которой команда записывает каждое значимое архитектурное решение, его контекст и последствия в короткий документ рядом с кодом, чтобы следующие разработчики не отменили его по незнанию. [1]"
+      },
+      "firstAppeared": {
+        "date": "2011-01-01",
+        "precision": "year",
+        "verified": true,
+        "note": "year stated on the source page"
+      },
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "The point of an ADR was always to stop the next person from undoing a decision they didn’t know about. The next person is now, more often than not, an agent.",
+          "quoteLang": "en",
+          "author": "Edy Silva",
+          "work": null,
+          "url": "https://blog.codeminer42.com/stale-docs-are-prompt-injection-you-wrote-yourself/",
+          "published": "2026-10-16",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "en": "Proposed by Michael Nygard in 2011 (per Edy Silva, Codeminer42).",
+        "ru": "Предложены Майклом Найгардом в 2011 году (по Эди Силве, Codeminer42)."
+      },
+      "group": null
+    },
+    {
+      "id": "n-version-programming",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "N-version programming",
+        "ru": "N-версионное программирование"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which several independent teams build separate implementations of one specification, and the versions are compared or run together to catch faults one version alone would miss. [1]",
+        "ru": "Практика, при которой несколько независимых команд пишут отдельные реализации одной спецификации, а версии сравниваются или работают вместе, чтобы поймать ошибки, которые одна версия пропустила бы. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "This paper revisits the classical N-Version Programming literature in the modern agentic setting. We design and perform a reproduction of the original Knight–Leveson experiment with AI coding agents.",
+          "quoteLang": "en",
+          "author": "Javier Ron, Benoit Baudry, Martin Monperrus",
+          "work": null,
+          "url": "https://arxiv.org/pdf/2606.20158",
+          "published": "2026-06-18",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "tracer-bullets",
+      "stages": [
+        "req-plan"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Tracer bullets",
+        "ru": "Трассирующие пули"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice. [1]",
+        "ru": "Практика, при которой разработчик сначала строит небольшой сквозной срез функциональности через все слои системы, а затем наращивает систему от этого работающего среза. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "The concept of a tracer bullet comes from The Pragmatic Programmer. It's a small, end-to-end slice of functionality that touches all the layers of your system at once.",
+          "quoteLang": "en",
+          "author": "Matt Pocock",
+          "work": null,
+          "url": "https://www.aihero.dev/tracer-bullets",
+          "published": "2026-01-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "en": "From The Pragmatic Programmer (per Matt Pocock).",
+        "ru": "Из книги The Pragmatic Programmer (по Мэтту Пококу)."
+      },
+      "group": null
+    },
+    {
+      "id": "mutation-testing",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Mutation testing",
+        "ru": "Мутационное тестирование"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which small deliberate faults are introduced into the code to check whether the test suite detects them, measuring how well the tests guard the behavior. [1]",
+        "ru": "Практика, при которой в код вносят небольшие намеренные ошибки и проверяют, ловят ли их тесты, чтобы оценить, насколько тесты защищают поведение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "Mutation testing is an old technique. What's interesting here is that the AI can create more realistic, plausible mutations, much cheaper (in time, money, tears, and sweat) than a human developer.",
+          "quoteLang": "en",
+          "author": "Senko Rašić",
+          "work": null,
+          "url": "https://blog.senko.net/improving-ai-generated-tests-using-mutation-testing",
+          "published": "2026-03-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "code-walkthrough",
+      "stages": [
+        "code-review"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Code walkthrough",
+        "ru": "Разбор изменения с автором"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which the author of a change sits with the reviewer and talks through its intent and reasoning, so the review covers why the change was made, not only the code. [1]",
+        "ru": "Практика, при которой автор изменения садится с ревьюером и проговаривает замысел и ход мысли, чтобы ревью касалось причины изменения, а не только кода. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "Now, with agents producing code at a pace that makes every PR feel like one of those massive ones, the approach I used — sitting down and talking it through — clearly can't happen for every change. But the principle behind it can.",
+          "quoteLang": "en",
+          "author": "Chris Hughes",
+          "work": null,
+          "url": "https://chris-hughes10.github.io/writing/pull-requests-were-never-about-the-code/index.html",
+          "published": "2026-02-22",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "linters-over-documentation",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Rules in linters, not docs",
+        "ru": "Правила в линтере, а не в документации"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1]",
+        "ru": "Практика, при которой команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "relevance",
+          "quote": "Code style rules, in particular, should live in a formatter or linter rather than in docs. The same rule applies to LLM safeguards: it’s better to move a rule into a formatter config or a custom linter rule than to add it to AGENTS.md.",
+          "quoteLang": "en",
+          "author": "Evil Martians (team blog; author not named on the page)",
+          "work": null,
+          "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
+          "published": "2026-05-26",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
       "opposites": [],
       "origin": null,
       "group": null

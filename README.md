@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-135 entries, 260 sources, 250 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+142 entries, 267 sources, 257 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -30,6 +30,7 @@ Inside every section the newest entries come first; practices from before coding
 - [Across stages: Models and budget](#across-stages-models-and-budget)
 - [Across stages: The human's part](#across-stages-the-humans-part)
 - [Teams and projects](#teams-and-projects)
+- [Before coding agents](#before-coding-agents)
 - [Across stages: other](#across-stages-other)
 
 ## Approaches
@@ -39,6 +40,7 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Software factory (1968).
 - **Dark factory** (2026). An approach in which the development process works as a black box that turns specifications into software, and people do not write the code.
   Sources: [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
+  Grew from: Software factory (1968).
 - **Spec-driven development** (2025). An approach in which the specification is the source of truth: the developer edits the specification, and the agent generates the code from it.
   Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Anton Zhiyanov](https://antonz.org/write-code/#:~:text=If%2C%20given%20the%20prompt%2C%20AI%20does%20the%20job%20perfectly%20on%20first%20or%20second%20iteration%20%E2%80%94%20fine.%20Otherwise%2C%20stop%20refining%20the%20prompt); [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=Here's%20a%20recent%20example); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
   Grew from: Waterfall.
@@ -53,7 +55,7 @@ Inside every section the newest entries come first; practices from before coding
   Led to: Spec-driven development.
 - **Software factory (1968)**. An approach in which software is produced the way industry produces goods, with standard tools and a managed process.
   Sources: [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/).
-  Led to: Software factory.
+  Led to: Dark factory, Software factory.
 
 ## Planning
 
@@ -70,6 +72,10 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Choose boring technology.
 - **Vertical slices in agent work plans**. The practice in which the agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work.
   Sources: [shinpr](https://github.com/shinpr/claude-code-workflows); [Dex](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md).
+  Grew from: Tracer bullets.
+- **Tracer bullets**. The practice in which a developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice.
+  Sources: [Matt Pocock, 2026-01-22](https://www.aihero.dev/tracer-bullets).
+  Led to: Vertical slices in agent work plans.
 - **Choose boring technology** (2015). The practice in which a team spends a small, fixed number of «innovation tokens» on new technologies and uses well-known ones for everything else.
   Sources: [Dan McKinley, 2015-03-30](https://mcfunley.com/choose-boring-technology); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
   Led to: Stable libraries.
@@ -132,6 +138,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Matteo Vaccari, 2026-11-11](https://martinfowler.com/articles/tests-as-data.html).
 - **Mutation testing of agent-written tests** (2026). The practice in which faults are injected into production code, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message.
   Sources: [Matteo Vaccari, 2026-11-11](https://martinfowler.com/articles/tests-as-data.html).
+  Grew from: Mutation testing.
 - **Read-only database for the agent** (2026). The practice in which the agent has access to a read-only copy of the database and validates its query changes there instead of guessing their effect.
   Sources: [Scott Cooper, 2026-11-03](https://blog.sentry.io/performance-wins-traces-coding-agent/).
 - **Before-and-after recording of a fix** (2026). The practice in which, for a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the before and after; the team keeps the instructions for this in a skill.
@@ -151,6 +158,9 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Test-driven development.
 - **Manual verification of agent code** (2025). The practice in which the developer runs agent-written code and confirms that it works, without relying on the agent's own report about tests.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource).
+- **Mutation testing**. The practice in which small deliberate faults are introduced into the code to check whether the test suite detects them, measuring how well the tests guard the behavior.
+  Sources: [Senko Rašić, 2026-03-22](https://blog.senko.net/improving-ai-generated-tests-using-mutation-testing).
+  Led to: Mutation testing of agent-written tests.
 - **Test-driven development** (2002). Write a failing test first, then the minimal code to pass it, then refactor.
   Sources: [thoughtbot (author name not shown in the saved text), 2026-01-12](https://thoughtbot.com/blog/prevent-the-robocalypse-with-tdd).
   Led to: Tests before agent code.
@@ -176,6 +186,9 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=I%20manually%20review%20all); [Justin Paul, 2026-07-30](https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/).
 - **Subagent verification**. The practice in which the agent starts subagents to verify details or to investigate separate questions.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents).
+- **Code walkthrough**. The practice in which the author of a change sits with the reviewer and talks through its intent and reasoning, so the review covers why the change was made, not only the code.
+  Sources: [Chris Hughes, 2026-02-22](https://chris-hughes10.github.io/writing/pull-requests-were-never-about-the-code/index.html).
+  Led to: Intent Review.
 - **Pull request** (2008). A request to merge changes that hosts the discussion and review.
   Sources: [GitHub Blog (author name not shown in the saved text), 2026-05-07](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/); [GitHub](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results).
 
@@ -208,6 +221,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Przemek, 2026-09-23](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/); [FerroxLabs](https://github.com/FerroxLabs/agents-md).
 - **Smallest-scope agent control** (2026). The practice in which a team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
+  Grew from: Rules in linters, not docs.
 - **Regular audit of the agent setup** (2026). The practice in which, every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true.
   Sources: [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
 - **Context reset between tasks** (2026). The practice in which the agent's context is cleared before an unrelated task begins.
@@ -228,6 +242,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [.txt, 2026-04-29](https://www.thetypicalset.com/blog/thoughts-on-coding-agents).
 - **Repository knowledge as the system of record** (2026). The practice in which decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [shinpr](https://github.com/shinpr/claude-code-workflows); [Shashank Mishra, 2026-07-13](https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons).
+  Grew from: Architecture Decision Records.
 - **Harness engineering** (2026). The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again.
   Sources: [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 - **Evals for agent instructions** (2026). The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement.
@@ -238,6 +253,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/); [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [rberg27](https://github.com/rberg27/doom-coding).
 - **Agent session log review** (2025). The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response.
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [OpenAI](https://developers.openai.com/codex/learn/best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+  Grew from: Retrospective.
 - **Context priming with code** (2025). The practice in which a session starts by placing existing code into the context, and changes are made from there.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices).
 - **Documentation for new libraries** (2025). The practice in which the agent is given current documentation and examples for a library that is missing from the model's training data.
@@ -270,6 +286,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [Harper Reed, 2026-09-22](https://harper.blog/2026/09/22/break-away/); [crawshaw, 2026-02-08](https://crawshaw.io/blog/eight-more-months-of-agents).
 - **Parallel attempts** (2025). The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results.
   Sources: [Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli, 2025-12-02](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
+  Grew from: N-version programming.
 - **Asynchronous agent work** (2025). The practice in which the agent works on a task while the developer is busy with something else.
   Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster); [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
 - **Permission-free mode** (2025). The practice in which permission prompts are switched off for tasks whose changes the developer would accept anyway.
@@ -364,8 +381,24 @@ Rules that engineering teams and open-source projects set for work done with age
   Sources: [Tyson Singer](https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/).
 - **Intent Review**. The practice in which, for medium- and high-risk pull requests, an agent guides the engineer through how the change affects the system, with understanding of the change, not approval, as the goal.
   Sources: [Vinay Perneti and Emma Webb](https://www.augmentcode.com/downloads/state-of-ai-native-engineering-2026.pdf).
+  Grew from: Code walkthrough.
 - **Spec walkthrough with the reviewer**. The practice in which, before the agent writes code, the author walks the future pull request reviewer through the product and technical specs.
   Sources: [Dex](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md).
+
+## Before coding agents
+
+- **Retrospective**. The practice in which a team meets at regular intervals to examine what went well, what caused difficulty and what to change in how it works.
+  Sources: [Not shown in saved page text (Faros AI company blog), 2026-11-04](https://www.faros.ai/blog/how-to-use-ai-session-logs-to-improve-agent-workflows).
+  Led to: Agent session log review.
+- **N-version programming**. The practice in which several independent teams build separate implementations of one specification, and the versions are compared or run together to catch faults one version alone would miss.
+  Sources: [Javier Ron, Benoit Baudry, Martin Monperrus, 2026-06-18](https://arxiv.org/pdf/2606.20158).
+  Led to: Parallel attempts.
+- **Rules in linters, not docs**. The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation.
+  Sources: [Evil Martians (team blog; author not named on the page), 2026-05-26](https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead).
+  Led to: Smallest-scope agent control.
+- **Architecture Decision Records** (2011). The practice in which a team records each significant architectural decision, its context and consequences in a short document kept with the code, so later developers do not undo it unknowingly.
+  Sources: [Edy Silva, 2026-10-16](https://blog.codeminer42.com/stale-docs-are-prompt-injection-you-wrote-yourself/).
+  Led to: Repository knowledge as the system of record.
 
 ## Across stages: other
 
