@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-116 entries, 232 sources, 232 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+126 entries, 248 sources, 248 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -75,6 +75,8 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Scott Cooper, 2026-11-03](https://blog.sentry.io/performance-wins-traces-coding-agent/); [Scott Cooper, 2026-11-03](https://blog.sentry.io/performance-wins-traces-coding-agent/).
 - **Hill climbing on a metric** (2026). The practice in which an agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves.
   Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/); [Alberto Gimeno, 2026-09-23](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/).
+- **Codebase audit with the agent** (2026). The practice in which the developer asks the agent to audit the codebase for one named problem and talks the findings through with it until a concrete change is clear.
+  Sources: [Bram Cohen, 2026-04-05](https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane).
 - **CLI tools instead of MCP** (2025). The practice in which services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers.
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/); [Armin Ronacher, 2026-10-06](https://lucumr.pocoo.org/2026/10/6/codemode/); [Peter Steinberger, 2025-12-28](https://steipete.me/posts/2025/shipping-at-inference-speed/).
 - **Tools built for agents** (2025). The practice in which the tools an agent calls are made to respond quickly, report errors clearly and withstand misuse.
@@ -117,6 +119,8 @@ Inside every section the newest entries come first; practices from before coding
   Grew from: Mutation testing.
 - **Browser checks by an agent** (2026). The practice in which an agent drives a browser on the running application to check a change against each acceptance criterion and reports what it saw, with screenshots, for each criterion.
   Sources: [Abhishek Ray, 2026-03-10](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep).
+- **Cap on CI rounds per agent run** (2026). The practice in which an unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time.
+  Sources: [Alistair Gray, 2026-02-09](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents).
 - **Agent-readable test output** (2026). The practice in which test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 - **Known-good oracle** (2026). The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault.
@@ -208,6 +212,8 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
 - **Quarantine** (2026). The practice in which agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents.
   Sources: [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Lance Martin and CJ Avilla, 2026-10-08](https://claude.dev/blog/building-effective-agent-automations/).
+- **Ceiling on parallel agent threads** (2026). The practice in which the developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity.
+  Sources: [Addy Osmani, 2026-04-07](https://addyosmani.com/blog/cognitive-parallel-agents/).
 - **Scheduled agent runs** (2026). The practice in which agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Anthropic](https://code.claude.com/docs/en/common-workflows); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Georgiana Calancea, 2026-09-10](https://www.deel.com/blog/deel-engineering-rolling-out-with-confidence-pt2/).
 - **Bootable app per worktree** (2026). The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance.
@@ -248,6 +254,10 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Explainer for a code slice** (2026). The practice in which a person who wants to understand part of a codebase asks the agent to write an explainer for exactly that part.
   Sources: [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/).
+- **Retyping agent code by hand** (2026). The practice in which the agent shows its proposed code in the chat and the developer types every edit into the project by hand.
+  Sources: [Ankur Sethi, 2026-08-02](https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/).
+- **Unread throwaway code** (2026). The practice in which code generated for a one-off task is run and thrown away without being read.
+  Sources: [Oren Eini, 2026-04-21](https://ayende.net/blog/203940-c/using-ai-agents-in-long-lived-software-projects).
 - **Early interruption** (2026). The practice in which the developer stops the agent as soon as it goes in a wrong direction and gives it a correction.
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude); [Mikayla Maki, 2026-01-23](https://zed.dev/blog/on-programming-with-agents).
 - **HTML instead of Markdown** (2026). The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents.
@@ -282,6 +292,8 @@ Rules that engineering teams and open-source projects set for work done with age
   Grew from: Pull request (2008).
 - **Approval bound to a commit** (2026). A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again.
   Sources: [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Maksym Kuzmitskyi, 2026-10-19](https://dev.to/maximusft/a-review-belongs-to-a-commit-2a5b).
+- **CI workflow files as high risk** (2026). The practice in which the files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work.
+  Sources: [Jonathan Wage, 2026-10-13](https://blog.traderspost.io/article/risk-proportional-review-for-ai-agents).
 - **Named owner of an agent thread** (2026). A team rule in which every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
   Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/).
 - **Ownership of agent controls** (2026). The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild.
@@ -292,19 +304,21 @@ Rules that engineering teams and open-source projects set for work done with age
   Sources: [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/); [OpenJDK Governing Board](https://openjdk.org/legal/ai).
 - **Volunteer-only review of model-written pull requests** (2026). The practice in which a project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code.
   Sources: [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
+- **Risk-based code review** (2026). The practice in which the depth of review for a change depends on its risk: a low-risk change gets a light check or merges automatically, everything else gets full review, and some kinds of code are kept out of automated review.
+  Sources: [Jonathan Wage, 2026-10-13](https://blog.traderspost.io/article/risk-proportional-review-for-ai-agents); [Spotify Engineering](https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint); [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208).
+- **Track record before landing without review** (2026). The practice in which an automated workflow may land changes without review of each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes.
+  Sources: [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208).
 - **Build session in the interview** (2026). The practice in which an interview gives the candidate a few hours to build a working prototype with coding agents and tools of their choice.
   Sources: [Applied Intuition, 2026-07-22](https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents); [DigitalOcean, 2026-06-09](https://digitalocean.com/blog/ai-native-engineering-interview).
 - **Review of a draft change in the interview** (2026). The practice in which a candidate reviews and improves a colleague's draft pull request in an unfamiliar codebase, with agents allowed.
   Sources: [Sierra, 2026-04-22](https://sierra.ai/blog/the-ai-native-interview).
-- **Candidate's own agents in the interview** (2026). The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work.
-  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Omnea, 2026-05-26](https://www.omnea.co/resource/ai-in-our-programming-interviews).
-- **Interviews without agents** (2026). The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected.
-  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Applied Intuition, 2026-07-22](https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents).
-- **Assessing how a candidate directs agents** (2026). The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced.
-  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Augment Code, 2026-03-12](https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now).
+- **Agent session transcripts in the take-home** (2026). The practice in which a candidate submits the transcripts of their sessions with the agent as part of the take-home, next to the code and the demo.
+  Sources: [Quentin Rousseau, 2026-02-24](https://rootly.com/blog/re-thinking-candidates-take-homes-in-the-ai-era-transcripts-over-code).
 - **Agent review of every pull request** (2026). The practice in which a team has an agent review every pull request, and review by a person becomes optional.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [OpenAI](https://developers.openai.com/codex/learn/best-practices); [Dave North, 2026-06-01](https://rewind.com/blog/ai-approve-pull-requests-safely/).
   Grew from: Pull request (2008).
+- **Take-home built for work with agents** (2026). The practice in which a take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate.
+  Sources: [Tristan Hume, 2026-01-21](https://anthropic.com/engineering/AI-resistant-technical-evaluations); [Tristan Hume, 2026-01-21](https://anthropic.com/engineering/AI-resistant-technical-evaluations).
 - **Disclosure of agent use** (2025). The practice in which contributors state in the pull request, commit message or post whether and how a model or agent produced the content.
   Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
 - **Contributor review of generated code** (2025). The practice in which a project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review.
@@ -318,6 +332,12 @@ Rules that engineering teams and open-source projects set for work done with age
 - **Extra approval for agent pull requests** (2025). The practice in which pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests.
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
   Grew from: Pull request (2008).
+- **Assessing how a candidate directs agents** (2025). The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Augment Code, 2026-03-12](https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now); [Karl Hörnlund, 2025-10-20](https://www.canva.dev/blog/engineering/ai-interview-success/).
+- **Interviews without agents** (2025). The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Applied Intuition, 2026-07-22](https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents); [Anthropic, 2025-07-10](https://www.anthropic.com/candidate-ai-guidance).
+- **Candidate's own agents in the interview** (2025). The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work.
+  Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Omnea, 2026-05-26](https://www.omnea.co/resource/ai-in-our-programming-interviews); [Simon Newton, 2025-06-11](https://canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews).
 - **Ban on generated contributions** (2024). The practice in which a project does not accept contributions that include content generated, in part or in full, by language models or similar systems.
   Sources: [OpenJDK Governing Board](https://openjdk.org/legal/ai); [Daniel P. Berrangé, 2024-05-16](https://patchew.org/QEMU/20240516162230.937047-1-berrange@redhat.com/20240516162230.937047-4-berrange@redhat.com/).
 - **Agent questions in incident retrospectives**. The practice in which a team's regular incident retrospective adds two questions: whether agent-written code contributed to the incident, and whether the larger volume of change strained review, testing, rollout or observability.

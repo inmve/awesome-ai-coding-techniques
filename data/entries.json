@@ -4529,8 +4529,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced. [1][2]",
-        "ru": "Практика, при которой интервьюеры оценивают, как кандидат планирует работу, направляет агента и проверяет результат. [1][2]"
+        "en": "The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced. [1][2][3]",
+        "ru": "Практика, при которой интервьюеры оценивают, как кандидат планирует работу, направляет агента и проверяет результат. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4558,6 +4558,17 @@
           "url": "https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now",
           "published": "2026-03-12",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "The candidates who really stand out use AI tools strategically and purposefully. They use AI to accelerate their development workflow while maintaining full ownership of the technical decisions.",
+          "quoteLang": "en",
+          "author": "Karl Hörnlund",
+          "work": "AI Interview Success: An Interviewer's Inside Guide",
+          "url": "https://www.canva.dev/blog/engineering/ai-interview-success/",
+          "published": "2025-10-20",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "trial-hiring",
@@ -4580,8 +4591,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work. [1][2]",
-        "ru": "Практика, при которой кандидат может пользоваться на собеседовании своими агентами и инструментами, теми же, что и на работе. [1][2]"
+        "en": "The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work. [1][2][3]",
+        "ru": "Практика, при которой кандидат может пользоваться на собеседовании своими агентами и инструментами, теми же, что и на работе. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4609,6 +4620,17 @@
           "url": "https://www.omnea.co/resource/ai-in-our-programming-interviews",
           "published": "2026-05-26",
           "checkedAt": "2026-11-14"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "We've piloted a new competency we called \"AI-Assisted Coding\" that replaces our traditional Computer Science Fundamentals screening for backend and frontend engineering roles.",
+          "quoteLang": "en",
+          "author": "Simon Newton",
+          "work": "Yes, You Can Use AI in Our Interviews. In fact, we insist",
+          "url": "https://canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews",
+          "published": "2025-06-11",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "trial-hiring",
@@ -4671,8 +4693,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1][2]",
-        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1][2]"
+        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1][2][3]",
+        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4700,6 +4722,17 @@
           "url": "https://www.appliedintuition.com/engineering-blog/hiring-engineers-age-of-agents",
           "published": "2026-07-22",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "This is all you–no AI assistance unless we indicate otherwise. We’re curious to see how you think through problems in real time.",
+          "quoteLang": "en",
+          "author": "Anthropic",
+          "work": "Guidance on Candidates' AI Usage",
+          "url": "https://www.anthropic.com/candidate-ai-guidance",
+          "published": "2025-07-10",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "trial-hiring",
@@ -7260,6 +7293,441 @@
           "checkedAt": "2026-11-17"
         }
       ]
+    },
+    {
+      "id": "risk-based-review",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Risk-based code review",
+        "ru": "Ревью по уровню риска"
+      },
+      "aliases": {
+        "en": [
+          "Risk-proportional review"
+        ],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the depth of review for a change depends on its risk: a low-risk change gets a light check or merges automatically, everything else gets full review, and some kinds of code are kept out of automated review. [1][2][3]",
+        "ru": "Практика, при которой глубина ревью изменения зависит от его риска: изменение с низким риском проходит лёгкую проверку или сливается автоматически, остальные проходят полное ревью, а часть кода исключена из автоматического ревью. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Review depth is routed automatically: a trivial low-risk slice gets a one-reviewer scan, everything else gets a three-reviewer quorum, and code pull requests never skip deep review.",
+          "quoteLang": "en",
+          "author": "Jonathan Wage",
+          "work": "Risk-Proportional Review for AI Agents",
+          "url": "https://blog.traderspost.io/article/risk-proportional-review-for-ai-agents",
+          "published": "2026-10-13",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "We’re learning where to apply human judgment — auto-merging what’s safe, focusing review where it matters most — and rethinking how we plan and prioritize as the bottleneck moves from coding to decision-making.",
+          "quoteLang": "en",
+          "author": "Spotify Engineering",
+          "work": "Coding Is No Longer the Constraint: Scaling Developer Experience to Teams and Agents at Spotify",
+          "url": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+          "published": null,
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Diffs that touch open-source code, SOX-scoped code, or code requiring additional reviews are excluded. These exclusions protect areas where constraints require human judgment.",
+          "quoteLang": "en",
+          "author": "Chris Adams et al.",
+          "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+          "url": "https://arxiv.org/html/2605.30208",
+          "published": "2026-06-12",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "ci-workflow-files-high-risk",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "CI workflow files as high risk",
+        "ru": "Файлы CI как зона высокого риска"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work. [1]",
+        "ru": "Практика, при которой файлы, задающие конвейер CI, считаются зоной высокого риска: агент, который может править конвейер, может ослабить проверку собственной работы. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "One rule matters for agents: the files defining our CI workflows are high risk, because an agent that can edit the pipeline enforcing its own review can weaken it.",
+          "quoteLang": "en",
+          "author": "Jonathan Wage",
+          "work": "Risk-Proportional Review for AI Agents",
+          "url": "https://blog.traderspost.io/article/risk-proportional-review-for-ai-agents",
+          "published": "2026-10-13",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "track-record-before-unreviewed-landing",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Track record before landing without review",
+        "ru": "Чистая история до слияния без ревью"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which an automated workflow may land changes without review of each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes. [1]",
+        "ru": "Практика, при которой автоматический процесс получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Risk history heuristics. Each runbook must demonstrate a clean track record over a 60-day lookback window: zero PIs, a low revert rate, a low human rejection rate, and a minimum number of landed diffs to establish statistical confidence.",
+          "quoteLang": "en",
+          "author": "Chris Adams et al.",
+          "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+          "url": "https://arxiv.org/html/2605.30208",
+          "published": "2026-06-12",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "ci-rounds-cap",
+      "stages": [
+        "test-qa"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Cap on CI rounds per agent run",
+        "ru": "Предел прогонов CI на один запуск агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which an unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time. [1]",
+        "ru": "Практика, при которой агент без присмотра получает не больше заданного числа прогонов CI на задачу, в источнике двух, потому что каждый прогон стоит токенов, вычислений и времени. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Since CI runs cost tokens, compute, and time, we only have at most two rounds of CI.",
+          "quoteLang": "en",
+          "author": "Alistair Gray",
+          "work": "Minions: Stripe’s one-shot, end-to-end coding agents",
+          "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+          "published": "2026-02-09",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "unread-throwaway-code",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Unread throwaway code",
+        "ru": "Одноразовый код без чтения"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which code generated for a one-off task is run and thrown away without being read. [1]",
+        "ru": "Практика, при которой код, сгенерированный для разовой задачи, запускают и выбрасывают, не читая. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "It's a throwaway artifact. Run it, get your answer, move on. I am usually not even going to look at the code that was generated; I certainly don’t care how it is structured.",
+          "quoteLang": "en",
+          "author": "Oren Eini",
+          "work": "Using AI agents in long-lived software projects",
+          "url": "https://ayende.net/blog/203940-c/using-ai-agents-in-long-lived-software-projects",
+          "published": "2026-04-21",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "codebase-audit-with-agent",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Codebase audit with the agent",
+        "ru": "Аудит кодовой базы вместе с агентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer asks the agent to audit the codebase for one named problem and talks the findings through with it until a concrete change is clear. [1]",
+        "ru": "Практика, при которой разработчик просит агента проверить кодовую базу на одну названную проблему и обсуждает с ним находки, пока не станет ясно конкретное изменение. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I’ll start a conversation by saying “Let’s audit this codebase for unreachable code,” or “This function makes my eyes bleed,” and we’ll have a conversation about it until something actionable comes up.",
+          "quoteLang": "en",
+          "author": "Bram Cohen",
+          "work": "The Cult Of Vibe Coding Is Insane",
+          "url": "https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane",
+          "published": "2026-04-05",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
+      "id": "retyping-agent-code-by-hand",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Retyping agent code by hand",
+        "ru": "Перепечатывание кода агента вручную"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the agent shows its proposed code in the chat and the developer types every edit into the project by hand. [1]",
+        "ru": "Практика, при которой агент показывает предложенный код в чате, а разработчик сам вносит каждую правку в проект вручную. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I ask my coding assistant to generate code in the chat, then manually make all the edits myself.",
+          "quoteLang": "en",
+          "author": "Ankur Sethi",
+          "work": "Prevent cognitive debt by manually retyping LLM-generated code",
+          "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+          "published": "2026-08-02",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "human"
+    },
+    {
+      "id": "parallel-thread-ceiling",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Ceiling on parallel agent threads",
+        "ru": "Потолок параллельных потоков агентов"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which the developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity. [1]",
+        "ru": "Практика, при которой разработчик задаёт потолок числа одновременно идущих потоков агентов, в источнике три-четыре, в зависимости от их сложности. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "My ceiling for a typical session is somewhere around three to four threads depending on complexity.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Your parallel Agent limit",
+          "url": "https://addyosmani.com/blog/cognitive-parallel-agents/",
+          "published": "2026-04-07",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "sessions"
+    },
+    {
+      "id": "take-home-session-transcripts",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Agent session transcripts in the take-home",
+        "ru": "Записи сессий с агентом в тестовом задании"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a candidate submits the transcripts of their sessions with the agent as part of the take-home, next to the code and the demo. [1]",
+        "ru": "Практика, при которой кандидат сдаёт записи своих сессий с агентом как часть тестового задания, вместе с кодом и демонстрацией. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "AI transcripts went from not existing to being the second deliverable, right between the code and the demo.",
+          "quoteLang": "en",
+          "author": "Quentin Rousseau",
+          "work": "Re-thinking candidate take-homes in the AI era: transcripts over code",
+          "url": "https://rootly.com/blog/re-thinking-candidates-take-homes-in-the-ai-era-transcripts-over-code",
+          "published": "2026-02-24",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "team"
+    },
+    {
+      "id": "take-home-for-work-with-agents",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Take-home built for work with agents",
+        "ru": "Тестовое задание, рассчитанное на работу с агентом"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The practice in which a take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate. [1][2]",
+        "ru": "Практика, при которой тестовое задание разрешает агентов и построено вокруг длинной задачи, которую агент не решает целиком, а стартовый код оставляет инструменты на кандидата. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "For this take-home, we explicitly indicate otherwise. Longer-horizon problems are harder for AI to solve completely, so candidates can use AI tools (as they would on the job) while still needing to demonstrate their own skills.",
+          "quoteLang": "en",
+          "author": "Tristan Hume",
+          "work": "Designing AI resistant technical evaluations",
+          "url": "https://anthropic.com/engineering/AI-resistant-technical-evaluations",
+          "published": "2026-01-21",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Unlike Zachtronics games, I intentionally provided no visualization or debugging tools. The starter code only checks whether solutions are valid.",
+          "quoteLang": "en",
+          "author": "Tristan Hume",
+          "work": "Designing AI resistant technical evaluations",
+          "url": "https://anthropic.com/engineering/AI-resistant-technical-evaluations",
+          "published": "2026-01-21",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "seededFrom": "run-9",
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": "team"
     }
   ]
 }
