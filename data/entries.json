@@ -2634,12 +2634,7 @@
         "ru": "Принцип проектирования: делать систему настолько простой, насколько возможно. [1]",
         "en": "The design principle of keeping a system as simple as possible. [1]"
       },
-      "firstAppeared": {
-        "date": "1960-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Kelly Johnson, Lockheed, around 1960"
-      },
+      "firstAppeared": null,
       "kind": "practice",
       "coinedHere": false,
       "seeAlso": [],
@@ -2750,12 +2745,7 @@
         "ru": "Практика, при которой изменения часто сливают в общую ветку, и каждое слияние запускает автоматическую сборку и тесты. [1][2]",
         "en": "The practice in which changes are merged into the shared branch often, and every merge runs an automatic build and tests. [1][2]"
       },
-      "firstAppeared": {
-        "date": "1991-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Grady Booch, Object-Oriented Design, 1991"
-      },
+      "firstAppeared": null,
       "kind": "practice",
       "coinedHere": false,
       "seeAlso": [],
@@ -2812,10 +2802,10 @@
         "en": "The practice in which two people write the same code together: one types, the other reviews and thinks ahead. [1][2]"
       },
       "firstAppeared": {
-        "date": "1999-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Popularised by Extreme Programming, late 1990s"
+        "date": "1998-10-01",
+        "precision": "month",
+        "verified": true,
+        "note": "Earliest found first-hand description: the C3 team, «Chrysler goes to \"Extremes\"», Distributed Computing, October 1998: https://www.cs.hmc.edu/courses/2004/spring/cs121/papers/xpChrysler.pdf («The room is set up for pair programming—two developers sit together to write all production code»)"
       },
       "kind": "practice",
       "coinedHere": false,
@@ -2928,8 +2918,8 @@
       "firstAppeared": {
         "date": "2002-01-01",
         "precision": "year",
-        "verified": false,
-        "note": "Kent Beck, Test-Driven Development: By Example, 2002; test-first was already part of XP in 1999"
+        "verified": true,
+        "note": "Kent Beck, Test-Driven Development: By Example; publisher's sample pages carry the manuscript date October 10, 2002: https://ptgmedia.pearsoncmg.com/images/9780321146533/samplepages/0321146530.pdf (test-first was already part of XP, not checked on a primary page)"
       },
       "kind": "practice",
       "coinedHere": false,
@@ -2986,12 +2976,7 @@
         "ru": "Практика, при которой разработчик открывает ветку в начале работы над фичей, ведёт в ней всю работу и вливает изменения, когда фича готова. [1][2]",
         "en": "The practice in which a developer opens a branch when starting a feature, does all the work on it there and integrates the changes when the feature is done. [1][2]"
       },
-      "firstAppeared": {
-        "date": "2005-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Approximate: Git released Apr 2005; the practice is older"
-      },
+      "firstAppeared": null,
       "kind": "practice",
       "coinedHere": false,
       "seeAlso": [],
@@ -3051,10 +3036,10 @@
         "en": "The practice in which a change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1][2]"
       },
       "firstAppeared": {
-        "date": "2008-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "GitHub, 2008"
+        "date": "2008-02-23",
+        "precision": "day",
+        "verified": true,
+        "note": "GitHub blog, Chris Wanstrath, «Oh yeah, there's pull requests now», February 23, 2008: https://github.blog/2008-02-23-oh-yeah-there-s-pull-requests-now/ (the term is older: git request-pull, not checked)"
       },
       "kind": "practice",
       "coinedHere": false,
@@ -5593,8 +5578,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again. [1]",
-        "ru": "Командное правило, при котором одобрение ревью относится к одному конкретному коммиту, а новые коммиты, за которые система не ручается, например пуш агента или слияние, разрешённое вручную, требуют повторного одобрения. [1]"
+        "en": "A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again. [1][2]",
+        "ru": "Командное правило, при котором одобрение ревью относится к одному конкретному коммиту, а новые коммиты, за которые система не ручается, например пуш агента или слияние, разрешённое вручную, требуют повторного одобрения. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5611,6 +5596,17 @@
           "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
           "published": "2026-10-15",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "A person may approve a particular revision. New code can change the basis for that decision.",
+          "quoteLang": "en",
+          "author": "Maksym Kuzmitskyi",
+          "work": "A Review Belongs to a Commit",
+          "url": "https://dev.to/maximusft/a-review-belongs-to-a-commit-2a5b",
+          "published": "2026-10-19",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "run-4",
@@ -5739,8 +5735,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which a harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2]",
-        "ru": "Практика, при которой обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2]"
+        "en": "The practice in which a harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2][3]",
+        "ru": "Практика, при которой обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5768,6 +5764,17 @@
           "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
           "published": "2026-06-02",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "Ralph is a technique. In its purest form, Ralph is a Bash loop.",
+          "quoteLang": "en",
+          "author": "Geoffrey Huntley",
+          "work": "Ralph Wiggum as a \"software engineer\"",
+          "url": "https://ghuntley.com/ralph/",
+          "published": "2025-07-14",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "run-4",
@@ -5983,8 +5990,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents. [1][2]",
-        "ru": "Практика, при которой агент пишет планы, объяснения и разбор кода в виде HTML-страниц вместо документов Markdown. [1][2]"
+        "en": "The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents. [1][2][3]",
+        "ru": "Практика, при которой агент пишет планы, объяснения и разбор кода в виде HTML-страниц вместо документов Markdown. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6012,6 +6019,17 @@
           "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
           "published": "2026-05-20",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "I keep my agent planning and spec-driven development work in HTML.",
+          "quoteLang": "en",
+          "author": "Nick Keuning",
+          "work": "Why I Use HTML for Planning and Spec-Driven Development",
+          "url": "https://spin.atomicobject.com/html-spec-driven-development/",
+          "published": "2026-01-21",
+          "checkedAt": "2026-11-17"
         }
       ],
       "seededFrom": "run-4",
@@ -6909,7 +6927,12 @@
         "en": "The practice in which a team meets at regular intervals to examine what went well, what caused difficulty and what to change in how it works. [1]",
         "ru": "Практика, при которой команда регулярно собирается и разбирает, что прошло хорошо, что вызвало трудности и что изменить в своей работе. [1]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "2001-01-01",
+        "precision": "year",
+        "verified": true,
+        "note": "Earliest found: Norman L. Kerth, Project Retrospectives: A Handbook for Team Reviews, Dorset House, 2001 (publisher page: https://dorsethouse.com/books/pr.html); the practice is older"
+      },
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
