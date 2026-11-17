@@ -9,7 +9,7 @@ For each practice: a definition, when it appeared, where it grew from, and the s
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
-117 entries, 251 sources, 251 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
+116 entries, 232 sources, 232 of them with a verbatim quote stored in the data. Preliminary edition: dates are not verified yet.
 
 Inside every section the newest entries come first; practices from before coding agents come last.
 
@@ -44,12 +44,13 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Self-contained task with proof** (2026). The practice in which each task for the agent is written as a self-contained ticket stating what is wrong, what done looks like and which command proves it.
   Sources: [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/).
+  Grew from: Behaviour-driven development (2006).
 - **Source traceability** (2026). The practice in which every fact the agent extracts from legacy code carries a file:line reference back to that code.
   Sources: [Shashank Mishra, 2026-07-13](https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons).
 - **Confidence markers on extracted facts** (2026). The practice in which every fact the agent extracts from legacy code carries a green, amber or red confidence marker, and ambiguous code is flagged in the output so that a human expert resolves it.
   Sources: [Shashank Mishra, 2026-07-13](https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons); [Shashank Mishra, 2026-07-13](https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons).
 - **Plan before code** (2025). The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written.
-  Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=Check%20out%20the%20current%20state); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Scott Cooper, 2026-11-03](https://blog.sentry.io/performance-wins-traces-coding-agent/).
+  Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20you%20want%20to%20iterate%20on%20the%20plan); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Creating%20a%20comprehensive%20plan); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/).
 - **Stable libraries** (2025). The practice in which the developer picks stable libraries that are popular enough for many examples of them to be in the model's training data.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20gain%20enough%20value%20from%20LLMs); [Simon Willison, 2026-03-09](https://simonwillison.net/2026/Mar/9/not-so-boring/).
   Grew from: Choose boring technology (2015).
@@ -62,7 +63,7 @@ Inside every section the newest entries come first; practices from before coding
 ## UI & Prototype
 
 - **Screenshot iteration** (2026). The practice in which the agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match.
-  Sources: [David Crawshaw](https://crawshaw.io/blog/programming-with-agents#:~:text=I%20opened%20a%20second%20copy%20of%20Sketch); [kent-tokyo (DEV Community handle), 2026-06-03](https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0).
+  Sources: [kent-tokyo (DEV Community handle), 2026-06-03](https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0).
 - **Throwaway editor with export** (2026). The practice in which the agent builds a disposable interface for editing something by hand, and the interface ends with an export button that turns the edits into a prompt or a file.
   Sources: [Thariq Shihipar, 2026-05-20](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/).
 - **Generated prototype** (2025). The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met.
@@ -78,7 +79,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/); [Armin Ronacher, 2026-10-06](https://lucumr.pocoo.org/2026/10/6/codemode/); [Peter Steinberger, 2025-12-28](https://steipete.me/posts/2025/shipping-at-inference-speed/).
 - **Tools built for agents** (2025). The practice in which the tools an agent calls are made to respond quickly, report errors clearly and withstand misuse.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Tools%20need%20to%20be%20fast); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
-- **Simple code for agents** (2025). The practice in which code is kept plain: descriptive function names, no inheritance, no clever constructs.
+- **Simple code for agents** (2025). The practice in which code that agents work on is kept simple.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Simple%20code%20significantly%20outperforms%20complex%20code).
   Grew from: KISS.
 - **Generated code in place of dependencies** (2025). The practice in which the agent writes the needed code in the project, and a new library is not added.
@@ -92,7 +93,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
 - **Agent feedback loop** (2025). The practice in which the agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes.
   Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=Claude%20is%20most%20useful%20when); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Birgitta Böckeler, Chris Ford, 2026-05-13](https://www.thoughtworks.com/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors).
-  Grew from: Continuous integration (2026).
+  Grew from: Continuous integration (1998).
 - **Logs for agent debugging** (2025). The practice in which a system is built with detailed logging, so that an agent can read the logs and find the cause of a problem.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=In%20general%20logging%20is%20super%20important); [Alberto Gimeno, 2026-09-23](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/).
 
@@ -120,7 +121,7 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 - **Known-good oracle** (2026). The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Aditya Sharma and Mahesh Kharade, 2026-03-27](https://www.thoughtworks.com/insights/blog/generative-ai/reimagining-api-modernization-with-deterministic-ai-assisted-engineering).
-- **Manual verification of agent code** (2025). The practice in which the developer runs agent-written code and confirms that it works, without relying on the agent's own report about tests.
+- **Manual verification of agent code** (2025). The practice in which the developer tests that agent-written code actually works.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=The%20one%20thing%20you%20absolutely%20cannot%20outsource).
 
 ## Review
@@ -161,13 +162,13 @@ Inside every section the newest entries come first; practices from before coding
 
 - **Single source for agent instructions** (2026). The practice in which one instruction file is canonical and the files of other agent tools point to it through a pointer line, a symlink or an include.
   Sources: [Przemek, 2026-09-23](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/); [FerroxLabs](https://github.com/FerroxLabs/agents-md).
+- **Evals for agent instructions** (2026). The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement.
+  Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
 - **Smallest-scope agent control** (2026). The practice in which a team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
   Grew from: Rules in linters (1978).
 - **Regular audit of the agent setup** (2026). The practice in which, every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true.
   Sources: [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
-- **Context reset between tasks** (2026). The practice in which the agent's context is cleared before an unrelated task begins.
-  Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context); [aider.chat](https://aider.chat/docs/usage/tips.html); [Lydia Hallie, 2026-08-14](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions); [Addy Osmani, 2026-09-25](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/).
 - **Pruning old constraints** (2026). The practice in which constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement.
   Sources: [Thariq Shihipar, 2026-07-24](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/).
 - **Check that the instruction file is loaded** (2026). The practice in which the developer checks which instruction file the agent tool actually reads, for example with a marker word, before relying on it.
@@ -178,6 +179,8 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Thariq Shihipar, 2026-06-03](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/); [Thariq Shihipar, 2026-07-24](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/).
 - **Progressive disclosure** (2026). The practice in which agent context is split into a tree of files, and the agent is told which files exist so that it reads each one only when it becomes relevant.
   Sources: [Thariq Shihipar, 2026-07-24](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/); [Thariq Shihipar, 2026-06-03](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/).
+- **Repeated prompt as a skill** (2026). The practice in which a prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name.
+  Sources: [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
 - **Compaction** (2026). The practice in which a long agent session is summarized at a milestone or near the context limit, with instructions on what the summary keeps, and work continues in a new context from the summary.
   Sources: [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
 - **Knowledge base from project history** (2026). The practice in which agents read the codebase, issues, pull requests and discussion threads and write a knowledge base of unrecorded decisions and conventions, which other agents use when they work on the code.
@@ -186,15 +189,11 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [shinpr](https://github.com/shinpr/claude-code-workflows); [Shashank Mishra, 2026-07-13](https://www.thoughtworks.com/insights/articles/ai-assisted-migration-lessons).
   Grew from: Architecture Decision Records (2011).
 - **Harness engineering** (2026). The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again.
-  Sources: [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
-- **Evals for agent instructions** (2026). The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement.
-  Sources: [Jude Gao, 2026-01-27](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals); [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/); [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
-- **Repeated prompt as a skill** (2025). The practice in which a prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name.
-  Sources: [Harper Reed, 2025-12-03](https://harper.blog/2025/12/03/claude-code-email-productivity-mcp-agents/); [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
+  Sources: [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 - **Document & Clear** (2025). The practice in which, for a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work.
-  Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/); [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [rberg27](https://github.com/rberg27/doom-coding).
+  Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [rberg27](https://github.com/rberg27/doom-coding).
 - **Agent session log review** (2025). The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response.
-  Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [OpenAI](https://developers.openai.com/codex/learn/best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+  Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
   Grew from: Retrospective (2001).
 - **Context priming with code** (2025). The practice in which a session starts by placing existing code into the context, and changes are made from there.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I%20often%20start%20a%20new%20chat).
@@ -210,31 +209,31 @@ Inside every section the newest entries come first; practices from before coding
 - **Quarantine** (2026). The practice in which agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents.
   Sources: [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Lance Martin and CJ Avilla, 2026-10-08](https://claude.dev/blog/building-effective-agent-automations/).
 - **Scheduled agent runs** (2026). The practice in which agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests.
-  Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Anthropic](https://code.claude.com/docs/en/common-workflows); [Addy Osmani, 2026-08-14](https://addyosmani.com/blog/practical-loop-engineering/); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Georgiana Calancea, 2026-09-10](https://www.deel.com/blog/deel-engineering-rolling-out-with-confidence-pt2/).
+  Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Anthropic](https://code.claude.com/docs/en/common-workflows); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Georgiana Calancea, 2026-09-10](https://www.deel.com/blog/deel-engineering-rolling-out-with-confidence-pt2/).
 - **Bootable app per worktree** (2026). The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Ally Piechowski, 2026-07-28](https://piechowski.io/post/setup-script-git-worktrees/).
 - **Warm environment pool for agents** (2026). The practice in which a team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup.
   Sources: [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Alistair Gray, 2026-02-09](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents).
 - **Task claiming by agents** (2026). The practice in which parallel agents take work from a shared list, and an agent claims a task, for example by writing a lock file, before working on it, so that no two agents take the same task.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Barry Zhang, Tianyi Peng, Elle Najt, Keller Scholl, and Lance Martin, 2026-11-09](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/).
-- **Feature sessions** (2026). The practice of keeping each feature or task in its own agent session so the context does not bloat.
-  Sources: [Fabien Sanglard, 2026-08-21](https://fabiensanglard.net/agent.md/index.html); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/).
+- **Feature sessions** (2026). The practice in which each feature or task gets its own agent session, or the context is cleared before an unrelated task begins.
+  Sources: [Fabien Sanglard, 2026-08-21](https://fabiensanglard.net/agent.md/index.html); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context); [Lydia Hallie, 2026-08-14](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions); [Addy Osmani, 2026-09-25](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/).
+- **Parallel attempts** (2026). The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results.
+  Sources: [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
+  Grew from: N-version programming (1978).
 - **Disposable machine for the agent** (2026). The practice in which the agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs.
   Sources: [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [Harper Reed, 2026-09-22](https://harper.blog/2026/09/22/break-away/); [crawshaw, 2026-02-08](https://crawshaw.io/blog/eight-more-months-of-agents).
-- **Parallel attempts** (2025). The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results.
-  Sources: [Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli, 2025-12-02](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
-  Grew from: N-version programming (1978).
 - **Asynchronous agent work** (2025). The practice in which the agent works on a task while the developer is busy with something else.
   Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster); [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
 - **Ralph loop** (2025). The practice in which a harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Geoffrey Huntley, 2025-07-14](https://ghuntley.com/ralph/).
 - **Orchestrator and workers** (2025). The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results.
-  Sources: [Anthropic (engineering blog, no personal byline in saved text), 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
-- **Permission-free mode** (2025). The practice in which permission prompts are switched off for tasks whose changes the developer would accept anyway.
+  Sources: [Anthropic (engineering blog, no personal byline in saved text), 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Plawan Rath, Akhil Jindal, Ashwini Verma, 2026-10-19](https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/).
+- **Permission-free mode** (2025). The practice in which the agent's permission prompts are switched off, sometimes inside a container.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=I%20disable%20all%20permission%20checks); [Jökull Sólberg, 2025-07-03](https://www.solberg.is/claude-devcontainer).
 - **Parallel agents** (2025). The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository.
-  Sources: [David Crawshaw, 2025-06-08](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
-  Grew from: Feature branch (2020).
+  Sources: [David Crawshaw, 2025-06-08](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+  Grew from: Feature branch (2009).
 
 ## Across stages: Model choice
 
@@ -253,26 +252,26 @@ Inside every section the newest entries come first; practices from before coding
   Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude); [Mikayla Maki, 2026-01-23](https://zed.dev/blog/on-programming-with-agents).
 - **HTML instead of Markdown** (2026). The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents.
   Sources: [Thariq Shihipar, 2026-05-20](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/); [Thariq Shihipar, 2026-05-20](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/); [Nick Keuning, 2026-01-21](https://spin.atomicobject.com/html-spec-driven-development/).
-- **Learning with an agent** (2026). The practice in which the developer uses an agent to learn a language or a concept and then writes the code without it.
-  Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices).
 - **Deliberate practice without agents** (2025). The practice in which an engineer now and then solves a problem without an agent, even one the agent could solve, to keep their own skills.
   Sources: [Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli, 2025-12-02](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic).
 - **Manual refinement of agent output** (2025). The practice in which the developer reworks the agent's implementation by hand after the agent has finished.
   Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20almost%20always%20go%20in); [Conrad Irwin](https://zed.dev/blog/not-building-ai-for-the-money).
 - **Change of approach after repeated failures** (2025). The practice in which, after the agent fails at the same problem several times, the developer switches to a different approach.
-  Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point); [aider.chat](https://aider.chat/docs/usage/tips.html); [Addy Osmani, 2026-08-14](https://addyosmani.com/blog/practical-loop-engineering/).
+  Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=It's%20at%20this%20point); [Addy Osmani, 2026-08-14](https://addyosmani.com/blog/practical-loop-engineering/).
 - **Critical parts by hand** (2025). The practice in which the developer writes the critical and complex parts of the code and hands the rest to the agent.
-  Sources: [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest); [Saffron Huang, Bryan Seethor, Esin Durmus, Kunal Handa, Miles McCain, Michael Stern, Deep Ganguli, 2025-12-02](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic).
+  Sources: [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20the%20critical%20parts%20and%20ask%20AI%20to%20do%20the%20rest).
 - **Own draft first** (2025). The practice in which the developer drafts the solution without an agent and then gives it to an agent to review and improve.
-  Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20subconsciously%20defaulting%20to%20AI); [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20the%20initial%20version%20yourself%20and%20ask%20AI%20to%20review%20and%20improve%20it); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=So%20I%20pulled%20out%20my%20AI%20tooling).
+  Sources: [Anton Zhiyanov, 2025-09-26](https://antonz.org/write-code/#:~:text=Write%20the%20initial%20version%20yourself%20and%20ask%20AI%20to%20review%20and%20improve%20it).
 - **Agent as a pair partner** (2025). The practice in which the developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result.
-  Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing); [Emma Klint, 2026-03-17](https://emmaklint.substack.com/p/why-i-explain-my-problems-to-a-robot).
+  Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing).
   Grew from: Pair programming (1998), Rubber duck debugging (1999).
 - **Delegation of routine tasks** (2025). The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent.
-  Sources: [Alberto Fortin, 2025-05-15](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things); [Colton, 2025-08-05](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/#:~:text=AI's%20best%20use%20case%20for%20me); [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+  Sources: [Alberto Fortin, 2025-05-15](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things); [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
   Grew from: Codemods (2008).
 - **Repeated rework requests** (2025). The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written); [Alex Grebenyuk, 2025-06-23](https://kean.github.io/post/experiencing-claude-code).
+- **Learning with an agent**. The practice in which the developer uses an agent to learn a language or a concept and then applies it when writing code.
+  Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go).
 
 ## Teams and projects
 
@@ -285,7 +284,7 @@ Rules that engineering teams and open-source projects set for work done with age
   Sources: [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Maksym Kuzmitskyi, 2026-10-19](https://dev.to/maximusft/a-review-belongs-to-a-commit-2a5b).
 - **Named owner of an agent thread** (2026). A team rule in which every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
   Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/).
-- **Ownership of agent controls** (2026). The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild that watches monitoring data and updates them.
+- **Ownership of agent controls** (2026). The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
 - **Answer to every review finding** (2026). A team rule in which every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open.
   Sources: [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Christopher Olsen, 2026-08-06](https://brainchurts.com/lessons/2026-08-06-ai-reviewer-in-the-merge-gate).
@@ -304,12 +303,12 @@ Rules that engineering teams and open-source projects set for work done with age
 - **Assessing how a candidate directs agents** (2026). The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced.
   Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Augment Code, 2026-03-12](https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now).
 - **Agent review of every pull request** (2026). The practice in which a team has an agent review every pull request, and review by a person becomes optional.
-  Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [OpenAI](https://developers.openai.com/codex/learn/best-practices).
+  Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [OpenAI](https://developers.openai.com/codex/learn/best-practices); [Dave North, 2026-06-01](https://rewind.com/blog/ai-approve-pull-requests-safely/).
   Grew from: Pull request (2008).
 - **Disclosure of agent use** (2025). The practice in which contributors state in the pull request, commit message or post whether and how a model or agent produced the content.
   Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
 - **Contributor review of generated code** (2025). The practice in which a project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review.
-  Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
+  Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159).
 - **Own words in project communication** (2025). The practice in which a project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output.
   Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jellyfin project](https://jellyfin.org/docs/general/contributing/llm-policies/).
 - **Agents in project spaces only with approval** (2025). The practice in which an agent may comment on or act in shared project spaces only after people approve it or explicitly invoke it.
