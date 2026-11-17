@@ -136,6 +136,36 @@
           "ru": "Правила, которые команды разработки и открытые проекты вводят для работы с агентами: как раскрывать и проверять изменения, написанные агентом, кто может пускать агента в общие пространства, кто владеет общей настройкой агентов и как меняются собеседования."
         }
       }
+    ],
+    "themes": [
+      {
+        "id": "trust",
+        "title": {
+          "en": "How far the agent is trusted",
+          "ru": "Насколько агенту доверяют"
+        },
+        "description": {
+          "en": "Rules about what an agent may do without a person checking it: how deep the review goes, what the agent may not touch, where it runs. Every practice here also stands in its own section above.",
+          "ru": "Правила о том, что агенту можно делать без проверки человеком: насколько глубоко ревью, что агенту нельзя трогать, где он запускается. Каждая практика отсюда стоит и в своём разделе выше."
+        },
+        "entries": [
+          "critical-code-review-strategy",
+          "risk-based-review",
+          "agent-review-on-every-pull-request",
+          "prompter-as-reviewer",
+          "extra-approval-for-agent-prs",
+          "approval-per-commit",
+          "track-record-before-unreviewed-landing",
+          "ci-workflow-files-high-risk",
+          "tests-protected-from-agent-edits",
+          "critical-paths-assistant-rest",
+          "unread-throwaway-code",
+          "named-owner-per-agent-thread",
+          "run-without-permissions",
+          "disposable-agent-machine",
+          "untrusted-content-quarantine"
+        ]
+      }
     ]
   },
   "entries": [
