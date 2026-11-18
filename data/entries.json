@@ -132,8 +132,40 @@
           "ru": "Команды и проекты"
         },
         "description": {
-          "en": "Rules that engineering teams and open-source projects set for work done with agents: how agent-written changes are disclosed and reviewed, who may let an agent act in shared spaces, who owns the shared agent setup, and how hiring interviews change.",
-          "ru": "Правила, которые команды разработки и открытые проекты вводят для работы с агентами: как раскрывать и проверять изменения, написанные агентом, кто может пускать агента в общие пространства, кто владеет общей настройкой агентов и как меняются собеседования."
+          "en": "Rules that teams and open-source projects set for work with agents.",
+          "ru": "Правила, которые команды и открытые проекты вводят для работы с агентами."
+        }
+      },
+      {
+        "id": "team-review",
+        "section": "team",
+        "title": {
+          "en": "Review of agent changes",
+          "ru": "Проверка изменений агента"
+        }
+      },
+      {
+        "id": "team-contributions",
+        "section": "team",
+        "title": {
+          "en": "Contributions to open-source projects",
+          "ru": "Вклады в открытые проекты"
+        }
+      },
+      {
+        "id": "team-ownership",
+        "section": "team",
+        "title": {
+          "en": "Ownership",
+          "ru": "Ответственность"
+        }
+      },
+      {
+        "id": "team-hiring",
+        "section": "team",
+        "title": {
+          "en": "Hiring",
+          "ru": "Найм"
         }
       }
     ],
@@ -3369,7 +3401,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "browser-verification-by-agent",
@@ -4027,7 +4059,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "contributor-reviews-generated-code",
@@ -4067,7 +4099,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "own-words-in-review",
@@ -4118,7 +4150,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "approved-agents-in-project-spaces",
@@ -4169,7 +4201,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "extractive-contribution-handling",
@@ -4220,7 +4252,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "generated-contribution-ban",
@@ -4271,7 +4303,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "analyze-not-create",
@@ -4322,7 +4354,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-contributions"
     },
     {
       "id": "agent-configuration-ownership",
@@ -4362,7 +4394,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-ownership"
     },
     {
       "id": "agent-delivery-metrics",
@@ -4404,7 +4436,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-ownership"
     },
     {
       "id": "extra-approval-for-agent-prs",
@@ -4457,7 +4489,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "unassisted-practice",
@@ -4548,7 +4580,7 @@
       "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "interview-agent-direction",
@@ -4610,7 +4642,7 @@
       "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "interview-own-tools",
@@ -4672,7 +4704,7 @@
       "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "interview-draft-review",
@@ -4712,7 +4744,7 @@
       "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "interview-without-agents",
@@ -4774,7 +4806,7 @@
       "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "agent-setup-audit",
@@ -5014,7 +5046,7 @@
         "en": "Named by Vinay Perneti and Emma Webb (Augment Code)",
         "ru": "Название дали Винай Пернети и Эмма Уэбб (Augment Code)"
       },
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "knowledge-base-from-project-history",
@@ -5136,7 +5168,7 @@
       "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "ratcheted-benchmarks",
@@ -5362,7 +5394,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "prompter-as-reviewer",
@@ -5415,7 +5447,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "approval-per-commit",
@@ -5466,7 +5498,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "untrusted-content-quarantine",
@@ -6102,7 +6134,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "team"
+      "group": "team-ownership"
     },
     {
       "id": "self-contained-task-with-proof",
@@ -7403,7 +7435,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "ci-workflow-files-high-risk",
@@ -7443,7 +7475,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "track-record-before-unreviewed-landing",
@@ -7505,7 +7537,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team"
+      "group": "team-review"
     },
     {
       "id": "ci-rounds-cap",
@@ -7756,7 +7788,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "take-home-for-work-with-agents",
@@ -7807,7 +7839,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team"
+      "group": "team-hiring"
     },
     {
       "id": "evals-on-own-tasks",

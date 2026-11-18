@@ -33,13 +33,20 @@ def sort_key(entry, by_id):
     return (entry_date(entry, by_id) or "9999", entry["title"]["en"].lower())
 
 
+def shown_year(entry):
+    # the site shows a year only when the date of the practice was checked on a source page (rule 4.7, 2026-11-18);
+    # the earliest saved post is the date of our collection, not of the practice, and is used only for the order
+    appeared = entry.get("firstAppeared") or {}
+    return appeared["date"][:4] if appeared.get("date") and appeared.get("verified") else None
+
+
 def anchor(title):
     return re.sub(r"[^a-z0-9 -]", "", title.lower()).strip().replace(" ", "-")
 
 
 def entry_lines(entry, by_id):
-    date = entry_date(entry, by_id)
-    year = f" ({date[:4]})" if date and date[:4] not in entry["title"]["en"] else ""
+    date = shown_year(entry)
+    year = f" ({date})" if date and date not in entry["title"]["en"] else ""
     lines = [f"- **{entry['title']['en']}**{year}. {plain_definition(entry)}"]
     sources = []
     for source in sorted(entry["sources"], key=lambda s: s.get("n", 0)):
@@ -51,8 +58,8 @@ def entry_lines(entry, by_id):
     roots = []
     for r in entry.get("rootsIn") or []:
         if r in by_id:
-            root_date = entry_date(by_id[r], by_id)
-            roots.append(by_id[r]["title"]["en"] + (f" ({root_date[:4]})" if root_date else ""))
+            root_year = shown_year(by_id[r])
+            roots.append(by_id[r]["title"]["en"] + (f" ({root_year})" if root_year else ""))
     if roots:
         lines.append(f"  Grew from: {', '.join(roots)}.")
     # the example scheme of the site, as a still picture (scripts/build_figures.py writes the files)
@@ -62,8 +69,8 @@ def entry_lines(entry, by_id):
 
 
 def short_lines(entry, by_id):
-    date = entry_date(entry, by_id)
-    year = f" ({date[:4]})" if date and date[:4] not in entry["title"]["en"] else ""
+    date = shown_year(entry)
+    year = f" ({date})" if date and date not in entry["title"]["en"] else ""
     return [f"- **{entry['title']['en']}**{year}. {plain_definition(entry)}"]
 
 
@@ -82,17 +89,16 @@ def intro(practices, with_root):
         "November. A year later I wouldn’t follow a lot of it myself.",
         "",
         f"That November Opus 4.5 and GPT-5.2 came out, and agents got good enough to write most of the code.{note(1)} "
-        "This year Fable 5 and GPT-6 Astra went further and stopped needing most of what my list was for: detailed "
+        "This year Fable and Astra went further and stopped needing most of what my list was for: detailed "
         f"instructions, carefully prepared context, reminders to think hard.{note(2)}",
         "",
-        "So I started again from what people who ship software with agents write about their own work. That’s this "
-        f"page: {practices} practices, each with the sentence it came from.",
+        "So I started again from what people who ship software with agents write about their own work. Below are "
+        f"{practices} of their practices, each with a quote from the post that describes it.",
         "",
         "Prompting is the part that got less important. The practices that were around long before LLMs went the other "
         "way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight "
         f"now.{note(3)} {with_root} of the practices on this page grew straight out of one of those older ones, like "
-        "test-driven development (2002) or the pull request (2008). My read: a team that already had tests, review "
-        "and CI in place was better prepared for agents than a team with clever prompts.",
+        "continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change.",
         "",
     ]
 
@@ -113,10 +119,19 @@ def main():
                           [e for e in entries if e["kind"] != "approach" and e.get("group") == g["id"]], False)
                          for g in meta["groups"] if g["section"] == "general" and g["id"] != "team"]),
     ]
+    # Teams and projects: its line goes under the part title, then its subgroups (data without subgroups: one section)
+    part_descriptions = {}
     for g in meta["groups"]:
         if g["section"] == "general" and g["id"] == "team":
-            parts.append((g["title"]["en"], [(None, g.get("description", {}).get("en"),
-                                              [e for e in entries if e["kind"] != "approach" and e.get("group") == "team"], False)]))
+            subgroups = [s for s in meta["groups"] if s["section"] == "team"]
+            if subgroups:
+                part_descriptions[g["title"]["en"]] = g.get("description", {}).get("en")
+                parts.append((g["title"]["en"], [(s["title"]["en"], s.get("description", {}).get("en"),
+                                                  [e for e in entries if e["kind"] != "approach" and e.get("group") == s["id"]], False)
+                                                 for s in subgroups]))
+            else:
+                parts.append((g["title"]["en"], [(None, g.get("description", {}).get("en"),
+                                                  [e for e in entries if e["kind"] != "approach" and e.get("group") == "team"], False)]))
     for theme in meta.get("themes") or []:
         parts.append((theme["title"]["en"], [(None, (theme.get("description") or {}).get("en"),
                                                [e for e in entries if e["id"] in theme["entries"]], True)]))
@@ -132,7 +147,7 @@ def main():
         "",
         "# Agentic software development reference",
         "",
-        "**Practices coding agents changed in a year, and ones they didn’t**",
+        "**What agents changed in how software gets built, and what they didn’t**",
         "",
     ]
     out += intro(len(entries), with_root)
@@ -157,6 +172,8 @@ def main():
     out.append("")
     for title, sections in parts:
         out += [f"## {title}", ""]
+        if part_descriptions.get(title):
+            out += [part_descriptions[title], ""]
         for name, description, members, repeated in sections:
             if name:
                 out += [f"### {name}", ""]
