@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 224" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="10" width="90" height="30" fill="#fff" stroke="#111" /><text x="24" y="30" fill="#c0392b">alert</text>
+  <path d="M55 40 V54" fill="none" stroke="#111" />
+  <rect x="10" y="56" width="90" height="30" fill="#fff" stroke="#111" /><text x="20" y="76">agent 1</text>
+  <path d="M100 71 H158" fill="none" stroke="#111" />
+  <rect x="160" y="56" width="130" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="172" y="76">plan</text>
+  <text x="268" y="76" fill="#2a7d3f">✓</text>
+  <path d="M55 86 V100" fill="none" stroke="#111" />
+  <rect x="10" y="102" width="90" height="30" fill="#fff" stroke="#111" /><text x="20" y="122">agent 2</text>
+  <path d="M100 117 H225 V88" fill="none" stroke="#111" stroke-dasharray="3 3" />
+  <path d="M55 132 V146" fill="none" stroke="#111" />
+  <rect x="10" y="148" width="90" height="30" fill="#fff" stroke="#111" /><text x="20" y="168">agent 3</text>
+  <path d="M100 163 H158" fill="none" stroke="#111" />
+  <rect x="160" y="148" width="130" height="30" fill="#fff" stroke="#111" />
+  <text x="172" y="168">PR, scoped fix</text>
+  <path d="M225 178 V192" fill="none" stroke="#111" />
+  <rect x="140" y="194" width="150" height="26" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="150" y="212">on-call engineer</text>
+</svg>

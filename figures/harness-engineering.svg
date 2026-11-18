@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 176" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="82" width="90" height="44" fill="#fff" stroke="#111" />
+  <text x="36" y="109">agent</text>
+  <text x="170" y="22">harness</text>
+  <rect x="170" y="30" width="180" height="130" fill="#fff" stroke="#111" />
+  <text x="186" y="56">rule</text>
+  <text x="186" y="80">check</text>
+  <path d="M110 104 H420" fill="none" stroke="#111" />
+  <text x="430" y="109" fill="#c0392b">✕</text>
+  <text x="452" y="109" fill="#c0392b">mistake</text>
+  </svg>

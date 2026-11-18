@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="40" width="90" height="36" fill="#fff" stroke="#111" /><text x="34" y="63">change</text>
+  <rect x="210" y="40" width="100" height="36" fill="#fff" stroke="#111" /><text x="224" y="63">review</text>
+  <rect x="410" y="40" width="110" height="36" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" /><text x="424" y="63">landed</text>
+  <path d="M110 50 H150 V16 H370 V50 H408" fill="none" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="20" y="112">60 days</text>
+  <rect x="100" y="100" width="440" height="14" fill="#fff" stroke="#111" />
+  <rect class="move" x="100" y="100" width="440" height="14" fill="#111" style="transform:scaleX(1)" />
+  <text x="100" y="148">0 incidents</text>
+  <text x="100" y="170">few reverts</text>
+  <text x="100" y="192">few rejections</text>
+  <text x="240" y="148" fill="#2a7d3f">✓</text>
+  <text x="240" y="170" fill="#2a7d3f">✓</text>
+  <text x="240" y="192" fill="#2a7d3f">✓</text>
+</svg>

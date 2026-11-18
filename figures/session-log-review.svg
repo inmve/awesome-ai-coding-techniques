@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="20" y="18">sessions</text>
+  <g stroke="#999" fill="none">
+    <rect x="20" y="26" width="80" height="120" stroke="#111" /><rect x="112" y="26" width="80" height="120" stroke="#111" /><rect x="204" y="26" width="80" height="120" stroke="#111" />
+    <path d="M30 46 H86 M30 66 H78 M30 86 H90 M30 106 H70 M30 126 H84" />
+    <path d="M122 46 H170 M122 66 H182 M122 86 H164 M122 106 H178 M122 126 H160" />
+    <path d="M214 46 H274 M214 66 H262 M214 86 H270 M214 106 H256 M214 126 H272" />
+  </g>
+  <path d="M30 86 H90" fill="none" stroke="#c0392b" stroke-width="2.4" />
+  <path d="M122 66 H182" fill="none" stroke="#c0392b" stroke-width="2.4" />
+  <path d="M214 126 H274" fill="none" stroke="#c0392b" stroke-width="2.4" />
+  <path d="M284 86 H318" fill="none" stroke="#111" />
+  <text x="326" y="91" fill="#c0392b">×3</text>
+  <path d="M352 86 H388" fill="none" stroke="#111" />
+  <rect x="390" y="36" width="150" height="100" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="404" y="60">CLAUDE.md</text>
+  <path d="M404 78 H510 M404 96 H480" stroke="#999" />
+  <text x="404" y="124" fill="#2a7d3f">+ rule</text>
+</svg>

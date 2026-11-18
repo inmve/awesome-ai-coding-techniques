@@ -2,8 +2,9 @@
 
 Usage: python3 scripts/build_readme.py
 data/entries.json is the source of truth; README.md is generated from it, do not edit README.md by hand.
-Order inside every block: newest first; entries without a date after dated ones; practices from before
-coding agents last.
+The README follows the form of the site: the same title and introduction, the same parts in the same order
+(by SDLC stage, cross-stage, teams and projects, thematic groups, approaches), oldest practices first inside a
+section, and the example schemes as still pictures from figures/ (see scripts/build_figures.py).
 """
 import json
 import pathlib
@@ -27,14 +28,9 @@ def entry_date(entry, by_id):
     return min(published) if published else None
 
 
-def sort_key(entry, by_id, llm_era_start):
-    date = entry_date(entry, by_id)
-    before_agents = entry.get("seededFrom") == "pre-llm" or (date is not None and date < llm_era_start)
-    if before_agents:
-        return (2, "" if date is None else "".join(chr(255 - ord(c)) for c in date))
-    if date is None:
-        return (1, "")
-    return (0, "".join(chr(255 - ord(c)) for c in date))
+def sort_key(entry, by_id):
+    # the order of the site: oldest first, entries without a date last, the same date by title
+    return (entry_date(entry, by_id) or "9999", entry["title"]["en"].lower())
 
 
 def anchor(title):
@@ -59,7 +55,46 @@ def entry_lines(entry, by_id):
             roots.append(by_id[r]["title"]["en"] + (f" ({root_date[:4]})" if root_date else ""))
     if roots:
         lines.append(f"  Grew from: {', '.join(roots)}.")
+    # the example scheme of the site, as a still picture (scripts/build_figures.py writes the files)
+    if (ROOT / "figures" / f"{entry['id']}.svg").exists():
+        lines += ["", f'  <img src="figures/{entry["id"]}.svg" width="440" alt="Example scheme: {entry["title"]["en"]}">', ""]
     return lines
+
+
+def short_lines(entry, by_id):
+    date = entry_date(entry, by_id)
+    year = f" ({date[:4]})" if date and date[:4] not in entry["title"]["en"] else ""
+    return [f"- **{entry['title']['en']}**{year}. {plain_definition(entry)}"]
+
+
+# The introduction of the site, word for word (index.html, INTRO and INTRO_SOURCES). When one changes, change the other.
+INTRO_SOURCES = [
+    "https://x.com/karpathy/status/2015883857489522876",
+    "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+    "https://www.omnea.co/blog/ai-in-our-programming-interviews",
+]
+
+
+def intro(practices, with_root):
+    note = lambda n: f"<sup>[[{n}]]({INTRO_SOURCES[n - 1]})</sup>"
+    return [
+        "In the autumn of 2025 I kept a list of tips and techniques for coding with LLMs, and stopped adding to it that "
+        "November. A year later I wouldn’t follow a lot of it myself.",
+        "",
+        f"That November Opus 4.5 and GPT-5.2 came out, and agents got good enough to write most of the code.{note(1)} "
+        "This year Fable 5 and GPT-6 Astra went further and stopped needing most of what my list was for: detailed "
+        f"instructions, carefully prepared context, reminders to think hard.{note(2)}",
+        "",
+        "So I started again from what people who ship software with agents write about their own work. That’s this "
+        f"page: {practices} practices, each with the sentence it came from.",
+        "",
+        "Prompting is the part that got less important. The practices that were around long before LLMs went the other "
+        "way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight "
+        f"now.{note(3)} {with_root} of the practices on this page grew straight out of one of those older ones, like "
+        "test-driven development (2002) or the pull request (2008). My read: a team that already had tests, review "
+        "and CI in place was better prepared for agents than a team with clever prompts.",
+        "",
+    ]
 
 
 def main():
@@ -67,71 +102,77 @@ def main():
     by_id = {e["id"]: e for e in data["entries"]}
     # older practices appear only as «Grew from» of an agent-era entry, not as entries of their own
     entries = [e for e in data["entries"] if e.get("seededFrom") != "pre-llm"]
-    llm_era_start = data["meta"]["llmEraStart"]
-    stages = data["meta"]["stages"]
-    groups = data["meta"]["groups"]
+    meta = data["meta"]
 
-    blocks = [("Approaches", [e for e in entries if e["kind"] == "approach"], None)]
-    placed = {e["id"] for e in blocks[0][1]}
-    for stage in stages:
-        if stage["id"] == "general":
-            continue
-        members = [e for e in entries if e["id"] not in placed and e["kind"] != "concept" and not e.get("group")
-                   and (e.get("stages") or [None])[0] == stage["id"]]
-        if members:
-            blocks.append((stage["title"]["en"], members, None))
-            placed |= {e["id"] for e in members}
-    for group in groups:
-        members = [e for e in entries if e["id"] not in placed and e.get("group") == group["id"]]
-        if members:
-            prefix = "Concepts: " if group["section"] == "concepts" else "Across stages: "
-            if group["id"] == "team":
-                prefix = ""
-            blocks.append((prefix + group["title"]["en"], members, group.get("description", {}).get("en")))
-            placed |= {e["id"] for e in members}
-    rest = [e for e in entries if e["id"] not in placed and e.get("seededFrom") == "pre-llm"]
-    if rest:
-        blocks.append(("Before coding agents", rest, None))
-        placed |= {e["id"] for e in rest}
-    other = [e for e in entries if e["id"] not in placed]
-    if other:
-        blocks.append(("Across stages: other", other, None))
+    # the parts and sections of the site, in its order: (part title, [(section title or None, description, members, repeated)])
+    parts = [
+        ("By SDLC stage", [(st["title"]["en"], None,
+                            [e for e in entries if e["kind"] == "practice" and st["id"] in (e.get("stages") or [])], False)
+                           for st in meta["stages"] if st["id"] != "general"]),
+        ("Cross-stage", [(g["title"]["en"], g.get("description", {}).get("en"),
+                          [e for e in entries if e["kind"] != "approach" and e.get("group") == g["id"]], False)
+                         for g in meta["groups"] if g["section"] == "general" and g["id"] != "team"]),
+    ]
+    for g in meta["groups"]:
+        if g["section"] == "general" and g["id"] == "team":
+            parts.append((g["title"]["en"], [(None, g.get("description", {}).get("en"),
+                                              [e for e in entries if e["kind"] != "approach" and e.get("group") == "team"], False)]))
+    for theme in meta.get("themes") or []:
+        parts.append((theme["title"]["en"], [(None, (theme.get("description") or {}).get("en"),
+                                               [e for e in entries if e["id"] in theme["entries"]], True)]))
+    parts.append(("Approaches", [(None, None, [e for e in entries if e["kind"] == "approach"], False)]))
+    parts = [(title, [section for section in sections if section[2]]) for title, sections in parts]
+    parts = [(title, sections) for title, sections in parts if sections]
 
     quoted = sum(1 for e in entries for s in e["sources"] if s.get("quote"))
+    figures = sum(1 for e in entries if (ROOT / "figures" / f"{e['id']}.svg").exists())
+    with_root = sum(1 for e in entries if any(r in by_id for r in e.get("rootsIn") or []))
     out = [
         "<!-- Generated from data/entries.json by scripts/build_readme.py. Do not edit by hand. -->",
         "",
-        "# Software Practices",
+        "# Agentic software development reference",
         "",
-        "An open reference of software development practices, from older engineering practices to work with coding agents.",
-        "For each practice: a definition, when it appeared, where it grew from, and the sources that describe it.",
+        "**Practices coding agents changed in a year, and ones they didn’t**",
         "",
-        f"- **Site:** [{SITE_URL}]({SITE_URL}) (the same data, with a timeline and quotes on hover)",
+    ]
+    out += intro(len(entries), with_root)
+    out += [
+        f"- **Site:** [{SITE_URL}]({SITE_URL}) (the same reference with a timeline, quotes on hover and schemes that play)",
         "- **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it",
         f"- **Survey for your team:** [team-survey]({SURVEY_TEMPLATE_URL}), a GitHub template that asks the same practices inside your team",
         "",
-        f"{len(entries)} entries, {sum(len(e['sources']) for e in entries)} sources, {quoted} of them with a verbatim quote "
-        "stored in the data. Preliminary edition: dates are not verified yet.",
+        f"{len(entries)} practices, {sum(len(e['sources']) for e in entries)} sources, {quoted} of them with a verbatim quote "
+        f"stored in the data, {figures} example schemes. Preliminary edition: dates are not verified yet.",
         "",
-        "Inside every section the newest entries come first; practices from before coding agents come last.",
+        "Inside every section the oldest practices come first.",
         "",
         "## Contents",
         "",
     ]
-    out += [f"- [{title}](#{anchor(title)})" for title, _, _ in blocks]
+    for title, sections in parts:
+        if sections[0][0] is None:
+            out.append(f"- [{title}](#{anchor(title)})")
+        else:
+            out.append(f"- [{title}](#{anchor(title)}): " + " · ".join(f"[{name}](#{anchor(name)})" for name, _, _, _ in sections))
     out.append("")
-    for title, members, description in blocks:
+    for title, sections in parts:
         out += [f"## {title}", ""]
-        if description:
-            out += [description, ""]
-        for entry in sorted(members, key=lambda e: sort_key(e, by_id, llm_era_start)):
-            out += entry_lines(entry, by_id)
-        out.append("")
+        for name, description, members, repeated in sections:
+            if name:
+                out += [f"### {name}", ""]
+            if description:
+                out += [description, ""]
+            if repeated:
+                out += ["These practices also stand in their own sections above, with their sources.", ""]
+            for entry in sorted(members, key=lambda e: sort_key(e, by_id)):
+                out += short_lines(entry, by_id) if repeated else entry_lines(entry, by_id)
+            out.append("")
     out += ["## Contributing", "",
             "See [CONTRIBUTING.md](CONTRIBUTING.md). Changes go into `data/entries.json`; then run "
             "`python3 scripts/build_readme.py`.", ""]
-    (ROOT / "README.md").write_text("\n".join(out), encoding="utf-8")
-    print("README.md:", len(entries), "entries in", len(blocks), "sections")
+    text = re.sub(r"\n{3,}", "\n\n", "\n".join(out))
+    (ROOT / "README.md").write_text(text, encoding="utf-8")
+    print("README.md:", len(entries), "practices,", figures, "schemes,", sum(len(s) for _, s in parts), "sections")
 
 
 if __name__ == "__main__":

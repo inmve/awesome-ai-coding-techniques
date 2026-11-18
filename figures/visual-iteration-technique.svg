@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="16">mock-up</text>
+  <rect x="10" y="24" width="120" height="84" fill="#fff" stroke="#111" />
+  <rect x="18" y="32" width="104" height="10" fill="none" stroke="#111" />
+  <rect x="18" y="50" width="48" height="50" fill="none" stroke="#111" />
+  <rect x="74" y="50" width="48" height="50" fill="none" stroke="#111" />
+  <text x="170" y="16">screenshot</text>
+  <rect x="170" y="24" width="120" height="84" fill="#fff" stroke="#111" />
+  <rect x="178" y="32" width="104" height="10" fill="none" stroke="#111" />
+  <rect class="move" x="178" y="50" width="48" height="50" fill="none" stroke="#111" style="transform:translate(0px,0px) scale(1.5,.6)" />
+  <rect class="move" x="234" y="50" width="48" height="50" fill="none" stroke="#111" style="transform:translate(14px,22px) scale(.6,.45)" />
+  <text x="142" y="72" fill="#c0392b" font-size="18">≠</text>
+  <text x="170" y="128">try 1</text>
+  </svg>

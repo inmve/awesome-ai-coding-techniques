@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="30" width="140" height="44" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="34" y="57">docs typo</text>
+  <text x="174" y="57" fill="#999">low</text>
+  <rect x="20" y="100" width="140" height="44" fill="#fff" stroke="#111" />
+  <text x="34" y="127">payment code</text>
+  <text x="174" y="127" fill="#c0392b">high</text>
+  <path d="M214 52 H252" fill="none" stroke="#111" />
+  <text x="262" y="57">light check</text>
+  <text x="364" y="57" fill="#2a7d3f">✓</text>
+  <text x="456" y="57" fill="#2a7d3f">merged</text>
+  <path d="M214 122 H252" fill="none" stroke="#111" />
+  <text x="262" y="127">full review</text>
+  <text x="364" y="127" fill="#2a7d3f">✓</text>
+  <text x="382" y="127" fill="#2a7d3f">✓</text>
+  <text x="400" y="127" fill="#2a7d3f">✓</text>
+  </svg>

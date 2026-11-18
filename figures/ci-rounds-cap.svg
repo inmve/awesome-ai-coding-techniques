@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="40" width="90" height="44" fill="#fff" stroke="#111" />
+  <text x="36" y="67">agent</text>
+  <path d="M110 62 H148" fill="none" stroke="#111" />
+  <rect x="150" y="40" width="110" height="44" fill="#fff" stroke="#111" />
+  <text x="166" y="67">CI 1</text>
+  <text x="232" y="67" fill="#c0392b">✕</text>
+  <path d="M260 62 H278" fill="none" stroke="#111" />
+  <rect x="280" y="40" width="110" height="44" fill="#fff" stroke="#111" />
+  <text x="296" y="67">CI 2</text>
+  <text x="362" y="67" fill="#c0392b">✕</text>
+  <rect x="420" y="40" width="110" height="44" fill="#fff" stroke="#999" stroke-dasharray="4 3" />
+  <text x="436" y="67" fill="#999">CI 3</text>
+  <path d="M420 40 L530 84" fill="none" stroke="#c0392b" />
+  <text x="420" y="112" fill="#c0392b">stop</text>
+</svg>

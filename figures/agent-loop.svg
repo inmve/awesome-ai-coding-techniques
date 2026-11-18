@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="16">tasks</text>
+  <rect x="10" y="24" width="120" height="120" fill="#fff" stroke="#111" />
+  <text x="24" y="50">task 1</text><text x="24" y="76">task 2</text><text x="24" y="102">task 3</text><text x="24" y="128">task 4</text>
+  <text x="108" y="50" fill="#2a7d3f">✓</text>
+  <text x="108" y="76" fill="#2a7d3f">✓</text>
+  <text x="170" y="16">agent</text>
+  <rect x="170" y="44" width="120" height="64" fill="#fff" stroke="#111" />
+  <path d="M130 98 H150 V76 H168" fill="none" stroke="#111" />
+  <text x="182" y="68">run 3, 4</text>
+  <path d="M182 88 H278" fill="none" stroke="#111" stroke-width="6" />
+  <text x="170" y="128" fill="#999">fresh context</text>
+  </svg>

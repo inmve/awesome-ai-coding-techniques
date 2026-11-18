@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 190" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="62" width="110" height="46" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <text x="34" y="90">change</text>
+  <rect x="220" y="26" width="170" height="120" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <text x="236" y="56">build</text><text x="236" y="90">lint</text><text x="236" y="124">tests</text>
+  <text x="356" y="56" fill="#2a7d3f">✓</text>
+  <text x="356" y="90" fill="#2a7d3f">✓</text>
+  <text x="356" y="124" fill="#c0392b">✕</text>
+  <text x="408" y="124" fill="#c0392b">1 failing</text>
+  <path d="M305 146 V172 H75 V114" fill="none" stroke="#c0392b" />
+  <path d="M70 120 L75 112 L80 120" fill="none" stroke="#c0392b" />
+  <text x="150" y="186" fill="#c0392b">output of the failing test</text>
+</svg>

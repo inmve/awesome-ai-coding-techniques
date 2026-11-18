@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 176" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="14" fill="#999">report</text>
+  <rect x="10" y="20" width="280" height="36" fill="#fff" stroke="#111" />
+  <text x="22" y="43">agent: tests pass <tspan fill="#2a7d3f">✓</tspan></text>
+  <path d="M150 56 V76" fill="none" stroke="#111" />
+  <rect x="10" y="78" width="280" height="36" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <text x="22" y="101">developer runs the app</text>
+  <text x="266" y="101" fill="#c0392b">✕</text>
+  <text x="22" y="136" fill="#c0392b">blank page</text>
+  <text x="22" y="164" fill="#c0392b">not merged</text>
+</svg>

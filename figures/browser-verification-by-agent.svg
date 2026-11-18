@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="40">AC1 sign up</text>
+  <text x="10" y="72">AC2 email</text>
+  <text x="10" y="104">AC3 reset</text>
+  <text x="134" y="40" fill="#2a7d3f">✓</text>
+  <text x="134" y="72" fill="#2a7d3f">✓</text>
+  <text x="134" y="104" fill="#c0392b">✕</text>
+  <rect x="164" y="18" width="126" height="96" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <path d="M164 34 H290" fill="none" stroke="#111" />
+  <text x="176" y="66">reset</text>
+  <path d="M176 82 H270" fill="none" stroke="#999" />
+  <path d="M176 96 H240" fill="none" stroke="#999" />
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 184" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="14" fill="#999">legacy code</text>
+  <rect x="10" y="22" width="96" height="112" fill="#fff" stroke="#111" />
+  <path d="M18 40 H96" fill="none" stroke="#999" />
+  <path d="M24 56 H90" fill="none" stroke="#999" />
+  <path d="M18 72 H80" fill="none" stroke="#999" />
+  <path d="M24 88 H96" fill="none" stroke="#999" />
+  <path d="M18 104 H86" fill="none" stroke="#999" />
+  <path d="M24 120 H70" fill="none" stroke="#999" />
+  <path d="M106 78 H124" fill="none" stroke="#111" />
+  <text x="128" y="14" fill="#999">extracted facts</text>
+  <text x="146" y="44">type P: 15% off</text>
+  <text x="146" y="76">over 1000: 5%</text>
+  <text x="146" y="108">ADJ: ?</text>
+  <circle cx="136" cy="40" r="5" fill="#2a7d3f" />
+  <circle cx="136" cy="72" r="5" fill="#d9a400" />
+  <circle cx="136" cy="104" r="5" fill="#c0392b" />
+  <path d="M176 112 V146" fill="none" stroke="#c0392b" />
+  <rect x="128" y="148" width="120" height="30" fill="#fff" stroke="#111" />
+  <text x="140" y="168">expert</text>
+</svg>
