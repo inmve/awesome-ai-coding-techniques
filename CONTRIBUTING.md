@@ -2,7 +2,7 @@
 
 This repository is an open reference of software development practices. Every entry in
 [`data/entries.json`](data/entries.json) has a definition, a date and sources; `README.md` and the
-[site](https://inmve.github.io/software-practices/) are built from that file.
+[site](https://inmve.github.io/dev-with-agents/) are built from that file.
 
 ## What an entry needs
 

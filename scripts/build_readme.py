@@ -11,7 +11,7 @@ import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SITE_URL = "https://inmve.github.io/software-practices/"
+SITE_URL = "https://inmve.github.io/dev-with-agents/"
 SURVEY_TEMPLATE_URL = "https://github.com/inmve/team-survey"
 
 

@@ -8,7 +8,7 @@
     "answersRepo": "inmve/awesome-ai-coding-techniques",
     "answersDir": "answers",
     "minAnswersForBar": 5,
-    "siteUrl": "https://inmve.github.io/software-practices/",
+    "siteUrl": "https://inmve.github.io/dev-with-agents/",
     "usefulQuestion": {
       "id": "frontier-2026-10",
       "ru": "Пользуетесь этим сейчас?",
