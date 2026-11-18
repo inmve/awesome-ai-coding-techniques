@@ -22,50 +22,36 @@
       {
         "id": "req-plan",
         "title": {
-          "ru": "Планирование",
-          "en": "Planning"
-        }
-      },
-      {
-        "id": "ui-proto",
-        "title": {
-          "ru": "Интерфейс и прототип",
-          "en": "UI & Prototype"
+          "en": "Planning & prototyping",
+          "ru": "Планирование и прототипы"
         }
       },
       {
         "id": "coding",
         "title": {
-          "ru": "Код",
-          "en": "Coding"
-        }
-      },
-      {
-        "id": "debugging",
-        "title": {
-          "ru": "Отладка",
-          "en": "Debugging"
+          "en": "Coding & debugging",
+          "ru": "Код и отладка"
         }
       },
       {
         "id": "test-qa",
         "title": {
-          "ru": "Тестирование",
-          "en": "Testing & QA"
+          "en": "Tests",
+          "ru": "Тесты"
+        }
+      },
+      {
+        "id": "verification",
+        "title": {
+          "en": "Verification",
+          "ru": "Проверка"
         }
       },
       {
         "id": "code-review",
         "title": {
-          "ru": "Ревью",
-          "en": "Review"
-        }
-      },
-      {
-        "id": "release",
-        "title": {
-          "ru": "Релиз",
-          "en": "Release"
+          "en": "Review & release",
+          "ru": "Ревью и релиз"
         }
       },
       {
@@ -88,8 +74,24 @@
         "id": "prompting",
         "section": "general",
         "title": {
-          "ru": "Промптинг",
-          "en": "Prompting"
+          "en": "Prompts and models",
+          "ru": "Промпты и модели"
+        }
+      },
+      {
+        "id": "agent-instructions",
+        "section": "general",
+        "title": {
+          "en": "Agent instructions",
+          "ru": "Инструкции для агента"
+        }
+      },
+      {
+        "id": "agent-setup-upkeep",
+        "section": "general",
+        "title": {
+          "en": "Maintaining the agent setup",
+          "ru": "Поддержка настройки агента"
         }
       },
       {
@@ -104,24 +106,32 @@
         "id": "sessions",
         "section": "general",
         "title": {
-          "ru": "Сессии и параллельная работа",
-          "en": "Sessions and parallel work"
+          "en": "Parallel work",
+          "ru": "Параллельная работа"
         }
       },
       {
-        "id": "models-budget",
+        "id": "unattended-runs",
         "section": "general",
         "title": {
-          "en": "Model choice",
-          "ru": "Выбор модели"
+          "en": "Unattended runs",
+          "ru": "Запуски без присмотра"
+        }
+      },
+      {
+        "id": "steering",
+        "section": "general",
+        "title": {
+          "en": "Steering the agent",
+          "ru": "Управление агентом"
         }
       },
       {
         "id": "human",
         "section": "general",
         "title": {
-          "ru": "Роль человека",
-          "en": "The human's part"
+          "en": "Staying hands-on",
+          "ru": "Своими руками"
         }
       },
       {
@@ -140,8 +150,16 @@
         "id": "team-review",
         "section": "team",
         "title": {
-          "en": "Review of agent changes",
-          "ru": "Проверка изменений агента"
+          "en": "Review rules",
+          "ru": "Правила ревью"
+        }
+      },
+      {
+        "id": "team-ownership",
+        "section": "team",
+        "title": {
+          "en": "Risk and ownership",
+          "ru": "Риск и ответственность"
         }
       },
       {
@@ -150,14 +168,6 @@
         "title": {
           "en": "Contributions to open-source projects",
           "ru": "Вклады в открытые проекты"
-        }
-      },
-      {
-        "id": "team-ownership",
-        "section": "team",
-        "title": {
-          "en": "Ownership",
-          "ru": "Ответственность"
         }
       },
       {
@@ -359,7 +369,7 @@
         "en": "Named by Mitchell Hashimoto",
         "ru": "Название дал Митчелл Хашимото"
       },
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "memory-file",
@@ -434,7 +444,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "orchestrator-worker",
@@ -608,7 +618,7 @@
       "firstAppeared": {
         "date": "2025-02-02",
         "precision": "day",
-        "verified": false,
+        "verified": true,
         "note": "Andrej Karpathy, X/Twitter, Feb 2 2025"
       },
       "coinedHere": false,
@@ -803,7 +813,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "critical-paths-assistant-rest",
@@ -941,7 +951,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "models-budget"
+      "group": "prompting"
     },
     {
       "id": "centralize-assistant-instructions",
@@ -992,7 +1002,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "interrupt-and-redirect-often",
@@ -1043,7 +1053,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "ai-coding-partner",
@@ -1307,7 +1317,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "async-agent-work",
@@ -1369,7 +1379,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "feature-sessions",
@@ -1511,12 +1521,12 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "models-budget"
+      "group": "prompting"
     },
     {
       "id": "choose-boring-stable-libraries",
       "stages": [
-        "req-plan"
+        "coding"
       ],
       "kind": "practice",
       "title": {
@@ -1660,7 +1670,7 @@
     {
       "id": "prototype-first-development",
       "stages": [
-        "ui-proto"
+        "req-plan"
       ],
       "kind": "practice",
       "title": {
@@ -1713,7 +1723,7 @@
     {
       "id": "visual-iteration-technique",
       "stages": [
-        "ui-proto"
+        "req-plan"
       ],
       "kind": "practice",
       "title": {
@@ -1863,7 +1873,7 @@
         "codemods"
       ],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "keep-code-dead-simple",
@@ -2125,7 +2135,7 @@
     {
       "id": "log-everything-for-debugging",
       "stages": [
-        "debugging"
+        "coding"
       ],
       "kind": "practice",
       "title": {
@@ -2176,7 +2186,7 @@
     {
       "id": "ai-feedback-loops",
       "stages": [
-        "debugging"
+        "coding"
       ],
       "kind": "practice",
       "title": {
@@ -2240,7 +2250,7 @@
     {
       "id": "comprehensive-testing-mandate",
       "stages": [
-        "test-qa"
+        "verification"
       ],
       "kind": "practice",
       "title": {
@@ -2520,7 +2530,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "kiss",
@@ -2635,7 +2645,7 @@
       "id": "continuous-integration",
       "stages": [
         "test-qa",
-        "release"
+        "code-review"
       ],
       "title": {
         "ru": "Непрерывная интеграция",
@@ -2760,7 +2770,7 @@
     {
       "id": "rubber-duck-debugging",
       "stages": [
-        "debugging"
+        "coding"
       ],
       "title": {
         "ru": "Метод утёнка",
@@ -3273,7 +3283,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "session-log-review",
@@ -3337,7 +3347,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "agent-review-on-every-pull-request",
@@ -3406,7 +3416,7 @@
     {
       "id": "browser-verification-by-agent",
       "stages": [
-        "test-qa"
+        "verification"
       ],
       "kind": "practice",
       "title": {
@@ -3503,7 +3513,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "cli-instead-of-mcp",
@@ -3616,7 +3626,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "instruction-file-load-check",
@@ -3667,7 +3677,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "repeated-prompt-to-command",
@@ -3707,7 +3717,7 @@
       "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "repository-as-system-of-record",
@@ -4846,7 +4856,7 @@
       "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "tests-as-data-files",
@@ -5128,7 +5138,7 @@
       "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "voluntary-review-of-model-prs",
@@ -5549,7 +5559,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "agent-task-claiming",
@@ -5666,7 +5676,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "agent-readable-test-output",
@@ -5824,7 +5834,7 @@
     {
       "id": "disjoint-evidence-hypotheses",
       "stages": [
-        "debugging"
+        "coding"
       ],
       "kind": "practice",
       "title": {
@@ -5921,12 +5931,12 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "throwaway-editor-with-export",
       "stages": [
-        "ui-proto"
+        "req-plan"
       ],
       "kind": "practice",
       "title": {
@@ -6046,7 +6056,7 @@
     {
       "id": "agent-gated-feature-flags",
       "stages": [
-        "release"
+        "code-review"
       ],
       "kind": "practice",
       "title": {
@@ -6289,7 +6299,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "progressive-disclosure",
@@ -6340,7 +6350,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-instructions"
     },
     {
       "id": "prune-constraints-after-model-upgrade",
@@ -6380,7 +6390,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "context-memory"
+      "group": "agent-setup-upkeep"
     },
     {
       "id": "code-slice-explainer",
@@ -6471,7 +6481,7 @@
       "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
-      "group": "models-budget"
+      "group": "prompting"
     },
     {
       "id": "trace-driven-performance-fixes",
@@ -6527,7 +6537,7 @@
     {
       "id": "read-only-database-for-agent",
       "stages": [
-        "test-qa"
+        "verification"
       ],
       "kind": "practice",
       "title": {
@@ -6567,7 +6577,7 @@
     {
       "id": "before-and-after-reproduction",
       "stages": [
-        "test-qa"
+        "verification"
       ],
       "kind": "practice",
       "title": {
@@ -6664,7 +6674,7 @@
       "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "observable-long-running-commands",
@@ -6704,7 +6714,7 @@
       "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
-      "group": "sessions"
+      "group": "unattended-runs"
     },
     {
       "id": "source-traceability",
@@ -7158,7 +7168,7 @@
     {
       "id": "feature-flags",
       "stages": [
-        "release"
+        "code-review"
       ],
       "kind": "practice",
       "title": {
@@ -7222,7 +7232,7 @@
     {
       "id": "alert-first-investigation-by-agent",
       "stages": [
-        "release"
+        "code-review"
       ],
       "kind": "practice",
       "title": {
@@ -7273,7 +7283,7 @@
     {
       "id": "alert-triage-agent-chain",
       "stages": [
-        "release"
+        "code-review"
       ],
       "kind": "practice",
       "title": {
@@ -7435,7 +7445,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team-review"
+      "group": "team-ownership"
     },
     {
       "id": "ci-workflow-files-high-risk",
@@ -7475,7 +7485,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team-review"
+      "group": "team-ownership"
     },
     {
       "id": "track-record-before-unreviewed-landing",
@@ -7537,12 +7547,12 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "team-review"
+      "group": "team-ownership"
     },
     {
       "id": "ci-rounds-cap",
       "stages": [
-        "test-qa"
+        "verification"
       ],
       "kind": "practice",
       "title": {
@@ -7617,7 +7627,7 @@
       "opposites": [],
       "rootsIn": [],
       "origin": null,
-      "group": "human"
+      "group": "steering"
     },
     {
       "id": "codebase-audit-with-agent",
@@ -7914,12 +7924,12 @@
       "seededFrom": "scheme-review",
       "opposites": [],
       "origin": null,
-      "group": "models-budget"
+      "group": "prompting"
     },
     {
       "id": "spike-solution",
       "stages": [
-        "ui-proto"
+        "req-plan"
       ],
       "kind": "practice",
       "title": {

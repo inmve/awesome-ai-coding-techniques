@@ -98,7 +98,8 @@ def intro(practices, with_root):
         "Prompting is the part that got less important. The practices that were around long before LLMs went the other "
         "way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight "
         f"now.{note(3)} {with_root} of the practices on this page grew straight out of one of those older ones, like "
-        "continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change.",
+        "continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change. "
+        "Even the rubber duck is still here; now it talks back.",
         "",
     ]
 
