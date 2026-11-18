@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><text x="10" y="16">2025</text>
+  <rect x="10" y="28" width="116" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="18" y="48" font-size="12">requests.get()</text>
+  <text x="132" y="48" fill="#2a7d3f">✓</text>
+  <rect x="10" y="70" width="116" height="30" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <text x="18" y="90" font-size="12">newlib.fetch()</text>
+  <text x="132" y="90" fill="#c0392b">✕</text>
+  <text x="10" y="122" fill="#c0392b" font-size="12">no such function</text>
+  <path d="M150 8 V140" fill="none" stroke="#111" stroke-width="1.6" />
+  <text x="164" y="16">2026</text>
+  <rect x="164" y="28" width="116" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="172" y="48" font-size="12">requests.get()</text>
+  <rect x="164" y="70" width="116" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="172" y="90" font-size="12">newlib.fetch()</text>
+  <text x="286" y="48" fill="#2a7d3f">✓</text>
+  <text x="286" y="90" fill="#2a7d3f">✓</text>
+</svg>

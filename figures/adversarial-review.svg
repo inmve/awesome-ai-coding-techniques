@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 190" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="12" width="100" height="34" fill="#fff" stroke="#111" /><text x="24" y="34">model A</text>
+  <path d="M60 46 V90" fill="none" stroke="#111" />
+  <text x="68" y="72">writes</text>
+  <rect x="10" y="92" width="160" height="88" fill="#fff" stroke="#c0392b" stroke-width="1.6" />
+  <path d="M22 110 H150" fill="none" stroke="#999" />
+  <path d="M22 128 H120" fill="none" stroke="#999" />
+  <path d="M22 146 H146" fill="none" stroke="#999" />
+  <path d="M22 164 H110" fill="none" stroke="#999" />
+  <rect x="190" y="12" width="100" height="34" fill="#fff" stroke="#111" />
+  <text x="204" y="34">model B</text>
+  <path d="M240 46 V136 H172" fill="none" stroke="#111" />
+  <text x="200" y="128">reviews</text>
+  <text x="156" y="114" fill="#c0392b" font-size="11">✕</text>
+  <text x="156" y="150" fill="#c0392b" font-size="11">✕</text>
+  <text x="156" y="168" fill="#c0392b" font-size="11">✕</text>
+  <text x="190" y="170" fill="#c0392b">3 problems</text>
+</svg>

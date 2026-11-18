@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 196" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="20" y="16" width="200" height="164" fill="#fff" stroke="#111" />
+  <text x="36" y="50">lexer</text><text x="36" y="88">parser</text><text x="36" y="126">codegen</text><text x="36" y="164">tests</text>
+  <g><rect x="176" y="40" width="14" height="11" fill="#111" /><path d="M179 40 V36 a4 4 0 0 1 8 0 V40" fill="none" stroke="#111" stroke-width="1.6" /></g>
+  <text x="196" y="51" font-size="11">1</text>
+  <rect x="380" y="26" width="110" height="40" fill="#fff" stroke="#111" /><text x="396" y="51">agent 1</text>
+  <rect x="380" y="124" width="110" height="40" fill="#fff" stroke="#c0392b" stroke-width="1.6" /><text x="396" y="149">agent 2</text>
+  <path d="M380 46 H230" fill="none" stroke="#111" />
+  <path d="M238 41 L230 46 L238 51" fill="none" stroke="#111" />
+  <path d="M380 144 H320 V58 H234" fill="none" stroke="#c0392b" />
+  <text x="246" y="76" fill="#c0392b">✕</text>
+  </svg>

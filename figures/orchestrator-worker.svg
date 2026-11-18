@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 196" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="200" y="14" width="160" height="48" fill="#fff" stroke="#111" />
+  <text x="216" y="43">lead</text>
+  <text x="290" y="43">1 2 3</text>
+  <path d="M280 62 V96 H100 V128" fill="none" stroke="#111" />
+  <path d="M280 62 V128" fill="none" stroke="#111" />
+  <path d="M280 62 V96 H460 V128" fill="none" stroke="#111" />
+  <rect x="40" y="130" width="120" height="46" fill="#fff" stroke="#111" />
+  <rect x="220" y="130" width="120" height="46" fill="#fff" stroke="#111" />
+  <rect x="400" y="130" width="120" height="46" fill="#fff" stroke="#111" />
+  <text x="54" y="158">1</text>
+  <text x="234" y="158">2</text>
+  <text x="414" y="158">3</text>
+  <rect x="74" y="148" width="60" height="10" fill="none" stroke="#999" />
+  <rect x="254" y="148" width="60" height="10" fill="none" stroke="#999" />
+  <rect x="434" y="148" width="60" height="10" fill="none" stroke="#999" />
+  <rect class="move" x="74" y="148" width="60" height="10" fill="#111" style="transform:scaleX(0)" />
+  <rect class="move" x="254" y="148" width="60" height="10" fill="#111" style="transform:scaleX(0)" />
+  <rect class="move" x="434" y="148" width="60" height="10" fill="#111" style="transform:scaleX(0)" />
+  </svg>

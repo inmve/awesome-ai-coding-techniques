@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 176" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="10" width="80" height="30" fill="#fff" stroke="#111" /><text x="22" y="30">logs</text>
+  <rect x="110" y="10" width="80" height="30" fill="#fff" stroke="#111" /><text x="118" y="30">metrics</text>
+  <rect x="210" y="10" width="80" height="30" fill="#fff" stroke="#111" /><text x="222" y="30">diff</text>
+  <path d="M50 40 V62" fill="none" stroke="#111" />
+  <path d="M150 40 V62" fill="none" stroke="#111" />
+  <path d="M250 40 V62" fill="none" stroke="#111" />
+  <rect x="10" y="64" width="80" height="30" fill="#fff" stroke="#111" /><text x="28" y="84">agent</text>
+  <rect x="110" y="64" width="80" height="30" fill="#fff" stroke="#111" /><text x="128" y="84">agent</text>
+  <rect x="210" y="64" width="80" height="30" fill="#fff" stroke="#111" /><text x="228" y="84">agent</text>
+  <text x="42" y="120">H1</text>
+  <text x="142" y="120">H2</text>
+  <text x="242" y="120">H3</text>
+  </svg>
