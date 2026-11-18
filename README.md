@@ -12,7 +12,7 @@ So I started again from what people who ship software with agents write about th
 
 Prompting is the part that got less important. The practices that were around long before LLMs went the other way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight now.<sup>[[3]](https://www.omnea.co/blog/ai-in-our-programming-interviews)</sup> 22 of the practices on this page grew straight out of one of those older ones, like continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change. Even the rubber duck is still here; now it talks back.
 
-- **Site:** [https://inmve.github.io/software-practices/](https://inmve.github.io/software-practices/) (the same reference with a timeline, quotes on hover and schemes that play)
+- **Site:** [https://inmve.github.io/dev-with-agents/](https://inmve.github.io/dev-with-agents/) (the same reference with a timeline, quotes on hover and schemes that play)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
