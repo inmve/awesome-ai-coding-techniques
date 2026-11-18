@@ -3,7 +3,7 @@
 Usage: python3 scripts/build_readme.py
 data/entries.json is the source of truth; README.md is generated from it, do not edit README.md by hand.
 The README follows the form of the site: the same title and introduction, the same parts in the same order
-(by SDLC stage, cross-stage, teams and projects, thematic groups, approaches), oldest practices first inside a
+(by SDLC stage, cross-stage, teams and projects, thematic groups, approaches), newest practices first inside a
 section, and the example schemes as still pictures from figures/ (see scripts/build_figures.py).
 """
 import json
@@ -29,8 +29,11 @@ def entry_date(entry, by_id):
 
 
 def sort_key(entry, by_id):
-    # the order of the site: oldest first, entries without a date last, the same date by title
-    return (entry_date(entry, by_id) or "9999", entry["title"]["en"].lower())
+    # the order of the site: newest first, entries without a date last, the same date by title (2026-11-18);
+    # sorted() is ascending, so the date is turned into a key that is smaller for a later date
+    date = entry_date(entry, by_id)
+    newest_first = tuple(-ord(c) for c in date) if date else (1,)
+    return (newest_first, entry["title"]["en"].lower())
 
 
 def shown_year(entry):
@@ -160,7 +163,7 @@ def main():
         f"{len(entries)} practices, {sum(len(e['sources']) for e in entries)} sources, {quoted} of them with a verbatim quote "
         f"stored in the data, {figures} example schemes. Preliminary edition: dates are not verified yet.",
         "",
-        "Inside every section the oldest practices come first.",
+        "Inside every section the newest practices come first.",
         "",
         "## Contents",
         "",
