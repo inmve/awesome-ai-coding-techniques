@@ -193,7 +193,9 @@
       },
       "firstAppeared": null,
       "coinedHere": false,
-      "seeAlso": [],
+      "seeAlso": [
+        "agent-self-review"
+      ],
       "sources": [
         {
           "n": 1,
@@ -1670,7 +1672,9 @@
       ],
       "seededFrom": "techniques",
       "opposites": [],
-      "rootsIn": [],
+      "rootsIn": [
+        "spike-solution"
+      ],
       "origin": null,
       "group": null
     },
@@ -2314,7 +2318,9 @@
       },
       "firstAppeared": null,
       "coinedHere": false,
-      "seeAlso": [],
+      "seeAlso": [
+        "adversarial-review"
+      ],
       "sources": [
         {
           "n": 1,
@@ -4865,8 +4871,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which faults are injected into production code, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
-        "ru": "Практика, при которой в продакшен-код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
+        "en": "The practice in which faults are injected into the code under test, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
+        "ru": "Практика, при которой в проверяемый код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4947,6 +4953,17 @@
           "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
           "published": "2026-10-13",
           "checkedAt": "2026-11-16"
+        },
+        {
+          "n": 3,
+          "role": "why",
+          "quote": "when AI agents write both production and test code, developers risk losing the assurance that automated tests protect against functional errors.",
+          "quoteLang": "en",
+          "author": "Matteo Vaccari",
+          "work": "Tests as data",
+          "url": "https://martinfowler.com/articles/tests-as-data.html",
+          "published": "2026-11-11",
+          "checkedAt": "2026-11-18"
         }
       ],
       "seededFrom": "run-3",
@@ -6530,8 +6547,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, for a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the before and after; the team keeps the instructions for this in a skill. [1][2]",
-        "ru": "Практика, при которой для исправления бага агент воспроизводит проблему, записывает сломанное поведение, вносит исправление и повторяет те же шаги, чтобы показать «до» и «после»; инструкции для этого команда держит в скилле. [1][2]"
+        "en": "The practice in which, for a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the reviewer the before and after; the team keeps the instructions for this in a skill. [1][2]",
+        "ru": "Практика, при которой для исправления бага агент воспроизводит проблему, записывает сломанное поведение, вносит исправление и повторяет те же шаги, чтобы показать ревьюеру «до» и «после»; инструкции для этого команда держит в скилле. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6541,13 +6558,13 @@
         {
           "n": 1,
           "role": "support",
-          "quote": "For bug fixes, River can reproduce the issue, record the broken behavior, implement the fix, and then repeat the same steps to show the before and after.",
+          "quote": "For bug fixes, River can reproduce the issue, record the broken behavior, implement the fix, and then repeat the same steps to show the before and after. This makes reviewing changes much easier.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
           "work": "We gave AI agents a mobile dev environment (2026)",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
-          "checkedAt": "2026-11-16"
+          "checkedAt": "2026-11-18"
         },
         {
           "n": 2,
@@ -7443,8 +7460,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which an automated workflow may land changes without review of each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes. [1]",
-        "ru": "Практика, при которой автоматический процесс получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений. [1]"
+        "en": "The practice in which a recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked. [1][2][3]",
+        "ru": "Практика, при которой повторяющийся автоматический источник изменений кода, например один и тот же промпт, который агент запускает снова и снова, получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений; источник, из-за которого был инцидент, блокируют. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7460,6 +7477,28 @@
           "url": "https://arxiv.org/html/2605.30208",
           "published": "2026-06-12",
           "checkedAt": "2026-11-17"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Specific runbooks that have caused incidents or that target sensitive areas are permanently blocked from RADAR-landing.",
+          "quoteLang": "en",
+          "author": "Chris Adams et al.",
+          "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+          "url": "https://arxiv.org/html/2605.30208",
+          "published": "2026-06-12",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "RACER operates through runbooks, which are pre-configured prompts that encode the instructions, constraints, and context for a specific type of code change.",
+          "quoteLang": "en",
+          "author": "Chris Adams et al.",
+          "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+          "url": "https://arxiv.org/html/2605.30208",
+          "published": "2026-06-12",
+          "checkedAt": "2026-11-18"
         }
       ],
       "seededFrom": "run-9",
@@ -7660,6 +7699,17 @@
           "url": "https://addyosmani.com/blog/cognitive-parallel-agents/",
           "published": "2026-04-07",
           "checkedAt": "2026-11-17"
+        },
+        {
+          "n": 2,
+          "role": "why",
+          "quote": "Your cognitive bandwidth doesn’t parallelize.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Your parallel Agent limit",
+          "url": "https://addyosmani.com/blog/cognitive-parallel-agents/",
+          "published": "2026-04-07",
+          "checkedAt": "2026-11-18"
         }
       ],
       "seededFrom": "run-9",
@@ -7758,6 +7808,137 @@
       "rootsIn": [],
       "origin": null,
       "group": "team"
+    },
+    {
+      "id": "evals-on-own-tasks",
+      "stages": [
+        "general"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Model evals on your own tasks",
+        "ru": "Оценка моделей на своих задачах"
+      },
+      "aliases": {
+        "ru": [],
+        "en": []
+      },
+      "definition": {
+        "en": "The practice in which a team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores. [1][2][3]",
+        "ru": "Практика, при которой команда выбирает модель или инструмент для агента, прогоняя кандидатов на выборке своих реальных задач, у каждой из которых есть проверка результата, а не по опубликованным результатам бенчмарков. [1][2][3]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [
+        "instruction-file-evals"
+      ],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "Then test the candidates on your own tasks before you commit.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku",
+          "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
+          "published": "2026-11-09",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 2,
+          "role": "support",
+          "quote": "Pull a sample of real tasks. Write an outcome check for each one, such as a passing test, a closed ticket or a correct row count.",
+          "quoteLang": "en",
+          "author": "Addy Osmani",
+          "work": "Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku",
+          "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
+          "published": "2026-11-09",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 3,
+          "role": "support",
+          "quote": "To confirm that our standards explained the gap, we ran both reviewers on an external benchmark with human-labeled defects. They tied. On our own repo, where Tessl Code Review had our standards to work from, it found more real defects and far fewer false positives.",
+          "quoteLang": "en",
+          "author": "Simon Rendon Arango, Colin Hallett",
+          "work": "75% of Tessl's PRs now merge without human review",
+          "url": "https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review",
+          "published": "2026-10-16",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 4,
+          "role": "why",
+          "quote": "And on the models: there are plenty of public benchmarks but they have all been gamed to death. Ignore them.",
+          "quoteLang": "en",
+          "author": "David Crawshaw",
+          "work": "Eight more months of agents",
+          "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
+          "published": "2026-02-08",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "seededFrom": "scheme-review",
+      "opposites": [],
+      "origin": null,
+      "group": "models-budget"
+    },
+    {
+      "id": "spike-solution",
+      "stages": [
+        "ui-proto"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "Spike solution",
+        "ru": "Спайк"
+      },
+      "aliases": {
+        "ru": [],
+        "en": [
+          "Spike"
+        ]
+      },
+      "definition": {
+        "en": "The practice in which, before building, a team writes the smallest throwaway program that shows whether an approach can work. [1][2]",
+        "ru": "Практика, при которой до основной работы команда пишет самую маленькую программу на выброс, показывающую, может ли подход сработать. [1][2]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [],
+      "rootsIn": [],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "I would often ask Kent, \"What is the simplest thing we can program that will convince us we are on the right track?\"",
+          "quoteLang": "en",
+          "author": "Ward Cunningham",
+          "work": "Spike Solution (C2 wiki)",
+          "url": "http://c2.com/xp/SpikeSolution.html",
+          "published": null,
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 2,
+          "role": "relevance",
+          "quote": "Normally, I wouldn’t bother – too time-consuming. Now I can verify anything using prototypes instantly, a massive productivity unlock.",
+          "quoteLang": "en",
+          "author": "Alex Grebenyuk",
+          "work": "Claude Code Experience",
+          "url": "https://kean.github.io/post/experiencing-claude-code",
+          "published": "2025-06-23",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "seededFrom": "pre-llm",
+      "opposites": [],
+      "origin": {
+        "en": "Named by Kent Beck, as Ward Cunningham tells it on the C2 wiki",
+        "ru": "Название дал Кент Бек, как рассказывает Уорд Каннингем на вики C2"
+      },
+      "group": null
     }
   ]
 }
