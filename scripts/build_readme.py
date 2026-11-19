@@ -130,7 +130,8 @@ def main():
             subgroups = [s for s in meta["groups"] if s["section"] == "team"]
             if subgroups:
                 part_descriptions[g["title"]["en"]] = g.get("description", {}).get("en")
-                parts.append((g["title"]["en"], [(s["title"]["en"], s.get("description", {}).get("en"),
+                approaches = [("Approaches", None, [e for e in entries if e["kind"] == "approach"], False)]
+                parts.append((g["title"]["en"], approaches + [(s["title"]["en"], s.get("description", {}).get("en"),
                                                   [e for e in entries if e["kind"] != "approach" and e.get("group") == s["id"]], False)
                                                  for s in subgroups]))
             else:
@@ -139,7 +140,6 @@ def main():
     for theme in meta.get("themes") or []:
         parts.append((theme["title"]["en"], [(None, (theme.get("description") or {}).get("en"),
                                                [e for e in entries if e["id"] in theme["entries"]], True)]))
-    parts.append(("Approaches", [(None, None, [e for e in entries if e["kind"] == "approach"], False)]))
     parts = [(title, [section for section in sections if section[2]]) for title, sections in parts]
     parts = [(title, sections) for title, sections in parts if sections]
 

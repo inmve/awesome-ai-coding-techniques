@@ -24,9 +24,8 @@ Inside every section the newest practices come first.
 
 - [By SDLC stage](#by-sdlc-stage): [Planning & prototyping](#planning--prototyping) · [Coding & debugging](#coding--debugging) · [Tests](#tests) · [Verification](#verification) · [Review & release](#review--release)
 - [Cross-stage](#cross-stage): [Prompts and models](#prompts-and-models) · [Agent instructions](#agent-instructions) · [Maintaining the agent setup](#maintaining-the-agent-setup) · [Context and memory](#context-and-memory) · [Parallel work](#parallel-work) · [Unattended runs](#unattended-runs) · [Steering the agent](#steering-the-agent) · [Staying hands-on](#staying-hands-on)
-- [Teams and projects](#teams-and-projects): [Review rules](#review-rules) · [Risk and ownership](#risk-and-ownership) · [Contributions to open-source projects](#contributions-to-open-source-projects) · [Hiring](#hiring)
+- [Teams and projects](#teams-and-projects): [Approaches](#approaches) · [Review rules](#review-rules) · [Risk and ownership](#risk-and-ownership) · [Contributions to open-source projects](#contributions-to-open-source-projects) · [Hiring](#hiring)
 - [How far the agent is trusted](#how-far-the-agent-is-trusted)
-- [Approaches](#approaches)
 
 ## By SDLC stage
 
@@ -423,6 +422,16 @@ Inside every section the newest practices come first.
 
 Rules that teams and open-source projects set for work with agents.
 
+### Approaches
+
+- **Software factory**. An approach in which people neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass.
+  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/); [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
+- **Spec-driven development**. An approach in which well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits.
+  Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Liu Shangqi, 2025-12-04](https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices).
+  Grew from: Waterfall.
+- **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.
+  Sources: [Andrej Karpathy, 2025-02-02](https://x.com/karpathy/status/1886192184808149383).
+
 ### Review rules
 
 - **Approval bound to a commit**. A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again.
@@ -524,16 +533,6 @@ These practices also stand in their own sections above, with their sources.
 - **Critical parts by hand**. The practice in which the developer writes the critical and complex parts of the code and hands the rest to the agent.
 - **Reading agent-written code**. The practice in which the developer reads the code an agent wrote before accepting it.
 - **Permission-free mode**. The practice in which the agent's permission prompts are switched off, sometimes inside a container.
-
-## Approaches
-
-- **Software factory**. An approach in which people neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass.
-  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/); [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
-- **Spec-driven development**. An approach in which well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits.
-  Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Liu Shangqi, 2025-12-04](https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices).
-  Grew from: Waterfall.
-- **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.
-  Sources: [Andrej Karpathy, 2025-02-02](https://x.com/karpathy/status/1886192184808149383).
 
 ## Contributing
 
