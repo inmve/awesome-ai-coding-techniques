@@ -151,7 +151,7 @@ def main():
         "",
         "# Agentic software development reference",
         "",
-        "**What agents changed in how software gets built, and what they didn’t**",
+        "**Practices for coding agents, and the older ones that still hold up**",
         "",
     ]
     out += intro(len(entries), with_root)
