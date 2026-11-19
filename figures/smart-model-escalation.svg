@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 165" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="12" width="96" height="32" fill="#fff" stroke="#111" /><text x="22" y="33">task</text>
+  <path d="M106 28 H128" fill="none" stroke="#111" />
+  <rect x="130" y="12" width="160" height="32" fill="#fff" stroke="#111" />
+  <text x="142" y="33">small model</text>
+  <text x="142" y="66">try 1</text><text x="196" y="66" fill="#c0392b">✕</text>
+  <text x="142" y="86">try 2</text><text x="196" y="86" fill="#c0392b">✕</text>
+  <path d="M276 44 V108" fill="none" stroke="#111" />
+  <text x="216" y="80" fill="#999">harder</text>
+  <rect x="130" y="110" width="160" height="32" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="142" y="131">larger model</text>
+  <text x="262" y="131" fill="#2a7d3f">✓</text>
+  <text x="10" y="131" fill="#2a7d3f">solved</text>
+</svg>
