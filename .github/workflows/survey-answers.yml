@@ -1,0 +1,27 @@
+name: Survey answers
+
+# A pull request from the survey page adds one file under answers/. This job checks the file and merges the
+# pull request. It reads the file through the API and never runs code from the pull request.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: survey-answers-${{ github.event.pull_request.number }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the answer and merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 .github/check_answer.py

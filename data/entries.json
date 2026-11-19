@@ -6,9 +6,9 @@
     "llmEraStart": "2022-11-30",
     "issuesUrl": "https://github.com/inmve/agentic-coding-practices/issues",
     "answersRepo": "inmve/agentic-coding-practices",
-    "answersDir": "answers",
+    "answersDir": "answers/2026",
     "minAnswersForBar": 5,
-    "siteUrl": "https://inmve.github.io/dev-with-agents/",
+    "siteUrl": "https://inmve.github.io/agentic-coding-practices/",
     "usefulQuestion": {
       "id": "frontier-2026-10",
       "ru": "Пользуетесь этим сейчас?",
@@ -36,15 +36,8 @@
       {
         "id": "test-qa",
         "title": {
-          "en": "Tests",
-          "ru": "Тесты"
-        }
-      },
-      {
-        "id": "verification",
-        "title": {
-          "en": "Verification",
-          "ru": "Проверка"
+          "en": "Tests and verification",
+          "ru": "Тесты и проверка"
         }
       },
       {
@@ -230,8 +223,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which one agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3][4][5]",
-        "ru": "Практика, при которой один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3][4][5]"
+        "en": "One agent does the work and a second agent, often on a different model, reviews it with the task of finding problems. [1][2][3][4][5]",
+        "ru": "Один агент выполняет работу, а второй, часто на другой модели, проверяет её с задачей найти проблемы. [1][2][3][4][5]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -315,8 +308,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which, after each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again. [1][2][3]",
-        "ru": "Практика, при которой после каждой ошибки агента разработчик добавляет в его окружение правило, скрипт или проверку, чтобы ошибка не повторилась. [1][2][3]"
+        "en": "After each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again. [1][2][3]",
+        "ru": "После каждой ошибки агента разработчик добавляет в его окружение правило, скрипт или проверку, чтобы ошибка не повторилась. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2026-02-05",
@@ -392,8 +385,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1][2][3]",
-        "ru": "Практика, при которой инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1][2][3]"
+        "en": "Project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1][2][3]",
+        "ru": "Инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2025-01-01",
@@ -458,8 +451,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results. [1][2][3][4]",
-        "ru": "Практика, при которой один агент ведёт план, раздаёт подзадачи агентам-исполнителям и сводит их результаты. [1][2][3][4]"
+        "en": "One agent holds the plan, hands subtasks to worker agents and merges their results. [1][2][3][4]",
+        "ru": "Один агент ведёт план, раздаёт подзадачи агентам-исполнителям и сводит их результаты. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -532,8 +525,8 @@
         ]
       },
       "definition": {
-        "en": "An approach in which people neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass. [1][2][3][4]",
-        "ru": "Подход, при котором люди не пишут и не ревьюят код: спецификации и сценарии управляют агентами, которые пишут код и запускают проверки, пока те не пройдут. [1][2][3][4]"
+        "en": "People neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass. [1][2][3][4]",
+        "ru": "Люди не пишут и не ревьюят код: спецификации и сценарии управляют агентами, которые пишут код и запускают проверки, пока те не пройдут. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -660,8 +653,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3]",
-        "ru": "Практика, при которой агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3]"
+        "en": "The agent first lays out steps, risks and checks, and the developer corrects that outline before any code is written. [1][2][3]",
+        "ru": "Агент сначала описывает шаги, риски и проверки, а разработчик правит это описание до начала работы над кодом. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -721,8 +714,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer reworks the agent's implementation by hand after the agent has finished. [1][2]",
-        "ru": "Практика, при которой разработчик руками дорабатывает реализацию после того, как агент закончил работу. [1][2]"
+        "en": "The developer reworks the agent's implementation by hand after the agent has finished. [1][2]",
+        "ru": "Разработчик руками дорабатывает реализацию после того, как агент закончил работу. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -771,8 +764,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which, after the agent fails at the same problem several times, the developer switches to a different approach. [1][2]",
-        "ru": "Практика, при которой после нескольких неудач агента на одной задаче разработчик переходит к другому подходу. [1][2]"
+        "en": "After the agent fails at the same problem several times, the developer switches to a different approach. [1][2]",
+        "ru": "После нескольких неудач агента на одной задаче разработчик переходит к другому подходу. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -821,8 +814,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer writes the critical and complex parts of the code and hands the rest to the agent. [1]",
-        "ru": "Практика, при которой разработчик сам пишет критичные и сложные части кода, а остальное отдаёт агенту. [1]"
+        "en": "The developer writes the critical and complex parts of the code and hands the rest to the agent. [1]",
+        "ru": "Разработчик сам пишет критичные и сложные части кода, а остальное отдаёт агенту. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -865,8 +858,8 @@
         ]
       },
       "definition": {
-        "en": "An approach in which well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits. [1][2]",
-        "ru": "Подход, при котором тщательно составленные спецификации требований служат промптами, по которым агенты генерируют код; в самой строгой форме разработчик правит только спецификацию. [1][2]"
+        "en": "Well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits. [1][2]",
+        "ru": "Тщательно составленные спецификации требований служат промптами, по которым агенты генерируют код; в самой строгой форме разработчик правит только спецификацию. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -917,8 +910,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which each step of a task runs on the model that suits it: a cheaper model for routine steps, a more capable one for planning and judging. [1]",
-        "ru": "Практика, при которой каждый шаг задачи выполняет подходящая ему модель: более дешёвая на рутинных шагах, более сильная на планировании и оценке. [1]"
+        "en": "Each step of a task runs on the model that suits it: a cheaper model for routine steps, a more capable one for planning and judging. [1]",
+        "ru": "Каждый шаг задачи выполняет подходящая ему модель: более дешёвая на рутинных шагах, более сильная на планировании и оценке. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -956,8 +949,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which one instruction file is canonical and the files of other agent tools point to it through a pointer line, a symlink or an include. [1][2]",
-        "ru": "Практика, при которой один документ с инструкциями считается основным, а документы других инструментов ссылаются на него строкой-указателем, симлинком или включением. [1][2]"
+        "en": "One instruction file is canonical and the files of other agent tools point to it through a pointer line, a symlink or an include. [1][2]",
+        "ru": "Один документ с инструкциями считается основным, а документы других инструментов ссылаются на него строкой-указателем, симлинком или включением. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1006,8 +999,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer stops the agent as soon as it goes in a wrong direction and gives it a correction. [1][2]",
-        "ru": "Практика, при которой разработчик останавливает агента, как только тот уходит не туда, и даёт поправку. [1][2]"
+        "en": "The developer stops the agent as soon as it goes in a wrong direction and gives it a correction. [1][2]",
+        "ru": "Разработчик останавливает агента, как только тот уходит не туда, и даёт поправку. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1056,8 +1049,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result. [1]",
-        "ru": "Практика, при которой разработчик работает с агентом как с напарником: проговаривает с ним задачу, подправляет его по ходу, затем проверяет, рефакторит и тестирует результат. [1]"
+        "en": "The developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result. [1]",
+        "ru": "Разработчик работает с агентом как с напарником: проговаривает с ним задачу, подправляет его по ходу, затем проверяет, рефакторит и тестирует результат. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1098,8 +1091,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer uses an agent to learn a language or a concept and then applies it when writing code. [1]",
-        "ru": "Практика, при которой разработчик учит с агентом язык или понятие, а затем применяет знание, когда пишет код. [1]"
+        "en": "The developer uses an agent to learn a language or a concept and then applies it when writing code. [1]",
+        "ru": "Разработчик учит с агентом язык или понятие, а затем применяет знание, когда пишет код. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1137,8 +1130,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the tools an agent calls are made to respond quickly, report errors clearly and withstand misuse. [1][2]",
-        "ru": "Практика, при которой инструменты, которые вызывает агент, делают быстрыми, с понятными сообщениями об ошибках и устойчивыми к неправильному использованию. [1][2]"
+        "en": "The tools an agent calls are made to respond quickly, report errors clearly and withstand misuse. [1][2]",
+        "ru": "Инструменты, которые вызывает агент, делают быстрыми, с понятными сообщениями об ошибках и устойчивыми к неправильному использованию. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1191,8 +1184,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3][4]",
-        "ru": "Практика, при которой несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3][4]"
+        "en": "Several agents work on separate tasks at the same time, each in its own isolated copy of the repository. [1][2][3][4]",
+        "ru": "Несколько агентов одновременно работают над разными задачами, каждый в своей изолированной копии репозитория. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1265,8 +1258,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent's permission prompts are switched off, sometimes inside a container. [1][2]",
-        "ru": "Практика, при которой запросы разрешений у агента отключены, иногда внутри контейнера. [1][2]"
+        "en": "The agent's permission prompts are switched off, sometimes inside a container. [1][2]",
+        "ru": "Запросы разрешений у агента отключены, иногда внутри контейнера. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1315,8 +1308,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent works on a task while the developer is busy with something else. [1][2][3]",
-        "ru": "Практика, при которой агент работает над задачей, пока разработчик занят другим делом. [1][2][3]"
+        "en": "The agent works on a task while the developer is busy with something else. [1][2][3]",
+        "ru": "Агент работает над задачей, пока разработчик занят другим делом. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1383,8 +1376,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой у каждой функции или задачи своя сессия агента или контекст очищают перед несвязанной задачей. [1][2][3][4][5][6]",
-        "en": "The practice in which each feature or task gets its own agent session, or the context is cleared before an unrelated task begins. [1][2][3][4][5][6]"
+        "ru": "У каждой функции или задачи своя сессия агента или контекст очищают перед несвязанной задачей. [1][2][3][4][5][6]",
+        "en": "Each feature or task gets its own agent session, or the context is cleared before an unrelated task begins. [1][2][3][4][5][6]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1477,8 +1470,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard. [1]",
-        "ru": "Практика, при которой работу начинают на быстрой и дешёвой модели и переходят на более сильную, когда задача оказывается сложной. [1]"
+        "en": "Work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard. [1]",
+        "ru": "Работу начинают на быстрой и дешёвой модели и переходят на более сильную, когда задача оказывается сложной. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1516,8 +1509,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer picks stable libraries that are popular enough for many examples of them to be in the model's training data. [1][2]",
-        "ru": "Практика, при которой разработчик выбирает стабильные библиотеки, достаточно популярные, чтобы в обучающих данных модели было много примеров их использования. [1][2]"
+        "en": "The developer picks stable libraries that are popular enough for many examples of them to be in the model's training data. [1][2]",
+        "ru": "Разработчик выбирает стабильные библиотеки, достаточно популярные, чтобы в обучающих данных модели было много примеров их использования. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1568,8 +1561,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A prompting habit in which the model is asked for several approaches with the pros and cons of each. [1][2]",
-        "ru": "Приём, при котором модель просят предложить несколько подходов с плюсами и минусами каждого. [1][2]"
+        "en": "The model is asked for several approaches with the pros and cons of each. [1][2]",
+        "ru": "Модель просят предложить несколько подходов с плюсами и минусами каждого. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1618,8 +1611,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer drafts the solution without an agent and then gives it to an agent to review and improve. [1]",
-        "ru": "Практика, при которой разработчик сначала набрасывает решение без агента, а затем отдаёт агенту на проверку и улучшение. [1]"
+        "en": "The developer drafts the solution without an agent and then gives it to an agent to review and improve. [1]",
+        "ru": "Разработчик сначала набрасывает решение без агента, а затем отдаёт агенту на проверку и улучшение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1657,8 +1650,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a project starts with a quickly generated prototype that shows whether the key requirement can be met. [1][2]",
-        "ru": "Практика, при которой проект начинают с быстро сгенерированного прототипа, показывающего, выполнимо ли ключевое требование. [1][2]"
+        "en": "A project starts with a quickly generated prototype that shows whether the key requirement can be met. [1][2]",
+        "ru": "Проект начинают с быстро сгенерированного прототипа, показывающего, выполнимо ли ключевое требование. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1709,8 +1702,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match. [1]",
-        "ru": "Практика, при которой агенту дают скриншот результата или макета и повторяют правку и скриншот, пока они не совпадут. [1]"
+        "en": "The agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match. [1]",
+        "ru": "Агенту дают скриншот результата или макета и повторяют правку и скриншот, пока они не совпадут. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1748,8 +1741,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A prompting habit in which the agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail. [1][2]",
-        "ru": "Приём, при котором агента просят сделать интерфейс «красивее» или «элегантнее» без уточнений. [1][2]"
+        "en": "The agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail. [1][2]",
+        "ru": "Агента просят сделать интерфейс «красивее» или «элегантнее» без уточнений. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1798,8 +1791,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3]",
-        "ru": "Практика, при которой агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3]"
+        "en": "Systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3]",
+        "ru": "Агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1861,8 +1854,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which code that agents work on is kept simple. [1]",
-        "ru": "Практика, при которой код, с которым работают агенты, держат простым. [1]"
+        "en": "Code that agents work on is kept simple. [1]",
+        "ru": "Код, с которым работают агенты, держат простым. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1902,8 +1895,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a session starts by placing existing code into the context, and changes are made from there. [1]",
-        "ru": "Практика, при которой сессию начинают с загрузки существующего кода в контекст и дальше вносят изменения от него. [1]"
+        "en": "A session starts by placing existing code into the context, and changes are made from there. [1]",
+        "ru": "Сессию начинают с загрузки существующего кода в контекст и дальше вносят изменения от него. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1941,8 +1934,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation. [1][2][3][4]",
-        "ru": "Практика, при которой разработчик задаёт сигнатуры функций, каркас или заготовку, а агент пишет реализацию. [1][2][3][4]"
+        "en": "The developer gives function signatures, an outline or scaffolding, and the agent fills in the implementation. [1][2][3][4]",
+        "ru": "Разработчик задаёт сигнатуры функций, каркас или заготовку, а агент пишет реализацию. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2013,8 +2006,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent is given current documentation and examples for a library that is missing from the model's training data. [1][2]",
-        "ru": "Практика, при которой агенту дают актуальную документацию и примеры по библиотеке, которой нет в обучающих данных модели. [1][2]"
+        "en": "The agent is given current documentation and examples for a library that is missing from the model's training data. [1][2]",
+        "ru": "Агенту дают актуальную документацию и примеры по библиотеке, которой нет в обучающих данных модели. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2063,8 +2056,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent writes the needed code in the project, and a new library is not added. [1][2]",
-        "ru": "Практика, при которой нужный код агент пишет в проекте, а новую библиотеку не подключают. [1][2]"
+        "en": "The agent writes the needed code in the project, and a new library is not added. [1][2]",
+        "ru": "Нужный код агент пишет в проекте, а новую библиотеку не подключают. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2113,8 +2106,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a system is built with detailed logging, so that an agent can read the logs and find the cause of a problem. [1][2]",
-        "ru": "Практика, при которой систему делают с подробным логированием, чтобы агент мог прочитать логи и найти причину проблемы. [1][2]"
+        "en": "A system is built with detailed logging, so that an agent can read the logs and find the cause of a problem. [1][2]",
+        "ru": "Систему делают с подробным логированием, чтобы агент мог прочитать логи и найти причину проблемы. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2163,8 +2156,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes. [1][2][3]",
-        "ru": "Практика, при которой агенту дают проверку, которую он может запустить (тесты, сборку, линтер), и он повторяет правку и проверку, пока проверка не пройдёт. [1][2][3]"
+        "en": "The agent is given a check it can run (tests, a build, a linter) and repeats the change and the check until the check passes. [1][2][3]",
+        "ru": "Агенту дают проверку, которую он может запустить (тесты, сборку, линтер), и он повторяет правку и проверку, пока проверка не пройдёт. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2214,7 +2207,7 @@
     {
       "id": "comprehensive-testing-mandate",
       "stages": [
-        "verification"
+        "test-qa"
       ],
       "kind": "practice",
       "title": {
@@ -2226,8 +2219,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer tests that agent-written code actually works. [1]",
-        "ru": "Практика, при которой разработчик сам проверяет, что код агента действительно работает. [1]"
+        "en": "The developer tests that agent-written code actually works. [1]",
+        "ru": "Разработчик сам проверяет, что код агента действительно работает. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2265,8 +2258,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which tests are written first and shown to fail, and the agent then writes the implementation until they pass. [1][2]",
-        "ru": "Практика, при которой сначала пишут тесты и убеждаются, что они падают, а затем агент пишет реализацию, пока они не пройдут. [1][2]"
+        "en": "Tests are written first and shown to fail, and the agent then writes the implementation until they pass. [1][2]",
+        "ru": "Сначала пишут тесты и убеждаются, что они падают, а затем агент пишет реализацию, пока они не пройдут. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2317,8 +2310,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent reviews its own code before a person reviews it. [1][2][3]",
-        "ru": "Практика, при которой агент делает ревью собственного кода до ревью человеком. [1][2][3]"
+        "en": "The agent reviews its own code before a person reviews it. [1][2][3]",
+        "ru": "Агент делает ревью собственного кода до ревью человеком. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2384,8 +2377,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the developer reads the code an agent wrote before accepting it. [1][2][3][4]",
-        "ru": "Практика, при которой разработчик читает код, написанный агентом, до того как его принять. [1][2][3][4]"
+        "en": "The developer reads the code an agent wrote before accepting it. [1][2][3][4]",
+        "ru": "Разработчик читает код, написанный агентом, до того как его принять. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2456,8 +2449,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer asks the agent to rework the code as many times as it takes to reach an acceptable result. [1][2]",
-        "ru": "Практика, при которой разработчик просит агента переделывать код столько раз, сколько нужно для приемлемого результата. [1][2]"
+        "en": "The developer asks the agent to rework the code as many times as it takes to reach an acceptable result. [1][2]",
+        "ru": "Разработчик просит агента переделывать код столько раз, сколько нужно для приемлемого результата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2620,8 +2613,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой изменения часто сливают в общую ветку, и каждое слияние запускает автоматическую сборку и тесты. [1][2]",
-        "en": "The practice in which changes are merged into the shared branch often, and every merge runs an automatic build and tests. [1][2]"
+        "ru": "Изменения часто сливают в общую ветку, и каждое слияние запускает автоматическую сборку и тесты. [1][2]",
+        "en": "Changes are merged into the shared branch often, and every merge runs an automatic build and tests. [1][2]"
       },
       "firstAppeared": {
         "date": "1998-10-01",
@@ -2681,8 +2674,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Практика, при которой двое пишут один код вместе: один набирает, другой проверяет и думает наперёд. [1][2]",
-        "en": "The practice in which two people write the same code together: one types, the other reviews and thinks ahead. [1][2]"
+        "ru": "Двое пишут один код вместе: один набирает, другой проверяет и думает наперёд. [1][2]",
+        "en": "Two people write the same code together: one types, the other reviews and thinks ahead. [1][2]"
       },
       "firstAppeared": {
         "date": "1998-10-01",
@@ -2742,8 +2735,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Практика, при которой разработчик вслух объясняет проблему слушателю, которому не нужно отвечать, например резиновой утке, и находит причину по ходу объяснения. [1]",
-        "en": "The practice in which a developer explains a problem aloud to a listener that need not respond, such as a rubber duck, and finds the cause while explaining. [1]"
+        "ru": "Разработчик вслух объясняет проблему слушателю, которому не нужно отвечать, например резиновой утке, и находит причину по ходу объяснения. [1]",
+        "en": "A developer explains a problem aloud to a listener that need not respond, such as a rubber duck, and finds the cause while explaining. [1]"
       },
       "firstAppeared": {
         "date": "1999-10-01",
@@ -2795,8 +2788,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой сначала пишут тест и убеждаются, что он падает, затем пишут код, пока тест не пройдёт, и после этого рефакторят код. [1][2]",
-        "en": "The practice in which a test is written first and shown to fail, the code is then written until the test passes, and the code is refactored. [1][2]"
+        "ru": "Сначала пишут тест и убеждаются, что он падает, затем пишут код, пока тест не пройдёт, и после этого рефакторят код. [1][2]",
+        "en": "A test is written first and shown to fail, the code is then written until the test passes, and the code is refactored. [1][2]"
       },
       "firstAppeared": {
         "date": "2002-01-01",
@@ -2856,8 +2849,8 @@
         "en": []
       },
       "definition": {
-        "ru": "Практика, при которой разработчик открывает ветку в начале работы над фичей, ведёт в ней всю работу и вливает изменения, когда фича готова. [1][2]",
-        "en": "The practice in which a developer opens a branch when starting a feature, does all the work on it there and integrates the changes when the feature is done. [1][2]"
+        "ru": "Разработчик открывает ветку в начале работы над фичей, ведёт в ней всю работу и вливает изменения, когда фича готова. [1][2]",
+        "en": "A developer opens a branch when starting a feature, does all the work on it there and integrates the changes when the feature is done. [1][2]"
       },
       "firstAppeared": {
         "date": "2009-09-03",
@@ -2920,8 +2913,8 @@
         ]
       },
       "definition": {
-        "ru": "Практика, при которой изменение подают как запрос на слияние, и до слияния его обсуждают и проверяют в этом запросе. [1][2]",
-        "en": "The practice in which a change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1][2]"
+        "ru": "Изменение подают как запрос на слияние, и до слияния его обсуждают и проверяют в этом запросе. [1][2]",
+        "en": "A change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1][2]"
       },
       "firstAppeared": {
         "date": "2008-02-23",
@@ -2979,8 +2972,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a large mechanical change across a codebase is made by a program that rewrites the code. [1][2][3]",
-        "ru": "Практика, при которой большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2][3]"
+        "en": "A large mechanical change across a codebase is made by a program that rewrites the code. [1][2][3]",
+        "ru": "Большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2][3]"
       },
       "firstAppeared": {
         "date": "2008-12-01",
@@ -3049,8 +3042,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team spends a small, fixed number of “innovation tokens” on new technologies and uses well-known ones for everything else. [1][2]",
-        "ru": "Практика, при которой команда тратит небольшое фиксированное число «жетонов на новизну» на новые технологии, а в остальном берёт хорошо известные. [1][2]"
+        "en": "A team spends a small, fixed number of “innovation tokens” on new technologies and uses well-known ones for everything else. [1][2]",
+        "ru": "Команда тратит небольшое фиксированное число «жетонов на новизну» на новые технологии, а в остальном берёт хорошо известные. [1][2]"
       },
       "firstAppeared": {
         "date": "2015-03-30",
@@ -3109,8 +3102,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, for a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work. [1][2][3]",
-        "ru": "Практика, при которой на большой задаче агент записывает план и ход работы в файл, контекст очищается, а новая сессия читает этот файл и продолжает работу. [1][2][3]"
+        "en": "For a large task, the agent writes its plan and progress to a file, the context is cleared, and a new session reads the file and continues the work. [1][2][3]",
+        "ru": "На большой задаче агент записывает план и ход работы в файл, контекст очищается, а новая сессия читает этот файл и продолжает работу. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3174,8 +3167,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests. [1][2][3][4][5]",
-        "ru": "Практика, при которой задачи агентов запускаются по расписанию без участия человека: ночное ревью существующего кода, регулярная уборка или ночное исправление багов, которые заканчиваются pull request. [1][2][3][4][5]"
+        "en": "Agent tasks run on a schedule without anyone starting them: a nightly review of existing code, a recurring cleanup or overnight bug fixes that end in pull requests. [1][2][3][4][5]",
+        "ru": "Задачи агентов запускаются по расписанию без участия человека: ночное ревью существующего кода, регулярная уборка или ночное исправление багов, которые заканчиваются pull request. [1][2][3][4][5]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3257,8 +3250,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2][3]",
-        "ru": "Практика, при которой сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2][3]"
+        "en": "Saved agent session logs are reviewed regularly, by scripts, people or another agent, for repeated errors and permission requests, and the agent's instructions and tools are changed in response. [1][2][3]",
+        "ru": "Сохранённые логи сессий агента регулярно разбирают скриптами, людьми или другим агентом в поисках повторяющихся ошибок и запросов разрешений, и по итогам меняют инструкции и инструменты агента. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3320,8 +3313,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team has an agent review every pull request, and review by a person becomes optional. [1][2][3]",
-        "ru": "Практика, при которой команда отдаёт каждый pull request на ревью агенту, а ревью человеком становится необязательным. [1][2][3]"
+        "en": "A team has an agent review every pull request, and review by a person becomes optional. [1][2][3]",
+        "ru": "Команда отдаёт каждый pull request на ревью агенту, а ревью человеком становится необязательным. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3371,7 +3364,7 @@
     {
       "id": "browser-verification-by-agent",
       "stages": [
-        "verification"
+        "test-qa"
       ],
       "kind": "practice",
       "title": {
@@ -3383,8 +3376,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent drives a browser on the running application to check a change against each acceptance criterion and reports what it saw, with screenshots, for each criterion. [1]",
-        "ru": "Практика, при которой агент управляет браузером на запущенном приложении, проверяет изменение по каждому критерию приёмки и сообщает по каждому критерию, что увидел, со скриншотами. [1]"
+        "en": "An agent drives a browser on the running application to check a change against each acceptance criterion and reports what it saw, with screenshots, for each criterion. [1]",
+        "ru": "Агент управляет браузером на запущенном приложении, проверяет изменение по каждому критерию приёмки и сообщает по каждому критерию, что увидел, со скриншотами. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3422,8 +3415,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2][3]",
-        "ru": "Практика, при которой агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2][3]"
+        "en": "The agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2][3]",
+        "ru": "Агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3483,8 +3476,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2][3][4]",
-        "ru": "Практика, при которой сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2][3][4]"
+        "en": "Services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2][3][4]",
+        "ru": "Сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3555,8 +3548,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1]",
-        "ru": "Практика, при которой команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1]"
+        "en": "A team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1]",
+        "ru": "Команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3594,8 +3587,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the developer checks which instruction file the agent tool actually reads, for example with a marker word, before relying on it. [1][2]",
-        "ru": "Практика, при которой разработчик проверяет, какой файл инструкций агент на самом деле читает, например по контрольному слову, прежде чем на него полагаться. [1][2]"
+        "en": "The developer checks which instruction file the agent tool actually reads, for example with a marker word, before relying on it. [1][2]",
+        "ru": "Разработчик проверяет, какой файл инструкций агент на самом деле читает, например по контрольному слову, прежде чем на него полагаться. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3644,8 +3637,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name. [1]",
-        "ru": "Практика, при которой промпт или порядок действий, который разработчик повторяет снова и снова, сохраняется как скилл или команда, кладётся в git и запускается по имени. [1]"
+        "en": "A prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name. [1]",
+        "ru": "Промпт или порядок действий, который разработчик повторяет снова и снова, сохраняется как скилл или команда, кладётся в git и запускается по имени. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3683,8 +3676,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them. [1][2][3]",
-        "ru": "Практика, при которой решения, планы, соглашения и прочий контекст хранятся как версионируемые файлы в репозитории, а не в чатах, документах и головах людей, чтобы агенты могли их прочитать. [1][2][3]"
+        "en": "Decisions, plans, conventions and other context are kept as versioned files in the repository instead of chats, documents and people's heads, so that agents can read them. [1][2][3]",
+        "ru": "Решения, планы, соглашения и прочий контекст хранятся как версионируемые файлы в репозитории, а не в чатах, документах и головах людей, чтобы агенты могли их прочитать. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3746,8 +3739,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a long agent session is summarized at a milestone or near the context limit, with instructions on what the summary keeps, and work continues in a new context from the summary. [1]",
-        "ru": "Практика, при которой длинную сессию агента сжимают в краткое изложение на рубеже работы или у предела контекста, с указанием, что сохранить, и работа продолжается в новом контексте с этого изложения. [1]"
+        "en": "A long agent session is summarized at a milestone or near the context limit, with instructions on what the summary keeps, and work continues in a new context from the summary. [1]",
+        "ru": "Длинную сессию агента сжимают в краткое изложение на рубеже работы или у предела контекста, с указанием, что сохранить, и работа продолжается в новом контексте с этого изложения. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3785,8 +3778,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results. [1][2]",
-        "ru": "Практика, при которой несколько агентов или моделей одновременно работают над одной задачей, каждый своим подходом, а разработчик сравнивает результаты. [1][2]"
+        "en": "Several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results. [1][2]",
+        "ru": "Несколько агентов или моделей одновременно работают над одной задачей, каждый своим подходом, а разработчик сравнивает результаты. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3837,8 +3830,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the application can be started separately in each git worktree, so that every agent runs and checks its own instance. [1][2]",
-        "ru": "Практика, при которой приложение запускается отдельно в каждом git worktree, и каждый агент запускает и проверяет свой экземпляр. [1][2]"
+        "en": "The application can be started separately in each git worktree, so that every agent runs and checks its own instance. [1][2]",
+        "ru": "Приложение запускается отдельно в каждом git worktree, и каждый агент запускает и проверяет свой экземпляр. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3887,8 +3880,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agents search parts of an application for one category of vulnerability, a separate verifier agent proves each finding with a test in the application's own test suite, and findings arrive as pull requests. [1]",
-        "ru": "Практика, при которой агенты ищут в частях приложения уязвимости одной категории, отдельный агент-проверяющий доказывает каждую находку тестом в наборе тестов самого приложения, а находки приходят как pull request. [1]"
+        "en": "Agents search parts of an application for one category of vulnerability, a separate verifier agent proves each finding with a test in the application's own test suite, and findings arrive as pull requests. [1]",
+        "ru": "Агенты ищут в частях приложения уязвимости одной категории, отдельный агент-проверяющий доказывает каждую находку тестом в наборе тестов самого приложения, а находки приходят как pull request. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3926,8 +3919,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work. [1][2]",
-        "ru": "Практика, при которой план работы агента над фичей режут на вертикальные срезы через бэкенд и фронтенд, чтобы интеграция проверялась до конца работы. [1][2]"
+        "en": "The agent's work plan for a feature is cut into vertical slices that cross backend and frontend, so that integration is exercised before the end of the work. [1][2]",
+        "ru": "План работы агента над фичей режут на вертикальные срезы через бэкенд и фронтенд, чтобы интеграция проверялась до конца работы. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3978,8 +3971,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which contributors state in the pull request, commit message or post whether and how a model or agent produced the content. [1][2]",
-        "ru": "Практика, при которой участники указывают в pull request, коммите или сообщении, создавали ли содержимое модель или агент и как. [1][2]"
+        "en": "Contributors state in the pull request, commit message or post whether and how a model or agent produced the content. [1][2]",
+        "ru": "Участники указывают в pull request, коммите или сообщении, создавали ли содержимое модель или агент и как. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4028,8 +4021,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review. [1]",
-        "ru": "Практика, при которой проект требует от авторов вкладов прочитать и проверить весь сгенерированный код или текст и уметь его объяснить, прежде чем просить ревью у мейнтейнеров. [1]"
+        "en": "A project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review. [1]",
+        "ru": "Проект требует от авторов вкладов прочитать и проверить весь сгенерированный код или текст и уметь его объяснить, прежде чем просить ревью у мейнтейнеров. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4067,8 +4060,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output. [1][2]",
-        "ru": "Практика, при которой проект требует, чтобы issues, описания pull request, комментарии и ответы на ревью были написаны своими словами автора, а не вставленным выводом модели. [1][2]"
+        "en": "A project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output. [1][2]",
+        "ru": "Проект требует, чтобы issues, описания pull request, комментарии и ответы на ревью были написаны своими словами автора, а не вставленным выводом модели. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4117,8 +4110,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent may comment on or act in shared project spaces only after people approve it or explicitly invoke it. [1][2]",
-        "ru": "Практика, при которой агент может комментировать или действовать в общих пространствах проекта только после одобрения людьми или по явному вызову. [1][2]"
+        "en": "An agent may comment on or act in shared project spaces only after people approve it or explicitly invoke it. [1][2]",
+        "ru": "Агент может комментировать или действовать в общих пространствах проекта только после одобрения людьми или по явному вызову. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4167,8 +4160,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which maintainers who judge a generated contribution to cost more review time than it is worth reply with a standard request, label it, and stop engaging or close it. [1][2]",
-        "ru": "Практика, при которой мейнтейнеры, решив, что сгенерированный вклад отнимает на ревью больше времени, чем стоит, отвечают стандартной просьбой, ставят метку и прекращают обсуждение или закрывают вклад. [1][2]"
+        "en": "Maintainers who judge a generated contribution to cost more review time than it is worth reply with a standard request, label it, and stop engaging or close it. [1][2]",
+        "ru": "Мейнтейнеры, решив, что сгенерированный вклад отнимает на ревью больше времени, чем стоит, отвечают стандартной просьбой, ставят метку и прекращают обсуждение или закрывают вклад. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4217,8 +4210,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project does not accept contributions that include content generated, in part or in full, by language models or similar systems. [1][2]",
-        "ru": "Практика, при которой проект не принимает вклады, содержащие материал, созданный целиком или частично языковыми моделями или похожими системами. [1][2]"
+        "en": "A project does not accept contributions that include content generated, in part or in full, by language models or similar systems. [1][2]",
+        "ru": "Проект не принимает вклады, содержащие материал, созданный целиком или частично языковыми моделями или похожими системами. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4267,8 +4260,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit. [1][2]",
-        "ru": "Практика, при которой проект разрешает участникам использовать языковые модели, чтобы отвечать на вопросы, анализировать, проверять и ревьюить свою работу, но не создавать то, что они присылают. [1][2]"
+        "en": "A project lets contributors use language models to answer questions, analyze, check and review their work, but not to create the content they submit. [1][2]",
+        "ru": "Проект разрешает участникам использовать языковые модели, чтобы отвечать на вопросы, анализировать, проверять и ревьюить свою работу, но не создавать то, что они присылают. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4317,8 +4310,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild. [1]",
-        "ru": "Практика, при которой у общих настроек агентов, которыми пользуются многие команды (навыки, команды, файлы инструкций в корне), есть команда или гильдия-владелец. [1]"
+        "en": "Shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild. [1]",
+        "ru": "У общих настроек агентов, которыми пользуются многие команды (навыки, команды, файлы инструкций в корне), есть команда или гильдия-владелец. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4356,8 +4349,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team's regular incident retrospective adds two questions: whether agent-written code contributed to the incident, and whether the larger volume of change strained review, testing, rollout or observability. [1]",
-        "ru": "Практика, при которой в регулярный разбор инцидентов команды добавляют два вопроса: повлиял ли на инцидент код, написанный агентом, и не перегрузил ли возросший объём изменений ревью, тестирование, выкатку или наблюдаемость. [1]"
+        "en": "A team's regular incident retrospective adds two questions: whether agent-written code contributed to the incident, and whether the larger volume of change strained review, testing, rollout or observability. [1]",
+        "ru": "В регулярный разбор инцидентов команды добавляют два вопроса: повлиял ли на инцидент код, написанный агентом, и не перегрузил ли возросший объём изменений ревью, тестирование, выкатку или наблюдаемость. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4397,8 +4390,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests. [1][2]",
-        "ru": "Практика, при которой pull request, начатые агентом или созданные моделью, должны пройти более высокую планку, чем остальные: больше одобрений людей или обязательные тесты. [1][2]"
+        "en": "Pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests. [1][2]",
+        "ru": "Pull request, начатые агентом или созданные моделью, должны пройти более высокую планку, чем остальные: больше одобрений людей или обязательные тесты. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4449,8 +4442,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an engineer now and then solves a problem without an agent, even one the agent could solve, to keep their own skills. [1]",
-        "ru": "Практика, при которой инженер время от времени решает задачу без агента, даже если агент бы с ней справился, чтобы сохранить свои навыки. [1]"
+        "en": "An engineer now and then solves a problem without an agent, even one the agent could solve, to keep their own skills. [1]",
+        "ru": "Инженер время от времени решает задачу без агента, даже если агент бы с ней справился, чтобы сохранить свои навыки. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4488,8 +4481,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an interview gives the candidate a few hours to build a working prototype with coding agents and tools of their choice. [1][2]",
-        "ru": "Практика, при которой на собеседовании кандидату дают несколько часов, чтобы собрать работающий прототип с агентами и инструментами на свой выбор. [1][2]"
+        "en": "An interview gives the candidate a few hours to build a working prototype with coding agents and tools of their choice. [1][2]",
+        "ru": "На собеседовании кандидату дают несколько часов, чтобы собрать работающий прототип с агентами и инструментами на свой выбор. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4538,8 +4531,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which interviewers score how a candidate plans the work, steers the agent and checks what it produced. [1][2][3]",
-        "ru": "Практика, при которой интервьюеры оценивают, как кандидат планирует работу, направляет агента и проверяет результат. [1][2][3]"
+        "en": "Interviewers score how a candidate plans the work, steers the agent and checks what it produced. [1][2][3]",
+        "ru": "Интервьюеры оценивают, как кандидат планирует работу, направляет агента и проверяет результат. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4599,8 +4592,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a candidate may use their own coding agents and tools during an interview, the same ones they would use at work. [1][2][3]",
-        "ru": "Практика, при которой кандидат может пользоваться на собеседовании своими агентами и инструментами, теми же, что и на работе. [1][2][3]"
+        "en": "A candidate may use their own coding agents and tools during an interview, the same ones they would use at work. [1][2][3]",
+        "ru": "Кандидат может пользоваться на собеседовании своими агентами и инструментами, теми же, что и на работе. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4660,8 +4653,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a candidate reviews and improves a colleague's draft pull request in an unfamiliar codebase, with agents allowed. [1]",
-        "ru": "Практика, при которой кандидат на собеседовании проверяет и дорабатывает черновой pull request коллеги в незнакомой кодовой базе, с агентами. [1]"
+        "en": "A candidate reviews and improves a colleague's draft pull request in an unfamiliar codebase, with agents allowed. [1]",
+        "ru": "Кандидат на собеседовании проверяет и дорабатывает черновой pull request коллеги в незнакомой кодовой базе, с агентами. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4699,8 +4692,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which some interviews are deliberately held without agents, next to interviews where agents are expected. [1][2][3]",
-        "ru": "Практика, при которой часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1][2][3]"
+        "en": "Some interviews are deliberately held without agents, next to interviews where agents are expected. [1][2][3]",
+        "ru": "Часть собеседований намеренно проводят без агентов, рядом с теми, где агенты ожидаются. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4760,8 +4753,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true. [1]",
-        "ru": "Практика, при которой разработчик раз в несколько недель проверяет настройку агента, включая скиллы, плагины, файлы инструкций и память, командой проверки инструмента и пересматривает, что из этого ещё верно. [1]"
+        "en": "Every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true. [1]",
+        "ru": "Разработчик раз в несколько недель проверяет настройку агента, включая скиллы, плагины, файлы инструкций и память, командой проверки инструмента и пересматривает, что из этого ещё верно. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4799,8 +4792,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which tests are kept as data files with the input, the expected output and the setup, read by a small test runner, so that agent changes to the tests are visible and can be blocked. [1]",
-        "ru": "Практика, при которой тесты хранятся как файлы данных со входом, ожидаемым результатом и подготовкой, а читает их небольшой тестовый раннер, чтобы правки агента в тестах были видны и их можно было запретить. [1]"
+        "en": "Tests are kept as data files with the input, the expected output and the setup, read by a small test runner, so that agent changes to the tests are visible and can be blocked. [1]",
+        "ru": "Тесты хранятся как файлы данных со входом, ожидаемым результатом и подготовкой, а читает их небольшой тестовый раннер, чтобы правки агента в тестах были видны и их можно было запретить. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4838,8 +4831,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which faults are injected into the code under test, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
-        "ru": "Практика, при которой в проверяемый код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
+        "en": "Faults are injected into the code under test, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
+        "ru": "В проверяемый код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4890,8 +4883,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which test files and expected results that a task should not change are protected from the agent: made read-only, checked in CI for changes, or named in the agent's instructions as inputs to keep. [1][2]",
-        "ru": "Практика, при которой файлы тестов и ожидаемые результаты, которые задача не должна менять, защищают от агента: делают доступными только для чтения, проверяют на изменения в CI или указывают в инструкциях агента как неизменяемые. [1][2]"
+        "en": "Test files and expected results that a task should not change are protected from the agent: made read-only, checked in CI for changes, or named in the agent's instructions as inputs to keep. [1][2]",
+        "ru": "Файлы тестов и ожидаемые результаты, которые задача не должна менять, защищают от агента: делают доступными только для чтения, проверяют на изменения в CI или указывают в инструкциях агента как неизменяемые. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4951,8 +4944,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, for medium- and high-risk pull requests, an agent guides the engineer through how the change affects the system, with understanding of the change, not approval, as the goal. [1]",
-        "ru": "Практика, при которой для pull request среднего и высокого риска агент проводит инженера по тому, как изменение влияет на систему, и цель — понимание изменения, а не одобрение. [1]"
+        "en": "For medium- and high-risk pull requests, an agent guides the engineer through how the change affects the system, with understanding of the change, not approval, as the goal. [1]",
+        "ru": "Для pull request среднего и высокого риска агент проводит инженера по тому, как изменение влияет на систему, и цель — понимание изменения, а не одобрение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4995,8 +4988,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agents read the codebase, issues, pull requests and discussion threads and write a knowledge base of unrecorded decisions and conventions, which other agents use when they work on the code. [1]",
-        "ru": "Практика, при которой агенты читают код, issues, pull request и обсуждения и пишут базу знаний о незаписанных решениях и соглашениях, которой другие агенты пользуются, когда работают с кодом. [1]"
+        "en": "Agents read the codebase, issues, pull requests and discussion threads and write a knowledge base of unrecorded decisions and conventions, which other agents use when they work on the code. [1]",
+        "ru": "Агенты читают код, issues, pull request и обсуждения и пишут базу знаний о незаписанных решениях и соглашениях, которой другие агенты пользуются, когда работают с кодом. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5034,8 +5027,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last. [1]",
-        "ru": "Практика, при которой команда исправляет поведение агента средством самого узкого охвата, которое ещё даёт нужный результат: сначала контракты интерфейса и вывода, затем автоматические проверки, затем скиллы или команды и в последнюю очередь корневые файлы инструкций. [1]"
+        "en": "A team corrects an agent behavior with the control of the smallest scope that still gives the wanted output: first interface and output contracts, then automated checks, then skills or commands, and root instruction files last. [1]",
+        "ru": "Команда исправляет поведение агента средством самого узкого охвата, которое ещё даёт нужный результат: сначала контракты интерфейса и вывода, затем автоматические проверки, затем скиллы или команды и в последнюю очередь корневые файлы инструкций. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5075,8 +5068,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code. [1]",
-        "ru": "Практика, при которой проект отдаёт pull request, написанные с помощью языковой модели, только тем ревьюерам, кто вызвался их проверять, и такой ревьюер может попросить автора переделать изменение без сгенерированного кода. [1]"
+        "en": "A project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code. [1]",
+        "ru": "Проект отдаёт pull request, написанные с помощью языковой модели, только тем ревьюерам, кто вызвался их проверять, и такой ревьюер может попросить автора переделать изменение без сгенерированного кода. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5114,8 +5107,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which each benchmark an agent optimizes also runs in CI as a guardrail whose threshold may only move in one direction, and benchmarks that are flaky or do not track the real metric are dropped. [1][2]",
-        "ru": "Практика, при которой каждый бенчмарк, который оптимизирует агент, также работает в CI как ограничитель с порогом, который может сдвигаться только в одну сторону, а нестабильные или не отражающие реальную метрику бенчмарки убираются. [1][2]"
+        "en": "Each benchmark an agent optimizes also runs in CI as a guardrail whose threshold may only move in one direction, and benchmarks that are flaky or do not track the real metric are dropped. [1][2]",
+        "ru": "Каждый бенчмарк, который оптимизирует агент, также работает в CI как ограничитель с порогом, который может сдвигаться только в одну сторону, а нестабильные или не отражающие реальную метрику бенчмарки убираются. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5164,8 +5157,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves. [1][2][3]",
-        "ru": "Практика, при которой агенту дают измеряемое число, которое надо улучшить, и он раз за разом меняет код и перемеряет, пока число не улучшится. [1][2][3]"
+        "en": "An agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves. [1][2][3]",
+        "ru": "Агенту дают измеряемое число, которое надо улучшить, и он раз за разом меняет код и перемеряет, пока число не улучшится. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5225,8 +5218,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several agents look for bugs in a change at the same time, a separate group of agents votes on each finding, and only findings with enough votes are posted. [1][2]",
-        "ru": "Практика, при которой несколько агентов одновременно ищут ошибки в изменении, отдельная группа агентов голосует по каждой находке, и публикуются только находки, набравшие достаточно голосов. [1][2]"
+        "en": "Several agents look for bugs in a change at the same time, a separate group of agents votes on each finding, and only findings with enough votes are posted. [1][2]",
+        "ru": "Несколько агентов одновременно ищут ошибки в изменении, отдельная группа агентов голосует по каждой находке, и публикуются только находки, набравшие достаточно голосов. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5275,8 +5268,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open. [1][2][3]",
-        "ru": "Командное правило, при котором каждую находку агента-ревьюера нужно исправить или закрыть с указанием причины, а пул-реквест нельзя слить, пока открыта находка об ошибке или безопасности. [1][2][3]"
+        "en": "Every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open. [1][2][3]",
+        "ru": "Каждую находку агента-ревьюера нужно исправить или закрыть с указанием причины, а пул-реквест нельзя слить, пока открыта находка об ошибке или безопасности. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5336,8 +5329,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which the person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's. [1][2]",
-        "ru": "Командное правило, при котором человек, направлявший агента, считается одним из обязательных ревьюеров его пул-реквеста, а одобрение агента никогда не засчитывается как одобрение человека. [1][2]"
+        "en": "The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's. [1][2]",
+        "ru": "Человек, направлявший агента, считается одним из обязательных ревьюеров его пул-реквеста, а одобрение агента никогда не засчитывается как одобрение человека. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5388,8 +5381,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which a review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again. [1][2]",
-        "ru": "Командное правило, при котором одобрение ревью относится к одному конкретному коммиту, а новые коммиты, за которые система не ручается, например пуш агента или слияние, разрешённое вручную, требуют повторного одобрения. [1][2]"
+        "en": "A review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again. [1][2]",
+        "ru": "Одобрение ревью относится к одному конкретному коммиту, а новые коммиты, за которые система не ручается, например пуш агента или слияние, разрешённое вручную, требуют повторного одобрения. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5438,8 +5431,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents. [1][2]",
-        "ru": "Практика, при которой агентам, читающим недоверенный контент, например публичные задачи или сообщения, запрещены действия с высокими правами, а такие действия выполняют отдельные агенты. [1][2]"
+        "en": "Agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents. [1][2]",
+        "ru": "Агентам, читающим недоверенный контент, например публичные задачи или сообщения, запрещены действия с высокими правами, а такие действия выполняют отдельные агенты. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5488,8 +5481,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which parallel agents take work from a shared list, and an agent claims a task, for example by writing a lock file, before working on it, so that no two agents take the same task. [1][2]",
-        "ru": "Практика, при которой параллельные агенты берут работу из общего списка, и агент занимает задачу, например записывая файл-блокировку, прежде чем работать над ней, чтобы двое не взяли одно и то же. [1][2]"
+        "en": "Parallel agents take work from a shared list, and an agent claims a task, for example by writing a lock file, before working on it, so that no two agents take the same task. [1][2]",
+        "ru": "Параллельные агенты берут работу из общего списка, и агент занимает задачу, например записывая файл-блокировку, прежде чем работать над ней, чтобы двое не взяли одно и то же. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5542,8 +5535,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which a harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2][3]",
-        "ru": "Практика, при которой обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2][3]"
+        "en": "A harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2][3]",
+        "ru": "Обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5603,8 +5596,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely. [1][2]",
-        "ru": "Практика, при которой вывод тестов и CI делается коротким и быстрым для агента: несколько строк на экране, подробности в лог-файле, прогресс печатается редко. [1][2]"
+        "en": "Test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely. [1][2]",
+        "ru": "Вывод тестов и CI делается коротким и быстрым для агента: несколько строк на экране, подробности в лог-файле, прогресс печатается редко. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5653,8 +5646,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault. [1][2]",
-        "ru": "Практика, при которой результат кода, написанного агентом, сравнивают с существующей заведомо верной реализацией, что также помогает найти, какая часть кода агента виновата. [1][2]"
+        "en": "The output of agent-written code is compared against an existing known-good implementation, which also narrows down which part of the agent's code is at fault. [1][2]",
+        "ru": "Результат кода, написанного агентом, сравнивают с существующей заведомо верной реализацией, что также помогает найти, какая часть кода агента виновата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5703,8 +5696,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a list of rules or claims is checked by separate verifier agents, one for each rule or claim. [1][2]",
-        "ru": "Практика, при которой список правил или утверждений проверяют отдельные агенты-проверяющие, по одному на каждое правило или утверждение. [1][2]"
+        "en": "A list of rules or claims is checked by separate verifier agents, one for each rule or claim. [1][2]",
+        "ru": "Список правил или утверждений проверяют отдельные агенты-проверяющие, по одному на каждое правило или утверждение. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5753,8 +5746,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several agents form hypotheses about a bug from separate, non-overlapping pieces of evidence, so that one early guess does not shape the whole investigation. [1]",
-        "ru": "Практика, при которой несколько агентов строят гипотезы об ошибке по отдельным, непересекающимся частям данных, чтобы одна ранняя догадка не определяла всё расследование. [1]"
+        "en": "Several agents form hypotheses about a bug from separate, non-overlapping pieces of evidence, so that one early guess does not shape the whole investigation. [1]",
+        "ru": "Несколько агентов строят гипотезы об ошибке по отдельным, непересекающимся частям данных, чтобы одна ранняя догадка не определяла всё расследование. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5792,8 +5785,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents. [1][2][3]",
-        "ru": "Практика, при которой агент пишет планы, объяснения и разбор кода в виде HTML-страниц вместо документов Markdown. [1][2][3]"
+        "en": "The agent writes plans, explanations and code reviews as HTML pages instead of Markdown documents. [1][2][3]",
+        "ru": "Агент пишет планы, объяснения и разбор кода в виде HTML-страниц вместо документов Markdown. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5853,8 +5846,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent builds a disposable interface for editing something by hand, and the interface ends with an export button that turns the edits into a prompt or a file. [1]",
-        "ru": "Практика, при которой агент делает одноразовый интерфейс для ручного редактирования, и этот интерфейс завершается кнопкой экспорта, превращающей правки в промпт или файл. [1]"
+        "en": "The agent builds a disposable interface for editing something by hand, and the interface ends with an export button that turns the edits into a prompt or a file. [1]",
+        "ru": "Агент делает одноразовый интерфейс для ручного редактирования, и этот интерфейс завершается кнопкой экспорта, превращающей правки в промпт или файл. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5892,8 +5885,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, before the agent writes code, the author walks the future pull request reviewer through the product and technical specs. [1]",
-        "ru": "Практика, при которой до того, как агент напишет код, автор проходит продуктовую и техническую спецификацию с будущим ревьюером пул-реквеста. [1]"
+        "en": "Before the agent writes code, the author walks the future pull request reviewer through the product and technical specs. [1]",
+        "ru": "До того, как агент напишет код, автор проходит продуктовую и техническую спецификацию с будущим ревьюером пул-реквеста. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5931,8 +5924,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agents log every attempted idea and its result, and later agent sessions read the log to see whether an idea was already tried. [1]",
-        "ru": "Практика, при которой агенты записывают каждую опробованную идею и её результат, а следующие сессии агентов читают журнал, чтобы понять, пробовали ли идею раньше. [1]"
+        "en": "Agents log every attempted idea and its result, and later agent sessions read the log to see whether an idea was already tried. [1]",
+        "ru": "Агенты записывают каждую опробованную идею и её результат, а следующие сессии агентов читают журнал, чтобы понять, пробовали ли идею раньше. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5970,8 +5963,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which an agent puts its own changes behind feature flags for gradual rollout and reads the flag's results as feedback on whether the change does what it claimed. [1][2]",
-        "ru": "Практика, при которой агент сам закрывает свои изменения флагами функций для постепенного выката и использует результаты флага как обратную связь о том, делает ли изменение заявленное. [1][2]"
+        "en": "An agent puts its own changes behind feature flags for gradual rollout and reads the flag's results as feedback on whether the change does what it claimed. [1][2]",
+        "ru": "Агент сам закрывает свои изменения флагами функций для постепенного выката и использует результаты флага как обратную связь о том, делает ли изменение заявленное. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6022,8 +6015,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team rule in which every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings. [1]",
-        "ru": "Командное правило, при котором у каждой линии работы агента есть названный ответственный человек, и агент показывает ему видимые пользователю изменения со скриншотами или записями до и после. [1]"
+        "en": "Every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings. [1]",
+        "ru": "У каждой линии работы агента есть названный ответственный человек, и агент показывает ему видимые пользователю изменения со скриншотами или записями до и после. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6061,8 +6054,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which each task for the agent is written as a self-contained ticket stating what is wrong, what done looks like and which command proves it. [1][2]",
-        "ru": "Практика, при которой каждая задача для агента записывается как самодостаточный тикет: что не так, как выглядит готовность и какая команда это доказывает. [1][2]"
+        "en": "Each task for the agent is written as a self-contained ticket stating what is wrong, what done looks like and which command proves it. [1][2]",
+        "ru": "Каждая задача для агента записывается как самодостаточный тикет: что не так, как выглядит готовность и какая команда это доказывает. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6113,8 +6106,8 @@
         "en": []
       },
       "definition": {
-        "en": "A prompting habit in which the agent is told to take more risks and try more ambitious ideas. [1][2]",
-        "ru": "Приём промптинга, при котором агенту говорят больше рисковать и пробовать более амбициозные идеи. [1][2]"
+        "en": "The agent is told to take more risks and try more ambitious ideas. [1][2]",
+        "ru": "Агенту говорят больше рисковать и пробовать более амбициозные идеи. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6163,8 +6156,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agent instructions, in a skill or the project instruction file, keep a section of gotchas built from the failure points the agent actually hit, updated over time. [1][2]",
-        "ru": "Практика, при которой инструкции агента, в скилле или в файле инструкций проекта, содержат раздел подвохов, собранный из реальных мест, где агент ошибался, и пополняемый со временем. [1][2]"
+        "en": "Agent instructions, in a skill or the project instruction file, keep a section of gotchas built from the failure points the agent actually hit, updated over time. [1][2]",
+        "ru": "Инструкции агента, в скилле или в файле инструкций проекта, содержат раздел подвохов, собранный из реальных мест, где агент ошибался, и пополняемый со временем. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6213,8 +6206,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which agent context is split into a tree of files, and the agent is told which files exist so that it reads each one only when it becomes relevant. [1][2]",
-        "ru": "Практика, при которой контекст агента разбит на дерево файлов, и агенту сообщают, какие файлы есть, чтобы он читал каждый только тогда, когда он становится нужен. [1][2]"
+        "en": "Agent context is split into a tree of files, and the agent is told which files exist so that it reads each one only when it becomes relevant. [1][2]",
+        "ru": "Контекст агента разбит на дерево файлов, и агенту сообщают, какие файлы есть, чтобы он читал каждый только тогда, когда он становится нужен. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6263,8 +6256,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement. [1]",
-        "ru": "Практика, при которой ограничения, добавленные в инструкции агента ради прежних, более слабых моделей, пересматривают и удаляют, оставляя агенту опираться на контекст и суждение. [1]"
+        "en": "Constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement. [1]",
+        "ru": "Ограничения, добавленные в инструкции агента ради прежних, более слабых моделей, пересматривают и удаляют, оставляя агенту опираться на контекст и суждение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6302,8 +6295,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a person who wants to understand part of a codebase asks the agent to write an explainer for exactly that part. [1]",
-        "ru": "Практика, при которой человек, желающий понять часть кодовой базы, просит агента написать объяснение именно этой части. [1]"
+        "en": "A person who wants to understand part of a codebase asks the agent to write an explainer for exactly that part. [1]",
+        "ru": "Человек, желающий понять часть кодовой базы, просит агента написать объяснение именно этой части. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6341,8 +6334,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which verbose reading such as file search, logs and test output goes to subagents on a smaller model, while code edits and decisions stay on the main model. [1][2]",
-        "ru": "Практика, при которой объёмное чтение, например поиск файлов, логи и вывод тестов, отдаётся субагентам на младшей модели, а правки кода и решения остаются на основной модели. [1][2]"
+        "en": "Verbose reading such as file search, logs and test output goes to subagents on a smaller model, while code edits and decisions stay on the main model. [1][2]",
+        "ru": "Объёмное чтение, например поиск файлов, логи и вывод тестов, отдаётся субагентам на младшей модели, а правки кода и решения остаются на основной модели. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6391,8 +6384,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent is connected to the team's own production traces and asked to find issues on hot code paths, and each resulting pull request links an example trace that shows the extra query or call. [1][2]",
-        "ru": "Практика, при которой агента подключают к трейсам продакшена самой команды и просят найти проблемы на горячих участках кода, а каждый итоговый пул-реквест ссылается на пример трейса с лишним запросом или вызовом. [1][2]"
+        "en": "The agent is connected to the team's own production traces and asked to find issues on hot code paths, and each resulting pull request links an example trace that shows the extra query or call. [1][2]",
+        "ru": "Агента подключают к трейсам продакшена самой команды и просят найти проблемы на горячих участках кода, а каждый итоговый пул-реквест ссылается на пример трейса с лишним запросом или вызовом. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6429,7 +6422,7 @@
     {
       "id": "read-only-database-for-agent",
       "stages": [
-        "verification"
+        "test-qa"
       ],
       "kind": "practice",
       "title": {
@@ -6441,8 +6434,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the agent has access to a read-only copy of the database and validates its query changes there instead of guessing their effect. [1]",
-        "ru": "Практика, при которой у агента есть доступ к копии базы данных только для чтения, и он проверяет на ней свои изменения запросов, а не угадывает их эффект. [1]"
+        "en": "The agent has access to a read-only copy of the database and validates its query changes there instead of guessing their effect. [1]",
+        "ru": "У агента есть доступ к копии базы данных только для чтения, и он проверяет на ней свои изменения запросов, а не угадывает их эффект. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6468,7 +6461,7 @@
     {
       "id": "before-and-after-reproduction",
       "stages": [
-        "verification"
+        "test-qa"
       ],
       "kind": "practice",
       "title": {
@@ -6480,8 +6473,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which, for a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the reviewer the before and after; the team keeps the instructions for this in a skill. [1][2]",
-        "ru": "Практика, при которой для исправления бага агент воспроизводит проблему, записывает сломанное поведение, вносит исправление и повторяет те же шаги, чтобы показать ревьюеру «до» и «после»; инструкции для этого команда держит в скилле. [1][2]"
+        "en": "For a bug fix, the agent reproduces the issue, records the broken behavior, implements the fix and repeats the same steps to show the reviewer the before and after; the team keeps the instructions for this in a skill. [1][2]",
+        "ru": "Для исправления бага агент воспроизводит проблему, записывает сломанное поведение, вносит исправление и повторяет те же шаги, чтобы показать ревьюеру «до» и «после»; инструкции для этого команда держит в скилле. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6530,8 +6523,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup. [1][2]",
-        "ru": "Практика, при которой команда держит пул подготовленных машин для агентов: основная ветка выкачана, инструменты установлены, приложения собраны, кэши прогреты, и агент берёт готовую машину вместо ожидания настройки. [1][2]"
+        "en": "A team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup. [1][2]",
+        "ru": "Команда держит пул подготовленных машин для агентов: основная ветка выкачана, инструменты установлены, приложения собраны, кэши прогреты, и агент берёт готовую машину вместо ожидания настройки. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6580,8 +6573,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which long-running tasks are started in terminal panes, such as tmux panes, that the agent observes in real time, instead of the agent sleeping or setting timeouts while it waits. [1]",
-        "ru": "Практика, при которой долгие задачи запускаются в панелях терминала, например tmux, за которыми агент следит в реальном времени, вместо того чтобы засыпать или ставить таймауты в ожидании. [1]"
+        "en": "Long-running tasks are started in terminal panes, such as tmux panes, that the agent observes in real time, instead of the agent sleeping or setting timeouts while it waits. [1]",
+        "ru": "Долгие задачи запускаются в панелях терминала, например tmux, за которыми агент следит в реальном времени, вместо того чтобы засыпать или ставить таймауты в ожидании. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6619,8 +6612,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which every fact the agent extracts from legacy code carries a file:line reference back to that code. [1]",
-        "ru": "Практика, при которой каждый факт, извлечённый агентом из унаследованного кода, несёт ссылку file:line на этот код. [1]"
+        "en": "Every fact the agent extracts from legacy code carries a file:line reference back to that code. [1]",
+        "ru": "Каждый факт, извлечённый агентом из унаследованного кода, несёт ссылку file:line на этот код. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6658,8 +6651,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which every fact the agent extracts from legacy code carries a green, amber or red confidence marker, and ambiguous code is flagged in the output so that a human expert resolves it. [1][2]",
-        "ru": "Практика, при которой каждый факт, извлечённый агентом из унаследованного кода, несёт зелёную, жёлтую или красную метку уверенности, а неоднозначный код отмечается в выводе, чтобы его разрешил эксперт. [1][2]"
+        "en": "Every fact the agent extracts from legacy code carries a green, amber or red confidence marker, and ambiguous code is flagged in the output so that a human expert resolves it. [1][2]",
+        "ru": "Каждый факт, извлечённый агентом из унаследованного кода, несёт зелёную, жёлтую или красную метку уверенности, а неоднозначный код отмечается в выводе, чтобы его разрешил эксперт. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6708,8 +6701,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team meets at regular intervals to examine what went well, what caused difficulty and what to change in how it works. [1]",
-        "ru": "Практика, при которой команда регулярно собирается и разбирает, что прошло хорошо, что вызвало трудности и что изменить в своей работе. [1]"
+        "en": "A team meets at regular intervals to examine what went well, what caused difficulty and what to change in how it works. [1]",
+        "ru": "Команда регулярно собирается и разбирает, что прошло хорошо, что вызвало трудности и что изменить в своей работе. [1]"
       },
       "firstAppeared": {
         "date": "2001-01-01",
@@ -6753,8 +6746,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team writes down each significant architectural decision as a short record kept with the code. [1]",
-        "ru": "Практика, при которой команда записывает каждое значимое архитектурное решение короткой записью, которая хранится рядом с кодом. [1]"
+        "en": "A team writes down each significant architectural decision as a short record kept with the code. [1]",
+        "ru": "Команда записывает каждое значимое архитектурное решение короткой записью, которая хранится рядом с кодом. [1]"
       },
       "firstAppeared": {
         "date": "2011-01-01",
@@ -6801,8 +6794,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which several independent teams implement the same specification, the versions run in parallel, and a voting rule masks the faults of a single version. [1]",
-        "ru": "Практика, при которой несколько независимых команд реализуют одну спецификацию, версии работают параллельно, и правило голосования скрывает ошибки отдельной версии. [1]"
+        "en": "Several independent teams implement the same specification, the versions run in parallel, and a voting rule masks the faults of a single version. [1]",
+        "ru": "Несколько независимых команд реализуют одну спецификацию, версии работают параллельно, и правило голосования скрывает ошибки отдельной версии. [1]"
       },
       "firstAppeared": {
         "date": "1978-01-01",
@@ -6849,8 +6842,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice. [1][2]",
-        "ru": "Практика, при которой разработчик сначала строит небольшой сквозной срез функциональности через все слои системы, а затем наращивает систему от этого работающего среза. [1][2]"
+        "en": "A developer first builds a small end-to-end slice of functionality that touches all layers of the system, then grows the system from that working slice. [1][2]",
+        "ru": "Разработчик сначала строит небольшой сквозной срез функциональности через все слои системы, а затем наращивает систему от этого работающего среза. [1][2]"
       },
       "firstAppeared": {
         "date": "1999-01-01",
@@ -6908,8 +6901,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which deliberate faults are introduced into the code to check whether the tests detect them. [1]",
-        "ru": "Практика, при которой в код намеренно вносят ошибки, чтобы проверить, обнаруживают ли их тесты. [1]"
+        "en": "Deliberate faults are introduced into the code to check whether the tests detect them. [1]",
+        "ru": "В код намеренно вносят ошибки, чтобы проверить, обнаруживают ли их тесты. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6948,8 +6941,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which the reviewer sits with the author of a change, and the author talks through its intent and structure. [1][2]",
-        "ru": "Практика, при которой ревьюер садится рядом с автором изменения, и автор рассказывает о его замысле и устройстве. [1][2]"
+        "en": "The reviewer sits with the author of a change, and the author talks through its intent and structure. [1][2]",
+        "ru": "Ревьюер садится рядом с автором изменения, и автор рассказывает о его замысле и устройстве. [1][2]"
       },
       "firstAppeared": {
         "date": "1974-10-01",
@@ -7007,8 +7000,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1][2]",
-        "ru": "Практика, при которой команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1][2]"
+        "en": "A team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1][2]",
+        "ru": "Команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1][2]"
       },
       "firstAppeared": {
         "date": "1978-07-26",
@@ -7071,8 +7064,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which a change is released behind a switch that turns it on for some users or for all, without a new release. [1][2]",
-        "ru": "Практика, при которой изменение выпускают за переключателем, который включает его для части пользователей или для всех без нового релиза. [1][2]"
+        "en": "A change is released behind a switch that turns it on for some users or for all, without a new release. [1][2]",
+        "ru": "Изменение выпускают за переключателем, который включает его для части пользователей или для всех без нового релиза. [1][2]"
       },
       "firstAppeared": {
         "date": "2009-12-02",
@@ -7130,8 +7123,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which an agent does the first investigation of a production alert: reads the logs, metrics and code, reports a root cause with its evidence, and leaves any change to production to a person's approval. [1][2]",
-        "ru": "Практика, при которой первое расследование алерта в продакшене делает агент: читает логи, метрики и код, сообщает первопричину с доказательствами, а любое изменение в продакшене оставляет на одобрение человеку. [1][2]"
+        "en": "An agent does the first investigation of a production alert: reads the logs, metrics and code, reports a root cause with its evidence, and leaves any change to production to a person's approval. [1][2]",
+        "ru": "Первое расследование алерта в продакшене делает агент: читает логи, метрики и код, сообщает первопричину с доказательствами, а любое изменение в продакшене оставляет на одобрение человеку. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7180,8 +7173,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which an alert passes through a chain of agents: one investigates and writes a plan, a second reviews the plan, and a third opens a pull request with a scoped fix for the on-call engineer. [1]",
-        "ru": "Практика, при которой алерт проходит через цепочку агентов: один расследует и пишет план, второй проверяет план, третий открывает pull request с ограниченным исправлением для дежурного инженера. [1]"
+        "en": "An alert passes through a chain of agents: one investigates and writes a plan, a second reviews the plan, and a third opens a pull request with a scoped fix for the on-call engineer. [1]",
+        "ru": "Алерт проходит через цепочку агентов: один расследует и пишет план, второй проверяет план, третий открывает pull request с ограниченным исправлением для дежурного инженера. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7223,8 +7216,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which the expected behaviour of a change is written down as structured acceptance criteria (given, when, then) before the code. [1][2]",
-        "ru": "Практика, при которой ожидаемое поведение изменения записывают до кода в виде структурированных критериев приёмки (given, when, then). [1][2]"
+        "en": "The expected behaviour of a change is written down as structured acceptance criteria (given, when, then) before the code. [1][2]",
+        "ru": "Ожидаемое поведение изменения записывают до кода в виде структурированных критериев приёмки (given, when, then). [1][2]"
       },
       "firstAppeared": {
         "date": "2006-03-01",
@@ -7284,8 +7277,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the depth of review for a change depends on its risk: a low-risk change gets a light check or merges automatically, everything else gets full review, and some kinds of code are kept out of automated review. [1][2][3]",
-        "ru": "Практика, при которой глубина ревью изменения зависит от его риска: изменение с низким риском проходит лёгкую проверку или сливается автоматически, остальные проходят полное ревью, а часть кода исключена из автоматического ревью. [1][2][3]"
+        "en": "The depth of review for a change depends on its risk: a low-risk change gets a light check or merges automatically, everything else gets full review, and some kinds of code are kept out of automated review. [1][2][3]",
+        "ru": "Глубина ревью изменения зависит от его риска: изменение с низким риском проходит лёгкую проверку или сливается автоматически, остальные проходят полное ревью, а часть кода исключена из автоматического ревью. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7345,8 +7338,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work. [1]",
-        "ru": "Практика, при которой файлы, задающие конвейер CI, считаются зоной высокого риска: агент, который может править конвейер, может ослабить проверку собственной работы. [1]"
+        "en": "The files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work. [1]",
+        "ru": "Файлы, задающие конвейер CI, считаются зоной высокого риска: агент, который может править конвейер, может ослабить проверку собственной работы. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7384,8 +7377,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked. [1][2][3]",
-        "ru": "Практика, при которой повторяющийся автоматический источник изменений кода, например один и тот же промпт, который агент запускает снова и снова, получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений; источник, из-за которого был инцидент, блокируют. [1][2][3]"
+        "en": "A recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked. [1][2][3]",
+        "ru": "Повторяющийся автоматический источник изменений кода, например один и тот же промпт, который агент запускает снова и снова, получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений; источник, из-за которого был инцидент, блокируют. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7433,7 +7426,7 @@
     {
       "id": "ci-rounds-cap",
       "stages": [
-        "verification"
+        "test-qa"
       ],
       "kind": "practice",
       "title": {
@@ -7445,8 +7438,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which an unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time. [1]",
-        "ru": "Практика, при которой агент без присмотра получает не больше заданного числа прогонов CI на задачу, в источнике двух, потому что каждый прогон стоит токенов, вычислений и времени. [1]"
+        "en": "An unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time. [1]",
+        "ru": "Агент без присмотра получает не больше заданного числа прогонов CI на задачу, в источнике двух, потому что каждый прогон стоит токенов, вычислений и времени. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7484,8 +7477,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which code generated for a one-off task is run and thrown away without being read. [1]",
-        "ru": "Практика, при которой код, сгенерированный для разовой задачи, запускают и выбрасывают, не читая. [1]"
+        "en": "Code generated for a one-off task is run and thrown away without being read. [1]",
+        "ru": "Код, сгенерированный для разовой задачи, запускают и выбрасывают, не читая. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7523,8 +7516,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer asks the agent to audit the codebase for one named problem and talks the findings through with it until a concrete change is clear. [1]",
-        "ru": "Практика, при которой разработчик просит агента проверить кодовую базу на одну названную проблему и обсуждает с ним находки, пока не станет ясно конкретное изменение. [1]"
+        "en": "The developer asks the agent to audit the codebase for one named problem and talks the findings through with it until a concrete change is clear. [1]",
+        "ru": "Разработчик просит агента проверить кодовую базу на одну названную проблему и обсуждает с ним находки, пока не станет ясно конкретное изменение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7562,8 +7555,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the agent shows its proposed code in the chat and the developer types every edit into the project by hand. [1]",
-        "ru": "Практика, при которой агент показывает предложенный код в чате, а разработчик сам вносит каждую правку в проект вручную. [1]"
+        "en": "The agent shows its proposed code in the chat and the developer types every edit into the project by hand. [1]",
+        "ru": "Агент показывает предложенный код в чате, а разработчик сам вносит каждую правку в проект вручную. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7601,8 +7594,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which the developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity. [1]",
-        "ru": "Практика, при которой разработчик задаёт потолок числа одновременно идущих потоков агентов, в источнике три-четыре, в зависимости от их сложности. [1]"
+        "en": "The developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity. [1]",
+        "ru": "Разработчик задаёт потолок числа одновременно идущих потоков агентов, в источнике три-четыре, в зависимости от их сложности. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7651,8 +7644,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a candidate submits the transcripts of their sessions with the agent as part of the take-home, next to the code and the demo. [1]",
-        "ru": "Практика, при которой кандидат сдаёт записи своих сессий с агентом как часть тестового задания, вместе с кодом и демонстрацией. [1]"
+        "en": "A candidate submits the transcripts of their sessions with the agent as part of the take-home, next to the code and the demo. [1]",
+        "ru": "Кандидат сдаёт записи своих сессий с агентом как часть тестового задания, вместе с кодом и демонстрацией. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7690,8 +7683,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The practice in which a take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate. [1][2]",
-        "ru": "Практика, при которой тестовое задание разрешает агентов и построено вокруг длинной задачи, которую агент не решает целиком, а стартовый код оставляет инструменты на кандидата. [1][2]"
+        "en": "A take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate. [1][2]",
+        "ru": "Тестовое задание разрешает агентов и построено вокруг длинной задачи, которую агент не решает целиком, а стартовый код оставляет инструменты на кандидата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7740,8 +7733,8 @@
         "en": []
       },
       "definition": {
-        "en": "The practice in which a team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores. [1][2][3]",
-        "ru": "Практика, при которой команда выбирает модель или инструмент для агента, прогоняя кандидатов на выборке своих реальных задач, у каждой из которых есть проверка результата, а не по опубликованным результатам бенчмарков. [1][2][3]"
+        "en": "A team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores. [1][2][3]",
+        "ru": "Команда выбирает модель или инструмент для агента, прогоняя кандидатов на выборке своих реальных задач, у каждой из которых есть проверка результата, а не по опубликованным результатам бенчмарков. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7816,8 +7809,8 @@
         ]
       },
       "definition": {
-        "en": "The practice in which, before building, a team writes the smallest throwaway program that shows whether an approach can work. [1][2]",
-        "ru": "Практика, при которой до основной работы команда пишет самую маленькую программу на выброс, показывающую, может ли подход сработать. [1][2]"
+        "en": "Before building, a team writes the smallest throwaway program that shows whether an approach can work. [1][2]",
+        "ru": "До основной работы команда пишет самую маленькую программу на выброс, показывающую, может ли подход сработать. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,

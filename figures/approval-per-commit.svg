@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="26" width="80" height="30" fill="#fff" stroke="#111" /><text x="26" y="46">a1f3</text>
+  <text x="10" y="80" fill="#999">✓ a1f3 only</text>
+  <path d="M90 41 H108" fill="none" stroke="#111" />
+  <text x="96" y="16" fill="#999">agent's push</text>
+  <rect x="110" y="26" width="80" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="126" y="46">b7e2</text>
+  <text x="110" y="80" fill="#2a7d3f">✓ approved</text>
+  <path d="M190 41 H208" fill="none" stroke="#111" />
+  <rect x="210" y="26" width="80" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="226" y="46">merge</text>
+</svg>

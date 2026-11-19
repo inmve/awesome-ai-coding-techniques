@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="12" width="196" height="32" fill="#fff" stroke="#111" /><text x="22" y="33">brief: invoice parser</text>
+  <text x="232" y="33">3:00</text>
+  <text x="10" y="66" fill="#999">any agent, any tool</text>
+  <rect x="10" y="80" width="280" height="12" fill="#fff" stroke="#999" />
+  <path d="M14 86 H286" fill="none" stroke="#111" stroke-width="6" />
+  <text x="10" y="122" fill="#2a7d3f">prototype runs ✓</text>
+  <rect x="200" y="104" width="90" height="30" fill="#fff" stroke="#2a7d3f" stroke-width="1.6" />
+  <text x="226" y="124">demo</text>
+  <text x="10" y="152" fill="#999">to the interviewers</text>
+</svg>

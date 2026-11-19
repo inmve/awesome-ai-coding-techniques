@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img"><style>text{font:13px ui-monospace,'SF Mono',Menlo,monospace}.move{transform-box:fill-box;transform-origin:left center}</style><rect width="100%" height="100%" fill="#fff"/><rect x="10" y="12" width="180" height="32" fill="#fff" stroke="#111" />
+  <text x="22" y="33">PR #812  +2400</text>
+  <text x="10" y="64" fill="#999">generated</text>
+  <text x="10" y="92">review cost</text><text x="120" y="92" fill="#c0392b">6 h</text>
+  <text x="10" y="112">worth</text><text x="120" y="112" fill="#999">low</text>
+  <rect x="200" y="12" width="90" height="32" fill="#fff" stroke="#111" />
+  <text x="208" y="33">extractive</text>
+  <text x="10" y="140" fill="#999">standard reply</text>
+  </svg>
