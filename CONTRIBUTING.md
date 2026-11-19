@@ -18,7 +18,7 @@ This repository is an open reference of software development practices. Every en
 
 ## How to contribute
 
-- [Open an issue](https://github.com/inmve/awesome-ai-coding-techniques/issues/new) with the practice,
+- [Open an issue](https://github.com/inmve/agentic-coding-practices/issues/new) with the practice,
   the link to the source and the quote; or
 - open a pull request that edits `data/entries.json` and run `python3 scripts/build_readme.py`.
 

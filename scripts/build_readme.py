@@ -151,7 +151,7 @@ def main():
         "",
         "# Agentic software development reference",
         "",
-        "**Practices for coding agents, and the older ones that still hold up**",
+        "**What agents changed in how software gets built, and what still holds up**",
         "",
     ]
     out += intro(len(entries), with_root)
@@ -169,10 +169,9 @@ def main():
         "",
     ]
     for title, sections in parts:
-        if sections[0][0] is None:
-            out.append(f"- [{title}](#{anchor(title)})")
-        else:
-            out.append(f"- [{title}](#{anchor(title)}): " + " · ".join(f"[{name}](#{anchor(name)})" for name, _, _, _ in sections))
+        # a part, then its sections one per line under it (Ivan, 2026-11-19: «а подпунктами нельзя?»)
+        out.append(f"- [{title}](#{anchor(title)})")
+        out += [f"  - [{name}](#{anchor(name)})" for name, _, _, _ in sections if name]
     out.append("")
     for title, sections in parts:
         out += [f"## {title}", ""]
