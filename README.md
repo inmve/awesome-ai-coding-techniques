@@ -1,4 +1,4 @@
-<!-- Generated from data/entries.json by scripts/build_readme.py. Do not edit by hand. -->
+<!-- Generated from data/entries.json. Do not edit by hand. -->
 
 # Agentic software development reference
 
@@ -12,7 +12,7 @@ So I started again from what people who ship software with agents write about th
 
 Prompting is the part that got less important. The practices that were around long before LLMs went the other way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight now.<sup>[[3]](https://www.omnea.co/blog/ai-in-our-programming-interviews)</sup> 22 of the practices on this page grew straight out of one of those older ones, like continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change. Even the rubber duck is still here; now it talks back.
 
-- **Site:** [https://inmve.github.io/dev-with-agents/](https://inmve.github.io/dev-with-agents/) (the same reference with a timeline, quotes on hover and schemes that play)
+- **Site:** [https://inmve.github.io/agentic-coding-practices/](https://inmve.github.io/agentic-coding-practices/) (the same reference with quotes on hover and schemes that play)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 - **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
@@ -66,7 +66,7 @@ Inside every section the newest practices come first.
   <img src="figures/source-traceability.svg" width="440" alt="Example scheme: Source traceability">
 
 - **Screenshot iteration**. The practice in which the agent is given a screenshot of the result or of a mock-up, and the change and the screenshot are repeated until they match.
-  Sources: [kent-tokyo (DEV Community handle), 2026-06-03](https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0).
+  Sources: [kent-tokyo, 2026-06-03](https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0).
 
   <img src="figures/visual-iteration-technique.svg" width="440" alt="Example scheme: Screenshot iteration">
 
@@ -364,7 +364,7 @@ Inside every section the newest practices come first.
   <img src="figures/parallel-attempts.svg" width="440" alt="Example scheme: Parallel attempts">
 
 - **Orchestrator and workers**. The practice in which one agent holds the plan, hands subtasks to worker agents and merges their results.
-  Sources: [Anthropic (engineering blog, no personal byline in saved text), 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Plawan Rath, Akhil Jindal, Ashwini Verma, 2026-10-19](https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/).
+  Sources: [Anthropic, 2025-06-13](https://www.anthropic.com/engineering/multi-agent-research-system); [Wilson Lin, 2026-01-14](https://cursor.com/blog/scaling-agents); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Plawan Rath, Akhil Jindal, Ashwini Verma, 2026-10-19](https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/).
 
   <img src="figures/orchestrator-worker.svg" width="440" alt="Example scheme: Orchestrator and workers">
 
@@ -554,4 +554,4 @@ These practices also stand in their own sections above, with their sources.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Changes go into `data/entries.json`; then run `python3 scripts/build_readme.py`.
+See [CONTRIBUTING.md](CONTRIBUTING.md): open an issue or a pull request that changes `data/entries.json`.

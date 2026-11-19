@@ -2,6 +2,14 @@
 
 All notable changes to this collection are documented here.
 
+## November 19, 2026
+
+### Changed
+- The repository is now `agentic-coding-practices` (it was `awesome-ai-coding-techniques`).
+- The site moved to https://inmve.github.io/agentic-coding-practices/ and reads the data from this repository.
+- Sections hold 5 to 9 practices; newest practices come first inside a section.
+- A year is shown only when the date was checked on a source page.
+
 ## November 15, 2026
 
 ### Changed
