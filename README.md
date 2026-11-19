@@ -2,7 +2,7 @@
 
 # Agentic software development reference
 
-**What agents changed in how software gets built, and what they didn’t**
+**Practices for coding agents, and the older ones that still hold up**
 
 In the autumn of 2025 I kept a list of tips and techniques for coding with LLMs, and stopped adding to it that November. A year later I wouldn’t follow a lot of it myself.
 
