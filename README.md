@@ -2,7 +2,7 @@
 
 # Agentic software development reference
 
-**Practices for coding agents, and the older ones that still hold up**
+**What agents changed in how software gets built, and what still holds up**
 
 In the autumn of 2025 I kept a list of tips and techniques for coding with LLMs, and stopped adding to it that November. A year later I wouldn’t follow a lot of it myself.
 
@@ -22,9 +22,27 @@ Inside every section the newest practices come first.
 
 ## Contents
 
-- [By SDLC stage](#by-sdlc-stage): [Planning & prototyping](#planning--prototyping) · [Coding & debugging](#coding--debugging) · [Tests](#tests) · [Verification](#verification) · [Review & release](#review--release)
-- [Cross-stage](#cross-stage): [Prompts and models](#prompts-and-models) · [Agent instructions](#agent-instructions) · [Maintaining the agent setup](#maintaining-the-agent-setup) · [Context and memory](#context-and-memory) · [Parallel work](#parallel-work) · [Unattended runs](#unattended-runs) · [Steering the agent](#steering-the-agent) · [Staying hands-on](#staying-hands-on)
-- [Teams and projects](#teams-and-projects): [Approaches](#approaches) · [Review rules](#review-rules) · [Risk and ownership](#risk-and-ownership) · [Contributions to open-source projects](#contributions-to-open-source-projects) · [Hiring](#hiring)
+- [By SDLC stage](#by-sdlc-stage)
+  - [Planning & prototyping](#planning--prototyping)
+  - [Coding & debugging](#coding--debugging)
+  - [Tests](#tests)
+  - [Verification](#verification)
+  - [Review & release](#review--release)
+- [Cross-stage](#cross-stage)
+  - [Prompts and models](#prompts-and-models)
+  - [Agent instructions](#agent-instructions)
+  - [Maintaining the agent setup](#maintaining-the-agent-setup)
+  - [Context and memory](#context-and-memory)
+  - [Parallel work](#parallel-work)
+  - [Unattended runs](#unattended-runs)
+  - [Steering the agent](#steering-the-agent)
+  - [Staying hands-on](#staying-hands-on)
+- [Teams and projects](#teams-and-projects)
+  - [Approaches](#approaches)
+  - [Review rules](#review-rules)
+  - [Risk and ownership](#risk-and-ownership)
+  - [Contributions to open-source projects](#contributions-to-open-source-projects)
+  - [Hiring](#hiring)
 - [How far the agent is trusted](#how-far-the-agent-is-trusted)
 
 ## By SDLC stage
