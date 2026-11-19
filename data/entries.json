@@ -295,7 +295,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "glossary",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -362,7 +361,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "glossary",
       "opposites": [],
       "rootsIn": [],
       "origin": {
@@ -440,7 +438,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "glossary",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -473,7 +470,7 @@
           "role": "support",
           "quote": "Our Research system uses a multi-agent architecture with an orchestrator-worker pattern, where a lead agent coordinates the process while delegating to specialized subagents that operate in parallel.",
           "quoteLang": "en",
-          "author": "Anthropic (engineering blog, no personal byline in saved text)",
+          "author": "Anthropic",
           "work": "How we built our multi-agent research system",
           "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
           "published": "2025-06-13",
@@ -513,7 +510,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "glossary",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -588,7 +584,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "glossary",
       "opposites": [],
       "rootsIn": [],
       "origin": {
@@ -635,7 +630,6 @@
           "work": "Andrej Karpathy (@karpathy) on X"
         }
       ],
-      "seededFrom": "glossary+techniques+example",
       "opposites": [],
       "rootsIn": [],
       "origin": {
@@ -707,7 +701,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -758,7 +751,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -809,7 +801,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -849,7 +840,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -905,7 +895,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "waterfall"
@@ -947,7 +936,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -998,7 +986,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1049,7 +1036,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1089,7 +1075,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "pair-programming",
@@ -1132,7 +1117,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1183,7 +1167,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1260,7 +1243,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "feature-branch"
@@ -1313,7 +1295,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1375,7 +1356,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1477,7 +1457,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques+example",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1517,7 +1496,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1568,7 +1546,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "choose-boring-technology"
@@ -1621,7 +1598,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1661,7 +1637,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1712,7 +1687,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "spike-solution"
@@ -1747,14 +1721,13 @@
           "role": "support",
           "quote": "Once a component is working, I give feedback based on screenshots rather than reading through the code. The official best practices guide covers this pattern too: compare a screenshot against the target design and iterate from there.",
           "quoteLang": "en",
-          "author": "kent-tokyo (DEV Community handle)",
+          "author": "kent-tokyo",
           "work": "What I Do Before Letting Claude Code Touch Web App Design",
           "url": "https://dev.to/kent-tokyo/what-i-do-before-letting-claude-code-touch-web-app-design-53n0",
           "published": "2026-06-03",
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1805,7 +1778,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -1867,7 +1839,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "codemods"
@@ -1909,7 +1880,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "kiss"
@@ -1951,7 +1921,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2024,7 +1993,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2075,7 +2043,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2126,7 +2093,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2177,7 +2143,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2239,7 +2204,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "continuous-integration"
@@ -2281,7 +2245,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2332,7 +2295,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [
         "tdd"
@@ -2398,7 +2360,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2475,7 +2436,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -2526,7 +2486,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "techniques",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -3192,7 +3151,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "context-memory"
@@ -3280,7 +3238,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -3344,7 +3301,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "agent-setup-upkeep"
@@ -3408,7 +3364,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -3448,7 +3403,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": null
@@ -3510,7 +3464,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -3583,7 +3536,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": null
@@ -3623,7 +3575,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "agent-setup-upkeep"
@@ -3674,7 +3625,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "agent-setup-upkeep"
@@ -3714,7 +3664,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "agent-instructions"
@@ -3778,7 +3727,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "context-memory"
@@ -3818,7 +3766,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "context-memory"
@@ -3871,7 +3818,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "sessions"
@@ -3922,7 +3868,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "sessions"
@@ -3962,7 +3907,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": null
@@ -4015,7 +3959,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": null
@@ -4066,7 +4009,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4106,7 +4048,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4157,7 +4098,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4208,7 +4148,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4259,7 +4198,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4310,7 +4248,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4361,7 +4298,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-contributions"
@@ -4401,7 +4337,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-ownership"
@@ -4443,7 +4378,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-ownership"
@@ -4496,7 +4430,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -4536,7 +4469,6 @@
           "checkedAt": "2026-11-15"
         }
       ],
-      "seededFrom": "run-1",
       "opposites": [],
       "origin": null,
       "group": "human"
@@ -4587,7 +4519,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
       "group": "team-hiring"
@@ -4649,7 +4580,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
       "group": "team-hiring"
@@ -4711,7 +4641,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
       "group": "team-hiring"
@@ -4751,7 +4680,6 @@
           "checkedAt": "2026-11-14"
         }
       ],
-      "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
       "group": "team-hiring"
@@ -4813,7 +4741,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "trial-hiring",
       "opposites": [],
       "origin": null,
       "group": "team-hiring"
@@ -4853,7 +4780,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": "agent-setup-upkeep"
@@ -4893,7 +4819,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": null
@@ -4946,7 +4871,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5008,7 +4932,6 @@
           "checkedAt": "2026-11-18"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5050,7 +4973,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": {
         "en": "Named by Vinay Perneti and Emma Webb (Augment Code)",
@@ -5093,7 +5015,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": "context-memory"
@@ -5135,7 +5056,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": "agent-instructions"
@@ -5175,7 +5095,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-3",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -5226,7 +5145,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5288,7 +5206,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5339,7 +5256,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5401,7 +5317,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -5454,7 +5369,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -5505,7 +5419,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "team-review"
@@ -5556,7 +5469,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -5607,7 +5519,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "sessions"
@@ -5673,7 +5584,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -5724,7 +5634,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5775,7 +5684,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5826,7 +5734,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5866,7 +5773,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -5928,7 +5834,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "steering"
@@ -5968,7 +5873,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6008,7 +5912,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6048,7 +5951,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "context-memory"
@@ -6101,7 +6003,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6141,7 +6042,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "team-ownership"
@@ -6194,7 +6094,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6245,7 +6144,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "prompting"
@@ -6296,7 +6194,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "agent-instructions"
@@ -6347,7 +6244,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "agent-instructions"
@@ -6387,7 +6283,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "agent-setup-upkeep"
@@ -6427,7 +6322,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "human"
@@ -6478,7 +6372,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-4",
       "opposites": [],
       "origin": null,
       "group": "prompting"
@@ -6529,7 +6422,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6569,7 +6461,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6620,7 +6511,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6671,7 +6561,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -6711,7 +6600,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": "unattended-runs"
@@ -6751,7 +6639,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": null
@@ -6802,7 +6689,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-5",
       "opposites": [],
       "origin": null,
       "group": null
@@ -7274,7 +7160,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-7",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7314,7 +7199,6 @@
           "checkedAt": "2026-11-16"
         }
       ],
-      "seededFrom": "run-7",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7441,7 +7325,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7481,7 +7364,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7543,7 +7425,6 @@
           "checkedAt": "2026-11-18"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7583,7 +7464,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7623,7 +7503,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7663,7 +7542,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7703,7 +7581,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7754,7 +7631,6 @@
           "checkedAt": "2026-11-18"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7794,7 +7670,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7845,7 +7720,6 @@
           "checkedAt": "2026-11-17"
         }
       ],
-      "seededFrom": "run-9",
       "opposites": [],
       "rootsIn": [],
       "origin": null,
@@ -7921,7 +7795,6 @@
           "checkedAt": "2026-11-18"
         }
       ],
-      "seededFrom": "scheme-review",
       "opposites": [],
       "origin": null,
       "group": "prompting"

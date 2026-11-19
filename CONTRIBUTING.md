@@ -2,7 +2,7 @@
 
 This repository is an open reference of software development practices. Every entry in
 [`data/entries.json`](data/entries.json) has a definition, a date and sources; `README.md` and the
-[site](https://inmve.github.io/dev-with-agents/) are built from that file.
+[site](https://inmve.github.io/agentic-coding-practices/) are built from that file.
 
 ## What an entry needs
 
@@ -20,6 +20,6 @@ This repository is an open reference of software development practices. Every en
 
 - [Open an issue](https://github.com/inmve/agentic-coding-practices/issues/new) with the practice,
   the link to the source and the quote; or
-- open a pull request that edits `data/entries.json` and run `python3 scripts/build_readme.py`.
+- open a pull request that edits `data/entries.json`; the README is rebuilt from it.
 
 Reports of a wrong date, a dead link or a quote that is no longer on the page are as welcome as new entries.
