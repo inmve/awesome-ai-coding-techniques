@@ -1,20 +1,22 @@
 <!-- Generated from data/entries.json. Do not edit by hand. -->
 
-# Agentic software development reference
+# Agents made the old practices matter more
 
-**What agents changed in how software gets built, and what still holds up**
+**Practices in agentic software development, 2026 survey.** Tests, code review and CI carry more weight with coding agents.
 
-In the autumn of 2025 I kept a list of tips and techniques for coding with LLMs, and stopped adding to it that November. A year later I wouldn’t follow a lot of it myself.
+```
+██████   ██████  ██████   ██████
+     ██ ██  ████      ██ ██
+ █████  ██ ██ ██  █████  ███████
+██      ████  ██ ██      ██    ██
+███████  ██████  ███████  ██████
+ agentic software development survey
+```
 
-That November Opus 4.5 and GPT-5.2 came out, and agents got good enough to write most of the code.<sup>[[1]](https://x.com/karpathy/status/2015883857489522876)</sup> This year Fable and Astra went further and stopped needing most of what my list was for: detailed instructions, carefully prepared context, reminders to think hard.<sup>[[2]](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/)</sup>
-
-So I started again from what people who ship software with agents write about their own work. Below are 127 of their practices, each with a quote from the post that describes it.
-
-Prompting is the part that got less important. The practices that were around long before LLMs went the other way: I couldn’t find anyone taking back tests, code review or CI, and if anything they carry more weight now.<sup>[[3]](https://www.omnea.co/blog/ai-in-our-programming-interviews)</sup> 22 of the practices on this page grew straight out of one of those older ones, like continuous integration (1998) or test-driven development (2002). Teams that already had them had less to change. Even the rubber duck is still here; now it just happens to talk back.
+**[Take the Agentic Software Development Survey, 2026 →](https://inmve.github.io/agentic-coding-practices/)** Each section of the site ends with a few questions; everyone’s answers go up on 1 December.
 
 - **Site:** [https://inmve.github.io/agentic-coding-practices/](https://inmve.github.io/agentic-coding-practices/) (the same reference with quotes on hover and schemes that play)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
-- **Survey for your team:** [team-survey](https://github.com/inmve/team-survey), a GitHub template that asks the same practices inside your team
 
 127 practices, 256 sources, 256 of them with a verbatim quote stored in the data, 65 example schemes. Preliminary edition: dates are not verified yet.
 
@@ -22,7 +24,7 @@ Inside every section the newest practices come first.
 
 ## Contents
 
-- [By SDLC stage](#by-sdlc-stage)
+- [Practices by SDLC stage](#practices-by-sdlc-stage)
   - [Planning & prototyping](#planning--prototyping)
   - [Coding & debugging](#coding--debugging)
   - [Tests and verification](#tests-and-verification)
@@ -44,7 +46,7 @@ Inside every section the newest practices come first.
   - [Contributions to open-source projects](#contributions-to-open-source-projects)
   - [Hiring](#hiring)
 
-## By SDLC stage
+## Practices by SDLC stage
 
 ### Planning & prototyping
 
