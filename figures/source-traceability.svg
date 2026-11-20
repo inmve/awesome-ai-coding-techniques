@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" role="img" aria-label="Each extracted fact carries the file and line it came from"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="10" width="170" height="100" fill="none" stroke="#2e2a33"/>
+<line x1="12" y1="30" x2="140" y2="30" stroke="#2e2a33" stroke-width="2"/><line x1="22" y1="46" x2="150" y2="46" stroke="#2e2a33" stroke-width="2"/>
+<line x1="12" y1="66" x2="120" y2="66" stroke="#2e2a33" stroke-width="2"/><line x1="22" y1="82" x2="160" y2="82" stroke="#2e2a33" stroke-width="2"/>
+<rect x="222" y="18" width="214" height="22" fill="none" stroke="#2e2a33"/><text x="228" y="33">refund ≤ 30 d</text><text x="340" y="33" class="m">orders.py:118</text>
+<rect x="222" y="62" width="214" height="22" fill="none" stroke="#2e2a33"/><text x="228" y="77">VAT on shipping</text><text x="340" y="77" class="m">tax.py:42</text>
+<path d="M140 30 C180 30 180 29 222 29 M160 82 C190 82 190 73 222 73" fill="none" stroke="#8a8490" stroke-dasharray="3 3"/></svg>

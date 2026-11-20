@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" role="img" aria-label="A harness starts a fresh agent run for the next task on the list, again and again, and stops when the list is empty"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="10" y="14" width="110" height="112" fill="none" stroke="#2e2a33"/><text x="18" y="30" class="m">tasks</text>
+<text x="18" y="52" style="text-decoration:line-through" class="m">task 1</text><text x="18" y="72" style="text-decoration:line-through" class="m">task 2</text>
+<rect x="14" y="80" width="102" height="18" fill="none" stroke="#2e2a33" stroke-width="1.6"/><text x="18" y="93">task 3</text><text x="18" y="116">task 4</text>
+<path d="M120 89 H178" stroke="#2e2a33" marker-end="url(#a)"/>
+<rect x="180" y="70" width="110" height="38" fill="none" stroke="#2e2a33"/><text x="190" y="93">new agent run</text>
+<path d="M235 70 V44 H65 V36" fill="none" stroke="#2e2a33" stroke-dasharray="3 3" marker-end="url(#a)"/><text x="130" y="38" class="m">done, next</text>
+<path d="M290 89 H350" stroke="#2e2a33" marker-end="url(#a)"/><text x="356" y="80" class="m">list empty</text><circle cx="378" cy="100" r="12" fill="none" stroke="#3f9a5a"/><text x="373" y="104" class="g">✓</text>
+<text x="180" y="130" class="m">while :; do run agent; done</text></svg>

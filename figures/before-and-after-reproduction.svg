@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" role="img" aria-label="The agent records the failing steps, fixes the bug and replays the same steps to show they pass"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="10" width="190" height="110" fill="none" stroke="#2e2a33"/><rect x="249" y="10" width="190" height="110" fill="none" stroke="#2e2a33"/>
+<g><circle cx="40" cy="65" r="12" fill="none" stroke="#2e2a33"/><text x="36" y="69">1</text><circle cx="96" cy="65" r="12" fill="none" stroke="#2e2a33"/><text x="92" y="69">2</text><circle cx="152" cy="65" r="12" fill="url(#h)" stroke="#d2544a"/><text x="148" y="69" class="r">✗</text>
+<path d="M52 65 H82 M108 65 H138" stroke="#2e2a33" marker-end="url(#a)"/></g>
+<g><circle cx="288" cy="65" r="12" fill="none" stroke="#2e2a33"/><text x="284" y="69">1</text><circle cx="344" cy="65" r="12" fill="none" stroke="#2e2a33"/><text x="340" y="69">2</text><circle cx="400" cy="65" r="12" fill="none" stroke="#3f9a5a"/><text x="396" y="69" class="g">✓</text>
+<path d="M300 65 H330 M356 65 H386" stroke="#2e2a33" marker-end="url(#a)"/></g>
+<line x1="191" y1="65" x2="247" y2="65" stroke="#2e2a33" stroke-dasharray="3 3" marker-end="url(#a)"/><text x="206" y="58" class="m">fix</text></svg>

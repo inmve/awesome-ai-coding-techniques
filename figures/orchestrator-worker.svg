@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" role="img" aria-label="A lead agent splits the task among workers and merges their results"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="180" y="6" width="80" height="28" fill="none" stroke="#2e2a33" stroke-width="1.6"/><text x="204" y="24">lead</text>
+<path d="M220 34 V50 H80 V66 M220 50 V66 M220 50 H360 V66" fill="none" stroke="#2e2a33" marker-end="url(#a)"/>
+<rect x="45" y="68" width="70" height="26" fill="none" stroke="#2e2a33"/><rect x="185" y="68" width="70" height="26" fill="none" stroke="#2e2a33"/><rect x="325" y="68" width="70" height="26" fill="none" stroke="#2e2a33"/>
+<path d="M80 94 V112 H220 M360 94 V112 H220 M220 94 V112" fill="none" stroke="#8a8490" stroke-dasharray="3 3"/>
+<line x1="220" y1="112" x2="220" y2="128" stroke="#2e2a33" marker-end="url(#a)"/><rect x="190" y="128" width="60" height="10" fill="none" stroke="#2e2a33" stroke-width="1.6"/></svg>

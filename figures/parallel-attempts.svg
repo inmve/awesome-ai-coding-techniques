@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" role="img" aria-label="One bug, three attempts in parallel, the passing one is merged"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="54" width="70" height="30" fill="none" stroke="#2e2a33"/><text x="14" y="73">#142</text>
+<path d="M71 69 C110 69 110 22 150 22 M71 69 H150 M71 69 C110 69 110 116 150 116" fill="none" stroke="#2e2a33" marker-end="url(#a)"/>
+<rect x="152" y="8" width="120" height="28" fill="url(#h)" stroke="#2e2a33"/><rect x="152" y="55" width="120" height="28" fill="none" stroke="#2e2a33"/><rect x="152" y="102" width="120" height="28" fill="url(#h)" stroke="#2e2a33"/>
+<text x="160" y="26" style="paint-order:stroke;stroke:#fff;stroke-width:3px">A  ✗ tests</text><text x="160" y="73">B  ✓</text><text x="160" y="120" style="paint-order:stroke;stroke:#fff;stroke-width:3px">C  ✗ diff 900</text>
+<line x1="272" y1="69" x2="330" y2="69" stroke="#2e2a33" marker-end="url(#a)"/><rect x="332" y="54" width="96" height="30" fill="none" stroke="#2e2a33"/><text x="344" y="73" class="g">merge B</text></svg>

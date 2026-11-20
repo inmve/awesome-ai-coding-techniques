@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" role="img" aria-label="Agents take tasks from a shared list by locking them; a free agent takes the next unlocked one"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="6" width="220" height="128" fill="none" stroke="#2e2a33"/>
+<line x1="1" y1="38" x2="221" y2="38" stroke="#8a8490"/><line x1="1" y1="70" x2="221" y2="70" stroke="#8a8490"/><line x1="1" y1="102" x2="221" y2="102" stroke="#8a8490"/>
+<text x="12" y="26">lexer</text><text x="12" y="58">parser</text><text x="12" y="90">codegen</text><text x="12" y="122">tests</text>
+<rect x="180" y="14" width="14" height="12" fill="url(#h)" stroke="#2e2a33"/><path d="M183 14 v-4 a4 4 0 0 1 8 0 v4" fill="none" stroke="#2e2a33"/>
+<rect x="180" y="46" width="14" height="12" fill="url(#h)" stroke="#2e2a33"/><path d="M183 46 v-4 a4 4 0 0 1 8 0 v4" fill="none" stroke="#2e2a33"/>
+<rect x="180" y="78" width="14" height="12" fill="none" stroke="#2e2a33" stroke-dasharray="2 2"/>
+<rect x="180" y="110" width="14" height="12" fill="url(#h)" stroke="#2e2a33"/><path d="M183 110 v-4 a4 4 0 0 1 8 0 v4" fill="none" stroke="#2e2a33"/>
+<path d="M221 22 H300 M221 54 H300 M221 116 H300" stroke="#8a8490" stroke-dasharray="3 3"/>
+<rect x="302" y="10" width="26" height="24" fill="none" stroke="#2e2a33"/><rect x="302" y="42" width="26" height="24" fill="none" stroke="#2e2a33"/><rect x="302" y="104" width="26" height="24" fill="none" stroke="#2e2a33"/>
+<rect x="302" y="74" width="26" height="24" fill="none" stroke="#2e2a33" stroke-dasharray="3 3"/><path d="M302 86 H221" stroke="#2e2a33" marker-end="url(#a)"/></svg>

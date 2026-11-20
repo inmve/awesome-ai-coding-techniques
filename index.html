@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agents made the old practices matter more</title>
+<meta name="description" content="Tests, code review and CI carry more weight with coding agents. Practices from people who build software with agents, each with a quote, and the older practices they grew from.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agents made the old practices matter more">
+<meta property="og:description" content="Practices for coding agents and the older practices they grew from: definitions, dates and sources.">
+<meta property="og:url" content="https://inmve.github.io/agentic-coding-practices/">
+
+<link rel="canonical" href="https://inmve.github.io/agentic-coding-practices/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;800&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>:root{--ink:#2e2a33;--muted:#8a8490;--faint:#e9e6ec;--paper:#ffffff;--accent:#2f5f8f;--accent-soft:rgba(47, 95, 143, .22);--accent-wash:rgba(47, 95, 143, .07);--link:#2f6a3f;--link-line:rgba(47, 106, 63, .25);--new:255,205,60;--yes:#3f9a5a;--no:#d2544a;--sans:'Golos Text','Helvetica Neue',Arial,sans-serif;--serif:'PT Serif',Georgia,serif;--bottom-bar:0px;--sidebar:228px}*{box-sizing:border-box}html{background:var(--paper)}body{margin:0;font:14px/18px var(--sans);color:var(--ink);background:var(--paper);padding-bottom:calc(var(--bottom-bar) + 20px);-webkit-font-smoothing:antialiased}a{color:inherit}.toc{font-size:13px;line-height:1.35}#toc{scrollbar-width:none}#toc::-webkit-scrollbar{display:none}.toc .site{display:block;font-weight:600;text-decoration:none;margin-bottom:14px}.toc .site-bottom{margin:18px 0 0;font-weight:600}.toc .suggest-practice{margin:18px 0 0;font-weight:400;color:var(--link)}.toc .suggest-practice+.site-bottom{margin-top:6px}.toc .site-bottom .stars{color:var(--muted);font-weight:400;margin-left:4px}.toc .part{display:block;font-weight:600;text-decoration:none;margin:12px 0 4px;color:var(--ink)}.toc .item:hover,.toc .part:hover{color:var(--accent)}.toc .item{display:block;text-decoration:none;color:var(--muted);padding:2px 0 2px 10px;border-left:1px solid var(--faint)}.toc a.active{color:var(--ink);font-weight:600;border-left-color:var(--accent)}.toc .item .arrow{opacity:.5;margin-left:3px}.toc .keys{margin-top:18px;padding-top:12px;border-top:1px solid var(--faint);color:var(--muted);font-size:12px}#question kbd.key,.toc kbd{font:11px var(--sans);border:1px solid var(--faint);border-bottom-width:2px;border-radius:3px;padding:0 4px;color:var(--ink);background:#fff}@media (min-width:1000px){#toc{position:sticky;top:0;float:left;box-sizing:border-box;width:var(--sidebar);margin-left:calc(-1 * var(--sidebar) - 28px);max-height:calc(100vh - var(--bottom-bar));overflow:auto;padding:4px 18px 18px 24px;background:#fff;z-index:15}.page{margin-left:var(--sidebar)}#tocInline{display:none}}@media (max-width:999px){#toc{display:none}#tocInline{margin:0 0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0 24px}#tocInline .keys,#tocInline .site{display:none}#tocInline .part{margin-top:6px}}.page{padding:0 28px}header.title{padding:36px 0 20px}:root{--band:#f6f4f8}header.title{background:var(--band);box-shadow:0 0 0 100vmax var(--band);clip-path:inset(0 -100vmax);padding-bottom:40px;margin-bottom:44px}header.title .kicker{margin:0 0 8px;font:600 13px/1.3 var(--sans);color:var(--muted);letter-spacing:.02em}header.title h1{margin:0 0 14px;font:800 clamp(34px, 4.6vw, 60px)/1 var(--sans);color:var(--accent);letter-spacing:-.02em;max-width:20ch}header.title .lead{margin:0 0 18px;font:clamp(20px, 2.4vw, 28px)/1.25 var(--serif);max-width:32ch}.survey-inline .ask-line{margin:0 0 10px;font:600 17px/1.35 var(--sans);color:var(--ink)}.survey-inline .ask-line span{font-weight:400;color:var(--muted);font-size:15px}header.title .intro{max-width:62ch;margin:0 0 18px;font:16px/1.55 var(--serif)}header.title .intro p{margin:0 0 10px}header.title .intro ul{margin:0 0 10px;padding-left:20px}header.title .intro li{margin:0 0 8px}header.title .intro q{font-style:italic}header.title .intro .year{color:var(--muted)}header.title .intro .repo{margin-top:14px}.block-description{max-width:62ch;margin:0 0 14px;font:15px/1.5 var(--serif);color:var(--muted)}.grew-from{margin:-6px 0 14px;font-size:13px;color:var(--muted)}.grew-from .ref{color:var(--link);text-decoration:underline;text-decoration-color:var(--link-line);text-underline-offset:2px}header.title .edition{font-size:13px;color:var(--muted)}header.title .edition .feedback-card{display:block;box-sizing:border-box;max-width:62ch;margin:26px 0 0;text-align:center;background:#fff;border:1px solid var(--faint);border-radius:8px;padding:14px 18px;font:16px/1.5 var(--serif);color:var(--ink)}header.title .edition .feedback-card .feedback-text{display:block;font:14px/1.5 var(--sans)}header.title .edition .feedback-card .repo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 12px;margin-top:10px}header.title .edition .feedback-card .star{font:600 13px var(--sans);color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:6px;padding:4px 12px}header.title .edition .feedback-card .star:hover{background:var(--ink);color:#fff}header.title .edition .feedback-card .updated{font:13px/1.4 var(--sans);color:var(--muted)}.facts{margin:0 0 16px;font-size:15px;color:var(--ink);max-width:60ch}.facts button{font:inherit;color:var(--accent);background:var(--accent-wash);border:0;border-radius:4px;padding:1px 7px;cursor:pointer}.facts button::after{content:' ⌁';opacity:.55}.facts button:hover{background:var(--accent-soft)}.facts .tip{display:block;font-size:12px;color:var(--muted);margin-top:3px}header.title .edition label{margin-left:14px;cursor:pointer}header.title .edition input{vertical-align:-2px}section.part>h2.part-title{font:800 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:34px 0 4px}section.block{border-top:1px solid var(--faint);padding:14px 0 24px}.entry,section.block{scroll-margin-top:24px}section.block h3{font:400 clamp(28px, 3.6vw, 44px)/1 var(--sans);color:var(--accent);margin:0 0 14px -2px;letter-spacing:-.01em}section.block .empty{color:var(--muted)}dl.cols{margin:0;columns:4 220px;column-gap:34px}.entry{position:relative;margin:0 0 9px;padding:3px 5px;border-radius:3px;break-inside:avoid;hyphens:manual;-webkit-hyphens:manual;outline:1.5px solid transparent;outline-offset:1px;transition:outline-color .12s}.entry.askable{padding-left:11px;cursor:pointer}.entry.active,.entry:hover{outline-color:var(--faint)}.entry .suggest-edit{color:var(--muted);text-decoration:none;font-size:13px;margin-left:4px}.entry .suggest-edit:hover{color:var(--link)}.entry.askable.active,.entry.askable:hover{outline-color:var(--ink)}.entry dt{display:inline;font-weight:600;font-size:15px}.entry dd{display:inline;margin:0}.entry .aliases{color:var(--muted)}.entry .permalink{color:var(--faint);text-decoration:none;font-size:12px;margin-left:1px}.entry:hover .permalink{color:var(--muted)}.entry .meta,.entry .origin{color:var(--muted)}.entry .origin{display:block;font:italic 13px/17px var(--serif);margin-top:2px}.entry .meta{font-size:12px;white-space:nowrap;margin-left:3px}.entry .relations{display:block;margin-top:2px;font-size:13px}.entry .relations .label{color:var(--muted)}.entry .ref{color:var(--link);text-decoration:underline;text-decoration-color:var(--link-line);text-underline-offset:2px}.entry .ref:hover{text-decoration-color:currentColor}.entry .rail{position:absolute;left:2px;top:4px;bottom:4px;width:4px;border-radius:2px;background:var(--faint);display:flex;flex-direction:column;overflow:hidden}.entry .rail .yes{background:var(--yes)}.entry .rail .no{background:var(--no)}.entry .mine{font-size:12px;margin-left:3px;white-space:nowrap;font-style:normal}.entry .mine.yes{color:var(--yes)}.entry .mine.no{color:var(--no)}.fallback{color:inherit}sup button{font:11px var(--sans);border:0;background:0 0;color:#36c;cursor:pointer;padding:0 1px;font-style:normal}sup button.why{font-size:12px;text-decoration:underline dotted;text-underline-offset:2px}#question,.popover{position:absolute;z-index:25;font:13px/1.4 var(--sans);border-radius:4px;box-shadow:0 6px 24px rgba(0,0,0,.14)}.popover{max-width:360px;background:#fff;border:1px solid var(--faint);padding:12px 14px}.figure-popover{width:min(480px,calc(100vw - 16px));max-width:none}.figure-popover img{display:block;width:100%;height:auto;margin-bottom:6px}.popover .root-definition{display:block;margin:4px 0 8px}.popover q{font:italic 15px/1.45 var(--serif);display:block;margin-bottom:8px;quotes:'«' '»'}.popover .who{color:var(--muted)}.popover .who a{color:var(--link)}.popover .go{display:inline-block;margin-top:6px;color:var(--link)}.popover.suggest b{display:block;margin-bottom:8px}.popover.suggest a{display:block;color:var(--link);text-decoration:none;padding:5px 0;border-top:1px solid var(--faint)}.popover.suggest a:hover{text-decoration:underline}.popover.suggest a small{display:block;color:var(--muted);font-size:12px}.popover .no-quote{color:var(--muted);font-style:italic;display:block;margin-bottom:6px}#question{display:none;background:var(--ink);color:#fff;padding:9px 12px;width:230px}#question::after{content:'';position:absolute;top:12px;border:7px solid transparent}#question.left::after{right:-14px;border-left-color:var(--ink)}#question.right::after{left:-14px;border-right-color:var(--ink)}#question.below::after{left:16px;top:-14px;border-bottom-color:var(--ink)}#question .ask{font-weight:600;font-size:14px;display:block}#question .hint{display:block;color:rgba(255,255,255,.6);font-size:12px;margin-top:1px}#question .buttons{margin-top:8px;display:flex;gap:6px}#question button{font:600 13px var(--sans);padding:4px 12px;border:0;border-radius:3px;cursor:pointer;color:#fff;opacity:.85}#question .chosen,#question button:hover{opacity:1}#question .chosen{box-shadow:0 0 0 2px #fff}#question .yes{background:var(--yes)}#question .no{background:var(--no)}#question .never{background:0 0;color:rgba(255,255,255,.6);padding:4px 6px;font-weight:400}#question .never.chosen{color:#fff;box-shadow:none;text-decoration:underline}#question kbd{font:10px var(--sans);opacity:.7;margin-left:4px}#question .result{display:flex;align-items:center;gap:8px;margin-top:9px;padding-top:8px;border-top:1px solid rgba(255,255,255,.15);font-size:12px;color:rgba(255,255,255,.75)}#question .mini-rail{width:4px;height:26px;border-radius:2px;overflow:hidden;display:flex;flex-direction:column;background:rgba(255,255,255,.2);flex:none}#question .mini-rail .yes{background:var(--yes)}#question .mini-rail .no{background:var(--no)}#question textarea{display:block;width:100%;margin-top:8px;font:13px var(--sans);border-radius:3px;border:0;padding:6px 8px}.sections{display:flow-root}footer.site{border-top:1px solid var(--faint);margin-top:28px;padding:18px 0 30px;font-size:15px}footer.site a{color:var(--link)}details.notes{margin:0 0 20px;font-size:12px;color:#9b3b2f;border:1px dashed #e3b3ab;border-radius:4px;padding:6px 12px;max-width:900px}details.notes summary{cursor:pointer}@media (max-width:700px){.page{padding:0 16px}header.title{padding-top:22px}#question{width:auto;max-width:calc(100vw - 32px)}}.mfig{position:relative;display:block;margin:6px 0 2px;border:1px solid #ddd;border-radius:6px;padding:8px 8px 4px;background:#fff;user-select:none;-webkit-user-select:none;cursor:pointer}.mfig svg{display:block;width:100%;height:auto;font:13px ui-monospace,Menlo,monospace}.mfig .part{opacity:0;transform:translateY(5px);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.7,.2,1);transform-box:fill-box;transform-origin:center}.mfig .part.on{opacity:1;transform:none}.mfig .mark{transform:scale(.4)}.mfig .mark.on{transform:scale(1);transition:opacity .35s ease,transform .45s cubic-bezier(.3,1.6,.5,1)}.mfig .part.box{transition:opacity .5s ease,transform .5s cubic-bezier(.2,.7,.2,1),stroke .4s ease,stroke-width .4s ease}.mfig .fillbar{transition:fill .4s ease}.mfig .on.d1{transition-delay:.15s}.mfig .on.d2{transition-delay:.45s}.mfig .on.d3{transition-delay:.75s}.mfig .on.d4{transition-delay:1.05s}.mfig .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);opacity:0;transition:opacity .3s ease,stroke-dashoffset 0s .3s}.mfig .draw.on{stroke-dashoffset:0;opacity:1;transition:stroke-dashoffset .9s cubic-bezier(.4,0,.2,1),opacity .3s ease}.mfig .draw.on.d1{transition-delay:.15s}.mfig .draw.on.d2{transition-delay:.45s}.mfig .draw.on.d3{transition-delay:.75s}.mfig .draw.on.d4{transition-delay:1.05s}.mfig .move{transition:transform .9s cubic-bezier(.4,0,.2,1),fill .4s ease;transform-box:fill-box;transform-origin:left center}.mfig .box{transition:stroke .4s ease,stroke-width .4s ease,fill .4s ease}.mfig .box.hot{stroke:#c0392b;stroke-width:1.6}.mfig .box.good{stroke:#2a7d3f;stroke-width:1.6}.mfig .fillbar.hot{fill:#c0392b}.mfig .progress{display:flex;gap:4px;margin-top:4px;opacity:0;transition:opacity .25s ease}.mfig.playing .progress{opacity:1}.mfig .progress span{flex:1;padding:5px 0;cursor:pointer}.mfig .progress b{display:block;height:2px;background:#efefef;overflow:hidden;border-radius:1px}.mfig .progress i{display:block;height:100%;width:100%;background:#a8a8a8;transform-origin:left;transform:scaleX(0)}.mfig .badge{position:absolute;bottom:6px;left:6px;display:flex;align-items:center;gap:5px;font:11px var(--sans);color:#444;background:#fff;border:1px solid #999;border-radius:4px;padding:1px 6px 1px 5px;transition:opacity .25s ease}.mfig .badge::before{content:'';border-left:7px solid #444;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}.mfig{transition:border-color .25s ease}.mfig.playing{border-color:transparent}#surveyBar{position:fixed;left:0;right:0;bottom:0;z-index:20;height:56px;display:flex;align-items:center;justify-content:center;gap:18px;background:var(--survey-bg);border-top:1px solid var(--survey-line);color:var(--ink);font:15px var(--sans);box-shadow:0 -4px 16px rgba(0,0,0,.05)}#surveyBar[hidden]{display:none}#surveyBar{padding:0 24px}#surveyBar button{font:600 14px var(--sans);border:2px solid var(--ink);border-radius:8px;padding:7px 16px;background:#ece2fb;color:var(--ink);cursor:pointer;white-space:nowrap}@media (max-width:600px){#surveyBar{padding:0 12px}}.col-outline{position:absolute;pointer-events:none;border-left:1px dashed #b9b2a2;border-right:1px dashed #b9b2a2}.answers-panel,.survey-inline{position:relative}.answers-panel{padding:18px 22px;border:1px solid var(--survey-line);border-radius:12px;background:var(--survey-bg)}#your-answers{margin-top:10px}.answers-lead{margin:40px 0 0;font:20px/1.35 var(--sans);color:var(--ink)}.answers-panel .foot-line{display:flex;justify-content:flex-end;gap:12px;margin:22px 0 0;padding-top:12px;border-top:1px solid var(--faint);font-size:13px;color:var(--muted)}.answers-panel .foot-line .link{border:0;background:0 0;padding:0;font:inherit;color:var(--link);cursor:pointer}.answers-panel .foot-line>.link{color:var(--muted);margin-left:auto}.answers-panel .foot-line .close-bottom{font:600 13px var(--sans);color:#fff;background:var(--ink);border:1px solid var(--ink);border-radius:4px;padding:3px 14px;cursor:pointer}.answers-panel table.ask tr.section-row th{position:static;padding:14px 0 4px;box-shadow:none;background:0 0}.answers-panel table.ask th.section-name{text-align:left;font:12px var(--sans);color:var(--muted);width:auto}.answers-modal .answers-panel{background:#fff;border:1px solid var(--faint);border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.14);padding-top:22px}.answers-modal .answers-panel table.ask th{background:#fff}.answers-panel table.ask.answers td.name{text-decoration:none}.answers-panel .how{font:14px/1.5 var(--sans)}.answers-panel .answered-section{margin:16px 0 2px;font:12px var(--sans);color:var(--muted)}.answers-panel .answered-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;padding:7px 0;border-top:1px solid var(--faint)}.answers-panel .answered-row .name{font:15px/1.3 var(--serif)}.answers-panel .answered-row .words{display:flex;gap:2px;margin-left:auto}.answers-panel .answered-row button{font:13px var(--sans);color:var(--muted);background:0 0;border:0;border-radius:999px;padding:3px 9px;cursor:pointer;white-space:nowrap}.answers-panel .answered-row button:hover{color:var(--ink)}.answers-panel .answered-row button.on{color:#fff;background:color-mix(in srgb,var(--c) 88%,#000)}@media (max-width:600px){.answers-panel .answered-row .words{margin-left:-9px;width:100%}}.answers-panel .how>p{margin:0 0 3px}.answers-panel .how .submit-title{font:600 18px/1.25 var(--sans);color:var(--ink);margin:0 0 6px;padding-right:28px}.answers-panel .how .why-pr{margin-bottom:14px}.prompt-note{position:fixed;z-index:1010;left:50%;bottom:20px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;font:600 13px var(--sans);color:#fff;background:var(--ink);border-radius:6px;padding:8px 10px 8px 14px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.18);animation:prompt-note 5s ease forwards}.prompt-note button{font:600 13px var(--sans);color:var(--ink);background:#fff;border:0;border-radius:4px;padding:3px 12px;cursor:pointer}.prompt-note:hover{animation-play-state:paused}@keyframes prompt-note{0%{opacity:0;bottom:12px}6%{opacity:1;bottom:20px}88%{opacity:1}100%{opacity:0;visibility:hidden}}.answers-panel pre.prompt.flash{animation:prompt-flash 1s ease}@keyframes prompt-flash{0%{background:#fff3c4}100%{background:#fff}}.answers-panel .how>p.by-hand{margin:8px 0 0;font-size:13px;color:var(--muted)}.answers-panel .how>p.by-hand .link{border:0;background:0 0;padding:0;font:inherit;color:var(--link);text-decoration:underline;cursor:pointer}.answers-panel .how>p.results-line{margin:18px 0 24px}.answers-panel .how>p.results-line b{font-weight:600}.answers-panel .prompt-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.answers-panel .prompt-head .copy{font:600 13px var(--sans);color:#fff;background:var(--ink);border:1px solid var(--ink);border-radius:4px;padding:3px 12px;cursor:pointer}.answers-panel pre.prompt{margin:0;max-height:210px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.45 ui-monospace,Menlo,monospace;color:var(--ink);background:#fff;border:1px solid var(--faint);border-radius:6px;padding:10px 12px}.team-block{margin:48px 0 0;font:14px/1.5 var(--sans);color:var(--ink)}.team-block h3{font:600 18px/1.25 var(--sans);margin:0 0 6px}.team-block .copy-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:14px 0 6px}.team-block .copy-head button{font:600 13px var(--sans);color:#fff;background:var(--ink);border:1px solid var(--ink);border-radius:4px;padding:3px 12px;cursor:pointer}.team-block pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.45 ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--faint);border-radius:6px;padding:10px 12px}.team-copy-note{font:13px var(--sans);color:var(--muted)}.fly-ball{position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;z-index:30}.answers-modal{position:fixed;inset:0;z-index:1000;display:flex;justify-content:center;align-items:flex-start;overflow:auto;background:rgba(20,18,24,.35);padding:24px 12px}.answers-modal .sheet{position:relative;width:min(820px,100%)}.answers-modal .close{position:absolute;top:10px;right:14px;z-index:2;border:0;background:0 0;font:24px var(--sans);color:var(--muted);cursor:pointer}:root{--survey-bg:#fbfbf5;--survey-line:#e4e2d6}.survey-inline{margin:14px 0 6px;padding:18px 22px 14px;border:1px solid var(--survey-line);border-radius:12px;background:var(--survey-bg)}:is(.survey-inline,.answers-panel) table.ask td.name{width:40%;cursor:default;text-decoration:underline dotted #c9c4ce;text-underline-offset:3px}.card-pop{position:absolute;z-index:30;width:min(380px,calc(100vw - 16px));background:#fff;border:1px solid var(--faint);border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.16);padding:10px 10px 2px}.card-pop .entry{margin:0;outline:0}.card-pop .permalink,.card-pop .suggest-edit{display:none!important}.popover{z-index:40}.survey-inline .audience{font:16px/1.5 var(--serif);margin:8px 0}:is(.survey-inline,.answers-panel) table.ask{border-collapse:collapse;width:100%;margin-top:8px}:is(.survey-inline,.answers-panel) table.ask th{font:600 11px/1.2 var(--sans);color:var(--muted);width:66px;padding:6px 0 8px;vertical-align:bottom;position:sticky;top:0;background:var(--survey-bg);z-index:1;box-shadow:0 1px 0 var(--faint)}:is(.survey-inline,.answers-panel) table.ask td{border-top:1px solid var(--faint);padding:7px 0;vertical-align:middle}:is(.survey-inline,.answers-panel) table.ask td.name{font:15px/1.3 var(--serif);padding-right:12px}:is(.survey-inline,.answers-panel) table.ask td.name small{display:block;font:13px/1.4 var(--serif);color:var(--muted);margin-top:2px}:is(.survey-inline,.answers-panel) table.ask td.pick{text-align:center;cursor:pointer}:is(.survey-inline,.answers-panel) table.ask button{width:24px;height:24px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--c,#ccc) 70%,#fff);background:#fff;cursor:pointer;padding:0}:is(.survey-inline,.answers-panel) table.ask td.pick:hover button{border-color:var(--c)}:is(.survey-inline,.answers-panel) table.ask button.on{border-color:transparent;background:var(--c)}:is(.survey-inline,.answers-panel) table.ask th.col-lit{color:var(--ink)}@media (hover:hover){:is(.survey-inline,.answers-panel) table.ask tbody tr:not(.section-row):hover td{background-color:rgba(60,50,20,.045)}}:is(.survey-inline,.answers-panel) .note{color:var(--muted);font-size:13px;margin:6px 0 0}@media (max-width:600px){:is(.survey-inline,.answers-panel) table.ask th{width:52px;font-size:10px;overflow-wrap:normal;hyphens:none}:is(.survey-inline,.answers-panel) table.ask button{width:20px;height:20px}:is(.survey-inline,.answers-panel) table.ask td.name{font-size:14px;padding-right:8px}:is(.survey-inline,.answers-panel) table.ask td.name small{font-size:12px}.survey-inline{padding:14px 12px 10px;border-radius:10px}.answers-panel{padding:14px 12px;border-radius:10px}}.mfig-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(20,18,24,.35);padding:16px}.mfig-modal .mfig{width:min(760px,100%);margin:0;padding:20px 22px 12px;border:0;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.18);cursor:default}.mfig-modal .mfig .progress{opacity:1}.mfig-modal .mfig .badge{display:none}.mfig.playing .badge{opacity:0;pointer-events:none}.mfig.still .box,.mfig.still .draw,.mfig.still .move,.mfig.still .part{transition:none!important}</style>
+</head>
+<body>
+
+<div class="page" id="top">
+  <header class="title">
+    <div class="kicker" id="kicker"></div>
+    <h1 id="title"></h1>
+    <p class="lead" id="lead" hidden></p>
+    <div class="intro" id="intro"></div>
+    <div class="edition"><span id="subtitle"></span>
+      <label hidden><input type="radio" name="lang" value="ru"> ru</label>
+      <label hidden><input type="radio" name="lang" value="en" checked="checked"> en</label>
+    </div>
+  </header>
+
+  <nav id="tocInline" class="toc"></nav>
+  
+  <div class="sections">
+    <nav id="toc" class="toc"></nav>
+    <main id="content"></main>
+  </div>
+  <footer class="site" id="footer"></footer>
+</div>
+
+<div id="question"></div>
+<div id="surveyBar" hidden></div>
+
+
+<script>const UI = {
+    ru: {
+        github: "GitHub",
+        askLine: "Что из этого вы на самом деле делаете?",
+        askFirst: "Отвечайте на сколько угодно; ответы всех появятся 1 декабря.",
+        teamCopy: url => `Копия команды: <a href="${url}">Практики агентной разработки</a>.`,
+        kicker: "Практики агентной разработки, опрос 2026",
+        title: "Агенты сделали старые практики важнее",
+        lead: "С агентами тесты, код-ревью и CI весят больше.",
+        parts: {
+            approaches: "Подходы",
+            stages: "Практики по стадиям SDLC",
+            general: "Сквозное",
+            team: "Команды и проекты"
+        },
+        permalink: "ссылка на статью",
+        suggestEdit: "Предложить правку",
+        suggestPractice: "+ Предложить практику",
+        suggestQuestion: "Что вы хотите предложить?",
+        suggestSource: "Добавить источник",
+        suggestSourceHint: "статья об этой практике и цитата из неё",
+        suggestDefinition: "Изменить определение",
+        suggestDefinitionHint: "точнее сказать, что это за практика",
+        survey: {
+            answers: [ "Не моё", "Хочу попробовать", "Бросил" ],
+            iDoIt: "Делаю",
+            weDoIt: "Делаем",
+            doIt: "Делаю",
+            audience: {
+                "group-team-contributions": "Эти вопросы для тех, кто поддерживает open-source проект.",
+                "group-team-hiring": "Эти вопросы для тех, кто проводит собеседования."
+            },
+            submit: "Отправить",
+            submitN: n => `Отправить ответы: ${n}`,
+            clear: "Очистить мои ответы",
+            clearConfirm: "Очистить все ваши ответы в этом браузере?",
+            close: "Закрыть",
+            endLead: "Вот и всё. Теперь можно отдать это своему агенту и вернуться к работе.",
+            endLeadEmpty: "Вот и всё. Теперь можно вернуться наверх и ответить на пару вопросов.",
+            shortNo: "Нет",
+            nothingYet: "Ответьте на любую практику выше; ответы соберутся здесь.",
+            teamTitle: "Запустить этот опрос внутри своей команды",
+            teamLead: "Склонируйте этот сайт и дайте его своим: отвечает только ваша команда, ответы остаются в вашем репозитории, можно спросить про свои практики, которых в этом списке нет, и сравнить свои ответы с ответами всех здесь. Сайт — это обычные файлы, его можно опубликовать во внутренней сети или на любом веб-сервере.",
+            teamLabel: "Отдайте это своему агенту или сделайте сами:",
+            whyPr: "Да, голосовать через pull request странно. Ваши ответы попадают прямо в публичный GitHub-репозиторий сайта, где их может пересчитать любой.",
+            resultsLine: "Ответы всех появятся <b>1 декабря</b>.",
+            submitTitle: n => `Отправить через pull request (ответов: ${n})`,
+            byHand: url => `Или вручную: <button class="link" data-act="copy-file">скопируйте файл</button>, <a href="${url}" target="_blank" rel="noopener">откройте GitHub</a> с уже заполненным именем, вставьте его и нажмите «Commit changes…» → «Propose changes» → «Create pull request».`,
+            copiedFile: "файл скопирован",
+            promptLead: "Скопируйте этот промпт в своего агента:",
+            promptUpdated: "Промпт обновлён",
+            copyPrompt: "Скопировать",
+            copied: "Скопировано",
+            answersLabel: "Вот что промпт выше отправит как ваши ответы:"
+        },
+        loadError: url => `Данные не загрузились. Они лежат в <a href="${url}">data/entries.json</a>; обновите страницу.`,
+        newBlock: "Новое",
+        aliases: "также",
+        seeAlso: "См. также",
+        roots: "Корни",
+        grewFrom: "Выросли из",
+        example: "Пример",
+        descendants: "Потомки",
+        opposites: "Противоположность",
+        issues: "Предложить правку или новую практику",
+        months: [ "янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек" ],
+        monthsNominative: [ "янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек" ],
+        empty: "В выбранном периоде пусто.",
+        yes: "Да",
+        no: "Нет",
+        loop: "петля",
+        keys: "Клавиатура",
+        keysText: "<kbd>J</kbd> <kbd>K</kbd> карточки · <kbd>Y</kbd> <kbd>N</kbd> ответ · <kbd>Esc</kbd>",
+        commentPlaceholder: "Комментарий (необязательно)",
+        never: "не пробовал",
+        result: (y, n) => `Пользуются: ${y} из ${y + n} (демо)`,
+        resultFew: "Пока мало ответов. Ваш ответ приблизит итог.",
+        railTitle: (y, n) => `Сейчас пользуются: ${y} из ${y + n} (демо)`,
+        mine: v => v === null ? "· не пробовали" : v ? "✓ пользуетесь" : "✗ не пользуетесь",
+        noQuote: "Цитата ещё не подобрана",
+        openSource2: "Открыть источник →",
+        why: "Зачем?",
+        basketEmpty: "Ответов пока нет",
+        basket: n => `Ваши ответы: ${n}`,
+        send: n => `Отправить ответы · ${n}`,
+        sent: "Промпт скопирован, отдайте его агенту",
+        quietNote: "Ответы пока в этом браузере. «Отправить» скопирует промпт: агент откроет PR, и ответы попадут в итог.",
+        hint: "Ответ сохранён. Чтобы он учитывался на сайте, его нужно закоммитить в репозиторий.",
+        hintLink: "Как отправить",
+        note: "Ответы учитываются на сайте после коммита в репозиторий. Скопируйте промпт и отдайте своему агенту (Claude Code, Codex), он откроет pull request. Анонимности нет: PR подписан вашим аккаунтом GitHub.",
+        copyPrompt: "Скопировать промпт для агента",
+        copied: "Скопировано",
+        shareX: "Поделиться в X",
+        clear: "Очистить",
+        remove: "убрать",
+        tweet: (n, y) => `Прошёлся по справочнику агентной разработки: из ${n} практик сейчас пользуюсь ${y}.`
+    },
+    en: {
+        github: "GitHub",
+        kicker: "Practices in agentic software development, 2026 survey",
+        askLine: "Which of these do you actually do?",
+        askFirst: "Answer as many as you like; everyone’s answers go up on 1 December.",
+        title: "Agents made the old practices matter more",
+        lead: "Tests, code review and CI carry more weight with coding agents.",
+        suggestions: (url, updated, stars) => `<span class="feedback-card"><span class="feedback-text">Spotted a missing practice, a mistake, or want to add a quote? <a href="${url}/issues/new">Open an issue</a></span><span class="repo-row"><a class="star" href="${url}">★ GitHub${stars === null || stars === undefined ? "" : ` ${stars}`}</a>${updated ? `<span class="updated">last updated ${updated}</span>` : ""}</span></span>`,
+        teamCopy: url => `A team’s copy of <a href="${url}">Practices in agentic software development</a>.`,
+        parts: {
+            approaches: "Approaches",
+            stages: "Practices by SDLC stage",
+            general: "Cross-stage",
+            team: "Teams and projects"
+        },
+        permalink: "link to this entry",
+        suggestEdit: "Suggest an edit",
+        suggestPractice: "+ Suggest a practice",
+        suggestQuestion: "What would you like to suggest?",
+        suggestSource: "Add a source",
+        suggestSourceHint: "an article about this practice, with a quote from it",
+        suggestDefinition: "Change the definition",
+        suggestDefinitionHint: "what the practice is, said more precisely",
+        survey: {
+            answers: [ "Not for me", "Want to try", "Dropped" ],
+            iDoIt: "I do it",
+            weDoIt: "We do it",
+            doIt: "Do it",
+            audience: {
+                "group-team-contributions": "These questions are for people who maintain an open-source project.",
+                "group-team-hiring": "These questions are for people who interview candidates."
+            },
+            submit: "Submit",
+            submitN: n => `Submit ${n} answer${n === 1 ? "" : "s"}`,
+            clear: "Clear my answers",
+            clearConfirm: "Clear all your answers in this browser?",
+            close: "Close",
+            endLead: "That’s it. Now you can hand this to your agent and get back to work.",
+            endLeadEmpty: "That’s it. Now you can scroll back up and answer a few.",
+            nothingYet: "Answer any practice above; your answers gather here.",
+            shortNo: "No",
+            teamTitle: "Run this survey inside your team",
+            teamLead: "Clone this site and give it to your people: only your team answers there, the answers stay in your repository, you can ask about practices of your own that this list does not have, and you can set your answers next to everyone’s answers here. The site is plain files, so it can live on your intranet or any web server.",
+            teamLabel: "Prompt your agent or do it yourself:",
+            teamPrompt: [ "Set up the survey from https://github.com/inmve/agentic-coding-practices for my team.", "1. Clone it: git clone https://github.com/inmve/agentic-coding-practices.git team-survey", "2. Create a GitHub repository for the team’s answers (it can be private; ask me for the owner and the name) and push main to it: git push <its URL> main", "3. In the docs/ folder, create team.json:", '   {"answersRepo": "<owner>/<name>", "siteUrl": "<the address the site will have>", "issuesUrl": "https://github.com/<owner>/<name>/issues", "practices": []}', '   To ask about a practice of your own, add it to "practices", e.g. {"id": "pairing-with-the-agent-on-call", "stages": ["coding"], "title": {"en": "…"}, "definition": {"en": "…"}}; the stage and group ids are in docs/entries.json under "meta". Commit and push.', "4. Publish the docs/ folder as a static site: on the intranet, on any web server, or with GitHub Pages from main /docs.", "5. In the answers repository, turn on GitHub Actions: they check each answer and merge it. Give the site’s address to the team; to count the answers, run python3 .github/count_answers.py in a clone.", "6. To take later versions of the list: git pull https://github.com/inmve/agentic-coding-practices.git main, then push and publish docs/ again." ].join("\n"),
+            whyPr: "Yes, voting by pull request is odd. Your answers go straight into the site’s public GitHub repository, where anyone can recount them.",
+            resultsLine: "Everyone’s answers go up on <b>1 December</b>.",
+            submitTitle: n => `Submit ${n} answer${n === 1 ? "" : "s"} via pull request`,
+            promptLead: "Copy this prompt into your coding agent:",
+            byHand: url => `Or by hand: <button class="link" data-act="copy-file">copy the file</button>, <a href="${url}" target="_blank" rel="noopener">open GitHub</a> with its name filled in, paste it, then «Commit changes…» → «Propose changes» → «Create pull request».`,
+            copiedFile: "file copied",
+            promptUpdated: "Prompt updated",
+            copyPrompt: "Copy",
+            copied: "Copied",
+            answersLabel: "Here’s what the prompt above will submit as your answers:"
+        },
+        loadError: url => `The data did not load. It is in <a href="${url}">data/entries.json</a>; reload the page.`,
+        newBlock: "New",
+        aliases: "also",
+        seeAlso: "See also",
+        roots: "Roots",
+        grewFrom: "Grew from",
+        example: "Example",
+        descendants: "Descendants",
+        opposites: "Opposite",
+        issues: "Suggest a fix or a new practice",
+        months: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+        monthsNominative: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+        empty: "Nothing in the selected period.",
+        yes: "Yes",
+        no: "No",
+        loop: "loop",
+        keys: "Keyboard",
+        keysText: "<kbd>J</kbd> <kbd>K</kbd> entries · <kbd>Y</kbd> <kbd>N</kbd> answer · <kbd>Esc</kbd>",
+        commentPlaceholder: "Comment (optional)",
+        never: "never tried",
+        result: (y, n) => `Use it: ${y} of ${y + n} (demo)`,
+        resultFew: "Few answers so far. Yours brings the result closer.",
+        railTitle: (y, n) => `Use it nowadays: ${y} of ${y + n} (demo)`,
+        mine: v => v === null ? "· never tried" : v ? "✓ you use it" : "✗ you don't use it",
+        noQuote: "No quote picked yet",
+        openSource2: "Open the source →",
+        goToEntry: "Go to the entry →",
+        illustrative: "Illustrative example.",
+        why: "Why?",
+        basketEmpty: "No answers yet",
+        basket: n => `Your answers: ${n}`,
+        send: n => `Send answers · ${n}`,
+        sent: "Prompt copied, give it to your agent",
+        quietNote: "Answers stay in this browser for now. «Send» copies a prompt: your agent opens a PR and they count.",
+        hint: "Saved. To count on the site, answers need to be committed to the repository.",
+        hintLink: "How to send",
+        note: "Answers count on the site once committed to the repository. Copy the prompt and give it to your agent (Claude Code, Codex): it will open a pull request. Not anonymous: the PR is signed by your GitHub account.",
+        copyPrompt: "Copy prompt for your agent",
+        copied: "Copied",
+        shareX: "Share on X",
+        clear: "Clear",
+        remove: "remove",
+        tweet: (n, y) => `Went through the agentic software development reference: of ${n} practices I use ${y} nowadays.`
+    }
+};
+
+const params = new URLSearchParams(location.search);
+
+const today = params.get("today") ? new Date(params.get("today")) : new Date;
+
+const surveyOn = (() => {
+    const flag = params.get("survey");
+    try {
+        if (flag === "0") localStorage.setItem("survey", "0");
+        if (flag === "1") localStorage.removeItem("survey");
+        return localStorage.getItem("survey") !== "0";
+    } catch (e) {
+        return flag !== "0";
+    }
+})();
+
+let motion = {};
+
+let figures = {};
+
+let data, demoAnswers = [], lang = "en", descendantsById = {};
+
+const STORAGE_KEY = "reference-answers-v1";
+
+let myAnswers = {}, hintDismissed = false, promptCopied = false;
+
+try {
+    myAnswers = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+} catch (e) {
+    myAnswers = {};
+}
+
+function saveAnswers() {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(myAnswers));
+    } catch (e) {}
+}
+
+function text(field) {
+    if (field?.[lang]) return {
+        value: field[lang],
+        fallback: false
+    };
+    return {
+        value: field?.[lang === "ru" ? "en" : "ru"] || "",
+        fallback: true
+    };
+}
+
+function escapeHtml(raw) {
+    return String(raw).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+}
+
+function entryDate(entry) {
+    if (entry.firstAppeared?.date) return new Date(entry.firstAppeared.date);
+    if (entry.seededFrom === "pre-llm") return null;
+    const dates = (entry.sources || []).filter(s => s.published && s.role !== "relevance").map(s => s.published).sort();
+    return dates.length ? new Date(dates[0]) : null;
+}
+
+function dateKey(entry) {
+    const date = entryDate(entry);
+    return date ? date.toISOString().slice(0, 10) : "";
+}
+
+function isAskable() {
+    return false;
+}
+
+function formatDate(firstAppeared) {
+    if (!firstAppeared?.date || !firstAppeared.verified) return "";
+    const [year, month, day] = firstAppeared.date.split("-").map(Number);
+    const monthName = UI[lang].months[month - 1];
+    if (firstAppeared.precision === "day") return `${day} ${monthName} ${year}`;
+    if (firstAppeared.precision === "month") return `${monthName} ${year}`;
+    return (firstAppeared.note || "").toLowerCase().includes("approx") ? `~${year}` : String(year);
+}
+
+function isPreLlm(entry) {
+    const date = entryDate(entry);
+    return date && date < new Date(data.meta.llmEraStart);
+}
+
+function answerCounts(entryId) {
+    let yes = 0, no = 0;
+    for (const answer of demoAnswers) {
+        if (answer.entry !== entryId) continue;
+        answer.useful ? yes++ : no++;
+    }
+    const mine = myAnswers[entryId];
+    if (mine && mine.useful !== null) mine.useful ? yes++ : no++;
+    return {
+        yes: yes,
+        no: no
+    };
+}
+
+function railHtml(counts, className) {
+    const enough = counts.yes + counts.no >= data.meta.minAnswersForBar;
+    return `<div class="${className}" ${enough && className === "rail" ? `title="${UI[lang].railTitle(counts.yes, counts.no)}"` : ""}>` + (enough ? `<div class="yes" style="flex:${counts.yes}"></div><div class="no" style="flex:${counts.no}"></div>` : "") + `</div>`;
+}
+
+function footnote(entry, n, label) {
+    return `<sup><button data-entry="${entry.id}" data-n="${n}">[${label}]</button></sup>`;
+}
+
+function whyLinks(entry) {
+    return entry.sources.filter(s => s.role === "why" && s.quote).map(s => ` <sup><button class="why" data-entry="${entry.id}" data-n="${s.n}">${UI[lang].why}</button></sup>`).join("");
+}
+
+function renderDefinition(entry) {
+    const {value: value, fallback: fallback} = text(entry.definition);
+    const cited = [ ...value.matchAll(/\[(\d+)\]/g) ].map(m => entry.sources.find(s => String(s.n) === m[1])).filter(source => source?.quote).sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+    const notes = cited.map((source, i) => footnote(entry, String(source.n), i + 1)).join("");
+    const html = escapeHtml(value.replace(/(\s*\[\d+\])+/g, "")).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*([^*]+)\*/g, "<i>$1</i>") + (notes ? " " + notes : "");
+    return fallback ? `<span class="fallback">${html}</span>` : html;
+}
+
+function entryLinks(ids, asRoots) {
+    return (ids || []).map(id => data.entries.find(e => e.id === id)).filter(Boolean).map(e => `<a class="ref" href="${asRoots ? "#" : "#" + e.id}"${asRoots ? ` data-root="${e.id}"` : ""}>${escapeHtml(text(e.title).value)}</a>`).join(", ");
+}
+
+function initPlayer(pop, inModal = false) {
+    const spec = motion[pop.dataset.motion];
+    pop.innerHTML = spec.svg;
+    pop.dataset.durations = spec.durations;
+    pop.dataset.poster = spec.poster;
+    const durations = pop.dataset.durations.split(" ").map(Number), poster = Number(pop.dataset.poster || durations.length - 1);
+    const total = durations.reduce((a, b) => a + b, 0);
+    const svg = pop.querySelector("svg");
+    const parts = [ ...svg.querySelectorAll("[data-on]") ], movers = [ ...svg.querySelectorAll("[data-t]") ];
+    const toned = [ ...svg.querySelectorAll("[data-hot],[data-good]") ];
+    svg.querySelectorAll(".draw").forEach(p => p.style.setProperty("--len", Math.ceil(p.getTotalLength())));
+    const moves = movers.map(el => el.dataset.t.split(";").map(s => {
+        const k = s.indexOf(":");
+        return [ Number(s.slice(0, k)), s.slice(k + 1) ];
+    }));
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = "0:" + String(Math.round(total / 1e3)).padStart(2, "0");
+    pop.appendChild(badge);
+    const bar = document.createElement("span");
+    bar.className = "progress";
+    pop.appendChild(bar);
+    let elapsed = 0, last = null, held = false, step = -1, playing = false;
+    const fills = durations.map((_, k) => {
+        const s = document.createElement("span"), b = document.createElement("b"), i = document.createElement("i");
+        b.appendChild(i);
+        s.appendChild(b);
+        bar.appendChild(s);
+        s.addEventListener("click", e => {
+            e.stopPropagation();
+            elapsed = durations.slice(0, k).reduce((a, x) => a + x, 0);
+            step = -1;
+        });
+        return i;
+    });
+    const has = (el, name, i) => (el.dataset[name] || "").split(" ").includes(String(i));
+    function show(i) {
+        step = i;
+        parts.forEach(p => p.classList.toggle("on", has(p, "on", i)));
+        toned.forEach(el => {
+            el.classList.toggle("hot", has(el, "hot", i));
+            el.classList.toggle("good", has(el, "good", i));
+        });
+        movers.forEach((el, n) => {
+            let value = moves[n][0][1];
+            for (const [from, v] of moves[n]) if (from <= i) value = v;
+            el.style.transform = value;
+        });
+    }
+    function stepAt(ms) {
+        let t = 0;
+        for (let i = 0; i < durations.length; i++) {
+            t += durations[i];
+            if (ms < t) return i;
+        }
+        return durations.length - 1;
+    }
+    function frame(now) {
+        if (!playing) return;
+        if (last !== null && !held) elapsed = (elapsed + now - last) % total;
+        last = now;
+        const i = stepAt(elapsed);
+        if (i !== step) show(i);
+        let start = 0;
+        fills.forEach((f, k) => {
+            f.style.transform = `scaleX(${Math.min(1, Math.max(0, (elapsed - start) / durations[k]))})`;
+            start += durations[k];
+        });
+        requestAnimationFrame(frame);
+    }
+    function still() {
+        playing = false;
+        pop.classList.remove("playing");
+        pop.classList.add("still");
+        show(poster);
+        requestAnimationFrame(() => pop.classList.remove("still"));
+    }
+    function play() {
+        if (playing) return;
+        playing = true;
+        elapsed = 0;
+        last = null;
+        step = -1;
+        pop.classList.add("playing");
+        requestAnimationFrame(frame);
+    }
+    pop.addEventListener("click", e => e.stopPropagation());
+    still();
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduced) {
+        pop.addEventListener("motion:play", play);
+        pop.addEventListener("motion:still", still);
+    }
+    if (inModal) {
+        if (!reduced) play();
+    } else {
+        let pressedAt = 0;
+        pop.addEventListener("pointerdown", () => {
+            pressedAt = performance.now();
+        });
+        pop.addEventListener("click", () => {
+            if (performance.now() - pressedAt < 300) openMotionModal(pop.dataset.motion);
+        });
+        if (!reduced && matchMedia("(hover: hover)").matches) {
+            pop.addEventListener("mouseenter", play);
+            pop.addEventListener("mouseleave", still);
+        }
+    }
+    if (reduced) return;
+    svg.addEventListener("pointerdown", () => {
+        held = true;
+    });
+    for (const name of [ "pointerup", "pointerleave", "pointercancel" ]) svg.addEventListener(name, () => {
+        held = false;
+    });
+    svg.addEventListener("contextmenu", e => e.preventDefault());
+}
+
+function openMotionModal(id) {
+    const modal = document.createElement("div");
+    modal.className = "mfig-modal";
+    const pop = document.createElement("span");
+    pop.className = "mfig";
+    pop.dataset.motion = id;
+    modal.appendChild(pop);
+    document.body.appendChild(modal);
+    initPlayer(pop, true);
+    const close = () => {
+        modal.remove();
+        removeEventListener("keydown", onKey);
+    };
+    const onKey = e => {
+        if (e.key === "Escape") close();
+    };
+    modal.addEventListener("click", e => {
+        if (e.target === modal) close();
+    });
+    addEventListener("keydown", onKey);
+}
+
+const SURVEY_ID = "agentic-software-development-2026";
+
+const ANSWER_IDS = [ "not-interested", "want-to-try", "tried-dropped", "do-it" ];
+
+const ANSWER_COLORS = [ "#a39dab", "#f0ba1e", "#c9675e", "#2f5f8f" ];
+
+function surveyCategory(block) {
+    if (!/^(stage|group)-/.test(block.id) || block.repeat) return null;
+    return {
+        id: block.id,
+        title: block.title,
+        entries: data.entries.filter(block.match)
+    };
+}
+
+const SURVEY_STORE = "survey-answers-v2";
+
+let surveyState = {};
+
+try {
+    surveyState = JSON.parse(localStorage.getItem(SURVEY_STORE));
+    if (!surveyState) {
+        surveyState = JSON.parse(localStorage.getItem("survey-answers-v1")) || {};
+        for (const value of Object.values(surveyState)) {
+            if (value?.picks) value.picks = Object.fromEntries(Object.entries(value.picks).filter(([, i]) => i > 0).map(([entry, i]) => [ entry, i - 1 ]));
+        }
+        localStorage.setItem(SURVEY_STORE, JSON.stringify(surveyState));
+        localStorage.removeItem("survey-answers-v1");
+    }
+} catch (e) {
+    surveyState = {};
+}
+
+function saveSurvey() {
+    try {
+        localStorage.setItem(SURVEY_STORE, JSON.stringify(surveyState));
+    } catch (e) {}
+}
+
+let cardPop = null, cardFor = null, cardTimer = null;
+
+function closeCardPop() {
+    clearTimeout(cardTimer);
+    cardTimer = null;
+    cardPop?.remove();
+    cardPop = null;
+    cardFor = null;
+}
+
+function openCardPop(cell) {
+    const id = cell.dataset.entry;
+    if (cardFor === id) return;
+    closeCardPop();
+    closePopover();
+    const entry = data.entries.find(e => e.id === id);
+    cardPop = document.createElement("div");
+    cardPop.className = "card-pop";
+    cardPop.innerHTML = renderEntry(entry, `${id}--card`);
+    document.body.appendChild(cardPop);
+    cardPop.querySelectorAll(".mfig[data-motion]").forEach(pop => {
+        initPlayer(pop);
+        pop.dispatchEvent(new Event("motion:play"));
+    });
+    const rect = cell.getBoundingClientRect(), width = cardPop.offsetWidth;
+    const right = rect.right + 12 + width <= innerWidth - 8;
+    cardPop.style.left = (right ? rect.right + 12 : Math.max(8, Math.min(rect.left, innerWidth - width - 8))) + scrollX + "px";
+    cardPop.style.top = (right ? rect.top - 8 : rect.bottom + 6) + scrollY + "px";
+    cardFor = id;
+}
+
+function surveyBlock(block) {
+    return surveyOn && surveyCategory(block) ? `<div class="survey-inline" data-survey="${block.id}"></div>` : "";
+}
+
+const isTeamCategory = id => /^group-team-/.test(id || "");
+
+function answerNames(categoryId) {
+    const ui = UI[lang].survey, names = [ ...ui.answers ];
+    names.push(categoryId === undefined ? ui.doIt : isTeamCategory(categoryId) ? ui.weDoIt : ui.iDoIt);
+    return names;
+}
+
+delete surveyState.sent;
+
+delete surveyState.respondent;
+
+saveSurvey();
+
+let answersFileName = null;
+
+const newAnswersFileName = () => crypto.randomUUID().replace(/-/g, "").slice(0, 8);
+
+const surveySections = () => blocks().map(surveyCategory).filter(Boolean);
+
+const picksOf = id => (surveyState[id] ||= {
+    picks: {}
+}).picks;
+
+const answeredSections = () => surveySections().map(c => ({
+    ...c,
+    entries: c.entries.filter(e => picksOf(c.id)[e.id] !== undefined)
+})).filter(c => c.entries.length);
+
+const allAnswers = () => answeredSections().flatMap(c => c.entries.map(e => ({
+    category: c.id,
+    entry: e.id,
+    answer: picksOf(c.id)[e.id]
+})));
+
+let answersInView = false;
+
+function drawSurvey(el) {
+    const block = blocks().find(b => b.id === el.dataset.survey), category = surveyCategory(block);
+    const ui = UI[lang].survey, picks = picksOf(category.id), names = answerNames(category.id);
+    const heads = `<thead><tr><th></th>${names.map((a, i) => `<th data-col="${i}">${a}</th>`).join("")}</tr></thead>`;
+    const rows = category.entries.map(e => `<tr><td class="name" data-entry="${e.id}">${escapeHtml(text(e.title).value)}</td>` + ANSWER_IDS.map((id, i) => `<td class="pick"><button data-category="${category.id}" data-entry="${e.id}" data-answer="${i}" aria-label="${names[i]}"\n      class="${picks[e.id] === i ? "on" : ""}" style="--c:${ANSWER_COLORS[i]}"></button></td>`).join("") + `</tr>`).join("");
+    const first = document.querySelector(".survey-inline") === el, top = UI[lang];
+    el.innerHTML = `<p class="ask-line">${top.askLine}${first ? ` <span>${top.askFirst}</span>` : ""}</p>` + (ui.audience[category.id] ? `<p class="audience">${ui.audience[category.id]}</p>` : "") + `<table class="ask">${heads}<tbody>${rows}</tbody></table>`;
+}
+
+function drawSurveyBar() {
+    const bar = document.getElementById("surveyBar"), count = allAnswers().length;
+    bar.hidden = !surveyOn || !count || answersInView || !!document.querySelector(".answers-modal");
+    document.documentElement.style.setProperty("--bottom-bar", bar.hidden ? "0px" : "56px");
+    if (!bar.hidden) bar.innerHTML = `<button data-act="open">${UI[lang].survey.submitN(count)}</button>`;
+}
+
+function drawAnswersPanel(el) {
+    const ui = UI[lang].survey, sections = answeredSections(), answers = allAnswers();
+    if (!sections.length) {
+        el.innerHTML = `<p class="note">${ui.nothingYet}</p>`;
+        return;
+    }
+    const body = sections.map(c => {
+        const picks = picksOf(c.id), sectionNames = answerNames(c.id), words = [ ui.shortNo, ...sectionNames.slice(1) ];
+        return `<p class="answered-section">${escapeHtml(c.title)}</p>` + c.entries.map(e => `<div class="answered-row"><span class="name">${escapeHtml(text(e.title).value)}</span><span class="words">` + ANSWER_IDS.map((id, i) => `<button data-category="${c.id}" data-entry="${e.id}" data-answer="${i}" aria-pressed="${picks[e.id] === i}"\n          class="${picks[e.id] === i ? "on" : ""}" style="--c:${ANSWER_COLORS[i]}">${words[i]}</button>`).join("") + `</span></div>`).join("");
+    }).join("");
+    answersFileName ||= newAnswersFileName();
+    const file = `${data.meta.answersDir}/${answersFileName}.json`;
+    const json = JSON.stringify({
+        survey: SURVEY_ID,
+        answeredAt: today.toISOString().slice(0, 10),
+        answers: Object.fromEntries(answers.map(a => [ a.entry, ANSWER_IDS[a.answer] ]))
+    }, null, 2) + "\n";
+    const repo = data.meta.answersRepo, title = `Survey answers: ${answers.length} practices`;
+    const prompt = `Open a pull request to https://github.com/${repo} that adds one new file, ${file}, with exactly this content:\n\n${json}\n` + `Use the GitHub CLI (gh). Fork the repository first if you cannot push to it. Create a branch, add only this file, commit, push, ` + `and open the pull request titled "${title}". Change nothing else, and reply with the link to the pull request.`;
+    el.innerHTML = `<div class="how"><h3 class="submit-title">${ui.submitTitle(answers.length)}</h3><p class="why-pr">${ui.whyPr}</p>\n      <div class="prompt-head"><span>${ui.promptLead}</span><button class="copy" data-act="copy">${ui.copyPrompt}</button></div>\n      <pre class="prompt">${escapeHtml(prompt)}</pre>\n      <p class="by-hand">${ui.byHand(`https://github.com/${repo}/new/main?filename=${encodeURIComponent(file)}`)}</p>\n      <pre class="answer-file" hidden>${escapeHtml(json)}</pre><p class="results-line">${ui.resultsLine} ${ui.answersLabel}</p></div>\n    <div class="answered">${body}</div>\n    <p class="foot-line">${el.closest(".answers-modal") ? `<button class="close-bottom">${ui.close}</button>` : ""}<button class="link" data-act="clear">${ui.clear}</button></p>`;
+}
+
+function showPromptUpdated(panel) {
+    document.querySelectorAll(".prompt-note").forEach(n => n.remove());
+    const ui = UI[lang].survey, note = document.createElement("div");
+    note.className = "prompt-note";
+    note.innerHTML = `<span>${ui.promptUpdated}</span><button data-act="copy">${ui.copyPrompt}</button>`;
+    panel.appendChild(note);
+    note.addEventListener("animationend", e => {
+        if (e.animationName === "prompt-note") note.remove();
+    });
+    panel.querySelector("pre.prompt")?.classList.add("flash");
+}
+
+function selectAll(el) {
+    if (!el) return;
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const selection = getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+}
+
+document.addEventListener("click", e => {
+    const pre = e.target.closest?.(".answers-panel pre.prompt, .copy-block pre");
+    if (pre) selectAll(pre);
+});
+
+function redrawSurvey() {
+    const lead = document.getElementById("answersLead");
+    if (lead) lead.textContent = allAnswers().length ? UI[lang].survey.endLead : UI[lang].survey.endLeadEmpty;
+    document.querySelectorAll(".survey-inline").forEach(drawSurvey);
+    document.querySelectorAll(".answers-panel").forEach(drawAnswersPanel);
+    drawSurveyBar();
+}
+
+function openAnswersModal() {
+    answersFileName = null;
+    const modal = document.createElement("div");
+    modal.className = "answers-modal";
+    modal.innerHTML = `<div class="sheet"><button class="close" title="${UI[lang].survey.close}">×</button><div class="answers-panel"></div></div>`;
+    document.body.appendChild(modal);
+    drawAnswersPanel(modal.querySelector(".answers-panel"));
+    drawSurveyBar();
+    const close = () => {
+        modal.remove();
+        removeEventListener("keydown", onKey);
+        redrawSurvey();
+    };
+    const onKey = e => {
+        if (e.key === "Escape") close();
+    };
+    addEventListener("keydown", onKey);
+    modal.addEventListener("click", e => {
+        if (e.target === modal || e.target.closest(".close, .close-bottom")) close();
+    });
+}
+
+document.addEventListener("click", async e => {
+    const zone = e.target.closest?.(".survey-inline, .answers-panel, #surveyBar");
+    if (!zone) return;
+    const ui = UI[lang].survey, act = e.target.dataset?.act;
+    const pick = e.target.closest("button[data-answer]") || e.target.closest("td.pick")?.querySelector("button[data-answer]");
+    if (pick) {
+        const picks = picksOf(pick.dataset.category), answer = Number(pick.dataset.answer);
+        const added = picks[pick.dataset.entry] === undefined, from = pick.getBoundingClientRect();
+        if (picks[pick.dataset.entry] === answer) delete picks[pick.dataset.entry]; else picks[pick.dataset.entry] = answer;
+        saveSurvey();
+        redrawSurvey();
+        if (zone.matches(".answers-panel")) showPromptUpdated(zone); else if (added) flyToBasket(from, ANSWER_COLORS[answer]);
+        return;
+    }
+    if (act === "open") {
+        openAnswersModal();
+        return;
+    }
+    if (act === "clear") {
+        if (!confirm(ui.clearConfirm)) return;
+        surveyState = {};
+        saveSurvey();
+        redrawSurvey();
+        return;
+    }
+    if (act === "copy-file") {
+        const file = zone.querySelector("pre.answer-file").textContent;
+        try {
+            await navigator.clipboard.writeText(file);
+        } catch (err) {
+            const area = document.createElement("textarea");
+            area.value = file;
+            document.body.appendChild(area);
+            area.select();
+            document.execCommand("copy");
+            area.remove();
+        }
+        e.target.textContent = ui.copiedFile;
+        return;
+    }
+    if (act === "copy") {
+        const prompt = zone.querySelector("pre.prompt").textContent;
+        try {
+            await navigator.clipboard.writeText(prompt);
+        } catch (err) {
+            const area = document.createElement("textarea");
+            area.value = prompt;
+            document.body.appendChild(area);
+            area.select();
+            document.execCommand("copy");
+            area.remove();
+        }
+        selectAll(zone.querySelector("pre.prompt"));
+        e.target.textContent = ui.copied;
+        return;
+    }
+});
+
+function litColumn(table, col) {
+    table.querySelectorAll(".col-lit").forEach(cell => cell.classList.remove("col-lit"));
+    const box = table.parentElement;
+    box.querySelector(":scope > .col-outline")?.remove();
+    if (col === null) return;
+    const head = table.querySelector(`thead th[data-col="${col}"]`);
+    if (head) {
+        const b = box.getBoundingClientRect(), h = head.getBoundingClientRect(), t = table.getBoundingClientRect();
+        box.insertAdjacentHTML("beforeend", `<div class="col-outline" style="left:${h.left - b.left - box.clientLeft}px;width:${h.width - 2}px;top:${t.top - b.top - box.clientTop}px;height:${t.height}px"></div>`);
+    }
+    table.querySelectorAll(`thead th[data-col="${col}"], tbody td.pick:nth-child(${col + 2})`).forEach(cell => cell.classList.add("col-lit"));
+}
+
+document.addEventListener("mouseover", e => {
+    const table = e.target.closest?.("table.ask");
+    if (!table || !matchMedia("(hover: hover)").matches) return;
+    const dot = e.target.closest("button[data-answer]") || e.target.closest("td.pick")?.querySelector("button[data-answer]");
+    litColumn(table, dot ? Number(dot.dataset.answer) : null);
+});
+
+document.addEventListener("mouseout", e => {
+    const table = e.target.closest?.("table.ask");
+    if (table && !table.contains(e.relatedTarget)) litColumn(table, null);
+});
+
+const flyBall = (color, size) => {
+    const b = document.createElement("div");
+    b.className = "fly-ball";
+    Object.assign(b.style, {
+        background: color,
+        width: `${size}px`,
+        height: `${size}px`
+    });
+    return document.body.appendChild(b);
+};
+
+const flyAt = (x, y, size, extra = "") => `translate(${x - size / 2}px, ${y - size / 2}px) ${extra}`;
+
+const FLIGHTS = {
+    async arc(f, t, color, basket) {
+        const b = flyBall(color, 22), peak = Math.min(f.y, t.y) - 60;
+        const frames = Array.from({
+            length: 21
+        }, (_, k) => {
+            const q = k / 20, y = (1 - q) ** 2 * f.y + 2 * (1 - q) * q * peak + q * q * t.y;
+            return {
+                transform: flyAt(f.x + (t.x - f.x) * q, y, 22, `scale(${1 - .55 * q})`)
+            };
+        });
+        await b.animate(frames, {
+            duration: 620,
+            easing: "cubic-bezier(.45,.05,.55,.95)"
+        }).finished;
+        b.remove();
+        basket.animate([ {
+            transform: "scale(1)"
+        }, {
+            transform: "scale(.9)"
+        }, {
+            transform: "scale(1.06)"
+        }, {
+            transform: "scale(1)"
+        } ], {
+            duration: 380,
+            easing: "ease-out"
+        });
+    },
+    async drop(f, t, color, basket) {
+        const b = flyBall(color, 22);
+        await b.animate([ {
+            transform: flyAt(f.x, f.y, 22)
+        }, {
+            transform: flyAt(f.x, f.y - 26, 22)
+        } ], {
+            duration: 170,
+            easing: "cubic-bezier(.2,.7,.4,1)"
+        }).finished;
+        await b.animate([ {
+            transform: flyAt(f.x, f.y - 26, 22)
+        }, {
+            transform: flyAt(t.x, t.y, 22, "scale(.5)")
+        } ], {
+            duration: 480,
+            easing: "cubic-bezier(.55,0,1,.45)"
+        }).finished;
+        b.remove();
+        basket.animate([ {
+            transform: "translateY(0) scaleY(1)"
+        }, {
+            transform: "translateY(3px) scaleY(.88)"
+        }, {
+            transform: "translateY(-2px) scaleY(1.04)"
+        }, {
+            transform: "none"
+        } ], {
+            duration: 420,
+            easing: "ease-out"
+        });
+    },
+    async comet(f, t, color, basket) {
+        const duration = 380, easing = "cubic-bezier(.6,0,.3,1)";
+        for (let i = 1; i <= 5; i++) {
+            const size = 16 - i * 2, d = flyBall(color, size);
+            d.style.opacity = .5 - i * .08;
+            d.animate([ {
+                transform: flyAt(f.x, f.y, size)
+            }, {
+                transform: flyAt(t.x, t.y, size)
+            } ], {
+                duration: duration,
+                delay: i * 28,
+                easing: easing,
+                fill: "backwards"
+            }).finished.then(() => d.remove());
+        }
+        const b = flyBall(color, 16);
+        await b.animate([ {
+            transform: flyAt(f.x, f.y, 16)
+        }, {
+            transform: flyAt(t.x, t.y, 16)
+        } ], {
+            duration: duration,
+            easing: easing
+        }).finished;
+        b.remove();
+        basket.animate([ {
+            boxShadow: `0 0 0 0 ${color}`
+        }, {
+            boxShadow: "0 0 0 9px transparent"
+        } ], {
+            duration: 500,
+            easing: "ease-out"
+        });
+    },
+    async drip(f, t, color, basket) {
+        const b = flyBall(color, 22), angle = Math.atan2(t.y - f.y, t.x - f.x) * 180 / Math.PI;
+        await b.animate([ {
+            transform: flyAt(f.x, f.y, 22, `rotate(${angle}deg)`)
+        }, {
+            transform: flyAt((f.x + t.x) / 2, (f.y + t.y) / 2, 22, `rotate(${angle}deg) scale(1.6, .7)`),
+            offset: .5
+        }, {
+            transform: flyAt(t.x, t.y, 22, `rotate(${angle}deg) scale(.6)`)
+        } ], {
+            duration: 560,
+            easing: "cubic-bezier(.5,0,.5,1)"
+        }).finished;
+        b.remove();
+        basket.animate([ {
+            backgroundColor: color
+        }, {
+            backgroundColor: getComputedStyle(basket).backgroundColor
+        } ], {
+            duration: 600,
+            easing: "ease-out"
+        });
+    }
+};
+
+function flyToBasket(from, color) {
+    const bar = document.getElementById("surveyBar"), basket = bar.querySelector("button");
+    if (bar.hidden || !basket || matchMedia("(prefers-reduced-motion: reduce)").matches || !Element.prototype.animate) return;
+    const to = basket.getBoundingClientRect(), names = Object.keys(FLIGHTS);
+    FLIGHTS[names[Math.floor(Math.random() * names.length)]]({
+        x: from.left + from.width / 2,
+        y: from.top + from.height / 2
+    }, {
+        x: to.left + to.width / 2,
+        y: to.top + to.height / 2
+    }, color, basket);
+}
+
+let motionObserver = null, playingScheme = null;
+
+function watchSchemes() {
+    motionObserver?.disconnect();
+    if (!matchMedia("(hover: none)").matches || !("IntersectionObserver" in window)) return;
+    const ratios = new Map;
+    motionObserver = new IntersectionObserver(items => {
+        items.forEach(item => ratios.set(item.target, item.intersectionRatio));
+        const middle = innerHeight / 2, distance = pop => {
+            const r = pop.getBoundingClientRect();
+            return Math.abs((r.top + r.bottom) / 2 - middle);
+        };
+        let best = null, bestRatio = .6;
+        ratios.forEach((ratio, pop) => {
+            if (ratio > bestRatio || ratio === bestRatio && ratio >= .6 && (!best || distance(pop) < distance(best))) {
+                best = pop;
+                bestRatio = ratio;
+            }
+        });
+        if (best === playingScheme) return;
+        playingScheme?.dispatchEvent(new Event("motion:still"));
+        best?.dispatchEvent(new Event("motion:play"));
+        playingScheme = best;
+    }, {
+        threshold: [ 0, .25, .5, .6, .75, .9, 1 ]
+    });
+    document.querySelectorAll("#content .mfig[data-motion]").forEach(pop => motionObserver.observe(pop));
+}
+
+let answersObserver = null;
+
+function watchAnswersBlock() {
+    answersObserver?.disconnect();
+    const el = document.getElementById("your-answers");
+    if (!el || !("IntersectionObserver" in window)) return;
+    answersObserver = new IntersectionObserver(([item]) => {
+        answersInView = item.isIntersecting;
+        drawSurveyBar();
+    });
+    answersObserver.observe(el);
+}
+
+function suggestEditUrl(entry, kind = "source") {
+    const issuesUrl = entry.team ? data.meta.issuesUrl : ORIGINAL_ISSUES, siteUrl = entry.team ? data.meta.siteUrl : ORIGINAL_SITE;
+    const title = text(entry.title).value, practice = `Practice: ${title} (${siteUrl}#${entry.id})`;
+    const issue = kind === "definition" ? {
+        title: `Definition: ${title}`,
+        body: `${practice}\n\nCurrent definition:\n> ${entry.definition.en.replace(/\s*\[\d+\]/g, "")}\n\nSuggested definition:\n\n\nWhy (a link to a source that supports it):\n`
+    } : {
+        title: `Source for: ${title}`,
+        body: `${practice}\n\nArticle (link):\n\n\nThe sentence from the article that describes the practice, copied word for word:\n\n\nAuthor and date, if the page shows them:\n`
+    };
+    return `${issuesUrl}/new?title=${encodeURIComponent(issue.title)}&body=${encodeURIComponent(issue.body)}`;
+}
+
+function newPracticeUrl() {
+    const body = "Practice name:\n\n\nWhat people do (one or two sentences):\n\n\nArticle (link):\n\n\n" + "The sentence from the article that describes the practice, copied word for word:\n\n\nAuthor and date, if the page shows them:\n";
+    return `${data.meta.issuesUrl || ORIGINAL_ISSUES}/new?title=${encodeURIComponent("New practice: ")}&body=${encodeURIComponent(body)}`;
+}
+
+function openSuggestPopover(link, pinned = true) {
+    closePopover();
+    const ui = UI[lang], entry = data.entries.find(e => e.id === link.closest(".entry").dataset.entry);
+    popover = document.createElement("div");
+    popover.className = "popover suggest";
+    popover.dataset.for = "suggest:" + entry.id;
+    popover.innerHTML = `<b>${ui.suggestQuestion}</b>` + `<a href="${suggestEditUrl(entry, "source")}">${ui.suggestSource}<small>${ui.suggestSourceHint}</small></a>` + `<a href="${suggestEditUrl(entry, "definition")}">${ui.suggestDefinition}<small>${ui.suggestDefinitionHint}</small></a>`;
+    document.body.appendChild(popover);
+    const rect = link.getBoundingClientRect();
+    popover.style.left = Math.max(8, Math.min(rect.right + scrollX - popover.offsetWidth, scrollX + innerWidth - popover.offsetWidth - 8)) + "px";
+    popover.style.top = rect.bottom + scrollY + 6 + "px";
+    popoverPinned = pinned;
+}
+
+function grewFrom(block, inBlock) {
+    if (block.repeat) return "";
+    const year = e => e.firstAppeared?.verified ? e.firstAppeared.date.slice(0, 4) : "";
+    const roots = [ ...new Set(inBlock.flatMap(e => e.rootsIn || [])) ].map(id => data.entries.find(e => e.id === id)).filter(Boolean).sort((a, b) => (year(a) || "9999").localeCompare(year(b) || "9999") || text(a.title).value.localeCompare(text(b.title).value, lang));
+    if (!roots.length) return "";
+    const links = roots.map(e => `<a class="ref" href="#" data-root="${e.id}">${escapeHtml(text(e.title).value)}</a>${year(e) ? ` (${year(e)})` : ""}`);
+    return `<p class="grew-from"><span class="label">${UI[lang].grewFrom}:</span> ${links.join(", ")}.</p>`;
+}
+
+function renderEntry(entry, anchorId) {
+    const ui = UI[lang], title = text(entry.title);
+    const aliases = [ ...new Set(entry.aliases[lang] || []) ];
+    const date = formatDate(entry.firstAppeared);
+    const citedInDefinition = [ ...text(entry.definition).value.matchAll(/\[(\d+)\]/g) ].map(m => m[1]).filter(n => entry.sources.find(s => String(s.n) === n)?.quote);
+    const coinedMarks = entry.sources.filter(s => s.role === "coined" && !citedInDefinition.includes(String(s.n))).map((s, i) => footnote(entry, s.n, citedInDefinition.length + i + 1)).join("");
+    const origin = entry.origin ? `<span class="origin">${escapeHtml(text(entry.origin).value)}${date ? `, ${date}` : ""}${coinedMarks}</span>` : date ? `<span class="meta">${date}</span>${coinedMarks}` : coinedMarks;
+    const relations = [ [ ui.roots, entryLinks(entry.rootsIn, true) ], [ ui.example, figures[entry.id] && !motion[entry.id] ? `<a class="ref" href="#" data-figure="${entry.id}">${escapeHtml(figures[entry.id])}</a>` : "" ], [ ui.seeAlso, entryLinks((entry.seeAlso || []).filter(id => !(entry.rootsIn || []).includes(id))) ] ].filter(([, links]) => links).map(([label, links]) => `<span class="label">${label}:</span> ${links}.`).join(" ");
+    const rail = "";
+    const mine = myAnswers[entry.id];
+    return `<div class="entry ${isPreLlm(entry) ? "pre-llm" : ""} ${isAskable(entry) ? "askable" : ""}" id="${anchorId}" data-entry="${entry.id}">${rail}\n    <dt class="${title.fallback ? "fallback" : ""}">${escapeHtml(title.value)}</dt><a class="suggest-edit" href="${suggestEditUrl(entry)}" title="${UI[lang].suggestEdit}" aria-label="${UI[lang].suggestEdit}">✎</a><a class="permalink" href="#${entry.id}" title="${UI[lang].permalink}">#</a>\n    <dd>${aliases.length ? `<span class="aliases">(${ui.aliases}: ${aliases.map(escapeHtml).join(", ")})</span> ` : ""}${renderDefinition(entry)}${whyLinks(entry)}\n    ${mine ? `<span class="mine ${mine.useful === null ? "" : mine.useful ? "yes" : "no"}">${ui.mine(mine.useful)}</span>` : ""}\n    ${origin}\n    ${motion[entry.id] ? `<span class="mfig" data-motion="${entry.id}"></span>` : ""}\n    ${relations ? `<span class="relations">${relations}</span>` : ""}</dd>\n  </div>`;
+}
+
+function blocks() {
+    const meta = data.meta, teamGroup = meta.groups.find(g => g.id === "team");
+    return [ ...meta.stages.filter(s => s.id !== "general").map(s => ({
+        part: "stages",
+        id: `stage-${s.id}`,
+        title: s.title[lang],
+        match: e => e.kind === "practice" && e.stages.includes(s.id)
+    })), ...meta.groups.filter(g => g.section === "general" && g.id !== "team").map(g => ({
+        part: "general",
+        id: `group-${g.id}`,
+        title: g.title[lang],
+        description: g.description?.[lang],
+        match: e => e.kind !== "approach" && e.group === g.id
+    })), ...(meta.themes || []).map(th => ({
+        part: "general",
+        id: `theme-${th.id}`,
+        title: th.title[lang] || th.title.en,
+        description: th.description?.[lang] || th.description?.en,
+        repeat: true,
+        match: e => th.entries.includes(e.id)
+    })), {
+        part: "team",
+        id: "approaches",
+        title: UI[lang].parts.approaches,
+        partDescription: teamGroup?.description?.[lang],
+        match: e => e.kind === "approach"
+    }, ...meta.groups.some(g => g.section === "team") ? meta.groups.filter(g => g.section === "team").map(g => ({
+        part: "team",
+        id: `group-${g.id}`,
+        title: g.title[lang],
+        partDescription: teamGroup?.description?.[lang],
+        match: e => e.kind !== "approach" && e.group === g.id
+    })) : teamGroup ? [ {
+        part: "team",
+        id: "group-team",
+        title: teamGroup.title[lang],
+        description: teamGroup.description?.[lang],
+        solo: true,
+        match: e => e.kind !== "approach" && e.group === "team"
+    } ] : [] ].map(block => ({
+        ...block,
+        match: e => e.seededFrom !== "pre-llm" && block.match(e)
+    })).filter(block => data.entries.some(block.match));
+}
+
+function renderToc() {
+    const ui = UI[lang];
+    let html = "", currentPart = null;
+    for (const block of blocks()) {
+        if (block.part !== currentPart) {
+            if (currentPart) html += `</div>`;
+            currentPart = block.part;
+            const partTarget = block.part === "approaches" ? "approaches" : `part-${block.part}`;
+            const solo = block.part === "approaches" || !!block.solo || !!block.partTitle;
+            html += `<div class="toc-part"><a class="part${solo ? " solo" : ""}" href="#${partTarget}">${block.partTitle || ui.parts[block.part]}</a>`;
+            if (solo) continue;
+        }
+        html += `<a class="item" href="#${block.id}">${block.title}</a>`;
+    }
+    html += `</div><a class="site suggest-practice" href="${newPracticeUrl()}">${ui.suggestPractice}</a><a class="site site-bottom" href="${REPO_URL}">${ui.github}${starCount === null ? "" : ` <span class="stars">★ ${starCount}</span>`}</a>`;
+    document.getElementById("toc").innerHTML = html;
+    document.getElementById("tocInline").innerHTML = html;
+    markTocSection();
+}
+
+const REPO_URL = "https://github.com/inmve/agentic-coding-practices";
+
+const ORIGINAL_SITE = "https://inmve.github.io/agentic-coding-practices/";
+
+const ORIGINAL_ISSUES = "https://github.com/inmve/agentic-coding-practices/issues";
+
+let team = null;
+
+function applyTeam(settings) {
+    for (const key of [ "answersRepo", "siteUrl", "issuesUrl" ]) if (typeof settings[key] === "string" && settings[key]) data.meta[key] = settings[key];
+    const known = new Set(data.entries.map(e => e.id));
+    for (const practice of Array.isArray(settings.practices) ? settings.practices : []) {
+        if (!practice || typeof practice.id !== "string" || known.has(practice.id) || !practice.title || !practice.definition) continue;
+        data.entries.push({
+            kind: "practice",
+            stages: [],
+            aliases: {},
+            seeAlso: [],
+            sources: [],
+            opposites: [],
+            rootsIn: [],
+            group: null,
+            firstAppeared: null,
+            coinedHere: false,
+            origin: null,
+            ...practice,
+            team: true
+        });
+    }
+    const robots = document.createElement("meta");
+    robots.name = "robots";
+    robots.content = "noindex";
+    document.head.appendChild(robots);
+}
+
+let starCount = null;
+
+fetch("https://api.github.com/repos/inmve/agentic-coding-practices").then(r => r.ok ? r.json() : null).then(repo => {
+    if (repo && Number.isInteger(repo.stargazers_count)) {
+        starCount = repo.stargazers_count;
+        if (data) {
+            renderToc();
+            renderSubtitle();
+        }
+    }
+}).catch(() => {});
+
+const INTRO_SOURCES = [ {
+    quote: "I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December",
+    author: "Andrej Karpathy",
+    work: "Andrej Karpathy (@karpathy) on X",
+    url: "https://x.com/karpathy/status/2015883857489522876",
+    published: "2026-01-26"
+}, {
+    quote: "We removed over 80% of Claude Code’s system prompt for models like Claude Opus 5 and Claude Fable 5 with no measurable loss on our coding evaluations.",
+    author: "Thariq Shihipar",
+    work: "The new rules of context engineering for Claude 5 generation models",
+    url: "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+    published: "2026-07-24"
+}, {
+    quote: "We’ve always appreciated TDD in our interviews to break down the problem; with AI, this becomes even more important.",
+    author: "Alex Anthony",
+    work: "Why we let candidates use AI in our programming interviews",
+    url: "https://www.omnea.co/blog/ai-in-our-programming-interviews",
+    published: "2026-05-26"
+} ];
+
+const introNote = n => `<sup><button data-intro="${n - 1}">[${n}]</button></sup>`;
+
+const INTRO = (linked, agentEra) => `\n  <p>In 2025 I kept a list of tips for coding with LLMs. A year later I wouldn’t follow a lot of it myself: most of it was about writing prompts and preparing context, and with modern models like Opus 5.5 I rarely do either. So I rebuilt the list from hands-on experience: people who build software with agents, writing about their own work.</p>\n  <p>Prompting is the part that got less important. The practices that were around long before LLMs went the other way: I couldn’t find anyone taking back <a href="#stage-test-qa">tests</a>, <a href="#group-team-review">code review</a> or <a href="#agent-readable-test-output">CI</a>. Several practices here grew out of them. <a href="#test-driven-development-ai">Tests before agent code</a>, for one, is test-driven development (2002) with an agent writing the code. Even the rubber duck is still here; now it just happens to talk back.</p>`;
+
+function formatUpdated(day) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(day || "")) return "";
+    const [y, m, d] = day.split("-").map(Number);
+    return `${d} ${UI.en.months[m - 1]} ${y}`;
+}
+
+function renderSubtitle() {
+    const ui = UI[lang];
+    document.getElementById("subtitle").innerHTML = team ? ui.teamCopy(ORIGINAL_SITE) : ui.suggestions ? ui.suggestions(REPO_URL, formatUpdated(data.meta.updated), starCount) : "";
+}
+
+function renderIntro() {
+    const byId = Object.fromEntries(data.entries.map(e => [ e.id, e ]));
+    const agentEra = data.entries.filter(e => e.seededFrom !== "pre-llm");
+    const linked = agentEra.filter(e => (e.rootsIn || []).some(id => byId[id]));
+    document.getElementById("intro").innerHTML = INTRO(linked.length, agentEra.length);
+}
+
+function render() {
+    const ui = UI[lang], collator = new Intl.Collator(lang);
+    document.documentElement.lang = lang;
+    document.getElementById("title").textContent = ui.title;
+    document.getElementById("kicker").textContent = ui.kicker || "";
+    document.getElementById("kicker").hidden = !ui.kicker;
+    document.getElementById("lead").textContent = ui.lead;
+    document.getElementById("lead").hidden = !ui.lead;
+    renderIntro();
+    renderSubtitle();
+    const sortByAppearance = list => list.sort((a, b) => {
+        const dateA = dateKey(a) || "0000", dateB = dateKey(b) || "0000";
+        return dateB.localeCompare(dateA) || collator.compare(text(a.title).value, text(b.title).value);
+    });
+    let html = "";
+    let currentPart = null;
+    for (const block of blocks()) {
+        if (block.part !== currentPart) {
+            if (currentPart) html += `</section>`;
+            currentPart = block.part;
+            html += `<section class="part" id="part-${block.part}"><h2 class="part-title">${block.partTitle || ui.parts[block.part]}</h2>` + (block.partDescription ? `<p class="block-description">${escapeHtml(block.partDescription)}</p>` : "");
+        }
+        const inBlock = sortByAppearance(data.entries.filter(block.match));
+        const seen = new Set;
+        const heading = block.solo || block.partTitle ? "" : `<h3>${block.title}</h3>`;
+        const description = block.description ? `<p class="block-description">${escapeHtml(block.description)}</p>` : "";
+        html += `<section class="block" id="${block.id}">${heading}${description}${grewFrom(block, inBlock)}` + (inBlock.length ? `<dl class="cols">${inBlock.map(e => {
+            const primary = block.part !== "stages" || e.stages[0] === block.id.replace("stage-", "");
+            return renderEntry(e, primary && !block.repeat ? e.id : `${e.id}--${block.id}`);
+        }).join("")}</dl>` : `<p class="empty">${ui.empty}</p>`) + surveyBlock(block) + `</section>`;
+    }
+    html += `</section>`;
+    if (surveyOn) html += `<section class="part"><p class="answers-lead" id="answersLead"></p><div class="answers-panel" id="your-answers"></div></section>`;
+    const SHOW_TEAM_BLOCK = false;
+    if (SHOW_TEAM_BLOCK && surveyOn && !team) {
+        const t = UI[lang].survey;
+        html += `<section class="team-block copy-block"><h3>${t.teamTitle}</h3><p>${t.teamLead}</p>\n      <div class="copy-head"><span>${t.teamLabel}</span><button data-act="copy-text">${t.copyPrompt}</button></div>\n      <pre>${escapeHtml(UI.en.survey.teamPrompt)}</pre></section>`;
+    }
+    document.getElementById("content").innerHTML = html;
+    document.querySelectorAll(".mfig[data-motion]").forEach(pop => initPlayer(pop));
+    redrawSurvey();
+    watchSchemes();
+    watchAnswersBlock();
+    document.getElementById("footer").innerHTML = `<a href="${data.meta.issuesUrl}">${ui.issues}</a>`;
+    renderToc();
+    if (activeEntryId) markActive(activeEntryId, false);
+}
+
+const question = document.getElementById("question");
+
+let questionEntryId = null, hideTimer = null, activeEntryId = null;
+
+const isTouch = matchMedia("(hover: none)").matches;
+
+function leftLimit() {
+    const toc = document.getElementById("toc");
+    return getComputedStyle(toc).position === "fixed" ? toc.getBoundingClientRect().right + 8 : 8;
+}
+
+function showQuestion(entryElement) {
+    clearTimeout(hideTimer);
+    questionEntryId = entryElement.dataset.entry;
+    const ui = UI[lang], mine = myAnswers[questionEntryId], q = data.meta.usefulQuestion;
+    const counts = answerCounts(questionEntryId), total = counts.yes + counts.no;
+    const enough = total >= data.meta.minAnswersForBar;
+    question.innerHTML = `<span class="ask">${q[lang]}</span>\n    <div class="buttons"><button class="yes ${mine?.useful === true ? "chosen" : ""}" data-answer="yes">${ui.yes}</button><button class="no ${mine?.useful === false ? "chosen" : ""}" data-answer="no">${ui.no}</button><button class="never ${mine && mine.useful === null ? "chosen" : ""}" data-answer="never">${ui.never}</button></div>\n    `;
+    question.style.display = "block";
+    question.className = "";
+    const rect = entryElement.getBoundingClientRect(), gap = 12;
+    const bottomLimit = innerHeight - 8;
+    let left, top = rect.top;
+    if (rect.left - question.offsetWidth - gap >= leftLimit()) {
+        question.classList.add("left");
+        left = rect.left - question.offsetWidth - gap;
+    } else if (rect.right + question.offsetWidth + gap <= innerWidth - 8) {
+        question.classList.add("right");
+        left = rect.right + gap;
+    } else {
+        question.classList.add("below");
+        left = Math.max(8, rect.left);
+        top = rect.bottom + gap;
+    }
+    top = Math.max(8, Math.min(top, bottomLimit - question.offsetHeight));
+    question.style.left = left + scrollX + "px";
+    question.style.top = top + scrollY + "px";
+}
+
+function hideQuestion() {
+    if (question.contains(document.activeElement)) return;
+    question.style.display = "none";
+    questionEntryId = null;
+}
+
+function markActive(entryId, scroll) {
+    document.querySelectorAll(".entry.active").forEach(e => e.classList.remove("active"));
+    activeEntryId = entryId;
+    const element = document.querySelector(`.entry[data-entry="${entryId}"]`);
+    if (!element) return null;
+    element.classList.add("active");
+    if (scroll) element.scrollIntoView({
+        block: "center"
+    });
+    return element;
+}
+
+function scheduleHide() {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(hideQuestion, 250);
+}
+
+document.addEventListener("mouseover", e => {
+    if (isTouch) return;
+    const nameCell = e.target.closest?.(".survey-inline td.name[data-entry]");
+    if (nameCell) {
+        clearTimeout(cardTimer);
+        cardTimer = null;
+        openCardPop(nameCell);
+    } else if (cardPop) {
+        if (cardPop.contains(e.target) || popover?.contains(e.target)) {
+            clearTimeout(cardTimer);
+            cardTimer = null;
+        } else if (!cardTimer) cardTimer = setTimeout(closeCardPop, 250);
+    }
+    if (e.target.matches("sup button")) {
+        clearTimeout(popoverTimer);
+        popoverTimer = null;
+        if (popover?.dataset.for !== footnoteKey(e.target)) openPopover(e.target);
+    } else if (e.target.matches("a.ref[data-root]")) {
+        clearTimeout(popoverTimer);
+        popoverTimer = null;
+        if (popover?.dataset.for !== "root:" + e.target.dataset.root) {
+            openRootPopover(e.target);
+            popover.dataset.for = "root:" + e.target.dataset.root;
+        }
+    } else if (popover && !popoverPinned) {
+        if (popover.contains(e.target)) {
+            clearTimeout(popoverTimer);
+            popoverTimer = null;
+        } else if (!popoverTimer) popoverTimer = setTimeout(closePopover, 200);
+    }
+    const entryElement = e.target.closest(".entry");
+    if (entryElement) {
+        if (entryElement.classList.contains("askable") && entryElement.dataset.entry !== questionEntryId) showQuestion(entryElement); else if (entryElement.classList.contains("askable")) clearTimeout(hideTimer); else if (questionEntryId) scheduleHide();
+    } else if (question.contains(e.target)) clearTimeout(hideTimer); else if (questionEntryId) scheduleHide();
+});
+
+function answer(useful) {
+    if (!questionEntryId) return;
+    myAnswers[questionEntryId] = {
+        useful: useful,
+        answeredAt: today.toISOString().slice(0, 10)
+    };
+    saveAnswers();
+    const entryId = questionEntryId;
+    render();
+    const entryElement = document.querySelector(`.entry[data-entry="${entryId}"]`);
+    if (entryElement) showQuestion(entryElement);
+}
+
+question.addEventListener("click", e => {
+    const button = e.target.closest("[data-answer]");
+    if (button) answer({
+        yes: true,
+        no: false,
+        never: null
+    }[button.dataset.answer]);
+});
+
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+        closePopover();
+        question.querySelector("textarea")?.blur();
+        hideQuestion();
+        return;
+    }
+    if (e.target.closest?.("textarea, input") || e.metaKey || e.ctrlKey || e.altKey) return;
+    const key = e.key.toLowerCase();
+    if (key === "j" || key === "k") {
+        const cards = [ ...document.querySelectorAll("#content .entry") ];
+        if (!cards.length) return;
+        const index = cards.findIndex(c => c.classList.contains("active"));
+        const next = cards[index === -1 ? 0 : Math.max(0, Math.min(cards.length - 1, index + (key === "j" ? 1 : -1)))];
+        document.querySelectorAll(".entry.active").forEach(c => c.classList.remove("active"));
+        next.classList.add("active");
+        activeEntryId = next.dataset.entry;
+        next.scrollIntoView({
+            block: "center"
+        });
+        if (next.classList.contains("askable")) requestAnimationFrame(() => showQuestion(next)); else {
+            question.style.display = "none";
+            questionEntryId = null;
+        }
+        e.preventDefault();
+    }
+    if ((key === "y" || key === "n") && questionEntryId) {
+        answer(key === "y");
+        e.preventDefault();
+    }
+});
+
+let popover = null, popoverPinned = false, popoverTimer = null;
+
+function closePopover() {
+    clearTimeout(popoverTimer);
+    popoverTimer = null;
+    popoverPinned = false;
+    popover?.remove();
+    popover = null;
+}
+
+function footnoteKey(button) {
+    return `${button.dataset.entry || "intro"}:${button.dataset.n ?? button.dataset.intro}`;
+}
+
+function sourceLine(source) {
+    const title = source.work ? `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">«${escapeHtml(source.work)}»</a>` : `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(new URL(source.url).hostname.replace(/^www\./, ""))}</a>`;
+    return [ source.author && escapeHtml(source.author), title, source.published && escapeHtml(source.published) ].filter(Boolean).join(", ");
+}
+
+function openRootPopover(link) {
+    closePopover();
+    const ui = UI[lang];
+    const root = data.entries.find(e => e.id === link.dataset.root);
+    if (!root) return;
+    const quoted = root.sources.filter(s => s.quote);
+    const source = quoted.find(s => s.role === "relevance") || quoted[0];
+    const date = root.firstAppeared?.verified ? entryDate(root) : null;
+    popover = document.createElement("div");
+    popover.className = "popover";
+    const heading = `<b>${escapeHtml(text(root.title).value)}</b>${date ? ` · ${date.getFullYear()}` : ""}<br>`;
+    const definition = `<span class="root-definition">${escapeHtml(text(root.definition).value.replace(/(\s*\[\d+\])+\s*$/, ""))}</span><br>`;
+    const body = source ? `<q>${escapeHtml(source.quote)}</q><span class="who">${sourceLine(source)}</span>` : "";
+    popover.innerHTML = heading + definition + body;
+    document.body.appendChild(popover);
+    const rect = link.getBoundingClientRect();
+    popover.style.left = Math.max(8, Math.min(rect.left + scrollX, scrollX + innerWidth - popover.offsetWidth - 8)) + "px";
+    popover.style.top = rect.bottom + scrollY + 4 + "px";
+}
+
+function openFigurePopover(link) {
+    closePopover();
+    popover = document.createElement("div");
+    popover.className = "popover figure-popover";
+    popover.innerHTML = `<img src="figures/${link.dataset.figure}.svg" alt="${escapeHtml(figures[link.dataset.figure] || "")}">`;
+    document.body.appendChild(popover);
+    const rect = link.getBoundingClientRect();
+    popover.style.left = Math.max(8, Math.min(rect.left + scrollX, scrollX + innerWidth - popover.offsetWidth - 8)) + "px";
+    popover.style.top = rect.bottom + scrollY + 4 + "px";
+}
+
+function openPopover(button) {
+    closePopover();
+    const ui = UI[lang];
+    const entry = data.entries.find(e => e.id === button.dataset.entry);
+    const source = button.dataset.intro !== undefined ? INTRO_SOURCES[button.dataset.intro] : entry?.sources.find(s => String(s.n) === button.dataset.n);
+    if (!source) return;
+    popover = document.createElement("div");
+    popover.className = "popover";
+    popover.dataset.for = footnoteKey(button);
+    const who = sourceLine(source);
+    popover.innerHTML = (source.quote ? `<q>${escapeHtml(source.quote)}</q>` : `<span class="no-quote">${ui.noQuote}</span>`) + `<span class="who">${who}</span>`;
+    document.body.appendChild(popover);
+    const rect = button.getBoundingClientRect();
+    popover.style.left = Math.max(8, Math.min(rect.left + scrollX, scrollX + innerWidth - popover.offsetWidth - 8)) + "px";
+    popover.style.top = rect.bottom + scrollY + 4 + "px";
+}
+
+document.addEventListener("click", e => {
+    if (e.target.matches("a.suggest-edit")) {
+        e.preventDefault();
+        if (popover?.dataset.for === "suggest:" + e.target.closest(".entry").dataset.entry) popoverPinned = true; else openSuggestPopover(e.target);
+        return;
+    }
+    if (e.target.matches("sup button")) {
+        if (popover?.dataset.for !== footnoteKey(e.target)) openPopover(e.target);
+        popoverPinned = true;
+        return;
+    }
+    if (e.target.matches("a.ref[data-root]")) {
+        e.preventDefault();
+        openRootPopover(e.target);
+        popoverPinned = true;
+        return;
+    }
+    if (e.target.matches("a.ref[data-figure]")) {
+        e.preventDefault();
+        openFigurePopover(e.target);
+        popoverPinned = true;
+        return;
+    }
+    if (!popover?.contains(e.target)) closePopover();
+    const nameCell = e.target.closest?.(".survey-inline td.name[data-entry]");
+    if (nameCell) openCardPop(nameCell); else if (cardPop && !cardPop.contains(e.target)) closeCardPop();
+    if (isTouch && !question.contains(e.target)) {
+        const entryElement = e.target.closest(".entry.askable");
+        if (entryElement && !e.target.closest("a")) {
+            markActive(entryElement.dataset.entry, false);
+            showQuestion(entryElement);
+        } else hideQuestion();
+    }
+});
+
+function markTocSection() {
+    let current = null;
+    const links = [ ...document.querySelectorAll("#toc a.item, #toc a.part.solo") ];
+    const atEnd = innerHeight + scrollY >= document.documentElement.scrollHeight - 2;
+    for (const link of links) {
+        const target = document.getElementById(link.getAttribute("href").slice(1));
+        if (target && target.getBoundingClientRect().top <= (atEnd ? innerHeight - 80 : 140)) current = link;
+    }
+    for (const link of links) link.classList.toggle("active", link === current);
+    const toc = document.getElementById("toc");
+    if (current && toc.scrollHeight > toc.clientHeight) {
+        const top = current.offsetTop, bottom = top + current.offsetHeight;
+        if (top < toc.scrollTop + 24 || bottom > toc.scrollTop + toc.clientHeight - 24) toc.scrollTop = top - toc.clientHeight / 2;
+    }
+}
+
+function onScroll() {
+    markTocSection();
+}
+
+addEventListener("scroll", onScroll, {
+    passive: true
+});
+
+addEventListener("resize", onScroll);
+
+document.querySelectorAll("input[name=lang]").forEach(input => input.addEventListener("change", () => {
+    lang = input.value;
+    render();
+}));
+
+document.addEventListener("click", e => {
+    const link = e.target.closest?.("a[href]");
+    if (!link || link.target) return;
+    if (new URL(link.href, location.href).origin !== location.origin) {
+        link.target = "_blank";
+        link.rel = "noopener";
+    }
+});
+
+function openHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const entry = data.entries.find(e => e.id === id);
+    if (!entry) return;
+    const element = markActive(id, true);
+    const scheme = element?.querySelector(".mfig[data-motion]");
+    if (!scheme || scheme === playingScheme) return;
+    playingScheme?.dispatchEvent(new Event("motion:still"));
+    scheme.dispatchEvent(new Event("motion:play"));
+    playingScheme = scheme;
+    const away = new IntersectionObserver(([item]) => {
+        if (item.isIntersecting) return;
+        away.disconnect();
+        if (playingScheme === scheme) {
+            scheme.dispatchEvent(new Event("motion:still"));
+            playingScheme = null;
+        }
+    });
+    away.observe(scheme);
+}
+
+addEventListener("hashchange", openHash);
+
+document.addEventListener("click", async e => {
+    const button = e.target.closest?.('[data-act="copy-text"]');
+    if (!button) return;
+    const text = button.closest(".copy-block").querySelector("pre").textContent;
+    try {
+        await navigator.clipboard.writeText(text);
+    } catch (err) {
+        const area = document.createElement("textarea");
+        area.value = text;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+    }
+    selectAll(button.closest(".copy-block").querySelector("pre"));
+    button.textContent = UI[lang].survey.copied;
+});
+
+const loadData = window.REFERENCE_DATA ? Promise.resolve([ window.REFERENCE_DATA, window.REFERENCE_DEMO_ANSWERS || {
+    answers: []
+} ]) : Promise.all([ fetch("entries.json", {
+    cache: "no-cache"
+}).then(r => r.json()), Promise.resolve({
+    answers: []
+}) ]);
+
+loadData.catch(() => {
+    document.getElementById("content").innerHTML = `<p style="color:#c0392b;font-size:15px">${UI[lang].loadError("https://github.com/inmve/agentic-coding-practices/blob/main/data/entries.json")}</p>`;
+});
+
+loadData.then(async ([json, demo]) => {
+    data = json;
+    team = location.href.startsWith(ORIGINAL_SITE) ? null : await fetch("team.json", {
+        cache: "no-cache"
+    }).then(r => r.ok ? r.json() : null).catch(() => null);
+    if (team && typeof team === "object") applyTeam(team); else team = null;
+    motion = await fetch("figures/motion.json").then(r => r.json()).catch(() => ({}));
+    figures = await fetch("figures/index.json").then(r => r.json()).catch(() => ({}));
+    demoAnswers = demo.answers;
+    for (const entry of data.entries) for (const rootId of entry.rootsIn || []) (descendantsById[rootId] ||= []).push(entry.id);
+    render();
+    openHash();
+})</script>
+</body>
+</html>

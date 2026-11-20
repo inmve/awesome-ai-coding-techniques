@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" role="img" aria-label="The agent can change the code but not the test expectations"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="40" width="70" height="36" fill="none" stroke="#2e2a33"/><text x="16" y="62">agent</text>
+<rect x="200" y="8" width="110" height="40" fill="url(#h)" stroke="#2e2a33"/><text x="214" y="32" style="paint-order:stroke;stroke:#fff;stroke-width:3px">tests/</text>
+<rect x="286" y="18" width="14" height="12" fill="#fff" stroke="#2e2a33"/><path d="M289 18 v-4 a4 4 0 0 1 8 0 v4" fill="none" stroke="#2e2a33"/>
+<rect x="200" y="70" width="110" height="40" fill="none" stroke="#2e2a33"/><text x="214" y="94">src/</text>
+<path d="M71 52 L180 30" stroke="#d2544a" stroke-dasharray="3 3"/><path d="M174 22 l12 12 M186 22 l-12 12" stroke="#d2544a" stroke-width="1.5"/>
+<path d="M71 64 L198 88" stroke="#2e2a33" marker-end="url(#a)"/></svg>

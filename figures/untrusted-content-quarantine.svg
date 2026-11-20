@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" role="img" aria-label="The agent that reads untrusted content passes only text across a wall to the agent that holds the keys"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<path d="M10 40 q10 -24 34 -14 q12 -18 34 -4 q22 -2 18 20 q14 14 -6 26 h-74 q-20 -12 -6 -28 z" fill="url(#h)" stroke="#2e2a33"/><text x="20" y="102" class="m">web page</text>
+<line x1="112" y1="50" x2="150" y2="50" stroke="#2e2a33" marker-end="url(#a)"/>
+<rect x="152" y="32" width="70" height="36" fill="none" stroke="#2e2a33"/><text x="168" y="54">read</text>
+<line x1="238" y1="6" x2="238" y2="124" stroke="#2e2a33" stroke-width="3"/>
+<line x1="222" y1="50" x2="290" y2="50" stroke="#2e2a33" stroke-dasharray="3 3" marker-end="url(#a)"/><text x="244" y="42" class="m">text</text>
+<rect x="292" y="32" width="70" height="36" fill="none" stroke="#2e2a33"/><text x="306" y="54">act</text>
+<path d="M376 44 a8 8 0 1 1 0 12 l20 0 l0 6 m-6 -6 l0 5" fill="none" stroke="#2e2a33"/>
+<line x1="327" y1="68" x2="327" y2="104" stroke="#2e2a33" marker-end="url(#a)"/><text x="306" y="120">deploy</text></svg>

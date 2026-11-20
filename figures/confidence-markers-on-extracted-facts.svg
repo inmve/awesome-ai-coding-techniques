@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 150" role="img" aria-label="Code lines map to facts with green, amber and red markers; the unclear one goes to a person"><defs>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2e2a33" stroke-width="0.7"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2e2a33" stroke-width="1"/></marker>
+</defs>
+<style>text{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;fill:#2e2a33} .m{fill:#8a8490} .r{fill:#d2544a} .g{fill:#3f9a5a}</style>
+<rect x="1" y="6" width="210" height="138" fill="none" stroke="#2e2a33"/>
+<text x="10" y="26" class="m">41</text><rect x="28" y="16" width="3" height="28" fill="#3f9a5a"/><text x="38" y="26">IF CUST-TYPE = 'P'</text><text x="38" y="40">  MOVE 0.15 TO DISC</text>
+<text x="10" y="64" class="m">43</text><rect x="28" y="54" width="3" height="28" fill="#d39a1e"/><text x="38" y="64">IF TOTAL &gt; 1000</text><text x="38" y="78">  MOVE 0.05 TO DISC</text>
+<text x="10" y="110" class="m">46</text><rect x="36" y="98" width="168" height="18" fill="url(#h)" opacity=".5"/><rect x="28" y="98" width="3" height="18" fill="#d2544a"/><text x="38" y="110">NET = T*(1-DISC)+ADJ</text>
+<path d="M211 30 H244 M211 68 H244 M211 107 H244" stroke="#8a8490" stroke-dasharray="3 3"/>
+<rect x="244" y="20" width="118" height="20" fill="none" stroke="#2e2a33"/><circle cx="255" cy="30" r="5" fill="#3f9a5a"/><text x="266" y="34">P → 15%</text>
+<rect x="244" y="58" width="118" height="20" fill="none" stroke="#2e2a33"/><circle cx="255" cy="68" r="5" fill="#d39a1e"/><text x="266" y="72">&gt;1000 → 5% · ¤?</text>
+<rect x="244" y="97" width="118" height="20" fill="url(#h)" stroke="#2e2a33"/><circle cx="255" cy="107" r="5" fill="#d2544a" stroke="#fff" stroke-width="2"/><text x="266" y="111" style="paint-order:stroke;stroke:#fff;stroke-width:3px">ADJ = ?</text>
+<line x1="362" y1="107" x2="398" y2="107" stroke="#2e2a33" marker-end="url(#a)"/><circle cx="418" cy="96" r="7" fill="none" stroke="#2e2a33"/><path d="M404 122 Q418 104 432 122" fill="none" stroke="#2e2a33"/></svg>
