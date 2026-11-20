@@ -315,8 +315,8 @@
       "firstAppeared": {
         "date": "2026-02-05",
         "precision": "day",
-        "verified": false,
-        "note": "Mitchell Hashimoto, *My AI Adoption Journey* (Feb 5 2026)."
+        "verified": true,
+        "note": "Mitchell Hashimoto, *My AI Adoption Journey*, February 5, 2026: the source with the role coined [1] carries this date."
       },
       "coinedHere": false,
       "seeAlso": [],
@@ -389,12 +389,7 @@
         "en": "Project instructions for the agent (commands, conventions, constraints) are kept in a text document that the agent reads at the start of every session. [1][2][3]",
         "ru": "Инструкции для агента по проекту (команды, соглашения, ограничения) хранят в текстовом документе, который агент читает в начале каждой сессии. [1][2][3]"
       },
-      "firstAppeared": {
-        "date": "2025-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "term stabilized through 2025 alongside CLAUDE.md and AGENTS.md adoption."
-      },
+      "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
       "sources": [
@@ -526,8 +521,8 @@
         ]
       },
       "definition": {
-        "en": "People neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass. [1][2][3][4]",
-        "ru": "Люди не пишут и не ревьюят код: спецификации и сценарии управляют агентами, которые пишут код и запускают проверки, пока те не пройдут. [1][2][3][4]"
+        "en": "People neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass. [1][2][3]",
+        "ru": "Люди не пишут и не ревьюят код: спецификации и сценарии управляют агентами, которые пишут код и запускают проверки, пока те не пройдут. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -557,17 +552,6 @@
         },
         {
           "n": 3,
-          "role": "support",
-          "quote": "This idea of the software factory is a term that dates back to Bob Bemer’s paper, “The economics of program production,” given in 1968.",
-          "quoteLang": "en",
-          "author": "Addy Osmani",
-          "work": "Software Factories, Light and Dark",
-          "url": "https://addyosmani.com/blog/software-factories/",
-          "published": "2026-07-20",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 4,
           "role": "support",
           "quote": "And your software process isn’t really a software process any more. It’s a black box that turns specs into software.",
           "quoteLang": "en",
@@ -601,8 +585,8 @@
         "en": []
       },
       "definition": {
-        "en": "Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.",
-        "ru": "Разработка разговором с агентом без чтения кода: все правки принимаются, ошибки вставляются обратно, пока не заработает."
+        "en": "Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until the program runs.",
+        "ru": "Разработка разговором с агентом без чтения кода: все правки принимаются, ошибки вставляются обратно, пока программа не запустится."
       },
       "firstAppeared": {
         "date": "2025-02-02",
@@ -859,8 +843,8 @@
         ]
       },
       "definition": {
-        "en": "Well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits. [1][2]",
-        "ru": "Тщательно составленные спецификации требований служат промптами, по которым агенты генерируют код; в самой строгой форме разработчик правит только спецификацию. [1][2]"
+        "en": "Requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits. [1][2]",
+        "ru": "Спецификации требований служат промптами, по которым агенты генерируют код; в самой строгой форме разработчик правит только спецификацию. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2549,14 +2533,14 @@
         ]
       },
       "definition": {
-        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1][2]",
-        "en": "A development model in which the stages run strictly in order: requirements, design, code, testing, deployment. [1][2]"
+        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1]",
+        "en": "A development model in which the stages run strictly in order: requirements, design, code, testing, deployment. [1]"
       },
       "firstAppeared": {
-        "date": "1970-01-01",
-        "precision": "year",
-        "verified": false,
-        "note": "Winston Royce, Managing the Development of Large Software Systems, 1970; the word waterfall came later"
+        "date": "1970-08-01",
+        "precision": "month",
+        "verified": true,
+        "note": "Winston W. Royce, «Managing the Development of Large Software Systems», Proc. IEEE WESCON, August 1970, as given on https://cs.huji.ac.il/~feit/sem/se09/Waterfall.pdf; the word waterfall came later."
       },
       "kind": "approach",
       "coinedHere": false,
@@ -2573,17 +2557,6 @@
           "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices",
           "published": "2025-12-04",
           "checkedAt": "2026-11-16"
-        },
-        {
-          "n": 2,
-          "role": "relevance",
-          "quote": "Specifications aren’t up-front designs because you don’t need to, and probably shouldn’t, develop the entire specification upfront.",
-          "quoteLang": "en",
-          "author": "Marc Brooker",
-          "work": "Spec Driven Development isn't Waterfall",
-          "url": "https://brooker.co.za/blog/2026/04/09/waterfall-vs-spec",
-          "published": "2026-04-09",
-          "checkedAt": "2026-11-15"
         }
       ],
       "seededFrom": "pre-llm",
@@ -2740,10 +2713,10 @@
         "en": "A developer explains a problem aloud to a listener that need not respond, such as a rubber duck, and finds the cause while explaining. [1]"
       },
       "firstAppeared": {
-        "date": "1999-10-01",
-        "precision": "month",
-        "verified": false,
-        "note": "Andrew Hunt and David Thomas, The Pragmatic Programmer, Oct 1999"
+        "date": "1999-01-01",
+        "precision": "year",
+        "verified": true,
+        "note": "Andrew Hunt and David Thomas, The Pragmatic Programmer, 1999, as given on https://arbinquiry.bearblog.dev/your-rubber-duck-with-a-brain-how-to-properly-treat-your-ai-assistant/ (the month is not confirmed)."
       },
       "kind": "practice",
       "coinedHere": false,
@@ -2914,8 +2887,8 @@
         ]
       },
       "definition": {
-        "ru": "Изменение подают как запрос на слияние, и до слияния его обсуждают и проверяют в этом запросе. [1][2]",
-        "en": "A change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1][2]"
+        "ru": "Изменение подают как запрос на слияние, и до слияния его обсуждают и проверяют в этом запросе. [1]",
+        "en": "A change is submitted as a request to merge, and it is discussed and reviewed there before the merge. [1]"
       },
       "firstAppeared": {
         "date": "2008-02-23",
@@ -2937,17 +2910,6 @@
           "work": "Agent pull requests are everywhere. Here's how to review them.",
           "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
           "published": "2026-05-07",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "Because Copilot starts looking at comments as soon as they are submitted, if you are likely to make multiple comments on a pull request it's best to batch them by clicking Start a review, rather than clicking Add single comment.",
-          "quoteLang": "en",
-          "author": "GitHub",
-          "work": "Best practices for using GitHub Copilot to work on tasks",
-          "url": "https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results",
-          "published": null,
           "checkedAt": "2026-11-15"
         }
       ],
@@ -5330,8 +5292,8 @@
         "en": []
       },
       "definition": {
-        "en": "The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's. [1][2]",
-        "ru": "Человек, направлявший агента, считается одним из обязательных ревьюеров его пул-реквеста, а одобрение агента никогда не засчитывается как одобрение человека. [1][2]"
+        "en": "The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval is not counted as a person's. [1][2]",
+        "ru": "Человек, направлявший агента, считается одним из обязательных ревьюеров его пул-реквеста, а одобрение агента не засчитывается как одобрение человека. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6257,8 +6219,8 @@
         "en": []
       },
       "definition": {
-        "en": "Constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement. [1]",
-        "ru": "Ограничения, добавленные в инструкции агента ради прежних, более слабых моделей, пересматривают и удаляют, оставляя агенту опираться на контекст и суждение. [1]"
+        "en": "Constraints added to agent instructions for earlier models are reviewed and deleted, leaving the agent to rely on context and judgement. [1]",
+        "ru": "Ограничения, добавленные в инструкции агента ради прежних моделей, пересматривают и удаляют, оставляя агенту опираться на контекст и суждение. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6795,8 +6757,8 @@
         "en": []
       },
       "definition": {
-        "en": "Several independent teams implement the same specification, the versions run in parallel, and a voting rule masks the faults of a single version. [1]",
-        "ru": "Несколько независимых команд реализуют одну спецификацию, версии работают параллельно, и правило голосования скрывает ошибки отдельной версии. [1]"
+        "en": "Several independent teams implement the same specification, the versions run in parallel, and a voting rule is meant to mask the faults of a single version. [1]",
+        "ru": "Несколько независимых команд реализуют одну спецификацию, версии работают параллельно, и правило голосования должно скрывать ошибки отдельной версии. [1]"
       },
       "firstAppeared": {
         "date": "1978-01-01",
@@ -7001,8 +6963,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1][2]",
-        "ru": "Команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1][2]"
+        "en": "A team enforces code style and safeguards through formatters, linters and pre-commit or CI checks instead of writing them as rules in documentation. [1]",
+        "ru": "Команда закрепляет стиль кода и защитные правила через форматтеры, линтеры и проверки перед коммитом или в CI, а не описывает их в документации. [1]"
       },
       "firstAppeared": {
         "date": "1978-07-26",
@@ -7023,17 +6985,6 @@
           "work": "Stop writing rules in AGENTS.md: use agent hooks and nano-staged instead",
           "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
           "published": "2026-05-26",
-          "checkedAt": "2026-11-16"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "Lint is a command which examines C source programs, detecting a number of bugs and obscurities.",
-          "quoteLang": "en",
-          "author": "S. C. Johnson",
-          "work": "Lint, a C Program Checker",
-          "url": "https://www.silicon-russia.com/wp-content/uploads/2019/02/lint_1978_stephen_johnson.pdf",
-          "published": "1978-01-01",
           "checkedAt": "2026-11-16"
         }
       ],
@@ -7378,8 +7329,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked. [1][2][3]",
-        "ru": "Повторяющийся автоматический источник изменений кода, например один и тот же промпт, который агент запускает снова и снова, получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений; источник, из-за которого был инцидент, блокируют. [1][2][3]"
+        "en": "A recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked. [1][2]",
+        "ru": "Повторяющийся автоматический источник изменений кода, например один и тот же промпт, который агент запускает снова и снова, получает право сливать изменения без ревью каждого из них только после чистой истории за заданный срок: без инцидентов, с малым числом откатов и отклонений людьми и с достаточным числом слитых изменений; источник, из-за которого был инцидент, блокируют. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7400,17 +7351,6 @@
           "n": 2,
           "role": "support",
           "quote": "Specific runbooks that have caused incidents or that target sensitive areas are permanently blocked from RADAR-landing.",
-          "quoteLang": "en",
-          "author": "Chris Adams et al.",
-          "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
-          "url": "https://arxiv.org/html/2605.30208",
-          "published": "2026-06-12",
-          "checkedAt": "2026-11-18"
-        },
-        {
-          "n": 3,
-          "role": "support",
-          "quote": "RACER operates through runbooks, which are pre-configured prompts that encode the instructions, constraints, and context for a specific type of code change.",
           "quoteLang": "en",
           "author": "Chris Adams et al.",
           "work": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
@@ -7684,8 +7624,8 @@
         "ru": []
       },
       "definition": {
-        "en": "A take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate. [1][2]",
-        "ru": "Тестовое задание разрешает агентов и построено вокруг длинной задачи, которую агент не решает целиком, а стартовый код оставляет инструменты на кандидата. [1][2]"
+        "en": "A take-home allows agents and is built around a longer problem that is harder for an agent to solve completely, with starter code that leaves the tooling to the candidate. [1][2]",
+        "ru": "Тестовое задание разрешает агентов и построено вокруг длинной задачи, которую агенту труднее решить целиком, а стартовый код оставляет инструменты на кандидата. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,

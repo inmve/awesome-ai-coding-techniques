@@ -1,8 +1,8 @@
 <!-- Generated from data/entries.json. Do not edit by hand. -->
 
-# Agents made the old practices matter more
+# Agentic software development practices
 
-**Practices in agentic software development, 2026 survey.** Tests, code review and CI carry more weight with coding agents.
+Practices from people who build software with agents. Each entry has a definition, dated sources with a verbatim quote and, where there is one, the older practice it grew from. The site and this README are generated from one JSON file.
 
 ```
 ██████   ██████  ██████   ██████
@@ -18,7 +18,7 @@
 - **Site:** [https://inmve.github.io/agentic-coding-practices/](https://inmve.github.io/agentic-coding-practices/) (the same reference with quotes on hover and schemes that play)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 
-127 practices, 256 sources, 256 of them with a verbatim quote stored in the data, 65 example schemes. Preliminary edition: dates are not verified yet.
+127 practices, 254 sources, 254 of them with a verbatim quote stored in the data, 65 example schemes.
 
 Inside every section the newest practices come first.
 
@@ -310,11 +310,11 @@ Inside every section the newest practices come first.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
 - **Regular audit of the agent setup**. Every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true.
   Sources: [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
-- **Pruning old constraints**. Constraints added to agent instructions for earlier, weaker models are reviewed and deleted, leaving the agent to rely on context and judgement.
+- **Pruning old constraints**. Constraints added to agent instructions for earlier models are reviewed and deleted, leaving the agent to rely on context and judgement.
   Sources: [Thariq Shihipar, 2026-07-24](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/).
 - **Check that the instruction file is loaded**. The developer checks which instruction file the agent tool actually reads, for example with a marker word, before relying on it.
   Sources: [Systima, 2026-07-12](https://systima.ai/blog/claude-code-vs-opencode-token-overhead); [Przemek, 2026-09-23](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/).
-- **Harness engineering**. After each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again.
+- **Harness engineering** (2026). After each agent mistake, the developer adds a rule, a script or a check to the agent's environment so that the mistake does not happen again.
   Sources: [Mitchell Hashimoto, 2026-02-05](https://mitchellh.com/writing/my-ai-adoption-journey); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 
   <img src="figures/harness-engineering.svg" width="440" alt="Example scheme: Harness engineering">
@@ -452,7 +452,7 @@ Inside every section the newest practices come first.
 
 - **Agent as a pair partner**. The developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result.
   Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing).
-  Grew from: Pair programming (1998), Rubber duck debugging.
+  Grew from: Pair programming (1998), Rubber duck debugging (1999).
 - **Learning with an agent**. The developer uses an agent to learn a language or a concept and then applies it when writing code.
   Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go).
 
@@ -463,7 +463,7 @@ Rules about what an agent may do without a person checking it: how deep the revi
 These practices also stand in their own sections above, with their sources.
 
 - **Approval bound to a commit**. A review approval covers one specific commit, and new commits the system cannot vouch for, such as an agent's push or a hand-resolved merge, require approval again.
-- **Prompter as a required reviewer**. The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's.
+- **Prompter as a required reviewer**. The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval is not counted as a person's.
 - **CI workflow files as high risk**. The files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work.
 - **Protected test expectations**. Test files and expected results that a task should not change are protected from the agent: made read-only, checked in CI for changes, or named in the agent's instructions as inputs to keep.
 - **Named owner of an agent thread**. Every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
@@ -485,14 +485,14 @@ Rules that teams and open-source projects set for work with agents.
 ### Approaches
 
 - **Software factory**. People neither write nor review the code: specifications and scenarios drive agents that write the code and run the checks until they pass.
-  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Addy Osmani, 2026-07-20](https://addyosmani.com/blog/software-factories/); [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
-- **Spec-driven development**. Well-crafted requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits.
+  Sources: [Justin McCarthy, 2026-02-06](https://factory.strongdm.ai/); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Dan Shapiro, 2026-01-23](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/).
+- **Spec-driven development**. Requirement specifications serve as the prompts from which coding agents generate the code; in its strictest form the specification is the only thing the developer edits.
   Sources: [GitHub Engineering, 2025-09-30](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/); [Liu Shangqi, 2025-12-04](https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices).
-  Grew from: Waterfall.
+  Grew from: Waterfall (1970).
 
   <img src="figures/spec-driven-development-iterate.svg" width="440" alt="Example scheme: Spec-driven development">
 
-- **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until it works.
+- **Vibe coding** (2025). Building software by talking to an agent without reading the code: every change is accepted, errors are pasted back until the program runs.
   Sources: [Andrej Karpathy, 2025-02-02](https://x.com/karpathy/status/1886192184808149383).
 
   <img src="figures/vibe-coding.svg" width="440" alt="Example scheme: Vibe coding">
@@ -504,7 +504,7 @@ Rules that teams and open-source projects set for work with agents.
 
   <img src="figures/approval-per-commit.svg" width="440" alt="Example scheme: Approval bound to a commit">
 
-- **Prompter as a required reviewer**. The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval never counts as a person's.
+- **Prompter as a required reviewer**. The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval is not counted as a person's.
   Sources: [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/).
   Grew from: Pull request (2008).
 - **Answer to every review finding**. Every finding of the review agent must be fixed or resolved with a stated reason, and a pull request cannot merge while a bug or security finding is open.
@@ -538,7 +538,7 @@ Rules that teams and open-source projects set for work with agents.
   <img src="figures/risk-based-review.svg" width="440" alt="Example scheme: Risk-based code review">
 
 - **Track record before landing without review**. A recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked.
-  Sources: [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208); [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208); [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208).
+  Sources: [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208); [Chris Adams et al., 2026-06-12](https://arxiv.org/html/2605.30208).
 
   <img src="figures/track-record-before-unreviewed-landing.svg" width="440" alt="Example scheme: Track record before landing without review">
 
@@ -583,7 +583,7 @@ Rules that teams and open-source projects set for work with agents.
 
   <img src="figures/take-home-session-transcripts.svg" width="440" alt="Example scheme: Agent session transcripts in the take-home">
 
-- **Take-home built for work with agents**. A take-home allows agents and is built around a longer problem that an agent does not solve whole, with starter code that leaves the tooling to the candidate.
+- **Take-home built for work with agents**. A take-home allows agents and is built around a longer problem that is harder for an agent to solve completely, with starter code that leaves the tooling to the candidate.
   Sources: [Tristan Hume, 2026-01-21](https://anthropic.com/engineering/AI-resistant-technical-evaluations); [Tristan Hume, 2026-01-21](https://anthropic.com/engineering/AI-resistant-technical-evaluations).
 - **Assessing how a candidate directs agents**. Interviewers score how a candidate plans the work, steers the agent and checks what it produced.
   Sources: [Elicit, 2026-03-30](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents); [Augment Code, 2026-03-12](https://augmentcode.com/blog/how-we-hire-ai-native-engineers-now); [Karl Hörnlund, 2025-10-20](https://www.canva.dev/blog/engineering/ai-interview-success/).
