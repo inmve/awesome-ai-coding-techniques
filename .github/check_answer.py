@@ -1,7 +1,7 @@
 """Check a survey answer added by a pull request and merge it.
 
 A pull request that touches anything outside answers/ is not a survey answer and is left alone.
-Run locally on a file: python3 .github/check_answer.py --file answers/2026/req-plan/abcd1234.json
+Run locally on a file: python3 .github/check_answer.py --file answers/2026/abcd1234.json
 """
 import datetime
 import json
@@ -13,14 +13,22 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SURVEY = "agentic-software-development-2026"
-ANSWERS = {"never-heard", "not-interested", "want-to-try", "tried-dropped", "we-do-it"}
-PATH = re.compile(r"^answers/2026/([a-z0-9-]+)/([a-z0-9]{8})\.json$")
+# «never-heard» was dropped on 2026-11-19: four answers
+ANSWERS = {"not-interested", "want-to-try", "tried-dropped", "do-it"}
+PATH = re.compile(r"^answers/2026/[a-f0-9]{8}\.json$")
 MAX_BYTES = 20000
 
 
 def categories():
     """Category id -> practice ids, the same sections as on the site."""
     data = json.loads((ROOT / "data/entries.json").read_text(encoding="utf-8"))
+    # a team's copy adds its own practices in docs/team.json; the site shows them in the same sections
+    team_file = ROOT / "docs/team.json"
+    if team_file.exists():
+        known = {e["id"] for e in data["entries"]}
+        for practice in json.loads(team_file.read_text(encoding="utf-8")).get("practices") or []:
+            if isinstance(practice, dict) and practice.get("id") not in known and practice.get("title") and practice.get("definition"):
+                data["entries"].append({"kind": "practice", "stages": [], "group": None, **practice})
     practices = [e for e in data["entries"] if e.get("seededFrom") != "pre-llm"]
     result = {}
     for stage in data["meta"]["stages"]:
@@ -37,25 +45,19 @@ def categories():
 def problems(path, raw):
     """Everything wrong with one answer file; an empty list means it is accepted."""
     found = []
-    match = PATH.match(path)
-    if not match:
-        return [f"the file must be answers/2026/<category>/<8 letters or digits>.json, not {path}"]
+    if not PATH.match(path):
+        return [f"the file must be answers/2026/<8 hex characters>.json, not {path}"]
     if len(raw) > MAX_BYTES:
         return ["the file is larger than an answer can be"]
     try:
         answer = json.loads(raw)
     except ValueError as error:
         return [f"the file is not valid JSON: {error}"]
-    if not isinstance(answer, dict) or set(answer) != {"survey", "category", "answeredAt", "answers"}:
-        return ["the file must have exactly: survey, category, answeredAt, answers"]
+    # who answered is the author of the pull request, so the file carries no id of its own (2026-11-20)
+    if not isinstance(answer, dict) or set(answer) != {"survey", "answeredAt", "answers"}:
+        return ["the file must have exactly: survey, answeredAt, answers"]
     if answer["survey"] != SURVEY:
         found.append(f"survey must be {SURVEY}")
-    known = categories()
-    category = answer["category"]
-    if category not in known:
-        found.append(f"unknown category {category}")
-    elif re.sub(r"^(stage|group)-", "", category) != match.group(1):
-        found.append("the folder does not match the category")
     try:
         day = datetime.date.fromisoformat(answer["answeredAt"])
         if day > datetime.date.today() + datetime.timedelta(days=1):
@@ -65,10 +67,11 @@ def problems(path, raw):
     answers = answer["answers"]
     if not isinstance(answers, dict) or not answers:
         found.append("answers must name at least one practice")
-    elif category in known:
-        unknown = sorted(set(answers) - known[category][1])
+    else:
+        surveyed = set().union(*(members for _, members in categories().values()))
+        unknown = sorted(set(answers) - surveyed)
         if unknown:
-            found.append("practices that are not in this category: " + ", ".join(unknown))
+            found.append("practices that are not in the survey: " + ", ".join(unknown))
         wrong = sorted({str(v) for v in answers.values()} - ANSWERS)
         if wrong:
             found.append("answers must be one of " + ", ".join(sorted(ANSWERS)) + "; got " + ", ".join(wrong))
@@ -93,6 +96,8 @@ def main():
     found = []
     if len(files) != 1 or files[0]["status"] != "added":
         found.append("a survey pull request adds exactly one new file")
+    elif not PATH.match(files[0]["filename"]):
+        found = problems(files[0]["filename"], "")  # the path is checked before anything is fetched
     else:
         path = files[0]["filename"]
         raw = gh("api", f"repos/{os.environ['HEAD_REPO']}/contents/{path}?ref={os.environ['HEAD_SHA']}",
@@ -102,8 +107,10 @@ def main():
         gh("pr", "comment", number, "--repo", repo, "--body",
            "Thanks for answering. This file could not be accepted:\n\n" + "\n".join(f"- {p}" for p in found))
         sys.exit(1)
-    title = categories()[json.loads(raw)["category"]][0]
-    gh("pr", "merge", number, "--repo", repo, "--squash", "--subject", f"Survey answers: {title}")
+    count = len(json.loads(raw)["answers"])
+    # merge only the commit that was checked: a commit pushed after the check stops the merge
+    gh("pr", "merge", number, "--repo", repo, "--squash", "--match-head-commit", os.environ["HEAD_SHA"],
+       "--subject", f"Survey answers: {count} practices")
     print("merged")
 
 
