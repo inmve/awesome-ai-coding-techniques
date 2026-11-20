@@ -874,9 +874,7 @@
         }
       ],
       "opposites": [],
-      "rootsIn": [
-        "waterfall"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -1222,9 +1220,7 @@
         }
       ],
       "opposites": [],
-      "rootsIn": [
-        "feature-branch"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": "sessions"
     },
@@ -1818,9 +1814,7 @@
         }
       ],
       "opposites": [],
-      "rootsIn": [
-        "codemods"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": "steering"
     },
@@ -2183,9 +2177,7 @@
         }
       ],
       "opposites": [],
-      "rootsIn": [
-        "continuous-integration"
-      ],
+      "rootsIn": [],
       "origin": null,
       "group": null
     },
@@ -2517,122 +2509,6 @@
       "group": null
     },
     {
-      "id": "waterfall",
-      "stages": [],
-      "title": {
-        "ru": "Каскадная модель",
-        "en": "Waterfall"
-      },
-      "aliases": {
-        "ru": [
-          "Waterfall",
-          "Водопад"
-        ],
-        "en": [
-          "Waterfall model"
-        ]
-      },
-      "definition": {
-        "ru": "Модель разработки, где этапы идут строго по очереди: требования, проектирование, код, тестирование, внедрение. [1]",
-        "en": "A development model in which the stages run strictly in order: requirements, design, code, testing, deployment. [1]"
-      },
-      "firstAppeared": {
-        "date": "1970-08-01",
-        "precision": "month",
-        "verified": true,
-        "note": "Winston W. Royce, «Managing the Development of Large Software Systems», Proc. IEEE WESCON, August 1970, as given on https://cs.huji.ac.il/~feit/sem/se09/Waterfall.pdf; the word waterfall came later."
-      },
-      "kind": "approach",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "I’ve heard some people claim this is a return to waterfall — not unreasonably — but I believe this time is different.",
-          "quoteLang": "en",
-          "author": "Liu Shangqi",
-          "work": "Spec-driven development: Unpacking one of 2025’s key new AI-assisted engineering practices",
-          "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices",
-          "published": "2025-12-04",
-          "checkedAt": "2026-11-16"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Возводится к статье Уинстона Ройса",
-        "en": "Traced to Winston Royce's paper"
-      },
-      "group": null
-    },
-    {
-      "id": "continuous-integration",
-      "stages": [
-        "test-qa",
-        "code-review"
-      ],
-      "title": {
-        "ru": "Непрерывная интеграция",
-        "en": "Continuous integration"
-      },
-      "aliases": {
-        "ru": [
-          "CI",
-          "Continuous integration"
-        ],
-        "en": [
-          "CI"
-        ]
-      },
-      "definition": {
-        "ru": "Изменения часто сливают в общую ветку, и каждое слияние запускает автоматическую сборку и тесты. [1][2]",
-        "en": "Changes are merged into the shared branch often, and every merge runs an automatic build and tests. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "1998-10-01",
-        "precision": "month",
-        "verified": true,
-        "note": "Earliest page found: the C3 team, «Chrysler goes to \"Extremes\"», Distributed Computing, October 1998, lists continuous integration among its practices: https://www.cs.hmc.edu/courses/2004/spring/cs121/papers/xpChrysler.pdf. Booch 1991 was not confirmed on a primary page."
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "To address this, I built a continuous integration pipeline and implemented stricter enforcement that allowed Claude to better test its work so that new commits can’t break existing code.",
-          "quoteLang": "en",
-          "author": "Nicholas Carlini",
-          "work": "Building a C compiler with parallel Claudes",
-          "url": "https://www.anthropic.com/engineering/building-c-compiler",
-          "published": "2026-02-05",
-          "checkedAt": "2026-11-16"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "With lot of agents working in one repo, build pipelines suffered. To deal with this we introduced a discipline: our agents were to continually commit and rebase from main.",
-          "quoteLang": "en",
-          "author": "Giles Edwards-Alexander",
-          "work": "An Accidental Blackboard",
-          "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
-          "published": "2026-09-02",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Термин встречается у Грэди Буча, распространился через XP",
-        "en": "The term appears in Grady Booch's work and spread through XP"
-      },
-      "group": null
-    },
-    {
       "id": "pair-programming",
       "stages": [
         "coding"
@@ -2808,67 +2684,6 @@
       "group": null
     },
     {
-      "id": "feature-branch",
-      "stages": [
-        "coding"
-      ],
-      "title": {
-        "ru": "Feature-ветка",
-        "en": "Feature branch"
-      },
-      "aliases": {
-        "ru": [
-          "Feature branch"
-        ],
-        "en": []
-      },
-      "definition": {
-        "ru": "Разработчик открывает ветку в начале работы над фичей, ведёт в ней всю работу и вливает изменения, когда фича готова. [1][2]",
-        "en": "A developer opens a branch when starting a feature, does all the work on it there and integrates the changes when the feature is done. [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2009-09-03",
-        "precision": "day",
-        "verified": true,
-        "note": "Earliest page found: Martin Fowler, bliki «FeatureBranch», «I published my original post on this URL on 3 Sep 2009»: https://martinfowler.com/bliki/FeatureBranch.html; the practice is older."
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "Each session had its own copy of the repository, its own processes and its own branch.",
-          "quoteLang": "en",
-          "author": "Addy Osmani",
-          "work": "Claude Code in the cloud: a field guide to cloud sessions",
-          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
-          "published": "2026-10-06",
-          "checkedAt": "2026-11-16"
-        },
-        {
-          "n": 2,
-          "role": "support",
-          "quote": "A feature branch is a source code branching pattern where a developer opens a branch when she starts working on a new feature.",
-          "quoteLang": "en",
-          "author": "Martin Fowler",
-          "work": "Feature Branch",
-          "url": "https://martinfowler.com/bliki/FeatureBranch.html",
-          "published": "2020-05-07",
-          "checkedAt": "2026-11-15"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "ru": "Стала нормой вместе с Git и GitHub",
-        "en": "Became the norm with Git and GitHub"
-      },
-      "group": null
-    },
-    {
       "id": "pull-request",
       "stages": [
         "code-review"
@@ -2918,76 +2733,6 @@
       "origin": {
         "ru": "Введён GitHub",
         "en": "Introduced by GitHub"
-      },
-      "group": null
-    },
-    {
-      "id": "codemods",
-      "stages": [
-        "coding"
-      ],
-      "title": {
-        "en": "Codemods",
-        "ru": "Кодмоды"
-      },
-      "aliases": {
-        "ru": [],
-        "en": []
-      },
-      "definition": {
-        "en": "A large mechanical change across a codebase is made by a program that rewrites the code. [1][2][3]",
-        "ru": "Большую механическую правку по всей кодовой базе делает программа, переписывающая код. [1][2][3]"
-      },
-      "firstAppeared": {
-        "date": "2008-12-01",
-        "precision": "year",
-        "verified": true,
-        "note": "the source page says «circa December 2008»; approx"
-      },
-      "kind": "practice",
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "If a codemod can make the routine change, use the agent to help write and check it. Give agents the exception queue.",
-          "quoteLang": "en",
-          "author": "Addy Osmani",
-          "work": "Brownfield Agentic Engineering",
-          "url": "https://addyosmani.com/blog/brownfield-agentic-engineering/",
-          "published": "2026-09-14",
-          "checkedAt": "2026-11-16"
-        },
-        {
-          "n": 2,
-          "role": "relevance",
-          "quote": "A codemod is a program that operates on a codebase, and when you give an AI agent the ability to write and execute them, these platform-level tasks fall below the high-water mark of AI capabilities.",
-          "quoteLang": "en",
-          "author": "Codegen Technical Staff",
-          "work": "SWE Agents are Better with Codemods",
-          "url": "https://codegen.com/swe-agents-are-better-with-codemods/",
-          "published": "2025-03-01",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 3,
-          "role": "support",
-          "quote": "Codemod is a tool/library to assist you with large-scale codebase refactors that can be partially automated but still require human oversight and occasional intervention. Codemod was developed at Facebook and released as open source.",
-          "quoteLang": "en",
-          "author": "Justin Rosenstein",
-          "work": "codemod",
-          "url": "https://github.com/facebookarchive/codemod",
-          "published": "2008-01-01",
-          "checkedAt": "2026-11-16"
-        }
-      ],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "en": "The tool codemod was announced by Justin Rosenstein at Facebook",
-        "ru": "Инструмент codemod анонсировал Джастин Розенштейн в Facebook"
       },
       "group": null
     },
@@ -4360,9 +4105,7 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [
-        "retrospective"
-      ],
+      "rootsIn": [],
       "sources": [
         {
           "n": 1,
@@ -6070,9 +5813,7 @@
       "firstAppeared": null,
       "coinedHere": false,
       "seeAlso": [],
-      "rootsIn": [
-        "behaviour-driven-development"
-      ],
+      "rootsIn": [],
       "sources": [
         {
           "n": 1,
@@ -7195,69 +6936,6 @@
       "rootsIn": [],
       "origin": null,
       "group": null
-    },
-    {
-      "id": "behaviour-driven-development",
-      "stages": [
-        "req-plan"
-      ],
-      "kind": "practice",
-      "title": {
-        "en": "Behaviour-driven development",
-        "ru": "Разработка через поведение (BDD)"
-      },
-      "aliases": {
-        "en": [
-          "BDD"
-        ],
-        "ru": [
-          "BDD"
-        ]
-      },
-      "definition": {
-        "en": "The expected behaviour of a change is written down as structured acceptance criteria (given, when, then) before the code. [1][2]",
-        "ru": "Ожидаемое поведение изменения записывают до кода в виде структурированных критериев приёмки (given, when, then). [1][2]"
-      },
-      "firstAppeared": {
-        "date": "2006-03-01",
-        "precision": "month",
-        "verified": true,
-        "note": "Dan North, «Introducing BDD»: «This article first appeared in Better Software magazine in March 2006»"
-      },
-      "coinedHere": false,
-      "seeAlso": [],
-      "rootsIn": [],
-      "seededFrom": "pre-llm",
-      "opposites": [],
-      "origin": {
-        "en": "Introduced by Dan North in «Introducing BDD», Better Software, March 2006",
-        "ru": "Предложена Дэном Нортом в статье «Introducing BDD», Better Software, март 2006"
-      },
-      "group": null,
-      "sources": [
-        {
-          "n": 1,
-          "role": "relevance",
-          "quote": "Give your AI agent BDD-style acceptance criteria, and it will have everything it needs to ensure the changes it makes will satisfy the expectations of what was originally intended.",
-          "quoteLang": "en",
-          "author": "Yves Da Silva",
-          "work": "Set Your AI Up for Success: How BDD Tickets Drive Quality Outcomes",
-          "url": "https://tilt.com/blog/set-your-ai-up-for-success-bdd-tickets",
-          "published": "2025-11-28",
-          "checkedAt": "2026-11-17"
-        },
-        {
-          "n": 2,
-          "role": "coined",
-          "quote": "My response is behaviour-driven development (BDD).",
-          "quoteLang": "en",
-          "author": "Dan North",
-          "work": "Introducing BDD",
-          "url": "https://web.archive.org/web/2006id_/http://dannorth.net/introducing-bdd",
-          "published": "2006-03-01",
-          "checkedAt": "2026-11-17"
-        }
-      ]
     },
     {
       "id": "risk-based-review",
