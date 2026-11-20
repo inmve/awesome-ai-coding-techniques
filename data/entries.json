@@ -240,7 +240,7 @@
           "quoteLang": "en",
           "author": "Anthropic",
           "work": "Best practices for Claude Code",
-          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents",
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=By%20someone%20who%20didn%E2%80%99t%20write%20the",
           "published": null,
           "checkedAt": "2026-11-15"
         },
@@ -283,7 +283,7 @@
           "quote": "Uses a different model than the Hunting agent. Adversarial review reduces noise and prevents blind spots.",
           "quoteLang": "en",
           "author": "Zack Deveau",
-          "work": "Building an agentic harness that outlasts the model (2026)",
+          "work": "Building an agentic harness that outlasts the model",
           "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
           "published": "2026-07-29",
           "checkedAt": "2026-11-16"
@@ -958,7 +958,7 @@
           "quote": "Symlink all three and every agent reads the same file.",
           "quoteLang": "en",
           "author": "FerroxLabs",
-          "work": "GitHub - FerroxLabs/agents-md: Drop-in AGENTS.md that makes every coding agent behave like a senior engineer instead of an eager intern. Kills sycophancy, stops drive-by refactors, forces verification loops. Synthesizes Karpathy's four principles and Boris Cherny's Claude Code workflow. Works with Claude Code, Codex, Gemini CLI, Cursor, and the open standard.",
+          "work": "FerroxLabs/agents-md",
           "url": "https://github.com/FerroxLabs/agents-md",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -998,7 +998,7 @@
           "quoteLang": "en",
           "author": "Anthropic",
           "work": "Best practices for Claude Code",
-          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude",
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Watch%20the%20first%20minute%2C%20press%20Esc",
           "published": null,
           "checkedAt": "2026-11-15"
         },
@@ -1034,8 +1034,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result. [1]",
-        "ru": "Разработчик работает с агентом как с напарником: проговаривает с ним задачу, подправляет его по ходу, затем проверяет, рефакторит и тестирует результат. [1]"
+        "en": "The developer works with the agent as with a pair partner: nudges it when needed, then reviews, refactors and tests the result. [1]",
+        "ru": "Разработчик работает с агентом как с напарником: подправляет его по ходу, затем проверяет, рефакторит и тестирует результат. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1048,7 +1048,7 @@
           "quoteLang": "en",
           "author": "Orta Therox",
           "work": "On Coding with Claude",
-          "url": "https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing",
+          "url": "https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Occasionally%20it%20feels%20like%20magic%2C%20but",
           "published": "2025-06-07",
           "checkedAt": "2026-11-16"
         }
@@ -1115,8 +1115,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The tools an agent calls are made to respond quickly, report errors clearly and withstand misuse. [1][2]",
-        "ru": "Инструменты, которые вызывает агент, делают быстрыми, с понятными сообщениями об ошибках и устойчивыми к неправильному использованию. [1][2]"
+        "en": "The tools an agent calls are made to respond quickly with little useless output and are given a simple, clear interface. [1][2]",
+        "ru": "Инструменты, которые вызывает агент, делают быстрыми, без лишнего вывода и с простым понятным интерфейсом. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1183,7 +1183,7 @@
           "quoteLang": "en",
           "author": "David Crawshaw",
           "work": "How I program with Agents",
-          "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues",
+          "url": "https://crawshaw.io/blog/programming-with-agents#:~:text=By%20default%20sketch%20creates%20a%20little",
           "published": "2025-06-08",
           "checkedAt": "2026-11-15"
         },
@@ -1194,7 +1194,7 @@
           "quoteLang": "en",
           "author": "Anthropic",
           "work": "Common workflows",
-          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches",
+          "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Work%20on%20a%20feature%20in%20one",
           "published": null,
           "checkedAt": "2026-11-15"
         },
@@ -1215,7 +1215,7 @@
           "quote": "Each River session gets its own environment, so we can have one agent debugging something on Android, another working on an iOS feature, and another testing a PR, all in parallel.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -1327,7 +1327,7 @@
           "role": "support",
           "quote": "I gave inputs every 2-3 hours to move the model in the direction I wanted. I also let it run without supervision overnight on some days.",
           "quoteLang": "en",
-          "author": "sankalp",
+          "author": "Sankalp",
           "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
@@ -1408,7 +1408,7 @@
           "quoteLang": "en",
           "author": "Anthropic",
           "work": "Best practices for Claude Code",
-          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context",
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=%2Fclear%20between%20unrelated%20tasks.%20It%20costs",
           "published": null,
           "checkedAt": "2026-11-15"
         },
@@ -1469,7 +1469,7 @@
           "quoteLang": "en",
           "author": "Sankalp",
           "work": "My Experience With Claude Code After 2 Weeks of Adventures",
-          "url": "https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Sonnet%204%20handles%2090%25",
+          "url": "https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Opus%20does%20well%20when%20Sonnet%20gets",
           "published": "2025-07-17",
           "checkedAt": "2026-11-15"
         }
@@ -1538,16 +1538,16 @@
       ],
       "kind": "prompting",
       "title": {
-        "en": "Several options with trade-offs",
-        "ru": "Несколько вариантов с компромиссами"
+        "en": "Several options to look at",
+        "ru": "Несколько вариантов на выбор"
       },
       "aliases": {
         "en": [],
         "ru": []
       },
       "definition": {
-        "en": "The model is asked for several approaches with the pros and cons of each. [1][2]",
-        "ru": "Модель просят предложить несколько подходов с плюсами и минусами каждого. [1][2]"
+        "en": "The model is asked for several options or approaches to look at before one is chosen. [1][2]",
+        "ru": "Модель просят предложить несколько вариантов или подходов, чтобы посмотреть на них до выбора. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1776,8 +1776,8 @@
         "ru": []
       },
       "definition": {
-        "en": "Systematic and time-consuming tasks, from renames to large migrations, are handed to the agent. [1][2][3]",
-        "ru": "Агенту отдают систематические и долгие задачи: от переименований до больших миграций. [1][2][3]"
+        "en": "Systematic and time-consuming tasks, from renames to rebasing branches and retiring old flags, are handed to the agent. [1][2][3]",
+        "ru": "Агенту отдают систематические и долгие задачи: от переименований до ребейза веток и удаления старых флагов. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -1790,7 +1790,7 @@
           "quoteLang": "en",
           "author": "Alberto Fortin",
           "work": "After months of coding with LLMs, I'm going back to using my brain",
-          "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things",
+          "url": "https://albertofortin.com/writing/coding-with-ai#:~:text=I%E2%80%99m%20still%20using%20LLMs%2C%20but%20for",
           "published": "2025-05-15",
           "checkedAt": "2026-11-15"
         },
@@ -1811,7 +1811,7 @@
           "quote": "We can delegate things like rebasing branches, resolving merge conflicts, checking CI failures, addressing PR feedback, triaging incoming crashes, and reviewing code.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -1965,7 +1965,7 @@
           "quote": "But what I see working well is that before anyone (human or agent) writes the implementation, we go a level down from architecture into the shape of code: the types, the method signatures, the program layout, and the call stacks.",
           "quoteLang": "en",
           "author": "Dex",
-          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
+          "work": "humanlayer/advanced-context-engineering-for-coding-agents, wsff.md",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -2055,7 +2055,7 @@
           "quoteLang": "en",
           "author": "Armin Ronacher",
           "work": "Agentic Coding Recommendations",
-          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about",
+          "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Likewise%20with%20AI%20I%20strongly%20prefer",
           "published": "2025-06-12",
           "checkedAt": "2026-11-16"
         },
@@ -2362,8 +2362,8 @@
         ]
       },
       "definition": {
-        "en": "The developer reads the code an agent wrote before accepting it. [1][2][3][4]",
-        "ru": "Разработчик читает код, написанный агентом, до того как его принять. [1][2][3][4]"
+        "en": "The developer reads the code an agent wrote before accepting it. [1][2][3]",
+        "ru": "Разработчик читает код, написанный агентом, до того как его принять. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -2376,7 +2376,7 @@
           "quoteLang": "en",
           "author": "Chris Dzombak",
           "work": "Getting Good Results from Claude Code",
-          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review",
+          "url": "https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=It%E2%80%99s%20important%20for%20me%20to%20call",
           "published": "2025-08",
           "checkedAt": "2026-11-15"
         },
@@ -2404,7 +2404,7 @@
         },
         {
           "n": 4,
-          "role": "support",
+          "role": "why",
           "quote": "reviewing a diff you didn’t write is one of the most important and least-taught skills in this whole space.",
           "quoteLang": "en",
           "author": "Justin Paul",
@@ -3101,7 +3101,7 @@
           "quote": "End sessions by asking Claude to update CLAUDE.md with where you left off.",
           "quoteLang": "en",
           "author": "rberg27",
-          "work": "GitHub - rberg27/doom-coding: A guide for how to use your smartphone to code anywhere at anytime.",
+          "work": "rberg27/doom-coding",
           "url": "https://github.com/rberg27/doom-coding",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -3177,7 +3177,7 @@
           "quote": "Some of these run overnight, automatically picking up bugs, implementing fixes, testing them, and creating PRs.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -3251,7 +3251,7 @@
           "quote": "We categorize each conversation based on how good the outcome was, and use the failures as input for an LLM to find improvements.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -3276,8 +3276,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team has an agent review every pull request, and review by a person becomes optional. [1][2][3]",
-        "ru": "Команда отдаёт каждый pull request на ревью агенту, а ревью человеком становится необязательным. [1][2][3]"
+        "en": "A team has an agent review every pull request, and review by a person becomes optional for some or all changes. [1][2][3]",
+        "ru": "Команда отдаёт каждый pull request на ревью агенту, а ревью человеком становится необязательным для части изменений или для всех. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3378,8 +3378,8 @@
         "en": []
       },
       "definition": {
-        "en": "The agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2][3]",
-        "ru": "Агент работает с широкими правами, вплоть до root, на одноразовой машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2][3]"
+        "en": "The agent runs with broad permissions on a fresh machine or virtual machine that has no access to production systems or secrets beyond what development needs. [1][2][3]",
+        "ru": "Агент работает с широкими правами на свежей машине или виртуальной машине без доступа к продакшену и без секретов сверх нужных для разработки. [1][2][3]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3439,8 +3439,8 @@
         "en": []
       },
       "definition": {
-        "en": "Services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers. [1][2][3][4]",
-        "ru": "Сервисы отдают агенту как небольшие утилиты командной строки, у каждой свой README, который агент читает только когда утилита нужна, вместо MCP-серверов. [1][2][3][4]"
+        "en": "Services are given to the agent as small command-line tools instead of MCP servers; the agent calls them from bash and, where a tool has a README, reads it only when it needs the tool. [1][2][3][4]",
+        "ru": "Сервисы отдают агенту как небольшие утилиты командной строки вместо MCP-серверов; агент вызывает их из bash, а README утилиты, если он есть, читает только когда она нужна. [1][2][3][4]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3497,6 +3497,48 @@
       "group": null
     },
     {
+      "id": "cli-help-tuned-by-agent-runs",
+      "stages": [
+        "coding"
+      ],
+      "kind": "practice",
+      "title": {
+        "en": "CLI help tuned by agent runs",
+        "ru": "Справка CLI по прогонам агента"
+      },
+      "aliases": {
+        "en": [],
+        "ru": []
+      },
+      "definition": {
+        "en": "The help text of a command-line tool is tested by having a model reach set outcomes through it, and its wording is changed to whatever lets the model get there with the fewest tool calls. [1]",
+        "ru": "Справку утилиты командной строки проверяют, давая модели достичь заданных результатов только по ней, и меняют формулировки так, чтобы модель доходила до результата за меньшее число вызовов инструментов. [1]"
+      },
+      "firstAppeared": null,
+      "coinedHere": false,
+      "seeAlso": [
+        "cli-instead-of-mcp",
+        "instruction-file-evals"
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "role": "support",
+          "quote": "What you want to do is measure whether a model can achieve outcomes by walking the help verb across all the subverbs, then optimize the language used by choosing whatever works best, so the model can achieve the outcomes with the fewest tool calls.",
+          "quoteLang": "en",
+          "author": "Geoffrey Huntley",
+          "work": "--help on your CLI is all you need for LLM context until you don't.",
+          "url": "https://ghuntley.com/tier/#:~:text=What%20you%20want%20to%20do%20is%20measure%20whether%20a%20model",
+          "published": "2026-10-09",
+          "checkedAt": "2026-11-20"
+        }
+      ],
+      "opposites": [],
+      "rootsIn": [],
+      "origin": null,
+      "group": null
+    },
+    {
       "id": "instruction-file-evals",
       "stages": [
         "general"
@@ -3511,8 +3553,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement. [1]",
-        "ru": "Команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и оставляет изменение, только если несколько прогонов показали улучшение. [1]"
+        "en": "A team runs the same agent tasks as evals with and without a change to instruction files or documentation and compares the results. [1]",
+        "ru": "Команда прогоняет одни и те же задачи агента как evals с изменением в файлах инструкций или документации и без него и сравнивает результаты. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3600,8 +3642,8 @@
         "en": []
       },
       "definition": {
-        "en": "A prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name. [1]",
-        "ru": "Промпт или порядок действий, который разработчик повторяет снова и снова, сохраняется как скилл или команда, кладётся в git и запускается по имени. [1]"
+        "en": "A prompt or workflow that the developer keeps repeating is turned into a skill. [1]",
+        "ru": "Промпт или порядок действий, который разработчик повторяет снова и снова, превращают в скилл. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3666,7 +3708,7 @@
           "quote": "PRDs, ADRs, UI Specs, and Design Docs live in their own directories (docs/prd/, docs/adr/, docs/ui-spec/, docs/design/) and are intended to be committed.",
           "quoteLang": "en",
           "author": "shinpr",
-          "work": "GitHub - shinpr/claude-code-workflows: Development workflows for Claude Code that keep broad exploration focused on the outcome you approved.",
+          "work": "shinpr/claude-code-workflows",
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3843,8 +3885,8 @@
         "en": []
       },
       "definition": {
-        "en": "Agents search parts of an application for one category of vulnerability, a separate verifier agent proves each finding with a test in the application's own test suite, and findings arrive as pull requests. [1]",
-        "ru": "Агенты ищут в частях приложения уязвимости одной категории, отдельный агент-проверяющий доказывает каждую находку тестом в наборе тестов самого приложения, а находки приходят как pull request. [1]"
+        "en": "Agents built to hunt one category of bug run against an application, give a test that confirms each finding, and open pull requests for the findings. [1]",
+        "ru": "Агенты, нацеленные на одну категорию ошибок, проверяют приложение, к каждой находке дают подтверждающий её тест и открывают pull request с находками. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -3857,7 +3899,7 @@
           "quote": "It enables authors to easily create category-specific bug hunting agents, which then run safely, provide a test oracle, and open PRs for findings.",
           "quoteLang": "en",
           "author": "Zack Deveau",
-          "work": "Building an agentic harness that outlasts the model (2026)",
+          "work": "Building an agentic harness that outlasts the model",
           "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
           "published": "2026-07-29",
           "checkedAt": "2026-11-16"
@@ -3898,7 +3940,7 @@
           "quote": "Backend and frontend design stay separate, a consistency check covers the boundary between them, and the work plan uses vertical slices so integration is exercised before the end.",
           "quoteLang": "en",
           "author": "shinpr",
-          "work": "GitHub - shinpr/claude-code-workflows: Development workflows for Claude Code that keep broad exploration focused on the outcome you approved.",
+          "work": "shinpr/claude-code-workflows",
           "url": "https://github.com/shinpr/claude-code-workflows",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -3909,7 +3951,7 @@
           "quote": "And in most cases, I'll send off a model to do 1-3 slices at a time, and review the code as I go. It's a lot easier to resteer early on, whether it's the internals or the actual functionality, than to end up on the other side of 2k+ lines of code with no idea what's broken.",
           "quoteLang": "en",
           "author": "Dex",
-          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
+          "work": "humanlayer/advanced-context-engineering-for-coding-agents, wsff.md",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -3984,8 +4026,8 @@
         "en": []
       },
       "definition": {
-        "en": "A project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review. [1]",
-        "ru": "Проект требует от авторов вкладов прочитать и проверить весь сгенерированный код или текст и уметь его объяснить, прежде чем просить ревью у мейнтейнеров. [1]"
+        "en": "A project requires contributors to read and review all generated code or text before they ask maintainers for review. [1]",
+        "ru": "Проект требует от авторов вкладов прочитать и проверить весь сгенерированный код или текст, прежде чем просить ревью у мейнтейнеров. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4023,8 +4065,8 @@
         "en": []
       },
       "definition": {
-        "en": "A project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output. [1][2]",
-        "ru": "Проект требует, чтобы issues, описания pull request, комментарии и ответы на ревью были написаны своими словами автора, а не вставленным выводом модели. [1][2]"
+        "en": "A project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output. [1]",
+        "ru": "Проект требует, чтобы issues, описания pull request, комментарии и ответы на ревью были написаны своими словами автора, а не вставленным выводом модели. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -4034,23 +4076,23 @@
         {
           "n": 1,
           "role": "support",
-          "quote": "Passing maintainer feedback to an LLM doesn’t help anyone grow, and does not sustain our community.",
-          "quoteLang": "en",
-          "author": "rnk",
-          "work": "[RFC] LLVM AI tool policy: human in the loop",
-          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
-          "published": "2025-12-17",
-          "checkedAt": "2026-11-15"
-        },
-        {
-          "n": 2,
-          "role": "support",
           "quote": "In short, if you are posting any of those things, the output must be your own words, explanation, description, etc., not a verbatim dump of an LLM's output.",
           "quoteLang": "en",
           "author": "Jellyfin project",
           "work": "LLM/\"AI\" Policies",
           "url": "https://jellyfin.org/docs/general/contributing/llm-policies/",
           "published": null,
+          "checkedAt": "2026-11-15"
+        },
+        {
+          "n": 2,
+          "role": "why",
+          "quote": "Passing maintainer feedback to an LLM doesn’t help anyone grow, and does not sustain our community.",
+          "quoteLang": "en",
+          "author": "rnk",
+          "work": "[RFC] LLVM AI tool policy: human in the loop",
+          "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+          "published": "2025-12-17",
           "checkedAt": "2026-11-15"
         }
       ],
@@ -4098,7 +4140,7 @@
           "quote": "This skill requires explicit invocation because it can comment, label, or close another person's contribution.",
           "quoteLang": "en",
           "author": "Wirasm",
-          "work": "GitHub - Wirasm/prp: Prompts, workflows and more for agentic engineering",
+          "work": "Wirasm/prp",
           "url": "https://github.com/Wirasm/prp",
           "published": null,
           "checkedAt": "2026-11-15"
@@ -4508,7 +4550,7 @@
           "quote": "Steering, not just prompting. Are you thinking about the how and why of the work, or just feeding the spec to an agent and hoping for the best?",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": "Engineering interviews in the era of agents - Elicit",
+          "work": "Engineering interviews in the era of agents",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -4569,7 +4611,7 @@
           "quote": "The interviews where we want you to use AI tend to be deeper technical sessions. You’re on your own machine, using whatever tools you’re comfortable with.",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": "Engineering interviews in the era of agents - Elicit",
+          "work": "Engineering interviews in the era of agents",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -4669,7 +4711,7 @@
           "quote": "There are some interviews where we explicitly ask candidates not to use AI.",
           "quoteLang": "en",
           "author": "Elicit",
-          "work": "Engineering interviews in the era of agents - Elicit",
+          "work": "Engineering interviews in the era of agents",
           "url": "https://elicit.com/blog/engineering-interviews-in-the-era-of-agents",
           "published": "2026-03-30",
           "checkedAt": "2026-11-14"
@@ -4794,8 +4836,8 @@
         "en": []
       },
       "definition": {
-        "en": "Faults are injected into the code under test, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message. [1][2]",
-        "ru": "В проверяемый код вносят намеренные ошибки, вручную, руками агента или библиотекой в CI, и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
+        "en": "Faults are injected into the code under test to check that tests written by an agent break with a clear error message. [1][2]",
+        "ru": "В проверяемый код вносят намеренные ошибки и проверяют, что тесты, написанные агентом, падают с понятным сообщением об ошибке. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5031,8 +5073,8 @@
         "en": []
       },
       "definition": {
-        "en": "A project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code. [1]",
-        "ru": "Проект отдаёт pull request, написанные с помощью языковой модели, только тем ревьюерам, кто вызвался их проверять, и такой ревьюер может попросить автора переделать изменение без сгенерированного кода. [1]"
+        "en": "A project assigns pull requests written with a language model only to reviewers who volunteer for them. [1]",
+        "ru": "Проект отдаёт pull request, написанные с помощью языковой модели, только тем ревьюерам, кто вызвался их проверять. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5144,7 +5186,7 @@
           "role": "support",
           "quote": "Agents yearn for tight feedback loops. They allow them to hill-climb to their heart's content.",
           "quoteLang": "en",
-          "author": "sankalp",
+          "author": "Sankalp",
           "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
@@ -5501,7 +5543,12 @@
         "en": "A harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met. [1][2][3]",
         "ru": "Обвязка запускает агента в цикле: когда одна задача закончена, начинается следующий прогон, пока не выполнено условие остановки, например нет новых находок или ошибок. [1][2][3]"
       },
-      "firstAppeared": null,
+      "firstAppeared": {
+        "date": "2025-07-14",
+        "precision": "day",
+        "verified": true,
+        "note": "Geoffrey Huntley, «Ralph Wiggum as a \"software engineer\"», 2025-07-14: the source with the role coined [3]."
+      },
       "coinedHere": false,
       "seeAlso": [],
       "rootsIn": [],
@@ -5530,7 +5577,7 @@
         },
         {
           "n": 3,
-          "role": "support",
+          "role": "coined",
           "quote": "Ralph is a technique. In its purest form, Ralph is a Bash loop.",
           "quoteLang": "en",
           "author": "Geoffrey Huntley",
@@ -5559,8 +5606,8 @@
         "en": []
       },
       "definition": {
-        "en": "Test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely. [1][2]",
-        "ru": "Вывод тестов и CI делается коротким и быстрым для агента: несколько строк на экране, подробности в лог-файле, прогресс печатается редко. [1][2]"
+        "en": "Test output is kept short for the agent, a few lines on screen and the details in a log file, and CI is kept fast. [1][2]",
+        "ru": "Вывод тестов делают коротким для агента, несколько строк на экране и подробности в лог-файле, а CI быстрым. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -5862,7 +5909,7 @@
           "quote": "If you wanna save time during review, you pick the person who would review the PR, and run through the product/tech specs with them before you get to the coding part",
           "quoteLang": "en",
           "author": "Dex",
-          "work": "advanced-context-engineering-for-coding-agents/wsff.md at main",
+          "work": "humanlayer/advanced-context-engineering-for-coding-agents, wsff.md",
           "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
           "published": null,
           "checkedAt": "2026-11-16"
@@ -5900,7 +5947,7 @@
           "role": "support",
           "quote": "Logs serve as the evidence of the ideas that worked and didn't work. Future agent sessions could read the logs and quickly check if an idea had been tried or not.",
           "quoteLang": "en",
-          "author": "sankalp",
+          "author": "Sankalp",
           "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
@@ -5978,8 +6025,8 @@
         "en": []
       },
       "definition": {
-        "en": "Every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings. [1]",
-        "ru": "У каждой линии работы агента есть названный ответственный человек, и агент показывает ему видимые пользователю изменения со скриншотами или записями до и после. [1]"
+        "en": "Every thread of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings. [1]",
+        "ru": "У каждого потока работы агента есть названный ответственный человек, и агент показывает ему видимые пользователю изменения со скриншотами или записями до и после. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -6093,7 +6140,7 @@
           "role": "support",
           "quote": "Encourage the model to take more risks and try ambitious ideas. You will not believe it but this worked.",
           "quoteLang": "en",
-          "author": "sankalp",
+          "author": "Sankalp",
           "work": "Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
           "url": "https://sankalp.bearblog.dev/autoresearch/",
           "published": "2026-07-08",
@@ -6450,7 +6497,7 @@
           "quote": "For bug fixes, River can reproduce the issue, record the broken behavior, implement the fix, and then repeat the same steps to show the before and after. This makes reviewing changes much easier.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-18"
@@ -6461,7 +6508,7 @@
           "quote": "So we created a skill to teach agents how to test their changes and prove their work.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6500,7 +6547,7 @@
           "quote": "So, instead of preparing a Mac after a request arrives, we switched to keeping a pool of warm Macs at the ready: main checked out (no small feat, as our monorepo is massive), tools installed, apps built, and caches warm.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6550,7 +6597,7 @@
           "quote": "And instead of sleeping or setting timeouts for the Mac to finish long-running tasks, we used tmux panes that River could observe in real time.",
           "quoteLang": "en",
           "author": "Michael Garfinkle, Mauricio de Meirelles, David Cortes",
-          "work": "We gave AI agents a mobile dev environment (2026)",
+          "work": "We gave AI agents a mobile dev environment",
           "url": "https://shopify.engineering/remote-dev",
           "published": "2026-10-22",
           "checkedAt": "2026-11-16"
@@ -6728,7 +6775,7 @@
           "quote": "The point of an ADR was always to stop the next person from undoing a decision they didn’t know about. The next person is now, more often than not, an agent.",
           "quoteLang": "en",
           "author": "Edy Silva",
-          "work": "Stale docs are prompt injection you wrote yourself - The Miners",
+          "work": "Stale docs are prompt injection you wrote yourself",
           "url": "https://blog.codeminer42.com/stale-docs-are-prompt-injection-you-wrote-yourself/",
           "published": "2026-10-16",
           "checkedAt": "2026-11-16"
@@ -7125,8 +7172,8 @@
         "ru": []
       },
       "definition": {
-        "en": "An alert passes through a chain of agents: one investigates and writes a plan, a second reviews the plan, and a third opens a pull request with a scoped fix for the on-call engineer. [1]",
-        "ru": "Алерт проходит через цепочку агентов: один расследует и пишет план, второй проверяет план, третий открывает pull request с ограниченным исправлением для дежурного инженера. [1]"
+        "en": "An alert passes through agents: it is investigated, a plan is written, another agent reviews the plan, and if the plan holds up, a scoped fix arrives as a pull request with the on-call engineer tagged. [1]",
+        "ru": "Алерт проходит через агентов: его расследуют, пишут план, другой агент проверяет план, и если план выдерживает проверку, ограниченное исправление приходит как pull request с отметкой дежурного инженера. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7379,8 +7426,8 @@
         "ru": []
       },
       "definition": {
-        "en": "An unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time. [1]",
-        "ru": "Агент без присмотра получает не больше заданного числа прогонов CI на задачу, в источнике двух, потому что каждый прогон стоит токенов, вычислений и времени. [1]"
+        "en": "An unattended agent gets at most a fixed number of CI rounds per task, two at Stripe, because every round costs tokens, compute and time. [1]",
+        "ru": "Агент без присмотра получает не больше заданного числа прогонов CI на задачу, в Stripe двух, потому что каждый прогон стоит токенов, вычислений и времени. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7535,8 +7582,8 @@
         "ru": []
       },
       "definition": {
-        "en": "The developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity. [1]",
-        "ru": "Разработчик задаёт потолок числа одновременно идущих потоков агентов, в источнике три-четыре, в зависимости от их сложности. [1]"
+        "en": "The developer keeps the number of agent threads running at once within a personal limit that depends on how complex they are. [1]",
+        "ru": "Разработчик держит число одновременно идущих потоков агентов в пределах своего потолка, который зависит от их сложности. [1]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7674,8 +7721,8 @@
         "en": []
       },
       "definition": {
-        "en": "A team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores. [1][2][3]",
-        "ru": "Команда выбирает модель или инструмент для агента, прогоняя кандидатов на выборке своих реальных задач, у каждой из которых есть проверка результата, а не по опубликованным результатам бенчмарков. [1][2][3]"
+        "en": "A team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores. [1][2]",
+        "ru": "Команда выбирает модель или инструмент для агента, прогоняя кандидатов на выборке своих реальных задач, у каждой из которых есть проверка результата, а не по опубликованным результатам бенчмарков. [1][2]"
       },
       "firstAppeared": null,
       "coinedHere": false,
@@ -7708,17 +7755,6 @@
         },
         {
           "n": 3,
-          "role": "support",
-          "quote": "To confirm that our standards explained the gap, we ran both reviewers on an external benchmark with human-labeled defects. They tied. On our own repo, where Tessl Code Review had our standards to work from, it found more real defects and far fewer false positives.",
-          "quoteLang": "en",
-          "author": "Simon Rendon Arango, Colin Hallett",
-          "work": "75% of Tessl's PRs now merge without human review",
-          "url": "https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review",
-          "published": "2026-10-16",
-          "checkedAt": "2026-11-18"
-        },
-        {
-          "n": 4,
           "role": "why",
           "quote": "And on the models: there are plenty of public benchmarks but they have all been gamed to death. Ignore them.",
           "quoteLang": "en",
@@ -7726,6 +7762,17 @@
           "work": "Eight more months of agents",
           "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
           "published": "2026-02-08",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "n": 4,
+          "role": "why",
+          "quote": "To confirm that our standards explained the gap, we ran both reviewers on an external benchmark with human-labeled defects. They tied. On our own repo, where Tessl Code Review had our standards to work from, it found more real defects and far fewer false positives.",
+          "quoteLang": "en",
+          "author": "Simon Rendon Arango, Colin Hallett",
+          "work": "75% of Tessl's PRs now merge without human review",
+          "url": "https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review",
+          "published": "2026-10-16",
           "checkedAt": "2026-11-18"
         }
       ],

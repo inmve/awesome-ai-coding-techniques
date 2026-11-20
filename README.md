@@ -18,7 +18,7 @@ Practices from people who build software with agents. Each entry has a definitio
 - **Site:** [https://inmve.github.io/agentic-coding-practices/](https://inmve.github.io/agentic-coding-practices/) (the same reference with quotes on hover and schemes that play)
 - **Data:** [`data/entries.json`](data/entries.json), the single source; this README is generated from it
 
-127 practices, 254 sources, 254 of them with a verbatim quote stored in the data, 65 example schemes.
+128 practices, 255 sources, 255 of them with a verbatim quote stored in the data, 65 example schemes.
 
 Inside every section the newest practices come first.
 
@@ -99,8 +99,10 @@ Inside every section the newest practices come first.
 
   <img src="figures/trace-driven-performance-fixes.svg" width="440" alt="Example scheme: Performance fixes from production traces">
 
+- **CLI help tuned by agent runs**. The help text of a command-line tool is tested by having a model reach set outcomes through it, and its wording is changed to whatever lets the model get there with the fewest tool calls.
+  Sources: [Geoffrey Huntley, 2026-10-09](https://ghuntley.com/tier/#:~:text=What%20you%20want%20to%20do%20is%20measure%20whether%20a%20model).
 - **Hill climbing on a metric**. An agent is given a measured number to beat and repeatedly changes the code and re-measures until the number improves.
-  Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/); [Alberto Gimeno, 2026-09-23](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/).
+  Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/); [Alberto Gimeno, 2026-09-23](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/).
 
   <img src="figures/benchmark-hill-climbing.svg" width="440" alt="Example scheme: Hill climbing on a metric">
 
@@ -111,7 +113,7 @@ Inside every section the newest practices come first.
 
 - **Codebase audit with the agent**. The developer asks the agent to audit the codebase for one named problem and talks the findings through with it until a concrete change is clear.
   Sources: [Bram Cohen, 2026-04-05](https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane).
-- **CLI tools instead of MCP**. Services are given to the agent as small command-line tools, each with a README that the agent reads only when it needs the tool, instead of MCP servers.
+- **CLI tools instead of MCP**. Services are given to the agent as small command-line tools instead of MCP servers; the agent calls them from bash and, where a tool has a README, reads it only when it needs the tool.
   Sources: [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature); [Mario Zechner, 2025-11-30](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/); [Armin Ronacher, 2026-10-06](https://lucumr.pocoo.org/2026/10/6/codemode/); [Peter Steinberger, 2025-12-28](https://steipete.me/posts/2025/shipping-at-inference-speed/).
 
   <img src="figures/cli-instead-of-mcp.svg" width="440" alt="Example scheme: CLI tools instead of MCP">
@@ -123,7 +125,7 @@ Inside every section the newest practices come first.
   <img src="figures/ai-feedback-loops.svg" width="440" alt="Example scheme: Agent feedback loop">
 
 - **Generated code in place of dependencies**. The agent writes the needed code in the project, and a new library is not added.
-  Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Be%20even%20more%20conservative%20about); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
+  Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Likewise%20with%20AI%20I%20strongly%20prefer); [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/).
 
   <img src="figures/conservative-dependency-management.svg" width="440" alt="Example scheme: Generated code in place of dependencies">
 
@@ -135,7 +137,7 @@ Inside every section the newest practices come first.
 
   <img src="figures/keep-code-dead-simple.svg" width="440" alt="Example scheme: Simple code for agents">
 
-- **Tools built for agents**. The tools an agent calls are made to respond quickly, report errors clearly and withstand misuse.
+- **Tools built for agents**. The tools an agent calls are made to respond quickly with little useless output and are given a simple, clear interface.
   Sources: [Armin Ronacher, 2025-06-12](https://lucumr.pocoo.org/2025/6/12/agentic-coding/#:~:text=Tools%20need%20to%20be%20fast); [Shrivu Shankar, 2025-11-02](https://blog.sshh.io/p/how-i-use-every-claude-code-feature).
 
   <img src="figures/build-fast-foolproof-tools.svg" width="440" alt="Example scheme: Tools built for agents">
@@ -178,7 +180,7 @@ Inside every section the newest practices come first.
 
   <img src="figures/test-driven-development-ai.svg" width="440" alt="Example scheme: Tests before agent code">
 
-- **Mutation testing of agent-written tests**. Faults are injected into the code under test, by hand, by the agent or by a library in CI, to check that tests written by an agent break with a clear error message.
+- **Mutation testing of agent-written tests**. Faults are injected into the code under test to check that tests written by an agent break with a clear error message.
   Sources: [Matteo Vaccari, 2026-11-11](https://martinfowler.com/articles/tests-as-data.html); [Senko Rašić, 2026-03-22](https://blog.senko.net/improving-ai-generated-tests-using-mutation-testing).
   Grew from: Mutation testing.
 
@@ -189,12 +191,12 @@ Inside every section the newest practices come first.
 
   <img src="figures/browser-verification-by-agent.svg" width="440" alt="Example scheme: Browser checks by an agent">
 
-- **Cap on CI rounds per agent run**. An unattended agent gets at most a fixed number of CI rounds per task, two in the source, because every round costs tokens, compute and time.
+- **Cap on CI rounds per agent run**. An unattended agent gets at most a fixed number of CI rounds per task, two at Stripe, because every round costs tokens, compute and time.
   Sources: [Alistair Gray, 2026-02-09](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents).
 
   <img src="figures/ci-rounds-cap.svg" width="440" alt="Example scheme: Cap on CI rounds per agent run">
 
-- **Agent-readable test output**. Test and CI output is kept short and fast for the agent: a few lines on screen, details written to a log file, progress printed rarely.
+- **Agent-readable test output**. Test output is kept short for the agent, a few lines on screen and the details in a log file, and CI is kept fast.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Liz Fong-Jones, 2026-07-16](https://www.honeycomb.io/blog/ai-amplifies-existing-practices-lessons-ai-first-strategy).
 
   <img src="figures/agent-readable-test-output.svg" width="440" alt="Example scheme: Agent-readable test output">
@@ -211,7 +213,7 @@ Inside every section the newest practices come first.
 
 ### Review & release
 
-- **Agent chain for alert triage**. An alert passes through a chain of agents: one investigates and writes a plan, a second reviews the plan, and a third opens a pull request with a scoped fix for the on-call engineer.
+- **Agent chain for alert triage**. An alert passes through agents: it is investigated, a plan is written, another agent reviews the plan, and if the plan holds up, a scoped fix arrives as a pull request with the on-call engineer tagged.
   Sources: [Ari Salem, 2026-09-03](https://launchdarkly.com/blog/building-a-self-driving-ops-triage-loop/).
 
   <img src="figures/alert-triage-agent-chain.svg" width="440" alt="Example scheme: Agent chain for alert triage">
@@ -221,7 +223,7 @@ Inside every section the newest practices come first.
 
   <img src="figures/alert-first-investigation-by-agent.svg" width="440" alt="Example scheme: First investigation of an alert by an agent">
 
-- **Category-specific bug hunting agents**. Agents search parts of an application for one category of vulnerability, a separate verifier agent proves each finding with a test in the application's own test suite, and findings arrive as pull requests.
+- **Category-specific bug hunting agents**. Agents built to hunt one category of bug run against an application, give a test that confirms each finding, and open pull requests for the findings.
   Sources: [Zack Deveau, 2026-07-29](https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model).
 
   <img src="figures/agent-security-review.svg" width="440" alt="Example scheme: Category-specific bug hunting agents">
@@ -243,7 +245,7 @@ Inside every section the newest practices come first.
   <img src="figures/voted-review-findings.svg" width="440" alt="Example scheme: Voted review findings">
 
 - **Adversarial review**. One agent does the work and a second agent, often on a different model, reviews it with the task of finding problems.
-  Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Telling%20Claude%20to%20use%20subagents); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=I%20typically%20double); [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Zack Deveau, 2026-07-29](https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model).
+  Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=By%20someone%20who%20didn%E2%80%99t%20write%20the); [Jesse Vincent, 2025-10-05](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/#:~:text=I%20typically%20double); [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Zack Deveau, 2026-07-29](https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model).
 
   <img src="figures/adversarial-review.svg" width="440" alt="Example scheme: Adversarial review">
 
@@ -253,7 +255,7 @@ Inside every section the newest practices come first.
   <img src="figures/agent-self-review.svg" width="440" alt="Example scheme: Agent self-review">
 
 - **Reading agent-written code**. The developer reads the code an agent wrote before accepting it.
-  Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=Asking%20the%20agent%20to%20perform%20a%20code%20review); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I'm%20not%20shipping%20code); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Please%20don't%20ever%20ship); [Justin Paul, 2026-07-30](https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/).
+  Sources: [Chris Dzombak, 2025-08](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/#:~:text=It%E2%80%99s%20important%20for%20me%20to%20call); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I'm%20not%20shipping%20code); [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=Please%20don't%20ever%20ship); [Justin Paul, 2026-07-30](https://www.jpaul.me/2026/07/the-workflow-reviewing-ai-code/).
 
   <img src="figures/critical-code-review-strategy.svg" width="440" alt="Example scheme: Reading agent-written code">
 
@@ -267,19 +269,19 @@ Inside every section the newest practices come first.
   <img src="figures/lookups-on-smaller-subagents.svg" width="440" alt="Example scheme: Lookups on smaller subagents">
 
 - **Push for bolder attempts**. The agent is told to take more risks and try more ambitious ideas.
-  Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
+  Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
 - **Model choice per task**. Each step of a task runs on the model that suits it: a cheaper model for routine steps, a more capable one for planning and judging.
   Sources: [Abhishek Ray, 2026-03-10](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep).
 - **Model evals on your own tasks**. A team chooses a model or an agent tool by running the candidates on a sample of its own real tasks, each with a check of the outcome, instead of going by published benchmark scores.
-  Sources: [Addy Osmani, 2026-11-09](https://claude.dev/blog/which-claude-model-should-you-build-with/); [Addy Osmani, 2026-11-09](https://claude.dev/blog/which-claude-model-should-you-build-with/); [Simon Rendon Arango, Colin Hallett, 2026-10-16](https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review); [David Crawshaw, 2026-02-08](https://crawshaw.io/blog/eight-more-months-of-agents).
+  Sources: [Addy Osmani, 2026-11-09](https://claude.dev/blog/which-claude-model-should-you-build-with/); [Addy Osmani, 2026-11-09](https://claude.dev/blog/which-claude-model-should-you-build-with/); [David Crawshaw, 2026-02-08](https://crawshaw.io/blog/eight-more-months-of-agents); [Simon Rendon Arango, Colin Hallett, 2026-10-16](https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review).
 - **Model escalation**. Work starts on a faster and cheaper model and moves to a more capable one when the task turns out to be hard.
-  Sources: [Sankalp, 2025-07-17](https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Sonnet%204%20handles%2090%25).
+  Sources: [Sankalp, 2025-07-17](https://sankalp.bearblog.dev/my-claude-code-experience-after-2-weeks-of-usage/#:~:text=Opus%20does%20well%20when%20Sonnet%20gets).
 
   <img src="figures/smart-model-escalation.svg" width="440" alt="Example scheme: Model escalation">
 
 - **“More beautiful” prompt**. The agent is asked to make an interface “more beautiful” or “more elegant”, with no further detail.
   Sources: [Indragie Karunaratne, 2025-07-01](https://www.indragie.com/blog/i-shipped-a-macos-app-built-entirely-by-claude-code#:~:text=If%20Claude%20doesn't%20produce); [David Crawshaw, 2025-06-08](https://crawshaw.io/blog/programming-with-agents).
-- **Several options with trade-offs**. The model is asked for several approaches with the pros and cons of each.
+- **Several options to look at**. The model is asked for several options or approaches to look at before one is chosen.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=I'll%20use%20prompts%20like); [Thariq Shihipar, 2026-05-20](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/).
 
 ### Agent instructions
@@ -296,7 +298,7 @@ Inside every section the newest practices come first.
 
   <img src="figures/progressive-disclosure.svg" width="440" alt="Example scheme: Progressive disclosure">
 
-- **Repeated prompt as a skill**. A prompt or workflow that the developer keeps repeating is saved as a skill or command file, checked into git and run by name.
+- **Repeated prompt as a skill**. A prompt or workflow that the developer keeps repeating is turned into a skill.
   Sources: [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
 
   <img src="figures/repeated-prompt-to-command.svg" width="440" alt="Example scheme: Repeated prompt as a skill">
@@ -306,7 +308,7 @@ Inside every section the newest practices come first.
 
 ### Maintaining the agent setup
 
-- **Evals for agent instructions**. A team runs the same agent tasks as evals with and without a change to instruction files or documentation, and keeps the change only after several runs show an improvement.
+- **Evals for agent instructions**. A team runs the same agent tasks as evals with and without a change to instruction files or documentation and compares the results.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
 - **Regular audit of the agent setup**. Every few weeks, the developer audits the agent setup, including skills, plugins, instruction files and memory, with the tool's check command and reviews which parts still hold true.
   Sources: [Addy Osmani, 2026-08-27](https://addyosmani.com/blog/audit-your-agent-files/).
@@ -328,7 +330,7 @@ Inside every section the newest practices come first.
 ### Context and memory
 
 - **Shared experiment log**. Agents log every attempted idea and its result, and later agent sessions read the log to see whether an idea was already tried.
-  Sources: [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
+  Sources: [Sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
 - **Compaction**. A long agent session is summarized at a milestone or near the context limit, with instructions on what the summary keeps, and work continues in a new context from the summary.
   Sources: [Arpan Patel, 2026-05-26](https://arps18.github.io/posts/claude-code-mastery/).
 
@@ -351,7 +353,7 @@ Inside every section the newest practices come first.
 
 ### Parallel work
 
-- **Ceiling on parallel agent threads**. The developer sets a ceiling on the number of agent threads run at once, three to four in the source, depending on their complexity.
+- **Ceiling on parallel agent threads**. The developer keeps the number of agent threads running at once within a personal limit that depends on how complex they are.
   Sources: [Addy Osmani, 2026-04-07](https://addyosmani.com/blog/cognitive-parallel-agents/); [Addy Osmani, 2026-04-07](https://addyosmani.com/blog/cognitive-parallel-agents/).
 
   <img src="figures/parallel-thread-ceiling.svg" width="440" alt="Example scheme: Ceiling on parallel agent threads">
@@ -364,7 +366,7 @@ Inside every section the newest practices come first.
   <img src="figures/agent-task-claiming.svg" width="440" alt="Example scheme: Task claiming by agents">
 
 - **Feature sessions**. Each feature or task gets its own agent session, or the context is cleared before an unrelated task begins.
-  Sources: [Fabien Sanglard, 2026-08-21](https://fabiensanglard.net/agent.md/index.html); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=During%20long%20sessions%2C%20Claude's%20context); [Lydia Hallie, 2026-08-14](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions); [Addy Osmani, 2026-09-25](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/).
+  Sources: [Fabien Sanglard, 2026-08-21](https://fabiensanglard.net/agent.md/index.html); [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=%2Fclear%20between%20unrelated%20tasks.%20It%20costs); [Lydia Hallie, 2026-08-14](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions); [Addy Osmani, 2026-09-25](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/).
 - **Parallel attempts**. Several agents or models work on the same problem at the same time, each with its own approach, and the developer compares the results.
   Sources: [Lee Robinson, 2026-01-09](https://cursor.com/blog/agent-best-practices); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/).
   Grew from: N-version programming (1978).
@@ -377,7 +379,7 @@ Inside every section the newest practices come first.
   <img src="figures/orchestrator-worker.svg" width="440" alt="Example scheme: Orchestrator and workers">
 
 - **Parallel agents**. Several agents work on separate tasks at the same time, each in its own isolated copy of the repository.
-  Sources: [David Crawshaw, 2025-06-08](https://crawshaw.io/blog/programming-with-agents#:~:text=We%20are%20exploring%20solving%20both%20of%20these%20issues); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Git%20worktrees%20allow%20you%20to%20check%20out%20multiple%20branches); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+  Sources: [David Crawshaw, 2025-06-08](https://crawshaw.io/blog/programming-with-agents#:~:text=By%20default%20sketch%20creates%20a%20little); [Anthropic](https://docs.anthropic.com/en/docs/claude-code/common-workflows#:~:text=Work%20on%20a%20feature%20in%20one); [Addy Osmani, 2026-10-06](https://claude.dev/blog/claude-code-in-the-cloud/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
   Grew from: Feature branch (2009).
 
 ### Unattended runs
@@ -393,11 +395,11 @@ Inside every section the newest practices come first.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [Anthropic](https://code.claude.com/docs/en/common-workflows); [Addy Osmani, Morgan Westlee Lunt, and Qing Wang, 2026-10-15](https://claude.dev/blog/solving-code-review-at-anthropic/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Georgiana Calancea, 2026-09-10](https://www.deel.com/blog/deel-engineering-rolling-out-with-confidence-pt2/).
 - **Warm environment pool for agents**. A team keeps a pool of prepared machines for agents, with the main branch checked out, tools installed, apps built and caches warm, so that an agent claims one instead of waiting for setup.
   Sources: [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev); [Alistair Gray, 2026-02-09](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents).
-- **Disposable machine for the agent**. The agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs.
+- **Disposable machine for the agent**. The agent runs with broad permissions on a fresh machine or virtual machine that has no access to production systems or secrets beyond what development needs.
   Sources: [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [Harper Reed, 2026-09-22](https://harper.blog/2026/09/22/break-away/); [crawshaw, 2026-02-08](https://crawshaw.io/blog/eight-more-months-of-agents).
 - **Asynchronous agent work**. The agent works on a task while the developer is busy with something else.
-  Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster); [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
-- **Ralph loop**. A harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met.
+  Sources: [Mitchell Hashimoto, 2025-10-11](https://mitchellh.com/writing/non-trivial-vibing#:~:text=I%20think%20the%20faster); [Granda, 2026-01-02](https://granda.org/en/2026/01/02/claude-code-on-the-go/); [Sankalp, 2026-07-08](https://sankalp.bearblog.dev/autoresearch/).
+- **Ralph loop** (2025). A harness runs the agent in a loop: when one task finishes, the next run starts, until a stop condition such as no new findings or no errors is met.
   Sources: [Nicholas Carlini, 2026-02-05](https://www.anthropic.com/engineering/building-c-compiler); [Thariq Shihipar and Sid Bidasaria, 2026-06-02](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/); [Geoffrey Huntley, 2025-07-14](https://ghuntley.com/ralph/).
 
   <img src="figures/agent-loop.svg" width="440" alt="Example scheme: Ralph loop">
@@ -410,7 +412,7 @@ Inside every section the newest practices come first.
 - **Unread throwaway code**. Code generated for a one-off task is run and thrown away without being read.
   Sources: [Oren Eini, 2026-04-21](https://ayende.net/blog/203940-c/using-ai-agents-in-long-lived-software-projects).
 - **Early interruption**. The developer stops the agent as soon as it goes in a wrong direction and gives it a correction.
-  Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Press%20Escape%20to%20interrupt%20Claude); [Mikayla Maki, 2026-01-23](https://zed.dev/blog/on-programming-with-agents).
+  Sources: [Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices#:~:text=Watch%20the%20first%20minute%2C%20press%20Esc); [Mikayla Maki, 2026-01-23](https://zed.dev/blog/on-programming-with-agents).
 
   <img src="figures/interrupt-and-redirect-often.svg" width="440" alt="Example scheme: Early interruption">
 
@@ -424,8 +426,8 @@ Inside every section the newest practices come first.
 
   <img src="figures/pivot-when-assistant-struggles.svg" width="440" alt="Example scheme: Change of approach after repeated failures">
 
-- **Delegation of routine tasks**. Systematic and time-consuming tasks, from renames to large migrations, are handed to the agent.
-  Sources: [Alberto Fortin, 2025-05-15](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20using%20LLMs,%20but%20for%20dumber%20things); [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
+- **Delegation of routine tasks**. Systematic and time-consuming tasks, from renames to rebasing branches and retiring old flags, are handed to the agent.
+  Sources: [Alberto Fortin, 2025-05-15](https://albertofortin.com/writing/coding-with-ai#:~:text=I%E2%80%99m%20still%20using%20LLMs%2C%20but%20for); [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/); [Michael Garfinkle, Mauricio de Meirelles, David Cortes, 2026-10-22](https://shopify.engineering/remote-dev).
   Grew from: Codemods (2008).
 - **Repeated rework requests**. The developer asks the agent to rework the code as many times as it takes to reach an acceptable result.
   Sources: [Simon Willison, 2025-03-11](https://simonwillison.net/2025/Mar/11/using-llms-for-code/#:~:text=If%20I%20don't%20like%20what%20an%20LLM%20has%20written); [Alex Grebenyuk, 2025-06-23](https://kean.github.io/post/experiencing-claude-code).
@@ -450,8 +452,8 @@ Inside every section the newest practices come first.
 
   <img src="figures/brain-first-coding.svg" width="440" alt="Example scheme: Own draft first">
 
-- **Agent as a pair partner**. The developer works with the agent as with a pair partner: thinks a problem through aloud with it, nudges it when needed, then reviews, refactors and tests the result.
-  Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Claude%20Code%20feels%20like%20pairing).
+- **Agent as a pair partner**. The developer works with the agent as with a pair partner: nudges it when needed, then reviews, refactors and tests the result.
+  Sources: [Orta Therox, 2025-06-07](https://blog.puzzmo.com/posts/2025/06/07/orta-on-claude/#:~:text=Occasionally%20it%20feels%20like%20magic%2C%20but).
   Grew from: Pair programming (1998), Rubber duck debugging (1999).
 - **Learning with an agent**. The developer uses an agent to learn a language or a concept and then applies it when writing code.
   Sources: [Alberto Fortin](https://albertofortin.com/writing/coding-with-ai#:~:text=I'm%20leveraging%20them%20to%20learn%20Go).
@@ -466,13 +468,13 @@ These practices also stand in their own sections above, with their sources.
 - **Prompter as a required reviewer**. The person who directed the agent counts as one of the required reviewers of its pull request, and an agent's approval is not counted as a person's.
 - **CI workflow files as high risk**. The files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work.
 - **Protected test expectations**. Test files and expected results that a task should not change are protected from the agent: made read-only, checked in CI for changes, or named in the agent's instructions as inputs to keep.
-- **Named owner of an agent thread**. Every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
+- **Named owner of an agent thread**. Every thread of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
 - **Risk-based code review**. The depth of review for a change depends on its risk: a low-risk change gets a light check or merges automatically, everything else gets full review, and some kinds of code are kept out of automated review.
 - **Track record before landing without review**. A recurring automated source of code changes, such as a fixed prompt that an agent runs again and again, may land its changes without a person reviewing each one only after a clean record over a set period: no incidents, few reverts, few rejections by people and enough landed changes; a source that caused an incident is blocked.
 - **Quarantine**. Agents that read untrusted content, such as public issues or messages, are barred from high-privilege actions, and those actions are done by separate agents.
 - **Unread throwaway code**. Code generated for a one-off task is run and thrown away without being read.
-- **Agent review of every pull request**. A team has an agent review every pull request, and review by a person becomes optional.
-- **Disposable machine for the agent**. The agent runs with broad permissions, up to root, on a throwaway machine or virtual machine that has no access to production systems or secrets beyond what development needs.
+- **Agent review of every pull request**. A team has an agent review every pull request, and review by a person becomes optional for some or all changes.
+- **Disposable machine for the agent**. The agent runs with broad permissions on a fresh machine or virtual machine that has no access to production systems or secrets beyond what development needs.
 - **Extra approval for agent pull requests**. Pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests.
 - **Critical parts by hand**. The developer writes the critical and complex parts of the code and hands the rest to the agent.
 - **Reading agent-written code**. The developer reads the code an agent wrote before accepting it.
@@ -512,9 +514,9 @@ Rules that teams and open-source projects set for work with agents.
 
   <img src="figures/every-review-finding-answered.svg" width="440" alt="Example scheme: Answer to every review finding">
 
-- **Volunteer-only review of model-written pull requests**. A project assigns pull requests written with a language model only to reviewers who volunteer for them, and such a reviewer may ask the author to redo the change without generated code.
+- **Volunteer-only review of model-written pull requests**. A project assigns pull requests written with a language model only to reviewers who volunteer for them.
   Sources: [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
-- **Agent review of every pull request**. A team has an agent review every pull request, and review by a person becomes optional.
+- **Agent review of every pull request**. A team has an agent review every pull request, and review by a person becomes optional for some or all changes.
   Sources: [Ryan Lopopolo, 2026-02-11](https://openai.com/index/harness-engineering/); [OpenAI](https://developers.openai.com/codex/learn/best-practices); [Dave North, 2026-06-01](https://rewind.com/blog/ai-approve-pull-requests-safely/).
   Grew from: Pull request (2008).
 - **Extra approval for agent pull requests**. Pull requests started by an agent or generated by a model must clear a higher bar than other pull requests, such as more human approvals or required tests.
@@ -528,7 +530,7 @@ Rules that teams and open-source projects set for work with agents.
 
 - **CI workflow files as high risk**. The files that define the CI pipeline are treated as high risk, because an agent that can edit the pipeline can weaken the review of its own work.
   Sources: [Jonathan Wage, 2026-10-13](https://blog.traderspost.io/article/risk-proportional-review-for-ai-agents).
-- **Named owner of an agent thread**. Every line of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
+- **Named owner of an agent thread**. Every thread of agent work has a named person who owns it, and the agent shows user-visible changes to that person with before-and-after screenshots or recordings.
   Sources: [Raymond Wang, Sam Attard, and Issac G., 2026-09-23](https://claude.dev/blog/how-we-made-claude-ai-faster/).
 - **Ownership of agent controls**. Shared agent controls used by many teams, such as skills, commands and root-level instruction files, have an owning team or guild.
   Sources: [Addie Beach, Rui Martins Lacerda, 2026-09-09](https://www.datadoghq.com/blog/ai-development-golden-paths/).
@@ -555,7 +557,7 @@ Rules that teams and open-source projects set for work with agents.
 
   <img src="figures/approved-agents-in-project-spaces.svg" width="440" alt="Example scheme: Agents in project spaces only with approval">
 
-- **Contributor review of generated code**. A project requires contributors to read and review all generated code or text, and to be able to explain it, before they ask maintainers for review.
+- **Contributor review of generated code**. A project requires contributors to read and review all generated code or text before they ask maintainers for review.
   Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159).
 - **Disclosure of agent use**. Contributors state in the pull request, commit message or post whether and how a model or agent produced the content.
   Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jynn Nelson, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/).
@@ -565,7 +567,7 @@ Rules that teams and open-source projects set for work with agents.
   <img src="figures/extractive-contribution-handling.svg" width="440" alt="Example scheme: Extractive contribution handling">
 
 - **Own words in project communication**. A project requires issues, pull request descriptions, comments and replies to review to be written in the contributor's own words, not pasted model output.
-  Sources: [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159); [Jellyfin project](https://jellyfin.org/docs/general/contributing/llm-policies/).
+  Sources: [Jellyfin project](https://jellyfin.org/docs/general/contributing/llm-policies/); [rnk, 2025-12-17](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159).
 - **Ban on generated contributions**. A project does not accept contributions that include content generated, in part or in full, by language models or similar systems.
   Sources: [OpenJDK Governing Board](https://openjdk.org/legal/ai); [Daniel P. Berrangé, 2024-05-16](https://patchew.org/QEMU/20240516162230.937047-1-berrange@redhat.com/20240516162230.937047-4-berrange@redhat.com/).
 
